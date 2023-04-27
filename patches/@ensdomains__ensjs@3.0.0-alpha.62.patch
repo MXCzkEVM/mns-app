@@ -1,0 +1,402 @@
+diff --git a/dist/cjs/functions/commitName.js b/dist/cjs/functions/commitName.js
+index dc448b34ddd68e65a66535e41a4454a65fc30f85..bdd8aaae3c9bf767f54eba9aa0857e5ce5ab2389 100644
+--- a/dist/cjs/functions/commitName.js
++++ b/dist/cjs/functions/commitName.js
+@@ -25,8 +25,8 @@ var import_registerHelpers = require("../utils/registerHelpers");
+ var import_wrapper = require("../utils/wrapper");
+ async function commitName_default({ contracts }, name, { resolverAddress, ...params }) {
+   const labels = name.split(".");
+-  if (labels.length !== 2 || labels[1] !== "eth")
+-    throw new Error("Currently only .eth TLD registrations are supported");
++  if (labels.length !== 2 || labels[1] !== "mxc")
++    throw new Error("Currently only .mxc TLD registrations are supported");
+   (0, import_wrapper.wrappedLabelLengthCheck)(labels[0]);
+   const controller = await contracts.getEthRegistrarController();
+   const resolver = await contracts.getPublicResolver(
+diff --git a/dist/cjs/functions/getAvailable.js b/dist/cjs/functions/getAvailable.js
+index 14d1f61a597b3b05824d2a0762e90a28be991166..ec175562142efd7635ac945eff7a49a470178e9a 100644
+--- a/dist/cjs/functions/getAvailable.js
++++ b/dist/cjs/functions/getAvailable.js
+@@ -25,8 +25,8 @@ var import_labels = require("../utils/labels");
+ const raw = async ({ contracts }, name) => {
+   const baseRegistrar = await (contracts == null ? void 0 : contracts.getBaseRegistrar());
+   const labels = name.split(".");
+-  if (labels.length !== 2 || labels[1] !== "eth") {
+-    throw new Error("Currently only .eth names can be checked for availability");
++  if (labels.length !== 2 || labels[1] !== "mxc") {
++    throw new Error("Currently only .mxc names can be checked for availability");
+   }
+   return {
+     to: baseRegistrar.address,
+diff --git a/dist/cjs/functions/getExpiry.js b/dist/cjs/functions/getExpiry.js
+index 61368e03e85bc7bd81893b41724966a9fe749234..461cbf0dec8c9408e58e65c266f9f0dd61e02892 100644
+--- a/dist/cjs/functions/getExpiry.js
++++ b/dist/cjs/functions/getExpiry.js
+@@ -25,8 +25,8 @@ var import_solidity = require("@ethersproject/solidity");
+ var import_normalise = require("../utils/normalise");
+ var import_validation = require("../utils/validation");
+ const getRegistrarExpiry = async ({ contracts, multicallWrapper }, labels) => {
+-  if (labels.length > 2 || labels[1] !== "eth") {
+-    throw new Error("Only .eth names have expiry dates on the registrar");
++  if (labels.length > 2 || labels[1] !== "mxc") {
++    throw new Error("Only .mxc names have expiry dates on the registrar");
+   }
+   const baseRegistrar = await (contracts == null ? void 0 : contracts.getBaseRegistrar());
+   const expiryCall = baseRegistrar.interface.encodeFunctionData("nameExpires", [
+diff --git a/dist/cjs/functions/getOwner.js b/dist/cjs/functions/getOwner.js
+index 1e1b61d4df787db18cc236646f3a6f6a25d373b4..68ef8334e26c9b47423131e3d2fbcb111169987a 100644
+--- a/dist/cjs/functions/getOwner.js
++++ b/dist/cjs/functions/getOwner.js
+@@ -136,7 +136,7 @@ const decode = async ({
+   const nameWrapperOwner = decodedData[1][0];
+   let registrarOwner = (_b = decodedData[2]) == null ? void 0 : _b[0];
+   let baseReturnObject = {};
+-  if (labels[labels.length - 1] === "eth") {
++  if (labels[labels.length - 1] === "mxc") {
+     if (labels.length === 2) {
+       if (!registrarOwner) {
+         const graphRegistrantResult = await gqlInstance.client.request(
+diff --git a/dist/cjs/functions/registerName.js b/dist/cjs/functions/registerName.js
+index 590e46becc00836139c8c266286290e77bec0fe4..f0aab92aa75a849a8edc776803bda9f47931a4ff 100644
+--- a/dist/cjs/functions/registerName.js
++++ b/dist/cjs/functions/registerName.js
+@@ -25,8 +25,8 @@ var import_registerHelpers = require("../utils/registerHelpers");
+ var import_wrapper = require("../utils/wrapper");
+ async function registerName_default({ contracts }, name, { resolverAddress, value, ...params }) {
+   const labels = name.split(".");
+-  if (labels.length !== 2 || labels[1] !== "eth")
+-    throw new Error("Currently only .eth TLD registrations are supported");
++  if (labels.length !== 2 || labels[1] !== "mxc")
++    throw new Error("Currently only .mxc TLD registrations are supported");
+   (0, import_wrapper.wrappedLabelLengthCheck)(labels[0]);
+   const controller = await contracts.getEthRegistrarController();
+   const _resolver = await contracts.getPublicResolver(
+diff --git a/dist/cjs/functions/renewNames.js b/dist/cjs/functions/renewNames.js
+index 779361a5206f16b89a3ad59fc8518f4f483f3e68..9fc90f8854c8b882b8c8ab24fa02a41788ed588a 100644
+--- a/dist/cjs/functions/renewNames.js
++++ b/dist/cjs/functions/renewNames.js
+@@ -41,8 +41,8 @@ async function renewNames_default({ contracts }, nameOrNames, { duration, value
+   const names = Array.isArray(nameOrNames) ? nameOrNames : [nameOrNames];
+   const labels = names.map((name) => {
+     const label = name.split(".");
+-    if (label.length !== 2 || label[1] !== "eth") {
+-      throw new Error("Currently only .eth TLD renewals are supported");
++    if (label.length !== 2 || label[1] !== "mxc") {
++      throw new Error("Currently only .mxc TLD renewals are supported");
+     }
+     return label[0];
+   });
+diff --git a/dist/cjs/functions/supportsTLD.js b/dist/cjs/functions/supportsTLD.js
+index 4341ccd77d3ff043e4e3dd347076edbec64d5cf2..fec19834402799e7c3f0fe7e76913cd0e4f0ed73 100644
+--- a/dist/cjs/functions/supportsTLD.js
++++ b/dist/cjs/functions/supportsTLD.js
+@@ -27,7 +27,7 @@ async function supportsTLD_default({ getOwner, provider }, name) {
+   try {
+     const labels = name.split(".");
+     const tld = labels[labels.length - 1];
+-    if (tld === "eth")
++    if (tld === "mxc")
+       return true;
+     const tldOwner = await getOwner(tld, "registry");
+     if (!(tldOwner == null ? void 0 : tldOwner.owner))
+diff --git a/dist/cjs/functions/transferName.js b/dist/cjs/functions/transferName.js
+index 4766363e9df4bbaba55bed0bead07bafcf88cf6d..76e20305618e84cd57bf33546ac630d2aaec6e00 100644
+--- a/dist/cjs/functions/transferName.js
++++ b/dist/cjs/functions/transferName.js
+@@ -39,7 +39,7 @@ async function transferName_default({ contracts, signer }, name, {
+         signer
+       );
+       const labels = name.split(".");
+-      if (labels.length > 2 || labels[labels.length - 1] !== "eth") {
++      if (labels.length > 2 || labels[labels.length - 1] !== "mxc") {
+         throw new Error("Invalid name for baseRegistrar");
+       }
+       const tokenId = (0, import_solidity.keccak256)(["string"], [labels[0]]);
+diff --git a/dist/cjs/utils/validation.js b/dist/cjs/utils/validation.js
+index 087957eb50d7174bb23d4cdddad454d43589b0cf..9da162288398d8f5386421f90b894d2eee1a1814 100644
+--- a/dist/cjs/utils/validation.js
++++ b/dist/cjs/utils/validation.js
+@@ -54,7 +54,7 @@ const parseInput = (input) => {
+   const normalisedName = isValid ? nameReference : void 0;
+   const labels = nameReference.split(".");
+   const tld = labels[labels.length - 1];
+-  const isETH = tld === "eth";
++  const isETH = tld === "mxc";
+   const labelDataArray = (0, import_normalise.split)(nameReference);
+   const isShort = (((_a = labelDataArray[0].output) == null ? void 0 : _a.length) || 0) < import_consts.MINIMUM_DOT_ETH_CHARS;
+   if (labels.length === 1) {
+@@ -79,4 +79,4 @@ const parseInput = (input) => {
+     labelDataArray
+   };
+ };
+-const checkIsDotEth = (labels) => labels.length === 2 && labels[1] === "eth";
++const checkIsDotEth = (labels) => labels.length === 2 && labels[1] === "mxc";
+diff --git a/dist/esm/functions/commitName.mjs b/dist/esm/functions/commitName.mjs
+index 0662a2e8da05d722504cb12b0879a5d59a060ef7..f5f71822182a74b934a679cc81b276f798276abe 100644
+--- a/dist/esm/functions/commitName.mjs
++++ b/dist/esm/functions/commitName.mjs
+@@ -3,8 +3,8 @@ import { makeCommitment } from "../utils/registerHelpers.mjs";
+ import { wrappedLabelLengthCheck } from "../utils/wrapper.mjs";
+ async function commitName_default({ contracts }, name, { resolverAddress, ...params }) {
+   const labels = name.split(".");
+-  if (labels.length !== 2 || labels[1] !== "eth")
+-    throw new Error("Currently only .eth TLD registrations are supported");
++  if (labels.length !== 2 || labels[1] !== "mxc")
++    throw new Error("Currently only .mxc TLD registrations are supported");
+   wrappedLabelLengthCheck(labels[0]);
+   const controller = await contracts.getEthRegistrarController();
+   const resolver = await contracts.getPublicResolver(
+diff --git a/dist/esm/functions/getAvailable.mjs b/dist/esm/functions/getAvailable.mjs
+index e7254d922c2051aee96bd2eb95a3750b2371b6ce..3b6ecc865faefb53771ef8ac23c57432c33229ec 100644
+--- a/dist/esm/functions/getAvailable.mjs
++++ b/dist/esm/functions/getAvailable.mjs
+@@ -3,8 +3,8 @@ import { labelhash } from "../utils/labels.mjs";
+ var raw = async ({ contracts }, name) => {
+   const baseRegistrar = await contracts?.getBaseRegistrar();
+   const labels = name.split(".");
+-  if (labels.length !== 2 || labels[1] !== "eth") {
+-    throw new Error("Currently only .eth names can be checked for availability");
++  if (labels.length !== 2 || labels[1] !== "mxc") {
++    throw new Error("Currently only .mxc names can be checked for availability");
+   }
+   return {
+     to: baseRegistrar.address,
+diff --git a/dist/esm/functions/getExpiry.mjs b/dist/esm/functions/getExpiry.mjs
+index e51a83cfa25de497383345f514c5504591dc8233..7b04554153e500938cd3e38bcc3a5fe0919c1130 100644
+--- a/dist/esm/functions/getExpiry.mjs
++++ b/dist/esm/functions/getExpiry.mjs
+@@ -3,8 +3,8 @@ import { keccak256 as solidityKeccak256 } from "@ethersproject/solidity";
+ import { namehash } from "../utils/normalise.mjs";
+ import { checkIsDotEth } from "../utils/validation.mjs";
+ var getRegistrarExpiry = async ({ contracts, multicallWrapper }, labels) => {
+-  if (labels.length > 2 || labels[1] !== "eth") {
+-    throw new Error("Only .eth names have expiry dates on the registrar");
++  if (labels.length > 2 || labels[1] !== "mxc") {
++    throw new Error("Only .mxc names have expiry dates on the registrar");
+   }
+   const baseRegistrar = await contracts?.getBaseRegistrar();
+   const expiryCall = baseRegistrar.interface.encodeFunctionData("nameExpires", [
+diff --git a/dist/esm/functions/getOwner.mjs b/dist/esm/functions/getOwner.mjs
+index 16bdad76eb6c9df6485d50f7395a8feb8a537ad5..9e1fd13270045f945fca5372b92bac3766a74d18 100644
+--- a/dist/esm/functions/getOwner.mjs
++++ b/dist/esm/functions/getOwner.mjs
+@@ -113,7 +113,7 @@ var decode = async ({
+   const nameWrapperOwner = decodedData[1][0];
+   let registrarOwner = decodedData[2]?.[0];
+   let baseReturnObject = {};
+-  if (labels[labels.length - 1] === "eth") {
++  if (labels[labels.length - 1] === "mxc") {
+     if (labels.length === 2) {
+       if (!registrarOwner) {
+         const graphRegistrantResult = await gqlInstance.client.request(
+diff --git a/dist/esm/functions/registerName.mjs b/dist/esm/functions/registerName.mjs
+index da4c6d2c32a42b240175e863c61ab728b1e476ae..f13bf0db35fe5d28ea19e866923e61a14432cbc9 100644
+--- a/dist/esm/functions/registerName.mjs
++++ b/dist/esm/functions/registerName.mjs
+@@ -5,8 +5,8 @@ import {
+ import { wrappedLabelLengthCheck } from "../utils/wrapper.mjs";
+ async function registerName_default({ contracts }, name, { resolverAddress, value, ...params }) {
+   const labels = name.split(".");
+-  if (labels.length !== 2 || labels[1] !== "eth")
+-    throw new Error("Currently only .eth TLD registrations are supported");
++  if (labels.length !== 2 || labels[1] !== "mxc")
++    throw new Error("Currently only .mxc TLD registrations are supported");
+   wrappedLabelLengthCheck(labels[0]);
+   const controller = await contracts.getEthRegistrarController();
+   const _resolver = await contracts.getPublicResolver(
+diff --git a/dist/esm/functions/renewNames.mjs b/dist/esm/functions/renewNames.mjs
+index 16b1e10034201d17d572010a894282232776738d..6961afd0e3799e5fe9761be30201882556bd6405 100644
+--- a/dist/esm/functions/renewNames.mjs
++++ b/dist/esm/functions/renewNames.mjs
+@@ -18,8 +18,8 @@ async function renewNames_default({ contracts }, nameOrNames, { duration, value
+   const names = Array.isArray(nameOrNames) ? nameOrNames : [nameOrNames];
+   const labels = names.map((name) => {
+     const label = name.split(".");
+-    if (label.length !== 2 || label[1] !== "eth") {
+-      throw new Error("Currently only .eth TLD renewals are supported");
++    if (label.length !== 2 || label[1] !== "mxc") {
++      throw new Error("Currently only .mxc TLD renewals are supported");
+     }
+     return label[0];
+   });
+diff --git a/dist/esm/functions/supportsTLD.mjs b/dist/esm/functions/supportsTLD.mjs
+index c0249d48d1aacb70060cef4f15b9e6a6df287bf9..62a2877c84b77cbac916db8efd0de7c5493cf168 100644
+--- a/dist/esm/functions/supportsTLD.mjs
++++ b/dist/esm/functions/supportsTLD.mjs
+@@ -5,7 +5,7 @@ async function supportsTLD_default({ getOwner, provider }, name) {
+   try {
+     const labels = name.split(".");
+     const tld = labels[labels.length - 1];
+-    if (tld === "eth")
++    if (tld === "mxc")
+       return true;
+     const tldOwner = await getOwner(tld, "registry");
+     if (!tldOwner?.owner)
+diff --git a/dist/esm/functions/transferName.mjs b/dist/esm/functions/transferName.mjs
+index 18a4fa413a0cd7d6871fbf4e39cbf57e86403c73..b3b9ce73f3b635b9db90da269255daed440b22c3 100644
+--- a/dist/esm/functions/transferName.mjs
++++ b/dist/esm/functions/transferName.mjs
+@@ -17,7 +17,7 @@ async function transferName_default({ contracts, signer }, name, {
+         signer
+       );
+       const labels = name.split(".");
+-      if (labels.length > 2 || labels[labels.length - 1] !== "eth") {
++      if (labels.length > 2 || labels[labels.length - 1] !== "mxc") {
+         throw new Error("Invalid name for baseRegistrar");
+       }
+       const tokenId = solidityKeccak256(["string"], [labels[0]]);
+diff --git a/dist/esm/utils/validation.mjs b/dist/esm/utils/validation.mjs
+index 3289abc8152a301629c896c856965f4dbb1bac6c..a9e89de3a68041cb81af6ce0fdd033d8e06a121e 100644
+--- a/dist/esm/utils/validation.mjs
++++ b/dist/esm/utils/validation.mjs
+@@ -29,7 +29,7 @@ var parseInput = (input) => {
+   const normalisedName = isValid ? nameReference : void 0;
+   const labels = nameReference.split(".");
+   const tld = labels[labels.length - 1];
+-  const isETH = tld === "eth";
++  const isETH = tld === "mxc";
+   const labelDataArray = split(nameReference);
+   const isShort = (labelDataArray[0].output?.length || 0) < MINIMUM_DOT_ETH_CHARS;
+   if (labels.length === 1) {
+@@ -54,7 +54,7 @@ var parseInput = (input) => {
+     labelDataArray
+   };
+ };
+-var checkIsDotEth = (labels) => labels.length === 2 && labels[1] === "eth";
++var checkIsDotEth = (labels) => labels.length === 2 && labels[1] === "mxc";
+ export {
+   checkIsDotEth,
+   parseInput,
+diff --git a/src/functions/commitName.ts b/src/functions/commitName.ts
+index 35d1fbb408135f35b664c5f8201ff92172a5a21d..7e4e045d20b9278484b813d4ee0fe0918b17f8f6 100644
+--- a/src/functions/commitName.ts
++++ b/src/functions/commitName.ts
+@@ -12,8 +12,8 @@ export default async function (
+   { resolverAddress, ...params }: Params,
+ ) {
+   const labels = name.split('.')
+-  if (labels.length !== 2 || labels[1] !== 'eth')
+-    throw new Error('Currently only .eth TLD registrations are supported')
++  if (labels.length !== 2 || labels[1] !== 'mxc')
++    throw new Error('Currently only .mxc TLD registrations are supported')
+ 
+   wrappedLabelLengthCheck(labels[0])
+ 
+diff --git a/src/functions/getAvailable.ts b/src/functions/getAvailable.ts
+index 0a99ba495e2b02a51e701d268a6ab30b15093e99..af684d9b63d42dd09cca3c4b85f8204126d18660 100644
+--- a/src/functions/getAvailable.ts
++++ b/src/functions/getAvailable.ts
+@@ -5,8 +5,8 @@ const raw = async ({ contracts }: ENSArgs<'contracts'>, name: string) => {
+   const baseRegistrar = await contracts?.getBaseRegistrar()!
+ 
+   const labels = name.split('.')
+-  if (labels.length !== 2 || labels[1] !== 'eth') {
+-    throw new Error('Currently only .eth names can be checked for availability')
++  if (labels.length !== 2 || labels[1] !== 'mxc') {
++    throw new Error('Currently only .mxc names can be checked for availability')
+   }
+ 
+   return {
+diff --git a/src/functions/getExpiry.ts b/src/functions/getExpiry.ts
+index 03494d241c282a7f276284525a480b806a3795fc..d9043d8db11f158c6160314a9389f7d3ca703397 100644
+--- a/src/functions/getExpiry.ts
++++ b/src/functions/getExpiry.ts
+@@ -14,8 +14,8 @@ const getRegistrarExpiry = async (
+   { contracts, multicallWrapper }: ENSArgs<'contracts' | 'multicallWrapper'>,
+   labels: string[],
+ ) => {
+-  if (labels.length > 2 || labels[1] !== 'eth') {
+-    throw new Error('Only .eth names have expiry dates on the registrar')
++  if (labels.length > 2 || labels[1] !== 'mxc') {
++    throw new Error('Only .mxc names have expiry dates on the registrar')
+   }
+ 
+   const baseRegistrar = await contracts?.getBaseRegistrar()!
+diff --git a/src/functions/getOwner.ts b/src/functions/getOwner.ts
+index 1e9e32e733c61be05a8170e273a3adb32a6e168f..78859897b84a2e030074e703728e1efee04c040c 100644
+--- a/src/functions/getOwner.ts
++++ b/src/functions/getOwner.ts
+@@ -156,7 +156,7 @@ const decode = async (
+   } = {}
+ 
+   // check for only .eth names
+-  if (labels[labels.length - 1] === 'eth') {
++  if (labels[labels.length - 1] === 'mxc') {
+     // if there is no registrar owner, the name is expired
+     // but we still want to get the registrar owner prior to expiry
+     if (labels.length === 2) {
+diff --git a/src/functions/registerName.ts b/src/functions/registerName.ts
+index b759e8272651ce5a2e6e524ddad9b8449c2abf63..e79cbf890345630a2cb4e402066b804cd7b21e97 100644
+--- a/src/functions/registerName.ts
++++ b/src/functions/registerName.ts
+@@ -16,8 +16,8 @@ export default async function (
+   { resolverAddress, value, ...params }: Params,
+ ) {
+   const labels = name.split('.')
+-  if (labels.length !== 2 || labels[1] !== 'eth')
+-    throw new Error('Currently only .eth TLD registrations are supported')
++  if (labels.length !== 2 || labels[1] !== 'mxc')
++    throw new Error('Currently only .mxc TLD registrations are supported')
+ 
+   wrappedLabelLengthCheck(labels[0])
+ 
+diff --git a/src/functions/renewNames.ts b/src/functions/renewNames.ts
+index a33ff88dfb59391dd7b361f113366f6cf8001b35..aeedc148dd95b427fe4f7c8d8f4c71792d0bcc15 100644
+--- a/src/functions/renewNames.ts
++++ b/src/functions/renewNames.ts
+@@ -39,8 +39,8 @@ export default async function (
+   const names = Array.isArray(nameOrNames) ? nameOrNames : [nameOrNames]
+   const labels = names.map((name) => {
+     const label = name.split('.')
+-    if (label.length !== 2 || label[1] !== 'eth') {
+-      throw new Error('Currently only .eth TLD renewals are supported')
++    if (label.length !== 2 || label[1] !== 'mxc') {
++      throw new Error('Currently only .mxc TLD renewals are supported')
+     }
+     return label[0]
+   })
+diff --git a/src/functions/supportsTLD.ts b/src/functions/supportsTLD.ts
+index 06c527221bd9ff279cfa97e54443d7778659050e..0fd7d4cc75053e6bc7521d3edba1f5aaa6b6522d 100644
+--- a/src/functions/supportsTLD.ts
++++ b/src/functions/supportsTLD.ts
+@@ -15,7 +15,7 @@ export default async function (
+     const labels = name.split('.')
+     const tld = labels[labels.length - 1]
+ 
+-    if (tld === 'eth') return true
++    if (tld === 'mxc') return true
+ 
+     const tldOwner = await getOwner(tld, 'registry')
+     if (!tldOwner?.owner) return false
+diff --git a/src/functions/transferName.ts b/src/functions/transferName.ts
+index cd930586e169a6b43c7c0b5341f5095a90c91c87..827a0054ab57d11f2b74313483f8f6e894ecd46f 100644
+--- a/src/functions/transferName.ts
++++ b/src/functions/transferName.ts
+@@ -27,7 +27,7 @@ export default async function (
+         signer,
+       )
+       const labels = name.split('.')
+-      if (labels.length > 2 || labels[labels.length - 1] !== 'eth') {
++      if (labels.length > 2 || labels[labels.length - 1] !== 'mxc') {
+         throw new Error('Invalid name for baseRegistrar')
+       }
+       const tokenId = solidityKeccak256(['string'], [labels[0]])
+diff --git a/src/utils/validation.ts b/src/utils/validation.ts
+index 10ba29a1ca151261c2875cdc51a589f00b6130b9..82cdd1e3b9e0d4f8aadf7425b0b8e2e083b37033 100644
+--- a/src/utils/validation.ts
++++ b/src/utils/validation.ts
+@@ -42,7 +42,7 @@ export const parseInput = (input: string): ParsedInputResult => {
+ 
+   const labels = nameReference.split('.')
+   const tld = labels[labels.length - 1]
+-  const isETH = tld === 'eth'
++  const isETH = tld === 'mxc'
+   const labelDataArray = split(nameReference)
+   const isShort =
+     (labelDataArray[0].output?.length || 0) < MINIMUM_DOT_ETH_CHARS
+@@ -72,4 +72,4 @@ export const parseInput = (input: string): ParsedInputResult => {
+ }
+ 
+ export const checkIsDotEth = (labels: string[]) =>
+-  labels.length === 2 && labels[1] === 'eth'
++  labels.length === 2 && labels[1] === 'mxc'
