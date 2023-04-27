@@ -195,7 +195,7 @@ export const Header = () => {
             </BaseLink>
           )}
         >
-          <MXCLOGO height={space['12']} width={'100'} />
+          <MXCLOGO height={space['12']} width="100" />
         </ConditionalWrapper>
         {router.asPath !== '/' && breakpoints.sm && (
           <>

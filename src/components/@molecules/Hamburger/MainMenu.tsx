@@ -4,12 +4,11 @@ import styled, { css } from 'styled-components'
 import { useFeeData } from 'wagmi'
 
 import {
-  CurrencyToggle,
+  // CurrencyToggle,
   LanguageSVG,
   RightChevronSVG,
   Spinner,
-  Typography,
-  WalletSVG,
+  Typography, // WalletSVG,
   mq,
 } from '@ensdomains/thorin'
 
@@ -26,7 +25,6 @@ import { useChainName } from '@app/hooks/useChainName'
 import { routes } from '@app/routes'
 import { useGraphOutOfSync } from '@app/utils/SyncProvider'
 import { makeDisplay } from '@app/utils/currency'
-import useUserConfig from '@app/utils/useUserConfig'
 
 const Container = styled.div(
   ({ theme }) => css`
@@ -256,7 +254,7 @@ const MainMenu = ({
 }) => {
   const { t, i18n } = useTranslation('common')
   const language = i18n.resolvedLanguage || 'en'
-  const { userConfig, setCurrency } = useUserConfig()
+  // const { userConfig, setCurrency } = useUserConfig()
 
   const handleOpenFeedbackForm = () => {
     setHasFeedbackForm(true)
@@ -278,20 +276,6 @@ const MainMenu = ({
             <RightChevronSVG />
           </div>
         </HoverableSettingsItem>
-        {/*<SettingsItem>*/}
-        {/*  <div>*/}
-        {/*    <WalletSVG />*/}
-        {/*    <Typography weight="bold">{t('navigation.currency')}</Typography>*/}
-        {/*  </div>*/}
-        {/*  <div>*/}
-        {/*    <CurrencyToggle*/}
-        {/*      size="extraSmall"*/}
-        {/*      fiat={userConfig.fiat}*/}
-        {/*      checked={userConfig.currency === 'fiat'}*/}
-        {/*      onChange={(e) => setCurrency(e.target.checked ? 'fiat' : 'eth')}*/}
-        {/*    />*/}
-        {/*  </div>*/}
-        {/*</SettingsItem>*/}
       </SettingsSection>
       <RoutesSection>
         {disconnectedRoutes.map((route) => {

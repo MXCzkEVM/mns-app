@@ -209,7 +209,7 @@ const ExtendNames = ({ data: { names, isSelf }, dispatch, onDismiss }: Props) =>
   const duration = yearsToSeconds(years)
 
   const { userConfig, setCurrency } = useUserConfig()
-  const currencyDisplay = userConfig.currency === 'fiat' ? userConfig.fiat : 'eth'
+  const currencyDisplay = userConfig.currency === 'fiat' ? userConfig.fiat : 'MXC'
 
   const { total: rentFee, loading: priceLoading } = usePrice(names, false)
 
@@ -283,7 +283,7 @@ const ExtendNames = ({ data: { names, isSelf }, dispatch, onDismiss }: Props) =>
                 <CurrencyToggle
                   size="small"
                   checked={userConfig.currency === 'fiat'}
-                  onChange={(e) => setCurrency(e.target.checked ? 'fiat' : 'eth')}
+                  onChange={(e) => setCurrency(e.target.checked ? 'fiat' : 'MXC')}
                   data-testid="extend-names-currency-toggle"
                 />
               </OptionBar>

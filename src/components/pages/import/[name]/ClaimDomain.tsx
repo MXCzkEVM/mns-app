@@ -180,7 +180,7 @@ export const ClaimDomain = ({
       <Spacer $height="4" />
       <GreyBox>
         <Typography>{t('claimDomain.networkEst')}</Typography>
-        <Typography>{gasEstimate?.gasCostEth?.toString()?.substring(0, 6)} ETH</Typography>
+        <Typography>{gasEstimate?.gasCostEth?.toString()?.substring(0, 6)} MXC</Typography>
       </GreyBox>
       <Spacer $height="4" />
       {syncWarning ? (

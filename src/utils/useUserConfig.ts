@@ -5,7 +5,7 @@ const useUserConfig = () => {
   const [userConfig, setUserConfig] = useLocalStorage<UserConfig>('userConfig', {
     theme: 'light',
     fiat: 'usd',
-    currency: 'eth',
+    currency: 'MXC',
   })
 
   const setTheme = (theme: UserTheme) => setUserConfig((prev) => ({ ...prev, theme }))
