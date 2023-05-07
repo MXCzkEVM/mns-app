@@ -279,9 +279,9 @@ const Profile = ({ nameDetails, callback, registrationData, resolverExists }: Pr
           src={avatarSrc}
           isOpen={isAvatarDropdownOpen}
           onSelectOption={setModalOption}
-          onAvatarChange={(avatar) => setAvatar(avatar)}
+          // onAvatarChange={(avatar) => setAvatar(avatar)}
           onAvatarFileChange={(file) => setAvatarFile(file)}
-          onAvatarSrcChange={(src) => setAvatarSrc(src)}
+          // onAvatarSrcChange={(src) => setAvatarSrc(src)}
           setIsOpen={setIsAvatarDropdownOpen}
         />
         {records.map((field, index) =>

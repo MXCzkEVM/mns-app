@@ -8,10 +8,10 @@ import { cacheableComponentStyles } from '@app/components/@atoms/CacheableCompon
 import { DisabledButtonWithTooltip } from '@app/components/@molecules/DisabledButtonWithTooltip'
 import { Outlink } from '@app/components/Outlink'
 import RecordItem from '@app/components/RecordItem'
-import { useChainId } from '@app/hooks/useChainId'
+// import { useChainId } from '@app/hooks/useChainId'
+// import { canEditRecordsWhenWrappedCalc } from '@app/utils/utils';
 import { useTransactionFlow } from '@app/transaction-flow/TransactionFlowProvider'
 import { getContentHashLink } from '@app/utils/contenthash'
-import { canEditRecordsWhenWrappedCalc } from '@app/utils/utils'
 
 import { TabWrapper as OriginalTabWrapper } from '../../TabWrapper'
 
@@ -137,7 +137,9 @@ export const RecordsTab = ({
   abi,
   canEdit,
   isCached,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   isWrapped,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   resolverAddress,
 }: {
   name: string
@@ -179,13 +181,14 @@ export const RecordsTab = ({
   const handleShowEditor = () =>
     showAdvancedEditorInput(`advanced-editor-${name}`, { name }, { disableBackgroundClick: true })
 
-  const chainId = useChainId()
+  // const chainId = useChainId()
 
-  const canEditRecordsWhenWrapped = canEditRecordsWhenWrappedCalc(
-    isWrapped,
-    resolverAddress,
-    chainId,
-  )
+  // const canEditRecordsWhenWrapped = canEditRecordsWhenWrappedCalc(
+  //   isWrapped,
+  //   resolverAddress,
+  //   chainId,
+  // )
+  const canEditRecordsWhenWrapped = true
 
   return (
     <TabWrapper $isCached={isCached} data-testid="records-tab">

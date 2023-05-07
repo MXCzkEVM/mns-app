@@ -64,14 +64,16 @@ const SelectPrimaryName = ({ data: { address, existingPrimary }, dispatch, onDis
   const { data, fetchNextPage, isLoading } = useInfiniteQuery(
     [address, 'primaryNameOptions'],
     async ({ pageParam }: { pageParam?: string }) => {
-      const { domains } = await gqlInstance.client.request(
+      const { account } = await gqlInstance.client.request(
         gqlInstance.gql`
-      query getEthRecordAvailableNames($address: String!, $lastID: String, $size: Int!) {
-        domains(first: $size, where: { id_gt: $lastID, resolvedAddress: $address }) {
-          id
-          name
-        }
-      }
+          query getNames($address: String!, $lastID: String, $size: Int!) {
+            account(id: $address) {
+              wrappedDomains(first: $size, where: { id_gt: $lastID}) { 
+                id
+                name
+              }
+            }
+          }
     `,
         {
           address: address.toLowerCase(),
@@ -79,10 +81,11 @@ const SelectPrimaryName = ({ data: { address, existingPrimary }, dispatch, onDis
           size: querySize,
         },
       )
-
+      const domains = account.wrappedDomains
       if (!domains) return []
       return domains
         .map((domain: any) => {
+          console.log(domain)
           const decryptedName = decryptName(domain.name)
           if (decryptedName.includes('[')) return null
           return {

@@ -1,43 +1,45 @@
-import type { BigNumber } from 'ethers'
-import { Dispatch, SetStateAction, useEffect, useState } from 'react'
-import { useTranslation } from 'react-i18next'
-import usePrevious from 'react-use/lib/usePrevious'
-import styled, { css } from 'styled-components'
-import { useBalance } from 'wagmi'
+import type { BigNumber } from "ethers";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import usePrevious from "react-use/lib/usePrevious";
+import styled, { css } from "styled-components";
+import { useBalance } from "wagmi";
 
 import {
   Button,
   Field,
   Heading,
   Helper,
+  mq,
   RadioButton,
   RadioButtonGroup,
   Toggle,
-  Typography,
-  mq,
-} from '@ensdomains/thorin'
+  Typography
+} from "@ensdomains/thorin";
 
-import MobileFullWidth from '@app/components/@atoms/MobileFullWidth'
-import { PlusMinusControl } from '@app/components/@atoms/PlusMinusControl/PlusMinusControl'
-import { RegistrationTimeComparisonBanner } from '@app/components/@atoms/RegistrationTimeComparisonBanner/RegistrationTimeComparisonBanner'
-import { Spacer } from '@app/components/@atoms/Spacer'
-import { Card } from '@app/components/Card'
-import { ConnectButton } from '@app/components/ConnectButton'
-import { useAccountSafely } from '@app/hooks/useAccountSafely'
-import { useContractAddress } from '@app/hooks/useContractAddress'
-import { useEstimateFullRegistration } from '@app/hooks/useEstimateRegistration'
-import { useNameDetails } from '@app/hooks/useNameDetails'
-import { useBreakpoint } from '@app/utils/BreakpointProvider'
+import MobileFullWidth from "@app/components/@atoms/MobileFullWidth";
+import { PlusMinusControl } from "@app/components/@atoms/PlusMinusControl/PlusMinusControl";
+import {
+  RegistrationTimeComparisonBanner
+} from "@app/components/@atoms/RegistrationTimeComparisonBanner/RegistrationTimeComparisonBanner";
+import { Spacer } from "@app/components/@atoms/Spacer";
+import { Card } from "@app/components/Card";
+import { ConnectButton } from "@app/components/ConnectButton";
+import { useAccountSafely } from "@app/hooks/useAccountSafely";
+import { useContractAddress } from "@app/hooks/useContractAddress";
+import { useEstimateFullRegistration } from "@app/hooks/useEstimateRegistration";
+import { useNameDetails } from "@app/hooks/useNameDetails";
+import { useBreakpoint } from "@app/utils/BreakpointProvider";
 
-import FullInvoice from '../../FullInvoice'
+import FullInvoice from "../../FullInvoice";
 import {
   MoonpayTransactionStatus,
   PaymentMethod,
   RegistrationReducerDataItem,
-  RegistrationStepData,
-} from '../../types'
-import { useMoonpayRegistration } from '../../useMoonpayRegistration'
-import TemporaryPremium from './TemporaryPremium'
+  RegistrationStepData
+} from "../../types";
+import { useMoonpayRegistration } from "../../useMoonpayRegistration";
+import TemporaryPremium from "./TemporaryPremium";
 
 const StyledCard = styled(Card)(
   ({ theme }) => css`
@@ -327,7 +329,7 @@ export const ActionButton = ({
       </Button>
     )
   }
-  if (balance?.value.lt(totalRequiredBalance) && paymentMethodChoice === PaymentMethod.ethereum) {
+  if (balance?.value.lt(totalRequiredBalance) && paymentMethodChoice === PaymentMethod.mxc) {
     return (
       <Button data-testid="next-button" disabled>
         {t('steps.pricing.insufficientBalance')}
@@ -385,14 +387,14 @@ const Pricing = ({
   const previousMoonpayTransactionStatus = usePrevious(moonpayTransactionStatus)
 
   const [paymentMethodChoice, setPaymentMethodChoice] = useState<PaymentMethod | ''>(
-    hasPendingMoonpayTransaction ? PaymentMethod.moonpay : '',
+    hasPendingMoonpayTransaction ? PaymentMethod.moonpay : PaymentMethod.mxc,
   )
 
   // Keep radio button choice up to date
   useEffect(() => {
     if (moonpayTransactionStatus) {
       setPaymentMethodChoice(
-        hasPendingMoonpayTransaction || hasFailedMoonpayTransaction ? PaymentMethod.moonpay : '',
+        hasPendingMoonpayTransaction || hasFailedMoonpayTransaction ? PaymentMethod.moonpay : PaymentMethod.mxc,
       )
     }
   }, [

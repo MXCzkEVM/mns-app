@@ -93,8 +93,8 @@ type Props = {
   error?: boolean
   src?: string
   onSelectOption?: (value: AvatarClickType) => void
-  onAvatarChange?: (avatar?: string) => void
-  onAvatarSrcChange?: (src?: string) => void
+  // onAvatarChange?: (avatar?: string) => void
+  // onAvatarSrcChange?: (src?: string) => void
   onAvatarFileChange?: (file?: File) => void
 } & PickedDropdownProps
 
@@ -104,80 +104,81 @@ const AvatarButton = ({
   error,
   src,
   onSelectOption,
-  onAvatarChange,
-  onAvatarSrcChange,
+  // onAvatarChange,
+  // onAvatarSrcChange,
   onAvatarFileChange,
-  isOpen,
-  setIsOpen,
-}: Props) => {
-  const { t } = useTranslation('transactionFlow')
+}: // isOpen,
+// setIsOpen,
+Props) => {
+  // const { t } = useTranslation('transactionFlow')
 
   const fileInputRef = useRef<HTMLInputElement>(null)
-  const handleSelectOption = (value: AvatarClickType | 'remove') => () => {
-    if (value === 'remove') {
-      onAvatarChange?.(undefined)
-      onAvatarSrcChange?.(undefined)
-    } else if (value === 'upload') {
-      fileInputRef.current?.click()
-    } else {
-      onSelectOption?.(value)
-    }
-  }
+  // const handleSelectOption = (value: AvatarClickType | 'remove') => () => {
+  //   if (value === 'remove') {
+  //     onAvatarChange?.(undefined)
+  //     onAvatarSrcChange?.(undefined)
+  //   } else if (value === 'upload') {
+  //     fileInputRef.current?.click()
+  //   } else {
+  //     onSelectOption?.(value)
+  //   }
+  // }
 
-  const dropdownProps = setIsOpen
-    ? ({ isOpen, setIsOpen } as { isOpen: boolean; setIsOpen: Dispatch<SetStateAction<boolean>> })
-    : ({} as { isOpen: never; setIsOpen: never })
+  // const dropdownProps = setIsOpen
+  //   ? ({ isOpen, setIsOpen } as { isOpen: boolean; setIsOpen: Dispatch<SetStateAction<boolean>> })
+  //   : ({} as { isOpen: never; setIsOpen: never })
 
   return (
-    <LegacyDropdown
-      items={
-        [
-          {
-            label: t('input.profileEditor.tabs.avatar.dropdown.selectNFT'),
-            color: 'black',
-            onClick: handleSelectOption('nft'),
-          },
-          {
-            label: t('input.profileEditor.tabs.avatar.dropdown.uploadImage'),
-            color: 'black',
-            onClick: handleSelectOption('upload'),
-          },
-          ...(validated
-            ? [
-                {
-                  label: t('action.remove', { ns: 'common' }),
-                  color: 'red',
-                  onClick: handleSelectOption('remove'),
-                },
-              ]
-            : []),
-        ] as DropdownItem[]
-      }
-      keepMenuOnTop
-      shortThrow
-      {...dropdownProps}
-    >
-      <Container $validated={validated} $error={error} $dirty={dirty} type="button">
-        <Avatar label="profile-button-avatar" src={src} noBorder />
-        {!validated && !error && (
-          <IconMask>
-            <CameraIcon />
-          </IconMask>
-        )}
-        <input
-          type="file"
-          style={{ display: 'none' }}
-          accept="image/*"
-          ref={fileInputRef}
-          onChange={(e) => {
-            if (e.target.files?.[0]) {
-              onSelectOption?.('upload')
-              onAvatarFileChange?.(e.target.files[0])
-            }
-          }}
-        />
-      </Container>
-    </LegacyDropdown>
+    <Container $validated={validated} $error={error} $dirty={dirty} type="button">
+      <Avatar label="profile-button-avatar" src={src} noBorder />
+      {!validated && !error && (
+        <IconMask>
+          <CameraIcon />
+        </IconMask>
+      )}
+      <input
+        disabled
+        type="file"
+        style={{ display: 'none' }}
+        accept="image/*"
+        ref={fileInputRef}
+        onChange={(e) => {
+          if (e.target.files?.[0]) {
+            onSelectOption?.('upload')
+            onAvatarFileChange?.(e.target.files[0])
+          }
+        }}
+      />
+    </Container>
+    // <LegacyDropdown
+    //   items={
+    //     [
+    //       {
+    //         label: t('input.profileEditor.tabs.avatar.dropdown.selectNFT'),
+    //         color: 'black',
+    //         onClick: handleSelectOption('nft'),
+    //       },
+    //       {
+    //         label: t('input.profileEditor.tabs.avatar.dropdown.uploadImage'),
+    //         color: 'black',
+    //         onClick: handleSelectOption('upload'),
+    //       },
+    //       ...(validated
+    //         ? [
+    //             {
+    //               label: t('action.remove', { ns: 'common' }),
+    //               color: 'red',
+    //               onClick: handleSelectOption('remove'),
+    //             },
+    //           ]
+    //         : []),
+    //     ] as DropdownItem[]
+    //   }
+    //   keepMenuOnTop
+    //   shortThrow
+    //   {...dropdownProps}
+    // >
+    // </LegacyDropdown>
   )
 }
 

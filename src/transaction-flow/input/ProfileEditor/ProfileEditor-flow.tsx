@@ -294,9 +294,9 @@ const ProfileEditor = ({ data = {}, transactions = [], dispatch, onDismiss }: Pr
                       control={control}
                       src={avatarSrc}
                       onSelectOption={(option) => setView(option)}
-                      onAvatarChange={(avatar) => setAvatar(avatar)}
+                      // onAvatarChange={(avatar) => setAvatar(avatar)}
                       onAvatarFileChange={(file) => setAvatarFile(file)}
-                      onAvatarSrcChange={(src) => setAvatarSrc(src)}
+                      // onAvatarSrcChange={(src) => setAvatarSrc(src)}
                     />
                   </AvatarWrapper>
                   {profileRecords.map((field, index) =>
