@@ -50,9 +50,10 @@ export const useNamesFromAddress = ({
   const { data, isLoading, status, refetch } = useQuery(
     useQueryKeys().namesFromAddress(address),
     () =>
+      // @ts-ignore
       getNames({
         address: address!,
-        type: 'all',
+        type: 'wrappedOwner',
         orderBy: 'labelName',
         orderDirection: 'desc',
       }).then((d) => d || null),
