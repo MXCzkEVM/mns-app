@@ -1,12 +1,13 @@
-import { ComponentProps, Dispatch, SetStateAction, useRef } from 'react'
-import { useTranslation } from 'react-i18next'
+// import { ComponentProps, Dispatch, SetStateAction, useRef } from 'react'
+import { ComponentProps, useRef } from 'react'
+// import { useTranslation } from 'react-i18next'
+// import { DropdownItem } from '@ensdomains/thorin/dist/types/components/molecules/Dropdown/Dropdown'
+// import { LegacyDropdown } from '@app/omponents/@molecules/LegacyDropdown/LegacyDropdown'
 import styled, { css } from 'styled-components'
 
 import { Avatar, Dropdown } from '@ensdomains/thorin'
-import { DropdownItem } from '@ensdomains/thorin/dist/types/components/molecules/Dropdown/Dropdown'
 
 import CameraIcon from '@app/assets/Camera.svg'
-import { LegacyDropdown } from '@app/components/@molecules/LegacyDropdown/LegacyDropdown'
 
 const Container = styled.button<{ $error?: boolean; $validated?: boolean; $dirty?: boolean }>(
   ({ theme, $validated, $dirty, $error }) => css`
