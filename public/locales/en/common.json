@@ -180,7 +180,8 @@
       "changePermissions": "Change permissions",
       "syncManager": "Sync manager",
       "updateProfileRecords": "Update profile",
-      "resetProfile": "Reset profile"
+      "resetProfile": "Reset profile",
+      "setHexagonName": "Set MEP1002 Hexagon Name"
     },
     "info": {
       "sendName": "Set the controller and registrant of the name",
@@ -222,7 +223,8 @@
       "duration": "Duration",
       "cost": "Cost",
       "update": "Update",
-      "resolver": "Resolver"
+      "resolver": "Resolver",
+      "h3Index": "H3 Index"
     },
     "itemValue": {
       "records_one": "{{count}} record",

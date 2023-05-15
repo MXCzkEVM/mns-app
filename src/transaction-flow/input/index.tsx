@@ -10,6 +10,7 @@ import type { Props as CreateSubnameProps } from './CreateSubname-flow'
 import type { Props as DeleteEmancipatedSubnameWarningProps } from './DeleteEmancipatedSubnameWarning/DeleteEmancipatedSubnameWarning-flow'
 import type { Props as EditResolverProps } from './EditResolver/EditResolver-flow'
 import type { Props as ExtendNamesProps } from './ExtendNames/ExtendNames-flow'
+import type { Props as MEP1002EditorProps } from './MEP1002Editor/MEP1002Editor-flow'
 import type { Props as ProfileEditorProps } from './ProfileEditor/ProfileEditor-flow'
 import type { Props as RevokePermissionsProps } from './RevokePermissions/RevokePermissions-flow'
 import type { Props as SelectPrimaryNameProps } from './SelectPrimaryName-flow'
@@ -52,10 +53,11 @@ const SendName = dynamicHelper<SendNameProps>('SendName')
 const RevokePermissions = dynamicHelper<RevokePermissionsProps>(
   'RevokePermissions/RevokePermissions',
 )
-const UnknownLabels = dynamicHelper<UnknownLabelsProps>('UnknownLabels/UnknownLabels')
+const UnknownLabels = dynamicHelper<UnknownLabelsProps>('MEP1002Editor/MEP1002Editor')
 const DeleteEmancipatedSubnameWarning = dynamicHelper<DeleteEmancipatedSubnameWarningProps>(
   'DeleteEmancipatedSubnameWarning/DeleteEmancipatedSubnameWarning',
 )
+const MEP1002Editor = dynamicHelper<MEP1002EditorProps>('MEP1002Editor/MEP1002Editor')
 
 export const DataInputComponents = {
   EditResolver,
@@ -70,6 +72,7 @@ export const DataInputComponents = {
   RevokePermissions,
   UnknownLabels,
   DeleteEmancipatedSubnameWarning,
+  MEP1002Editor,
 }
 
 export type DataInputName = keyof typeof DataInputComponents

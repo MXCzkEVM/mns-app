@@ -46,6 +46,7 @@ export const useProfileActions = ({
   const { createTransactionFlow, prepareDataInput } = useTransactionFlow()
   const showUnknownLabelsInput = prepareDataInput('UnknownLabels')
   const showProfileEditorInput = prepareDataInput('ProfileEditor')
+  const showMEP1002EditorInput = prepareDataInput('MEP1002Editor')
   const showDeleteEmancipatedSubnameWarningInput = prepareDataInput(
     'DeleteEmancipatedSubnameWarning',
   )
@@ -100,6 +101,12 @@ export const useProfileActions = ({
             { name },
             { disableBackgroundClick: true },
           ),
+      })
+      // MEP1002
+      // const encoded = ethers.utils.defaultAbiCoder.encode(['string'], values)
+      actions.push({
+        label: t('tabs.profile.actions.setToMEP1002Hexagon.label'),
+        onClick: () => showMEP1002EditorInput('setToMEP1002Hexagon', { name }),
       })
     }
 

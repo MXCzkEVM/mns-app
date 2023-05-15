@@ -170,7 +170,8 @@
       "transferName": "转移名称",
       "changePermissions": "更改权限",
       "syncManager": "同步管理员",
-      "updateProfileRecords": "更新个人资料"
+      "updateProfileRecords": "更新个人资料",
+      "setHexagonName": "设置MEP1002六边形名称"
     },
     "info": {
       "sendName": "设置名称的管理员和注册人",

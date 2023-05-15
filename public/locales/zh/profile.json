@@ -27,6 +27,11 @@
           "title": "设置您的主名",
           "description": "如果将该名称设置为主名，ETH 地址记录必须与此地址相匹配。"
         },
+        "setToMEP1002Hexagon": {
+          "label": "设置为MEP1002六边形域名",
+          "title": "设置为MEP1002六边形域名",
+          "description": "如果将该名称设置为MEP1002六边形域名。"
+        },
         "deleteSubname": {
           "label": "删除子名称"
         },

@@ -2,7 +2,7 @@
   "name": "ens-app-v2",
   "version": "0.1.123",
   "scripts": {
-    "dev": "NODE_NO_WARNINGS=1 next dev",
+    "dev": "next dev",
     "dev:https": "next-dev-https --https --qr --port 3000",
     "dev:nlocal": "NEXT_PUBLIC_PROVIDER=http://localhost:8545 NEXT_PUBLIC_AVUP_ENDPOINT=http://localhost:8787 pnpm dev",
     "dev:localname": "NEXT_PUBLIC_PROVIDER=\"http://$(\"hostname\"):8545\" && NEXT_PUBLIC_AVUP_ENDPOINT=\"http://$(\"hostname\"):8787\" && NEXT_PUBLIC_GRAPH_URI=\"http://$(\"hostname\"):8000/subgraphs/name/graphprotocol/ens\" && pnpm dev",
@@ -86,6 +86,7 @@
     "calendar-link": "^2.2.0",
     "dns-packet": "^5.4.0",
     "glob": "^8.0.3",
+    "h3-js": "^4.1.0",
     "i18next": "^21.9.1",
     "i18next-browser-languagedetector": "^6.1.5",
     "i18next-http-backend": "^1.4.1",
