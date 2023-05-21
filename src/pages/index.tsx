@@ -8,6 +8,7 @@ import FaucetBanner from '@app/components/@molecules/FaucetBanner'
 import Hamburger from '@app/components/@molecules/Hamburger/Hamburger'
 import { SearchInput } from '@app/components/@molecules/SearchInput/SearchInput'
 import { LeadingHeading } from '@app/components/LeadingHeading'
+import { SupportButton } from '@app/components/SupportButton'
 
 import ENSFull from '../assets/ENSFull.svg'
 
@@ -98,6 +99,7 @@ export default function Page() {
         {/* This script will check all MXC operations and if the system experiences any downtime It will notify with a small notification */}
         <script src="https://mxc.instatus.com/en/13076080/widget/script.js" async />
       </Head>
+      <SupportButton />
       <StyledLeadingHeading>
         <LogoAndLanguage>
           <StyledENS as={ENSFull} />
