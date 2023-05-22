@@ -95,6 +95,8 @@ export default function Page() {
     <>
       <Head>
         <title>MNS</title>
+        {/* This script will check all MXC operations and if the system experiences any downtime It will notify with a small notification */}
+        <script src="https://mxc.instatus.com/en/13076080/widget/script.js" async />
       </Head>
       <StyledLeadingHeading>
         <LogoAndLanguage>
