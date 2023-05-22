@@ -46,8 +46,9 @@ export function SupportButton() {
     if (state) {
       const newWindow = window.open('https://t.me/mxcchatgpt_bot')
       if (newWindow) newWindow.opener = null
+      setState(false)
     } else {
-      setState(!state)
+      setState(true)
     }
   }
 
