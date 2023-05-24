@@ -1,14 +1,17 @@
-import React, { ButtonHTMLAttributes, useState } from 'react'
+import React, { ButtonHTMLAttributes, useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 const showMessageBackgroundColor = '#1568E5'
 const smallButtonBackgroundColor = '#FD3944'
 
 const StyledButton = styled.button<
-  ButtonHTMLAttributes<HTMLButtonElement> & { showMessage?: boolean }
+  ButtonHTMLAttributes<HTMLButtonElement> & {
+    showMessage?: boolean
+    moveUp: boolean
+  }
 >`
   position: fixed;
-  bottom: 20px;
+  bottom: ${({ moveUp }) => (moveUp ? '80px' : '20px')};
   right: 20px;
   display: flex;
   align-items: center;
@@ -41,6 +44,10 @@ const StyledButton = styled.button<
 
 export function SupportButton() {
   const [state, setState] = useState(false)
+  const [moveUp, setMoveUp] = useState(false)
+  useEffect(function mount() {
+    setMoveUp(window.innerWidth < 640)
+  })
 
   const handleClick = () => {
     if (state) {
@@ -53,7 +60,7 @@ export function SupportButton() {
   }
 
   return (
-    <StyledButton showMessage={state} onClick={handleClick}>
+    <StyledButton moveUp={moveUp} showMessage={state} onClick={handleClick}>
       <span>{state ? 'Need help ?' : '1'}</span>
     </StyledButton>
   )
