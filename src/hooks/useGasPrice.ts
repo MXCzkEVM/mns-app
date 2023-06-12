@@ -10,8 +10,8 @@ const useGasPrice = () => {
 
   useEffect(() => {
     if (data) {
-      // setGasPrice(data.lastBaseFeePerGas?.add(data.maxPriorityFeePerGas!))
-      setGasPrice(ethers.utils.parseUnits('3000', 'gwei'))
+      setGasPrice(data.lastBaseFeePerGas?.add(data.maxPriorityFeePerGas!))
+      // setGasPrice(ethers.utils.parseUnits('3000', 'gwei'))
     }
   }, [data])
 
