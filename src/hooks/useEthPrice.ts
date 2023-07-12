@@ -19,7 +19,7 @@ export const useEthPrice = () => {
   const { data, isLoading: loading } = useQuery(
     useQueryKeys().ethPrice,
     async () => {
-      if(chainId === 5167003) {
+      if (chainId === 18686) {
         return '0.02'
       }
       let address

@@ -49,6 +49,8 @@ export const RESOLVER_ADDRESSES: ResolverAddresses = {
   ],
   // eslint-disable-next-line @typescript-eslint/naming-convention
   '5167003': ['0x316a9C61e09D5b87bcaB18d08948D2B2A8d6b4A8'],
+  // eslint-disable-next-line @typescript-eslint/naming-convention
+  '18686': ['0x5325640Cc17A06a409d4f4b6af02A0120528c67E'],
 }
 
 export const NAMEWRAPPER_AWARE_RESOLVERS: ResolverAddresses = {
@@ -64,6 +66,8 @@ export const NAMEWRAPPER_AWARE_RESOLVERS: ResolverAddresses = {
   '1337': ['0x0E801D84Fa97b50751Dbf25036d067dCf18858bF'],
   // eslint-disable-next-line @typescript-eslint/naming-convention
   '5167003': ['0x61C48101ccE16653573e80c64b4bD4a4C3111Ce8'],
+  // eslint-disable-next-line @typescript-eslint/naming-convention
+  '18686': ['0xD1B70f92b310c3Fa95b83dB436E00a53e1f1f5d5'],
 }
 
 export const RESOLVER_INTERFACE_IDS = {
