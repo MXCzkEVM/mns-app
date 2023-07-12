@@ -2,7 +2,6 @@ import { getDefaultWallets } from '@rainbow-me/rainbowkit'
 import '@rainbow-me/rainbowkit/styles.css'
 import { DefaultOptions, QueryClient } from '@tanstack/react-query'
 import { ChainProviderFn } from '@wagmi/core'
-import { localhost } from '@wagmi/core/chains'
 import { configureChains, createClient } from 'wagmi'
 import { infuraProvider } from 'wagmi/providers/infura'
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
@@ -40,27 +39,27 @@ if (process.env.NEXT_PUBLIC_PROVIDER) {
 const { provider, chains } = configureChains(
   [
     {
-      id: 5167003,
-      name: 'MXC Wannsee',
+      id: 18686,
+      name: 'MXC Mainnet',
       nativeCurrency: { decimals: 18, name: 'MXC', symbol: 'MXC' },
-      network: 'MXC Wannsee',
+      network: 'MXC Mainnet',
       rpcUrls: {
         default: {
-          http: ['https://wannsee-rpc.mxc.com'],
-          webSocket: ['wss://wannsee-rpc.mxc.com'],
+          http: ['https://rpc.mxc.com'],
+          webSocket: ['wss://rpc.mxc.com'],
         },
-        public: { http: ['https://wannsee-rpc.mxc.com'] },
+        public: { http: ['https://rpc.mxc.com'] },
       },
       blockExplorers: {
         default: {
-          name: 'Wannsee Block Explorer',
-          url: 'https://wannsee-explorer.mxc.com/',
+          name: 'Mxc Block Explorer',
+          url: 'https://explorer.mxc.com/',
         },
       },
       contracts: {
         multicall3: {
-          address: '0x87A3645647cabb016705eddfD0f7787fEe9324BF',
-          blockCreated: 383161,
+          address: '0xfA9eBcEd32BaB3EA062f9853ACA66cC9B666fBB9',
+          blockCreated: 185,
         },
       },
     },
