@@ -33,6 +33,7 @@ tsconfig.tsbuildinfo
 
 # vercel
 .vercel
+vercel.*
 
 .yarn/*
 !.yarn/cache

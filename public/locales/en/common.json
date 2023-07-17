@@ -181,7 +181,8 @@
       "syncManager": "Sync manager",
       "updateProfileRecords": "Update profile",
       "resetProfile": "Reset profile",
-      "setHexagonName": "Set MEP1002 Hexagon Name"
+      "setHexagonName": "Set MEP1002 Hexagon Name",
+      "mintHexagon": "Mint MEP1002 Hexagon"
     },
     "info": {
       "sendName": "Set the controller and registrant of the name",

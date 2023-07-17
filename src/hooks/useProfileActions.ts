@@ -47,6 +47,7 @@ export const useProfileActions = ({
   const showUnknownLabelsInput = prepareDataInput('UnknownLabels')
   const showProfileEditorInput = prepareDataInput('ProfileEditor')
   const showMEP1002EditorInput = prepareDataInput('MEP1002Editor')
+  const showMEP1002MintInput = prepareDataInput('MEP1002Mint')
   const showDeleteEmancipatedSubnameWarningInput = prepareDataInput(
     'DeleteEmancipatedSubnameWarning',
   )
@@ -75,12 +76,12 @@ export const useProfileActions = ({
         transactions: setAsPrimaryTransactions,
         ...(setAsPrimaryTransactions.length > 1
           ? {
-              resumable: true,
-              intro: {
-                title: ['tabs.profile.actions.setAsPrimaryName.title', { ns: 'profile' }],
-                content: makeIntroItem('ChangePrimaryName', undefined),
-              },
-            }
+            resumable: true,
+            intro: {
+              title: ['tabs.profile.actions.setAsPrimaryName.title', { ns: 'profile' }],
+              content: makeIntroItem('ChangePrimaryName', undefined),
+            },
+          }
           : {}),
       }
       const key = `setPrimaryName-${name}-${address}`
@@ -102,7 +103,13 @@ export const useProfileActions = ({
             { disableBackgroundClick: true },
           ),
       })
+
       // MEP1002
+      actions.push({
+        label: t('tabs.profile.actions.mintToMEP1002Hexagon.label'),
+        onClick: () => showMEP1002MintInput('mintToMEP1002Hexagon', { name }),
+      })
+
       // const encoded = ethers.utils.defaultAbiCoder.encode(['string'], values)
       actions.push({
         label: t('tabs.profile.actions.setToMEP1002Hexagon.label'),
@@ -113,36 +120,36 @@ export const useProfileActions = ({
     if (subnameAbilities.canDelete && subnameAbilities.canDeleteContract) {
       const action = subnameAbilities.isPCCBurned
         ? {
-            label: t('tabs.profile.actions.deleteSubname.label'),
-            onClick: () => {
-              showDeleteEmancipatedSubnameWarningInput(
-                `delete-emancipated-subname-warning-${name}`,
-                { name },
-              )
-            },
-            red: true,
-            skip2LDEth: true,
-          }
+          label: t('tabs.profile.actions.deleteSubname.label'),
+          onClick: () => {
+            showDeleteEmancipatedSubnameWarningInput(
+              `delete-emancipated-subname-warning-${name}`,
+              { name },
+            )
+          },
+          red: true,
+          skip2LDEth: true,
+        }
         : {
-            label: t('tabs.profile.actions.deleteSubname.label'),
-            onClick: () =>
-              createTransactionFlow(`deleteSubname-${name}`, {
-                transactions: [
-                  makeTransactionItem('deleteSubname', {
-                    name,
-                    contract: subnameAbilities.canDeleteContract!,
-                    method: subnameAbilities.canDeleteMethod,
-                  }),
-                ],
-              }),
-            red: true,
-            skip2LDEth: true,
-          }
+          label: t('tabs.profile.actions.deleteSubname.label'),
+          onClick: () =>
+            createTransactionFlow(`deleteSubname-${name}`, {
+              transactions: [
+                makeTransactionItem('deleteSubname', {
+                  name,
+                  contract: subnameAbilities.canDeleteContract!,
+                  method: subnameAbilities.canDeleteMethod,
+                }),
+              ],
+            }),
+          red: true,
+          skip2LDEth: true,
+        }
       actions.push(action)
     } else if (subnameAbilities.canDeleteError) {
       actions.push({
         label: t('tabs.profile.actions.deleteSubname.label'),
-        onClick: () => {},
+        onClick: () => { },
         disabled: true,
         red: true,
         skip2LDEth: true,

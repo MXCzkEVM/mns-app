@@ -47,7 +47,9 @@
     "wrangle:list": "wrangler deployments list",
     "generate:sitemaps": "node ./generate-site-map.mjs",
     "enode": "ganache --wallet.mnemonic=\"test test test test test test test test test test test junk\" --chain.chainId 1337 --chain.networkId 1337 --chain.time 1659500634000",
-    "compose": "cp ./node_modules/@ensdomains/ens-test-env/src/docker-compose.yml ./docker-compose.yml"
+    "compose": "cp ./node_modules/@ensdomains/ens-test-env/src/docker-compose.yml ./docker-compose.yml",
+    "vercel:mainnet": "cp vercel.mainnet.json .vercel/project.json && cp .env.mainnet .env && vercel --prod",
+    "vercel:testnet": "cp vercel.testnet.json .vercel/project.json && cp .env.testnet .env && vercel --prod"
   },
   "dependencies": {
     "@ensdomains/address-encoder": "^0.2.21",

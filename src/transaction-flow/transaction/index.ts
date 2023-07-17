@@ -1,4 +1,6 @@
 import mep1002SetName from '@app/transaction-flow/transaction/mep1002SetName'
+import mep1002Mint from '@app/transaction-flow/transaction/mep1002Mint'
+
 
 import approveNameWrapper from './approveNameWrapper'
 import burnFuses from './burnFuses'
@@ -49,6 +51,7 @@ export const transactions = {
   syncManager,
   updateProfileRecords,
   mep1002SetName,
+  mep1002Mint
 }
 
 export type Transaction = typeof transactions
