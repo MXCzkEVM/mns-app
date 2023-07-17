@@ -1,4 +1,8 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 overrides:
   wrtc: https://registry.npmjs.org/@koush/wrtc/-/wrtc-0.5.2.tgz
@@ -4284,13 +4288,6 @@ packages:
       '@jridgewell/sourcemap-codec': registry.npmmirror.com/@jridgewell/sourcemap-codec@1.4.14
       '@jridgewell/trace-mapping': registry.npmmirror.com/@jridgewell/trace-mapping@0.3.17
 
-  /@jridgewell/source-map@0.3.2:
-    resolution: {integrity: sha512-m7O9o2uR8k2ObDysZYzdfhb08VuEml5oWGiosa1VdaPZ/A6QyPkAJuwN0Q1lhULOf6B7MtQmHENS743hWtCrgw==}
-    dependencies:
-      '@jridgewell/gen-mapping': 0.3.2
-      '@jridgewell/trace-mapping': 0.3.17
-    dev: true
-
   /@jridgewell/source-map@0.3.3:
     resolution: {integrity: sha512-b+fsZXeLYi9fEULmfBrhxn4IrPlINf8fiNarzTof004v3lFdntdwa9PF7vFJqm3mg7s+ScJMxXaE3Acp1irZcg==}
     dependencies:
@@ -7815,6 +7812,7 @@ packages:
 
   /@web3modal/standalone@2.1.1(react@17.0.2):
     resolution: {integrity: sha512-K06VkZqltLIBKpnLeM2oszRDSdLnwXJWCcItWEOkH4LDFQIiq8lSeLhcamuadRxRKF4ZyTSLHHJ5MFcMfZEHQQ==}
+    deprecated: This package has been deprecated in favor of @walletconnect/modal. Please read more at https://docs.walletconnect.com
     dependencies:
       '@web3modal/core': 2.1.1(react@17.0.2)
       '@web3modal/ui': 2.1.1(react@17.0.2)
@@ -8062,12 +8060,12 @@ packages:
       acorn-walk: registry.npmmirror.com/acorn-walk@7.2.0
     dev: true
 
-  /acorn-import-assertions@1.9.0(acorn@8.8.1):
+  /acorn-import-assertions@1.9.0(acorn@8.8.2):
     resolution: {integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==}
     peerDependencies:
       acorn: ^8
     dependencies:
-      acorn: 8.8.1
+      acorn: 8.8.2
 
   /acorn-jsx@5.3.2(acorn@7.4.1):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -9656,7 +9654,6 @@ packages:
     dependencies:
       base64-js: 1.5.1
       ieee754: 1.2.1
-    dev: true
 
   /bufferutil@4.0.5:
     resolution: {integrity: sha512-HTm14iMQKK2FjFLRTM5lAVcyaUzOnqbPtesFIvREgXpJHdQm8bWS+GkQgIkfaBYRHuCnea7w8UVNfwiAQhlr9A==}
@@ -11299,6 +11296,7 @@ packages:
 
   /eip1193-provider@1.0.1:
     resolution: {integrity: sha512-kSuqwQ26d7CzuS/t3yRXo2Su2cVH0QfvyKbr2H7Be7O5YDyIq4hQGCNTo5wRdP07bt+E2R/8nPCzey4ojBHf7g==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dependencies:
       '@json-rpc-tools/provider': 1.7.6
     transitivePeerDependencies:
@@ -12197,7 +12195,7 @@ packages:
     dependencies:
       eth-query: 2.1.2
       ethereumjs-tx: 1.3.7
-      ethereumjs-util: registry.npmmirror.com/ethereumjs-util@5.2.1
+      ethereumjs-util: 5.2.1
       ethjs-util: 0.1.6
       json-rpc-engine: 3.8.0
       pify: 2.3.0
@@ -12389,7 +12387,7 @@ packages:
     dependencies:
       async: 2.6.4
       buffer-xor: registry.npmmirror.com/buffer-xor@2.0.2
-      ethereumjs-util: registry.npmmirror.com/ethereumjs-util@7.1.5
+      ethereumjs-util: 7.1.5
       miller-rabin: registry.npmmirror.com/miller-rabin@4.0.1
     dev: false
 
@@ -12520,7 +12518,7 @@ packages:
       ethashjs: 0.0.8
       ethereumjs-block: 2.2.2
       ethereumjs-common: 1.5.2
-      ethereumjs-util: registry.npmmirror.com/ethereumjs-util@6.2.1
+      ethereumjs-util: 6.2.1
       flow-stoplight: 1.0.0
       level-mem: 3.0.1
       lru-cache: registry.npmmirror.com/lru-cache@5.1.1
@@ -12929,7 +12927,7 @@ packages:
     resolution: {integrity: sha512-w/ozOKR9Obk3qoWeY/WDi6MFta9AoMR+zud60mdnbniMcBxRuFJyDt2LdX/14A1UABeqk+Uk+LDfUpvoGKppZA==}
     engines: {node: '>=0.10.0'}
     dependencies:
-      debug: registry.npmmirror.com/debug@2.6.9
+      debug: 2.6.9
       define-property: 0.2.5
       extend-shallow: 2.0.1
       posix-character-classes: 0.1.1
@@ -13778,7 +13776,7 @@ packages:
     hasBin: true
     dependencies:
       async: 2.6.4
-      commander: registry.npmmirror.com/commander@2.20.3
+      commander: 2.20.3
       email-addresses: 3.1.0
       filenamify: 4.3.0
       find-cache-dir: 3.3.2
@@ -14334,7 +14332,7 @@ packages:
       he: 1.2.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.16.5
+      terser: 5.17.7
     dev: true
 
   /html-parse-stringify@3.0.1:
@@ -18229,7 +18227,7 @@ packages:
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.4
-      picocolors: registry.npmmirror.com/picocolors@1.0.0
+      picocolors: 1.0.0
       source-map-js: registry.npmmirror.com/source-map-js@1.0.2
 
   /postinstall-postinstall@2.1.0:
@@ -19743,7 +19741,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       base: 0.11.2
-      debug: registry.npmmirror.com/debug@2.6.9
+      debug: 2.6.9
       define-property: 0.2.5
       extend-shallow: 2.0.1
       map-cache: 0.2.2
@@ -20616,7 +20614,7 @@ packages:
       '@eth-optimism/contracts': 0.0.2-alpha.7
       '@eth-optimism/watcher': 0.0.1-alpha.8
       abi-decoder: 2.3.0
-      commander: registry.npmmirror.com/commander@5.1.0
+      commander: 5.1.0
       openzeppelin-solidity-2.3.0: /openzeppelin-solidity@2.3.0
       pretty-error: 2.1.2
       solidity-parser-antlr: 0.4.11
@@ -20633,7 +20631,7 @@ packages:
     hasBin: true
     dependencies:
       abi-decoder: 2.4.0
-      commander: registry.npmmirror.com/commander@8.3.0
+      commander: 8.3.0
       inquirer: 6.5.2
       inquirer-list-search-prompt: 1.0.2(inquirer@6.5.2)
       js-levenshtein: 1.1.6
@@ -20764,20 +20762,9 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
     dependencies:
-      acorn: 8.8.1
+      acorn: 8.8.2
       commander: 2.20.3
       source-map: 0.6.1
-      source-map-support: 0.5.21
-    dev: true
-
-  /terser@5.16.5:
-    resolution: {integrity: sha512-qcwfg4+RZa3YvlFh0qjifnzBHjKGNbtDo9yivMqMFDy9Q6FSaQWSB/j1xKhsoUFJIqDOM3TsN6D5xbrMrFcHbg==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      '@jridgewell/source-map': 0.3.2
-      acorn: 8.8.1
-      commander: 2.20.3
       source-map-support: 0.5.21
     dev: true
 
@@ -22233,8 +22220,8 @@ packages:
       '@webassemblyjs/ast': 1.11.6
       '@webassemblyjs/wasm-edit': 1.11.6
       '@webassemblyjs/wasm-parser': 1.11.6
-      acorn: 8.8.1
-      acorn-import-assertions: 1.9.0(acorn@8.8.1)
+      acorn: 8.8.2
+      acorn-import-assertions: 1.9.0(acorn@8.8.2)
       browserslist: 4.21.4
       chrome-trace-event: 1.0.3
       enhanced-resolve: 5.14.1
@@ -22687,7 +22674,7 @@ packages:
       use-sync-external-store: 1.2.0(react@17.0.2)
 
   github.com/ethereumjs/ethereumjs-abi/ee3994657fa7a427238e6ba92a84d0b529bbcde0:
-    resolution: {commit: ee3994657fa7a427238e6ba92a84d0b529bbcde0, repo: git+ssh://git@github.com/ethereumjs/ethereumjs-abi.git, type: git}
+    resolution: {tarball: https://codeload.github.com/ethereumjs/ethereumjs-abi/tar.gz/ee3994657fa7a427238e6ba92a84d0b529bbcde0}
     name: ethereumjs-abi
     version: 0.6.8
     dependencies:
@@ -23512,7 +23499,7 @@ packages:
     version: 4.0.0
     engines: {node: '>=5.10'}
     dependencies:
-      buffer: registry.npmmirror.com/buffer@6.0.3
+      buffer: 6.0.3
 
   registry.npmmirror.com/@solana/web3.js@1.73.3:
     resolution: {integrity: sha512-vHRMo589XEIpoujpE2sZZ1aMZvfA1ImKfNxobzEFyMb+H5j6mRRUXfdgWD0qJ0sm11e5BcBC7HPeRXJB+7f3Lg==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/@solana/web3.js/-/web3.js-1.73.3.tgz}
@@ -25383,26 +25370,6 @@ packages:
     dependencies:
       delayed-stream: registry.npmmirror.com/delayed-stream@1.0.0
 
-  registry.npmmirror.com/commander@2.20.3:
-    resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/commander/-/commander-2.20.3.tgz}
-    name: commander
-    version: 2.20.3
-    dev: true
-
-  registry.npmmirror.com/commander@5.1.0:
-    resolution: {integrity: sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/commander/-/commander-5.1.0.tgz}
-    name: commander
-    version: 5.1.0
-    engines: {node: '>= 6'}
-    dev: true
-
-  registry.npmmirror.com/commander@8.3.0:
-    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/commander/-/commander-8.3.0.tgz}
-    name: commander
-    version: 8.3.0
-    engines: {node: '>= 12'}
-    dev: true
-
   registry.npmmirror.com/constant-case@2.0.0:
     resolution: {integrity: sha512-eS0N9WwmjTqrOmR3o83F5vW8Z+9R1HnVz3xmzT2PMFug9ly+Au/fxRWlEBSb6LcZwspSsEn9Xs1uw9YgzAg1EQ==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/constant-case/-/constant-case-2.0.0.tgz}
     name: constant-case
@@ -25560,9 +25527,9 @@ packages:
       base-x: registry.npmmirror.com/base-x@3.0.9
       big-integer: registry.npmmirror.com/big-integer@1.6.36
       blakejs: registry.npmmirror.com/blakejs@1.2.1
-      bs58: registry.npmmirror.com/bs58@4.0.1
+      bs58: 4.0.1
       ripemd160-min: registry.npmmirror.com/ripemd160-min@0.0.6
-      safe-buffer: registry.npmmirror.com/safe-buffer@5.2.1
+      safe-buffer: 5.2.1
       sha3: registry.npmmirror.com/sha3@2.1.4
 
   registry.npmmirror.com/crypto-browserify@3.12.0:
@@ -26245,7 +26212,7 @@ packages:
     dependencies:
       bn.js: 5.2.1
       create-hash: registry.npmmirror.com/create-hash@1.2.0
-      elliptic: registry.npmmirror.com/elliptic@6.5.4
+      elliptic: 6.5.4
       ethereum-cryptography: registry.npmmirror.com/ethereum-cryptography@0.1.3
       rlp: registry.npmmirror.com/rlp@2.2.7
 
@@ -26845,7 +26812,7 @@ packages:
     dependencies:
       fs.realpath: registry.npmmirror.com/fs.realpath@1.0.0
       inflight: registry.npmmirror.com/inflight@1.0.6
-      inherits: registry.npmmirror.com/inherits@2.0.4
+      inherits: 2.0.4
       minimatch: registry.npmmirror.com/minimatch@3.1.2
       once: registry.npmmirror.com/once@1.4.0
       path-is-absolute: registry.npmmirror.com/path-is-absolute@1.0.1
@@ -28653,6 +28620,7 @@ packages:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/picocolors/-/picocolors-1.0.0.tgz}
     name: picocolors
     version: 1.0.0
+    dev: true
 
   registry.npmmirror.com/picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/picomatch/-/picomatch-2.3.1.tgz}
@@ -29037,7 +29005,7 @@ packages:
     dependencies:
       graceful-fs: 4.2.10
       micromatch: 3.1.10
-      readable-stream: registry.npmmirror.com/readable-stream@2.3.7
+      readable-stream: 2.3.7
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -29182,7 +29150,7 @@ packages:
     version: 2.0.2
     dependencies:
       hash-base: registry.npmmirror.com/hash-base@3.1.0
-      inherits: registry.npmmirror.com/inherits@2.0.4
+      inherits: 2.0.4
 
   registry.npmmirror.com/rlp@2.2.7:
     resolution: {integrity: sha512-d5gdPmgQ0Z+AklL2NVXr/IoSjNZFfTVvQWzL/AM2AOcSzYP2xjlb0AC8YyCLc41MSNf6P6QVtjgPdmVtzb+4lQ==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/rlp/-/rlp-2.2.7.tgz}
@@ -29415,7 +29383,7 @@ packages:
     name: sha3
     version: 2.1.4
     dependencies:
-      buffer: registry.npmmirror.com/buffer@6.0.3
+      buffer: 6.0.3
 
   registry.npmmirror.com/side-channel@1.0.4:
     resolution: {integrity: sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/side-channel/-/side-channel-1.0.4.tgz}
