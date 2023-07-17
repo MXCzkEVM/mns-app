@@ -32,6 +32,11 @@
           "title": "Set to MEP1002 Hexagon",
           "description": "Set this name to MEP1002 Hexagon, you must be the holder of MEP1002 Hexagon Naming Token"
         },
+        "mintToMEP1002Hexagon": {
+          "label": "Mint MEP1002 Hexago",
+          "title": "Mint MEP1002 Hexago",
+          "description": "Mint this MEP1002 Hexagon"
+        },
         "deleteSubname": {
           "label": "Delete subname"
         },

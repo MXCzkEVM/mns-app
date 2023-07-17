@@ -297,6 +297,11 @@
       "title": "Set name to MEP1002 Hexagon",
       "subtitle": "This will set the name to public MEP1002 Hexagon Map.",
       "h3index": "H3 Index of Hexagon"
+    },
+    "mintToMEP1002Hexagon": {
+      "title": "Mint MEP1002 Hexagon",
+      "subtitle": "This will mint a public MEP1002 Hexagon Map.",
+      "h3index": "H3 Index of Hexagon"
     }
   },
   "transaction": {

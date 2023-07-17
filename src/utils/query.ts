@@ -8,6 +8,9 @@ import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
 
 import { makePersistent } from '@app/utils/persist'
 
+const chain_id: string = process.env.NEXT_PUBLIC_NETWORK_CHAINID || "1"
+
+
 const providerArray: ChainProviderFn[] = []
 if (process.env.NEXT_PUBLIC_PROVIDER) {
   // for local testing
@@ -39,7 +42,7 @@ if (process.env.NEXT_PUBLIC_PROVIDER) {
 const { provider, chains } = configureChains(
   [
     {
-      id: 18686,
+      id: parseInt(chain_id),
       name: 'MXC Mainnet',
       nativeCurrency: { decimals: 18, name: 'MXC', symbol: 'MXC' },
       network: 'MXC Mainnet',

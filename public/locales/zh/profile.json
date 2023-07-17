@@ -32,6 +32,11 @@
           "title": "设置为MEP1002六边形域名",
           "description": "如果将该名称设置为MEP1002六边形域名。"
         },
+        "mintToMEP1002Hexagon": {
+          "label": "铸造MEP1002六边形域名",
+          "title": "铸造MEP1002六边形域名",
+          "description": "铸造该MEP1002六边形域名。"
+        },
         "deleteSubname": {
           "label": "删除子名称"
         },

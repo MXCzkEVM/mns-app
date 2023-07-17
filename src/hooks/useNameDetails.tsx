@@ -47,7 +47,7 @@ export const useNameDetails = (name: string) => {
   const profile: DetailedProfile | undefined = useMemo(() => {
     if (!baseProfile) return undefined
     baseProfile.isMigrated = true
-    console.log(baseProfile);
+    // console.log(baseProfile);
     return {
       ...baseProfile,
       records: {

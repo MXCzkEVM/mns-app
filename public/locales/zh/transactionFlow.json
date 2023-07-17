@@ -237,6 +237,11 @@
       "title": "将名称设置到六边形",
       "subtitle": "将名称设置到公开可检索的六边形地图上.",
       "h3index": "六边形的 H3 Index"
+    },
+    "mintToMEP1002Hexagon": {
+      "title": "铸造六边形",
+      "subtitle": "在地图上铸造一个公开可检索的六边形.",
+      "h3index": "六边形的 H3 Index"
     }
   },
   "transaction": {

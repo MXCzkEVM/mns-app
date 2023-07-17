@@ -85,7 +85,7 @@ const SelectPrimaryName = ({ data: { address, existingPrimary }, dispatch, onDis
       if (!domains) return []
       return domains
         .map((domain: any) => {
-          console.log(domain)
+          // console.log(domain)
           const decryptedName = decryptName(domain.name)
           if (decryptedName.includes('[')) return null
           return {
