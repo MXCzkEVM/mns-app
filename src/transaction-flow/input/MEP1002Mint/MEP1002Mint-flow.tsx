@@ -91,8 +91,8 @@ const MEP1002Mint = ({ data: { name }, dispatch, onDismiss }: Props) => {
 
   const handleSubmit = (data: Record<string, string>) => {
     queryClient.resetQueries({ exact: true, queryKey: ['validate', name] })
-    console.log(data,"data")
-    console.log(labels,"labels")
+    console.log(data, 'data')
+    console.log(labels, 'labels')
     // MEP1002
     dispatch({
       name: 'setTransactions',

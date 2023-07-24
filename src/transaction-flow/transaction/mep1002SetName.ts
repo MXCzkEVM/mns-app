@@ -8,7 +8,7 @@ import { ethers } from 'ethers'
 import type { TFunction } from 'react-i18next'
 
 import { PublicENS, Transaction, TransactionDisplayItem } from '@app/types'
-
+import contracts from '../../constants/addressConfig'
 import MEP1002Token from '../../constants/MEP1002Token.json'
 
 type Data = {
@@ -38,7 +38,7 @@ const displayItems = (
 
 export const labelhash = (input: string) => solidityKeccak256(['string'], [input])
 const transaction = async (signer: JsonRpcSigner, ens: PublicENS, data: Data) => {
-  const contract = new ethers.Contract(MEP1002Token.address, MEP1002Token.abi, signer)
+  const contract = new ethers.Contract(contracts.MEP1002, MEP1002Token.abi, signer)
   const { labels } = data
   const wrappedTokenId = namehash(`${labels.join('.')}`)
   return contract.populateTransaction.setName(
