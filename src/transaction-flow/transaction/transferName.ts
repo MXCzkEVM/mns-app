@@ -15,21 +15,21 @@ const displayItems = (
   { name, sendType, newOwner }: Data,
   t: TFunction<'translation', undefined>,
 ): TransactionDisplayItem[] => [
-  {
-    label: 'name',
-    value: name,
-    type: 'name',
-  },
-  {
-    label: 'action',
-    value: t(`name.${sendType}`),
-  },
-  {
-    label: 'to',
-    type: 'address',
-    value: newOwner,
-  },
-]
+    {
+      label: 'name',
+      value: name,
+      type: 'name',
+    },
+    {
+      label: 'action',
+      value: t(`name.${sendType}`),
+    },
+    {
+      label: 'to',
+      type: 'address',
+      value: newOwner,
+    },
+  ]
 
 const transaction = (signer: JsonRpcSigner, ens: PublicENS, data: Data) => {
   const tx = ens.transferName.populateTransaction(data.name, {

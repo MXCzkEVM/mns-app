@@ -48,8 +48,8 @@
     "generate:sitemaps": "node ./generate-site-map.mjs",
     "enode": "ganache --wallet.mnemonic=\"test test test test test test test test test test test junk\" --chain.chainId 1337 --chain.networkId 1337 --chain.time 1659500634000",
     "compose": "cp ./node_modules/@ensdomains/ens-test-env/src/docker-compose.yml ./docker-compose.yml",
-    "vercel:mainnet": "cp vercel.mainnet.json .vercel/project.json && cp .env.mainnet .env && vercel --prod",
-    "vercel:testnet": "cp vercel.testnet.json .vercel/project.json && cp .env.testnet .env && vercel --prod"
+    "vercel:mainnet": "cp .env.mainnet .env && rm -rf .vercel && mkdir .vercel && cp -a .vercel.mainnet/* .vercel/ && vercel build && vercel deploy --prebuilt",
+    "vercel:testnet": "cp .env.testnet .env && rm -rf .vercel && mkdir .vercel && cp -a .vercel.testnet/* .vercel/ && vercel build && vercel deploy --prebuilt"
   },
   "dependencies": {
     "@ensdomains/address-encoder": "^0.2.21",

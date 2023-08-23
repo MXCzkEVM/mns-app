@@ -8,7 +8,7 @@ import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
 
 import { makePersistent } from '@app/utils/persist'
 
-const chain_id: string = process.env.NEXT_PUBLIC_NETWORK_CHAINID || "1"
+import network from '../constants/Network'
 
 
 const providerArray: ChainProviderFn[] = []
@@ -41,31 +41,7 @@ if (process.env.NEXT_PUBLIC_PROVIDER) {
 
 const { provider, chains } = configureChains(
   [
-    {
-      id: parseInt(chain_id),
-      name: 'MXC Mainnet',
-      nativeCurrency: { decimals: 18, name: 'MXC', symbol: 'MXC' },
-      network: 'MXC Mainnet',
-      rpcUrls: {
-        default: {
-          http: ['https://rpc.mxc.com'],
-          webSocket: ['wss://rpc.mxc.com'],
-        },
-        public: { http: ['https://rpc.mxc.com'] },
-      },
-      blockExplorers: {
-        default: {
-          name: 'Mxc Block Explorer',
-          url: 'https://explorer.mxc.com/',
-        },
-      },
-      contracts: {
-        multicall3: {
-          address: '0xfA9eBcEd32BaB3EA062f9853ACA66cC9B666fBB9',
-          blockCreated: 185,
-        },
-      },
-    },
+    network
   ],
   providerArray,
 )
