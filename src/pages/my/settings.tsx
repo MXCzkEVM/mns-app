@@ -35,7 +35,6 @@ export default function Page() {
             <WalletSection />
             <PrimarySection />
             <TransactionSection />
-            {process.env.NEXT_PUBLIC_PROVIDER && <DevSection />}
           </OtherWrapper>
         ),
       }}
