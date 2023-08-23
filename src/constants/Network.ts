@@ -2,7 +2,7 @@
 
 
 
-const chain_id: string = process.env.NEXT_PUBLIC_NETWORK_CHAINID || "1"
+const chain_id: string = process.env.NEXT_PUBLIC_NETWORK_CHAINID || "18686"
 
 const networks: any = {
     5167003: {
@@ -30,8 +30,8 @@ const networks: any = {
             },
         },
     },
-    16868: {
-        id: 16868,
+    18686: {
+        id: 18686,
         name: 'MXC Mainnet',
         nativeCurrency: { decimals: 18, name: 'MXC', symbol: 'MXC' },
         network: 'MXC Mainnet',
