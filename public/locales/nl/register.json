@@ -1,64 +1,8 @@
 {
-  "title": "Registreer {{name}} op MNS",
-  "subtitle": "Registreer",
-  "heading": "Registreer {{name}}",
-  "invoice": {
-    "yearRegistration": "{{years}} jaar registratie",
-    "registration": "Registratie",
-    "estimatedNetworkFee": "Geschatte netwerk kosten",
-    "networkFee": "Netwerk kosten",
-    "temporaryPremium": "Tijdelijke premium",
-    "total": "Geschat totaal",
-    "totalPaid": "Totaal te betalen"
-  },
-  "error": {
-    "nameTooLong": "De naam die je wilt registreren is te lang. Kies een kortere naam."
-  },
-  "steps": {
-    "pricing": {
-      "insufficientBalance": "Niet genoeg balans",
-      "multipleYearsMessage": "Verlengen voor meerdere jaren scheelt netwerk kosten door jaarlijke transacties te voorkomen.",
-      "primaryName": "Gebruik als primaire naam",
-      "primaryNameMessage": "Dit linkt je adres naar deze naam. Dit staat toe dat apps deze naam laten zien op je profiel als je ingelogt bent.",
-      "premium": {
-        "heading": "Deze naam heeft een tijdelijke premium",
-        "subheading": "Om een eerlijke kans te geven aan recentelijk verlopen namen begint de premium begint bij $100,000,000 en loopt af tot $0 over een periode van 21 days. Je kan de premium per datum hieronder bereken.",
-        "targetPrice": "Doel prijs",
-        "targetDate": "Doel datum",
-        "timezone": "Datum en tijd worden weer gegeven in lokale tijdzone ({{timezone}})"
-      }
-    },
-    "profile": {
-      "default": "Standaard",
-      "advanced": "Geavanceerd",
-      "permissions": "Permissies",
-      "resolver": "Resolver",
-      "visibilityMessage": "Je profiel informatie word opgeslagen op de blockchain. Alles wat je toevoegd is publiekelijk zichtbaar."
-    },
-    "complete": {
-      "heading": "Gefeliciteerd!",
-      "subheading": "Je bent nu de eigenaar van ",
-      "description": "Je naam was successvol geregistreerd. Je kan nu de naam bekijken en aanpassen.",
-      "registerAnother": "Registreer nog een",
-      "viewName": "Bekijk naam"
-    },
-    "info": {
-      "heading": "Voor dat we starten",
-      "subheading": "Je naam registreren gaat in drie stappen",
-      "items": [
-        "Doe een transactie om de timer te beginnen",
-        "Wacht 60 seconden op de timer",
-        "Doe een tweede transactie om je naam vast te leggen"
-      ],
-      "setupProfile": "Ik zet graag eerst mijn profiel op"
-    },
-    "transactions": {
-      "heading": "Bijna klaar",
-      "subheading": "Deze timer stopt andere mensen om jou naam te registreren voordat jou dit lukt.",
-      "startTimer": "Start timer",
-      "wait": "Wacht",
-      "transactionFailed": "Transactie Gefaald",
-      "transactionProgress": "Transactie bezig"
-    }
-  }
+    "title": "Registreer {{name}} op MNS",
+    "subtitle": "Registreren",
+    "heading": "Registreer {{name}}",
+    "invoice": "{'yearRegistration': '{{years}} jaar registratie', 'registration': 'Registratie', 'estimatedNetworkFee': 'Geschatte netwerkkosten', 'networkFee': 'Netwerkkosten', 'temporaryPremium': 'Tijdelijke premie', 'total': 'Geschat totaal', 'totalPaid': 'Totaal betaald'}",
+    "error": "{'nameTooLong': 'De naam die u wilt registreren is te lang. Kies een kortere naam.'}",
+    "steps": "{'pricing': {'insufficientBalance': 'Onvoldoende Saldo', 'multipleYearsMessage': 'Verlengen voor meerdere jaren bespaart geld op netwerkkosten door jaarlijkse transacties te vermijden.', 'primaryName': 'Gebruik als primaire naam', 'primaryNameMessage': 'Dit koppelt uw adres aan deze naam, waardoor dApps het kunnen weergeven als uw profiel wanneer ze ermee verbonden zijn. U kunt slechts één primaire naam per adres hebben.', 'premium': {'heading': 'Deze naam heeft een tijdelijke premie', 'subheading': 'Om een eerlijke kans te geven aan recent verlopen namen, begint de premie bij $100.000.000 en vermindert tot $0 over 21 dagen. U kunt de premie op een datum hieronder berekenen.', 'targetPrice': 'Doelprijs', 'targetDate': 'Doeldatum', 'timezone': 'Datum en tijd getoond in lokale tijdzone ({{timezone}})'}}, 'profile': {'title': 'Maak je profiel aan', 'title2': 'Bewerk je profiel', 'default': 'Standaard', 'advanced': 'Geavanceerd', 'permissions': 'Toestemmingen', 'resolver': 'Resolver', 'visibilityMessage': \"Uw profielinformatie wordt opgeslagen op de blockchain. Alles wat u toevoegt, zal openbaar zichtbaar zijn.\",'addProfile':'Voeg profielvelden toe','addMore':'Voeg meer toe aan profiel','options':{'groups':{'general':{'label':'Algemeen','items':{'name':'Bijnaam','url':'Website','location':'Locatie','description':'Korte Bio'},'placeholder':{'name':'John Smith','url':'https://ens.domains','location':'Metaverse','description':\"Ik ben een yield farmer uit landelijk Tennessee.\"}},'social':{'label':'Sociaal','items':{'com.twitter':'Twitter','com.github':'GitHub','com.discord':'Discord'},'placeholder':{'com.twitter':'bijv. ensdomains','com.github':'bijv. ensdomains','com.discord':'bijv. alisha.eth#0001'}},'address':{'label':'Adres','itemLabel':'{{coin}} adres','placeholder':{'default':'Voeg adres hier toe','ETH':'0xD9hbQK...','BNB':'bnb1grpf...','BTC':'3FZbgi29...','LTC':'ltc1qdp7p...','SOL':'D4kA7VzHnmV...','DOT':'1D4kA7VxH...','DOGE':'DFabcd12...'}},'website':{'label':'Website','items':{'ipfs':'IPFS','ipns':'IPNS','swarm':'Swarm','onion':'Onion','skynet':\n'Skynet', \n'arweave':\n'Arweave'},\n'placeholder':\n{'default':\n'Voeg url hier toe',\n'ipfs':\n'ipfs://...',\n'skynet':\n'sia://...',\n'arweave':\n'ar://...',\n'swarm':\n'bzz://...',\n'onion':\n'onion3://...'\n}},\n'other':\n{'label':\n'Ander',\n'items':\n{'contentHash':\n'Content Hash',\n'publicKey':\n'Public Key',\n'abi':\n'ABI',\n'custom':\n'Aangepast'\n}},\n'custom':\n{'key':\n'Sleutel',\n'value':\n'Waarde'\n},\n'default':\n{'placeholder':\n'Voeg waarde hier toe'\n}\n},\n\"errors\":\n{'labelRequired':\n'Een record sleutel is vereist',\n'duplicateRecord':\n'Dubbele record sleutel',\n'avatarReserved':\n'Sleutel wordt gebruikt door avatar manager'\n},\n\"confirmations\":\n{\"publicNotice\":\n{\"title\":\n\"Uw details zijn openbaar\",\n\"description\":\n\"Alles wat u aan uw profiel toevoegt, zal openbaar zichtbaar zijn op de blockchain.\",\n\"confirm\":\n\"Ik begrijp het\",\n\"decline\":\n\"Terug\"},\n\"clearEth\":\n{\"title\":\n\"Wissen ETH-adres?\",\n\"description\":\n\"Zonder een ingesteld ETH-adres kunnen mensen geen geld naar deze naam sturen. Dit kan later worden bijgewerkt.\",\n\"confirm\":\n\"Wissen\",\n\"decline\":\n\"Annuleren\"}},\n\"actions\":\n{\"skipProfile\":\n\"Sla profiel over\"}},\n\"complete\":\n{\"heading\":\n\"Gefeliciteerd!\",\n\"subheading\":\n\"Je bent nu de eigenaar van \",\n\"description\":\n\"Je naam is succesvol geregistreerd. Je kunt nu je naam bekijken en beheren.\",\n\"registerAnother\":\n\"Registreer nog een\",\n\"viewName\":\n\"Bekijk naam"
 }

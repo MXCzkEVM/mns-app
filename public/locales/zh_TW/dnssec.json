@@ -1,1 +1,9 @@
-{}
+{
+    "title": "將 {{name}} 導入 MNS",
+    "general": "{'connectWallet': '請連接您的錢包以繼續', 'importDNSSECName': '導入DNSSEC名稱', 'domainRegistrar': '域名註冊商'}",
+    "registrars": "{'namecheap': 'Namecheap', 'domaindotcom': 'Domain.com', 'googledomains': 'Google 域名', 'dreamhost': 'Dreamhost', 'hover': 'Hover', 'godaddy': 'GoDaddy', 'bluehost': 'Bluehost', 'hostgator': 'HostGator', 'cloudflare': 'Cloudflare', 'findYourRegistrar': '找到您的註冊商'}",
+    "addTextRecord": "{'title': '新增文字紀錄', 'explanation': '您需要使用這些詳情為您的域創建一個新的DNS紀錄。這將聲明您的以太坊地址為此域的所有者。', 'syncWarningOne': \"您似乎並非此域的DNS所有者，但您仍可以將此名稱添加到MNS註冊表中。\", 'syncWarningTwo': \"如果您擁有此域，請將其_ens TXT紀錄更改為包含您的以太坊地址，然後再次點擊'檢查'，否則點擊'聲明'以繼續。\", 'type': '類型', 'txt': 'TXT', 'errors': {'SUBDOMAIN_NOT_SET': {'title': '未設定子域', 'content': '請根據上面顯示的值設定您的_ens子域。'}, 'DNS_RECORD_DOES_NOT_EXIST': {'title': '紀錄不存在', 'content': '未設定DNS紀錄'}, 'DNS_RECORD_INVALID': {'title': '無效紀錄', 'content': '請根據上面的值設定紀錄。'}}}",
+    "claimComplete": "{'title': '恭喜!', 'ownerOf': '您現在是以下項目的擁有者:', 'successMessage': '您的域名已成功導入MNS。您現在可以查看和管理您的名稱。', 'viewName': '查看名稱', 'claimAnother': '申請其他'}",
+    "claimDomain": "{'title': '認領您的域名', 'syncWarning': '您似乎正在導入一個並非您擁有的DNS名稱。', 'verifiedOwnership': '您已驗證您的所有權，可以認領此域名。', 'pendingTransactionPre': '您已經有一個', 'pendingTransactionLink': '待處理的交易', 'pendingTransactionPost': '針對此名稱', 'dnsOwner': 'DNS擁有者', 'networkEst': '預估網路費用'}",
+    "enableDNSSEC": "{'title': '啟用 DNSSEC', 'instruction': \"您需要訪問您的域名註冊商以啟用 DNSSEC。一旦啟用，點擊'檢查'以進行下一步。\", 'registrarHelp': '從下面的下拉菜單中選擇您的註冊商，以獲取如何操作的指導。', 'findRegistrar': '找到您的註冊商', 'DNSSECNotEnabled': '此域名尚未啟用 DNSSEC。'}"
+}

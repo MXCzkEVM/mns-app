@@ -1,1 +1,9 @@
-{}
+{
+    "addressDetails": "주소 세부 정보",
+    "nameCount": "{{count}} 이름",
+    "filter": "필터",
+    "view": "보기",
+    "noProfile": "{'title': '기본 이름이 설정되지 않았습니다', 'message': '프로필을 생성하려면 이 지갑에 기본 이름을 설정해야 합니다'}",
+    "noResults": "이름이 발견되지 않았습니다.",
+    "errors": "{'names': '주소를 찾을 수 없습니다'}"
+}

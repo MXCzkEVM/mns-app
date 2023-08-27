@@ -1,13 +1,9 @@
 {
-  "addressDetails": "Adress Details",
-  "nameCount": "{{count}} namen",
-  "filter": "Filter",
-  "view": "Bekijk",
-  "noProfile": {
-    "title": "Nog geen primaire naam",
-    "message": "Deze wallet moet een primaire naam zetten om een profiel te kunnen maken"
-  },
-  "errors": {
-    "names": "Kon adress niet vinden"
-  }
+    "addressDetails": "Adresgegevens",
+    "nameCount": "{{count}} namen",
+    "filter": "Filter",
+    "view": "Bekijken",
+    "noProfile": "{'title': 'Geen primaire naam ingesteld', 'message': 'Deze portemonnee moet een primaire naam instellen om een profiel te maken'}",
+    "noResults": "Geen namen gevonden",
+    "errors": "{'names': 'Adres niet gevonden'}"
 }

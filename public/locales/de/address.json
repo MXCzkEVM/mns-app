@@ -1,1 +1,9 @@
-{}
+{
+    "addressDetails": "Adressdetails",
+    "nameCount": "{{count}} Namen",
+    "filter": "Filter",
+    "view": "Anzeigen",
+    "noProfile": "{'title': 'Kein primärer Name festgelegt', 'message': 'Diese Wallet muss einen primären Namen festlegen, um ein Profil zu erstellen'}",
+    "noResults": "Keine Namen gefunden",
+    "errors": "{'names': 'Adresse konnte nicht gefunden werden'}"
+}

@@ -1,1 +1,6 @@
-{}
+{
+    "title": "İsimler",
+    "subtitle": "{'start': 'Tarafından tutulan tüm isimler', 'this': 'bu', 'your': 'senin', 'wallet': 'cüzdan'}",
+    "empty": "Bu adres için isim bulunamadı",
+    "sortTypes": "{'expiryDate': 'Son kullanma tarihi', 'labelName': 'İsim', 'creationDate': 'Oluşturma tarihi'}"
+}

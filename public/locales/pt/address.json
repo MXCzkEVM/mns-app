@@ -1,1 +1,9 @@
-{}
+{
+    "addressDetails": "Detalhes do Endereço",
+    "nameCount": "{{count}} nomes",
+    "filter": "Filtro",
+    "view": "Visualizar",
+    "noProfile": "{'title': 'Nenhum nome principal definido', 'message': 'Esta carteira precisa definir um nome principal para criar um perfil'}",
+    "noResults": "Nenhum nome encontrado",
+    "errors": "{'names': 'Não foi possível encontrar o endereço'}"
+}

@@ -1,1 +1,4 @@
-{}
+{
+    "title": "Einstellungen",
+    "section": "{'wallet': {'title': 'Geldbörse'}, 'transaction': {'title': 'Transaktionen', 'noRecentTransactions': 'Keine aktuellen Transaktionen'}, 'primary': {'title': 'Primärer Name', 'loading': 'Primärer Name wird geladen...', 'noName': 'Kein primärer Name festgelegt.', 'input': {'title': 'Wählen Sie einen primären Namen', 'noNames': 'Für diese Adresse wurden keine geeigneten Namen gefunden', 'noOtherNames': 'Für diese Adresse wurden keine anderen geeigneten Namen gefunden', 'loading': 'Namen werden geladen'}}}"
+}

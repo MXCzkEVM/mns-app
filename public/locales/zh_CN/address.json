@@ -1,14 +1,9 @@
 {
-  "addressDetails": "地址详情",
-  "nameCount": "{{count}} 个名称",
-  "filter": "筛选",
-  "view": "查看",
-  "noProfile": {
-    "title": "未设置主名",
-    "message": "创建个人资料前，请为该钱包设置一个主名"
-  },
-  "noResults": "未找到名称",
-  "errors": {
-    "names": "未找到地址"
-  }
+    "addressDetails": "地址详情",
+    "nameCount": "{{count}}个名称",
+    "filter": "筛选",
+    "view": "查看",
+    "noProfile": "{'title': '未设置主要名称', 'message': '此钱包需要设置一个主要名称以创建个人资料'}",
+    "noResults": "未找到名称",
+    "errors": "{'names': '找不到地址'}"
 }

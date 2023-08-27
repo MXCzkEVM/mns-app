@@ -1,1 +1,4 @@
-{}
+{
+    "not-found": "{'title': 'Tidak ditemukan', 'message': \"Halaman yang Anda cari tidak ditemukan. <br /> Anda dapat <HomeLink>mencari nama</HomeLink> atau <SupportLink>mengunjungi dukungan kami</SupportLink> untuk bantuan lebih lanjut.\"}",
+    "application-error": "{'title': 'Kesalahan Aplikasi', 'message': 'Ada yang tidak beres. <br /> Jika ini adalah masalah yang berulang, silakan <SupportLink>kunjungi dukungan kami</SupportLink> untuk bantuan lebih lanjut.'}"
+}

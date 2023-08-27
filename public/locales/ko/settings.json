@@ -1,1 +1,4 @@
-{}
+{
+    "title": "설정",
+    "section": "{'wallet': {'title': '지갑'}, 'transaction': {'title': '거래', 'noRecentTransactions': '최근 거래 없음'}, 'primary': {'title': '기본 이름', 'loading': '기본 이름 로딩 중...', 'noName': '설정된 기본 이름 없음.', 'input': {'title': '기본 이름 선택', 'noNames': '이 주소에 대해 찾을 수 있는 적합한 이름이 없습니다', 'noOtherNames': '이 주소에 대해 찾을 수 있는 다른 적합한 이름이 없습니다', 'loading': '이름 로딩 중'}}}"
+}

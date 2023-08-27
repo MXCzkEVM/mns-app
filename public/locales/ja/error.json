@@ -1,1 +1,4 @@
-{}
+{
+    "not-found": "{'title': '見つかりません', 'message': \"お探しのページは見つかりませんでした。<br /> <HomeLink>名前を検索</HomeLink>するか、<SupportLink>サポートを訪問</SupportLink>してさらにヘルプを得ることができます。\"}",
+    "application-error": "{'title': 'アプリケーションエラー', 'message': '何か問題が発生しました。<br /> これが繰り返し起こる場合は、<SupportLink>サポートにアクセス</SupportLink>してください。'}"
+}

@@ -1,1 +1,9 @@
-{}
+{
+    "addressDetails": "Detalii Adresă",
+    "nameCount": "{{count}} nume",
+    "filter": "Filtru",
+    "view": "Vizualizează",
+    "noProfile": "{'title': 'Nume primar nesetat', 'message': 'Acest portofel trebuie să stabilească un nume primar pentru a crea un profil'}",
+    "noResults": "Niciun nume găsit",
+    "errors": "{'names': 'Adresa nu a putut fi găsită'}"
+}

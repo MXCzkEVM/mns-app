@@ -1,1 +1,6 @@
-{}
+{
+    "title": "이름",
+    "subtitle": "{'start': '모든 이름이 보유되어 있음', 'this': '이', 'your': '당신의', 'wallet': '지갑'}",
+    "empty": "이 주소에 대한 이름이 없습니다",
+    "sortTypes": "{'expiryDate': '만료 날짜', 'labelName': '이름', 'creationDate': '생성 날짜'}"
+}

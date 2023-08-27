@@ -1,1 +1,9 @@
-{}
+{
+    "title": "MNSに{{name}}をインポートします",
+    "general": "{'connectWallet': '続行するにはウォレットを接続してください', 'importDNSSECName': 'DNSSEC名をインポート', 'domainRegistrar': 'ドメインレジストラ'}",
+    "registrars": "{'namecheap': 'ネームチープ', 'domaindotcom': 'ドメインドットコム', 'googledomains': 'グーグルドメインズ', 'dreamhost': 'ドリームホスト', 'hover': 'ホバー', 'godaddy': 'ゴーダディ', 'bluehost': 'ブルーホスト', 'hostgator': 'ホストゲーター', 'cloudflare': 'クラウドフレア', 'findYourRegistrar': 'あなたのレジストラを見つける'}",
+    "addTextRecord": "{'title': 'テキストレコードを追加', 'explanation': 'これらの詳細を使用してドメインの新しいDNSレコードを作成する必要があります。これにより、あなたのEthereumアドレスがこのドメインの所有者であると主張します。', 'syncWarningOne': \"このドメインのDNSオーナーではないようですが、MNSレジストリにこの名前を追加することはできます。\", 'syncWarningTwo': \"このドメインを所有している場合は、_ens TXTレコードをあなたのEthereumアドレスに変更し、再度'チェック'をクリックします。それ以外の場合は、'クレーム'をクリックして進めてください。\", 'type': 'タイプ', 'txt': 'TXT', 'errors': {'SUBDOMAIN_NOT_SET': {'title': 'サブドメインが設定されていません', 'content': '上記に示されている値で_ensサブドメインを設定してください。'}, 'DNS_RECORD_DOES_NOT_EXIST': {'title': 'レコードが存在しません', 'content': 'DNSレコードが設定されていません'}, 'DNS_RECORD_INVALID': {'title': '無効なレコード', 'content': '上記の値でレコードを設定してください。'}}}",
+    "claimComplete": "{'title': 'おめでとうございます！', 'ownerOf': 'あなたは現在、以下の所有者です：', 'successMessage': 'あなたのドメイン名は正常にMNSにインポートされました。 あなたは今、あなたの名前を見て管理することができます。', 'viewName': '名前を見る', 'claimAnother': '別のものを請求する'}",
+    "claimDomain": "{'title': 'あなたのドメインを請求する', 'syncWarning': '所有していないDNS名をインポートしているようです。', 'verifiedOwnership': '所有権を確認し、このドメインを請求できます。', 'pendingTransactionPre': 'すでに', 'pendingTransactionLink': '保留中のトランザクション', 'pendingTransactionPost': 'がこの名前に対して存在します', 'dnsOwner': 'DNSオーナー', 'networkEst': '推定ネットワーク費用'}",
+    "enableDNSSEC": "{'title': 'DNSSECを有効にする', 'instruction': \"ドメイン登録者のところに訪れてDNSSECを有効にする必要があります。有効にしたら、'チェック'をクリックして次のステップに進んでください。\", 'registrarHelp': '以下のドロップダウンから登録者を選択し、これを行う方法の指示を得てください。', 'findRegistrar': 'あなたの登録者を見つける', 'DNSSECNotEnabled': 'このドメインではDNSSECが有効になっていません。'}"
+}

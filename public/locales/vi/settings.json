@@ -1,1 +1,4 @@
-{}
+{
+    "title": "Cài đặt",
+    "section": "{'wallet': {'title': 'Ví'}, 'transaction': {'title': 'Giao dịch', 'noRecentTransactions': 'Không có giao dịch gần đây'}, 'primary': {'title': 'Tên chính', 'loading': 'Đang tải tên chính...', 'noName': 'Chưa đặt tên chính.', 'input': {'title': 'Chọn một tên chính', 'noNames': 'Không tìm thấy tên hợp lệ cho địa chỉ này', 'noOtherNames': 'Không tìm thấy tên hợp lệ khác cho địa chỉ này', 'loading': 'Đang tải tên'}}}"
+}

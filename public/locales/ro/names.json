@@ -1,1 +1,6 @@
-{}
+{
+    "title": "Nume",
+    "subtitle": "{'start': 'Toate numele deținute de', 'this': 'acest', 'your': 'portofelul tău'}",
+    "empty": "Nu au fost găsite nume pentru această adresă",
+    "sortTypes": "{'expiryDate': 'Data expirării', 'labelName': 'Nume', 'creationDate': 'Data creării'}"
+}

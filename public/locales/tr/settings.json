@@ -1,1 +1,4 @@
-{}
+{
+    "title": "Ayarlar",
+    "section": "{'wallet': {'title': 'Cüzdan'}, 'transaction': {'title': 'İşlemler', 'noRecentTransactions': 'Son zamanlarda işlem yok'}, 'primary': {'title': 'Birincil İsim', 'loading': 'Birincil isim yükleniyor...', 'noName': 'Birincil isim belirlenmemiş.', 'input': {'title': 'Bir birincil isim seçin', 'noNames': 'Bu adres için uygun isim bulunamadı', 'noOtherNames': 'Bu adres için başka uygun isim bulunamadı', 'loading': 'İsimler yükleniyor'}}}"
+}

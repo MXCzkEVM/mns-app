@@ -1,1 +1,4 @@
-{}
+{
+    "title": "設定",
+    "section": "{'wallet': {'title': 'ウォレット'}, 'transaction': {'title': '取引', 'noRecentTransactions': '最近の取引はありません'}, 'primary': {'title': 'プライマリ名', 'loading': 'プライマリ名を読み込んでいます...', 'noName': 'プライマリ名が設定されていません。', 'input': {'title': 'プライマリ名を選択', 'noNames': 'このアドレスに対して適格な名前が見つかりません', 'noOtherNames': 'このアドレスに他の適格な名前が見つかりません', 'loading': '名前を読み込んでいます'}}}"
+}

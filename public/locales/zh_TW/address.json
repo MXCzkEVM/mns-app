@@ -1,1 +1,9 @@
-{}
+{
+    "addressDetails": "地址詳情",
+    "nameCount": "{{count}} 個名稱",
+    "filter": "篩選",
+    "view": "查看",
+    "noProfile": "{'title': '未設定主要名稱', 'message': '此錢包需要設定一個主要名稱以創建個人資料'}",
+    "noResults": "找不到名稱",
+    "errors": "{'names': '找不到地址'}"
+}

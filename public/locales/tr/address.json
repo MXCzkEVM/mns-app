@@ -1,1 +1,9 @@
-{}
+{
+    "addressDetails": "Adres Detayları",
+    "nameCount": "{{count}} isimler",
+    "filter": "Filtre",
+    "view": "Görüntüle",
+    "noProfile": "{'title': 'Birincil ad ayarlanmadı', 'message': 'Bu cüzdanın bir profil oluşturmak için birincil bir ad ayarlaması gerekiyor'}",
+    "noResults": "İsim bulunamadı",
+    "errors": "{'names': 'Adres bulunamadı'}"
+}

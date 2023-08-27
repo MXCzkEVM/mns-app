@@ -1,1 +1,4 @@
-{}
+{
+    "title": "Configurações",
+    "section": "{'wallet': {'title': 'Carteira'}, 'transaction': {'title': 'Transações', 'noRecentTransactions': 'Sem transações recentes'}, 'primary': {'title': 'Nome Primário', 'loading': 'Carregando nome primário...', 'noName': 'Nenhum nome primário definido.', 'input': {'title': 'Selecione um nome primário', 'noNames': 'Nenhum nome elegível encontrado para este endereço', 'noOtherNames': 'Nenhum outro nome elegível encontrado para este endereço', 'loading': 'Carregando nomes'}}}"
+}

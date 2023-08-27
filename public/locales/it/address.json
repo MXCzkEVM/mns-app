@@ -1,1 +1,9 @@
-{}
+{
+    "addressDetails": "Dettagli dell'Indirizzo",
+    "nameCount": "{{count}} nomi",
+    "filter": "Filtro",
+    "view": "Visualizza",
+    "noProfile": "{'title': 'Nessun nome primario impostato', 'message': 'Questo portafoglio necessita di impostare un nome primario per creare un profilo'}",
+    "noResults": "Nessun nome trovato",
+    "errors": "{'names': 'Impossibile trovare l'indirizzo'}"
+}

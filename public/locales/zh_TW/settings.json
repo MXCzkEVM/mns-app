@@ -1,1 +1,4 @@
-{}
+{
+    "title": "設定",
+    "section": "{'wallet': {'title': '錢包'}, 'transaction': {'title': '交易', 'noRecentTransactions': '近期無交易記錄'}, 'primary': {'title': '主要名稱', 'loading': '正在載入主要名稱...', 'noName': '未設定主要名稱。', 'input': {'title': '選擇一個主要名稱', 'noNames': '此地址找不到合適的名稱', 'noOtherNames': '此地址找不到其他合適的名稱', 'loading': '正在載入名稱'}}}"
+}

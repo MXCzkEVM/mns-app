@@ -1,1 +1,4 @@
-{}
+{
+    "title": "Pengaturan",
+    "section": "{'wallet': {'title': 'Dompet'}, 'transaction': {'title': 'Transaksi', 'noRecentTransactions': 'Tidak ada transaksi terbaru'}, 'primary': {'title': 'Nama Utama', 'loading': 'Memuat nama utama...', 'noName': 'Tidak ada nama utama yang ditetapkan.', 'input': {'title': 'Pilih nama utama', 'noNames': 'Tidak ada nama yang memenuhi syarat ditemukan untuk alamat ini', 'noOtherNames': 'Tidak ada nama lain yang memenuhi syarat ditemukan untuk alamat ini', 'loading': 'Memuat nama'}}}"
+}

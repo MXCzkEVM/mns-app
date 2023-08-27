@@ -1,1 +1,4 @@
-{}
+{
+    "not-found": "{'title': 'Nicht gefunden', 'message': \"Die Seite, die Sie gesucht haben, wurde nicht gefunden. <br /> Sie können <HomeLink>nach einem Namen suchen</HomeLink> oder <SupportLink>unseren Support besuchen</SupportLink> für weitere Hilfe.\"}",
+    "application-error": "{'title': 'Anwendungsfehler', 'message': 'Etwas ist schief gelaufen. <br /> Wenn dies ein wiederkehrendes Problem ist, bitte <SupportLink>besuchen Sie unseren Support</SupportLink> für weitere Hilfe.'}"
+}

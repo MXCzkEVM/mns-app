@@ -1,1 +1,9 @@
-{}
+{
+    "addressDetails": "Chi Tiết Địa Chỉ",
+    "nameCount": "{{count}} tên",
+    "filter": "Lọc",
+    "view": "Xem",
+    "noProfile": "{'title': 'Không có tên chính được đặt', 'message': 'Ví này cần đặt một tên chính để tạo hồ sơ'}",
+    "noResults": "Không tìm thấy tên",
+    "errors": "{'names': 'Không thể tìm thấy địa chỉ'}"
+}

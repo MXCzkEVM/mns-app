@@ -1,23 +1,4 @@
 {
-  "title": "设置",
-  "section": {
-    "wallet": {
-      "title": "钱包"
-    },
-    "transaction": {
-      "title": "交易",
-      "noRecentTransactions": "近期无交易"
-    },
-    "primary": {
-      "title": "主名",
-      "loading": "主名加载中...",
-      "noName": "主名未设置。",
-      "input": {
-        "title": "选择主名",
-        "noNames": "此地址上未找到符合条件的名称",
-        "noOtherNames": "此地址上未找到其他符合条件的名称",
-        "loading": "名称加载中"
-      }
-    }
-  }
+    "title": "设置",
+    "section": "{'wallet': {'title': '钱包'}, 'transaction': {'title': '交易', 'noRecentTransactions': '没有最近的交易'}, 'primary': {'title': '主要名称', 'loading': '正在加载主要名称...', 'noName': '未设置主要名称。', 'input': {'title': '选择一个主要名称', 'noNames': '此地址未找到合格的名称', 'noOtherNames': '此地址未找到其他合格的名称', 'loading': '正在加载名称'}}}"
 }
