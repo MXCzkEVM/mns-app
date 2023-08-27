@@ -287,6 +287,7 @@ const Ownership = ({
         <div>
           {canSend && (
             <Button
+              className='action-button'
               size="small"
               prefix={<AeroplaneIcon as={AeroplaneSVG} />}
               onClick={handleSend}

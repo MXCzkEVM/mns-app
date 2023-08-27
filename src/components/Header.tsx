@@ -13,7 +13,7 @@ import { useBreakpoint } from '@app/utils/BreakpointProvider'
 
 // import ENSFull from '../assets/ENSFull.svg'
 // import ENSWithGradient from '../assets/ENSWithGradient.svg'
-import MXCLOGO from '../assets/mxc-logo-light.svg'
+import MXCLOGO from '../assets/mxc-logo-dark.svg'
 import BaseLink from './@atoms/BaseLink'
 import { RouteItem } from './@atoms/RouteItem/RouteItem'
 import Hamburger from './@molecules/Hamburger/Hamburger'

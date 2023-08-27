@@ -12,12 +12,13 @@ import { SupportButton } from '@app/components/SupportButton'
 
 import ENSFull from '../assets/ENSFull.svg'
 
+// background-image: ${theme.colors.gradients.accent};
 const GradientTitle = styled.h1(
   ({ theme }) => css`
     font-size: ${theme.fontSizes.headingTwo};
     text-align: center;
     font-weight: 800;
-    background-image: ${theme.colors.gradients.accent};
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: 110%;
     /* stylelint-disable-next-line property-no-vendor-prefix */

@@ -209,6 +209,7 @@ export const SubnamesTab = ({
           </Typography>
           {canCreateSubdomains ? (
             <Button
+              className="action-button"
               data-testid="add-subname-action"
               onClick={createSubname}
               prefix={<PlusPrefix as={PlusSVG} />}

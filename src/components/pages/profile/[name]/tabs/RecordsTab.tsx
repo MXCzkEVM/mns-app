@@ -278,7 +278,7 @@ export const RecordsTab = ({
         <Actions>
           <div>
             {canEditRecordsWhenWrapped ? (
-              <Button onClick={handleShowEditor} size="small">
+              <Button className="action-button" onClick={handleShowEditor} size="small">
                 {t('details.tabs.records.editRecords')}
               </Button>
             ) : (

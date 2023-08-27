@@ -2,7 +2,7 @@ import ISO6391 from 'iso-639-1'
 import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled, { css } from 'styled-components'
-
+import {locales} from '../../../i18nLocal'
 import { CheckCircleSVG, LanguageSVG, LeftArrowSVG, Typography, mq } from '@ensdomains/thorin'
 
 const Container = styled.div(
@@ -83,6 +83,8 @@ const InnerHeading = styled.div(
 
 const LanguagesContainer = styled.div(
   ({ theme }) => css`
+    height: 300px;
+    overflow: auto;
     display: flex;
     flex-direction: column-reverse;
     align-items: stretch;
@@ -173,7 +175,8 @@ const LanguageMenu = ({
                 as={CheckCircleSVG}
                 style={{ display: i18n.resolvedLanguage === lang ? 'block' : 'none' }}
               />
-              <Typography>{ISO6391.getNativeName(lang)}</Typography>
+              {/* <Typography>{ISO6391.getNativeName(lang)}</Typography> */}
+              <Typography>{locales[lang]}</Typography>
             </div>
             <Typography>{lang.toLocaleUpperCase()}</Typography>
           </LanguageItem>

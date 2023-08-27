@@ -236,7 +236,7 @@ const Transactions = ({ registrationData, nameDetails, callback, onStart }: Prop
 
   let ActionButton: ReactNode = (
     <MobileFullWidth>
-      <Button data-testid="start-timer-button" onClick={makeCommitNameFlow}>
+      <Button className='action-button' data-testid="start-timer-button" onClick={makeCommitNameFlow}>
         {t('steps.transactions.startTimer')}
       </Button>
     </MobileFullWidth>

@@ -24,13 +24,18 @@ const calcPercent = (percent: number, order: number) => {
   return Math.min(Math.max((100 - percent * 0.9) * orderPercent, minimumBarrier), maximumBarrier)
 }
 
+// background: linear-gradient(
+//   90deg,
+//   ${theme.colors.blue} var(--bar-width),
+//   ${theme.colors.red} var(--bar-width)
+// );
 const Bar = styled.div<{ $highlightPercent: number }>(
   ({ theme, $highlightPercent }) => css`
     --bar-width: calc(${$highlightPercent}% - ${theme.space['1']});
     background: linear-gradient(
       90deg,
-      ${theme.colors.blue} var(--bar-width),
-      ${theme.colors.red} var(--bar-width)
+      #6300ff var(--bar-width),
+      red var(--bar-width)
     );
     width: 100%;
     height: ${theme.space['4']};
@@ -39,6 +44,7 @@ const Bar = styled.div<{ $highlightPercent: number }>(
   `,
 )
 
+// &:last-of-type background-color: ${theme.colors.blue};
 const Marker = styled.div<{ $percent: number }>(
   ({ theme, $percent }) => css`
     position: absolute;
@@ -60,7 +66,7 @@ const Marker = styled.div<{ $percent: number }>(
     border-radius: ${theme.radii.medium};
     background-color: ${theme.colors.background};
     &:last-of-type {
-      background-color: ${theme.colors.blue};
+      background-color: #6300ff;
       color: ${theme.colors.background};
     }
 

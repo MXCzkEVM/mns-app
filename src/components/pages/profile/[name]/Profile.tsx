@@ -45,6 +45,8 @@ const TabButtonContainer = styled.div(
   `,
 )
 
+// color: ${$selected ? theme.colors.accent : theme.colors.greyPrimary};
+// color: ${$selected ? theme.colors.accentBright : theme.colors.text};
 const TabButton = styled.button<{ $selected: boolean }>(
   ({ theme, $selected }) => css`
     display: block;
@@ -53,13 +55,12 @@ const TabButton = styled.button<{ $selected: boolean }>(
     padding: 0;
     margin: 0;
     background: none;
-    color: ${$selected ? theme.colors.accent : theme.colors.greyPrimary};
+    color: ${$selected ? "#fff": theme.colors.greyPrimary};
     font-size: ${theme.fontSizes.extraLarge};
     transition: all 0.15s ease-in-out;
     cursor: pointer;
-
     &:hover {
-      color: ${$selected ? theme.colors.accentBright : theme.colors.text};
+      color: "#fff";
     }
   `,
 )

@@ -135,6 +135,7 @@ const MEP1002Mint = ({ data: { name }, dispatch, onDismiss }: Props) => {
         }
         trailing={
           <Button
+            className='action-button'
             data-testid="setToMEP1002Token-confirm"
             onClick={handleSubmitForm}
             disabled={!canConfirm}

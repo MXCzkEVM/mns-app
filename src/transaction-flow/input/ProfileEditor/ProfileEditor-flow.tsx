@@ -345,6 +345,7 @@ const ProfileEditor = ({ data = {}, transactions = [], dispatch, onDismiss }: Pr
                   <ButtonContainer>
                     <ButtonWrapper>
                       <Button
+                        className='action-button'
                         size="medium"
                         onClick={handleShowAddRecordModal}
                         data-testid="show-add-profile-records-modal-button"

@@ -65,12 +65,12 @@ export const Basic = withErrorBoundary(({ children }: { children: React.ReactNod
   const { switchNetwork } = useSwitchNetwork()
   const router = useRouter()
   const [error] = useErrorBoundary()
+  const chain_id:string = process.env.NEXT_PUBLIC_NETWORK_CHAINID || "18686"
 
   useEffect(() => {
-    const chain_id:string = process.env.NEXT_PUBLIC_NETWORK_CHAINID || "1"
     if (currentChain && !(currentChain?.id === parseInt(chain_id))) {
       switchNetwork?.(parseInt(chain_id))
-      router.push('/unsupportedNetwork')
+      // router.push('/unsupportedNetwork')
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentChain?.id, router.pathname])

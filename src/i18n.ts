@@ -12,13 +12,28 @@ import register from '../public/locales/en/register.json'
 import settings from '../public/locales/en/settings.json'
 import transactionFlow from '../public/locales/en/transactionFlow.json'
 
+import { locales, browserLangToLocaleKey } from './i18nLocal'
+
+const customDetector = {
+  name: 'customDetector',
+  lookup() {
+    const detectedLang = typeof window !== 'undefined' ? navigator.language : 'en';
+    return browserLangToLocaleKey(detectedLang);
+  }
+};
+
+const languageDetectorCls = new LanguageDetector();
+languageDetectorCls.addDetector(customDetector);
+
+
 i18n
   .use(Backend)
-  .use(LanguageDetector)
+  .use(languageDetectorCls)
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
-    supportedLngs: ['en', 'zh', 'de', 'nl'],
+    // supportedLngs: ['en', 'zh', 'de', 'nl'],
+    supportedLngs: Object.keys(locales),
     keySeparator: '.',
     interpolation: {
       escapeValue: false,
@@ -37,6 +52,14 @@ i18n
     react: {
       useSuspense: false,
     },
+    detection: {
+      order: ['customDetector', 'querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag'],
+      lookupQuerystring: 'lng',
+      lookupCookie: 'i18next',
+      lookupLocalStorage: 'i18nextLng',
+      lookupFromPathIndex: 0,
+      lookupFromSubdomainIndex: 0,
+    }
   })
 
 // preload english

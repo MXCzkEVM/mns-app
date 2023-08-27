@@ -10,6 +10,11 @@ import { RouteItemObj } from '@app/routes'
 
 import BaseLink from '../BaseLink'
 
+
+// &:hover {
+//   color: ${$isActive ? theme.colors.accentBright : theme.colors.textPrimary};
+// }
+
 const LinkWrapper = styled.a<{
   $asText?: boolean
   $disabled?: boolean
@@ -43,11 +48,7 @@ const LinkWrapper = styled.a<{
           color: ${theme.colors.greyBright};
           cursor: not-allowed;
         `
-      : css`
-          &:hover {
-            color: ${$isActive ? theme.colors.accentBright : theme.colors.textPrimary};
-          }
-        `}
+      : css``}
     ${$isActive &&
     css`
       color: ${theme.colors.accent};

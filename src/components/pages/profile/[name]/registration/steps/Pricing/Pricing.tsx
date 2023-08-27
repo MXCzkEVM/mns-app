@@ -322,20 +322,21 @@ export const ActionButton = ({
   }
   if (!balance?.value || !totalRequiredBalance) {
     return (
-      <Button data-testid="next-button" disabled>
+      <Button className="action-button" data-testid="next-button" disabled>
         {t('loading', { ns: 'common' })}
       </Button>
     )
   }
   if (balance?.value.lt(totalRequiredBalance) && paymentMethodChoice === PaymentMethod.mxc) {
     return (
-      <Button data-testid="next-button" disabled>
+      <Button className="action-button" data-testid="next-button" disabled>
         {t('steps.pricing.insufficientBalance')}
       </Button>
     )
   }
   return (
     <Button
+      className="action-button"
       data-testid="next-button"
       onClick={() => callback({ reverseRecord, years, paymentMethodChoice })}
       disabled={!paymentMethodChoice}

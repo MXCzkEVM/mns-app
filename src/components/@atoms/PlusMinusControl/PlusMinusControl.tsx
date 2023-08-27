@@ -78,6 +78,7 @@ const LabelContainer = styled.div(
   `,
 )
 
+// color: ${$highlighted ? theme.colors.accent : theme.colors.text};
 const Label = styled.label<{ $highlighted?: boolean }>(
   ({ theme, $highlighted }) => css`
     position: absolute;
@@ -94,7 +95,7 @@ const Label = styled.label<{ $highlighted?: boolean }>(
     font-size: ${$highlighted ? theme.fontSizes.headingTwo : theme.fontSizes.large};
     line-height: ${theme.space['11']};
     text-align: center;
-    color: ${$highlighted ? theme.colors.accent : theme.colors.text};
+    color: ##6300ff;
     pointer-events: none;
     opacity: 1;
     transition: opacity 150ms ease-in-out;
@@ -252,9 +253,10 @@ export const PlusMinusControl = forwardRef(
             }}
             onBlur={handleBlur}
           />
-          <Label $highlighted={highlighted}>{t(`unit.${unit}`, { count: value })}</Label>
+          <Label className="theme-text" $highlighted={highlighted}>{t(`unit.${unit}`, { count: value })}</Label>
         </LabelContainer>
         <Button
+          className='action-button'
           type="button"
           onClick={incrementHandler(1)}
           data-testid="plus-minus-control-plus"

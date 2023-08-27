@@ -180,6 +180,7 @@ const getAction = (action: Action, is2LDEth: boolean) => {
   }
   return (
     <Button
+      className="action-button"
       data-testid={`profile-action-${action.label}`}
       onClick={action.onClick}
       size="small"

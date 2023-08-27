@@ -195,7 +195,7 @@ const CompactTitle = ({
           <Title
             className="shrinkable-title"
             weight="bold"
-            style={{ maxWidth: titleWidth, overflow: 'hidden' }}
+            style={{ maxWidth: titleWidth, overflow: 'hidden', color: '#fff' }}
           >
             {title}
           </Title>

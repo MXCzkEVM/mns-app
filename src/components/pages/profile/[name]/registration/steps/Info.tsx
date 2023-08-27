@@ -140,12 +140,12 @@ const Info = ({
       )}
       <ButtonContainer>
         <MobileFullWidth>
-          <Button colorStyle="accentSecondary" onClick={() => callback({ back: true })}>
+          <Button  colorStyle="accentSecondary" onClick={() => callback({ back: true })}>
             {t('action.back', { ns: 'common' })}
           </Button>
         </MobileFullWidth>
         <MobileFullWidth>
-          <Button data-testid="next-button" onClick={() => callback({ back: false })}>
+          <Button className="action-button" data-testid="next-button" onClick={() => callback({ back: false })}>
             {t('action.begin', { ns: 'common' })}
           </Button>
         </MobileFullWidth>

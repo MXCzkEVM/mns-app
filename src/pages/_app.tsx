@@ -72,7 +72,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: radial-gradient(50% 50% at 50% 50%, rgba(82, 152, 255, 0.062) 0%, rgba(255, 255, 255, 0) 100%), #F7F7F7;
+    // background: radial-gradient(50% 50% at 50% 50%, rgba(82, 152, 255, 0.062) 0%, rgba(255, 255, 255, 0) 100%), #F7F7F7;
+    background: #2a0f69;
   }
 
   body, .min-safe {
@@ -82,6 +83,22 @@ const GlobalStyle = createGlobalStyle`
       /* stylelint-disable-next-line value-no-vendor-prefix */
       min-height: -webkit-fill-available;
     }
+  }
+
+  button.connect-button {
+    background-color: #f43178;
+    &:hover {
+      background: #f43178;
+    }
+  }
+  button.action-button {
+    background: #6300ff;
+    &:hover {
+      background: #6300ff;
+    }
+  }
+  .theme-text {
+    color: #6300ff;
   }
 
   a {
@@ -131,6 +148,12 @@ type AppPropsWithLayout = AppProps & {
 }
 
 setupAnalytics()
+
+
+// overwriter
+// console.log(thorinLightTheme,"thorinLightTheme")
+// thorinLightTheme.colors.accent = "#6300ff"
+// thorinLightTheme.colors.text = "#fff"
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page)
