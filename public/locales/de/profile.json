@@ -1,7 +1,10 @@
 {
-    "meta": "{'title': '{{name}} auf MNS', 'description': \"Profil von {{name}} im MXC Name Service\"}",
+    "meta": {
+        "title": "{{name}} auf MNS",
+        "description": "{{name}}s Profil im MXC Name Service"
+    },
     "title": "Profil",
-    "yourWallet": "Ihre Geldbörse",
+    "yourWallet": "Deine Geldbörse",
     "yourProfile": "Ihr Profil",
     "accounts": "Konten",
     "addresses": "Adressen",
@@ -9,9 +12,374 @@
     "editProfile": "Profil bearbeiten",
     "ownership": "Eigentum",
     "viewDetails": "Details anzeigen",
-    "banner": "{'available': {'title': '{{name}} ist verfügbar', 'description': 'Dieser Name ist am <strong>{{date}}</strong> abgelaufen. Klicken Sie hier, um die Registrierungsseite anzuzeigen.'}}",
-    "tabs": "{'profile': {'name': 'Profil', 'actions': {'setAsPrimaryName': {'label': 'Als Hauptname festlegen', 'title': 'Setzen Sie Ihren Hauptnamen', 'description': 'Um diesen Namen als Hauptnamen festzulegen, muss die ETH-Adresse mit dieser Adresse übereinstimmen.'}, 'setToMEP1002Hexagon': {'label': 'Auf MEP1002 Hexagon setzen', 'title': 'Auf MEP1002 Hexagon setzen', 'description': 'Setzen Sie diesen Namen auf MEP1002 Hexagon, Sie müssen der Inhaber des MEP1002 Hexagon Naming Token sein'}, 'mintToMEP1002Hexagon': {'label': 'MEP1002 Hexagon prägen', 'title': 'MEP1002 Hexagon prägen', 'description': 'Präge dieses MEP1002 Hexagon'}, 'deleteSubname': {'label': 'Untername löschen'}, 'extend': {'label': 'Namen verlängern'}, 'editProfile': {'label': 'Profil bearbeiten'}, 'reclaim': {'label': 'Namen neu erstellen', 'warning': 'Dieser Untername ist abgelaufen und wird nicht besessen. Sie können diesen Untername neu erstellen.'}}, \n'warnings': {'wrappedDNS': 'DNS-Namen können jederzeit vom DNS-Besitzer zurückgefordert werden. Kaufen Sie keine DNS-Namen.', \n'homoglyph': \"Dieser Name enthält nicht-ASCII-Zeichen. Es kann Zeichen geben, die identisch aussehen oder anderen Zeichen sehr ähnlich sehen, was dazu verwendet werden könnte, Leser zu täuschen. <a>Mehr über Homoglyphen erfahren</a>\"}}, \n'records': {'name': \"Datensätze\"}, \n'subnames':{'name':'Unternamen'},\n'permissions':{'name':'Berechtigungen','parentUnlockedWarning':'<strong>Sie können die Berechtigungen für diesen Namen nicht ändern.</strong> Sie müssen zuerst ‘Entpacken Sie diesen Namen’ beim Elternteil ({{parent}}) widerrufen. Klicken Sie hier, um die Berechtigungen des Elternteils anzuzeigen.','revokedLabel':'Widerrufen {{date}}','grantedLabel':'Gewährt {{date}}','role':{'manager':'Manager','owner':'Besitzer','parent':'Elternteil'},\n'ownership':{'title':'Eigentumsberechtigungen','parentCanControl':{'label':'Dieser Name kann von seinem Elternteil (<parentLink>{{parent}}</parentLink>) kontrolliert werden','list':{'title':'Der Besitzer des Elternnamens kann:','item1':'Die Einstellungen und Datensätze kontrollieren und ändern','item2':'Den Besitz dieses Namens zurücknehmen oder neu zuweisen','item3':'Diesen Namen entfernen'}},'parentCannotControl':{'label':'Dieser Name kann nicht von seinem Elternteil (<parentLink>{{parent}}</parentLink>) kontrolliert werden',\n'sublabel':'Der Besitzer des Elternnamens kann diesen Namen nicht kontrollieren, ändern, entfernen oder den Besitz davon zurücknehmen.','list':{'title':'Der Namensinhaber behält das Eigentum bei, es sei denn, eines der folgenden Ereignisse tritt ein:','item1':'Der Name läuft am {{date}} ab (kann verlängert werden)','item2':'Der Elternname läuft am {{date}} ab','item3':'Das Eigentum an dem Namen wird an eine andere Adresse gesendet'}},'parentCanChange':{'label':'Das Elternteil dieses Namens (<parentLink>{{parent}}</parentLink>) kann Berechtigungen ändern',\n'list':{'title':'Das Elternteil kann:','item1':'Berechtigungen widerrufen','item2':'Benutzerdefinierte Sicherungen ändern oder verbrennen'}},'ownerCanChange':{'label':'Der Besitzer dieses Namens kann Berechtigungen ändern',\n'list':{'title':'Der Besitzer kann:','item1':'Berechtigungen widerrufen','item2':'Benutzerdefinierte Sicherungen ändern oder verbrennen'}},'ownerCannotChange':{'label':\"Der Besitzer dieses Namens kann die Berechtigungen nicht ändern\",'list':{'title':\"Der Besitzer kann nicht:\",'item1':\"Berechtigungen widerrufen\",'item2':\"Benutzerdefinierte Sicherungen ändern oder verbrennen\"}},\n'unwrapWarning':{'message':\"Die Entpackberechtigungen müssen beim Elternteil (<strong>{{parent}}</strong>) widerrufen werden, bevor die Kontrolle durch das Elternteil aufgegeben",
-    "details": "{'title': 'Name Details', 'notWrapped': 'Nicht verpackt', 'sendName': {'title': 'Name senden', 'description': 'Das Senden eines Namens gibt der neuen Adresse die Kontrolle darüber', 'learnMore': 'Erfahren Sie mehr über den Besitz von Namen.', 'makeOwner': 'Besitzer machen', 'makeOwnerDescription': 'Der Besitzer kann an einen neuen Besitzer senden und den Manager ändern', 'makeManager': 'Manager machen', 'makeManagerDescription': 'Der Manager kann Änderungen vornehmen und Datensätze festlegen.', 'inputPlaceholder': 'Geben Sie eine Ethereum-Adresse oder einen MNS-Namen ein', 'transferSubname': 'Name übertragen', 'transferController': 'Controller übertragen'}, 'wrap': {'startTitle': 'Upgrade deines Namens', 'resumeTitle': 'Upgrade fortsetzen', 'completeTitle': 'Upgrade abgeschlossen', 'description': '\"Verpacken\" oder Upgraden Ihres Namens verleiht ihm neue Funktionen.', 'startLabel': 'Upgrade', \t'resumeLabel':'Upgrade fortsetzen','boxTitle':'Neue Funktionen freischalten','boxDescription':'Ein Upgrade Ihres Namens schaltet die neueste Funktionalität von MNS frei'},'descriptions':{'owner':'Besitzt und kontrolliert den Namen','controller':'Kontrolliert alle Datensätze des Namens','registrant':'Der Besitzer des NFT','dnsOwner':'Besitzer des DNS-Namens'},'tabs':{'records':{'label':'Datensätze','text':'Text','contentHash':'Inhalt Hash','noContentHash':'Kein Inhalt Hash','editRecords':'Datensätze bearbeiten','noAbi':'Kein ABI','abi':'ABI','editRecordsDisabled':'Aktueller Resolver ist nicht kompatibel mit verpackten Namen'},'subnames':{'label':'Unternamen','loading':'Unternamen laden','empty':'Es wurden keine Unternamen hinzugefügt','noResults':'Keine Ergebnisse','noMoreResults':'Keine weiteren Ergebnisse','addSubname':{'title':'Mit Unternamen können Sie zusätzliche Namen aus Ihrem bestehenden Namen erstellen.','learn':'Erfahren Sie mehr über Unternamen.','action':'Neuer Untername.','dialog':{'title':'Untername erstellen.','error':{'invalidCharacters':'Enthält ungültige Zeichen.','mustUseLowercase':'Muss Kleinbuchstaben verwenden.','alreadyExists':'Name existiert bereits.','nameTooLong':'Name ist zu lang.','pccBurned':'Name ist gesperrt bis {{date}}'}}}}}}",
-    "advancedEditor": "{'title': \"{{name}}'s Aufzeichnungen\", 'tabs': {'text': {'label': 'Text', 'addRecord': 'Aufzeichnung hinzufügen', 'createRecord': 'Geben Sie einen Aufzeichnungsnamen ein...', 'placeholder': {'default': 'Fügen Sie hier einen Wert hinzu...'}}, 'address': {'label': 'Adresse', 'addRecord': 'Adresse hinzufügen', 'noOptions': 'Keine Adressoptionen verfügbar', 'placeholder': {'default': 'Fügen Sie hier eine Adresse hinzu...'}}, 'other': {'label': 'Andere', 'labelDisabled': 'Von aktuellem Resolver nicht unterstützt', 'contentHash': {'label': 'Inhalt Hash', 'placeholder': 'z.B. ipfs://'}, 'publicKey': {'label': 'Öffentlicher Schlüssel', 'placeholder': 'z.B. pub_1231231231231'}, 'abi': {'label': 'ABI', 'placeholder':  \"Geben Sie hier ein ABI ein...\"}}}}",
-    "errors": "{'invalidName': 'Dieser Name ist ungültig.', 'invalidAddress': 'Keine gültige Adresse', 'expiringSoon': 'Die Schonfrist für diesen Namen endet am {{date}}. Wenn sie nicht vor diesem Datum verlängert wird, wird sie zur Registrierung freigegeben.', 'hasExpired': '{{ name }} ist abgelaufen', 'ownerManagerChoice': 'Muss Besitzer oder Manager senden', 'unknown': 'Unbekannter Fehler', 'notMigrated': 'Dieser Name wurde noch nicht in das neue Register übertragen.', 'featureNotAvailable': 'Einige Funktionen sind noch nicht verfügbar, aber Sie können trotzdem ', 'featureNotAvailableLink': 'diesen Namen in der alten App anzeigen.', 'migrationNotAvailable': 'Die Migration zum neuen Register ist noch nicht verfügbar, aber Sie können trotzdem ', 'migrationNotAvailableLink': 'diesen Namen in der alten App migrieren.', 'addressLength': 'Wenn es sich um eine Adresse handelt, sollte sie 42 Zeichen lang sein', 'unsupportedTLD': 'Diese TLD wird nicht unterstützt', 'keyInUse': '{{value}} wird bereits verwendet', 'hasSubnames': 'Dieser Name hat Unterbezeichnungen', 'permissionRevoked': 'Für diesen Namen wurden die erforderlichen Berechtigungen für diese Aktion widerrufen.', 'invalidJSON': 'Ungültiges JSON'}"
+    "banner": {
+        "available": {
+            "title": "{{name}} ist verfügbar",
+            "description": "Dieser Name ist am <strong>{{date}}</strong> abgelaufen. Klicken Sie hier, um die Registrierungsseite anzuzeigen."
+        }
+    },
+    "tabs": {
+        "profile": {
+            "name": "Profil",
+            "actions": {
+                "setAsPrimaryName": {
+                    "label": "Als Hauptname festlegen",
+                    "title": "Legen Sie Ihren Hauptnamen fest",
+                    "description": "Um Ihren Hauptnamen auf diesen Namen zu setzen, muss die ETH-Adresse mit dieser Adresse übereinstimmen."
+                },
+                "setToMEP1002Hexagon": {
+                    "label": "Einstellen auf MEP1002 Hexagon",
+                    "title": "Einstellen auf MEP1002 Hexagon",
+                    "description": "Legen Sie diesen Namen auf MEP1002 Hexagon fest, Sie müssen der Inhaber des MEP1002 Hexagon Naming Token sein."
+                },
+                "mintToMEP1002Hexagon": {
+                    "label": "Präge MEP1002 Hexagon",
+                    "title": "Präge MEP1002 Hexagon",
+                    "description": "Präge dieses MEP1002 Hexagon"
+                },
+                "deleteSubname": {
+                    "label": "Untername löschen"
+                },
+                "extend": {
+                    "label": "Name erweitern"
+                },
+                "editProfile": {
+                    "label": "Profil bearbeiten"
+                },
+                "reclaim": {
+                    "label": "Name neu erstellen",
+                    "warning": "Dieser Untername ist abgelaufen und wird nicht besessen. Sie können diesen Untername neu erstellen."
+                }
+            },
+            "warnings": {
+                "wrappedDNS": "DNS-Namen können jederzeit vom DNS-Besitzer zurückgefordert werden. Kaufen Sie keine DNS-Namen.",
+                "homoglyph": "Dieser Name enthält nicht-ASCII-Zeichen. Es können Zeichen vorhanden sein, die identisch oder sehr ähnlich zu anderen Zeichen aussehen und dazu verwendet werden könnten, Leser zu täuschen. <a>Mehr über Homoglyphen erfahren</a>"
+            }
+        },
+        "records": {
+            "name": "Aufzeichnungen"
+        },
+        "subnames": {
+            "name": "Unternamen"
+        },
+        "permissions": {
+            "name": "Berechtigungen",
+            "parentUnlockedWarning": "Sie können die Berechtigungen für diesen Namen nicht ändern. Sie müssen zuerst 'diesen Namen aufheben' beim übergeordneten Element ({{parent}}) widerrufen. Klicken Sie hier, um die Berechtigungen des übergeordneten Elements einzusehen.",
+            "revokedLabel": "Widerrufen {{date}}",
+            "grantedLabel": "Gewährt {{date}}",
+            "role": {
+                "manager": "Manager",
+                "owner": "Eigentümer",
+                "parent": "Elternteil"
+            },
+            "ownership": {
+                "title": "Eigentumsberechtigungen",
+                "parentCanControl": {
+                    "label": "Dieser Name kann von seinem übergeordneten Element (<parentLink>{{parent}}</parentLink>) gesteuert werden.",
+                    "list": {
+                        "title": "Der Besitzer des übergeordneten Namens kann:",
+                        "item1": "Steuern und ändern Sie die Einstellungen und Aufzeichnungen",
+                        "item2": "Übernehmen oder neu zuweisen des Besitzes dieses Namens",
+                        "item3": "Entfernen Sie diesen Namen"
+                    }
+                },
+                "parentCannotControl": {
+                    "label": "Dieser Name kann nicht von seinem übergeordneten Element (<parentLink>{{parent}}</parentLink>) gesteuert werden.",
+                    "sublabel": "Der Besitzer des übergeordneten Namens kann diesen Namen nicht kontrollieren, ändern, entfernen oder die Eigentümerschaft zurücknehmen.",
+                    "list": {
+                        "title": "Der Namensinhaber behält das Eigentum, es sei denn, eines der folgenden Ereignisse tritt ein:",
+                        "item1": "Der Name läuft am {{date}} ab (kann verlängert werden)",
+                        "item2": "Der übergeordnete Name läuft am {{date}} ab",
+                        "item3": "Der Besitz des Namens wird an eine andere Adresse gesendet."
+                    }
+                },
+                "parentCanChange": {
+                    "label": "Der Inhaber dieses Namens (<parentLink>{{parent}}</parentLink>) kann Berechtigungen ändern",
+                    "list": {
+                        "title": "Der Elternteil kann:",
+                        "item1": "Berechtigungen widerrufen",
+                        "item2": "Benutzerdefinierte Sicherungen ändern oder verbrennen"
+                    }
+                },
+                "ownerCanChange": {
+                    "label": "Der Besitzer dieses Namens kann Berechtigungen ändern",
+                    "list": {
+                        "title": "Der Besitzer kann:",
+                        "item1": "Berechtigungen widerrufen",
+                        "item2": "Ändern oder verbrennen Sie benutzerdefinierte Sicherungen"
+                    }
+                },
+                "ownerCannotChange": {
+                    "label": "Der Besitzer dieses Namens kann Berechtigungen nicht ändern.",
+                    "list": {
+                        "title": "Der Besitzer kann nicht:",
+                        "item1": "Berechtigungen widerrufen",
+                        "item2": "Benutzerdefinierte Sicherungen ändern oder verbrennen"
+                    }
+                },
+                "unwrapWarning": {
+                    "message": "Die Berechtigungen zum Auspacken müssen auf dem übergeordneten Element (<strong>{{parent}}</strong>) widerrufen werden, bevor die Kontrolle über das übergeordnete Element aufgegeben wird.<br> <parentLink>Zu den Berechtigungen des übergeordneten Elements gehen</parentLink>"
+                },
+                "action": {
+                    "giveUpControl": "Geben Sie die elterliche Kontrolle auf",
+                    "revokePermission": "Berechtigung widerrufen"
+                }
+            },
+            "expiry": {
+                "permissions": {
+                    "canExtendExpiry": {
+                        "label": "Kann Ablaufdatum verlängern",
+                        "description": "Die Berechtigungsablaufzeit dieses Namens kann vom {{managerOrOwner}} verlängert werden.",
+                        "description_date": "Diese Namensberechtigung läuft am {{date}} ab und kann vom {{managerOrOwner}} verlängert werden."
+                    },
+                    "cannotExtendExpiry": {
+                        "label": "Kann Ablauf nicht verlängern",
+                        "description": "Die Berechtigungsablaufzeit dieses Namens kann vom Manager nicht verlängert werden.",
+                        "description_date": "Die Berechtigung dieses Namens ({{date}}) kann vom Manager nicht verlängert werden."
+                    }
+                },
+                "manager": "Manager",
+                "owner": "Eigentümer",
+                "action": {
+                    "changePermissions": "Berechtigungen ändern"
+                }
+            },
+            "nameChangePermissions": {
+                "title": "Namensänderungsberechtigungen",
+                "subtitle": {
+                    "parent-can-change": "Der Inhaber dieses Namens (<parentLink>{{parent}}</parentLink>) kann die Einstellungen für diesen Namen ändern.",
+                    "owner-can-change": "Der Besitzer dieses Namens kann die Einstellungen für diesen Namen ändern."
+                },
+                "permissions": {
+                    "canUnwrap": {
+                        "label": "Kann diesen Namen auspacken",
+                        "description": "Der {{owner}} dieses Namens kann diesen Namen auspacken."
+                    },
+                    "cannotUnwrap": {
+                        "label": "Kann diesen Namen nicht auspacken",
+                        "description": "Der {{owner}} dieses Namens kann diesen Namen nicht auspacken."
+                    },
+                    "canCreateSubnames": {
+                        "label": "Kann Unterbezeichnungen erstellen",
+                        "description": "Der {{owner}} dieses Namens kann neue Unterbezeichnungen erstellen."
+                    },
+                    "cannotCreateSubnames": {
+                        "label": "Unter-Namen können nicht erstellt werden",
+                        "description": "Der {{owner}} dieses Namens kann keine neuen Unterbezeichnungen erstellen."
+                    },
+                    "canSend": {
+                        "label": "Kann diesen Namen senden",
+                        "description": "Der {{owner}} dieses Namens kann ihn an einen neuen Besitzer senden."
+                    },
+                    "cannotSend": {
+                        "label": "Kann diesen Namen nicht senden",
+                        "description": "Der {{owner}} dieses Namens kann ihn nicht an einen neuen Besitzer senden."
+                    },
+                    "canSetResolver": {
+                        "label": "Kann den Resolver einstellen",
+                        "description": "Der {{owner}} dieses Namens kann den Resolver einstellen und ändern."
+                    },
+                    "cannotSetResolver": {
+                        "label": "Kann den Resolver nicht einstellen",
+                        "description": "Der {{owner}} dieses Namens kann den Resolver nicht einstellen und ändern."
+                    },
+                    "canSetTTL": {
+                        "label": "Kann TTL einstellen",
+                        "description": "Der {{owner}} dieses Namens kann das TTL setzen und ändern."
+                    },
+                    "cannotSetTTL": {
+                        "label": "Kann TTL nicht einstellen",
+                        "description": "Der {{owner}} dieses Namens kann das TTL nicht einstellen und ändern."
+                    },
+                    "canApprove": {
+                        "label": "Kann Erneuerungsmanager ändern",
+                        "description": "Der Besitzer dieses Namens kann den vom Manager genehmigten Wechsel zur Erneuerung von Unterbezeichnungen vornehmen."
+                    },
+                    "cannotApprove": {
+                        "label": "Erneuerungsmanager kann nicht geändert werden",
+                        "description": "Der Besitzer dieses Namens kann den vom Manager genehmigten Erneuerer von Unterbezeichnungen nicht ändern."
+                    }
+                },
+                "action": {
+                    "changePermissions": "Berechtigungen ändern"
+                }
+            }
+        },
+        "fuses": {
+            "name": "Sicherungen"
+        },
+        "more": {
+            "name": "Mehr",
+            "resolver": {
+                "label": "Löser",
+                "custom": "Benutzerdefiniert",
+                "latest": "Neueste",
+                "outdated": "Veraltet",
+                "version": "Version",
+                "etherscan": "BlockExplorer"
+            },
+            "fuses": {
+                "label": "Sicherungen",
+                "info": "Sie müssen 'Can unwrap' verbrennen, um andere Sicherungen zu verbrennen.",
+                "callToAction": "Bitte geben Sie Ihren Namen ein, um diese Funktion freizuschalten.",
+                "burnFormTitle": "Brennberechtigungen",
+                "burned": "Verbrannt",
+                "permissions": {
+                    "label": "Berechtigungen",
+                    "warning": "Sicherungen können vom Elternteil geändert werden",
+                    "CAN_DO_EVERYTHING": "Kann alles",
+                    "CANNOT_BURN_FUSES": "Kann Sicherungen durchbrennen",
+                    "CANNOT_CREATE_SUBDOMAIN": "Kann Subdomains erstellen",
+                    "CANNOT_SET_RESOLVER": "Kann Resolver einstellen",
+                    "CANNOT_SET_TTL": "Kann TTL einstellen",
+                    "CANNOT_TRANSFER": "Kann übertragen",
+                    "CANNOT_UNWRAP": "Kann auspacken",
+                    "PARENT_CANNOT_CONTROL": "Eltern können kontrollieren",
+                    "CAN_EXTEND_EXPIRY": "Ablauf kann nicht verlängert werden",
+                    "IS_DOT_ETH": "Ist nicht .eth"
+                }
+            },
+            "ownership": {
+                "label": "Eigentum",
+                "refreshDNS": "DNS aktualisieren",
+                "dnsOwnerWarning": {
+                    "isDnsOwner": "Sie können keine Änderungen an diesem Namen vornehmen, da Sie der DNS-Inhaber, aber nicht der Manager sind. Sie können den Manager synchronisieren, um dies zu beheben.",
+                    "isManager": "Sie sind der Manager, aber nicht der DNS-Besitzer dieses Namens. DNS-Namen können jederzeit vom DNS-Besitzer zurückgefordert werden. Sie können diesen Namen an den Besitzer senden oder den DNS-Eintrag entsprechend aktualisieren.",
+                    "refreshDNS": "DNS aktualisieren",
+                    "syncManager": "Sync-Manager"
+                }
+            },
+            "token": {
+                "label": "Token",
+                "hex": "Hexadezimal",
+                "decimal": "Dezimal"
+            },
+            "misc": {
+                "registered": "Registriert",
+                "expires": "Läuft ab"
+            }
+        }
+    },
+    "details": {
+        "title": "Name Details",
+        "notWrapped": "Nicht eingewickelt",
+        "sendName": {
+            "title": "Name senden",
+            "description": "Das Senden eines Namens wird der neuen Adresse die Kontrolle darüber geben.",
+            "learnMore": "Erfahren Sie mehr über Namensbesitz.",
+            "makeOwner": "Eigentümer erstellen",
+            "makeOwnerDescription": "Der Besitzer kann an einen neuen Besitzer senden und den Manager ändern.",
+            "makeManager": "Manager erstellen",
+            "makeManagerDescription": "Der Manager kann Änderungen vornehmen und Datensätze festlegen.",
+            "inputPlaceholder": "Geben Sie eine Ethereum-Adresse oder einen MNS-Namen ein",
+            "transferSubname": "Überweisungsname",
+            "transferController": "Übertragungssteuerung"
+        },
+        "wrap": {
+            "startTitle": "Aktualisieren Sie Ihren Namen",
+            "resumeTitle": "Setzen Sie Ihr Upgrade fort",
+            "completeTitle": "Upgrade abgeschlossen",
+            "description": "Ein Upgrade oder \"Wrapping\" Ihres Namens verleiht ihm neue Funktionen.",
+            "startLabel": "Aktualisierung",
+            "resumeLabel": "Upgrade Fortsetzen",
+            "boxTitle": "Neue Funktionen freischalten",
+            "boxDescription": "Ein Upgrade Ihres Namens schaltet die neueste Funktionalität von MNS frei."
+        },
+        "descriptions": {
+            "owner": "Besitzt und kontrolliert den Namen",
+            "controller": "Kontrolliert alle Aufzeichnungen des Namens",
+            "registrant": "Der Besitzer des NFT",
+            "dnsOwner": "Inhaber des DNS-Namens"
+        },
+        "tabs": {
+            "records": {
+                "label": "Aufzeichnungen",
+                "text": "\"Your transaction is pending. Please ensure you have enough gas to cover the network fee. If your balance is insufficient, you can buy more crypto in our app.\" \n\n\"Ihre Transaktion steht aus. Bitte stellen Sie sicher, dass Sie genug Gas haben, um die Netzwerkgebühr zu decken. Wenn Ihr Guthaben nicht ausreicht, können Sie in unserer App mehr Krypto kaufen.\"",
+                "contentHash": "Inhaltshash",
+                "noContentHash": "Kein Inhalts-Hash",
+                "editRecords": "Datensätze bearbeiten",
+                "noAbi": "Kein ABI",
+                "abi": "ABI",
+                "editRecordsDisabled": "Der aktuelle Resolver ist nicht kompatibel mit verpackten Namen."
+            },
+            "subnames": {
+                "label": "Unternamen",
+                "loading": "Subnamen laden",
+                "empty": "Es wurden keine Unterbezeichnungen hinzugefügt.",
+                "noResults": "Keine Ergebnisse",
+                "noMoreResults": "Keine weiteren Ergebnisse",
+                "addSubname": {
+                    "title": "Subnames ermöglichen es Ihnen, zusätzliche Namen aus Ihrem vorhandenen Namen zu erstellen.",
+                    "learn": "Erfahren Sie mehr über Subnamen",
+                    "action": "Neuer Untername",
+                    "dialog": {
+                        "title": "Subname erstellen",
+                        "error": {
+                            "invalidCharacters": "Enthält ungültige Zeichen",
+                            "mustUseLowercase": "Muss Kleinbuchstaben verwenden",
+                            "alreadyExists": "Name existiert bereits",
+                            "nameTooLong": "Name ist zu lang",
+                            "pccBurned": "Name ist gesperrt bis {{date}}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "advancedEditor": {
+        "title": "{{name}}s Aufzeichnungen",
+        "tabs": {
+            "text": {
+                "label": "Text",
+                "addRecord": "Datensatz hinzufügen",
+                "createRecord": "Geben Sie einen Datensatznamen ein...",
+                "placeholder": {
+                    "default": "Fügen Sie hier einen Wert hinzu..."
+                }
+            },
+            "address": {
+                "label": "Adresse",
+                "addRecord": "Adresse hinzufügen",
+                "noOptions": "Keine Adressoptionen verfügbar",
+                "placeholder": {
+                    "default": "Adresse hier hinzufügen..."
+                }
+            },
+            "other": {
+                "label": "Andere",
+                "labelDisabled": "Nicht vom aktuellen Resolver unterstützt",
+                "contentHash": {
+                    "label": "Inhaltshash",
+                    "placeholder": "z.B. ipfs://"
+                },
+                "publicKey": {
+                    "label": "Öffentlicher Schlüssel",
+                    "placeholder": "z.B. pub_1231231231231"
+                },
+                "abi": {
+                    "label": "ABI",
+                    "placeholder": "Geben Sie hier ein ABI ein..."
+                }
+            }
+        }
+    },
+    "errors": {
+        "invalidName": "Dieser Name ist ungültig.",
+        "invalidAddress": "Keine gültige Adresse",
+        "expiringSoon": "Die Schonfrist für diesen Namen endet am {{date}}. Wenn sie nicht vor diesem Datum verlängert wird, wird er zur Registrierung verfügbar sein.",
+        "hasExpired": "{{ name }} ist abgelaufen",
+        "ownerManagerChoice": "Muss Eigentümer oder Manager senden",
+        "unknown": "Unbekannter Fehler",
+        "notMigrated": "Dieser Name wurde nicht in das neue Register übertragen.",
+        "featureNotAvailable": "Einige Funktionen sind noch nicht verfügbar, aber Sie können trotzdem noch",
+        "featureNotAvailableLink": "Betrachten Sie diesen Namen in der alten App.",
+        "migrationNotAvailable": "Die Migration zum neuen Register ist noch nicht verfügbar, aber Sie können immer noch",
+        "migrationNotAvailableLink": "Migrieren Sie diesen Namen in der alten App.",
+        "addressLength": "Wenn die Adresse sollte 42 Zeichen lang sein.",
+        "unsupportedTLD": "Dieses TLD wird nicht unterstützt",
+        "keyInUse": "{{value}} wird bereits verwendet",
+        "hasSubnames": "Dieser Name hat Unterbezeichnungen",
+        "permissionRevoked": "Dieser Name hat die erforderlichen Berechtigungen für diese Aktion widerrufen.",
+        "invalidJSON": "Ungültiges JSON"
+    }
 }

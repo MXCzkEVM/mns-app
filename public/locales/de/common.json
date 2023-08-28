@@ -5,17 +5,323 @@
     "unsupportedNetwork": "Nicht unterstütztes Netzwerk",
     "notFound": "404 Nicht Gefunden",
     "etherscan": "BlockExplorer",
-    "action": "{'cancel': 'Abbrechen', 'change': 'Ändern', 'upload': 'Hochladen', 'close': 'Schließen', 'save': 'Speichern', 'edit': 'Bearbeiten', 'view': 'Ansehen', 'clear': 'Löschen', 'update': 'Aktualisieren', 'learnMore': 'Mehr erfahren', 'send': 'Senden', 'next': 'Weiter', 'add': 'Hinzufügen', 'set': 'Setzen', 'search': 'Suchen', 'back': 'Zurück', 'continue': 'Fortsetzen',  'confirm':  \"Bestätigen\",  \"remove\": \"Entfernen\", \"sign\": \"Unterschreiben\", \"reset\": \"Zurücksetzen\", \"transfer\": \"Überweisen\", \"tryAgain\": \"Erneut versuchen\", \"done\": \"Fertig\", \"burnSelected\": \"Ausgewählte verbrennen\", \"extend\": \"Erweitern\", \"delete\": \"Löschen\",  \"sort\":  \"Sortieren\",  \"check\":  \"Prüfen\",  \"claim\":  \"Beanspruchen\",  \"remindMe\":  \"Erinnere mich\",  \"begin\":  \"Beginnen\",  \"finish\":  \"Beenden\",  \"skip\":  \"Überspringen\",  \"changeNetwork\":  \"Netzwerk wechseln\",   \"understand\":   Ich verstehe'\",   feedback:   Feedback'\",   migrate:   Migrate'\"}",
-    "unit": "{'years_one': '{{count}} Jahr', 'years_other': '{{count}} Jahre', 'yrs_one': '{{count}} J', 'yrs_other': '{{count}} J', 'gas': '{{value}} Gas', 'selected': '{{count}} ausgewählt', 'perPage': '{{count}} pro Seite'}",
-    "navigation": "{'home': 'Zuhause', 'names': 'Meine Namen', 'favourites': 'Favoriten', 'settings': 'Einstellungen', 'governance': 'Verwaltung', 'community': 'Gemeinschaft', 'developers': 'Entwickler', 'support': 'Unterstützung', 'bounty': 'Bug Bounty', 'terms': 'Nutzungsbedingungen', 'privacy': 'Datenschutzrichtlinie', 'back': 'Zurück', 'oldApp': 'Alte MNS App', 'language': 'Sprache', 'currency': 'Währung',  'ipfsApp':  \"IPFS MNS App\",  \"feedback\": \"Feedback\", \"syncMessage\": \"Synchronisiert mit dem Netzwerk. Änderungen von Ihrer Transaktion sind möglicherweise noch nicht sichtbar.\"}",
-    "wallet": "{'myProfile': 'Profil', 'disconnect': 'Trennen', 'connect': 'Verbinden', 'noPrimaryName': 'Kein Primärname', 'viewProfile': 'Profil ansehen', 'viewDetails': 'Details anzeigen', 'register': 'Registrieren'}",
-    "name": "{'registered': 'Registriert', 'expires': 'Läuft ab', 'noExpiry': 'Kein Ablauf', 'expiry': 'Ablauf', 'parent': 'Elternteil', 'noParent': 'Kein Elternteil', 'registrant': 'Registrant', 'controller': 'Controller', 'dnsOwner': 'DNS-Inhaber', 'owner': 'Inhaber', 'notOwned': 'Nicht im Besitz', 'manager': 'Manager', 'all': 'Alle Namen', 'expiresInYears_one': '{{count}} Jahr bis zum Ablauf', 'expiresInYears_other': '{{count}} Jahre bis zum Ablauf', 'expiresInMonths_one': '{{count}} Monat bis zum Ablauf',  'expiresInMonths_other': '{{count}} Monate bis zum Ablauf',  'expiresInDays_one': '{{count}} Tag bis zum Ablauf',  'expiresInDays_other': '{{count}} Tage bis zum Ablauf',  'expiresInHours_one': '{{count}} Stunde bis zum Ablauf',  'expiresInHours_other': '{{count}} Stunden bis zum Ablauf','expiresInHours_zero':'Läuft in weniger als einer Stunde ab','expiredInHours_one':'Vor {{count}} Stunde abgelaufen','expiredInHours_other':'Vor {{count}} Stunden abgelaufen','expiredInHours_zero':'Vor weniger als einer Stunde abgelaufen','expiredInDays_one':'Vor {{count}} Tag abgelaufen','expiredInDays_other':'Vor {{count}} Tagen abgelaufen','expiredInMonths_one':'Vor {{count}} Monat abgelaufen','expiredInMonths_other':'Vor {{count}} Monaten abgelaufen','expiredInYears_one':'Vor {{count}} Jahr abgelaufen','expiredInYears_other':'Vor {{count}} Jahren abgelaufen','gracePeriod':{'expiresInYears_one':'Gnadenfrist läuft in {{count}} Jahr ab','expiresInYears_other':'Gnadenfrist läuft in {{count}} Jahren ab','expiresInMonths_one':'Gnadenfrist läuft in {{count}} Monat ab','expiresInMonths_other':'Gnadenfrist läuft in {{count}} Monaten ab','expiresInDays_one':'Gnadenfrist läuft in {{count}} Tag ab','expiresInDays_other':'Gnadenfrist läuft in {{count}} Tagen ab','expiresInHours_one':'Gnadenfrist läuft in {{count}} Stunde ab','expiresInHours_other':'Gnadenfrist läuft in {{count}} Stunden ab','expiresInHours_zero':'Gnadenfrist läuft in weniger als einer Stunde ab'},'extend':'Erweitern','send':'Senden','transfer':'Übertragen','sendManager':'Manager senden','sendOwner':'Eigentümer senden'}",
-    "address": "{'label': 'Adresse', 'viewAddress': 'Adresse anzeigen', 'copyAddress': 'Adresse kopieren'}",
-    "records": "{'label': 'Aufzeichnungen'}",
-    "sortTypes": "{'expiryDate': 'Ablaufdatum', 'labelName': 'Name', 'creationDate': 'Erstellungsdatum'}",
-    "errors": "{'noResults': 'Keine Ergebnisse gefunden', 'invalidAddress': 'Ungültige Adresse', 'addressRequired': 'Adresse erforderlich'}",
-    "transaction": "{'description': {'setName': 'Name festlegen', 'setRecords': 'Datensätze festlegen', 'test': 'Testtransaktion', 'addSuccess': 'Erfolgreich hinzugefügt', 'sendName': 'Name senden', 'migrateProfile': 'Profil migrieren', 'migrateProfileWithReset': 'Profil migrieren', 'migrateProfileWithSync': 'Profil migrieren und aktualisieren', 'wrapName': 'Name verpacken', 'updateResolver': 'Resolver aktualisieren', 'updateProfile': 'Profil aktualisieren', 'setPrimaryName': 'Primären Namen festlegen', 'updateEthAddress': 'ETH-Adresse aktualisieren', 'testSendName': 'Name senden', 'burnFuses': 'Berechtigungen verbrennen', 'createSubname': 'Untername erstellen', 'deleteSubname': 'Untername löschen', 'extendNames': 'Namen erweitern',  importDNSSECName: \"DNSSEC-Namen importieren\", commitName: \"Timer starten\", registerName: \"Namen registrieren\", approveNameWrapper: \"NameWrapper genehmigen\", clearRecords: \"Datensätze löschen\", updateRecords: \"Datensätze aktualisieren\", transferName: \"Namen übertragen\", changePermissions: \"Berechtigungen ändern\", syncManager: \"Manager synchronisieren\", updateProfileRecords: \"Profil aktualisieren\", resetProfile: \"Profil zurücksetzen\", setHexagonName: \"MEP1002 Hexagon-Namen festlegen\", mintHexagon: \"MEP1002 Hexagon prägen\"}, info: {sendName: \"Den Controller und den Registranten des Namens festlegen\", migrateProfile: \"Bestehende Datensätze auf neuen Resolver setzen\", migrateProfileWithReset: \"Bestehende Datensätze auf neuen Resolver setzen\", migrateProfileWithSync: \"Bestehende Datensätze auf neuen Resolver setzen\", wrapName: \"Namen verpacken und neuen Resolver setzen\", updateResolver: \"Resolver ändern zu\", updateProfile: \"Datensätze auf bestehendem Resolver aktualisieren\", setPrimaryName: \"Den primären Namen für Ihre Adresse festlegen\", updateEthAddress: \"ETH-Adresse auf diese Adresse aktualisieren\", testSendName: \"Den Controller und den Registranten des Namens festlegen\", createSubname: \"Einen neuen Untername auf dem Namen erstellen\", burnFuses: \"Die ausgewählten Berechtigungen bis zum Ablauf des Namens verbrennen\", commitName: \"Timer starten, um Namen zu registrieren\", approveNameWrapper: \"Den NameWrapper zur Verwaltung Ihrer Namen genehmigen\"}, itemLabel:{name:'Name', address:'Adresse', action:'Aktion', info:'Info', to:'Zu', subname:'Untername', duration:'Dauer', cost:'Kosten', update:'Aktualisierung', resolver:'Resolver'}, itemValue:{records_one:'{{count}} Datensatz' , records_other:'{{count}} Datensätze'}, status:{pending:{regular:'Ausstehend'}, confirmed:{regular:'Bestätigt'}, failed:{regular:'Gescheitert'}}, dialog:{intro:{trailingButton:'Starten' , trailingButtonResume:'Fortsetzen' , step:'Schritt {{step}}'}, confirm:{title:\"Details bestätigen\" , message:\"Überprüfen Sie diese Details, bevor Sie in Ihrer Wallet bestätigen.\"}, sent:{title:\"Transaktion gesendet\" , message:\"Ihre Transaktion ist jetzt in Bearbeitung, Sie können dies schließen und später wiederkommen.\"}, complete:{title:\"Transaktion abgeschlossen\" , message:\"Ihre Transaktion ist jetzt abgeschlossen!\"}, failed:{title:\"Transaktion fehlgeschlagen\"}}, error:{request:{INSUFFICIENT_FUNDS:\"Unzureichende Mittel im Wallet\" , UNPREDICTABLE_GAS_LIMIT:\"Ein unbekannter Fehler ist aufgetreten\"}}, viewEtherscan:\"Auf BlockExplorer anzeigen\" , viewMore:\"Mehr anzeigen\"}",
-    "search": "{'label': 'Namenssuche', 'placeholder': 'Suche nach einem Namen', 'emptyText': 'Geben Sie einen Namen oder eine Adresse zur Suche ein...', 'address': 'Adresse', 'errors': {'tooShort': 'Name zu kurz', 'invalid': 'Ungültiges Format für den Namen'}, 'status': {'registered': 'Registriert', 'gracePeriod': 'Schonfrist', 'premium': 'Temporär Premium', 'available': 'Verfügbar', 'notOwned': 'Nicht Besessen', 'notImported': 'Nicht Importiert', 'short': 'Zu Kurz', 'default': 'Ungültig', 'unsupportedTLD': 'Nicht Unterstützt', 'imported': 'Importiert', 'owned': 'Besessen'}}",
-    "selectableInput": "{'add': 'Hinzufügen', 'placeholder': 'Eine Option auswählen', 'empty': 'Keine Optionen gefunden'}",
-    "testnetFaucet": "\"Jede Adresse auf Goerli kann {{ amount }}ETH beanspruchen, um die MNS Manager App sowie alle neuen Verträge zu testen. Es kann einige Minuten dauern, bis es in Ihrer Wallet angezeigt wird.\""
+    "action": {
+        "cancel": "Abbrechen",
+        "change": "Ändern",
+        "upload": "Hochladen",
+        "close": "Schließen",
+        "save": "Speichern",
+        "edit": "Bearbeiten",
+        "view": "Anzeigen",
+        "clear": "Klar",
+        "update": "Aktualisieren",
+        "learnMore": "Erfahren Sie mehr",
+        "send": "Senden",
+        "next": "Nächster",
+        "add": "Hinzufügen",
+        "set": "Festlegen",
+        "search": "Suche",
+        "back": "Zurück",
+        "continue": "Fortfahren",
+        "confirm": "Bestätigen",
+        "remove": "Entfernen",
+        "sign": "Anmelden",
+        "reset": "Zurücksetzen",
+        "transfer": "Überweisung",
+        "tryAgain": "Versuche es erneut",
+        "done": "Erledigt",
+        "burnSelected": "Ausgewählte verbrennen",
+        "extend": "Erweitern",
+        "delete": "Löschen",
+        "sort": "Sortieren",
+        "check": "Überprüfen",
+        "claim": "Beanspruchen",
+        "remindMe": "Erinnere Mich",
+        "begin": "Beginnen",
+        "finish": "Fertig",
+        "skip": "Überspringen",
+        "changeNetwork": "Netzwerk wechseln",
+        "understand": "Ich verstehe",
+        "feedback": "Rückmeldung",
+        "migrate": "Migrieren"
+    },
+    "unit": {
+        "years_one": "{{count}} Jahr",
+        "years_other": "{{count}} Jahre",
+        "yrs_one": "{{count}} Jahr",
+        "yrs_other": "{{count}} Jahre",
+        "gas": "{{value}} Gasgebühr",
+        "selected": "{{count}} ausgewählt",
+        "perPage": "{{count}} pro Seite"
+    },
+    "navigation": {
+        "home": "Zuhause",
+        "names": "Meine Namen",
+        "favourites": "Favoriten",
+        "settings": "Einstellungen",
+        "governance": "Verwaltung",
+        "community": "Gemeinschaft",
+        "developers": "Entwickler",
+        "support": "Unterstützung",
+        "bounty": "Fehlerprämie",
+        "terms": "Nutzungsbedingungen",
+        "privacy": "Datenschutzrichtlinie",
+        "back": "Zurück",
+        "oldApp": "Alte MNS App",
+        "language": "Sprache",
+        "currency": "Währung",
+        "ipfsApp": "IPFS MNS App",
+        "feedback": "Rückmeldung",
+        "syncMessage": "Synchronisierung mit dem Netzwerk. Änderungen von Ihrer Transaktion sind möglicherweise noch nicht sichtbar."
+    },
+    "wallet": {
+        "myProfile": "Profil",
+        "disconnect": "Trennen",
+        "connect": "Verbinden",
+        "noPrimaryName": "Kein Primärname",
+        "viewProfile": "Profil ansehen",
+        "viewDetails": "Details anzeigen",
+        "register": "Registrieren"
+    },
+    "name": {
+        "registered": "Registriert",
+        "expires": "Läuft ab",
+        "noExpiry": "Kein Ablaufdatum",
+        "expiry": "Ablaufdatum",
+        "parent": "Elternteil",
+        "noParent": "Kein Elternteil",
+        "registrant": "Registrierender",
+        "controller": "Controller",
+        "dnsOwner": "DNS-Besitzer",
+        "owner": "Eigentümer",
+        "notOwned": "Nicht Besessen",
+        "manager": "Manager",
+        "all": "Alle Namen",
+        "expiresInYears_one": "Läuft in {{count}} Jahr ab",
+        "expiresInYears_other": "Läuft ab in {{count}} Jahren",
+        "expiresInMonths_one": "Läuft in {{count}} Monat ab",
+        "expiresInMonths_other": "Läuft in {{count}} Monaten ab",
+        "expiresInDays_one": "Läuft in {{count}} Tag ab",
+        "expiresInDays_other": "Läuft in {{count}} Tagen ab",
+        "expiresInHours_one": "Läuft ab in {{count}} Stunde",
+        "expiresInHours_other": "Läuft ab in {{count}} Stunden",
+        "expiresInHours_zero": "Läuft in weniger als einer Stunde ab",
+        "expiredInHours_one": "Abgelaufen vor {{count}} Stunde",
+        "expiredInHours_other": "Abgelaufen vor {{count}} Stunden",
+        "expiredInHours_zero": "Vor weniger als einer Stunde abgelaufen",
+        "expiredInDays_one": "Abgelaufen vor {{count}} Tag",
+        "expiredInDays_other": "Abgelaufen vor {{count}} Tagen",
+        "expiredInMonths_one": "Abgelaufen vor {{count}} Monat",
+        "expiredInMonths_other": "Abgelaufen vor {{count}} Monaten",
+        "expiredInYears_one": "Abgelaufen vor {{count}} Jahr",
+        "expiredInYears_other": "Abgelaufen vor {{count}} Jahren",
+        "gracePeriod": {
+            "expiresInYears_one": "Schonfrist läuft in {{count}} Jahr ab",
+            "expiresInYears_other": "Die Karenzzeit läuft in {{count}} Jahren ab",
+            "expiresInMonths_one": "Die Gnadenfrist läuft in {{count}} Monat ab",
+            "expiresInMonths_other": "Die Karenzzeit läuft in {{count}} Monaten ab",
+            "expiresInDays_one": "Die Karenzzeit läuft in {{count}} Tag ab",
+            "expiresInDays_other": "Die Karenzzeit läuft in {{count}} Tagen ab",
+            "expiresInHours_one": "Die Karenzzeit läuft in {{count}} Stunde ab",
+            "expiresInHours_other": "Die Karenzzeit läuft in {{count}} Stunden ab",
+            "expiresInHours_zero": "Die Gnadenfrist läuft in weniger als einer Stunde ab"
+        },
+        "extend": "Erweitern",
+        "send": "Senden",
+        "transfer": "Überweisung",
+        "sendManager": "Manager senden",
+        "sendOwner": "Eigentümer senden"
+    },
+    "address": {
+        "label": "Adresse",
+        "viewAddress": "Adresse anzeigen",
+        "copyAddress": "Adresse kopieren"
+    },
+    "records": {
+        "label": "Aufzeichnungen"
+    },
+    "sortTypes": {
+        "expiryDate": "Ablaufdatum",
+        "labelName": "Name",
+        "creationDate": "Erstellungsdatum"
+    },
+    "errors": {
+        "noResults": "Keine Ergebnisse gefunden",
+        "invalidAddress": "Ungültige Adresse",
+        "addressRequired": "Adresse erforderlich"
+    },
+    "transaction": {
+        "description": {
+            "setName": "Name festlegen",
+            "setRecords": "Rekorde setzen",
+            "test": "Testtransaktion",
+            "addSuccess": "Erfolg hinzugefügt",
+            "sendName": "Name senden",
+            "migrateProfile": "Profil migrieren",
+            "migrateProfileWithReset": "Profil migrieren",
+            "migrateProfileWithSync": "Profil migrieren und aktualisieren",
+            "wrapName": "Name einpacken",
+            "updateResolver": "Resolver aktualisieren",
+            "updateProfile": "Profil aktualisieren",
+            "setPrimaryName": "Primären Namen festlegen",
+            "updateEthAddress": "ETH-Adresse aktualisieren",
+            "testSendName": "Name senden",
+            "burnFuses": "Brennberechtigungen",
+            "createSubname": "Untername erstellen",
+            "deleteSubname": "Untername löschen",
+            "extendNames": "Erweitern Sie Namen",
+            "importDNSSECName": "DNSSEC-Namen importieren",
+            "commitName": "Timer starten",
+            "registerName": "Registrierungsname",
+            "approveNameWrapper": "Genehmigen Sie NameWrapper",
+            "clearRecords": "Lösche Aufzeichnungen",
+            "updateRecords": "Datensätze aktualisieren",
+            "transferName": "Überweisungsname",
+            "changePermissions": "Berechtigungen ändern",
+            "syncManager": "Sync-Manager",
+            "updateProfileRecords": "Profil aktualisieren",
+            "resetProfile": "Profil zurücksetzen",
+            "setHexagonName": "MEP1002 Hexagon Name festlegen",
+            "mintHexagon": "Präge MEP1002 Hexagon"
+        },
+        "info": {
+            "sendName": "Legen Sie den Controller und den Registranten des Namens fest",
+            "migrateProfile": "Legen Sie vorhandene Datensätze auf neuem Resolver fest",
+            "migrateProfileWithReset": "Legen Sie vorhandene Datensätze auf neuem Resolver fest",
+            "migrateProfileWithSync": "Legen Sie vorhandene Datensätze auf neuem Resolver fest",
+            "wrapName": "Namen verpacken und neuen Resolver einstellen",
+            "updateResolver": "Resolver ändern zu",
+            "updateProfile": "Aktualisieren Sie die Datensätze auf dem vorhandenen Resolver",
+            "setPrimaryName": "Legen Sie den Hauptnamen für Ihre Adresse fest",
+            "updateEthAddress": "ETH-Adresse auf diese Adresse aktualisieren",
+            "testSendName": "Legen Sie den Controller und den Registranten des Namens fest",
+            "createSubname": "Erstellen Sie einen neuen Untername auf dem Namen",
+            "burnFuses": "Verbrennen Sie die ausgewählten Berechtigungen bis zum Ablauf des Namens",
+            "commitName": "Timer starten, um Namen zu registrieren",
+            "approveNameWrapper": "Genehmigen Sie den NameWrapper, um Ihre Namen zu verwalten",
+            "fuses": {
+                "revoke": "Widerrufen",
+                "grant": "Gewähren",
+                "setExpiry": "Ablaufdatum festlegen",
+                "PARENT_CANNOT_CONTROL": "Geben Sie die elterliche Kontrolle auf",
+                "CAN_EXTEND_EXPIRY": "Verlängern Sie das Ablaufdatum",
+                "CANNOT_UNWRAP": "Entpacken Sie diesen Namen",
+                "CANNOT_CREATE_SUBDOMAIN": "Unterdomänen erstellen",
+                "CANNOT_SET_RESOLVER": "Resolver einstellen",
+                "CANNOT_SET_TTL": "Setze TTL",
+                "CANNOT_TRANSFER": "Sende diesen Namen",
+                "CANNOT_BURN_FUSES": "Berechtigungen ändern",
+                "CANNOT_APPROVE": "Erneuerungsmanager ändern"
+            }
+        },
+        "itemLabel": {
+            "name": "Name",
+            "address": "Adresse",
+            "action": "Aktion",
+            "info": "Info",
+            "to": "Um",
+            "subname": "Untername",
+            "duration": "Dauer",
+            "cost": "Kosten",
+            "update": "Aktualisieren",
+            "resolver": "Löser",
+            "h3Index": "H3 Index"
+        },
+        "itemValue": {
+            "records_one": "{{count}} Aufzeichnung",
+            "records_other": "{{count}} Aufzeichnungen"
+        },
+        "status": {
+            "pending": {
+                "regular": "Ausstehend"
+            },
+            "confirmed": {
+                "regular": "Bestätigt",
+                "notifyTitle": "Transaktion erfolgreich",
+                "notifyMessage": "Ihre \"{{action}}\" Transaktion war erfolgreich."
+            },
+            "failed": {
+                "regular": "Fehlgeschlagen",
+                "notifyTitle": "Transaktionsfehler",
+                "notifyMessage": "Ihre \"{{action}}\" Transaktion ist fehlgeschlagen und wurde zurückgesetzt."
+            }
+        },
+        "dialog": {
+            "intro": {
+                "trailingButton": "Starten",
+                "trailingButtonResume": "Fortsetzen",
+                "step": "Schritt {{step}}"
+            },
+            "confirm": {
+                "title": "Details bestätigen",
+                "message": "Überprüfen Sie diese Details, bevor Sie in Ihrer Wallet bestätigen.",
+                "waitingForWallet": "Warten auf Wallet",
+                "openWallet": "Wallet öffnen"
+            },
+            "sent": {
+                "title": "Transaktion gesendet",
+                "message": "Ihre Transaktion wird jetzt ausgeführt, Sie können dies schließen und später zurückkommen.",
+                "progress": {
+                    "title": "Gesendet",
+                    "message": "Dauert länger als erwartet"
+                }
+            },
+            "complete": {
+                "title": "Transaktion abgeschlossen",
+                "message": "Ihre Transaktion ist jetzt abgeschlossen!",
+                "progress": {
+                    "title": "Erledigt"
+                }
+            },
+            "failed": {
+                "title": "Transaktion fehlgeschlagen",
+                "progress": {
+                    "title": "Fehlgeschlagen"
+                }
+            },
+            "error": {
+                "gasLimit": "Das Gaslimit für Ihre Transaktion war nicht hoch genug, bitte versuchen Sie es erneut."
+            }
+        },
+        "error": {
+            "request": {
+                "INSUFFICIENT_FUNDS": "Unzureichende Mittel im Wallet",
+                "UNPREDICTABLE_GAS_LIMIT": "Ein unbekannter Fehler ist aufgetreten"
+            }
+        },
+        "viewEtherscan": "Auf BlockExplorer anzeigen",
+        "viewMore": "Mehr Anzeigen"
+    },
+    "search": {
+        "label": "Namenssuche",
+        "placeholder": "Suche nach einem Namen",
+        "emptyText": "Geben Sie einen Namen oder eine Adresse ein, um zu suchen...",
+        "address": "Adresse",
+        "errors": {
+            "tooShort": "Name zu kurz",
+            "invalid": "Ungültiges Format für den Namen"
+        },
+        "status": {
+            "registered": "Registriert",
+            "gracePeriod": "Gnadenfrist",
+            "premium": "Temporäres Premium",
+            "available": "Verfügbar",
+            "notOwned": "Nicht Besessen",
+            "notImported": "Nicht importiert",
+            "short": "Zu kurz",
+            "default": "Ungültig",
+            "unsupportedTLD": "Nicht unterstützt",
+            "imported": "Importiert",
+            "owned": "Besessen"
+        }
+    },
+    "selectableInput": {
+        "add": "Hinzufügen",
+        "placeholder": "Wählen Sie eine Option",
+        "empty": "Keine Optionen gefunden"
+    },
+    "testnetFaucet": {
+        "explanation": "Jede Adresse auf Goerli kann {{ amount }}ETH beanspruchen, um die MNS Manager App zu testen, sowie alle neuen Verträge.",
+        "note": "Es kann einige Minuten dauern, bis es in Ihrer Wallet angezeigt wird."
+    }
 }

@@ -1,6 +1,15 @@
 {
     "title": "Namen",
-    "subtitle": "{'start': 'Alle Namen gehalten von', 'this': 'diesem', 'your': 'Ihrem', 'wallet': 'Wallet'}",
+    "subtitle": {
+        "start": "Alle von gehaltenen Namen",
+        "this": "dies",
+        "your": "Ihr",
+        "wallet": "Geldbörse"
+    },
     "empty": "Für diese Adresse wurden keine Namen gefunden",
-    "sortTypes": "{'expiryDate': 'Ablaufdatum', 'labelName': 'Name', 'creationDate': 'Erstellungsdatum'}"
+    "sortTypes": {
+        "expiryDate": "Ablaufdatum",
+        "labelName": "Name",
+        "creationDate": "Erstellungsdatum"
+    }
 }

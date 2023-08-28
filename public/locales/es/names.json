@@ -1,6 +1,15 @@
 {
     "title": "Nombres",
-    "subtitle": "{'start': 'Todos los nombres que posee', 'this': 'este', 'your': 'tu', 'wallet': 'cartera'}",
+    "subtitle": {
+        "start": "Todos los nombres que poseen",
+        "this": "esto",
+        "your": "su",
+        "wallet": "cartera"
+    },
     "empty": "No se encontraron nombres para esta dirección",
-    "sortTypes": "{'expiryDate': 'Fecha de vencimiento', 'labelName': 'Nombre', 'creationDate': 'Fecha de creación'}"
+    "sortTypes": {
+        "expiryDate": "Fecha de vencimiento",
+        "labelName": "Nombre",
+        "creationDate": "Fecha de creación"
+    }
 }

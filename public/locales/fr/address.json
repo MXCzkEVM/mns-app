@@ -3,7 +3,12 @@
     "nameCount": "{{count}} noms",
     "filter": "Filtre",
     "view": "Voir",
-    "noProfile": "{'title': 'Aucun nom principal défini', 'message': 'Ce portefeuille doit définir un nom principal pour créer un profil'}",
+    "noProfile": {
+        "title": "Aucun nom principal défini",
+        "message": "Ce portefeuille doit définir un nom principal pour créer un profil."
+    },
     "noResults": "Aucun nom trouvé",
-    "errors": "{'names': 'Adresse introuvable'}"
+    "errors": {
+        "names": "Adresse introuvable"
+    }
 }

@@ -3,7 +3,12 @@
     "nameCount": "{{count}} Namen",
     "filter": "Filter",
     "view": "Anzeigen",
-    "noProfile": "{'title': 'Kein primärer Name festgelegt', 'message': 'Diese Wallet muss einen primären Namen festlegen, um ein Profil zu erstellen'}",
+    "noProfile": {
+        "title": "Primärer Name nicht festgelegt",
+        "message": "Diese Wallet muss einen Hauptnamen festlegen, um ein Profil zu erstellen."
+    },
     "noResults": "Keine Namen gefunden",
-    "errors": "{'names': 'Adresse konnte nicht gefunden werden'}"
+    "errors": {
+        "names": "Adresse konnte nicht gefunden werden"
+    }
 }

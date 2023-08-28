@@ -1,4 +1,23 @@
 {
     "title": "Paramètres",
-    "section": "{'wallet': {'title': 'Portefeuille'}, 'transaction': {'title': 'Transactions', 'noRecentTransactions': 'Aucune transaction récente'}, 'primary': {'title': 'Nom principal', 'loading': 'Chargement du nom principal...', 'noName': 'Aucun nom principal défini.', 'input': {'title': 'Sélectionnez un nom principal', 'noNames': \"Aucun nom éligible trouvé pour cette adresse\", 'noOtherNames': \"Aucun autre nom éligible trouvé pour cette adresse\", 'loading': 'Chargement des noms'}}}"
+    "section": {
+        "wallet": {
+            "title": "Portefeuille"
+        },
+        "transaction": {
+            "title": "Transactions",
+            "noRecentTransactions": "Aucune transaction récente"
+        },
+        "primary": {
+            "title": "Nom Principal",
+            "loading": "Chargement du nom principal...",
+            "noName": "Aucun nom principal défini.",
+            "input": {
+                "title": "Sélectionnez un nom principal",
+                "noNames": "Aucun nom éligible trouvé pour cette adresse",
+                "noOtherNames": "Aucun autre nom éligible trouvé pour cette adresse",
+                "loading": "Chargement des noms"
+            }
+        }
+    }
 }

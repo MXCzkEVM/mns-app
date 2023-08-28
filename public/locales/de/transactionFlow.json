@@ -1,6 +1,332 @@
 {
-    "input": "{'profileEditor': {'tabs': {'avatar': {'dropdown': {'selectNFT': 'NFT auswählen', 'uploadImage': 'Bild hochladen'}, 'nft': {'title': 'Wähle ein NFT', 'searchPlaceholder': 'Suche nach einem NFT', 'loading': 'Lade deine NFTs', 'unknown': 'Unbekanntes NFT', 'noNFTs': 'Keine NFTs für diese Adresse gefunden.', 'selected': {'title': 'Ausgewähltes NFT', 'subtitle': 'Sind Sie sicher, dass Sie dieses NFT verwenden möchten?'}, 'noResults': 'Keine Ergebnisse gefunden.'}, 'image': {'title': 'Bild bearbeiten', 'upload': {'title': 'Avatar hochladen', 'subtitle': \"Sie müssen eine Nachricht signieren, um einen Avatar hochzuladen. Das kostet nichts.\", 'action': 'Signieren und Hochladen'}}}, 'general': {'label': 'Allgemein', 'name': {'label': 'Spitzname', 'placeholder': 'John Smith'},'url':{'label':'Website','placeholder':'https://ens.domains'},'location':{'label':'Ort','placeholder':'Metaverse'},'description':{'label':'Kurze Biografie','placeholder':\"Ich bin ein Yield Farmer aus dem ländlichen Tennessee.\"}},'accounts':{'label':'Konten','addAccount':'Konto hinzufügen','noOptions':'Keine Kontooptionen verfügbar','placeholder':{'default':'Benutzernamen hier hinzufügen','com.twitter':'z.B. ensdomains','com.github':'z.B. ensdomains','com.discord':'z.B. alisha.eth#0001'}},'address':{'label':'Adresse','addAddress':'Adresse hinzufügen','noOptions':'Keine Adressoptionen verfügbar','placeholder':{'default':'Adresse hier hinzufügen','ETH':'0xD9hbQK...','BNB':'0xD9hbQK...','BTC':'3FZbgi29...','LTC':'3FZbgi29...','SOL':'D4kA7VzHnmV...','DOT':'1D4kA7VxH...','DOGE':'DFabcd12...'}},'contentHash':{'label':'Website','addContentHash':'Dezentrale Website hinzufügen','placeholder':{'default':'URL hier hinzufügen','ipfs':'ipfs://...','skynet':'sia://...','arweave':'ar://...','swarm':'bzz://...','onion':'onion3://...'}},'other':{'label':'Andere','addRecord':\n'Datensatz hinzufügen', \n'erstelleDatensatz':\n'Einen Datensatznamen eingeben...', \n'platzhalter':\n{'default':\n'Hier einen Wert hinzufügen...'\n}}}, \n'warnungsOverlay':\n{'aktion':\n{'mehrÜberResolverErfahren':\n'Mehr über Resolver erfahren',\n'resolverAktualisieren':\n'Resolver aktualisieren',\n'resolverSetzen':\n'Resolver setzen',\n'aktualisierungIgnorieren':\n'Dies ignorieren und weiterhin Ihren aktuellen Resolver verwenden. Sie werden beim nächsten Mal erneut gefragt.'\n},\n'unberechtigterResolver':\n{'titel':\n'Unberechtigter Resolver',\n'untertitel':\n'Sie haben keine Berechtigung, Datensätze für diesen Resolver zu setzen. Sie müssen den neuesten Resolver aktualisieren, um Ihr Profil zu bearbeiten.',\n'aktion':\n'Resolver aktualisieren'\n},\n'migrateProfileSelector':\n{'titel':\n'Profil',\n'untertitel':\n'Die Profildatensätze auf jedem Resolver stimmen nicht überein. Welchen Satz von Datensätzen möchten Sie verwenden?',\n'option':\n{'latest':\n'Profildatensätze auf neuem Resolver',\n'current':\n'Aktuelle Profildatensätze',\n'reset':\n'Ihr Profil zurücksetzen',\n'resetSubtitle':\n'Entfernen Sie alle Profildatensätze'\n}},\n'migrateProfileWarning':\n{'titel':\n'Migriere Profil',\n'untertitel':\n'Sie migrieren Ihre Profildatensätze zum neuesten Resolver. Dies wird alle vorhandenen Datensätze auf dem neuesten Resolver dauerhaft löschen und sie durch Ihre aktuellen Datensätze ersetzen.'\n},\n'migrateRegistry':\n{'titel':\n'Registry ist veraltet',\n'untertitel':\n'Sie müssen das Registry migrieren, bevor Sie Änderungen an diesem Namen vornehmen können.',\n'action:\n'Migrieren'\n},\n'keinResolverGesetzt'\n{'titel:\n'Kein Resolver gesetzt',\n'untertitel:\n'Ein Resolver muss gesetzt werden, bevor Sie",
-    "transaction": "{'extendNames': {'actionValue': 'Registrierung verlängern', 'costValue': '{{value}} + Gebühren', 'warning': 'Das Verlängern dieses Namens wird Ihnen nicht das Eigentum daran verschaffen'}, 'deleteSubname': {'warning': 'Hallo da draußen'}}",
-    "intro": "{'migrateAndUpdateResolver': {'title': 'Aktion erforderlich', 'heading': 'Die Änderungen, die Sie an Ihrem Profil speichern möchten, erfordern ein Upgrade Ihres Resolvers.', 'link': 'Erfahren Sie mehr über Resolver-Upgrades', 'warning': 'Beachten Sie, dass Ihre Änderungen nicht gespeichert werden, wenn Sie dies zu irgendeinem Zeitpunkt abbrechen.'}, 'syncManager': {'description': 'Das Synchronisieren des Managers macht Sie zum neuen Manager dieses Namens. Der aktuelle Manager <b>({{manager}})</b> wird keine Änderungen mehr vornehmen können.', 'wrappedWarning': 'Das Synchronisieren des Managers wird auch diesen Namen auspacken. Dies wird das NFT verbrennen und alle Berechtigungen zurücksetzen.'}}",
-    "errors": "{'duplicateKey': '{{value}} ist ein doppelter Schlüssel'}"
+    "input": {
+        "profileEditor": {
+            "tabs": {
+                "avatar": {
+                    "dropdown": {
+                        "selectNFT": "Wähle NFT",
+                        "uploadImage": "Bild hochladen"
+                    },
+                    "nft": {
+                        "title": "Wählen Sie ein NFT",
+                        "searchPlaceholder": "Suche nach einem NFT",
+                        "loading": "Ihre NFTs werden geladen",
+                        "unknown": "Unbekanntes NFT",
+                        "noNFTs": "Für diese Adresse wurden keine NFTs gefunden.",
+                        "selected": {
+                            "title": "Ausgewähltes NFT",
+                            "subtitle": "Sind Sie sicher, dass Sie dieses NFT verwenden möchten?"
+                        },
+                        "noResults": "Keine Ergebnisse gefunden."
+                    },
+                    "image": {
+                        "title": "Bild bearbeiten",
+                        "upload": {
+                            "title": "Avatar hochladen",
+                            "subtitle": "Sie müssen eine Nachricht signieren, um ein Avatar hochzuladen. Dies kostet nichts.",
+                            "action": "Signieren und Hochladen"
+                        }
+                    }
+                },
+                "general": {
+                    "label": "Allgemein",
+                    "name": {
+                        "label": "Spitzname",
+                        "placeholder": "John Smith"
+                    },
+                    "url": {
+                        "label": "Webseite",
+                        "placeholder": "https://ens.domains"
+                    },
+                    "location": {
+                        "label": "Standort",
+                        "placeholder": "Metaverse"
+                    },
+                    "description": {
+                        "label": "Kurzbiografie",
+                        "placeholder": "Ich bin ein Yield-Farmer aus dem ländlichen Tennessee."
+                    }
+                },
+                "accounts": {
+                    "label": "Konten",
+                    "addAccount": "Konto hinzufügen",
+                    "noOptions": "Keine Kontooptionen verfügbar",
+                    "placeholder": {
+                        "default": "Benutzernamen hier hinzufügen",
+                        "com.twitter": "z.B. ensdomains",
+                        "com.github": "z.B. ensdomains",
+                        "com.discord": "z.B. alisha.eth#0001"
+                    }
+                },
+                "address": {
+                    "label": "Adresse",
+                    "addAddress": "Adresse hinzufügen",
+                    "noOptions": "Keine Adressoptionen verfügbar",
+                    "placeholder": {
+                        "default": "Adresse hier hinzufügen",
+                        "ETH": "0xD9hbQK...",
+                        "BNB": "0xD9hbQK...",
+                        "BTC": "3FZbgi29...",
+                        "LTC": "3FZbgi29...",
+                        "SOL": "D4kA7VzHnmV...",
+                        "DOT": "1D4kA7VxH...",
+                        "DOGE": "DFabcd12..."
+                    }
+                },
+                "contentHash": {
+                    "label": "Webseite",
+                    "addContentHash": "Füge dezentrale Webseite hinzu",
+                    "placeholder": {
+                        "default": "URL hier hinzufügen",
+                        "ipfs": "ipfs://...",
+                        "skynet": "sia://...",
+                        "arweave": "ar://...",
+                        "swarm": "bzz://...",
+                        "onion": "onion3://..."
+                    }
+                },
+                "other": {
+                    "label": "Andere",
+                    "addRecord": "Datensatz hinzufügen",
+                    "createRecord": "Geben Sie einen Datensatznamen ein...",
+                    "placeholder": {
+                        "default": "Fügen Sie hier einen Wert hinzu..."
+                    }
+                }
+            },
+            "warningOverlay": {
+                "action": {
+                    "learnMoreResolvers": "Erfahren Sie mehr über Resolver",
+                    "updateResolver": "Resolver aktualisieren",
+                    "setResolver": "Resolver einstellen",
+                    "ignoreUpdate": "Ignorieren Sie dies und verwenden Sie weiterhin Ihren aktuellen Resolver. Sie werden beim nächsten Mal erneut gefragt."
+                },
+                "invalidResolver": {
+                    "title": "Unbefugter Resolver",
+                    "subtitle": "Sie haben keine Berechtigung, Datensätze für diesen Resolver festzulegen. Sie müssen auf den neuesten Resolver aktualisieren, um Ihr Profil zu bearbeiten.",
+                    "action": "Resolver aktualisieren"
+                },
+                "migrateProfileSelector": {
+                    "title": "Profil",
+                    "subtitle": "Die Profilaufzeichnungen auf jedem Resolver stimmen nicht überein. Welchen Datensatz möchten Sie verwenden?",
+                    "option": {
+                        "latest": "Profilaufzeichnungen auf neuem Resolver",
+                        "current": "Aktuelle Profil-Aufzeichnungen",
+                        "reset": "Setzen Sie Ihr Profil zurück",
+                        "resetSubtitle": "Entfernen Sie alle Profil-Aufzeichnungen"
+                    }
+                },
+                "migrateProfileWarning": {
+                    "title": "Profil migrieren",
+                    "subtitle": "Sie migrieren Ihre Profildaten zum neuesten Resolver. Dies wird alle vorhandenen Daten im neuesten Resolver dauerhaft löschen und sie durch Ihre aktuellen Daten ersetzen."
+                },
+                "migrateRegistry": {
+                    "title": "Registrierung veraltet",
+                    "subtitle": "Sie müssen das Register migrieren, bevor Sie Änderungen an diesem Namen vornehmen.",
+                    "action": "Migrieren"
+                },
+                "noResolver": {
+                    "title": "Kein Resolver eingestellt",
+                    "subtitle": "Ein Resolver muss festgelegt werden, bevor Sie Ihr Profil bearbeiten.",
+                    "action": "Aktualisieren"
+                },
+                "resetProfile": {
+                    "title": "Profil zurücksetzen",
+                    "subtitle": "Sie setzen Ihre Profildaten zurück. Sie verlieren alle vorhandenen Profilinformationen, wie ETH-Adresse, Avatar und soziale Aufzeichnungen. Diese können durch Bearbeiten Ihres Profils wieder hinzugefügt werden."
+                },
+                "resolverNotNameWrapperAware": {
+                    "title": "Unvereinbarer Resolver",
+                    "subtitle": "Ihr aktueller Resolver ist mit verpackten Namen nicht kompatibel. Sie müssen den Resolver aktualisieren, bevor Sie Ihr Profil bearbeiten können.",
+                    "toggle": {
+                        "title": "Aktuelles Profil übertragen",
+                        "subtitle": "Wenn Sie dies abwählen, wird nur Ihr Resolver aktualisiert."
+                    }
+                },
+                "resolverOutOfDate": {
+                    "title": "Resolver veraltet",
+                    "subtitle": "Der Resolver ist veraltet. Es wird empfohlen, ihn zu aktualisieren, bevor Sie Ihr Profil bearbeiten."
+                },
+                "resolverOutOfSync": {
+                    "title": "Resolver außer Sync",
+                    "subtitle": "Sie verwenden nicht den neuesten öffentlichen Resolver, haben aber dort Profildatensätze gespeichert. Es wird empfohlen, dass Sie vor der Bearbeitung Ihres Profils auf den neuesten öffentlichen Resolver umstellen."
+                },
+                "transferOrResetProfile": {
+                    "title": "Profil",
+                    "subtitle": "Sie können Ihr aktuelles Profil auf den neuen Resolver übertragen, bevor Sie Ihren Resolver aktualisieren.",
+                    "toggle": {
+                        "title": "Aktuelles Profil übertragen",
+                        "subtitle": "Die Deaktivierung davon aktualisiert nur Ihren Resolver."
+                    }
+                },
+                "updateResolverOrResetProfile": {
+                    "title": "Profil",
+                    "subtitle": "Sie können Ihr aktuelles Profil auf dem neuen Resolver beibehalten oder es zurücksetzen und alle Profildaten löschen.",
+                    "toggle": {
+                        "title": "Aktuelles Profil beibehalten",
+                        "subtitle": "Die Auswahl aufheben setzt Ihr Profil zurück."
+                    }
+                },
+                "links": {
+                    "learnMoreResolvers": "Erfahren Sie mehr über Resolver"
+                }
+            },
+            "intro": {
+                "resetProfile": {
+                    "title": "Profil zurücksetzen",
+                    "description": "Dies wird alle Profil-Datensätze vom neuesten Resolver entfernen und dann den Resolver aktualisieren."
+                },
+                "migrateProfile": {
+                    "title": "Profil migrieren",
+                    "description": "Dies wird Ihre aktuellen Profildaten auf den neuesten Resolver migrieren."
+                },
+                "migrateCurrentProfile": {
+                    "title": "Profil migrieren",
+                    "description": "Dies wird Ihre aktuellen Profildaten auf den neuesten Resolver migrieren."
+                }
+            }
+        },
+        "editResolver": {
+            "title": "Resolver bearbeiten",
+            "latestLabel": "Verwenden Sie den neuesten Resolver",
+            "etherscan": "BlockExplorer",
+            "latestMessage": "Sie sind auf dem neuesten Resolver",
+            "customLabel": "Benutzerdefinierter Resolver",
+            "customPlaceholder": "Geben Sie die benutzerdefinierte Resolver-Adresse ein"
+        },
+        "extendNames": {
+            "title_one": "Name erweitern",
+            "title_other": "Erweitere {{count}} Namen",
+            "invoice": {
+                "extension": "{{count}} Jahresverlängerung",
+                "transaction": "Transaktionsgebühr",
+                "total": "Geschätzte Gesamtsumme"
+            },
+            "bannerMsg": "Eine mehrjährige Verlängerung spart Geld bei den Netzwerkkosten, indem jährliche Transaktionen vermieden werden.",
+            "gasLimitError": "Unzureichende Mittel"
+        },
+        "transferProfile": {
+            "title": "Profil übertragen",
+            "message1": "Bevor Sie ein Upgrade durchführen, können Sie Ihr aktuelles Profil übertragen, wenn Sie möchten, sonst wird es beim Upgrade zurückgesetzt.",
+            "message2": "Möchten Sie Ihr aktuelles Profil übertragen?"
+        },
+        "revokePermissions": {
+            "views": {
+                "revokeWarning": {
+                    "title": "Dies wird dauerhafte Änderungen vornehmen.",
+                    "subtitle": "Berechtigungen sind eine erweiterte Funktion, die dauerhafte Änderungen an Ihrem Namen vornehmen. Diese Änderungen können nicht rückgängig gemacht werden und werden nur zurückgesetzt, wenn der Name abläuft.",
+                    "subtitle2": "Stellen Sie sicher, dass Sie diese Funktion sicher verwenden können, bevor Sie fortfahren. <infoLink>Mehr über Berechtigungen erfahren</infoLink>"
+                },
+                "revokePCC": {
+                    "title": "Gib Eigentum auf",
+                    "subtitle": "Dies wird die Eigentümerschaft dieses Namens an den Manager ({{account}}) übertragen. Sofern Sie nicht auch der Manager sind, können Sie keine Änderungen mehr an diesem Namen vornehmen."
+                },
+                "grantExtendExpiry": {
+                    "title": "Berechtigungen ändern",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "Genehmigung erteilen für: Ablauf verlängern"
+                    }
+                },
+                "setExpiry": {
+                    "title": "Name Ablauf festlegen",
+                    "subtitle": "Legen Sie ein Datum fest, an dem die Berechtigungen ablaufen. Dieses Datum darf nicht länger sein als das Ablaufdatum des übergeordneten Elements ({{parent}}).",
+                    "subtitleWithCEE": "Legen Sie ein Datum fest, an dem dieser Name abläuft. Dies wird das bestehende Berechtigungsablaufdatum ({{expiry}}) ersetzen und kann nicht später als das Ablaufdatum seines übergeordneten Elements ({{parent}}) sein.",
+                    "options": {
+                        "max": "Max",
+                        "custom": "Wählen Sie ein früheres Datum"
+                    },
+                    "error": {
+                        "required": "Ein Datum ist erforderlich, wenn ein benutzerdefiniertes Datum ausgewählt wird.",
+                        "min": "Datum muss größer sein als {{date}}",
+                        "max": "Datum muss kleiner als {{date}} sein"
+                    }
+                },
+                "revokeAdditional": {
+                    "title": "Berechtigungen widerrufen",
+                    "subtitle": "Möchten Sie die Berechtigungen für diesen Namen widerrufen, bevor Sie das Eigentum aufgeben? Dies kann nur jetzt erfolgen.",
+                    "action": {
+                        "title": "Zusätzliche Berechtigungen widerrufen",
+                        "description": "Sofern Sie nicht auch der Manager sind, können Sie nach diesem keine zusätzlichen Berechtigungen widerrufen."
+                    }
+                },
+                "revokeUnwrap": {
+                    "title": "Berechtigungen widerrufen",
+                    "subtitle": "Sie müssen diese Berechtigung widerrufen, bevor andere widerrufen werden können. Dies verhindert, dass Berechtigungen entfernt werden.",
+                    "fuses": {
+                        "CANNOT_UNWRAP": "Widerrufen Sie die Berechtigung für: Diesen Namen auspacken"
+                    }
+                },
+                "revokePermissions": {
+                    "title": "Berechtigungen widerrufen",
+                    "unwrapSubtitle": "Wählen Sie dies, um die anderen zu aktivieren",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "Genehmigung erteilen für: Ablaufdatum verlängern.",
+                        "CANNOT_UNWRAP": "Widerrufen Sie die Berechtigung für: Entpacken Sie diesen Namen",
+                        "CANNOT_CREATE_SUBDOMAIN": "Widerrufen Sie die Berechtigung für: Erstellen von Subdomains",
+                        "CANNOT_TRANSFER": "Widerrufen Sie die Berechtigung zu: Senden Sie diesen Namen",
+                        "CANNOT_SET_RESOLVER": "Widerrufen Sie die Berechtigung für: Resolver einstellen",
+                        "CANNOT_SET_TTL": "Widerrufen Sie die Berechtigung für: TTL festlegen",
+                        "CANNOT_BURN_FUSES": "Widerrufen Sie die Berechtigung für: Berechtigungen ändern",
+                        "CANNOT_APPROVE": "Widerrufen Sie die Berechtigung für: Änderung des Erneuerungsmanagers"
+                    }
+                },
+                "revokeChangeFuses": {
+                    "title": "Berechtigungen widerrufen",
+                    "subtitle": "Durch Widerruf dieser Berechtigung verlieren Sie dauerhaft die Möglichkeit, verbleibende Sicherungen zu ändern. Dies wird nur zurückgesetzt, wenn der Name abläuft.",
+                    "fuses": {
+                        "CANNOT_BURN_FUSES": "Widerrufen Sie die Berechtigung zu: Berechtigungen ändern"
+                    }
+                },
+                "revokeChangeFusesWarning": {
+                    "title": "Verbleibende Berechtigungen werden gesperrt",
+                    "subtitle": "Berechtigungen und benutzerdefinierte Sicherungen werden dauerhaft in ihrem aktuellen Zustand gesperrt, nachdem 'Berechtigungen ändern' widerrufen wurde. Dies wird nur zurückgesetzt, wenn der Name abläuft."
+                }
+            },
+            "action": {
+                "revoke": "Widerrufen"
+            }
+        },
+        "unknownLabels": {
+            "title": "Bestätigen Sie Ihren Namen",
+            "subtitle": "Einige der Bezeichnungen in Ihrem Namen sind unbekannt. Bitte geben Sie diese ein, um fortzufahren."
+        },
+        "deleteEmancipatedSubnameWarning": {
+            "title": "Dieser Untername kann nicht neu erstellt werden.",
+            "message": "Das Löschen dieses Unter-Namens verhindert, dass er verwendet oder neu erstellt wird, bis er abgelaufen ist{{date}}. Dies kann nicht rückgängig gemacht werden, da die Berechtigungen der übergeordneten Steuerung widerrufen wurden."
+        },
+        "setToMEP1002Hexagon": {
+            "title": "Name auf MEP1002 Hexagon setzen",
+            "subtitle": "Dies wird den Namen auf öffentliche MEP1002 Hexagon Map setzen.",
+            "h3index": "H3 Index des Hexagons"
+        },
+        "mintToMEP1002Hexagon": {
+            "title": "Präge MEP1002 Hexagon",
+            "subtitle": "Dies wird eine öffentliche MEP1002 Hexagon-Karte prägen.",
+            "h3index": "H3 Index des Hexagons"
+        }
+    },
+    "transaction": {
+        "extendNames": {
+            "actionValue": "Registrierung erweitern",
+            "costValue": "{{value}} + Gebühren",
+            "warning": "Die Erweiterung dieses Namens wird Ihnen kein Eigentum daran verschaffen."
+        },
+        "deleteSubname": {
+            "warning": "Hallo da draußen"
+        }
+    },
+    "intro": {
+        "migrateAndUpdateResolver": {
+            "title": "Aktion erforderlich",
+            "heading": "Die Änderungen, die Sie in Ihrem Profil speichern möchten, erfordern ein Upgrade Ihres Resolvers.",
+            "link": "Erfahren Sie mehr über Resolver-Upgrades",
+            "warning": "Beachten Sie, dass Ihre Änderungen nicht gespeichert werden, wenn Sie dies zu irgendeinem Zeitpunkt abbrechen."
+        },
+        "syncManager": {
+            "description": "Die Synchronisation des Managers macht Sie zum neuen Manager dieses Namens. Der aktuelle Manager <b>({{manager}})</b> wird keine Änderungen mehr vornehmen können.",
+            "wrappedWarning": "Die Synchronisation des Managers führt auch dazu, dass dieser Name ausgepackt wird. Dies wird das NFT verbrennen und alle Berechtigungen zurücksetzen."
+        }
+    },
+    "errors": {
+        "duplicateKey": "{{value}} ist ein doppelter Schlüssel"
+    }
 }

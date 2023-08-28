@@ -1,4 +1,10 @@
 {
-    "not-found": "{'title': 'No encontrado', 'message': \"La página que estabas buscando no se encontró. <br /> Puedes <HomeLink>buscar un nombre</HomeLink> o <SupportLink>visitar nuestro soporte</SupportLink> para obtener más ayuda.\"}",
-    "application-error": "{'title': 'Error de aplicación', 'message': 'Algo ha salido mal. <br /> Si este es un problema recurrente, por favor <SupportLink>visita nuestro soporte</SupportLink> para obtener más ayuda.'}"
+    "not-found": {
+        "title": "No encontrado",
+        "message": "La página que estabas buscando no se encontró. <br /> Puedes <HomeLink>buscar un nombre</HomeLink> o <SupportLink>visitar nuestro soporte</SupportLink> para obtener más ayuda."
+    },
+    "application-error": {
+        "title": "Error de aplicación",
+        "message": "Algo ha salido mal. <br /> Si este es un problema recurrente, por favor <SupportLink>visita nuestro soporte</SupportLink> para obtener más ayuda."
+    }
 }
