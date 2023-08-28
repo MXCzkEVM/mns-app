@@ -32,11 +32,7 @@ const calcPercent = (percent: number, order: number) => {
 const Bar = styled.div<{ $highlightPercent: number }>(
   ({ theme, $highlightPercent }) => css`
     --bar-width: calc(${$highlightPercent}% - ${theme.space['1']});
-    background: linear-gradient(
-      90deg,
-      #6300ff var(--bar-width),
-      red var(--bar-width)
-    );
+    background: linear-gradient(90deg, #6300ff var(--bar-width), red var(--bar-width));
     width: 100%;
     height: ${theme.space['4']};
     border-radius: ${theme.radii.medium};

@@ -9,12 +9,9 @@ import { useActiveRoute } from '@app/hooks/useActiveRoute'
 import { RouteItemObj } from '@app/routes'
 
 import BaseLink from '../BaseLink'
-
-
 // &:hover {
 //   color: ${$isActive ? theme.colors.accentBright : theme.colors.textPrimary};
 // }
-
 const LinkWrapper = styled.a<{
   $asText?: boolean
   $disabled?: boolean

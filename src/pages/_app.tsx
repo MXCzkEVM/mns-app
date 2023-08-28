@@ -149,12 +149,6 @@ type AppPropsWithLayout = AppProps & {
 
 setupAnalytics()
 
-
-// overwriter
-// console.log(thorinLightTheme,"thorinLightTheme")
-// thorinLightTheme.colors.accent = "#6300ff"
-// thorinLightTheme.colors.text = "#fff"
-
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page)
 

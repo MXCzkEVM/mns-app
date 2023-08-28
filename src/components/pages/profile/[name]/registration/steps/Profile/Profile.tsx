@@ -330,7 +330,7 @@ const Profile = ({ nameDetails, callback, registrationData, resolverExists }: Pr
         )}
         <ButtonWrapper>
           <Button
-            className='action-button'
+            className="action-button"
             size="medium"
             onClick={handleShowAddRecordModal}
             data-testid="show-add-profile-records-modal-button"

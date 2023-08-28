@@ -442,7 +442,7 @@ export const TransactionStageModal = ({
     if (transactionLoading) {
       return (
         <Button
-          className='action-button'
+          className="action-button"
           disabled
           suffix={<Spinner color="background" />}
           data-testid="transaction-modal-confirm-button"
@@ -456,7 +456,7 @@ export const TransactionStageModal = ({
         disabled={
           !canEnableTransactionRequest || requestLoading || !sendTransaction || !!requestError
         }
-        className='action-button'
+        className="action-button"
         onClick={() => sendTransaction!()}
         data-testid="transaction-modal-confirm-button"
       >

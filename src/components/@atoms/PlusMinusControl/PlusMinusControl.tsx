@@ -253,10 +253,12 @@ export const PlusMinusControl = forwardRef(
             }}
             onBlur={handleBlur}
           />
-          <Label className="theme-text" $highlighted={highlighted}>{t(`unit.${unit}`, { count: value })}</Label>
+          <Label $highlighted={highlighted} className="theme-text">
+            {t(`unit.${unit}`, { count: value })}
+          </Label>
         </LabelContainer>
         <Button
-          className='action-button'
+          className="action-button"
           type="button"
           onClick={incrementHandler(1)}
           data-testid="plus-minus-control-plus"
