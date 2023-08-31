@@ -10,7 +10,7 @@ import { SearchInput } from '@app/components/@molecules/SearchInput/SearchInput'
 import { LeadingHeading } from '@app/components/LeadingHeading'
 import { SupportButton } from '@app/components/SupportButton'
 
-import ENSFull from '../assets/ENSFull.svg'
+import ENSFull from '../assets/ENSFull_white.svg'
 
 // background-image: ${theme.colors.gradients.accent};
 const GradientTitle = styled.h1(
@@ -63,9 +63,11 @@ const Stack = styled.div(
   `,
 )
 
+// height: ${theme.space['8.5']};
 const StyledENS = styled.div(
   ({ theme }) => css`
-    height: ${theme.space['8.5']};
+    width: 60px;
+    height: 100%;
   `,
 )
 
