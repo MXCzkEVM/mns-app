@@ -5,17 +5,323 @@
     "unsupportedNetwork": "Desteklenmeyen ağ",
     "notFound": "404 Bulunamadı",
     "etherscan": "BlokKeşifçisi",
-    "action": "{'cancel': 'İptal', 'change': 'Değiştir', 'upload': 'Yükle', 'close': 'Kapat', 'save': 'Kaydet', 'edit': 'Düzenle', 'view': 'Görüntüle', 'clear': 'Temizle', 'update': 'Güncelle', 'learnMore': 'Daha fazla bilgi edin', 'send': 'Gönder', 'next': 'Sonraki', 'add': 'Ekle', 'set': 'Ayarla', 'search': 'Ara', 'back': 'Geri', 'continue': 'Devam et', 'confirm': 'Onayla', 'remove': 'Kaldır', 'sign': \t'İmzala', \t'reset': \t'Sıfırla','transfer':'Transfer et','tryAgain':'Tekrar Dene','done':'Tamamlandı','burnSelected':'Seçileni Yak','extend':'Uzat','delete':'Sil','sort':'Sırala','check':'Kontrol Et','claim':'Talep Et','remindMe':'Bana Hatırlat','begin':'Başla','finish':'Bitir','skip':'Atla','changeNetwork':'Ağı Değiştir','understand':'Anladım','feedback':'Geribildirim','migrate':'Taşı'}",
-    "unit": "{'years_one': '{{count}} yıl', 'years_other': '{{count}} yıl', 'yrs_one': '{{count}} yıl', 'yrs_other': '{{count}} yıl', 'gas': '{{value}} gas', 'selected': '{{count}} seçildi', 'perPage': '{{count}} sayfa başına'}",
-    "navigation": "{'home': 'Ana Sayfa', 'names': 'İsimlerim', 'favourites': 'Favoriler', 'settings': 'Ayarlar', 'governance': 'Yönetişim', 'community': 'Topluluk', 'developers': 'Geliştiriciler', 'support': 'Destek', 'bounty': 'Hata Ödülü', 'terms': 'Kullanım Şartları', 'privacy': 'Gizlilik Politikası', 'back': 'Geri', 'oldApp': 'Eski MNS Uygulaması', 'language': 'Dil', 'currency': 'Para Birimi', 'ipfsApp': 'IPFS MNS Uygulaması', 'feedback': 'Geribildirim',  'syncMessage': \"Ağ ile senkronize olunuyor. İşleminizden kaynaklanan değişiklikler henüz görünmeyebilir.\"}",
-    "wallet": "{'myProfile': 'Profil', 'disconnect': 'Bağlantıyı Kes', 'connect': 'Bağlan', 'noPrimaryName': 'Birincil İsim Yok', 'viewProfile': 'Profili Görüntüle', 'viewDetails': 'Detayları Görüntüle', 'register': 'Kaydol'}",
-    "name": "{'registered': 'Kayıtlı', 'expires': 'Süresi Doluyor', 'noExpiry': 'Süresi Yok', 'expiry': 'Süre Sonu', 'parent': 'Ebeveyn', 'noParent': 'Ebeveyn Yok', 'registrant': 'Kaydeden', 'controller': 'Kontrolör', 'dnsOwner': 'DNS Sahibi', 'owner': 'Sahip', 'notOwned': 'Sahipli Değil', 'manager': 'Yönetici', 'all': 'Tüm İsimler', 'expiresInYears_one': '{{count}} yıl içinde süresi doluyor', 'expiresInYears_other': '{{count}} yıl içinde süresi doluyor', 'expiresInMonths_one': '{{count}} ay içinde süresi doluyor',  'expiresInMonths_other': '{{count}} ay içinde süresi doluyor',  'expiresInDays_one': '{{count}} gün içinde süresi doluyor',  'expiresInDays_other': '{{count}} gün içinde süresi doluyor',  'expiresInHours_one': '{{count}} saat içinde süresi doluyor',  'expiresInHours_other': '{{count}} saat içinde süresi doluyor',  'expiresInHours_zero': \"Bir saatten az bir süre içinde sona eriyor\",  \"expiredInHours_one\": \"{{count}} saat önce sona erdi\", \"expiredInHours_other\": \"{{count}} saat önce sona erdi\", \"expiredInHours_zero\": \"Bir saatten az bir zaman önce sona erdi\", \"expiredInDays_one\": \"{{count}} gün önce sona erdi\", \"expiredInDays_other\": \"{{count}} gün önce sona erdi\", \"expiredInMonths_one\": \"{{count}} ay önce sona erdi\", \"expiredInMonths_other\": \"{{count}} ay önce sona erdi\", \"expiredInYears_one\": \"{{count}} yıl önce sona erdi\", \"expiredInYears_other\": \"{{count}} yıl önce sona erdi\", \"gracePeriod\": {\"expiresInYears_one\": \"{{count}} yıl içinde lütuf dönemi bitiyor\", \"expiresInYears_other\": \"{{count}} yıl içinde lütuf dönemi bitiyor\", \"expiresInMonths_one\": \"{{count}} ay içinde lütuf dönemi bitiyor\", \"expiresInMonths_other\": \"{{count}} ay içinde lütuf dönemi bitiyor\", \"expiresInDays_one\": \"{{count}} gün içinde lütuf dönemi bitiyor\", \"expiresInDays_other\": \"{{count}} gün içinde lütuf dönemi bitiyor\", \"expiresInHours_one\": \"{{count}} saat içinde lütuf dönemi bitiyor\", \"expiresInHours_other\": \"{{count}} saat içinde lütuf dönemi bitiyor\", \"expiresInHours_zero\": \"Lütuf dönemi bir saatten az bir süre sonra bitiyor\"},  \"extend\": \"Uzat\",  \"send\": \"Gönder\",  \"transfer\": \"Transfer Et\",  \"sendManager\": \"Yönetici Gönder\",  \"sendOwner\": \"Sahip Gönder'}",
-    "address": "{'label': 'Adres', 'viewAddress': 'Adresi görüntüle', 'copyAddress': 'Adresi kopyala'}",
-    "records": "{'label': 'Kayıtlar'}",
-    "sortTypes": "{'expiryDate': 'Son kullanma tarihi', 'labelName': 'İsim', 'creationDate': 'Oluşturma tarihi'}",
-    "errors": "{'noResults': 'Sonuç bulunamadı', 'invalidAddress': 'Geçersiz adres', 'addressRequired': 'Adres gereklidir'}",
-    "transaction": "{'description': {'setName': 'İsim Belirle', 'setRecords': 'Kayıtları Ayarla', 'test': 'Test İşlemi', 'addSuccess': 'Ekleme Başarılı', 'sendName': 'İsim Gönder', 'migrateProfile': 'Profili Taşı', 'migrateProfileWithReset': 'Profili Taşı', 'migrateProfileWithSync': 'Profil Güncelle ve Taşı', 'wrapName': 'İsmi Sar', 'updateResolver': 'Çözümleyiciyi Güncelle', 'updateProfile': 'Profili Güncelle', 'setPrimaryName': 'Birincil İsmi Ayarla', 'updateEthAddress': 'ETH Adresini Güncelle', 'testSendName': 'İsim Gönder', 'burnFuses': 'İzinleri Yak', 'createSubname': 'Alt İsim Oluştur', 'deleteSubname': 'Alt İsmi Sil', 'extendNames': 'İsimleri Uzat', importDNSSECName: DNSSEC İsmini İçe Aktar, commitName: Zamanlayıcıyı Başlat, registerName: İsmi Kaydet, approveNameWrapper: NameWrapper'ı Onayla, clearRecords: Kayıtları Temizle, updateRecords: Kayıtları Güncelle, transferName: İsmi Transfer Et, changePermissions: İzinleri Değiştir, syncManager: Yöneticiyi Senkronize Et, updateProfileRecords: Profili Güncelle, resetProfile: Profili Sıfırla, setHexagonName: MEP1002 Hexagon İsmini Ayarla, mintHexagon: MEP1002 Hexagon Bas}, info: {sendName: İsmin kontrolörünü ve kaydedenini ayarla, migrateProfile: Mevcut kayıtları yeni çözümleyiciye ayarla, migrateProfileWithReset: Mevcut kayıtları yeni çözümleyiciye ayarla, migrateProfileWithSync: Mevcut kayıtları yeni çözümleyiciye ayarla, wrapName: İsmi sar ve yeni çözümleyiciyi ayarla, updateResolver: Çözümleyiciyi şuna değiştir, updateProfile: Mevcut çözümleyicideki kayıtları güncelle, setPrimaryName: Adresiniz için birincil ismi ayarlayın, updateEthAddress: ETH adresini bu adrese güncelleme yapın}, itemLabel:{name:'İsim', address:'Adres', action:'Eylem', info:'Bilgi', to:'Alıcı:', subname:'Alt isim:', duration:'Süre:', cost:'Maliyet:', update:'Güncelleme:', resolver:'Çözümleyici:', h3Index:'H3 Index'}, itemValue:{records_one:'{{count}} kayıt.', records_other:'{{count}} kayıt.'}, status:{pending:{regular:'Bekliyor'}, confirmed:{regular:'Onaylandı'}, failed:{regular:'Başarısız oldu'}}, dialog:{intro:{trailingButton:'Başlat'}, confirm:{title:'Detayları Onayla'}, sent:{title:'İşlem Gönderildi'}, complete:{title:'İşlem Tamamlandı'}, failed:{title:'İşlem Başarısız Oldu'}}, error:{request:{INSUFFICIENT_FUNDS:'Cüzdanınızdaki bakiye yetersiz'}}, viewEtherscan:'BlockExplorer\\'da Görüntüle'}",
-    "search": "{'label': 'İsim arama', 'placeholder': 'Bir isim arayın', 'emptyText': 'Aramak için bir isim veya adres yazın...', 'address': 'Adres', 'errors': {'tooShort': 'İsim çok kısa', 'invalid': 'İsim için geçersiz format'}, 'status': {'registered': 'Kayıtlı', 'gracePeriod': 'Afiyet Dönemi', 'premium': 'Geçici Premium', 'available': 'Mevcut', 'notOwned': 'Sahip Değil', 'notImported': 'İçe Aktarılmamış', 'short': 'Çok Kısa', 'default': 'Geçersiz', 'unsupportedTLD': 'Desteklenmeyen', 'imported': 'İçe Aktarıldı', 'owned': 'Sahip'}}",
-    "selectableInput": "{'add': 'Ekle', 'placeholder': 'Bir seçenek seçin', 'empty': 'Seçenek bulunamadı'}",
-    "testnetFaucet": "{'explanation': 'Goerli üzerindeki her adres, MNS yönetici uygulamasını ve tüm yeni sözleşmeleri test etmek için {{ amount }}ETH talep edebilir.', 'note': 'Cüzdanınızda görünmesi birkaç dakika sürebilir.'}"
+    "action": {
+        "cancel": "İptal",
+        "change": "Değiştir",
+        "upload": "Yükle",
+        "close": "Kapat",
+        "save": "Kaydet",
+        "edit": "Düzenle",
+        "view": "Görüntüle",
+        "clear": "Açık",
+        "update": "Güncelle",
+        "learnMore": "Daha fazla öğren",
+        "send": "Gönder",
+        "next": "Sonraki",
+        "add": "Ekle",
+        "set": "Ayarla",
+        "search": "Ara",
+        "back": "Geri",
+        "continue": "Devam Et",
+        "confirm": "Onayla",
+        "remove": "Kaldır",
+        "sign": "İmza",
+        "reset": "Sıfırla",
+        "transfer": "Transfer: Transfer Et",
+        "tryAgain": "Tekrar Dene",
+        "done": "Tamamlandı",
+        "burnSelected": "Seçileni Yak",
+        "extend": "Genişlet",
+        "delete": "Sil",
+        "sort": "Sırala",
+        "check": "Kontrol Et",
+        "claim": "Talep Et",
+        "remindMe": "Beni Hatırlat",
+        "begin": "Başla",
+        "finish": "Bitir",
+        "skip": "Atla",
+        "changeNetwork": "Ağı Değiştir",
+        "understand": "Anlıyorum",
+        "feedback": "Geri Bildirim",
+        "migrate": "Taşı"
+    },
+    "unit": {
+        "years_one": "{{count}} yıl",
+        "years_other": "{{count}} yıl",
+        "yrs_one": "{{count}} yıl",
+        "yrs_other": "{{count}} yıl",
+        "gas": "{{value}} gaz",
+        "selected": "{{count}} seçildi",
+        "perPage": "{{count}} sayfa başına"
+    },
+    "navigation": {
+        "home": "Ana Sayfa",
+        "names": "Benim Adlarım",
+        "favourites": "Favoriler",
+        "settings": "Ayarlar",
+        "governance": "Yönetişim",
+        "community": "Topluluk",
+        "developers": "Geliştiriciler",
+        "support": "Destek",
+        "bounty": "Hata Ödülü",
+        "terms": "Kullanım Şartları",
+        "privacy": "Gizlilik Politikası",
+        "back": "Geri",
+        "oldApp": "Eski MNS Uygulaması",
+        "language": "Dil",
+        "currency": "Para Birimi",
+        "ipfsApp": "IPFS MNS Uygulaması",
+        "feedback": "Geri Bildirim",
+        "syncMessage": "Ağ ile senkronize oluyor. İşleminizden kaynaklanan değişiklikler henüz görünmeyebilir."
+    },
+    "wallet": {
+        "myProfile": "Profil",
+        "disconnect": "Bağlantıyı Kes",
+        "connect": "Bağlan",
+        "noPrimaryName": "Birincil İsim Yok",
+        "viewProfile": "Profil Görüntüle",
+        "viewDetails": "Detayları Görüntüle",
+        "register": "Kayıt Ol"
+    },
+    "name": {
+        "registered": "Kayıtlı",
+        "expires": "Süresi Doluyor",
+        "noExpiry": "Süresi dolmayan",
+        "expiry": "Süre Sonu",
+        "parent": "Ebeveyn",
+        "noParent": "Üst yok",
+        "registrant": "Kayıt Sahibi",
+        "controller": "Kontrolör",
+        "dnsOwner": "DNS Sahibi",
+        "owner": "Sahibi",
+        "notOwned": "Sahip Olunmayan",
+        "manager": "Yönetici",
+        "all": "Tüm İsimler",
+        "expiresInYears_one": "{{count}} yıl içinde sona erer",
+        "expiresInYears_other": "{{count}} yıl içinde sona erer",
+        "expiresInMonths_one": "{{count}} ay içinde sona erer",
+        "expiresInMonths_other": "{{count}} ay içinde sona eriyor",
+        "expiresInDays_one": "{{count}} gün içinde sona eriyor",
+        "expiresInDays_other": "{{count}} gün içinde sona eriyor",
+        "expiresInHours_one": "{{count}} saat içinde sona erer",
+        "expiresInHours_other": "{{count}} saat içinde sona eriyor",
+        "expiresInHours_zero": "Bir saatten az sürede sona eriyor",
+        "expiredInHours_one": "{{count}} saat önce sona erdi",
+        "expiredInHours_other": "{{count}} saat önce sona erdi",
+        "expiredInHours_zero": "Bir saat önce sona erdi",
+        "expiredInDays_one": "{{count}} gün önce sona erdi",
+        "expiredInDays_other": "{{count}} gün önce sona erdi",
+        "expiredInMonths_one": "{{count}} ay önce sona erdi",
+        "expiredInMonths_other": "{{count}} ay önce sona erdi",
+        "expiredInYears_one": "{{count}} yıl önce sona erdi",
+        "expiredInYears_other": "{{count}} yıl önce sona erdi",
+        "gracePeriod": {
+            "expiresInYears_one": "{{count}} yıl içinde ödeme süresi sona eriyor",
+            "expiresInYears_other": "Afiyet süresi {{count}} yıl içinde sona erer",
+            "expiresInMonths_one": "{{count}} ay içinde ödeme süresi sona erer",
+            "expiresInMonths_other": "Afiyet süresi {{count}} ay içinde sona erer",
+            "expiresInDays_one": "{{count}} gün içinde ödeme süresi sona eriyor",
+            "expiresInDays_other": "{{count}} gün içinde ödeme süresi sona eriyor",
+            "expiresInHours_one": "Afiyet süresi {{count}} saat içinde sona erer",
+            "expiresInHours_other": "Afiyet süresi {{count}} saat içinde sona eriyor",
+            "expiresInHours_zero": "Süre aşımı süresi bir saatten az bir süre içinde sona eriyor"
+        },
+        "extend": "Genişlet",
+        "send": "Gönder",
+        "transfer": "Transferi",
+        "sendManager": "Yönetici Gönder",
+        "sendOwner": "Sahibi Gönder"
+    },
+    "address": {
+        "label": "Adres",
+        "viewAddress": "Adresi görüntüle",
+        "copyAddress": "Adresi Kopyala"
+    },
+    "records": {
+        "label": "Kayıtlar"
+    },
+    "sortTypes": {
+        "expiryDate": "Son kullanma tarihi",
+        "labelName": "Ad",
+        "creationDate": "Oluşturma tarihi"
+    },
+    "errors": {
+        "noResults": "Sonuç bulunamadı",
+        "invalidAddress": "Geçersiz adres",
+        "addressRequired": "Adres gereklidir"
+    },
+    "transaction": {
+        "description": {
+            "setName": "İsim belirle",
+            "setRecords": "Rekorlar oluşturun",
+            "test": "Test işlemi",
+            "addSuccess": "Ekleme başarılı",
+            "sendName": "Ad gönder",
+            "migrateProfile": "Profil taşı",
+            "migrateProfileWithReset": "Profil taşı",
+            "migrateProfileWithSync": "Profil taşı ve güncelle",
+            "wrapName": "İsim Sarma",
+            "updateResolver": "Çözümleyici Güncelle",
+            "updateProfile": "Profil güncelle",
+            "setPrimaryName": "Birincil adı ayarla",
+            "updateEthAddress": "ETH adresini güncelle",
+            "testSendName": "İsim gönder",
+            "burnFuses": "Yanma izinleri",
+            "createSubname": "Alt isim oluştur",
+            "deleteSubname": "Alt ismi sil",
+            "extendNames": "İsimleri genişlet",
+            "importDNSSECName": "DNSSEC adını içe aktar",
+            "commitName": "Zamanlayıcıyı Başlat",
+            "registerName": "İsim kaydet",
+            "approveNameWrapper": "NameWrapper'ı Onayla",
+            "clearRecords": "Kayıtları temizle",
+            "updateRecords": "Kayıtları güncelle",
+            "transferName": "İsim Aktar",
+            "changePermissions": "İzinleri değiştir",
+            "syncManager": "Senkronizasyon Yöneticisi",
+            "updateProfileRecords": "Profil güncelle",
+            "resetProfile": "Profil sıfırla",
+            "setHexagonName": "MEP1002 Hexagon Adını Ayarla",
+            "mintHexagon": "MEP1002 Hexagon Basma"
+        },
+        "info": {
+            "sendName": "İsmin kontrolcüsünü ve kaydedenini ayarla",
+            "migrateProfile": "Yeni çözümleyiciye mevcut kayıtları ayarla",
+            "migrateProfileWithReset": "Yeni çözümleyiciye mevcut kayıtları ayarla",
+            "migrateProfileWithSync": "Yeni çözümleyiciye mevcut kayıtları ayarla",
+            "wrapName": "İsim sarın ve yeni çözümleyici ayarlayın",
+            "updateResolver": "Çözümleyiciyi değiştirin",
+            "updateProfile": "Mevcut çözümleyicide kayıtları güncelle",
+            "setPrimaryName": "Adresiniz için birincil adı ayarlayın",
+            "updateEthAddress": "Bu adrese ETH adresini güncelle",
+            "testSendName": "İsmin kontrolcüsünü ve kaydedenini ayarla",
+            "createSubname": "Adın altında yeni bir alt ad oluştur",
+            "burnFuses": "Seçilen izinleri adın süresi dolana kadar yak",
+            "commitName": "İsim kaydetmek için zamanlayıcıyı başlat",
+            "approveNameWrapper": "NameWrapper'ın isimlerinizi yönetmesini onaylayın",
+            "fuses": {
+                "revoke": "İptal Et",
+                "grant": "Hibe",
+                "setExpiry": "Son kullanma tarihini ayarla",
+                "PARENT_CANNOT_CONTROL": "Ebeveyn kontrolünü bırakın",
+                "CAN_EXTEND_EXPIRY": "Süreyi Uzat",
+                "CANNOT_UNWRAP": "Bu ismi çöz",
+                "CANNOT_CREATE_SUBDOMAIN": "Alt alan adları oluşturun",
+                "CANNOT_SET_RESOLVER": "Çözümleyici Ayarla",
+                "CANNOT_SET_TTL": "TTL Ayarla",
+                "CANNOT_TRANSFER": "Bu ismi gönder",
+                "CANNOT_BURN_FUSES": "İzinleri değiştir",
+                "CANNOT_APPROVE": "Yenileme yöneticisini değiştir"
+            }
+        },
+        "itemLabel": {
+            "name": "Ad",
+            "address": "Adres",
+            "action": "Eylem",
+            "info": "Bilgi",
+            "to": "\"Şu\"",
+            "subname": "Altisim",
+            "duration": "Süre",
+            "cost": "Maliyet",
+            "update": "Güncelle",
+            "resolver": "Çözümleyici",
+            "h3Index": "H3 İndeks"
+        },
+        "itemValue": {
+            "records_one": "{{count}} kayıt",
+            "records_other": "{{count}} kayıt"
+        },
+        "status": {
+            "pending": {
+                "regular": "Beklemede"
+            },
+            "confirmed": {
+                "regular": "Onaylandı",
+                "notifyTitle": "İşlem Başarılı",
+                "notifyMessage": "\"{{action}}\" işleminiz başarıyla gerçekleştirildi."
+            },
+            "failed": {
+                "regular": "Başarısız",
+                "notifyTitle": "İşlem Başarısızlığı",
+                "notifyMessage": "\"{{action}}\" işleminiz başarısız oldu ve geri alındı."
+            }
+        },
+        "dialog": {
+            "intro": {
+                "trailingButton": "Başlat",
+                "trailingButtonResume": "Devam Et",
+                "step": "Adım {{step}}"
+            },
+            "confirm": {
+                "title": "Detayları Onayla",
+                "message": "Cüzdanınızda onaylamadan önce bu detayları iki kez kontrol edin.",
+                "waitingForWallet": "Cüzdan Bekleniyor",
+                "openWallet": "Cüzdanı Aç"
+            },
+            "sent": {
+                "title": "İşlem Gönderildi",
+                "message": "İşleminiz şu anda devam ediyor, bu sayfayı kapatabilir ve daha sonra geri dönebilirsiniz.",
+                "progress": {
+                    "title": "Gönderildi",
+                    "message": "Beklenenden daha uzun sürüyor"
+                }
+            },
+            "complete": {
+                "title": "İşlem Tamamlandı",
+                "message": "İşleminiz şimdi tamamlandı!",
+                "progress": {
+                    "title": "Tamamlandı"
+                }
+            },
+            "failed": {
+                "title": "İşlem Başarısız",
+                "progress": {
+                    "title": "Başarısız"
+                }
+            },
+            "error": {
+                "gasLimit": "İşleminizdeki gaz limiti yeterince yüksek değildi, lütfen tekrar deneyin."
+            }
+        },
+        "error": {
+            "request": {
+                "INSUFFICIENT_FUNDS": "Cüzdanınızda yetersiz bakiye",
+                "UNPREDICTABLE_GAS_LIMIT": "Bilinmeyen bir hata oluştu"
+            }
+        },
+        "viewEtherscan": "BlockExplorer'da Görüntüle",
+        "viewMore": "Daha Fazla Gör"
+    },
+    "search": {
+        "label": "İsim arama",
+        "placeholder": "Bir isim arayın",
+        "emptyText": "Arama yapmak için bir isim veya adres yazın...",
+        "address": "Adres",
+        "errors": {
+            "tooShort": "İsim çok kısa",
+            "invalid": "İsim için geçersiz format"
+        },
+        "status": {
+            "registered": "Kayıtlı",
+            "gracePeriod": "Afiyet Süresi",
+            "premium": "Geçici Premium",
+            "available": "Kullanılabilir",
+            "notOwned": "Sahip Olunmayan",
+            "notImported": "İçe Aktarılmadı",
+            "short": "Çok Kısa",
+            "default": "Geçersiz",
+            "unsupportedTLD": "Desteklenmiyor",
+            "imported": "İçe Aktarılan",
+            "owned": "Sahip"
+        }
+    },
+    "selectableInput": {
+        "add": "Ekle",
+        "placeholder": "Bir seçenek belirleyin",
+        "empty": "Seçenek bulunamadı"
+    },
+    "testnetFaucet": {
+        "explanation": "Goerli üzerindeki her adres, MNS yönetici uygulamasını ve tüm yeni sözleşmeleri test etmek için {{ amount }}ETH talep edebilir.",
+        "note": "Cüzdanınızda görünmesi birkaç dakika sürebilir."
+    }
 }

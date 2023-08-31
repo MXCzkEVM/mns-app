@@ -2,7 +2,184 @@
     "title": "Registreer {{name}} op MNS",
     "subtitle": "Registreren",
     "heading": "Registreer {{name}}",
-    "invoice": "{'yearRegistration': '{{years}} jaar registratie', 'registration': 'Registratie', 'estimatedNetworkFee': 'Geschatte netwerkkosten', 'networkFee': 'Netwerkkosten', 'temporaryPremium': 'Tijdelijke premie', 'total': 'Geschat totaal', 'totalPaid': 'Totaal betaald'}",
-    "error": "{'nameTooLong': 'De naam die u wilt registreren is te lang. Kies een kortere naam.'}",
-    "steps": "{'pricing': {'insufficientBalance': 'Onvoldoende Saldo', 'multipleYearsMessage': 'Verlengen voor meerdere jaren bespaart geld op netwerkkosten door jaarlijkse transacties te vermijden.', 'primaryName': 'Gebruik als primaire naam', 'primaryNameMessage': 'Dit koppelt uw adres aan deze naam, waardoor dApps het kunnen weergeven als uw profiel wanneer ze ermee verbonden zijn. U kunt slechts één primaire naam per adres hebben.', 'premium': {'heading': 'Deze naam heeft een tijdelijke premie', 'subheading': 'Om een eerlijke kans te geven aan recent verlopen namen, begint de premie bij $100.000.000 en vermindert tot $0 over 21 dagen. U kunt de premie op een datum hieronder berekenen.', 'targetPrice': 'Doelprijs', 'targetDate': 'Doeldatum', 'timezone': 'Datum en tijd getoond in lokale tijdzone ({{timezone}})'}}, 'profile': {'title': 'Maak je profiel aan', 'title2': 'Bewerk je profiel', 'default': 'Standaard', 'advanced': 'Geavanceerd', 'permissions': 'Toestemmingen', 'resolver': 'Resolver', 'visibilityMessage': \"Uw profielinformatie wordt opgeslagen op de blockchain. Alles wat u toevoegt, zal openbaar zichtbaar zijn.\",'addProfile':'Voeg profielvelden toe','addMore':'Voeg meer toe aan profiel','options':{'groups':{'general':{'label':'Algemeen','items':{'name':'Bijnaam','url':'Website','location':'Locatie','description':'Korte Bio'},'placeholder':{'name':'John Smith','url':'https://ens.domains','location':'Metaverse','description':\"Ik ben een yield farmer uit landelijk Tennessee.\"}},'social':{'label':'Sociaal','items':{'com.twitter':'Twitter','com.github':'GitHub','com.discord':'Discord'},'placeholder':{'com.twitter':'bijv. ensdomains','com.github':'bijv. ensdomains','com.discord':'bijv. alisha.eth#0001'}},'address':{'label':'Adres','itemLabel':'{{coin}} adres','placeholder':{'default':'Voeg adres hier toe','ETH':'0xD9hbQK...','BNB':'bnb1grpf...','BTC':'3FZbgi29...','LTC':'ltc1qdp7p...','SOL':'D4kA7VzHnmV...','DOT':'1D4kA7VxH...','DOGE':'DFabcd12...'}},'website':{'label':'Website','items':{'ipfs':'IPFS','ipns':'IPNS','swarm':'Swarm','onion':'Onion','skynet':\n'Skynet', \n'arweave':\n'Arweave'},\n'placeholder':\n{'default':\n'Voeg url hier toe',\n'ipfs':\n'ipfs://...',\n'skynet':\n'sia://...',\n'arweave':\n'ar://...',\n'swarm':\n'bzz://...',\n'onion':\n'onion3://...'\n}},\n'other':\n{'label':\n'Ander',\n'items':\n{'contentHash':\n'Content Hash',\n'publicKey':\n'Public Key',\n'abi':\n'ABI',\n'custom':\n'Aangepast'\n}},\n'custom':\n{'key':\n'Sleutel',\n'value':\n'Waarde'\n},\n'default':\n{'placeholder':\n'Voeg waarde hier toe'\n}\n},\n\"errors\":\n{'labelRequired':\n'Een record sleutel is vereist',\n'duplicateRecord':\n'Dubbele record sleutel',\n'avatarReserved':\n'Sleutel wordt gebruikt door avatar manager'\n},\n\"confirmations\":\n{\"publicNotice\":\n{\"title\":\n\"Uw details zijn openbaar\",\n\"description\":\n\"Alles wat u aan uw profiel toevoegt, zal openbaar zichtbaar zijn op de blockchain.\",\n\"confirm\":\n\"Ik begrijp het\",\n\"decline\":\n\"Terug\"},\n\"clearEth\":\n{\"title\":\n\"Wissen ETH-adres?\",\n\"description\":\n\"Zonder een ingesteld ETH-adres kunnen mensen geen geld naar deze naam sturen. Dit kan later worden bijgewerkt.\",\n\"confirm\":\n\"Wissen\",\n\"decline\":\n\"Annuleren\"}},\n\"actions\":\n{\"skipProfile\":\n\"Sla profiel over\"}},\n\"complete\":\n{\"heading\":\n\"Gefeliciteerd!\",\n\"subheading\":\n\"Je bent nu de eigenaar van \",\n\"description\":\n\"Je naam is succesvol geregistreerd. Je kunt nu je naam bekijken en beheren.\",\n\"registerAnother\":\n\"Registreer nog een\",\n\"viewName\":\n\"Bekijk naam"
+    "invoice": {
+        "yearRegistration": "{{years}} jaar registratie",
+        "registration": "Registratie",
+        "estimatedNetworkFee": "Geschatte netwerkkosten",
+        "networkFee": "Netwerkkosten",
+        "temporaryPremium": "Tijdelijke premie",
+        "total": "Geschatte totaal",
+        "totalPaid": "Totaal betaald"
+    },
+    "error": {
+        "nameTooLong": "De naam die je wilt registreren is te lang. Kies een kortere naam."
+    },
+    "steps": {
+        "pricing": {
+            "insufficientBalance": "Onvoldoende Saldo",
+            "multipleYearsMessage": "Het verlengen voor meerdere jaren bespaart geld op netwerkkosten door jaarlijkse transacties te vermijden.",
+            "primaryName": "Gebruik als primaire naam",
+            "primaryNameMessage": "Deze koppelt uw adres aan deze naam, waardoor dApps het kunnen weergeven als uw profiel wanneer ze ermee verbonden zijn. U kunt slechts één primaire naam per adres hebben.",
+            "premium": {
+                "heading": "Deze naam heeft een tijdelijke premie",
+                "subheading": "Om een eerlijke kans te geven aan recent verlopen namen, begint de premie bij $100.000.000 en vermindert tot $0 over 21 dagen. U kunt de premie op een datum hieronder berekenen.",
+                "targetPrice": "Doelprijs",
+                "targetDate": "Doeldatum",
+                "timezone": "Datum en tijd weergegeven in lokale tijdzone ({{timezone}})"
+            }
+        },
+        "profile": {
+            "title": "Maak je profiel",
+            "title2": "Bewerk je profiel",
+            "default": "Standaard",
+            "advanced": "Geavanceerd",
+            "permissions": "Machtigingen",
+            "resolver": "Oplosser",
+            "visibilityMessage": "Uw profielinformatie wordt opgeslagen op de blockchain. Alles wat u toevoegt, zal openbaar zichtbaar zijn.",
+            "addProfile": "Voeg profielvelden toe",
+            "addMore": "Voeg meer toe aan profiel",
+            "options": {
+                "groups": {
+                    "general": {
+                        "label": "Algemeen",
+                        "items": {
+                            "name": "Bijnaam",
+                            "url": "Website",
+                            "location": "Locatie",
+                            "description": "Korte Bio"
+                        },
+                        "placeholder": {
+                            "name": "John Smith",
+                            "url": "https://ens.domeinen",
+                            "location": "Metaverse",
+                            "description": "Ik ben een yield farmer uit landelijk Tennessee."
+                        }
+                    },
+                    "social": {
+                        "label": "Sociaal",
+                        "items": {
+                            "com.twitter": "Twitter",
+                            "com.github": "GitHub",
+                            "com.discord": "Discord"
+                        },
+                        "placeholder": {
+                            "com.twitter": "bijvoorbeeld ensdomeinen",
+                            "com.github": "bijvoorbeeld ensdomeinen",
+                            "com.discord": "bijvoorbeeld alisha.eth#0001"
+                        }
+                    },
+                    "address": {
+                        "label": "Adres",
+                        "itemLabel": "{{coin}} adres",
+                        "placeholder": {
+                            "default": "Voeg adres hier toe",
+                            "ETH": "0xD9hbQK...",
+                            "BNB": "bnb1grpf...",
+                            "BTC": "3FZbgi29...",
+                            "LTC": "ltc1qdp7p...",
+                            "SOL": "D4kA7VzHnmV...",
+                            "DOT": "1D4kA7VxH...",
+                            "DOGE": "DFabcd12..."
+                        }
+                    },
+                    "website": {
+                        "label": "Website",
+                        "items": {
+                            "ipfs": "IPFS",
+                            "ipns": "IPNS",
+                            "swarm": "Zwerm",
+                            "onion": "Ui",
+                            "skynet": "Skynet",
+                            "arweave": "Arweave"
+                        },
+                        "placeholder": {
+                            "default": "Voeg url hier toe",
+                            "ipfs": "ipfs://...",
+                            "skynet": "sia://...",
+                            "arweave": "ar://...",
+                            "swarm": "bzz://...",
+                            "onion": "onion3://..."
+                        }
+                    },
+                    "other": {
+                        "label": "Andere",
+                        "items": {
+                            "contentHash": "Inhoud Hash",
+                            "publicKey": "Openbare Sleutel",
+                            "abi": "ABI",
+                            "custom": "Aangepast"
+                        }
+                    },
+                    "custom": {
+                        "key": "Sleutel",
+                        "value": "Waarde"
+                    },
+                    "default": {
+                        "placeholder": "Voeg waarde hier toe"
+                    }
+                }
+            },
+            "errors": {
+                "labelRequired": "Een record sleutel is vereist",
+                "duplicateRecord": "Duplicaat record sleutel",
+                "avatarReserved": "Sleutel wordt gebruikt door avatarbeheerder"
+            },
+            "confirmations": {
+                "publicNotice": {
+                    "title": "Uw gegevens zijn openbaar",
+                    "description": "Alles wat u aan uw profiel toevoegt, is openbaar zichtbaar op de blockchain.",
+                    "confirm": "Ik begrijp",
+                    "decline": "Terug"
+                },
+                "clearEth": {
+                    "title": "ETH-adres wissen?",
+                    "description": "Zonder ingesteld ETH-adres kunnen mensen geen geld naar deze naam sturen. Dit kan later worden bijgewerkt.",
+                    "confirm": "Duidelijk",
+                    "decline": "Annuleren"
+                }
+            },
+            "actions": {
+                "skipProfile": "Profiel overslaan"
+            }
+        },
+        "complete": {
+            "heading": "Gefeliciteerd!",
+            "subheading": "Je bent nu de eigenaar van",
+            "description": "Uw naam is succesvol geregistreerd. U kunt nu uw naam bekijken en beheren.",
+            "registerAnother": "Registreer een ander",
+            "viewName": "Naam bekijken"
+        },
+        "info": {
+            "heading": "Voordat we beginnen",
+            "subheading": "Het registreren van uw naam bestaat uit drie stappen",
+            "ethItems": "['Voltooi een transactie om de timer te starten', 'Wacht 60 seconden tot de timer voltooid is', 'Voltooi een tweede transactie om je naam te beveiligen']",
+            "moonpayItems": "['Maak of log in op een bestaand MoonPay-account', 'Gebruik uw creditcard of betaalpas om een enkele transactie te voltooien']",
+            "setupProfile": "Ik wil eerst mijn profiel instellen",
+            "paymentMethod": "Betaalmethode",
+            "notEnoughEth": "Onvoldoende MXC in portemonnee",
+            "creditOrDebit": "Credit- of debetkaart",
+            "additionalFee": "Extra verwerkingskosten",
+            "pendingMoonpayTransaction": "Uw MoonPay-transactie wordt verwerkt. Dit kan tot twee minuten duren. U kunt uw voortgang controleren via de bevestigingsmail die u heeft ontvangen.",
+            "failedMoonpayTransaction": "Uw MoonPay-transactie is mislukt. Probeer het opnieuw of kies de 'Ethereum'-betaalmethode.",
+            "ethereum": "MXC",
+            "processing": "Verwerking",
+            "poweredBy": "Aangedreven door",
+            "moonpayModalHeader": "MoonPay Afrekenen",
+            "moonpayTestCard": "Testkaart details"
+        },
+        "transactions": {
+            "heading": "Bijna daar",
+            "subheading": "Deze timer helpt voorkomen dat anderen de naam registreren voordat u dat doet. Uw naam is niet geregistreerd totdat u de tweede transactie heeft voltooid.",
+            "startTimer": "Start timer = Timer starten",
+            "wait": "Wacht",
+            "transactionFailed": "Transactie Mislukt",
+            "transactionProgress": "Transactie in uitvoering"
+        },
+        "cancelRegistration": {
+            "heading": "Je verliest je transactie",
+            "contentOne": "Teruggaan zal je eerste transactie resetten. Als je teruggaat, moet je de transactie opnieuw voltooien en de bijbehorende netwerkkosten betalen.",
+            "contentTwo": "Weet je zeker dat je door wilt gaan?",
+            "footer": "Transactie resetten en terug gaan"
+        }
+    }
 }

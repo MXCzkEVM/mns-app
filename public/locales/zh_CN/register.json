@@ -2,7 +2,184 @@
     "title": "在MNS上注册{{name}}",
     "subtitle": "注册",
     "heading": "注册 {{name}}",
-    "invoice": "{'yearRegistration': '{{years}} 年注册', 'registration': '注册', 'estimatedNetworkFee': '预估网络费用', 'networkFee': '网络费用', 'temporaryPremium': '临时溢价', 'total': '预计总额', 'totalPaid': '已付总额'}",
-    "error": "{'nameTooLong': '您想注册的名称过长。请选一个较短的名字。'}",
-    "steps": "{'pricing': {'insufficientBalance': '余额不足', 'multipleYearsMessage': '通过避免每年的交易，延长多年可以节省网络费用。', 'primaryName': '作为主要名称使用', 'primaryNameMessage': '这将您的地址链接到此名称，允许dApps在连接到它们时将其显示为您的个人资料。每个地址只能有一个主要名称。', 'premium': {'heading': '此名称具有临时溢价', 'subheading': '为了给最近过期的名字提供公平的机会，溢价从1亿美元开始，并在21天内降至0。您可以在下面计算某个日期的溢价。', 'targetPrice': '目标价格', 'targetDate': '目标日期', 'timezone': '{{timezone}}本地时间显示日期和时间'}}, 'profile': {'title': '创建您的个人资料', 'title2': '编辑您的个人资料', 'default': '默认', 'advanced': '高级', 'permissions': '权限', 'resolver': '解析器', 'visibilityMessage': '您的个人资料信息将存储在区块链上。您添加的任何内容都将公开可见。', 'addProfile': '添加个人资料字段', 'addMore': '向个人资料添加更多内容', \n\n'options': {'groups': {'general': {'label': \"通用\", \n'items':{'name':'昵称','url':'网站','location':'位置','description':'简短自我介绍'}, \n'placeholder':{'name':'John Smith','url':'https://ens.domains','location':'元宇宙','description':\"我是来自田纳西农村的产量农民。\"}}, \n\n'social':{'label':'社交',\n'items':{'com.twitter':'Twitter','com.github':'GitHub','com.discord':'Discord'},\n'placeholder':{'com.twitter':'例如 ensdomains','com.github':'例如 ensdomains','com.discord':'例如 alisha.eth#0001'}},\n\n'address':{'label':'地址',\n'itemLabel':'{{coin}} 地址',\n'placeholder':{'default':'在此处添加地址','ETH':'0xD9hbQK...','BNB':'bnb1grpf...','BTC':'3FZbgi29...','LTC':'ltc1qdp7p...','SOL':'D4kA7VzHnmV...','DOT':'1D4kA7VxH...','DOGE':'DFabcd12...'}},\n\n'website':{'label':\"网站\",\n'items':{'ipfs':\"IPFS\",'ipns':\"IPNS\",'swarm':\"Swarm\",'onion':\"Onion\",'skynet':\"Skynet\",'arweave':\"Arweave\"},\n'placeholder':{'default':\"在此处添加URL\",'ipfs':\"ipfs://...\",'skynet':\"sia://...\",'arweave':\"ar://...\",'swarm':\"bzz://...\",'onion':\"onion3://...\"}},\n\n'other':{'label':\"其他\",\n'items':{'contentHash':\"内容哈希值\",'publicKey':\"公钥\",'abi':\"ABI\",'custom':\"自定义\"}},\n'custom':{'key':\"键\",'value':\"值\"},\n'default':{'placeholder':\"在此处添加值\"}},\n\n\"errors\":{'labelRequired':\"需要记录键\",'duplicateRecord':\"重复记录键\",'avatarReserved':\"键被头像管理器使用\"},\n\n\"confirmations\":{'publicNotice':{'title':\"你的详细信息是公开的\",\n'description':\"你添加到你的个人资料中的任何东西都会在区块链上公开查看。\",\n'confirm':\"我明白\",\n'decline':\"返回\"},\n\n\"clearEth\":{'title'=>\"清除ETH地址？\",\n'description':\"如果没有设置ETH地址，人们将无法向这个名字发送钱。这可以稍后更新。\",\n'confirm':\"清除\",\n'decline':\"取消\"}},\n\n\"actions\":{'skipProfile':\"跳过个人资料\"}},\n\n\"complete\":{'heading'=>\"恭喜！\",\n'subheading'=>\"你现在是 \",\n'description'\"你的名字已成功注册。你现在可以查看和管理你的名字。\",\n'registerAnother'\"注册另一个\",\n'viewName'\"查看名字\"},\n\n\"info\":{'heading'\"我们开始之前\",\n'subheading'\"注册你的名字需要三步\",\n'ethItems':['完成一"
+    "invoice": {
+        "yearRegistration": "{{years}} 年注册",
+        "registration": "注册",
+        "estimatedNetworkFee": "预估网络费",
+        "networkFee": "网络费",
+        "temporaryPremium": "临时溢价",
+        "total": "预计总计",
+        "totalPaid": "总共支付"
+    },
+    "error": {
+        "nameTooLong": "您想要注册的名称过长。请选一个较短的名字。"
+    },
+    "steps": {
+        "pricing": {
+            "insufficientBalance": "余额不足",
+            "multipleYearsMessage": "通过延长多年的使用期，可以节省网络费用，避免每年进行交易。",
+            "primaryName": "作为主要名称使用",
+            "primaryNameMessage": "此链接将您的地址与此名称关联，允许dApps在连接时将其显示为您的个人资料。每个地址只能有一个主要名称。",
+            "premium": {
+                "heading": "此名称具有临时溢价",
+                "subheading": "为了给最近过期的名称提供公平的机会，溢价开始于1亿美元，并在21天内降至0美元。您可以在下面的日期计算溢价。",
+                "targetPrice": "目标价格",
+                "targetDate": "目标日期",
+                "timezone": "显示的日期和时间为本地时区({{timezone}})"
+            }
+        },
+        "profile": {
+            "title": "创建您的个人资料",
+            "title2": "编辑您的个人资料",
+            "default": "默认",
+            "advanced": "高级",
+            "permissions": "权限",
+            "resolver": "解决器",
+            "visibilityMessage": "您的个人信息将被存储在区块链上。您添加的任何内容都将公开可见。",
+            "addProfile": "添加个人资料字段",
+            "addMore": "向个人资料添加更多内容",
+            "options": {
+                "groups": {
+                    "general": {
+                        "label": "常规",
+                        "items": {
+                            "name": "昵称",
+                            "url": "网站",
+                            "location": "位置",
+                            "description": "简介"
+                        },
+                        "placeholder": {
+                            "name": "约翰·史密斯",
+                            "url": "https://ens.domains",
+                            "location": "元宇宙",
+                            "description": "我是来自田纳西乡村的产出农民。"
+                        }
+                    },
+                    "social": {
+                        "label": "社交",
+                        "items": {
+                            "com.twitter": "推特",
+                            "com.github": "GitHub",
+                            "com.discord": "Discord"
+                        },
+                        "placeholder": {
+                            "com.twitter": "例如，ensdomains",
+                            "com.github": "例如，ensdomains",
+                            "com.discord": "例如：alisha.eth#0001"
+                        }
+                    },
+                    "address": {
+                        "label": "地址",
+                        "itemLabel": "{{coin}}地址",
+                        "placeholder": {
+                            "default": "在此处添加地址",
+                            "ETH": "0xD9hbQK...",
+                            "BNB": "bnb1grpf...",
+                            "BTC": "3FZbgi29...",
+                            "LTC": "ltc1qdp7p...",
+                            "SOL": "D4kA7VzHnmV...",
+                            "DOT": "1D4kA7VxH...",
+                            "DOGE": "DFabcd12..."
+                        }
+                    },
+                    "website": {
+                        "label": "网站",
+                        "items": {
+                            "ipfs": "IPFS",
+                            "ipns": "IPNS",
+                            "swarm": "Swarm",
+                            "onion": "洋葱",
+                            "skynet": "天网",
+                            "arweave": "Arweave"
+                        },
+                        "placeholder": {
+                            "default": "在此处添加网址",
+                            "ipfs": "ipfs://...",
+                            "skynet": "sia://...",
+                            "arweave": "ar://...",
+                            "swarm": "bzz://...",
+                            "onion": "onion3://..."
+                        }
+                    },
+                    "other": {
+                        "label": "其他",
+                        "items": {
+                            "contentHash": "内容哈希",
+                            "publicKey": "公钥",
+                            "abi": "ABI",
+                            "custom": "自定义"
+                        }
+                    },
+                    "custom": {
+                        "key": "密钥",
+                        "value": "价值"
+                    },
+                    "default": {
+                        "placeholder": "在此添加价值"
+                    }
+                }
+            },
+            "errors": {
+                "labelRequired": "需要记录密钥",
+                "duplicateRecord": "重复记录键",
+                "avatarReserved": "密钥正在被头像管理器使用"
+            },
+            "confirmations": {
+                "publicNotice": {
+                    "title": "您的详细信息是公开的",
+                    "description": "您在个人资料中添加的任何内容都将在区块链上公开显示。",
+                    "confirm": "我明白",
+                    "decline": "返回"
+                },
+                "clearEth": {
+                    "title": "清除ETH地址？",
+                    "description": "如果没有设置ETH地址，人们将无法向此名称发送资金。这可以稍后更新。",
+                    "confirm": "清除",
+                    "decline": "取消"
+                }
+            },
+            "actions": {
+                "skipProfile": "跳过个人资料"
+            }
+        },
+        "complete": {
+            "heading": "恭喜！",
+            "subheading": "您现在是的所有者",
+            "description": "您的名字已成功注册。您现在可以查看和管理您的名字。",
+            "registerAnother": "注册另一个",
+            "viewName": "查看名称"
+        },
+        "info": {
+            "heading": "在我们开始之前",
+            "subheading": "注册您的名字需要三个步骤",
+            "ethItems": "[\"完成交易以开始计时器\", \"等待60秒以完成计时器\", \"完成第二笔交易以保护您的名字\"]",
+            "moonpayItems": "['创建或登录到现有的MoonPay账户', '使用您的信用卡或借记卡完成单笔交易']",
+            "setupProfile": "我想先设置我的个人资料",
+            "paymentMethod": "支付方式",
+            "notEnoughEth": "钱包中的MXC不足",
+            "creditOrDebit": "信用卡或借记卡",
+            "additionalFee": "额外处理费",
+            "pendingMoonpayTransaction": "您的MoonPay交易正在处理中。这可能需要长达两分钟的时间。您可以通过您收到的确认邮件来查看进度。",
+            "failedMoonpayTransaction": "您的MoonPay交易失败了。请再试一次或选择'以太坊'支付方式。",
+            "ethereum": "MXC",
+            "processing": "处理中",
+            "poweredBy": "由驱动",
+            "moonpayModalHeader": "MoonPay结账",
+            "moonpayTestCard": "测试卡详情"
+        },
+        "transactions": {
+            "heading": "几乎到了",
+            "subheading": "此计时器可防止他人在您之前注册该名称。您的名字在完成第二笔交易之前不会被注册。",
+            "startTimer": "开始计时器",
+            "wait": "等待",
+            "transactionFailed": "交易失败",
+            "transactionProgress": "交易进行中"
+        },
+        "cancelRegistration": {
+            "heading": "您将失去您的交易",
+            "contentOne": "返回将重置您的首笔交易。如果您返回，您将需要再次完成交易并支付相关费用。",
+            "contentTwo": "您确定要继续吗？",
+            "footer": "重置交易并返回"
+        }
+    }
 }

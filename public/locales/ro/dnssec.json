@@ -1,9 +1,66 @@
 {
     "title": "Importează {{name}} în MNS",
-    "general": "{'connectWallet': 'Vă rugăm să vă conectați portofelul pentru a continua', 'importDNSSECName': 'Importați Numele DNSSEC', 'domainRegistrar': 'Registrator de domeniu'}",
-    "registrars": "{'namecheap': 'Namecheap', 'domaindotcom': 'Domain.com', 'googledomains': 'Domenii Google', 'dreamhost': 'Dreamhost', 'hover': 'Hover', 'godaddy': 'GoDaddy', 'bluehost': 'Bluehost', 'hostgator': 'HostGator', 'cloudflare': 'Cloudflare', 'findYourRegistrar': 'Găsește-ți registrarul'}",
-    "addTextRecord": "{'title': 'Adaugă Înregistrări Text', 'explanation': 'Trebuie să creezi o nouă înregistrare DNS pentru domeniul tău folosind aceste detalii. Acest lucru îți va revendica adresa Ethereum ca proprietar al acestui domeniu.', 'syncWarningOne': \"Nu pare să fii proprietarul DNS al acestui domeniu, dar tot poți adăuga acest nume la Registrul MNS.\", 'syncWarningTwo': \"Dacă deții acest domeniu, schimbă înregistrarea _ens TXT pentru a conține adresa ta Ethereum și apasă din nou pe 'Verifică', altfel apasă pe 'Revendică' pentru a continua.\", 'type': 'Tip', 'txt': 'TXT', 'errors': {'SUBDOMAIN_NOT_SET': {'title': 'Subdomeniu neconfigurat', 'content': 'Te rog setează subdomeniul tău _ens cu valoarea afișată mai sus.'}, 'DNS_RECORD_DOES_NOT_EXIST': {'title': 'Înregistrare inexistentă', 'content': 'Înregistrarea DNS nu este configurată'}, 'DNS_RECORD_INVALID': {'title': 'Înregistrare Invalidă', 'content': 'Te rog setează înregistrarea cu valoarea de mai sus.'}}}",
-    "claimComplete": "{'title': 'Felicitări!', 'ownerOf': 'Acum ești proprietarul:', 'successMessage': 'Numele tău de domeniu a fost importat cu succes în MNS. Acum poți vizualiza și gestiona numele tău.', 'viewName': 'Vizualizează Nume', 'claimAnother': 'Revendică altul'}",
-    "claimDomain": "{'title': 'Revendicați-vă domeniul', 'syncWarning': 'Importați un nume DNS pe care se pare că nu îl dețineți.', 'verifiedOwnership': 'V-ați verificat proprietatea și puteți revendica acest domeniu.', 'pendingTransactionPre': 'Aveți deja o', 'pendingTransactionLink': 'tranzacție în așteptare', 'pendingTransactionPost': 'pentru acest nume', 'dnsOwner': 'Proprietar DNS', 'networkEst': 'Cost estimat al rețelei'}",
-    "enableDNSSEC": "{'title': 'Activează DNSSEC', 'instruction': \"Va trebui să vizitezi registrarul domeniului tău pentru a activa DNSSEC. Odată activat, apasă pe 'Verifică' pentru a trece la pasul următor.\", 'registrarHelp': 'Alege-ți registrarul din meniul de mai jos pentru instrucțiuni despre cum să faci acest lucru.', 'findRegistrar': 'Găsește-ți registrarul', 'DNSSECNotEnabled': 'DNSSEC nu a fost activat pe acest domeniu.'}"
+    "general": {
+        "connectWallet": "Vă rugăm să vă conectați portofelul pentru a continua",
+        "importDNSSECName": "Importă Numele DNSSEC",
+        "domainRegistrar": "Registrar de Domenii"
+    },
+    "registrars": {
+        "namecheap": "Namecheap",
+        "domaindotcom": "Domain.com",
+        "googledomains": "Domenii Google",
+        "dreamhost": "Dreamhost",
+        "hover": "Treci cu mouse-ul",
+        "godaddy": "GoDaddy",
+        "bluehost": "Bluehost",
+        "hostgator": "HostGator",
+        "cloudflare": "Cloudflare",
+        "findYourRegistrar": "Găsește-ți registrarul"
+    },
+    "addTextRecord": {
+        "title": "Adăugați Înregistrări Text",
+        "explanation": "Trebuie să creați un nou înregistrare DNS pentru domeniul dvs. folosind aceste detalii. Acest lucru va revendica adresa dvs. Ethereum ca proprietar al acestui domeniu.",
+        "syncWarningOne": "Nu pare să fiți proprietarul DNS al acestui domeniu, dar puteți adăuga totuși acest nume în Registrul MNS.",
+        "syncWarningTwo": "Dacă deții acest domeniu, modifică înregistrarea _ens TXT pentru a include adresa ta Ethereum și apasă din nou pe 'Verifică', altfel apasă pe 'Revendică' pentru a continua.",
+        "type": "Tipul",
+        "txt": "TXT",
+        "errors": {
+            "SUBDOMAIN_NOT_SET": {
+                "title": "Subdomeniu neconfigurat",
+                "content": "Vă rugăm să setați subdomeniul _ens cu valoarea afișată mai sus."
+            },
+            "DNS_RECORD_DOES_NOT_EXIST": {
+                "title": "Înregistrarea nu există",
+                "content": "Înregistrarea DNS nu este setată"
+            },
+            "DNS_RECORD_INVALID": {
+                "title": "Înregistrare Invalidă",
+                "content": "Vă rugăm să setați înregistrarea cu valoarea de mai sus."
+            }
+        }
+    },
+    "claimComplete": {
+        "title": "Felicitări!",
+        "ownerOf": "Acum ești proprietarul:",
+        "successMessage": "Numele domeniului dvs. a fost importat cu succes în MNS. Acum puteți vizualiza și gestiona numele dvs.",
+        "viewName": "Vizualizează Nume",
+        "claimAnother": "Revendicați altul"
+    },
+    "claimDomain": {
+        "title": "Revendicați domeniul dvs.",
+        "syncWarning": "Importați un nume DNS pe care se pare că nu îl dețineți.",
+        "verifiedOwnership": "Ați verificat proprietatea dvs. și puteți revendica acest domeniu.",
+        "pendingTransactionPre": "Deja ai un",
+        "pendingTransactionLink": "tranzacție în așteptare",
+        "pendingTransactionPost": "pentru acest nume",
+        "dnsOwner": "Proprietar DNS",
+        "networkEst": "Cost estimat al rețelei"
+    },
+    "enableDNSSEC": {
+        "title": "Activează DNSSEC",
+        "instruction": "Va trebui să vizitați registrarul dvs. de domenii pentru a activa DNSSEC. Odată activat, faceți clic pe 'Verifică' pentru a trece la următorul pas.",
+        "registrarHelp": "Alegeți registrarul dvs. din meniul derulant de mai jos pentru instrucțiuni despre cum să faceți acest lucru.",
+        "findRegistrar": "Găsește-ți registrarul",
+        "DNSSECNotEnabled": "DNSSEC nu a fost activat pe acest domeniu."
+    }
 }

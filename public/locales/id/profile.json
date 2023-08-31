@@ -1,17 +1,385 @@
 {
-    "meta": "{'title': '{{name}} di MNS', 'description': \"Profil {{name}} di Layanan Nama MXC\"}",
+    "meta": {
+        "title": "{{name}} di MNS",
+        "description": "Profil {{name}} di Layanan Nama MXC"
+    },
     "title": "Profil",
     "yourWallet": "Dompet Anda",
     "yourProfile": "Profil Anda",
     "accounts": "Akun",
     "addresses": "Alamat",
     "otherRecords": "Catatan Lainnya",
-    "editProfile": "Ubah Profil",
+    "editProfile": "Sunting Profil",
     "ownership": "Kepemilikan",
     "viewDetails": "Lihat Detail",
-    "banner": "{'available': {'title': '{{name}} tersedia', 'description': 'Nama ini kadaluarsa pada <strong>{{date}}</strong>. Klik di sini untuk melihat halaman pendaftaran.'}}",
-    "tabs": "{'profile': {'name': 'Profil', 'actions': {'setAsPrimaryName': {'label': 'Atur sebagai nama utama', 'title': 'Atur nama utama Anda', 'description': 'Untuk mengatur nama utama Anda ke nama ini, alamat ETH harus cocok dengan alamat ini.'}, 'setToMEP1002Hexagon': {'label': 'Atur ke MEP1002 Hexagon', 'title': 'Atur ke MEP1002 Hexagon', 'description': 'Atur nama ini ke MEP1002 Hexagon, Anda harus menjadi pemegang Token Nama MEP1002 Hexagon'}, 'mintToMEP1002Hexagon': {'label': 'Mint MEP1002 Hexagon', 'title': 'Mint MEP1002 Hexagon', 'description': 'Mint MEP1002 Hexagon ini'}, 'deleteSubname': {'label': 'Hapus subnama'}, 'extend': {'label': 'Perpanjang nama'}, 'editProfile': {'label': 'Edit profil'}, 'reclaim': {'label': 'Buat ulang nama', 'warning': 'Subnama ini telah kedaluwarsa dan tidak dimiliki. Anda dapat membuat ulang subnama ini.'}}, \n'warnings': {'wrappedDNS': 'Nama DNS dapat diklaim kembali oleh pemilik DNS kapan saja. Jangan membeli nama DNS.', \n'homoglyph': '<a>Pelajari lebih lanjut tentang homoglyph</a>'}}, \n'records': {'name': 'Rekaman'}, \n'subnames': {'name': 'Subnama'}, \n'permissions': {'name':\n'Izin', \n'parentUnlockedWarning':\n'<strong>Anda tidak dapat mengubah izin pada nama ini.</strong> Anda harus mencabut ‘unwrap this name’ pada induk ({{parent}}). Klik di sini untuk melihat izin induk.',\n'revokedLabel':\n'Dicabut {{date}}',\n'grantedLabel':\n'Diberikan {{date}}',\n'role':\n{'manager':\n'manager',\n'owner':\n'pemilik',\n'parent':\n'induk'},\n'ownership':\n{'title':\n'Izin Kepemilikan',\n'parentCanControl':\n{'label':\n'Nama ini dapat dikendalikan oleh induknya (<parentLink>{{parent}}</parentLink>)',\n'list':\n{'title':\n'Pemilik nama induk dapat:',\n'item1':\n'Mengontrol dan memodifikasi pengaturan dan rekaman',\n'item2':\n'Mengambil kembali atau menetapkan kepemilikan dari nama ini',\n'item3':\n'Menghapus nama ini'}},\n'parentCannotControl':\n{'label':\n'Nama ini tidak dapat dikendalikan oleh induknya (<parentLink>{{parent}}</parentLink>)',\n'sublabel':\n'Pemilik nama induk tidak dapat mengontrol, memodifikasi, menghapus atau mengambil kembali kepemilikan dari nama ini.',\n'list':\n{'title':\n'Pemilik nama akan tetap memiliki kepemilikan kecuali salah satu dari hal berikut terjadi:',\n'item1':\n'Nama berakhir pada {{date}} (dapat diperpanjang)',\n'item2':\n'Nama induk berakhir pada {{date}}',\n'item3':'Kepemilikan atas nama dikirim ke alamat lain'}},\n'action':{'giveUpControl':'Menyerahkan kontrol induk','revokePermission':'Cabut izin'}},\n'nameChangePermissions':{'title':'Izin Perubahan Nama','subtitle':{'parent-can-change':'Induk dari nama ini (<parentLink>{{parent}}</parentLink>) dapat mengubah pengaturan pada nama ini.','owner-can-change':'Pemilik dari nama ini dapat mengubah pengaturan pada nama ini.'},'permissions':{'canUnwrap':{'label':'Dapat membuka bungkus dari nama ini','description':'Pemilik {{owner}} dari nama ini dapat membuka bungkus dari nama ini.'},'cannotUnwrap':{'label':'Tidak dapat membuka bungkus dari nama ini','description':'Pemilik {{owner}} dari",
-    "details": "{'title': 'Detail Nama', 'notWrapped': 'Tidak dibungkus', 'sendName': {'title': 'Kirim Nama', 'description': 'Mengirim nama akan memberikan kontrol atasnya ke alamat baru', 'learnMore': 'Pelajari lebih lanjut tentang kepemilikan nama.', 'makeOwner': 'Jadikan pemilik', 'makeOwnerDescription': 'Pemilik dapat mengirim ke pemilik baru dan mengubah manajer', 'makeManager': 'Jadikan manajer', 'makeManagerDescription': 'Manajer dapat mengubah dan menetapkan catatan.', 'inputPlaceholder': 'Masukkan alamat Ethereum atau nama MNS', 'transferSubname': 'Transfer Nama', 'transferController': 'Transfer Kontroler'}, 'wrap': {'startTitle': 'Tingkatkan nama Anda', 'resumeTitle': 'Lanjutkan peningkatan Anda', 'completeTitle': 'Peningkatan selesai', 'description': '\"Meningkatkan\" atau \"membungkus\" nama Anda memberikannya fitur baru.', 'startLabel': 'Tingkatkan', 'resumeLabel': 'Lanjutkan Peningkatan',  boxTitle: \"Buka fitur baru\", boxDescription: \"Meningkatkan nama Anda membuka fungsionalitas terbaru dari MNS\"}, descriptions: {owner: \"Memiliki dan mengontrol nama\", controller: \"Mengontrol semua catatan dari nama\", registrant: \"Pemilik NFT\", dnsOwner: \"Pemilik nama DNS\"}, tabs: {records: {label: \"Catatan\", text: \"Teks\", contentHash: \"Hash Konten\", noContentHash: \"Tidak ada Hash Konten\", editRecords: \"Edit Catatan\", noAbi: \"Tidak ada ABI\", abi: \"ABI\", editRecordsDisabled: \"Resolver saat ini tidak kompatibel dengan nama yang dibungkus\"}, subnames: {label: \"Subnama\", loading: \"Memuat subnama\", empty: \"Tidak ada subnama yang ditambahkan\", noResults: \"Tidak ada hasil\", noMoreResults: \"Tidak ada hasil lagi\", addSubname:{title:\"Subnama memungkinkan Anda membuat nama tambahan dari nama yang sudah ada.\", learn:\"Pelajari tentang subnama\", action:\"Subnama baru\", dialog:{title:\"Buat Subnama\", error:{invalidCharacters:\"Mengandung karakter tidak valid\", mustUseLowercase:\"Harus menggunakan huruf kecil\", alreadyExists:\"Nama sudah ada\", nameTooLong:\"Nama terlalu panjang\", pccBurned:\"Nama dikunci sampai {{date}}\"}}}}}",
-    "advancedEditor": "{'title': \"Catatan {{name}}\", 'tabs': {'text': {'label': 'Teks', 'addRecord': 'Tambahkan catatan', 'createRecord': 'Ketik nama catatan...', 'placeholder': {'default': 'Tambahkan nilai di sini...'}}, 'address': {'label': 'Alamat', 'addRecord': 'Tambahkan alamat', 'noOptions': 'Tidak ada opsi alamat tersedia', 'placeholder': {'default': 'Tambahkan alamat di sini...'}}, 'other': {'label': 'Lainnya', 'labelDisabled': 'Tidak didukung oleh resolver saat ini', 'contentHash': {'label': 'Hash Konten', 'placeholder': 'mis. ipfs://'}, 'publicKey': {'label': 'Kunci Publik', 'placeholder': 'mis. pub_1231231231231'}, 'abi': {'label': 'ABI', 'placeholder': 'Masukkan ABI di sini...'}}}}",
-    "errors": "{'invalidName': 'Nama ini tidak valid.', 'invalidAddress': 'Bukan alamat yang valid', 'expiringSoon': 'Masa tenggang untuk nama ini berakhir pada {{date}}. Jika tidak diperpanjang sebelum tanggal tersebut, akan tersedia untuk pendaftaran.', 'hasExpired': '{{ name }} telah kedaluwarsa', 'ownerManagerChoice': 'Harus mengirim pemilik atau manajer', 'unknown': 'Kesalahan tidak diketahui', 'notMigrated': 'Nama ini belum dipindahkan ke registri baru.', 'featureNotAvailable': 'Beberapa fitur belum tersedia, tetapi Anda masih bisa ', 'featureNotAvailableLink': 'melihat nama ini di aplikasi lama.', 'migrationNotAvailable': 'Migrasi ke registri baru belum tersedia, tetapi Anda masih bisa ', 'migrationNotAvailableLink': 'migrasikan nama ini di aplikasi lama.', 'addressLength': 'Jika alamat harus 42 karakter panjang', 'unsupportedTLD': 'TLD ini tidak didukung', 'keyInUse': '{{value}} sudah digunakan', 'hasSubnames': 'Nama ini memiliki subnama', 'permissionRevoked': 'Nama ini telah mencabut izin yang diperlukan untuk melakukan tindakan ini.', 'invalidJSON': 'JSON tidak valid'}"
+    "banner": {
+        "available": {
+            "title": "{{name}} tersedia",
+            "description": "Nama ini kadaluarsa pada <strong>{{date}}</strong>. Klik di sini untuk melihat halaman pendaftaran."
+        }
+    },
+    "tabs": {
+        "profile": {
+            "name": "Profil",
+            "actions": {
+                "setAsPrimaryName": {
+                    "label": "Tetapkan sebagai nama utama",
+                    "title": "Atur nama utama Anda",
+                    "description": "Untuk mengatur nama utama Anda ke nama ini, alamat ETH harus cocok dengan alamat ini."
+                },
+                "setToMEP1002Hexagon": {
+                    "label": "Atur ke MEP1002 Hexagon",
+                    "title": "Atur ke MEP1002 Hexagon",
+                    "description": "Tetapkan nama ini menjadi MEP1002 Hexagon, Anda harus menjadi pemegang Token Penamaan MEP1002 Hexagon"
+                },
+                "mintToMEP1002Hexagon": {
+                    "label": "Cetak MEP1002 Hexagon",
+                    "title": "Mint MEP1002 Hexagon",
+                    "description": "Cetak MEP1002 Hexagon ini"
+                },
+                "deleteSubname": {
+                    "label": "Hapus subnama"
+                },
+                "extend": {
+                    "label": "Perpanjang nama"
+                },
+                "editProfile": {
+                    "label": "Sunting profil"
+                },
+                "reclaim": {
+                    "label": "Buat ulang nama",
+                    "warning": "Subname ini telah kedaluwarsa dan tidak dimiliki. Anda dapat membuat ulang subname ini."
+                }
+            },
+            "warnings": {
+                "wrappedDNS": "Nama DNS dapat diklaim kembali oleh pemilik DNS kapan saja. Jangan membeli nama DNS.",
+                "homoglyph": "Nama ini mengandung karakter non-ASCII. Mungkin ada karakter yang terlihat identik atau sangat mirip dengan karakter lain, yang bisa digunakan untuk menipu pembaca. <a>Pelajari lebih lanjut tentang homoglyph</a>"
+            }
+        },
+        "records": {
+            "name": "Rekaman"
+        },
+        "subnames": {
+            "name": "Subnama"
+        },
+        "permissions": {
+            "name": "Izin",
+            "parentUnlockedWarning": "Anda tidak dapat mengubah izin pada nama ini. Anda harus mencabut 'buka bungkus nama ini' pada induk ({{parent}}). Klik di sini untuk melihat izin induk.",
+            "revokedLabel": "Dibatalkan {{date}}",
+            "grantedLabel": "Diberikan {{date}}",
+            "role": {
+                "manager": "manajer",
+                "owner": "pemilik",
+                "parent": "induk"
+            },
+            "ownership": {
+                "title": "Izin Kepemilikan",
+                "parentCanControl": {
+                    "label": "Nama ini dapat dikendalikan oleh induknya (<parentLink>{{parent}}</parentLink>)",
+                    "list": {
+                        "title": "Pemilik nama induk dapat:",
+                        "item1": "Kontrol dan modifikasi pengaturan dan catatan",
+                        "item2": "Ambil kembali atau serahkan kembali kepemilikan dari nama ini",
+                        "item3": "Hapus nama ini"
+                    }
+                },
+                "parentCannotControl": {
+                    "label": "Nama ini tidak dapat dikendalikan oleh induknya (<parentLink>{{parent}}</parentLink>)",
+                    "sublabel": "Pemilik dari nama induk tidak dapat mengontrol, memodifikasi, menghapus, atau mengambil kembali kepemilikan dari nama ini.",
+                    "list": {
+                        "title": "Pemilik nama akan tetap memiliki kepemilikan kecuali salah satu dari hal berikut terjadi:",
+                        "item1": "Nama berakhir pada {{date}} (dapat diperpanjang)",
+                        "item2": "Nama induk berakhir pada {{date}}",
+                        "item3": "Kepemilikan nama dikirim ke alamat lain"
+                    }
+                },
+                "parentCanChange": {
+                    "label": "Orang tua dari nama ini (<parentLink>{{parent}}</parentLink>) dapat mengubah izin",
+                    "list": {
+                        "title": "Orang tua dapat:",
+                        "item1": "Batalkan izin",
+                        "item2": "Ubah atau bakar sekering khusus"
+                    }
+                },
+                "ownerCanChange": {
+                    "label": "Pemilik nama ini dapat mengubah izin",
+                    "list": {
+                        "title": "Pemilik dapat:",
+                        "item1": "Batalkan izin",
+                        "item2": "Ubah atau bakar sekering khusus"
+                    }
+                },
+                "ownerCannotChange": {
+                    "label": "Pemilik nama ini tidak dapat mengubah izin",
+                    "list": {
+                        "title": "Pemilik tidak dapat:",
+                        "item1": "Batalkan izin",
+                        "item2": "Ubah atau bakar sekering khusus"
+                    }
+                },
+                "unwrapWarning": {
+                    "message": "Izin unwrap harus dicabut pada induk (<strong>{{parent}}</strong>) sebelum menyerahkan kontrol induk.<br> <parentLink>Pergi ke izin induk</parentLink>"
+                },
+                "action": {
+                    "giveUpControl": "Menyerahkan kontrol orang tua",
+                    "revokePermission": "Batalkan izin"
+                }
+            },
+            "expiry": {
+                "permissions": {
+                    "canExtendExpiry": {
+                        "label": "Dapat memperpanjang masa berlaku",
+                        "description": "Masa berlaku izin nama ini dapat diperpanjang oleh {{managerOrOwner}}.",
+                        "description_date": "Masa berlaku izin nama ini ({{date}}) dapat diperpanjang oleh {{managerOrOwner}}."
+                    },
+                    "cannotExtendExpiry": {
+                        "label": "Tidak dapat memperpanjang masa berlaku",
+                        "description": "Masa berlaku izin nama ini tidak dapat diperpanjang oleh manajer.",
+                        "description_date": "Masa berlaku izin nama ini ({{date}}) tidak dapat diperpanjang oleh manajer."
+                    }
+                },
+                "manager": "manajer",
+                "owner": "pemilik",
+                "action": {
+                    "changePermissions": "Ubah izin"
+                }
+            },
+            "nameChangePermissions": {
+                "title": "Izin Ubah Nama",
+                "subtitle": {
+                    "parent-can-change": "Orang tua dari nama ini (<parentLink>{{parent}}</parentLink>) dapat mengubah pengaturan pada nama ini.",
+                    "owner-can-change": "Pemilik nama ini dapat mengubah pengaturan pada nama ini."
+                },
+                "permissions": {
+                    "canUnwrap": {
+                        "label": "Dapat membuka nama ini",
+                        "description": "Pemilik {{owner}} dari nama ini dapat membuka nama ini."
+                    },
+                    "cannotUnwrap": {
+                        "label": "Tidak dapat membuka nama ini",
+                        "description": "{{owner}} dari nama ini tidak dapat membuka nama ini."
+                    },
+                    "canCreateSubnames": {
+                        "label": "Dapat membuat subnama",
+                        "description": "Pemilik {{owner}} dari nama ini dapat membuat subnama baru."
+                    },
+                    "cannotCreateSubnames": {
+                        "label": "Tidak dapat membuat subnama",
+                        "description": "{{owner}} dari nama ini tidak dapat membuat subnama baru."
+                    },
+                    "canSend": {
+                        "label": "Dapat mengirim nama ini",
+                        "description": "Pemilik {{owner}} dari nama ini dapat mengirimkannya ke pemilik baru."
+                    },
+                    "cannotSend": {
+                        "label": "Tidak dapat mengirim nama ini",
+                        "description": "{{owner}} dari nama ini tidak dapat mengirimkannya ke pemilik baru."
+                    },
+                    "canSetResolver": {
+                        "label": "Dapat mengatur resolver",
+                        "description": "Pemilik {{owner}} dari nama ini dapat mengatur dan mengubah resolver."
+                    },
+                    "cannotSetResolver": {
+                        "label": "Tidak dapat mengatur resolver",
+                        "description": "{{Pemilik}} dari nama ini tidak dapat mengatur dan mengubah resolver."
+                    },
+                    "canSetTTL": {
+                        "label": "Dapat mengatur TTL",
+                        "description": "Pemilik {{owner}} dari nama ini dapat mengatur dan mengubah TTL."
+                    },
+                    "cannotSetTTL": {
+                        "label": "Tidak dapat mengatur TTL",
+                        "description": "{{owner}} dari nama ini tidak dapat mengatur dan mengubah TTL."
+                    },
+                    "canApprove": {
+                        "label": "Dapat mengubah manajer perpanjangan",
+                        "description": "Pemilik nama ini dapat mengubah manajer yang disetujui untuk memperbarui subnama."
+                    },
+                    "cannotApprove": {
+                        "label": "Tidak dapat mengubah manajer perpanjangan",
+                        "description": "Pemilik nama ini tidak dapat mengubah manajer yang disetujui untuk memperbarui subnama."
+                    }
+                },
+                "action": {
+                    "changePermissions": "Ubah izin"
+                }
+            }
+        },
+        "fuses": {
+            "name": "Sekring"
+        },
+        "more": {
+            "name": "Lebih",
+            "resolver": {
+                "label": "Penyelesai",
+                "custom": "Kustom",
+                "latest": "Terbaru",
+                "outdated": "Kedaluwarsa",
+                "version": "Versi",
+                "etherscan": "BlockExplorer"
+            },
+            "fuses": {
+                "label": "Sekring",
+                "info": "Anda harus membakar 'Can unwrap' untuk dapat membakar sekering lainnya.",
+                "callToAction": "Harap masukkan nama Anda untuk membuka fitur ini",
+                "burnFormTitle": "Izin Pembakaran",
+                "burned": "Dibakar",
+                "permissions": {
+                    "label": "Izin",
+                    "warning": "Fuse dapat diganti oleh orang tua",
+                    "CAN_DO_EVERYTHING": "Dapat melakukan segalanya",
+                    "CANNOT_BURN_FUSES": "Dapat membakar sekering",
+                    "CANNOT_CREATE_SUBDOMAIN": "Dapat membuat subdomain",
+                    "CANNOT_SET_RESOLVER": "Dapat mengatur resolver",
+                    "CANNOT_SET_TTL": "Dapat mengatur TTL",
+                    "CANNOT_TRANSFER": "Dapat mentransfer",
+                    "CANNOT_UNWRAP": "Dapat membuka bungkus",
+                    "PARENT_CANNOT_CONTROL": "Orang tua dapat mengontrol",
+                    "CAN_EXTEND_EXPIRY": "Tidak dapat memperpanjang masa berlaku",
+                    "IS_DOT_ETH": "Bukan .eth"
+                }
+            },
+            "ownership": {
+                "label": "Kepemilikan",
+                "refreshDNS": "Segarkan DNS",
+                "dnsOwnerWarning": {
+                    "isDnsOwner": "Anda tidak dapat melakukan perubahan pada nama ini karena Anda adalah Pemilik DNS, tetapi bukan Manajer. Anda dapat menyinkronkan manajer untuk memperbaiki ini.",
+                    "isManager": "Anda adalah Manajer tetapi bukan Pemilik DNS dari nama ini. Nama DNS dapat diklaim kembali oleh Pemilik DNS kapan saja. Anda dapat mengirimkan nama ini ke Pemilik, atau memperbarui catatan DNS agar cocok.",
+                    "refreshDNS": "Segarkan DNS",
+                    "syncManager": "Manajer Sinkronisasi"
+                }
+            },
+            "token": {
+                "label": "Token",
+                "hex": "heksadesimal",
+                "decimal": "desimal"
+            },
+            "misc": {
+                "registered": "Terdaftar",
+                "expires": "Kadaluarsa"
+            }
+        }
+    },
+    "details": {
+        "title": "Detail Nama",
+        "notWrapped": "Tidak dibungkus",
+        "sendName": {
+            "title": "Kirim Nama",
+            "description": "Mengirimkan nama akan memberikan kontrol alamat baru atasnya",
+            "learnMore": "Pelajari lebih lanjut tentang kepemilikan nama.",
+            "makeOwner": "Jadikan pemilik",
+            "makeOwnerDescription": "Pemilik dapat mengirim ke pemilik baru dan mengubah manajer",
+            "makeManager": "Buat manajer",
+            "makeManagerDescription": "Manajer dapat mengubah dan menetapkan catatan.",
+            "inputPlaceholder": "Masukkan alamat Ethereum atau nama MNS",
+            "transferSubname": "Nama Transfer",
+            "transferController": "Kontroler Transfer"
+        },
+        "wrap": {
+            "startTitle": "Tingkatkan nama Anda",
+            "resumeTitle": "Lanjutkan peningkatan Anda",
+            "completeTitle": "Peningkatan selesai",
+            "description": "Meningkatkan atau \"membungkus\" nama Anda memberikan fitur baru.",
+            "startLabel": "Tingkatkan",
+            "resumeLabel": "Lanjutkan Peningkatan",
+            "boxTitle": "Buka fitur baru",
+            "boxDescription": "Meningkatkan nama Anda membuka fungsionalitas terbaru dari MNS"
+        },
+        "descriptions": {
+            "owner": "Memiliki dan mengendalikan nama",
+            "controller": "Mengontrol semua catatan dari nama",
+            "registrant": "Pemilik dari NFT",
+            "dnsOwner": "Pemilik dari nama DNS"
+        },
+        "tabs": {
+            "records": {
+                "label": "Rekaman",
+                "text": "Teks",
+                "contentHash": "Hash Konten",
+                "noContentHash": "Tidak Ada Hash Konten",
+                "editRecords": "Ubah Catatan",
+                "noAbi": "Tidak ada ABI",
+                "abi": "ABI",
+                "editRecordsDisabled": "Resolver saat ini tidak kompatibel dengan nama yang dibungkus"
+            },
+            "subnames": {
+                "label": "Subnama",
+                "loading": "Memuat subnama",
+                "empty": "Tidak ada subnama yang telah ditambahkan",
+                "noResults": "Tidak ada hasil",
+                "noMoreResults": "Tidak ada hasil lagi",
+                "addSubname": {
+                    "title": "Subnames memungkinkan Anda membuat nama tambahan dari nama yang sudah ada.",
+                    "learn": "Pelajari tentang subnama",
+                    "action": "Subnama baru",
+                    "dialog": {
+                        "title": "Buat Subnama",
+                        "error": {
+                            "invalidCharacters": "Mengandung karakter tidak valid",
+                            "mustUseLowercase": "Harus menggunakan huruf kecil",
+                            "alreadyExists": "Nama sudah ada",
+                            "nameTooLong": "Nama terlalu panjang",
+                            "pccBurned": "Nama dikunci hingga {{date}}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "advancedEditor": {
+        "title": "Catatan {{name}}",
+        "tabs": {
+            "text": {
+                "label": "Teks",
+                "addRecord": "Tambahkan catatan",
+                "createRecord": "Ketik nama catatan...",
+                "placeholder": {
+                    "default": "Tambahkan nilai di sini..."
+                }
+            },
+            "address": {
+                "label": "Alamat",
+                "addRecord": "Tambah alamat",
+                "noOptions": "Tidak ada opsi alamat tersedia",
+                "placeholder": {
+                    "default": "Tambahkan alamat di sini..."
+                }
+            },
+            "other": {
+                "label": "Lainnya",
+                "labelDisabled": "Tidak didukung oleh resolver saat ini",
+                "contentHash": {
+                    "label": "Konten Hash",
+                    "placeholder": "misalnya: ipfs://"
+                },
+                "publicKey": {
+                    "label": "Kunci Publik",
+                    "placeholder": "misalnya. pub_1231231231231"
+                },
+                "abi": {
+                    "label": "ABI",
+                    "placeholder": "Masukkan ABI di sini..."
+                }
+            }
+        }
+    },
+    "errors": {
+        "invalidName": "Nama ini tidak valid.",
+        "invalidAddress": "Bukan alamat yang valid",
+        "expiringSoon": "Masa tenggang untuk nama ini berakhir pada {{date}}. Jika tidak diperpanjang sebelum tanggal tersebut, nama ini akan tersedia untuk pendaftaran.",
+        "hasExpired": "{{ name }} telah kedaluwarsa",
+        "ownerManagerChoice": "Harus mengirim pemilik atau manajer",
+        "unknown": "Kesalahan tidak diketahui",
+        "notMigrated": "Nama ini belum dipindahkan ke registri baru.",
+        "featureNotAvailable": "Beberapa fitur belum tersedia, tetapi Anda masih bisa",
+        "featureNotAvailableLink": "lihat nama ini di aplikasi lama.",
+        "migrationNotAvailable": "Migrasi ke registri baru belum tersedia, tetapi Anda masih bisa",
+        "migrationNotAvailableLink": "pindahkan nama ini di aplikasi lama.",
+        "addressLength": "Jika alamat, seharusnya memiliki panjang 42 karakter",
+        "unsupportedTLD": "TLD ini tidak didukung",
+        "keyInUse": "{{value}} sudah digunakan",
+        "hasSubnames": "Nama ini memiliki subnama",
+        "permissionRevoked": "Nama ini telah mencabut izin yang diperlukan untuk melakukan tindakan ini.",
+        "invalidJSON": "JSON tidak valid"
+    }
 }

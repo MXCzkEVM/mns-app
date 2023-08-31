@@ -5,17 +5,323 @@
     "unsupportedNetwork": "Rete non supportata",
     "notFound": "404 Non Trovato",
     "etherscan": "Esploratore di Blocchi",
-    "action": "{'cancel': 'Annulla', 'change': 'Cambia', 'upload': 'Carica', 'close': 'Chiudi', 'save': 'Salva', 'edit': 'Modifica', 'view': 'Visualizza', 'clear': 'Cancella', 'update': 'Aggiorna', 'learnMore': 'Scopri di più', 'send': 'Invia', 'next': 'Avanti', 'add': 'Aggiungi', 'set': 'Imposta', 'search': 'Cerca', 'back': 'Indietro', 'continue': 'Continua', 'confirm': \"Conferma\", \"remove\": \"Rimuovi\", \"sign\": \"Firma\", \"reset\": \"Resetta\", \"transfer\": \"Trasferisci\", \"tryAgain\": \"Prova Ancora\", \"done\": \"Fatto\", \"burnSelected\": \"Brucia Selezionati\", \"extend\": \"Estendi\", \"delete\": \"Elimina\", \"sort\": \"Ordina\", \"check\": \"Controlla\", \"claim\": \"Richiedi\", \"remindMe\": \"Ricordami\", \"begin\": \"Inizia\", \"finish\": \"Termina\",  \"skip\": \"Salta\",  \"changeNetwork\":  \"Cambia Rete\",  \"understand\":  \"Ho capito\",  \"feedback\":  \"Feedback\",  \"migrate\":  \"Migra\"}",
-    "unit": "{'years_one': '{{count}} anno', 'years_other': '{{count}} anni', 'yrs_one': '{{count}} anno', 'yrs_other': '{{count}} anni', 'gas': '{{value}} gas', 'selected': '{{count}} selezionato', 'perPage': '{{count}} per pagina'}",
-    "navigation": "{'home': 'Casa', 'names': 'I miei nomi', 'favourites': 'Preferiti', 'settings': 'Impostazioni', 'governance': 'Governance', 'community': 'Comunità', 'developers': 'Sviluppatori', 'support': 'Supporto', 'bounty': 'Bug Bounty', 'terms': 'Termini di uso', 'privacy': 'Politica sulla privacy', 'back': 'Indietro', 'oldApp': 'Vecchia app MNS', 'language': 'Lingua', 'currency': 'Valuta', 'ipfsApp': \"App MNS IPFS\", \"feedback\": \"Feedback\", \"syncMessage\": \"Sincronizzazione con la rete. Le modifiche dalla tua transazione potrebbero non essere ancora visibili.\"}",
-    "wallet": "{'myProfile': 'Profilo', 'disconnect': 'Disconnetti', 'connect': 'Connetti', 'noPrimaryName': 'Nessun Nome Primario', 'viewProfile': 'Visualizza Profilo', 'viewDetails': 'Visualizza Dettagli', 'register': 'Registrati'}",
-    "name": "{'registered': 'Registrato', 'expires': 'Scade', 'noExpiry': 'Nessuna scadenza', 'expiry': 'Scadenza', 'parent': 'Genitore', 'noParent': 'Nessun genitore', 'registrant': 'Registrante', 'controller': 'Controller', 'dnsOwner': 'Proprietario DNS', 'owner': 'Proprietario', 'notOwned': 'Non posseduto', 'manager': 'Manager', 'all': 'Tutti i nomi', 'expiresInYears_one': '{{count}} anno alla scadenza', 'expiresInYears_other': '{{count}} anni alla scadenza', 'expiresInMonths_one': '{{count}} mese alla scadenza',  'expiresInMonths_other': '{{count}} mesi alla scadenza',  'expiresInDays_one': '{{count}} giorno alla scadenza',  'expiresInDays_other': '{{count}} giorni alla scadenza',  'expiresInHours_one': '{{count}} ora alla scadenza',  'expiresInHours_other': '{{count}} ore alla scadenza','expiresInHours_zero':'Scade in meno di un'ora','expiredInHours_one':'Scaduto {{count}} ora fa','expiredInHours_other':'Scaduto {{count}} ore fa','expiredInHours_zero':'Scaduto meno di un'ora fa','expiredInDays_one':'Scaduto {{count}} giorno fa','expiredInDays_other':'Scaduto {{count}} giorni fa','expiredInMonths_one':'Scaduto {{count}} mese fa','expiredInMonths_other':'Scaduto {{count}} mesi fa','expiredInYears_one':'Scaduto {{count}} anno fa','expiredInYears_other':'Scaduto {{count}} anni fa','gracePeriod':{'expiresInYears_one':'Il periodo di grazia scade tra {{count}} anno','expiresInYears_other':'Il periodo di grazia scade tra {{count}} anni','expiresInMonths_one':'Il periodo di grazia scade tra {{count}} mese','expiresInMonths_other':'Il periodo di grazia scade tra {{count}} mesi','expiresInDays_one':'Il periodo di grazia scade tra {{count}} giorno','expiresInDays_other':'Il periodo di grazia scade tra {{count}} giorni','expiresInHours_one':'Il periodo di grazia scade tra {{count}} ora','expiresInHours_other':'Il periodo di grazia scade tra {{count}} ore','expiresInHours_zero':'Il periodo di grazia scade in meno di un'ora'},'extend':'Estendi','send':'Invia','transfer':'Trasferisci','sendManager':'Invia Manager','sendOwner':'Invia Proprietario'}",
-    "address": "{'label': 'Indirizzo', 'viewAddress': 'Visualizza indirizzo', 'copyAddress': 'Copia indirizzo'}",
-    "records": "{'label': 'Registri'}",
-    "sortTypes": "{'expiryDate': 'Data di scadenza', 'labelName': 'Nome', 'creationDate': 'Data di creazione'}",
-    "errors": "{'noResults': 'Nessun risultato trovato', 'invalidAddress': 'Indirizzo non valido', 'addressRequired': 'Indirizzo richiesto'}",
-    "transaction": "{'description': {'setName': 'Imposta nome', 'setRecords': 'Imposta record', 'test': 'Test transazione', 'addSuccess': 'Aggiunta riuscita', 'sendName': 'Invia nome', 'migrateProfile': 'Migra profilo', 'migrateProfileWithReset': 'Migra profilo', 'migrateProfileWithSync': 'Migra e aggiorna profilo', 'wrapName': 'Avvolgi nome', 'updateResolver': 'Aggiorna resolver', 'updateProfile': 'Aggiorna profilo', 'setPrimaryName': 'Imposta nome primario', 'updateEthAddress': 'Aggiorna indirizzo ETH', 'testSendName': 'Invia nome', 'burnFuses': 'Brucia permessi', 'createSubname': 'Crea sottonome', 'deleteSubname': 'Elimina sottonome', 'extendNames': \"Estendi nomi\", \"importDNSSECName\": \"Importa nome DNSSEC\", \"commitName\": \"Avvia timer\", \"registerName\": \"Registra nome\", \"approveNameWrapper\": \"Approva NameWrapper\", \"clearRecords\": \"Cancella record\", \"updateRecords\": \"Aggiorna record\", \"transferName\": \"Trasferisci nome\", \"changePermissions\": \"Modifica permessi\", \"syncManager\": \"Sincronizza manager\", \"updateProfileRecords\": \"Aggiorna profilo\", \"resetProfile\": \"Reimposta profilo\", \"setHexagonName\": \"Imposta Nome Esagono MEP1002\", \"mintHexagon\": \"Crea Esagono MEP1002\"}, \n'info': {'sendName': '', \n'migrateProfile': '', \n'migrateProfileWithReset':'',\n'migrateProfileWithSync':'',\n'wrapName':'',\n'updateResolver':'',\n'updateProfile':'',\n'setPrimaryName':'',\n'updateEthAddress':'',\n'testSendName':'',\n'createSubname':'',\n'burnFuses':'',\n'commitName':'',\n'approveNameWrapper':'',\n'fuses':{'revoke':'Revoca','grant':'Concedi','setExpiry':'Imposta scadenza','PARENT_CANNOT_CONTROL':'Rinuncia controllo genitore','CAN_EXTEND_EXPIRY':'Estendi scadenza','CANNOT_UNWRAP':'Disimballa questo nome','CANNOT_CREATE_SUBDOMAIN':'Crea sottodomini','CANNOT_SET_RESOLVER':'Imposta resolver','CANNOT_SET_TTL':'Imposta TTL','CANNOT_TRANSFER':'Invia questo nome','CANNOT_BURN_FUSES':'Modifica permessi','CANNOT_APPROVE':'Modifica gestore rinnovo'}},\n'itemLabel':{'name':'Nome','address':\"Indirizzo\",'action':\"Azione\",'info':\"Info\",'to':\"A\",'subname':\"Sottonome\",'duration':\"Durata\",'cost':\"Costo\",'update':\"Aggiorna\",'resolver':\"Resolver\",'h3Index':\"Indice H3\"},\n'itemValue':{'records_one':\"{{count}} record\",'records_other':\"{{count}} record\"},\n'status':{'pending':{'regular':\"In attesa\"},'confirmed':{'regular':\"Confermato\",'notifyTitle':\"Transazione Riuscita\",'notifyMessage':''},'failed':{'regular':\"Fallito\",'notifyTitle':\"Errore Transazione\",'notifyMessage':''}},\n'dialog':{'intro':{'trailingButton':\"Inizia\",'trailingButtonResume':\"Riprendi\",'step':\"Passaggio {{step}}\"},'confirm':{'title':\"Conferma Dettagli\",'message':\"Controlla attentamente questi dettagli prima di confermare nel tuo portafoglio.\",'waitingForWallet':\"In attesa del portafoglio\",'openWallet':\"Apri Portafoglio\"},'sent':{'title':\"Transazione Inviata\",'message':\"La tua transazione è in corso, puoi chiudere questa e tornare più tardi.\",'progress':{'title':\"Inviato\",'message':''}},'complete':{'title':\"Transazione Completata\",'message':''},'failed':{'title':\"Transazione Fallita\",'progress\":{\"title\":\"Fallito\"}},'error':{'gasLimit':''}},\n'error':{'request':{'INSUFFICIENT_FUNDS'=>\"Fondi insufficienti nel portafoglio\",\"UNPREDICTABLE_GAS_LIMIT\":\"\"}},\n\"viewEtherscan\":\"Visualizza su BlockExplorer\",\n\"viewMore\":\"Visualizza Altro\"}",
-    "search": "{'label': 'Ricerca nome', 'placeholder': 'Cerca un nome', 'emptyText': 'Digita un nome o indirizzo per cercare...', 'address': 'Indirizzo', 'errors': {'tooShort': 'Nome troppo corto', 'invalid': 'Formato del nome non valido'}, 'status': {'registered': 'Registrato', 'gracePeriod': 'Periodo di Grazia', 'premium': 'Premium Temporaneo', 'available': 'Disponibile', 'notOwned': 'Non Posseduto', 'notImported': 'Non Importato', 'short': 'Troppo Corto', 'default': 'Non valido', 'unsupportedTLD': 'Non Supportato', 'imported': 'Importato', 'owned': 'Posseduto'}}",
-    "selectableInput": "{'add': 'Aggiungi', 'placeholder': 'Seleziona un'opzione', 'empty': 'Nessuna opzione trovata'}",
-    "testnetFaucet": "{'explanation': 'Ogni indirizzo su goerli può richiedere {{ amount }}ETH per testare l'app MNS manager, così come tutti i nuovi contratti.', 'note': 'Potrebbe essere necessario qualche minuto per apparire nel tuo portafoglio.'}"
+    "action": {
+        "cancel": "Annulla",
+        "change": "Cambia",
+        "upload": "Carica",
+        "close": "Chiudi",
+        "save": "Salva",
+        "edit": "Modifica",
+        "view": "Visualizza",
+        "clear": "Chiaro",
+        "update": "Aggiorna",
+        "learnMore": "Scopri di più",
+        "send": "Invia",
+        "next": "Prossimo",
+        "add": "Aggiungi",
+        "set": "Imposta",
+        "search": "Ricerca",
+        "back": "Indietro",
+        "continue": "Continua",
+        "confirm": "Conferma",
+        "remove": "Rimuovi",
+        "sign": "Iscriviti",
+        "reset": "Reimposta",
+        "transfer": "Trasferimento",
+        "tryAgain": "Riprova",
+        "done": "Fatto",
+        "burnSelected": "Brucia Selezionato",
+        "extend": "Estendi",
+        "delete": "Elimina",
+        "sort": "Ordina",
+        "check": "Controlla",
+        "claim": "Richiedi",
+        "remindMe": "Ricordami",
+        "begin": "Inizia",
+        "finish": "Fine",
+        "skip": "Salta",
+        "changeNetwork": "Cambia Rete",
+        "understand": "Capisco",
+        "feedback": "Riscontro",
+        "migrate": "Migra"
+    },
+    "unit": {
+        "years_one": "{{count}} anno",
+        "years_other": "{{count}} anni",
+        "yrs_one": "{{count}} anno",
+        "yrs_other": "{{count}} anni",
+        "gas": "{{value}} gas",
+        "selected": "{{count}} selezionato",
+        "perPage": "{{count}} per pagina"
+    },
+    "navigation": {
+        "home": "Casa",
+        "names": "Il mio nome",
+        "favourites": "Preferiti",
+        "settings": "Impostazioni",
+        "governance": "Governance",
+        "community": "Comunità",
+        "developers": "Sviluppatori",
+        "support": "Assistenza",
+        "bounty": "Caccia al Bug",
+        "terms": "Termini di Utilizzo",
+        "privacy": "Politica sulla Privacy",
+        "back": "Indietro",
+        "oldApp": "Vecchia App MNS",
+        "language": "Lingua",
+        "currency": "Valuta",
+        "ipfsApp": "App IPFS MNS",
+        "feedback": "Riscontro",
+        "syncMessage": "Sincronizzazione con la rete. Le modifiche dalla tua transazione potrebbero non essere ancora visibili."
+    },
+    "wallet": {
+        "myProfile": "Profilo",
+        "disconnect": "Disconnetti",
+        "connect": "Connetti",
+        "noPrimaryName": "Nessun Nome Primario",
+        "viewProfile": "Visualizza Profilo",
+        "viewDetails": "Visualizza Dettagli",
+        "register": "Registrati"
+    },
+    "name": {
+        "registered": "Registrato",
+        "expires": "Scade",
+        "noExpiry": "Nessuna scadenza",
+        "expiry": "Scadenza",
+        "parent": "Genitore",
+        "noParent": "Nessun genitore",
+        "registrant": "Registrante",
+        "controller": "Controllore",
+        "dnsOwner": "Proprietario DNS",
+        "owner": "Proprietario",
+        "notOwned": "Non Posseduto",
+        "manager": "Gestore",
+        "all": "Tutti i Nomi",
+        "expiresInYears_one": "Scade tra {{count}} anno",
+        "expiresInYears_other": "Scade tra {{count}} anni",
+        "expiresInMonths_one": "Scade tra {{count}} mese",
+        "expiresInMonths_other": "Scade tra {{count}} mesi",
+        "expiresInDays_one": "Scade tra {{count}} giorno",
+        "expiresInDays_other": "Scade tra {{count}} giorni",
+        "expiresInHours_one": "Scade tra {{count}} ora",
+        "expiresInHours_other": "Scade tra {{count}} ore",
+        "expiresInHours_zero": "Scade in meno di un'ora",
+        "expiredInHours_one": "Scaduto {{count}} ora fa",
+        "expiredInHours_other": "Scaduto {{count}} ore fa",
+        "expiredInHours_zero": "Scaduto meno di un'ora fa",
+        "expiredInDays_one": "Scaduto {{count}} giorno fa",
+        "expiredInDays_other": "Scaduto {{count}} giorni fa",
+        "expiredInMonths_one": "Scaduto {{count}} mese fa",
+        "expiredInMonths_other": "Scaduto {{count}} mesi fa",
+        "expiredInYears_one": "Scaduto {{count}} anno fa",
+        "expiredInYears_other": "Scaduto {{count}} anni fa",
+        "gracePeriod": {
+            "expiresInYears_one": "Il periodo di grazia scade tra {{count}} anno",
+            "expiresInYears_other": "Il periodo di grazia scade tra {{count}} anni",
+            "expiresInMonths_one": "Il periodo di grazia scade tra {{count}} mese",
+            "expiresInMonths_other": "Il periodo di grazia scade tra {{count}} mesi",
+            "expiresInDays_one": "Il periodo di grazia scade tra {{count}} giorno",
+            "expiresInDays_other": "Il periodo di grazia scade tra {{count}} giorni",
+            "expiresInHours_one": "Il periodo di grazia scade tra {{count}} ora",
+            "expiresInHours_other": "Il periodo di grazia scade tra {{count}} ore",
+            "expiresInHours_zero": "Il periodo di grazia scade in meno di un'ora"
+        },
+        "extend": "Estendi",
+        "send": "Invia",
+        "transfer": "Trasferisci",
+        "sendManager": "Invia Manager",
+        "sendOwner": "Invia Proprietario"
+    },
+    "address": {
+        "label": "Indirizzo",
+        "viewAddress": "Visualizza indirizzo",
+        "copyAddress": "Copia indirizzo"
+    },
+    "records": {
+        "label": "Registri"
+    },
+    "sortTypes": {
+        "expiryDate": "Data di scadenza",
+        "labelName": "Nome",
+        "creationDate": "Data di creazione"
+    },
+    "errors": {
+        "noResults": "Nessun risultato trovato",
+        "invalidAddress": "Indirizzo non valido",
+        "addressRequired": "Indirizzo richiesto"
+    },
+    "transaction": {
+        "description": {
+            "setName": "Imposta nome",
+            "setRecords": "Imposta record",
+            "test": "Transazione di prova",
+            "addSuccess": "Aggiunta riuscita",
+            "sendName": "Invia nome",
+            "migrateProfile": "Migra profilo",
+            "migrateProfileWithReset": "Migra profilo",
+            "migrateProfileWithSync": "Migra e aggiorna profilo",
+            "wrapName": "Nome avvolgente",
+            "updateResolver": "Aggiorna risolutore",
+            "updateProfile": "Aggiorna profilo",
+            "setPrimaryName": "Imposta nome primario",
+            "updateEthAddress": "Aggiorna l'indirizzo ETH",
+            "testSendName": "Invia nome",
+            "burnFuses": "Permessi di distruzione",
+            "createSubname": "Crea sottonome",
+            "deleteSubname": "Elimina sottotitolo",
+            "extendNames": "Estendi nomi",
+            "importDNSSECName": "importa nome DNSSEC",
+            "commitName": "Avvia timer",
+            "registerName": "Nome di registrazione",
+            "approveNameWrapper": "Approva NameWrapper",
+            "clearRecords": "Cancella registri",
+            "updateRecords": "Aggiorna registri",
+            "transferName": "Trasferisci nome",
+            "changePermissions": "Cambia permessi",
+            "syncManager": "Gestore di sincronizzazione",
+            "updateProfileRecords": "Aggiorna profilo",
+            "resetProfile": "Reimposta profilo",
+            "setHexagonName": "Imposta il nome Hexagon MEP1002",
+            "mintHexagon": "Conia MEP1002 Esagono"
+        },
+        "info": {
+            "sendName": "Imposta il controller e il registrante del nome",
+            "migrateProfile": "Imposta record esistenti su nuovo resolver",
+            "migrateProfileWithReset": "Imposta record esistenti su nuovo resolver",
+            "migrateProfileWithSync": "Imposta record esistenti su nuovo resolver",
+            "wrapName": "Avvolgi nome e imposta nuovo risolutore",
+            "updateResolver": "Cambia resolver in",
+            "updateProfile": "Aggiorna i record sul resolver esistente",
+            "setPrimaryName": "Imposta il nome principale per il tuo indirizzo",
+            "updateEthAddress": "Aggiorna l'indirizzo ETH a questo indirizzo",
+            "testSendName": "Imposta il controller e il registrante del nome",
+            "createSubname": "Crea un nuovo sottonome sul nome",
+            "burnFuses": "Brucia le autorizzazioni scelte fino alla scadenza del nome",
+            "commitName": "Avvia il timer per registrare il nome",
+            "approveNameWrapper": "Approva il NameWrapper per gestire i tuoi nomi",
+            "fuses": {
+                "revoke": "Revoca",
+                "grant": "Concedi",
+                "setExpiry": "Imposta scadenza",
+                "PARENT_CANNOT_CONTROL": "Rinuncia al controllo genitore",
+                "CAN_EXTEND_EXPIRY": "Estendi scadenza",
+                "CANNOT_UNWRAP": "Svela questo nome",
+                "CANNOT_CREATE_SUBDOMAIN": "Crea sottodomini",
+                "CANNOT_SET_RESOLVER": "Imposta risolutore",
+                "CANNOT_SET_TTL": "Imposta TTL",
+                "CANNOT_TRANSFER": "Invia questo nome",
+                "CANNOT_BURN_FUSES": "Cambia permessi",
+                "CANNOT_APPROVE": "Cambia gestore del rinnovo"
+            }
+        },
+        "itemLabel": {
+            "name": "Nome",
+            "address": "Indirizzo",
+            "action": "Azione",
+            "info": "Informazioni",
+            "to": "A",
+            "subname": "Sottonome",
+            "duration": "Durata",
+            "cost": "Costo",
+            "update": "Aggiorna",
+            "resolver": "Risolutore",
+            "h3Index": "Indice H3"
+        },
+        "itemValue": {
+            "records_one": "{{count}} record",
+            "records_other": "{{count}} registrazioni"
+        },
+        "status": {
+            "pending": {
+                "regular": "In sospeso"
+            },
+            "confirmed": {
+                "regular": "Confermato",
+                "notifyTitle": "Transazione Riuscita",
+                "notifyMessage": "La tua transazione \"{{action}}\" è stata eseguita con successo."
+            },
+            "failed": {
+                "regular": "Non riuscito",
+                "notifyTitle": "Errore di Transazione",
+                "notifyMessage": "La tua transazione \"{{action}}\" è fallita ed è stata annullata."
+            }
+        },
+        "dialog": {
+            "intro": {
+                "trailingButton": "Inizia",
+                "trailingButtonResume": "Riprendi",
+                "step": "Passaggio {{step}}"
+            },
+            "confirm": {
+                "title": "Conferma Dettagli",
+                "message": "Ricontrolla questi dettagli prima di confermare nel tuo portafoglio.",
+                "waitingForWallet": "In attesa del Portafoglio",
+                "openWallet": "Apri Portafoglio"
+            },
+            "sent": {
+                "title": "Transazione Inviata",
+                "message": "La tua transazione è ora in corso, puoi chiudere questo e tornare più tardi.",
+                "progress": {
+                    "title": "Inviato",
+                    "message": "Impiega più tempo del previsto"
+                }
+            },
+            "complete": {
+                "title": "Transazione Completata",
+                "message": "La tua transazione è ora completa!",
+                "progress": {
+                    "title": "Fatto"
+                }
+            },
+            "failed": {
+                "title": "Transazione Fallita",
+                "progress": {
+                    "title": "Non riuscito"
+                }
+            },
+            "error": {
+                "gasLimit": "Il limite di gas sulla tua transazione non era sufficientemente alto, per favore prova ancora."
+            }
+        },
+        "error": {
+            "request": {
+                "INSUFFICIENT_FUNDS": "Fondi insufficienti nel portafoglio",
+                "UNPREDICTABLE_GAS_LIMIT": "Si è verificato un errore sconosciuto"
+            }
+        },
+        "viewEtherscan": "Visualizza su BlockExplorer",
+        "viewMore": "Visualizza Altro"
+    },
+    "search": {
+        "label": "Ricerca nome",
+        "placeholder": "Cerca un nome",
+        "emptyText": "Digita un nome o un indirizzo per cercare...",
+        "address": "Indirizzo",
+        "errors": {
+            "tooShort": "Nome troppo corto",
+            "invalid": "Formato non valido per il nome"
+        },
+        "status": {
+            "registered": "Registrato",
+            "gracePeriod": "Periodo di Grazia",
+            "premium": "Premium Temporaneo",
+            "available": "Disponibile",
+            "notOwned": "Non Posseduto",
+            "notImported": "Non Importato",
+            "short": "Troppo breve",
+            "default": "Non valido",
+            "unsupportedTLD": "Non Supportato",
+            "imported": "Importato",
+            "owned": "Posseduto"
+        }
+    },
+    "selectableInput": {
+        "add": "Aggiungi",
+        "placeholder": "Seleziona un'opzione",
+        "empty": "Nessuna opzione trovata"
+    },
+    "testnetFaucet": {
+        "explanation": "Ogni indirizzo su goerli può richiedere {{ amount }}ETH per testare l'app MNS manager, così come tutti i nuovi contratti.",
+        "note": "Potrebbe richiedere alcuni minuti per apparire nel tuo portafoglio."
+    }
 }

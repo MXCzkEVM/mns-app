@@ -1,6 +1,332 @@
 {
-    "input": "{'profileEditor': {'tabs': {'avatar': {'dropdown': {'selectNFT': 'Selecteer NFT', 'uploadImage': 'Afbeelding uploaden'}, 'nft': {'title': 'Selecteer een NFT', 'searchPlaceholder': 'Zoek naar een NFT', 'loading': 'Uw NFTs worden geladen', 'unknown': 'Onbekende NFT', 'noNFTs': 'Geen NFTs gevonden voor dit adres.', 'selected': {'title': 'Geselecteerde NFT', 'subtitle': 'Weet u zeker dat u deze NFT wilt gebruiken?'}, 'noResults': 'Geen resultaten gevonden.'}, 'image': {'title': 'Bewerk afbeelding', 'upload': {'title': 'Upload Avatar', \n'subtitle': \"U moet een bericht ondertekenen om een avatar te uploaden. Dit kost niets.\", \n'action': 'Onderteken en Upload'}}}, \n'general': {'label': 'Algemeen', \n'name': {'label': 'Bijnaam', \n'placeholder': 'John Smith'}, \n'url': {'label': 'Website', \n'placeholder': 'https://ens.domains'}, \n'location': {'label': 'Locatie', \n'placeholder': 'Metaverse'}, \n'description':\n{'label':'Korte Bio',\n'placeholder':\"Ik ben een yield farmer uit landelijk Tennessee.\"}}, \n\n'accounts':{'label':'Accounts',\n'addAccount':'Voeg account toe',\n'noOptions':'Geen account opties beschikbaar',\n'placeholder':{'default':'Voeg hier gebruikersnaam toe',\n'com.twitter':'bijv. ensdomains',\n'com.github':'bijv. ensdomains',\n'com.discord':'bijv. alisha.eth#0001'}},\n\n'address':{'label':'Adres',\n'addAddress':'Voeg adres toe',\n'noOptions':'Geen adres opties beschikbaar',\n'placeholder':{'default':'Voeg hier adres toe',\n'ETH':'0xD9hbQK...',\n'BNB':'0xD9hbQK...',\n'BTC':'3FZbgi29...',\n'LTC':'3FZbgi29...',\n'SOL':'D4kA7VzHnmV...',\n'DOT':'1D4kA7VxH...',\n'DOGE':'DFabcd12...'}},\n\n'contentHash':{'label':'Website',\n'addContentHash':'Voeg gedecentraliseerde website toe',\n'placeholder':{'default':'Voeg url hier toe',\n'ipfs':'ipfs://...',\n'skynet':'sia://...',\n'arweave':'ar://...',\n'swarm':'bzz://...',\n'onion':'onion3://...'}},\n\n'other':{'label':'Andere',\n'addRecord':'Voeg record toe',\n'createRecord':\n'Type een record naam...',\n'placeholder':{'default':\n    Voeg hier een waarde toe...'}}},\n\n    // Rest of the translation",
-    "transaction": "{'extendNames': {'actionValue': 'Registratie verlengen', 'costValue': '{{value}} + kosten', 'warning': 'Het verlengen van deze naam geeft je geen eigendom ervan'}, 'deleteSubname': {'warning': 'Hallo daar buiten'}}",
-    "intro": "{'migrateAndUpdateResolver': {'title': 'Actie Vereist', 'heading': 'De wijzigingen die je wilt opslaan in je profiel vereisen dat je je resolver upgrade.', 'link': 'Meer leren over resolver upgrades', 'warning': 'Let op, als je dit op enig moment annuleert, worden je wijzigingen niet opgeslagen.'}, 'syncManager': {'description': 'Het synchroniseren van de manager maakt jou de nieuwe manager van deze naam. De huidige manager <b>({{manager}})</b> zal niet langer in staat zijn om wijzigingen aan te brengen.', 'wrappedWarning': 'Het synchroniseren van de manager zal ook deze naam uitpakken. Dit zal de NFT verbranden en eventuele toestemmingen resetten.'}}",
-    "errors": "{'duplicateKey': '{{value}} is een duplicaat sleutel'}"
+    "input": {
+        "profileEditor": {
+            "tabs": {
+                "avatar": {
+                    "dropdown": {
+                        "selectNFT": "Selecteer NFT",
+                        "uploadImage": "Afbeelding Uploaden"
+                    },
+                    "nft": {
+                        "title": "Selecteer een NFT",
+                        "searchPlaceholder": "Zoek naar een NFT",
+                        "loading": "Uw NFT's laden",
+                        "unknown": "Onbekende NFT",
+                        "noNFTs": "Geen NFT's gevonden voor dit adres.",
+                        "selected": {
+                            "title": "Geselecteerde NFT",
+                            "subtitle": "Weet je zeker dat je deze NFT wilt gebruiken?"
+                        },
+                        "noResults": "Geen resultaten gevonden."
+                    },
+                    "image": {
+                        "title": "Bewerk Afbeelding",
+                        "upload": {
+                            "title": "Avatar Uploaden",
+                            "subtitle": "Je moet een bericht ondertekenen om een avatar te uploaden. Dit kost niets.",
+                            "action": "Teken en Upload"
+                        }
+                    }
+                },
+                "general": {
+                    "label": "Algemeen",
+                    "name": {
+                        "label": "Bijnaam",
+                        "placeholder": "John Smith"
+                    },
+                    "url": {
+                        "label": "Website",
+                        "placeholder": "https://ens.domeinen"
+                    },
+                    "location": {
+                        "label": "Locatie",
+                        "placeholder": "Metaverse"
+                    },
+                    "description": {
+                        "label": "Korte Bio",
+                        "placeholder": "Ik ben een yield farmer uit landelijk Tennessee."
+                    }
+                },
+                "accounts": {
+                    "label": "Accounts",
+                    "addAccount": "Account toevoegen",
+                    "noOptions": "Geen accountopties beschikbaar",
+                    "placeholder": {
+                        "default": "Voeg gebruikersnaam hier toe",
+                        "com.twitter": "bijvoorbeeld ensdomeinen",
+                        "com.github": "bijvoorbeeld ensdomeinen",
+                        "com.discord": "bijvoorbeeld alisha.eth#0001"
+                    }
+                },
+                "address": {
+                    "label": "Adres",
+                    "addAddress": "Adres toevoegen",
+                    "noOptions": "Geen adresopties beschikbaar",
+                    "placeholder": {
+                        "default": "Voeg adres hier toe",
+                        "ETH": "0xD9hbQK...",
+                        "BNB": "0xD9hbQK...",
+                        "BTC": "3FZbgi29...",
+                        "LTC": "3FZbgi29...",
+                        "SOL": "D4kA7VzHnmV...",
+                        "DOT": "1D4kA7VxH...",
+                        "DOGE": "DFabcd12..."
+                    }
+                },
+                "contentHash": {
+                    "label": "Website",
+                    "addContentHash": "Voeg gedecentraliseerde website toe",
+                    "placeholder": {
+                        "default": "Voeg url hier toe",
+                        "ipfs": "ipfs://...",
+                        "skynet": "sia://...",
+                        "arweave": "ar://...",
+                        "swarm": "bzz://...",
+                        "onion": "onion3://..."
+                    }
+                },
+                "other": {
+                    "label": "Andere",
+                    "addRecord": "Voeg record toe",
+                    "createRecord": "Typ een recordnaam...",
+                    "placeholder": {
+                        "default": "Voeg hier een waarde toe..."
+                    }
+                }
+            },
+            "warningOverlay": {
+                "action": {
+                    "learnMoreResolvers": "Meer te weten komen over resolvers",
+                    "updateResolver": "Resolver bijwerken",
+                    "setResolver": "Stel resolver in",
+                    "ignoreUpdate": "Negeer dit en blijf je huidige resolver gebruiken. Je wordt de volgende keer weer gevraagd."
+                },
+                "invalidResolver": {
+                    "title": "Onbevoegde resolver",
+                    "subtitle": "U heeft geen toestemming om records in te stellen voor deze resolver. U moet updaten naar de nieuwste resolver om uw profiel te bewerken.",
+                    "action": "Resolver bijwerken"
+                },
+                "migrateProfileSelector": {
+                    "title": "Profiel",
+                    "subtitle": "De profielgegevens op elke resolver komen niet overeen. Welke set gegevens wilt u gebruiken?",
+                    "option": {
+                        "latest": "Profielgegevens op nieuwe resolver",
+                        "current": "Huidige profielgegevens",
+                        "reset": "Herstel je profiel",
+                        "resetSubtitle": "Verwijder alle profielgegevens"
+                    }
+                },
+                "migrateProfileWarning": {
+                    "title": "Profiel migreren",
+                    "subtitle": "U migreert uw profielgegevens naar de nieuwste resolver. Dit zal permanent alle bestaande gegevens op de nieuwste resolver wissen en ze vervangen door uw huidige gegevens."
+                },
+                "migrateRegistry": {
+                    "title": "Register verouderd",
+                    "subtitle": "U moet het register migreren voordat u wijzigingen aan deze naam aanbrengt.",
+                    "action": "Migreren"
+                },
+                "noResolver": {
+                    "title": "Geen resolver ingesteld",
+                    "subtitle": "Een resolver moet worden ingesteld voordat je je profiel bewerkt.",
+                    "action": "Bijwerken"
+                },
+                "resetProfile": {
+                    "title": "Profiel resetten",
+                    "subtitle": "U reset uw profielgegevens. U verliest alle bestaande profielinformatie, zoals ETH-adres, avatar en sociale gegevens. Deze kunnen opnieuw worden toegevoegd door uw profiel te bewerken."
+                },
+                "resolverNotNameWrapperAware": {
+                    "title": "Onverenigbare resolver",
+                    "subtitle": "Uw huidige resolver is niet compatibel met gewikkelde namen. U moet de resolver bijwerken voordat u uw profiel bewerkt.",
+                    "toggle": {
+                        "title": "Huidig profiel overdragen",
+                        "subtitle": "Het deselecteren hiervan zal alleen uw resolver bijwerken."
+                    }
+                },
+                "resolverOutOfDate": {
+                    "title": "Resolver verouderd",
+                    "subtitle": "De resolver is verouderd. Het wordt aanbevolen om deze te updaten voordat je je profiel bewerkt."
+                },
+                "resolverOutOfSync": {
+                    "title": "Resolver niet gesynchroniseerd",
+                    "subtitle": "U gebruikt niet de nieuwste openbare resolver, maar u heeft profielrecords opgeslagen. Het wordt aanbevolen om over te schakelen naar de nieuwste openbare resolver voordat u uw profiel bewerkt."
+                },
+                "transferOrResetProfile": {
+                    "title": "Profiel",
+                    "subtitle": "U kunt uw huidige profiel overzetten naar de nieuwe resolver voordat u uw resolver bijwerkt.",
+                    "toggle": {
+                        "title": "Huidig profiel overdragen",
+                        "subtitle": "Het deselecteren hiervan zal alleen uw resolver bijwerken."
+                    }
+                },
+                "updateResolverOrResetProfile": {
+                    "title": "Profiel",
+                    "subtitle": "U kunt uw huidige profiel behouden op de nieuwe resolver, of resetten en alle profielrecords verwijderen.",
+                    "toggle": {
+                        "title": "Houd huidig profiel",
+                        "subtitle": "Het deselecteren hiervan zal uw profiel resetten."
+                    }
+                },
+                "links": {
+                    "learnMoreResolvers": "Meer te weten komen over resolvers"
+                }
+            },
+            "intro": {
+                "resetProfile": {
+                    "title": "Profiel resetten",
+                    "description": "Dit zal alle profielgegevens uit de laatste resolver verwijderen en vervolgens de resolver bijwerken."
+                },
+                "migrateProfile": {
+                    "title": "Profiel migreren",
+                    "description": "Dit zal uw huidige profielgegevens migreren naar de nieuwste resolver."
+                },
+                "migrateCurrentProfile": {
+                    "title": "Profiel migreren",
+                    "description": "Dit zal uw huidige profielgegevens migreren naar de nieuwste resolver."
+                }
+            }
+        },
+        "editResolver": {
+            "title": "Resolver Bewerken",
+            "latestLabel": "Gebruik de nieuwste resolver",
+            "etherscan": "BlockExplorer",
+            "latestMessage": "Je bent op de nieuwste resolver",
+            "customLabel": "Aangepaste resolver",
+            "customPlaceholder": "Voer aangepast resolver-adres in"
+        },
+        "extendNames": {
+            "title_one": "Naam Uitbreiden",
+            "title_other": "Verleng {{count}} Namen",
+            "invoice": {
+                "extension": "{{count}} jaar verlenging",
+                "transaction": "Transactiekosten",
+                "total": "Geschat totaal"
+            },
+            "bannerMsg": "Het verlengen voor meerdere jaren bespaart geld op netwerkkosten door jaarlijkse transacties te vermijden.",
+            "gasLimitError": "Onvoldoende saldo"
+        },
+        "transferProfile": {
+            "title": "Profiel Overdragen",
+            "message1": "Voordat je upgrade, kun je jouw huidige profiel overzetten als je dat wilt, anders wordt het gereset wanneer je upgrade.",
+            "message2": "Wilt u uw huidige profiel overdragen?"
+        },
+        "revokePermissions": {
+            "views": {
+                "revokeWarning": {
+                    "title": "Dit zal permanente veranderingen aanbrengen",
+                    "subtitle": "Machtigingen zijn een geavanceerde functie die permanente wijzigingen aanbrengen in uw naam. U kunt deze wijzigingen niet ongedaan maken en ze worden alleen gereset als de naam verloopt.",
+                    "subtitle2": "Zorg ervoor dat je vertrouwd bent met deze functie voordat je verder gaat. <infoLink>Leer meer over machtigingen</infoLink>"
+                },
+                "revokePCC": {
+                    "title": "Doe afstand van eigendom",
+                    "subtitle": "Dit zal het eigendom van deze naam aan de manager ({{account}}) geven. Tenzij je ook de manager bent, kun je geen wijzigingen meer aanbrengen in deze naam."
+                },
+                "grantExtendExpiry": {
+                    "title": "Machtigingen wijzigen",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "Verleen toestemming voor: Verleng vervaldatum"
+                    }
+                },
+                "setExpiry": {
+                    "title": "Stel naam vervaldatum in",
+                    "subtitle": "Stel een datum in waarop de machtigingen verlopen. Deze datum mag niet langer zijn dan de vervaldatum van de ouder ({{parent}}).",
+                    "subtitleWithCEE": "Stel een datum in waarop deze naam zal verlopen. Dit vervangt de bestaande toestemmingsvervaldatum ({{expiry}}) en kan niet later zijn dan de vervaldatum van de ouder ({{parent}}).",
+                    "options": {
+                        "max": "Max",
+                        "custom": "Kies een eerdere datum"
+                    },
+                    "error": {
+                        "required": "Een datum is vereist als een aangepaste datum is geselecteerd",
+                        "min": "Datum moet groter zijn dan {{date}}",
+                        "max": "Datum moet minder zijn dan {{date}}"
+                    }
+                },
+                "revokeAdditional": {
+                    "title": "Intrekken van machtigingen",
+                    "subtitle": "Wilt u de machtigingen voor deze naam intrekken voordat u het eigendom opgeeft? Dit kan alleen nu worden gedaan.",
+                    "action": {
+                        "title": "Trek extra machtigingen in",
+                        "description": "Tenzij je ook de manager bent, kun je na dit geen extra rechten meer intrekken."
+                    }
+                },
+                "revokeUnwrap": {
+                    "title": "Intrekken van machtigingen",
+                    "subtitle": "U moet deze toestemming intrekken voordat andere kunnen worden ingetrokken. Dit voorkomt dat toestemmingen worden verwijderd.",
+                    "fuses": {
+                        "CANNOT_UNWRAP": "Trek toestemming in om: Deze naam uit te pakken"
+                    }
+                },
+                "revokePermissions": {
+                    "title": "Intrekken van machtigingen",
+                    "unwrapSubtitle": "Selecteer dit om de anderen in te schakelen",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "Verleen toestemming voor: Vervaldatum verlengen.",
+                        "CANNOT_UNWRAP": "Trek toestemming in om: Deze naam uit te pakken",
+                        "CANNOT_CREATE_SUBDOMAIN": "Trek toestemming in voor: Subdomeinen aanmaken",
+                        "CANNOT_TRANSFER": "Trek toestemming in om: Deze naam te verzenden",
+                        "CANNOT_SET_RESOLVER": "Trek toestemming in voor: Resolver instellen",
+                        "CANNOT_SET_TTL": "Trek toestemming in voor: TTL instellen",
+                        "CANNOT_BURN_FUSES": "Trek toestemming in voor: Wijzig rechten",
+                        "CANNOT_APPROVE": "Trek toestemming in voor: Wijzig vernieuwingsbeheerder"
+                    }
+                },
+                "revokeChangeFuses": {
+                    "title": "Intrekken van machtigingen",
+                    "subtitle": "Door deze toestemming in te trekken, verliest u permanent de mogelijkheid om eventuele resterende zekeringen te wijzigen. Dit wordt alleen gereset als de naam verloopt.",
+                    "fuses": {
+                        "CANNOT_BURN_FUSES": "Trek toestemming in voor: Wijzig rechten"
+                    }
+                },
+                "revokeChangeFusesWarning": {
+                    "title": "Resterende machtigingen worden vergrendeld",
+                    "subtitle": "Toestemmingen en aangepaste zekeringen worden permanent vergrendeld in hun huidige staat nadat 'wijzig toestemmingen' is ingetrokken. Dit wordt alleen gereset als de naam verloopt."
+                }
+            },
+            "action": {
+                "revoke": "Intrekken"
+            }
+        },
+        "unknownLabels": {
+            "title": "Bevestig je naam",
+            "subtitle": "Sommige labels in uw naam zijn onbekend. Voer ze in om door te gaan."
+        },
+        "deleteEmancipatedSubnameWarning": {
+            "title": "Deze subnaam kan niet opnieuw worden gemaakt.",
+            "message": "Het verwijderen van deze subnaam voorkomt dat deze wordt gebruikt of opnieuw aangemaakt tot deze is verlopen{{date}}. Dit kan niet ongedaan worden gemaakt omdat de ouderlijke controletoestemmingen zijn ingetrokken."
+        },
+        "setToMEP1002Hexagon": {
+            "title": "Stel naam in op MEP1002 Hexagon",
+            "subtitle": "Dit zal de naam instellen op openbare MEP1002 Hexagon Map.",
+            "h3index": "H3 Index van Hexagon"
+        },
+        "mintToMEP1002Hexagon": {
+            "title": "Mint MEP1002 Hexagon",
+            "subtitle": "Dit zal een openbare MEP1002 Hexagon Map minten.",
+            "h3index": "H3 Index van Hexagon"
+        }
+    },
+    "transaction": {
+        "extendNames": {
+            "actionValue": "Registratie verlengen",
+            "costValue": "{{value}} + kosten",
+            "warning": "Het verlengen van deze naam geeft je geen eigendom ervan"
+        },
+        "deleteSubname": {
+            "warning": "Hallo daar"
+        }
+    },
+    "intro": {
+        "migrateAndUpdateResolver": {
+            "title": "Actie Vereist",
+            "heading": "De wijzigingen die je wilt opslaan in je profiel vereisen dat je je resolver upgrade.",
+            "link": "Meer te weten komen over resolver-upgrades",
+            "warning": "Merk op dat als u dit op enig moment annuleert, uw wijzigingen niet worden opgeslagen."
+        },
+        "syncManager": {
+            "description": "Het synchroniseren van de manager maakt u de nieuwe manager van deze naam. De huidige manager <b>({{manager}})</b> zal geen wijzigingen meer kunnen aanbrengen.",
+            "wrappedWarning": "Het synchroniseren van de manager zal ook deze naam uitpakken. Dit zal de NFT verbranden en alle machtigingen resetten."
+        }
+    },
+    "errors": {
+        "duplicateKey": "{{value}} is een duplicaat sleutel"
+    }
 }

@@ -1,8 +1,185 @@
 {
-    "title": "在MNS上註冊 {{name}}",
+    "title": "在 MNS 上註冊 {{name}}",
     "subtitle": "註冊",
     "heading": "註冊 {{name}}",
-    "invoice": "{'yearRegistration': '{{years}} 年註冊', 'registration': '註冊', 'estimatedNetworkFee': '預估網路費用', 'networkFee': '網路費用', 'temporaryPremium': '臨時保費', 'total': '預估總計', 'totalPaid': '已付總計'}",
-    "error": "{'nameTooLong': '您想要註冊的名稱太長。請選擇一個較短的名稱。'}",
-    "steps": "{'pricing': {'insufficientBalance': '餘額不足', 'multipleYearsMessage': '延長多年可以節省網路費用，避免每年進行交易。', 'primaryName': '作為主要名稱使用', 'primaryNameMessage': '此操作將您的地址與此名稱連接，允許dApps在與它們連接時將其顯示為您的個人資料。每個地址只能有一個主要名稱。', 'premium': {'heading': '此名稱具有臨時溢價', 'subheading': '為了給最近到期的名稱提供公平的機會，溢價從$100,000,000開始，並在21天內降至$0。您可以在下面計算某日期的溢價。', 'targetPrice': '目標價格', 'targetDate': '目標日期', 'timezone': '{{timezone}}區域的日期和時間'}}, 'profile': {'title': '創建您的個人資料', 'title2': '編輯您的個人資料', 'default': '預設', 'advanced': '進階', 'permissions': '權限', 'resolver': '解析器', 'visibilityMessage': '您的個人資料信息將存儲在區塊鏈上。您添加的任何內容都將公開可見。', 'addProfile': '添加個人資料欄位', 'addMore': '向個人資料添加更多內容', \n'options': {'groups': {'general': {'label': \"一般\", \n'items':{'name':'暱稱','url':'網站','location':'位置','description':'簡介'},\n'placeholder':{'name':'John Smith','url':'https://ens.domains','location':'元宇宙','description':\"我是來自田納西鄉村的收益農民。\"}},\n'social':{'label':'社交',\n'items':{'com.twitter':'Twitter','com.github':'GitHub','com.discord':'Discord'},\n'placeholder':{'com.twitter':'例如 ensdomains','com.github':'例如 ensdomains','com.discord':'例如 alisha.eth#0001'}},\n'address':{'label':'地址',\n'itemLabel':'{{coin}} 地址',\n'placeholder':{'default':'在此處添加地址','ETH':'0xD9hbQK...','BNB':'bnb1grpf...','BTC':'3FZbgi29...','LTC':'ltc1qdp7p...','SOL':'D4kA7VzHnmV...','DOT':'1D4kA7VxH...','DOGE':'DFabcd12...'}},\n'website':{'label':\"網站\",\n'items':{'ipfs':\"IPFS\",'ipns':\"IPNS\",'swarm':\"Swarm\",'onion':\"Onion\",'skynet':\"Skynet\",'arweave':\"Arweave\"},\n'placeholder':{'default':\"在此處添加URL\",'ipfs':\"ipfs://...\",'skynet':\"sia://...\",'arweave':\"ar://...\",'swarm':\"bzz://...\",'onion':\"onion3://...\"}},\n'other':{'label':\"其他\",\n'items':{'contentHash':\"內容哈希值\",'publicKey':\"公鑰\",'abi':\"ABI\",'custom':\"自定義\"}},\n'custom':{'key':\"鍵\",'value':\"值\"},\n'default':{'placeholder':\"在此處添加值\"}}},\n\"errors\":{'labelRequired':\"需要記錄鍵\",'duplicateRecord':\"重複記錄鍵\",'avatarReserved':\"鍵被頭像管理器使用\"},\n\"confirmations\":{'publicNotice':{'title':\"您的詳情是公開的\",\n'description':\"您添加到個人資料中的任何內容都將在區塊鏈上公開查看。\",\n'confirm':\"我明白\",\n'decline':\"返回\"},\n'clearEth':{'title'=>\"清除ETH地址？\",\n'description':\"如果沒有設置ETH地址，則人們將無法向此名稱發送金錢"
+    "invoice": {
+        "yearRegistration": "{{years}} 年註冊",
+        "registration": "註冊",
+        "estimatedNetworkFee": "預估網路費用",
+        "networkFee": "網絡費用",
+        "temporaryPremium": "臨時保費",
+        "total": "預計總計",
+        "totalPaid": "總共支付"
+    },
+    "error": {
+        "nameTooLong": "您想註冊的名稱太長了。請選擇一個較短的名稱。"
+    },
+    "steps": {
+        "pricing": {
+            "insufficientBalance": "餘額不足",
+            "multipleYearsMessage": "延長多年將可節省網路費用，避免每年交易。",
+            "primaryName": "作為主要名稱使用",
+            "primaryNameMessage": "此連結將您的地址與此名稱關聯，允許dApps在連接時將其顯示為您的個人資料。每個地址只能有一個主要名稱。",
+            "premium": {
+                "heading": "此名稱具有臨時溢價",
+                "subheading": "為了給最近過期的名稱提供公平的機會，保費從$100,000,000開始，並在21天內降至$0。您可以在下面的日期計算保費。",
+                "targetPrice": "目標價格",
+                "targetDate": "目標日期",
+                "timezone": "顯示當地時區({{timezone}})的日期和時間"
+            }
+        },
+        "profile": {
+            "title": "創建您的個人資料",
+            "title2": "編輯您的個人資料",
+            "default": "預設",
+            "advanced": "進階",
+            "permissions": "權限",
+            "resolver": "解析器",
+            "visibilityMessage": "您的個人資料將會儲存在區塊鏈上。您所添加的任何內容都將公開可見。",
+            "addProfile": "新增個人資料欄位",
+            "addMore": "在個人資料中增加更多內容",
+            "options": {
+                "groups": {
+                    "general": {
+                        "label": "一般",
+                        "items": {
+                            "name": "暱稱",
+                            "url": "網站",
+                            "location": "位置",
+                            "description": "簡短介紹"
+                        },
+                        "placeholder": {
+                            "name": "約翰·史密斯",
+                            "url": "https://ens.domains",
+                            "location": "元宇宙",
+                            "description": "我是來自田納西鄉下的收益農夫。"
+                        }
+                    },
+                    "social": {
+                        "label": "社交",
+                        "items": {
+                            "com.twitter": "Twitter",
+                            "com.github": "GitHub",
+                            "com.discord": "Discord"
+                        },
+                        "placeholder": {
+                            "com.twitter": "例如，ensdomains",
+                            "com.github": "例如，ensdomains",
+                            "com.discord": "例如：alisha.eth#0001"
+                        }
+                    },
+                    "address": {
+                        "label": "地址",
+                        "itemLabel": "{{coin}} 地址",
+                        "placeholder": {
+                            "default": "在此處添加地址",
+                            "ETH": "0xD9hbQK...",
+                            "BNB": "bnb1grpf...",
+                            "BTC": "3FZbgi29...",
+                            "LTC": "ltc1qdp7p...",
+                            "SOL": "D4kA7VzHnmV...",
+                            "DOT": "1D4kA7VxH...",
+                            "DOGE": "DFabcd12..."
+                        }
+                    },
+                    "website": {
+                        "label": "網站",
+                        "items": {
+                            "ipfs": "IPFS",
+                            "ipns": "IPNS",
+                            "swarm": "群集",
+                            "onion": "洋蔥",
+                            "skynet": "天網",
+                            "arweave": "Arweave"
+                        },
+                        "placeholder": {
+                            "default": "在此處添加網址",
+                            "ipfs": "ipfs://...",
+                            "skynet": "sia://...",
+                            "arweave": "ar://...",
+                            "swarm": "bzz://...",
+                            "onion": "onion3://..."
+                        }
+                    },
+                    "other": {
+                        "label": "其他",
+                        "items": {
+                            "contentHash": "內容哈希",
+                            "publicKey": "公鑰",
+                            "abi": "ABI",
+                            "custom": "自訂"
+                        }
+                    },
+                    "custom": {
+                        "key": "金鑰",
+                        "value": "價值"
+                    },
+                    "default": {
+                        "placeholder": "在此添加價值"
+                    }
+                }
+            },
+            "errors": {
+                "labelRequired": "需要記錄密鑰",
+                "duplicateRecord": "重複記錄鍵",
+                "avatarReserved": "金鑰正在被頭像管理器使用"
+            },
+            "confirmations": {
+                "publicNotice": {
+                    "title": "您的詳細資料是公開的",
+                    "description": "您在個人資料中添加的任何內容都將在區塊鏈上公開可見。",
+                    "confirm": "我明白",
+                    "decline": "返回"
+                },
+                "clearEth": {
+                    "title": "清除ETH地址？",
+                    "description": "如果未設定ETH地址，則人們將無法向此名稱發送金錢。這可以稍後更新。",
+                    "confirm": "清除",
+                    "decline": "取消"
+                }
+            },
+            "actions": {
+                "skipProfile": "跳過個人資料"
+            }
+        },
+        "complete": {
+            "heading": "恭喜！",
+            "subheading": "您現在是的擁有者",
+            "description": "您的名字已成功註冊。您現在可以查看和管理您的名字。",
+            "registerAnother": "註冊另一個",
+            "viewName": "查看名稱"
+        },
+        "info": {
+            "heading": "在我們開始之前",
+            "subheading": "註冊您的名字需要三個步驟",
+            "ethItems": "['完成交易以開始計時', '等待60秒以完成計時', '完成第二次交易以確保您的名稱']",
+            "moonpayItems": "['創建或登入已有的MoonPay帳戶', '使用您的信用卡或借記卡完成單筆交易']",
+            "setupProfile": "我想先設定我的個人資料",
+            "paymentMethod": "付款方式",
+            "notEnoughEth": "錢包中的 MXC 不足",
+            "creditOrDebit": "信用卡或借記卡",
+            "additionalFee": "額外處理費",
+            "pendingMoonpayTransaction": "您的MoonPay交易正在處理中。這可能需要長達兩分鐘。您可以從收到的確認郵件中查看進度。",
+            "failedMoonpayTransaction": "您的MoonPay交易失敗了。請再試一次或選擇'以太坊'付款方式。",
+            "ethereum": "MXC",
+            "processing": "處理中",
+            "poweredBy": "由驅動",
+            "moonpayModalHeader": "MoonPay 結帳",
+            "moonpayTestCard": "測試卡詳情"
+        },
+        "transactions": {
+            "heading": "快完成了",
+            "subheading": "此計時器有助於防止他人在您之前註冊該名稱。您的名稱尚未註冊，直到您完成第二筆交易。",
+            "startTimer": "開始計時器",
+            "wait": "等待",
+            "transactionFailed": "交易失敗",
+            "transactionProgress": "交易進行中"
+        },
+        "cancelRegistration": {
+            "heading": "您將會失去您的交易",
+            "contentOne": "返回將重設您的首筆交易。如果您返回，您將需要再次完成交易並支付相關的網路費用。",
+            "contentTwo": "您確定要繼續嗎？",
+            "footer": "重設交易並返回"
+        }
+    }
 }

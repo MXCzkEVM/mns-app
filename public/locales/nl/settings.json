@@ -1,4 +1,23 @@
 {
     "title": "Instellingen",
-    "section": "{'wallet': {'title': 'Portemonnee'}, 'transaction': {'title': 'Transacties', 'noRecentTransactions': 'Geen recente transacties'}, 'primary': {'title': 'Primaire Naam', 'loading': 'Primaire naam laden...', 'noName': 'Geen primaire naam ingesteld.', 'input': {'title': 'Selecteer een primaire naam', 'noNames': 'Geen geschikte namen gevonden voor dit adres', 'noOtherNames': 'Geen andere geschikte namen gevonden voor dit adres', 'loading': 'Namen laden'}}}"
+    "section": {
+        "wallet": {
+            "title": "Portemonnee"
+        },
+        "transaction": {
+            "title": "Transacties",
+            "noRecentTransactions": "Geen recente transacties"
+        },
+        "primary": {
+            "title": "Primaire Naam",
+            "loading": "Primaire naam laden...",
+            "noName": "Geen primaire naam ingesteld.",
+            "input": {
+                "title": "Selecteer een primaire naam",
+                "noNames": "Geen geschikte namen gevonden voor dit adres",
+                "noOtherNames": "Geen andere geschikte namen gevonden voor dit adres",
+                "loading": "Namen laden"
+            }
+        }
+    }
 }

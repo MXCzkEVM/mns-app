@@ -3,7 +3,12 @@
     "nameCount": "{{count}} nume",
     "filter": "Filtru",
     "view": "Vizualizează",
-    "noProfile": "{'title': 'Nume primar nesetat', 'message': 'Acest portofel trebuie să stabilească un nume primar pentru a crea un profil'}",
+    "noProfile": {
+        "title": "Nume primar nesetat",
+        "message": "Acest portofel trebuie să stabilească un nume principal pentru a crea un profil."
+    },
     "noResults": "Niciun nume găsit",
-    "errors": "{'names': 'Adresa nu a putut fi găsită'}"
+    "errors": {
+        "names": "Nu s-a putut găsi adresa"
+    }
 }

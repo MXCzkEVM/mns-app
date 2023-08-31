@@ -5,7 +5,7 @@
     "view": "Voir",
     "noProfile": {
         "title": "Aucun nom principal défini",
-        "message": "Ce portefeuille doit définir un nom principal pour créer un profil."
+        "message": "Ce portefeuille doit définir un nom principal pour créer un profil"
     },
     "noResults": "Aucun nom trouvé",
     "errors": {

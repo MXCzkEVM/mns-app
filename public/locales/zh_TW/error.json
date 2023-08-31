@@ -1,4 +1,10 @@
 {
-    "not-found": "{'title': '未找到', 'message': \"您正在尋找的頁面未能找到。<br /> 您可以<HomeLink>搜尋名稱</HomeLink>或者<SupportLink>訪問我們的支援</SupportLink>以獲得進一步的幫助。\"}",
-    "application-error": "{'title': '應用程式錯誤', 'message': '出現了一些問題。<br /> 如果這是一個反覆出現的問題，請<SupportLink>訪問我們的支援</SupportLink>以獲得進一步的幫助。'}"
+    "not-found": {
+        "title": "未找到",
+        "message": "您正在尋找的頁面未能找到。<br /> 您可以<HomeLink>搜尋名稱</HomeLink>或者<SupportLink>訪問我們的支援</SupportLink>以獲得進一步的幫助。"
+    },
+    "application-error": {
+        "title": "應用程式錯誤",
+        "message": "發生了一些問題。<br /> 如果這是一個反覆出現的問題，請<SupportLink>訪問我們的支援</SupportLink>以獲得進一步的幫助。"
+    }
 }

@@ -1,4 +1,10 @@
 {
-    "not-found": "{'title': 'Niet gevonden', 'message': \"De pagina die u zocht is niet gevonden. <br /> U kunt <HomeLink>zoeken naar een naam</HomeLink> of <SupportLink>onze ondersteuning bezoeken</SupportLink> voor verdere hulp.\"}",
-    "application-error": "{'title': 'Applicatiefout', 'message': 'Er is iets misgegaan. <br /> Als dit een terugkerend probleem is, gelieve onze <SupportLink>ondersteuning te bezoeken</SupportLink> voor verdere hulp.'}"
+    "not-found": {
+        "title": "Niet gevonden",
+        "message": "De pagina die u zocht is niet gevonden. <br /> U kunt <HomeLink>zoeken op naam</HomeLink> of <SupportLink>onze ondersteuning bezoeken</SupportLink> voor verdere hulp."
+    },
+    "application-error": {
+        "title": "Toepassingsfout",
+        "message": "Er is iets misgegaan. <br /> Als dit een terugkerend probleem is, <SupportLink>bezoek dan onze ondersteuning</SupportLink> voor verdere hulp."
+    }
 }

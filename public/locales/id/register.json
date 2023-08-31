@@ -2,7 +2,184 @@
     "title": "Daftarkan {{name}} di MNS",
     "subtitle": "Daftar",
     "heading": "Daftar {{name}}",
-    "invoice": "{'yearRegistration': 'Registrasi {{years}} tahun', 'registration': 'Registrasi', 'estimatedNetworkFee': 'Est. biaya jaringan', 'networkFee': 'Biaya jaringan', 'temporaryPremium': 'Premi sementara', 'total': 'Total estimasi', 'totalPaid': 'Total dibayar'}",
-    "error": "{'nameTooLong': 'Nama yang ingin Anda daftarkan terlalu panjang. Silakan pilih nama yang lebih pendek.'}",
-    "steps": "{'pricing': {'insufficientBalance': 'Saldo Tidak Cukup', 'multipleYearsMessage': 'Memperpanjang untuk beberapa tahun akan menghemat biaya jaringan dengan menghindari transaksi tahunan.', 'primaryName': 'Gunakan sebagai nama utama', 'primaryNameMessage': 'Ini menghubungkan alamat Anda ke nama ini, memungkinkan dApps menampilkannya sebagai profil Anda saat terhubung ke mereka. Anda hanya bisa memiliki satu nama utama per alamat.', 'premium': {'heading': 'Nama ini memiliki premium sementara', 'subheading': 'Untuk memberikan kesempatan yang adil kepada nama yang baru saja kedaluwarsa, premium dimulai dari $100,000,000 dan berkurang menjadi $0 selama 21 hari. Anda dapat menghitung premium pada tanggal di bawah.', 'targetPrice': 'Harga target', 'targetDate': 'Tanggal target', 'timezone': 'Tanggal dan waktu ditampilkan dalam zona waktu lokal ({{timezone}})'}}, 'profile': {'title': 'Buat profil Anda', 'title2': 'Edit profil Anda', 'default': 'Default', 'advanced': 'Lanjutan', 'permissions': 'Izin', 'resolver': 'Resolver', 'visibilityMessage': 'Informasi profil Anda akan disimpan di blockchain. Apapun yang Anda tambahkan akan terlihat secara publik.', 'addProfile': 'Tambahkan bidang profil', \n'addMore': \n'Tambahkan lebih banyak ke profil',\n'options':\n{'groups':\n{'general':\n{'label':\n'Umum',\n'items':\n{'name':\n'Nama panggilan',\n'url':\n'Website',\n'location':\n'Lokasi',\n'description':\n'Bio Singkat'},\n'placeholder':\n{'name':\n'John Smith',\n'url':\n'https://ens.domains',\n'location':\n'Metaverse',\n'description':\n\"Saya adalah petani hasil dari Tennessee pedesaan.\"}},\n'social':\n{'label':\n'Sosial',\n'items':\n{'com.twitter':\n'Twitter',\n'com.github':\n'GitHub',\n'com.discord':\n'Discord'},\n'placeholder':\n{'com.twitter':\n'misalnya ensdomains',\n'com.github:\n'misalnya ensdomains,\n'com.discord:\n'misalnya alisha.eth#0001'}},\n'address':\n{'label:\n'Alamat',\n'itemLabel:\n'{{coin}} alamat,\n'placeholder:\n{'default:\n'Tambahkan alamat di sini,\n'ETH:\n'0xD9hbQK...',\n'BNB:\n'bnb1grpf...',\n'BTC:\n'3FZbgi29...',\n'LTC:\nltc1qdp7p...',\n'SOL:\n'D4kA7VzHnmV...',\n'DOT:\n1D4kA7VxH...',\n'DOGE:\n'DFabcd12...'}},\nwebsite: \n{label: \n'Website', \nitems: \n{ipfs: \nIPFS, \nipns: \nIPNS, \nswarm: \nSwarm, \nonion: \nOnion, \nskynet: \nSkynet, \narweave: \nArweave}, placeholder: {default: Tambah url di sini, ipfs: ipfs://..., skynet: sia://..., arweave: ar://..., swarm: bzz://..., onion: onion3://...}}, other: {label: Lainnya, items: {contentHash: Hash Konten, publicKey: Kunci Publik, abi: ABI, custom: Kustom}}, custom:{key:'Kunci','value':'Nilai'}, default:{placeholder:'Tambah nilai di sini'}}}, errors:{labelRequired:'Kunci rekaman diperlukan','duplicateRecord':'Duplikat kunci rekaman','avatarReserved':'Kunci sedang digunakan oleh manajer avatar'}, confirmations:{publicNotice:{title:'Detail anda adalah publik','description':'Apapun yang anda tambahkan ke profil anda akan dapat dilihat secara publik di blockchain.','confirm':'Saya mengerti','decline':'Kembali'}, clearEth:{title:'Hapus alamat ETH?','description':'Tanpa alamat ETH yang ditetapkan orang tidak akan dapat mengirim uang ke nama ini. Ini dapat diperbarui nanti.','confirm':'Hapus','decline':'Batal'}}, actions:{skipProfile:'Lewati profil'}}, complete:{heading:'Selamat!','subheading':'Anda sekarang adalah pemilik dari ','description':'Nama anda berhasil didaftarkan. Anda sekarang dapat melihat dan mengelola nama anda.','registerAnother':'Daftar lainnya','viewName':'Lihat nama'}, info:{heading:'Sebelum kita mulai','subheading':'Mendaftarkan nama anda membutuhkan tiga langkah','eth"
+    "invoice": {
+        "yearRegistration": "{{years}} tahun pendaftaran",
+        "registration": "Pendaftaran",
+        "estimatedNetworkFee": "Perkiraan biaya jaringan",
+        "networkFee": "Biaya jaringan",
+        "temporaryPremium": "Sementara premium",
+        "total": "Perkiraan total",
+        "totalPaid": "Total yang dibayar"
+    },
+    "error": {
+        "nameTooLong": "Nama yang ingin Anda daftarkan terlalu panjang. Silakan pilih nama yang lebih pendek."
+    },
+    "steps": {
+        "pricing": {
+            "insufficientBalance": "Saldo Tidak Cukup",
+            "multipleYearsMessage": "Memperpanjang untuk beberapa tahun akan menghemat uang pada biaya jaringan dengan menghindari transaksi tahunan.",
+            "primaryName": "Gunakan sebagai nama utama",
+            "primaryNameMessage": "Ini menghubungkan alamat Anda ke nama ini, memungkinkan dApps untuk menampilkannya sebagai profil Anda saat terhubung ke mereka. Anda hanya bisa memiliki satu nama utama per alamat.",
+            "premium": {
+                "heading": "Nama ini memiliki premi sementara",
+                "subheading": "Untuk memberikan kesempatan yang adil kepada nama-nama yang baru saja kadaluarsa, premi dimulai dari $100,000,000 dan berkurang menjadi $0 selama 21 hari. Anda dapat menghitung premi pada tanggal di bawah ini.",
+                "targetPrice": "Harga target",
+                "targetDate": "Tanggal target",
+                "timezone": "Tanggal dan waktu ditampilkan dalam zona waktu lokal ({{timezone}})"
+            }
+        },
+        "profile": {
+            "title": "Buat profil Anda",
+            "title2": "Sunting profil Anda",
+            "default": "Bawaan",
+            "advanced": "Lanjutan",
+            "permissions": "Izin",
+            "resolver": "Penyelesai",
+            "visibilityMessage": "Informasi profil Anda akan disimpan di blockchain. Apapun yang Anda tambahkan akan terlihat secara publik.",
+            "addProfile": "Tambahkan bidang profil",
+            "addMore": "Tambahkan lebih banyak ke profil",
+            "options": {
+                "groups": {
+                    "general": {
+                        "label": "Umum",
+                        "items": {
+                            "name": "Nama panggilan",
+                            "url": "Situs Web",
+                            "location": "Lokasi",
+                            "description": "Biografi Singkat"
+                        },
+                        "placeholder": {
+                            "name": "John Smith",
+                            "url": "https://ens.domains",
+                            "location": "Metaverse",
+                            "description": "Saya adalah petani yield dari pedesaan Tennessee."
+                        }
+                    },
+                    "social": {
+                        "label": "Sosial",
+                        "items": {
+                            "com.twitter": "Twitter",
+                            "com.github": "GitHub",
+                            "com.discord": "Discord"
+                        },
+                        "placeholder": {
+                            "com.twitter": "misalnya, ensdomains",
+                            "com.github": "misalnya, ensdomains",
+                            "com.discord": "misalnya, alisha.eth#0001"
+                        }
+                    },
+                    "address": {
+                        "label": "Alamat",
+                        "itemLabel": "Alamat {{coin}}",
+                        "placeholder": {
+                            "default": "Tambahkan alamat di sini",
+                            "ETH": "0xD9hbQK...",
+                            "BNB": "bnb1grpf...",
+                            "BTC": "3FZbgi29...",
+                            "LTC": "ltc1qdp7p...",
+                            "SOL": "D4kA7VzHnmV...",
+                            "DOT": "1D4kA7VxH...",
+                            "DOGE": "DFabcd12..."
+                        }
+                    },
+                    "website": {
+                        "label": "Situs Web",
+                        "items": {
+                            "ipfs": "IPFS",
+                            "ipns": "IPNS",
+                            "swarm": "Koloni",
+                            "onion": "Bawang",
+                            "skynet": "Skynet",
+                            "arweave": "Arweave"
+                        },
+                        "placeholder": {
+                            "default": "Tambahkan url di sini",
+                            "ipfs": "ipfs://...",
+                            "skynet": "sia://...",
+                            "arweave": "ar://...",
+                            "swarm": "bzz://...",
+                            "onion": "onion3://..."
+                        }
+                    },
+                    "other": {
+                        "label": "Lainnya",
+                        "items": {
+                            "contentHash": "Konten Hash",
+                            "publicKey": "Kunci Publik",
+                            "abi": "ABI",
+                            "custom": "Kustom"
+                        }
+                    },
+                    "custom": {
+                        "key": "Kunci",
+                        "value": "Nilai"
+                    },
+                    "default": {
+                        "placeholder": "Tambahkan nilai di sini"
+                    }
+                }
+            },
+            "errors": {
+                "labelRequired": "Diperlukan kunci catatan",
+                "duplicateRecord": "Duplikat kunci catatan",
+                "avatarReserved": "Kunci sedang digunakan oleh manajer avatar"
+            },
+            "confirmations": {
+                "publicNotice": {
+                    "title": "Detail Anda bersifat publik",
+                    "description": "Apa pun yang Anda tambahkan ke profil Anda akan dapat dilihat secara publik di blockchain.",
+                    "confirm": "Saya mengerti",
+                    "decline": "Kembali"
+                },
+                "clearEth": {
+                    "title": "Hapus alamat ETH?",
+                    "description": "Tanpa alamat ETH yang ditetapkan, orang tidak akan dapat mengirim uang ke nama ini. Ini dapat diperbarui nanti.",
+                    "confirm": "Jelas",
+                    "decline": "Batal"
+                }
+            },
+            "actions": {
+                "skipProfile": "Lewati profil"
+            }
+        },
+        "complete": {
+            "heading": "Selamat!",
+            "subheading": "Anda sekarang adalah pemilik dari",
+            "description": "Nama Anda berhasil didaftarkan. Sekarang Anda dapat melihat dan mengelola nama Anda.",
+            "registerAnother": "Daftar lagi",
+            "viewName": "Lihat nama"
+        },
+        "info": {
+            "heading": "Sebelum kita mulai",
+            "subheading": "Mendaftarkan nama Anda memerlukan tiga langkah",
+            "ethItems": "['Selesaikan transaksi untuk memulai timer', 'Tunggu 60 detik agar timer selesai', 'Selesaikan transaksi kedua untuk mengamankan nama Anda']",
+            "moonpayItems": "['Buat atau masuk ke akun MoonPay yang ada', 'Gunakan kartu kredit atau debit Anda untuk menyelesaikan satu transaksi']",
+            "setupProfile": "Saya ingin mengatur profil saya terlebih dahulu",
+            "paymentMethod": "Metode pembayaran",
+            "notEnoughEth": "MXC tidak cukup di dompet",
+            "creditOrDebit": "Kartu kredit atau debit",
+            "additionalFee": "Biaya pemrosesan tambahan",
+            "pendingMoonpayTransaction": "Transaksi MoonPay Anda sedang diproses. Ini mungkin memakan waktu hingga dua menit. Anda dapat memeriksa perkembangan dari email konfirmasi yang Anda terima.",
+            "failedMoonpayTransaction": "Transaksi MoonPay Anda gagal. Silakan coba lagi atau pilih metode pembayaran 'Ethereum'.",
+            "ethereum": "MXC",
+            "processing": "Memproses",
+            "poweredBy": "Didukung oleh",
+            "moonpayModalHeader": "Checkout MoonPay",
+            "moonpayTestCard": "Detail kartu uji"
+        },
+        "transactions": {
+            "heading": "Hampir sampai",
+            "subheading": "Timer ini membantu mencegah orang lain mendaftarkan nama sebelum Anda melakukannya. Nama Anda tidak terdaftar sampai Anda menyelesaikan transaksi kedua.",
+            "startTimer": "Mulai pengatur waktu",
+            "wait": "Tunggu",
+            "transactionFailed": "Transaksi Gagal",
+            "transactionProgress": "Transaksi sedang berlangsung"
+        },
+        "cancelRegistration": {
+            "heading": "Anda akan kehilangan transaksi Anda",
+            "contentOne": "Kembali akan mengatur ulang transaksi pertama Anda. Jika Anda kembali, Anda harus menyelesaikan transaksi lagi dan membayar biaya jaringan yang terkait.",
+            "contentTwo": "Apakah Anda yakin ingin melanjutkan?",
+            "footer": "Atur ulang transaksi dan kembali"
+        }
+    }
 }

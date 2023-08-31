@@ -1,6 +1,15 @@
 {
     "title": "Nama",
-    "subtitle": "{'start': 'Semua nama yang dipegang oleh', 'this': 'ini', 'your': 'Anda', 'wallet': 'dompet'}",
+    "subtitle": {
+        "start": "Semua nama yang dimiliki oleh",
+        "this": "ini",
+        "your": "saldo Anda",
+        "wallet": "dompet"
+    },
     "empty": "Tidak ada nama ditemukan untuk alamat ini",
-    "sortTypes": "{'expiryDate': 'Tanggal kadaluarsa', 'labelName': 'Nama', 'creationDate': 'Tanggal pembuatan'}"
+    "sortTypes": {
+        "expiryDate": "Tanggal kadaluarsa",
+        "labelName": "Nama",
+        "creationDate": "Tanggal pembuatan"
+    }
 }

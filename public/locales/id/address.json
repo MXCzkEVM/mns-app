@@ -3,7 +3,12 @@
     "nameCount": "{{count}} nama",
     "filter": "Filter",
     "view": "Lihat",
-    "noProfile": "{'title': 'Tidak ada nama utama yang diatur', 'message': 'Dompet ini perlu mengatur nama utama untuk membuat profil'}",
+    "noProfile": {
+        "title": "Tidak ada nama utama yang diatur",
+        "message": "Dompet ini perlu mengatur nama utama untuk membuat profil"
+    },
     "noResults": "Tidak ada nama yang ditemukan",
-    "errors": "{'names': 'Alamat tidak dapat ditemukan'}"
+    "errors": {
+        "names": "Alamat tidak dapat ditemukan"
+    }
 }

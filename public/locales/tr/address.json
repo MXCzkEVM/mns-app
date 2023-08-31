@@ -3,7 +3,12 @@
     "nameCount": "{{count}} isimler",
     "filter": "Filtre",
     "view": "Görüntüle",
-    "noProfile": "{'title': 'Birincil ad ayarlanmadı', 'message': 'Bu cüzdanın bir profil oluşturmak için birincil bir ad ayarlaması gerekiyor'}",
+    "noProfile": {
+        "title": "Birincil ad ayarlanmadı",
+        "message": "Bu cüzdanın bir profil oluşturmak için birincil bir isim belirlemesi gerekiyor."
+    },
     "noResults": "İsim bulunamadı",
-    "errors": "{'names': 'Adres bulunamadı'}"
+    "errors": {
+        "names": "Adres bulunamadı"
+    }
 }

@@ -1,4 +1,10 @@
 {
-    "not-found": "{'title': 'Nu a fost găsit', 'message': \"Pagina pe care o căutai nu a fost găsită. <br /> Poți <HomeLink>căuta un nume</HomeLink> sau <SupportLink>vizita suportul nostru</SupportLink> pentru ajutor suplimentar.\"}",
-    "application-error": "{'title': 'Eroare de aplicație', 'message': 'Ceva nu a mers bine. <br /> Dacă aceasta este o problemă recurentă, vă rugăm să <SupportLink>vizitați suportul nostru</SupportLink> pentru ajutor suplimentar.'}"
+    "not-found": {
+        "title": "Nu a fost găsit",
+        "message": "Pagina pe care o căutai nu a fost găsită. <br /> Poți <HomeLink>căuta un nume</HomeLink> sau <SupportLink>vizita suportul nostru</SupportLink> pentru ajutor suplimentar."
+    },
+    "application-error": {
+        "title": "Eroare de aplicație",
+        "message": "Ceva nu a mers bine. <br /> Dacă aceasta este o problemă recurentă, vă rugăm să <SupportLink>vizitați suportul nostru</SupportLink> pentru ajutor suplimentar."
+    }
 }

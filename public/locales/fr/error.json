@@ -5,6 +5,6 @@
     },
     "application-error": {
         "title": "Erreur d'application",
-        "message": "Quelque chose a mal tourné. <br /> Si c'est un problème récurrent, veuillez <SupportLink>visiter notre support</SupportLink> pour plus d'aide."
+        "message": "Quelque chose a mal tourné. <br /> Si ce problème persiste, veuillez <SupportLink>visiter notre support</SupportLink> pour plus d'aide."
     }
 }

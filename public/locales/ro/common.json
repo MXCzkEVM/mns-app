@@ -1,21 +1,327 @@
 {
     "title": "Numele tău de utilizator web3",
-    "description": "Identitatea ta în web3, un singur nume pentru toate adresele tale crypto și site-ul tău descentralizat.",
+    "description": "Identitatea dvs. pe web3, un nume pentru toate adresele dvs. crypto și site-ul dvs. descentralizat.",
     "loading": "Încărcare",
-    "unsupportedNetwork": "Rețea nesusținută",
+    "unsupportedNetwork": "Rețea nesuportată",
     "notFound": "404 Nu a fost găsit",
     "etherscan": "Explorator de Blocuri",
-    "action": "{'cancel': 'Anulează', 'change': 'Schimbă', 'upload': 'Încarcă', 'close': 'Închide', 'save': 'Salvează', 'edit': 'Editează', 'view': 'Vizualizează', 'clear': 'Șterge', 'update': 'Actualizează', 'learnMore': 'Află mai multe', 'send': 'Trimite', 'next': 'Următorul', 'add': 'Adaugă', 'set': 'Setează', 'search': 'Caută', 'back': 'Înapoi', 'continue': 'Continuă', 'confirm': 'Confirmă',  remove: \"Elimină\", sign: \"Semnează\", reset: \"Resetează\", transfer: \"Transferă\", tryAgain: \"Încearcă din nou\", done: \"Gata\", burnSelected: \"Ardere selectată\", extend: \"Extinde\", delete: \"Șterge\", sort: \"Sortează\", check: \"Verifică\", claim: \"Revendică\", remindMe: \"Reamintește-mi\", begin: \"Începe\", finish: \"Finalizează\", skip: \"Omite\", changeNetwork: \"Schimbare rețea\", understand: \"Înțeleg\", feedback: \"Feedback\", migrate: \"Migrează\"}",
-    "unit": "{'years_one': '{{count}} an', 'years_other': '{{count}} ani', 'yrs_one': '{{count}} an', 'yrs_other': '{{count}} ani', 'gas': '{{value}} gas', 'selected': '{{count}} selectat', 'perPage': '{{count}} pe pagină'}",
-    "navigation": "{'home': 'Acasă', 'names': 'Numele Mele', 'favourites': 'Favorite', 'settings': 'Setări', 'governance': 'Guvernanță', 'community': 'Comunitate', 'developers': 'Dezvoltatori', 'support': 'Suport', 'bounty': 'Recompensă Bug', 'terms': 'Termeni de Utilizare', 'privacy': 'Politica de Confidențialitate', 'back': 'Înapoi', 'oldApp': 'Aplicația MNS Veche', 'language': 'Limbă', 'currency': 'Monedă', 'ipfsApp': 'Aplicația IPFS MNS', 'feedback': 'Feedback',  'syncMessage': \"Se sincronizează cu rețeaua. Modificările din tranzacția ta s-ar putea să nu fie vizibile încă.\"}",
-    "wallet": "{'myProfile': 'Profil', 'disconnect': 'Deconectare', 'connect': 'Conectare', 'noPrimaryName': 'Fără Nume Principal', 'viewProfile': 'Vizualizează Profilul', 'viewDetails': 'Vezi Detalii', 'register': 'Înregistrare'}",
-    "name": "{'registered': 'Înregistrat', 'expires': 'Expiră', 'noExpiry': 'Fără expirare', 'expiry': 'Expirare', 'parent': 'Părinte', 'noParent': 'Fără părinte', 'registrant': 'Înregistrant', 'controller': 'Controlor', 'dnsOwner': 'Proprietar DNS', 'owner': 'Proprietar', 'notOwned': 'Neocupat', 'manager': 'Manager', 'all': 'Toate numele', 'expiresInYears_one': '{{count}} an până la expirare', 'expiresInYears_other': '{{count}} ani până la expirare', 'expiresInMonths_one': '{{count}} lună până la expirare', 'expiresInMonths_other': '{{count}} luni până la expirare', 'expiresInDays_one': '{{count}} zi până la expirare',  'expiresInDays_other': '{{count}} zile până la expirare','expiresInHours_one':'{{count}} oră până la expirare','expiresInHours_other':'{{count}} ore până la expirare','expiresInHours_zero':'Expiră în mai puțin de o oră','expiredInHours_one':'A expirat acum {{count}} oră','expiredInHours_other':'A expirat acum {{count}} ore','expiredInHours_zero':'A expirat cu mai puțin de o oră în urmă','expiredInDays_one':'A expirat acum {{count}} zi','expiredInDays_other':'A expirat acum {{count}} zile','expiredInMonths_one':'A expirat acum {{count}} lună','expiredInMonths_other':'A expirat acum {{count}} luni','expiredInYears_one':'A expirat acum {{count}} an','expiredInYears_other':'A expirat acum {{count}} ani',\n'gracePeriod':{'expiresInYears_one':'Perioada de grație se termina în {{count}} an',\n'expiresInYears_other':'Perioada de grație se termina în {{count}} ani',\n'expiresInMonths_one':'Perioada de grație se termina în {{count}} lună',\n'expiresInMonths_other':'Perioada de grație se termina în {{count}} luni',\n'expiresInDays_one':'Perioada de grație se termina în {{count}} zi',\n'expiresInDays_other':'Perioada de grație se termina în {{count}} zile',\n'expiresInHours_one':'Perioada de grație se termina în {{count}} oră',\n'expiresInHours_other':'Perioada de grație se termina în {{count}} ore',\n'expiresInHours_zero':'Perioada de grație se termina în mai puțin de o oră'},\n'extend': 'Extindeți',\n'send': \t'Trimiteți',\n'transfer': \t'Transferați',\n'sendManager': \t'Trimiteți managerului',\n'sendOwner': \t'Trimiteți proprietarului'}",
-    "address": "{'label': 'Adresă', 'viewAddress': 'Vizualizează adresă', 'copyAddress': 'Copiază adresă'}",
-    "records": "{'label': 'Înregistrări'}",
-    "sortTypes": "{'expiryDate': 'Data expirării', 'labelName': 'Nume', 'creationDate': 'Data creării'}",
-    "errors": "{'noResults': 'Nu au fost găsite rezultate', 'invalidAddress': 'Adresă invalidă', 'addressRequired': 'Adresă necesară'}",
-    "transaction": "{'description': {'setName': 'Setează numele', 'setRecords': 'Setează înregistrările', 'test': 'Testează tranzacția', 'addSuccess': 'Adăugare reușită', 'sendName': 'Trimite numele', 'migrateProfile': 'Migrează profilul', 'migrateProfileWithReset': 'Migrează profilul', 'migrateProfileWithSync': 'Migrează și actualizează profilul', 'wrapName': 'Împachetează numele', 'updateResolver': 'Actualizează resolver-ul', 'updateProfile': 'Actualizează profilul', 'setPrimaryName': 'Setează numele principal', 'updateEthAddress': 'Actualizează adresa ETH', 'testSendName': 'Trimite numele', 'burnFuses': 'Ardere permisiuni', 'createSubname': 'Creează subnume', 'deleteSubname': 'Șterge subnume', 'extendNames': Extinde numele, importDNSSECName: Importă numele DNSSEC, commitName: Începe cronometrul, registerName: Înregistrează numele, approveNameWrapper: Aprobă NameWrapper, clearRecords: Șterge înregistrările, updateRecords: Actualizează înregistrările, transferName: Transferă numele, changePermissions: Schimbă permisiunile, syncManager: Sincronizează managerul, updateProfileRecords: Actualizează profilul, resetProfile: Resetează profilul, setHexagonName: Setează Numele Hexagon MEP1002, mintHexagon: Creează Hexagon MEP1002}, info: {sendName: Seteaza controlerul și înregistrantul numelui, migrateProfile: Seteaza înregistrările existente pe noul resolver, migrateProfileWithReset: Seteaza înregistrările existente pe noul resolver, migrateProfileWithSync: Seteaza înregistrările existente pe noul resolver, wrapName: Împacheteaza numele și seteaza noul resolver, updateResolver: Schimba resolver-ul la , updateProfile: Actualizeaza înregistrările pe resolver-ul existent , setPrimaryName:Seteaza numele principal pentru adresa ta , updateEthAddress : Actualizeaza adresa ETH la aceasta adresă , testSendName : Seteaza controlerul și înregistrantul numelui , createSubname : Creeaza un nou subnume pe numele , burnFuses : Arde permisiunile alese până la expirarea numelui , commitName : Începe cronometrul pentru a înregistra numele , approveNameWrapper : Aproba NameWrapper pentru a gestiona numele tale , fuses : {revoke : Revoca , grant : Acorda , setExpiry : Seteaza expirarea , PARENT_CANNOT_CONTROL : Renunta la controlul parinte , CAN_EXTEND_EXPIRY : Extinde expirarea , CANNOT_UNWRAP : Deschide acest nume , CANNOT_CREATE_SUBDOMAIN : Creeaza subdomenii , CANNOT_SET_RESOLVER : Seteaza resolver-ul , CANNOT_SET_TTL : Seteaza TTL-ul , CANNOT_TRANSFER : Trimite acest nume , CANNOT_BURN_FUSES : Schimba permisiunile , CANNOT_APPROVE : Schimba managerul de reînnoire }}, itemLabel:{name:Nume,address:Adresa,action:Acțiunea,info:Info,to:Catre,duration:Durata,cost:Pret,resolver:Resolver,h3Index:H3 Index},itemValue:{records_one:'{{count}} inregistrare' records_other:'{{count}} inregistrari'},status:{pending:{regular:'In asteptare'},confirmed:{regular:'Confirmat','notifyTitle':'Tranzactie Reusita','notifyMessage':'Tranzactia ta \"{{action}}\" a fost reusita'},failed:{regular:'Esuat','notifyTitle':'Eșec Tranzacție','notifyMessage':'Tranzacția ta \"{{action}}\" a eșuat și a fost anulată'}},dialog:{intro:{trailingButton:'Start','trailingButtonResume':'Continua','step':'Pas {{step}}'},confirm:{title:'Confirma Detaliile','message':'Verifica aceste detalii inaintea confirmarii in portofel.','waitingForWallet':'Asteptand portofelul','openWallet':'Deschide Portofel'},sent:{title:'Tranzactie Trimisa','message':'Tranzactia ta este acum in progres,poti inchide ast",
-    "search": "{'label': 'Căutare nume', 'placeholder': 'Caută un nume', 'emptyText': 'Scrie un nume sau o adresă pentru a căuta...', 'address': 'Adresă', 'errors': {'tooShort': 'Nume prea scurt', 'invalid': 'Format invalid pentru nume'}, 'status': {'registered': 'Înregistrat', 'gracePeriod': 'Perioada de grație', 'premium': 'Premium temporar', 'available': 'Disponibil', 'notOwned': 'Ne-deținut', 'notImported': 'Ne-importat', 'short': 'Prea scurt', 'default': 'Invalid', 'unsupportedTLD': 'Nu este suportat', 'imported': 'Importat', 'owned': 'Deținut'}}",
-    "selectableInput": "{'add': 'Adaugă', 'placeholder': 'Selectează o opțiune', 'empty': 'Nu s-au găsit opțiuni'}",
-    "testnetFaucet": "{'explanation': 'Fiecare adresă pe goerli poate revendica {{ amount }}ETH pentru a testa aplicația MNS manager, precum și toate contractele noi.', 'note': 'S-ar putea să dureze câteva minute până apare în portofelul tău.'}"
+    "action": {
+        "cancel": "Anulează",
+        "change": "Schimbare",
+        "upload": "Încarcă",
+        "close": "Închide",
+        "save": "Salvează",
+        "edit": "Editare",
+        "view": "Vizualizează",
+        "clear": "Clar",
+        "update": "Actualizare",
+        "learnMore": "Aflați mai multe",
+        "send": "Trimite",
+        "next": "Următorul",
+        "add": "Adaugă",
+        "set": "Setează",
+        "search": "Căutare",
+        "back": "Înapoi",
+        "continue": "Continuați",
+        "confirm": "Confirmă",
+        "remove": "Eliminați",
+        "sign": "Semnează",
+        "reset": "Resetare",
+        "transfer": "Transferă",
+        "tryAgain": "Încearcă Din Nou",
+        "done": "Finalizat",
+        "burnSelected": "Ardere Selectată",
+        "extend": "Extinde",
+        "delete": "Șterge",
+        "sort": "Sortează",
+        "check": "Verifică",
+        "claim": "Revendicați",
+        "remindMe": "Reamintește-mi",
+        "begin": "Începeți",
+        "finish": "Finalizează",
+        "skip": "Omiteți",
+        "changeNetwork": "Schimbă Rețeaua",
+        "understand": "Înțeleg",
+        "feedback": "Feedback",
+        "migrate": "Migrează"
+    },
+    "unit": {
+        "years_one": "{{count}} an",
+        "years_other": "{{count}} ani",
+        "yrs_one": "{{count}} an",
+        "yrs_other": "{{count}} ani",
+        "gas": "{{value}} gaz",
+        "selected": "{{count}} selectat",
+        "perPage": "{{count}} pe pagină"
+    },
+    "navigation": {
+        "home": "Acasă",
+        "names": "Numele meu",
+        "favourites": "Favorite",
+        "settings": "Setări",
+        "governance": "Guvernanță",
+        "community": "Comunitate",
+        "developers": "Dezvoltatori",
+        "support": "Asistență",
+        "bounty": "Recompensă pentru Erori",
+        "terms": "Termeni de Utilizare",
+        "privacy": "Politica de Confidențialitate",
+        "back": "Înapoi",
+        "oldApp": "Aplicația veche MNS",
+        "language": "Limbă",
+        "currency": "Monedă",
+        "ipfsApp": "Aplicația IPFS MNS",
+        "feedback": "Feedback",
+        "syncMessage": "Sincronizare cu rețeaua. Modificările din tranzacția ta s-ar putea să nu fie vizibile încă."
+    },
+    "wallet": {
+        "myProfile": "Profil",
+        "disconnect": "Deconectare",
+        "connect": "Conectează",
+        "noPrimaryName": "Fără Nume Primar",
+        "viewProfile": "Vizualizează Profilul",
+        "viewDetails": "Vizualizează Detalii",
+        "register": "Înregistrează-te"
+    },
+    "name": {
+        "registered": "Înregistrat",
+        "expires": "Expiră",
+        "noExpiry": "Fără expirare",
+        "expiry": "Expirare",
+        "parent": "Părinte",
+        "noParent": "Fără părinte",
+        "registrant": "Înregistrat",
+        "controller": "Controlor",
+        "dnsOwner": "Proprietar DNS",
+        "owner": "Proprietar",
+        "notOwned": "Ne deținut",
+        "manager": "Manager",
+        "all": "Toate Numele",
+        "expiresInYears_one": "Expiră în {{count}} an",
+        "expiresInYears_other": "Expiră în {{count}} ani",
+        "expiresInMonths_one": "Expiră în {{count}} lună",
+        "expiresInMonths_other": "Expiră în {{count}} luni",
+        "expiresInDays_one": "Expiră în {{count}} zi",
+        "expiresInDays_other": "Expiră în {{count}} zile",
+        "expiresInHours_one": "Expiră în {{count}} oră",
+        "expiresInHours_other": "Expiră în {{count}} ore",
+        "expiresInHours_zero": "Expiră în mai puțin de o oră",
+        "expiredInHours_one": "A expirat {{count}} oră în urmă",
+        "expiredInHours_other": "A expirat {{count}} ore în urmă",
+        "expiredInHours_zero": "A expirat cu mai puțin de o oră în urmă",
+        "expiredInDays_one": "Expirat {{count}} zi în urmă",
+        "expiredInDays_other": "A expirat {{count}} zile în urmă",
+        "expiredInMonths_one": "A expirat {{count}} lună în urmă",
+        "expiredInMonths_other": "A expirat {{count}} luni în urmă",
+        "expiredInYears_one": "A expirat {{count}} an în urmă",
+        "expiredInYears_other": "Expirat {{count}} ani în urmă",
+        "gracePeriod": {
+            "expiresInYears_one": "Perioada de grație expiră în {{count}} an",
+            "expiresInYears_other": "Perioada de grație expiră în {{count}} ani",
+            "expiresInMonths_one": "Perioada de grație expiră în {{count}} lună",
+            "expiresInMonths_other": "Perioada de grație expiră în {{count}} luni",
+            "expiresInDays_one": "Perioada de grație expiră în {{count}} zi",
+            "expiresInDays_other": "Perioada de grație expiră în {{count}} zile",
+            "expiresInHours_one": "Perioada de grație expiră în {{count}} oră",
+            "expiresInHours_other": "Perioada de grație expiră în {{count}} ore",
+            "expiresInHours_zero": "Perioada de grație expiră în mai puțin de o oră"
+        },
+        "extend": "Extinde",
+        "send": "Trimite",
+        "transfer": "Transferă",
+        "sendManager": "Manager de Trimitere",
+        "sendOwner": "Trimite Proprietarului"
+    },
+    "address": {
+        "label": "Adresă",
+        "viewAddress": "Vizualizează adresă",
+        "copyAddress": "Copiază adresa"
+    },
+    "records": {
+        "label": "Înregistrări"
+    },
+    "sortTypes": {
+        "expiryDate": "Data expirării",
+        "labelName": "Nume",
+        "creationDate": "Data creării"
+    },
+    "errors": {
+        "noResults": "Nu au fost găsite rezultate",
+        "invalidAddress": "Adresă invalidă",
+        "addressRequired": "Adresă necesară"
+    },
+    "transaction": {
+        "description": {
+            "setName": "Setează numele",
+            "setRecords": "Stabilește recorduri",
+            "test": "Tranzacție de test",
+            "addSuccess": "Adăugare reușită",
+            "sendName": "Trimite nume",
+            "migrateProfile": "Migrează profilul",
+            "migrateProfileWithReset": "Migrează profilul",
+            "migrateProfileWithSync": "Migrează și actualizează profilul",
+            "wrapName": "Înfoliază numele",
+            "updateResolver": "Actualizează rezolvitorul",
+            "updateProfile": "Actualizează profilul",
+            "setPrimaryName": "Setează numele principal",
+            "updateEthAddress": "Actualizează adresa ETH",
+            "testSendName": "Trimite nume",
+            "burnFuses": "Permisiuni de ardere",
+            "createSubname": "Creează subnume",
+            "deleteSubname": "Șterge subnume",
+            "extendNames": "Extinde numele",
+            "importDNSSECName": "importează numele DNSSEC",
+            "commitName": "Pornește cronometrul",
+            "registerName": "Înregistrează numele",
+            "approveNameWrapper": "Aprobă NameWrapper",
+            "clearRecords": "Șterge înregistrările",
+            "updateRecords": "Actualizează înregistrările",
+            "transferName": "Transfer nume",
+            "changePermissions": "Schimbă permisiunile",
+            "syncManager": "Manager de sincronizare",
+            "updateProfileRecords": "Actualizează profilul",
+            "resetProfile": "Resetează profilul",
+            "setHexagonName": "Setează Nume Hexagon MEP1002",
+            "mintHexagon": "Emite MEP1002 Hexagon"
+        },
+        "info": {
+            "sendName": "Setează controlorul și înregistrantul numelui",
+            "migrateProfile": "Setează înregistrările existente pe noul rezolvant",
+            "migrateProfileWithReset": "Setează înregistrările existente pe noul rezolvant",
+            "migrateProfileWithSync": "Setează înregistrările existente pe noul rezolvant",
+            "wrapName": "Împachetează numele și setează un nou rezolvant",
+            "updateResolver": "Schimbă resolver în",
+            "updateProfile": "Actualizați înregistrările pe resolverul existent",
+            "setPrimaryName": "Setează numele principal pentru adresa ta",
+            "updateEthAddress": "Actualizați adresa ETH la această adresă",
+            "testSendName": "Setează controlorul și înregistrantul numelui",
+            "createSubname": "Creează un subnume nou pe numele",
+            "burnFuses": "Ardere permisiunilor alese până la expirarea numelui",
+            "commitName": "Începe cronometrul pentru a înregistra numele",
+            "approveNameWrapper": "Aprobați NameWrapper pentru a gestiona numele dvs.",
+            "fuses": {
+                "revoke": "Revocă",
+                "grant": "Acordă",
+                "setExpiry": "Setează expirarea",
+                "PARENT_CANNOT_CONTROL": "Renunță la controlul părintesc",
+                "CAN_EXTEND_EXPIRY": "Prelungiți expirarea",
+                "CANNOT_UNWRAP": "Dezambalează acest nume",
+                "CANNOT_CREATE_SUBDOMAIN": "Creează subdomenii",
+                "CANNOT_SET_RESOLVER": "Setează rezolvitorul",
+                "CANNOT_SET_TTL": "Setează TTL",
+                "CANNOT_TRANSFER": "Trimite acest nume",
+                "CANNOT_BURN_FUSES": "Schimbă permisiunile",
+                "CANNOT_APPROVE": "Schimbă managerul de reînnoire"
+            }
+        },
+        "itemLabel": {
+            "name": "Nume",
+            "address": "Adresă",
+            "action": "Acțiune",
+            "info": "Informații",
+            "to": "Pentru",
+            "subname": "Subnume",
+            "duration": "Durată",
+            "cost": "Costul",
+            "update": "Actualizare",
+            "resolver": "Rezolvator",
+            "h3Index": "H3 Index"
+        },
+        "itemValue": {
+            "records_one": "{{count}} înregistrare",
+            "records_other": "{{count}} înregistrări"
+        },
+        "status": {
+            "pending": {
+                "regular": "În așteptare"
+            },
+            "confirmed": {
+                "regular": "Confirmat",
+                "notifyTitle": "Tranzacție Reușită",
+                "notifyMessage": "Tranzacția dvs. \"{{action}}\" a fost realizată cu succes."
+            },
+            "failed": {
+                "regular": "Eșuat",
+                "notifyTitle": "Eșecul Tranzacției",
+                "notifyMessage": "Tranzacția dvs. \"{{action}}\" a eșuat și a fost anulată."
+            }
+        },
+        "dialog": {
+            "intro": {
+                "trailingButton": "Începe",
+                "trailingButtonResume": "Continuați",
+                "step": "Pasul {{step}}"
+            },
+            "confirm": {
+                "title": "Confirmă Detaliile",
+                "message": "Verifică de două ori aceste detalii înainte de a confirma în portofelul tău.",
+                "waitingForWallet": "Așteptând portofelul",
+                "openWallet": "Deschide Portofelul"
+            },
+            "sent": {
+                "title": "Tranzacție Trimisă",
+                "message": "Tranzacția dvs. este acum în desfășurare, puteți închide acest lucru și să reveniți mai târziu.",
+                "progress": {
+                    "title": "Trimis",
+                    "message": "Durează mai mult decât era de așteptat"
+                }
+            },
+            "complete": {
+                "title": "Tranzacție Finalizată",
+                "message": "Tranzacția ta este acum finalizată!",
+                "progress": {
+                    "title": "Finalizat"
+                }
+            },
+            "failed": {
+                "title": "Tranzacția a eșuat",
+                "progress": {
+                    "title": "Eșuat"
+                }
+            },
+            "error": {
+                "gasLimit": "Limita de gaz pentru tranzacția ta nu a fost suficient de mare, te rog încearcă din nou."
+            }
+        },
+        "error": {
+            "request": {
+                "INSUFFICIENT_FUNDS": "Fonduri insuficiente în portofel",
+                "UNPREDICTABLE_GAS_LIMIT": "A apărut o eroare necunoscută"
+            }
+        },
+        "viewEtherscan": "Vizualizează pe BlockExplorer",
+        "viewMore": "Vezi Mai Mult"
+    },
+    "search": {
+        "label": "Căutare nume",
+        "placeholder": "Caută un nume",
+        "emptyText": "Tastați un nume sau o adresă pentru a căuta...",
+        "address": "Adresă",
+        "errors": {
+            "tooShort": "Nume prea scurt",
+            "invalid": "Format invalid pentru nume"
+        },
+        "status": {
+            "registered": "Înregistrat",
+            "gracePeriod": "Perioada de Grație",
+            "premium": "Premium Temporar",
+            "available": "Disponibil",
+            "notOwned": "Ne deținut",
+            "notImported": "Nu importat",
+            "short": "Prea scurt",
+            "default": "Nevalid",
+            "unsupportedTLD": "Neacceptat",
+            "imported": "Importat",
+            "owned": "Deținut"
+        }
+    },
+    "selectableInput": {
+        "add": "Adaugă",
+        "placeholder": "Selectează o opțiune",
+        "empty": "Nu au fost găsite opțiuni"
+    },
+    "testnetFaucet": {
+        "explanation": "Fiecare adresă pe goerli poate revendica {{ amount }}ETH pentru a testa aplicația MNS manager, precum și toate contractele noi.",
+        "note": "S-ar putea să dureze câteva minute până apare în portofelul tău."
+    }
 }

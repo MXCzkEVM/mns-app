@@ -1,8 +1,185 @@
 {
     "title": "Înregistrați {{name}} pe MNS",
     "subtitle": "Înregistrează-te",
-    "heading": "Înregistrați {{name}}",
-    "invoice": "{'yearRegistration': 'Înregistrare pentru {{years}} an', 'registration': 'Înregistrare', 'estimatedNetworkFee': 'Est. taxă de rețea', 'networkFee': 'Taxă de rețea', 'temporaryPremium': 'Premium temporar', 'total': 'Total estimat', 'totalPaid': 'Total plătit'}",
-    "error": "{'nameTooLong': 'Numele pe care doriți să îl înregistrați este prea lung. Vă rugăm să alegeți un nume mai scurt.'}",
-    "steps": "{'pricing': {'insufficientBalance': 'Sold insuficient', 'multipleYearsMessage': 'Prelungirea pentru mai mulți ani va economisi bani pe costurile de rețea, evitând tranzacțiile anuale.', 'primaryName': 'Utilizați ca nume principal', 'primaryNameMessage': 'Aceasta leagă adresa dvs. de acest nume, permițând dApps să îl afișeze ca profilul dvs. atunci când sunt conectate la ele. Puteți avea doar un nume principal per adresă.', 'premium': {'heading': 'Acest nume are un premium temporar', 'subheading': 'Pentru a oferi oportunități echitabile numelor recent expirate, premiumul începe de la $100,000,000 și se reduce la $0 în 21 de zile. Puteți calcula premiumul la o dată de mai jos.', 'targetPrice': 'Preț țintă', 'targetDate': 'Data țintă', 'timezone': 'Data și ora sunt afișate în fusul orar local ({{timezone}})'}}, 'profile': {'title': 'Creați-vă profilul', 'title2': 'Editați-vă profilul', 'default': 'Implicit', 'advanced': 'Avansat', 'permissions': 'Permisiuni', 'resolver': 'Resolver', 'visibilityMessage': 'Informațiile dvs. de profil vor fi stocate pe blockchain. Orice adăugați va fi vizibil public.', 'addProfile': 'Adăugați câmpuri de profil', 'addMore': 'Adaugă mai mult la profil', \n'options': {'groups': {'general': {'label': 'General', \n'items': {'name': 'Pseudonim', \n'url': \"Site web\", \n'location':'Locație',\n'description':'Bio scurt'}, \n'placeholder':{'name':'John Smith',\n'url':'https://ens.domains',\n'location':'Metaverse',\n'description':\"Sunt un fermier yield din Tennessee rural.\"}}, \n'social':{'label':'Social',\n'items':{'com.twitter':'Twitter',\n'com.github':'GitHub',\n'com.discord':'Discord'},\n'placeholder':{'com.twitter':'ex. ensdomains',\n'com.github':'ex. ensdomains',\n'com.discord':'ex. alisha.eth#0001'}},\n'address':{'label':'Adresă',\n'itemLabel':'{{coin}} adresă',\n'placeholder':{'default':'Adaugă adresa aici',\n'ETH':'0xD9hbQK...',\n'BNB':'bnb1grpf...',\n'BTC':'3FZbgi29...',\n'LTC':'ltc1qdp7p...',\n'SOL':'D4kA7VzHnmV...',\n'DOT':'1D4kA7VxH...',\n'DOGE':'DFabcd12...'}},\n'website':{'label':'Website',\n'items':{'ipfs':'IPFS',\n'ipns':'IPNS',\n'swarm':'Swarm',\n'onion':'Onion',\n'skynet':'Skynet',\n'arweave':'Arweave'},\n'placeholder':{'default':\"Adaugă url aici\",\n'ipfs':\"ipfs://...\",\n'skynet':\"sia://...\",\n'arweave':\"ar://...\",\n'swarm':\"bzz://...\",\n'onion':\"onion3://...\"}},\n'other':{'label':\"Altele\",\n'items':{'contentHash':\"Content Hash\",\n'publicKey':\"Cheie publică\",\n'abi':\"ABI\",\n'custom':\"Personalizat\"}},\n'custom':{'key':\"Cheie\",\n'value':\"Valoare\"},\n'default':{'placeholder':\"Adaugă valoarea aici\"}}},\n\"errors\":{'labelRequired':\"Este necesară o cheie de înregistrare\",\n'duplicateRecord':\"Cheie de înregistrare duplicată\",\n'avatarReserved':\"Cheia este utilizată de managerul avatarului\"},\n\"confirmations\":{'publicNotice':{'title':\"Detaliile tale sunt publice\",\n'description':\"Orice adaugi la profilul tău va fi vizibil public pe blockchain.\",\n'confirm':\"Înțeleg\",\n'decline':\"Înapoi\"},\n\"clearEth\":{'title':\"Ștergeți adresa ETH?\",\n'description':\"Fără o adresă ETH setată, oamenii nu vor putea trimite bani către acest nume. Acest lucru poate fi actualizat ulterior.\",\n\"confirm\":\"Șterge\",\n\"decline\":\"Anulează\"}},\n\"actions\":{\"skipProfile\":\"Omite profilul\"}},\n\"complete\":{\"heading\":\"Felicitari!\",\n\"subheading\":\"Acum ești proprietarul \",\n\"description"
+    "heading": "Înregistrează {{name}}",
+    "invoice": {
+        "yearRegistration": "Înregistrare de {{years}} an",
+        "registration": "Înregistrare",
+        "estimatedNetworkFee": "Est. taxă de rețea",
+        "networkFee": "Taxă de rețea",
+        "temporaryPremium": "Abonament temporar premium",
+        "total": "Total estimat",
+        "totalPaid": "Total plătit"
+    },
+    "error": {
+        "nameTooLong": "Numele pe care doriți să îl înregistrați este prea lung. Vă rugăm să alegeți un nume mai scurt."
+    },
+    "steps": {
+        "pricing": {
+            "insufficientBalance": "Sold Insuficient",
+            "multipleYearsMessage": "Prelungirea pentru mai mulți ani va economisi bani pe costurile rețelei, evitând tranzacțiile anuale.",
+            "primaryName": "Folosește ca nume principal",
+            "primaryNameMessage": "Acest lucru îți leagă adresa de acest nume, permițând dApps să-l afișeze ca profilul tău când te conectezi la ele. Poți avea doar un nume principal per adresă.",
+            "premium": {
+                "heading": "Acest nume are o primă premium temporară.",
+                "subheading": "Pentru a oferi oportunități echitabile numelor recent expirate, prima începe de la $100,000,000 și se reduce la $0 în decurs de 21 de zile. Puteți calcula prima pe o dată de mai jos.",
+                "targetPrice": "Preț țintă",
+                "targetDate": "Data țintă",
+                "timezone": "Data și ora afișate în fusul orar local ({{timezone}})"
+            }
+        },
+        "profile": {
+            "title": "Creează-ți profilul",
+            "title2": "Editează-ți profilul",
+            "default": "Implicit",
+            "advanced": "Avansat",
+            "permissions": "Permisiuni",
+            "resolver": "Rezolvator",
+            "visibilityMessage": "Informațiile profilului dvs. vor fi stocate pe blockchain. Orice adăugați va fi vizibil public.",
+            "addProfile": "Adăugați câmpuri de profil",
+            "addMore": "Adaugă mai mult la profil",
+            "options": {
+                "groups": {
+                    "general": {
+                        "label": "General",
+                        "items": {
+                            "name": "Poreclă",
+                            "url": "Website",
+                            "location": "Locație",
+                            "description": "Scurtă biografie"
+                        },
+                        "placeholder": {
+                            "name": "John Smith",
+                            "url": "https://ens.domains",
+                            "location": "Metavers",
+                            "description": "Sunt un fermier de randament din Tennessee rural."
+                        }
+                    },
+                    "social": {
+                        "label": "Social",
+                        "items": {
+                            "com.twitter": "Twitter",
+                            "com.github": "GitHub",
+                            "com.discord": "Discord"
+                        },
+                        "placeholder": {
+                            "com.twitter": "de exemplu, ensdomains",
+                            "com.github": "de exemplu, ensdomains",
+                            "com.discord": "de exemplu, alisha.eth#0001"
+                        }
+                    },
+                    "address": {
+                        "label": "Adresă",
+                        "itemLabel": "Adresa {{coin}}",
+                        "placeholder": {
+                            "default": "Adaugă adresa aici",
+                            "ETH": "0xD9hbQK...",
+                            "BNB": "bnb1grpf...",
+                            "BTC": "3FZbgi29...",
+                            "LTC": "ltc1qdp7p...",
+                            "SOL": "D4kA7VzHnmV...",
+                            "DOT": "1D4kA7VxH...",
+                            "DOGE": "DFabcd12..."
+                        }
+                    },
+                    "website": {
+                        "label": "Website",
+                        "items": {
+                            "ipfs": "IPFS",
+                            "ipns": "IPNS",
+                            "swarm": "Stol",
+                            "onion": "Ceapă",
+                            "skynet": "Skynet",
+                            "arweave": "Arweave"
+                        },
+                        "placeholder": {
+                            "default": "Adaugă url aici",
+                            "ipfs": "ipfs://...",
+                            "skynet": "sia://...",
+                            "arweave": "ro://...",
+                            "swarm": "bzz://...",
+                            "onion": "onion3://..."
+                        }
+                    },
+                    "other": {
+                        "label": "Alte",
+                        "items": {
+                            "contentHash": "Conținut Hash",
+                            "publicKey": "Cheie Publică",
+                            "abi": "ABI",
+                            "custom": "Personalizat"
+                        }
+                    },
+                    "custom": {
+                        "key": "Cheie",
+                        "value": "Valoare"
+                    },
+                    "default": {
+                        "placeholder": "Adaugă valoare aici"
+                    }
+                }
+            },
+            "errors": {
+                "labelRequired": "Este necesară o cheie de înregistrare",
+                "duplicateRecord": "Înregistrare duplicată a cheii",
+                "avatarReserved": "Cheia este utilizată de managerul de avatar"
+            },
+            "confirmations": {
+                "publicNotice": {
+                    "title": "Detaliile tale sunt publice",
+                    "description": "Orice adaugi în profilul tău va fi vizibil public pe blockchain.",
+                    "confirm": "Înțeleg",
+                    "decline": "Înapoi"
+                },
+                "clearEth": {
+                    "title": "Ștergeți adresa ETH?",
+                    "description": "Fără o adresă ETH setată, oamenii nu vor putea trimite bani la acest nume. Acest lucru poate fi actualizat mai târziu.",
+                    "confirm": "Clar",
+                    "decline": "Anulează"
+                }
+            },
+            "actions": {
+                "skipProfile": "Omite profilul"
+            }
+        },
+        "complete": {
+            "heading": "Felicitări!",
+            "subheading": "Acum ești proprietarul",
+            "description": "Numele tău a fost înregistrat cu succes. Acum poți vizualiza și gestiona numele tău.",
+            "registerAnother": "Înregistrează un alt",
+            "viewName": "Vizualizează nume"
+        },
+        "info": {
+            "heading": "Înainte de a începe",
+            "subheading": "Înregistrarea numelui tău necesită trei pași",
+            "ethItems": "['Finalizează o tranzacție pentru a începe cronometrul', 'Așteaptă 60 de secunde pentru ca cronometrul să se finalizeze', 'Finalizează o a doua tranzacție pentru a-ți asigura numele']",
+            "moonpayItems": "['Creează sau autentifică-te într-un cont MoonPay existent', 'Folosește-ți cardul de credit sau de debit pentru a finaliza o tranzacție unică']",
+            "setupProfile": "Aș dori să îmi configurez mai întâi profilul.",
+            "paymentMethod": "Metoda de plată",
+            "notEnoughEth": "Insuficient MXC în portofel",
+            "creditOrDebit": "Card de credit sau debit",
+            "additionalFee": "Taxă suplimentară de procesare",
+            "pendingMoonpayTransaction": "Tranzacția ta MoonPay este în procesare. Acest lucru poate dura până la două minute. Poți verifica progresul din e-mailul de confirmare pe care l-ai primit.",
+            "failedMoonpayTransaction": "Tranzacția ta MoonPay a eșuat. Te rugăm să încerci din nou sau alege metoda de plată 'Ethereum'.",
+            "ethereum": "MXC",
+            "processing": "Procesare",
+            "poweredBy": "Alimentat de",
+            "moonpayModalHeader": "Finalizare Comandă MoonPay",
+            "moonpayTestCard": "Detalii card de test"
+        },
+        "transactions": {
+            "heading": "Aproape acolo",
+            "subheading": "Acest cronometru ajută la prevenirea înregistrării numelui de către alții înaintea dumneavoastră. Numele dumneavoastră nu este înregistrat până când nu ați finalizat a doua tranzacție.",
+            "startTimer": "Porniți cronometrul",
+            "wait": "Așteaptă",
+            "transactionFailed": "Tranzacția a eșuat",
+            "transactionProgress": "Tranzacție în desfășurare"
+        },
+        "cancelRegistration": {
+            "heading": "Vei pierde tranzacția ta",
+            "contentOne": "Revenirea va reseta prima dvs. tranzacție. Dacă vă întoarceți, va trebui să finalizați din nou tranzacția și să plătiți taxele asociate.",
+            "contentTwo": "Ești sigur că vrei să continui?",
+            "footer": "Resetează tranzacția și mergi înapoi"
+        }
+    }
 }

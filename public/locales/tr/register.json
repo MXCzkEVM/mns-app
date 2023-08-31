@@ -1,8 +1,185 @@
 {
-    "title": "{{name}}'i MNS'ye kaydet",
+    "title": "MNS'de {{name}} kaydolun",
     "subtitle": "Kayıt Ol",
     "heading": "{{name}} Kaydol",
-    "invoice": "{'yearRegistration': '{{years}} yıl kayıt', 'registration': 'Kayıt', 'estimatedNetworkFee': 'Tahmini ağ ücreti', 'networkFee': 'Ağ ücreti', 'temporaryPremium': 'Geçici premium', 'total': 'Tahmini toplam', 'totalPaid': 'Ödenen toplam'}",
-    "error": "{'nameTooLong': 'Kaydetmek istediğiniz isim çok uzun. Lütfen daha kısa bir isim seçin.'}",
-    "steps": "{'pricing': {'insufficientBalance': 'Yetersiz Bakiye', 'multipleYearsMessage': 'Birden fazla yıl için uzatma, yıllık işlemlerden kaçınarak ağ maliyetlerinde tasarruf sağlar.', 'primaryName': 'Birincil isim olarak kullan', 'primaryNameMessage': 'Bu, adresinizi bu isme bağlar, böylece dApps ona bağlandığında profilinizi gösterir. Bir adres başına yalnızca bir birincil isim olabilir.', 'premium': {'heading': 'Bu ismin geçici bir primi var', 'subheading': 'Son zamanlarda süresi dolan isimlere adil fırsat vermek için, prim $100.000.000'dan başlar ve 21 gün boyunca $0'a düşer. Aşağıdaki tarihte primi hesaplayabilirsiniz.', 'targetPrice': 'Hedef fiyat', 'targetDate': 'Hedef tarih', 'timezone': '{{timezone}} yerel saat diliminde gösterilen tarih ve saat'}}, 'profile': {'title': 'Profilinizi oluşturun', 'title2': 'Profilinizi düzenleyin', 'default': 'Varsayılan', 'advanced': 'Gelişmiş', 'permissions': 'İzinler', 'resolver': 'Çözümleyici', 'visibilityMessage': \"Profil bilgileriniz blockchain'de saklanacak. Eklediğiniz her şey halka açık olarak görünecek.\",'addProfile':'Profil alanları ekleyin','addMore':'Profili daha fazla ekle','options':{'groups':{'general':{'label':'Genel','items':{'name':'Takma Ad','url':'Web Sitesi','location':'Konum','description':'Kısa Biyografi'},'placeholder':{'name':'John Smith','url':'https://ens.domains','location':'Metaverse','description':\"Ben kırsal Tennessee'den bir getiri çiftçisiyim.\"}},'social':{'label':'Sosyal','items':{'com.twitter':'Twitter','com.github':'GitHub','com.discord':'Discord'},'placeholder':{'com.twitter':'örn. ensdomains','com.github':'örn. ensdomains','com.discord':'örn. alisha.eth#0001'}},'address':{'label':'Adres','itemLabel':'{{coin}} adresi','placeholder':{'default':'Adres ekleyin','ETH':'0xD9hbQK...','BNB':'bnb1grpf...','BTC':'3FZbgi29...','LTC':'ltc1qdp7p...','SOL':'D4kA7VzHnmV...','DOT':'1D4kA7VxH...','DOGE':'DFabcd12...'}},'website':{'label':'Web Sitesi','items':{'ipfs':'IPFS','ipns':'IPNS','swarm':'Swarm','onion':'Onion','skynet':'Skynet','arweave':\n'Arweave'},'placeholder':{'default':\n'Url ekleyin',\n'ipfs':\n'ipfs://...',\n'skynet':\n'sia://...',\n'arweave':\n'ar://...',\n'swarm':\n'bzz://...',\n'onion':\n'onion3://...'\n}},'other':{'label':\n'Diğer',\n'items':\n{'contentHash':\n'Içerik Hash',\n'publicKey':\n'Herkese Açık Anahtar',\n'abi':\n'ABI',\n'custom':\n'Özel'\n}},'custom':{'key':\n'Açıklama',\n'value':\n'Değer'\n},'default':{'placeholder':\n'Değer ekleyin'\n}},'errors':{'labelRequired':\n'Bir kayıt anahtarı gereklidir',\n'duplicateRecord':\n'Tekrar eden kayıt anahtarı',\n'avatarReserved':\n'Açıklama avatar yöneticisi tarafından kullanılıyor'\n},'confirmations':{'publicNotice':{'title':\n'Bilgileriniz halka açık',\n'description':\n\"Profilinize eklediğiniz her şey blockchain'de halka açık olarak görüntülenecek.\",\n'confirm':\n\"Anladım\",\n'decline':\n\"Geri\"\n},'clearEth':{'title:\n\"ETH adresini temizle?\",\n'description\":\n\"ETH adresini ayarlama olmadan, insanlar bu isme para gönderemeyecekler. Bu daha sonra güncellenebilir.\",\n'confirm':\n\"Temizle\",\n'decline':\n\"İptal\"\n}},'actions':{'skipProfile':\"Profili atla\"}},'complete':{'heading':\"T"
+    "invoice": {
+        "yearRegistration": "{{years}} yıl kayıt",
+        "registration": "Kayıt",
+        "estimatedNetworkFee": "Tahmini ağ ücreti",
+        "networkFee": "Ağ ücreti",
+        "temporaryPremium": "Geçici premium",
+        "total": "Tahmini toplam",
+        "totalPaid": "Toplam ödenen"
+    },
+    "error": {
+        "nameTooLong": "Kaydetmek istediğiniz isim çok uzun. Lütfen daha kısa bir isim seçin."
+    },
+    "steps": {
+        "pricing": {
+            "insufficientBalance": "Yetersiz Bakiye",
+            "multipleYearsMessage": "Çok yıllık uzatma, yıllık işlemlerden kaçınarak ağ maliyetlerinde tasarruf sağlar.",
+            "primaryName": "Birincil ad olarak kullan",
+            "primaryNameMessage": "Bu, adresinizi bu isme bağlar ve dApps'in onu profiliniz olarak görüntülemesine izin verirken onlara bağlandığınızda. Bir adres başına yalnızca birincil bir isminiz olabilir.",
+            "premium": {
+                "heading": "Bu isim geçici bir prim içerir",
+                "subheading": "Son zamanlarda süresi dolmuş isimlere adil bir fırsat vermek için, prim $100,000,000'da başlar ve 21 gün içinde $0'a düşer. Aşağıdaki tarihte primi hesaplayabilirsiniz.",
+                "targetPrice": "Hedef fiyat",
+                "targetDate": "Hedef tarih",
+                "timezone": "Yerel saat diliminde gösterilen tarih ve saat ({{timezone}})"
+            }
+        },
+        "profile": {
+            "title": "Profilinizi oluşturun",
+            "title2": "Profilinizi düzenleyin",
+            "default": "Varsayılan",
+            "advanced": "Gelişmiş",
+            "permissions": "İzinler",
+            "resolver": "Çözümleyici",
+            "visibilityMessage": "Profil bilgileriniz blockchain üzerinde saklanacaktır. Eklediğiniz her şey halka açık olarak görünecektir.",
+            "addProfile": "Profil alanları ekle",
+            "addMore": "Profili daha fazla geliştirin",
+            "options": {
+                "groups": {
+                    "general": {
+                        "label": "Genel",
+                        "items": {
+                            "name": "Takma Ad",
+                            "url": "Web Sitesi",
+                            "location": "Konum",
+                            "description": "Kısa Biyografi"
+                        },
+                        "placeholder": {
+                            "name": "John Smith",
+                            "url": "https://ens.domainler",
+                            "location": "Metaverse",
+                            "description": "Ben kırsal Tennessee'den bir getiri çiftçisiyim."
+                        }
+                    },
+                    "social": {
+                        "label": "Sosyal",
+                        "items": {
+                            "com.twitter": "Twitter",
+                            "com.github": "GitHub",
+                            "com.discord": "Discord"
+                        },
+                        "placeholder": {
+                            "com.twitter": "örneğin ensdomains",
+                            "com.github": "örneğin ensdomains",
+                            "com.discord": "Örneğin, alisha.eth#0001"
+                        }
+                    },
+                    "address": {
+                        "label": "Adres",
+                        "itemLabel": "{{coin}} adresi",
+                        "placeholder": {
+                            "default": "Buraya adres ekleyin",
+                            "ETH": "0xD9hbQK...",
+                            "BNB": "bnb1grpf...",
+                            "BTC": "3FZbgi29...",
+                            "LTC": "ltc1qdp7p...",
+                            "SOL": "D4kA7VzHnmV...",
+                            "DOT": "1D4kA7VxH...",
+                            "DOGE": "DFabcd12..."
+                        }
+                    },
+                    "website": {
+                        "label": "Web Sitesi",
+                        "items": {
+                            "ipfs": "IPFS",
+                            "ipns": "IPNS",
+                            "swarm": "Kovan",
+                            "onion": "Soğan",
+                            "skynet": "Skynet",
+                            "arweave": "Arweave"
+                        },
+                        "placeholder": {
+                            "default": "Buraya url ekleyin",
+                            "ipfs": "ipfs://...",
+                            "skynet": "sia://...",
+                            "arweave": "tr://...",
+                            "swarm": "bzz://...",
+                            "onion": "onion3://..."
+                        }
+                    },
+                    "other": {
+                        "label": "Diğer",
+                        "items": {
+                            "contentHash": "İçerik Hash",
+                            "publicKey": "Genel Anahtar",
+                            "abi": "ABI",
+                            "custom": "Özel"
+                        }
+                    },
+                    "custom": {
+                        "key": "Anahtar",
+                        "value": "Değer"
+                    },
+                    "default": {
+                        "placeholder": "Buraya değer ekleyin"
+                    }
+                }
+            },
+            "errors": {
+                "labelRequired": "Bir kayıt anahtarı gereklidir",
+                "duplicateRecord": "Yinelenen kayıt anahtarı",
+                "avatarReserved": "Anahtar, avatar yöneticisi tarafından kullanılıyor"
+            },
+            "confirmations": {
+                "publicNotice": {
+                    "title": "Detaylarınız halka açıktır.",
+                    "description": "Profilinize eklediğiniz her şey blockchain üzerinde halka açık olarak görüntülenebilir.",
+                    "confirm": "Anlıyorum",
+                    "decline": "Geri"
+                },
+                "clearEth": {
+                    "title": "ETH adresini temizle?",
+                    "description": "ETH adresi belirlenmeden, insanlar bu isme para gönderemeyecek. Bu daha sonra güncellenebilir.",
+                    "confirm": "Açık",
+                    "decline": "İptal"
+                }
+            },
+            "actions": {
+                "skipProfile": "Profil atla"
+            }
+        },
+        "complete": {
+            "heading": "Tebrikler!",
+            "subheading": "Artık şunun sahibisiniz",
+            "description": "Adınız başarıyla kaydedildi. Artık adınızı görüntüleyebilir ve yönetebilirsiniz.",
+            "registerAnother": "Başka bir tane kaydet",
+            "viewName": "Görünüm adı"
+        },
+        "info": {
+            "heading": "Başlamadan önce",
+            "subheading": "Adınızı kaydetmek üç adımda gerçekleşir",
+            "ethItems": "[\"İşlemi başlatmak için bir işlem tamamlayın\", \"Zamanlayıcının tamamlanması için 60 saniye bekleyin\", \"Adınızı güvence altına almak için ikinci bir işlem tamamlayın\"]",
+            "moonpayItems": "['Bir MoonPay hesabı oluşturun veya mevcut bir hesaba giriş yapın', 'Tek bir işlemi tamamlamak için kredi veya banka kartınızı kullanın']",
+            "setupProfile": "Öncelikle profilimi ayarlamak istiyorum",
+            "paymentMethod": "Ödeme yöntemi",
+            "notEnoughEth": "Cüzdanınızda yeterli MXC yok",
+            "creditOrDebit": "Kredi veya banka kartı",
+            "additionalFee": "Ek işlem ücreti",
+            "pendingMoonpayTransaction": "MoonPay işleminiz işleniyor. Bu, iki dakika kadar sürebilir. İlerlemenizi, aldığınız onay e-postasından kontrol edebilirsiniz.",
+            "failedMoonpayTransaction": "MoonPay işleminiz başarısız oldu. Lütfen tekrar deneyin veya 'Ethereum' ödeme yöntemini seçin.",
+            "ethereum": "MXC",
+            "processing": "İşleniyor",
+            "poweredBy": "Güç veren",
+            "moonpayModalHeader": "MoonPay Ödeme",
+            "moonpayTestCard": "Test kartı detayları"
+        },
+        "transactions": {
+            "heading": "Neredeyse oradayız",
+            "subheading": "Bu zamanlayıcı, adınızı sizden önce kaydeden diğerlerinin önüne geçmeye yardımcı olur. İkinci işlemi tamamladığınızda adınız kaydedilmiş olmaz.",
+            "startTimer": "Zamanlayıcıyı Başlat",
+            "wait": "Bekle",
+            "transactionFailed": "İşlem Başarısız",
+            "transactionProgress": "İşlem devam ediyor"
+        },
+        "cancelRegistration": {
+            "heading": "İşleminiz kaybolacak",
+            "contentOne": "Geri dönmeniz ilk işleminizi sıfırlayacak. Geri dönerseniz, işlemi tekrar tamamlamanız ve ilişkili ücretleri ödemeniz gerekecek.",
+            "contentTwo": "Devam etmek istediğinizden emin misiniz?",
+            "footer": "İşlemi sıfırla ve geri dön"
+        }
+    }
 }

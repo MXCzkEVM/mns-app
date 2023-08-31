@@ -1,4 +1,23 @@
 {
     "title": "Setări",
-    "section": "{'wallet': {'title': 'Portofel'}, 'transaction': {'title': 'Tranzacții', 'noRecentTransactions': 'Nicio tranzacție recentă'}, 'primary': {'title': 'Nume Primar', 'loading': 'Se încarcă numele primar...', 'noName': 'Niciun nume primar setat.', 'input': {'title': 'Selectați un nume primar', 'noNames': 'Nu s-au găsit nume eligibile pentru această adresă', 'noOtherNames': 'Nu s-au găsit alte nume eligibile pentru această adresă', 'loading': 'Se încarcă numele'}}}"
+    "section": {
+        "wallet": {
+            "title": "Portofel"
+        },
+        "transaction": {
+            "title": "Tranzacții",
+            "noRecentTransactions": "Nicio tranzacție recentă"
+        },
+        "primary": {
+            "title": "Nume Primar",
+            "loading": "Încărcare nume primar...",
+            "noName": "Nume primar nesetat.",
+            "input": {
+                "title": "Selectează un nume principal",
+                "noNames": "Nu s-au găsit nume eligibile pentru această adresă",
+                "noOtherNames": "Nu au fost găsite alte nume eligibile pentru această adresă",
+                "loading": "Încărcare nume"
+            }
+        }
+    }
 }

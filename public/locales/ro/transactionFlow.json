@@ -1,6 +1,332 @@
 {
-    "input": "{'profileEditor': {'tabs': {'avatar': {'dropdown': {'selectNFT': 'Selectează NFT', 'uploadImage': 'Încarcă Imagine'}, 'nft': {'title': 'Selectează un NFT', 'searchPlaceholder': 'Caută un NFT', 'loading': 'Se încarcă NFT-urile tale', 'unknown': 'NFT necunoscut', 'noNFTs': 'Nu s-au găsit NFT-uri pentru această adresă.', 'selected': {'title': 'NFT selectat', 'subtitle': 'Ești sigur că vrei să folosești acest NFT?'}, 'noResults': 'Nu s-au găsit rezultate.'}, 'image': {'title': 'Editează Imaginea', 'upload': {'title': 'Încarcă Avatarul', 'subtitle': \"Trebuie să semnezi un mesaj pentru a încărca un avatar. Nu va costa nimic.\", 'action': 'Semnează și Încarcă'}}}, 'general': {'label': 'General', 'name': {'label': 'Pseudonim', 'placeholder': 'John Smith'}, 'url': {'label': 'Website', 'placeholder': 'https://ens.domains'},'location':{'label':'Locație','placeholder':'Metaverse'},'description':{'label':'Biografie scurtă','placeholder':\"Sunt un fermier yield din Tennessee rural.\"}},'accounts':{'label':'Conturi','addAccount':'Adaugă cont','noOptions':'Nu există opțiuni de cont disponibile','placeholder':{'default':'Adaugă numele de utilizator aici','com.twitter':'de ex. ensdomains','com.github':'de ex. ensdomains','com.discord':'de ex. alisha.eth#0001'}},'address':{'label':'Adresă','addAddress':'Adaugă adresă','noOptions':'Nu există opțiuni de adresă disponibile','placeholder':{'default':'Adaugă adresa aici','ETH':'0xD9hbQK...','BNB':'0xD9hbQK...','BTC':'3FZbgi29...','LTC':'3FZbgi29...','SOL':'D4kA7VzHnmV...','DOT':'1D4kA7VxH...','DOGE':'DFabcd12...'}},'contentHash':{'label':'Website','addContentHash':'Adaugă website descentralizat','placeholder':{'default':'Adaugă url aici','ipfs':'ipfs://...','skynet':'sia://...','arweave':'ar://...','swarm':'bzz://...','onion':'onion3://...'}},'other':{'label':'Altele','addRecord':\n'Adaugă înregistrare',\n'createRecord':\n'Tastează numele unei înregistrari...',\n'placeholder':\n{'default':\n'Adaugă o valoare aici...'\n}}},'warningOverlay':\n{'action':\n{'learnMoreResolvers':\n'Afla mai multe despre rezolvari',\n'updateResolver':\n'Actualizează rezolvarea',\n'setResolver':\n'Setează rezolvarea',\n'ignoreUpdate':\n'Ignoră acest lucru și continuă să folosești rezolvarea curenta. Ți se va cere din nou data viitoare.'\n},'invalidResolver':\n{'title':\n'Rezolvare neautorizată',\n'subtitle':\n'Nu ai permisiunea de a seta înregistrările pentru această rezolvare. Va trebui să actualizezi la ultima rezolvare pentru a-ți edita profilul.',\n'action':\n'Actualizează rezolvarea'\n},'migrateProfileSelector':\n{'title':\n'Profil',\n'subtitle':\n'Înregistrările profilului pe fiecare rezolvare nu se potrivesc. Ce set de înregistrari dorești să folosești?',\n'option':\n{'latest':\n'Înregistrările profilului pe noua rezolvare',\n'current':\n'Înregistrările profilului curente',\n'reset':\n'Resetează-ți profilul',\n'resetSubtitle':\n'Sterge toate înregistrările profilului'\n}},'migrateProfileWarning':\n{'title':\n'Migrează profilul',\n'subtitle':\n'Ești pe cale să migrezi înregistrările profilului tău la ultima rezolvare. Acest lucru va șterge definitiv orice înregistrare existentă pe ultima rezolvare și le va înlocui cu înregistrările tale curente.'\n},'migrateRegistry':\n{'title':\n'Registrul este depas",
-    "transaction": "{'extendNames': {'actionValue': 'Extinde înregistrarea', 'costValue': '{{value}} + taxe', 'warning': 'Prelungirea acestui nume nu îți va oferi proprietatea asupra lui'}, 'deleteSubname': {'warning': 'Bună tuturor'}}",
-    "intro": "{'migrateAndUpdateResolver': {'title': 'Acțiune necesară', 'heading': 'Modificările pe care doriți să le salvați în profilul dvs. necesită actualizarea resolverului.', 'link': 'Aflați mai multe despre actualizările resolverului', 'warning': 'Rețineți că dacă anulați acest lucru la orice moment, modificările dvs. nu vor fi salvate.'}, 'syncManager': {'description': 'Sincronizarea managerului te va face noul manager al acestui nume. Managerul curent <b>({{manager}})</b> nu va mai putea face modificări.', 'wrappedWarning': 'Sincronizarea managerului va dezambala de asemenea acest nume. Acest lucru va arde NFT-ul și va reseta orice permisiuni.'}}",
-    "errors": "{'duplicateKey': '{{value}} este o cheie duplicat'}"
+    "input": {
+        "profileEditor": {
+            "tabs": {
+                "avatar": {
+                    "dropdown": {
+                        "selectNFT": "Selectează NFT",
+                        "uploadImage": "Încarcă Imaginea"
+                    },
+                    "nft": {
+                        "title": "Selectează un NFT",
+                        "searchPlaceholder": "Caută un NFT",
+                        "loading": "Se încarcă NFT-urile tale",
+                        "unknown": "NFT necunoscut",
+                        "noNFTs": "Nu s-au găsit NFT-uri pentru această adresă.",
+                        "selected": {
+                            "title": "NFT selectat",
+                            "subtitle": "Ești sigur că vrei să folosești acest NFT?"
+                        },
+                        "noResults": "Nu s-au găsit rezultate."
+                    },
+                    "image": {
+                        "title": "Editează Imaginea",
+                        "upload": {
+                            "title": "Încarcă Avatarul",
+                            "subtitle": "Trebuie să semnezi un mesaj pentru a încărca un avatar. Acest lucru nu va costa nimic.",
+                            "action": "Semnează și Încarcă"
+                        }
+                    }
+                },
+                "general": {
+                    "label": "General",
+                    "name": {
+                        "label": "Pseudonim",
+                        "placeholder": "Ion Popescu"
+                    },
+                    "url": {
+                        "label": "Site web",
+                        "placeholder": "https://ens.domains.ro"
+                    },
+                    "location": {
+                        "label": "Locație",
+                        "placeholder": "Metavers"
+                    },
+                    "description": {
+                        "label": "Biografie scurtă",
+                        "placeholder": "Sunt un fermier de randament din Tennessee rural."
+                    }
+                },
+                "accounts": {
+                    "label": "Conturi",
+                    "addAccount": "Adaugă cont",
+                    "noOptions": "Nu există opțiuni de cont disponibile",
+                    "placeholder": {
+                        "default": "Adaugă numele de utilizator aici",
+                        "com.twitter": "ex. ensdomains.ro",
+                        "com.github": "ex. ensdomains.ro",
+                        "com.discord": "ex. alisha.eth#0001"
+                    }
+                },
+                "address": {
+                    "label": "Adresă",
+                    "addAddress": "Adaugă adresă",
+                    "noOptions": "Nu există opțiuni de adresă disponibile",
+                    "placeholder": {
+                        "default": "Adaugă adresa aici",
+                        "ETH": "0xD9hbQK...ro",
+                        "BNB": "0xD9hbQK...ro",
+                        "BTC": "3FZbgi29...ro",
+                        "LTC": "3FZbgi29...ro",
+                        "SOL": "D4kA7VzHnmV...ro",
+                        "DOT": "1D4kA7VxH...ro",
+                        "DOGE": "DFabcd12...ro"
+                    }
+                },
+                "contentHash": {
+                    "label": "Site web",
+                    "addContentHash": "Adaugă site web descentralizat",
+                    "placeholder": {
+                        "default": "Adaugă url aici",
+                        "ipfs": "ipfs://...ro",
+                        "skynet": "sia://...ro",
+                        "arweave": "ar://...ro",
+                        "swarm": "bzz://...ro",
+                        "onion": "onion3://...ro"
+                    }
+                },
+                "other": {
+                    "label": "Altele",
+                    "addRecord": "Adaugă înregistrare",
+                    "createRecord": "Tastează numele unei înregistrări...",
+                    "placeholder": {
+                        "default": "Adaugă o valoare aici..."
+                    }
+                }
+            },
+            "warningOverlay": {
+                "action": {
+                    "learnMoreResolvers": "Learn more about resolvers",
+                    "updateResolver": "Update resolver",
+                    "setResolver": "Set resolver",
+                    "ignoreUpdate": "Ignore this and continue using your current resolver. You will be asked again next time."
+                },
+                "invalidResolver": {
+                    "title": "Unauthorised resolver",
+                    "subtitle": "You do not have permission to set records for this resolver. You will need to update to the latest resolver to edit your profile.",
+                    "action": "Update resolver"
+                },
+                "migrateProfileSelector": {
+                    "title": "Profile",
+                    "subtitle": "The profile records on each resolver do not match. Which set of records would you like to use?",
+                    "option": {
+                        "latest": "Profile records on new resolver",
+                        "current": "Current profile records",
+                        "reset": "Reset your profile",
+                        "resetSubtitle": "Remove all profile records"
+                    }
+                },
+                "migrateProfileWarning": {
+                    "title": "Migrate profile",
+                    "subtitle": "You are migrating your profile records to the latest resolver. This will permanently clear any existing records on the latest resolver and replace them with your current records."
+                },
+                "migrateRegistry": {
+                    "title": "Registry out of date",
+                    "subtitle": "You will need to migrate the registry before making changes to this name.",
+                    "action": "Migrate"
+                },
+                "noResolver": {
+                    "title": "No resolver set",
+                    "subtitle": "A resolver needs to be set before editing your profile.",
+                    "action": "Update"
+                },
+                "resetProfile": {
+                    "title": "Reset profile",
+                    "subtitle": "You are resetting your profile records. You will lose all existing profile information, such as ETH address, avatar and social records. These can be re-added by editing your profile."
+                },
+                "resolverNotNameWrapperAware": {
+                    "title": "Resolver incompatible",
+                    "subtitle": "Your current resolver is incompatible with wrapped names. You will need to update the resolver before editing your profile.",
+                    "toggle": {
+                        "title": "Transfer current profile",
+                        "subtitle": "Unselecting this will only update your resolver."
+                    }
+                },
+                "resolverOutOfDate": {
+                    "title": "Resolver out of date",
+                    "subtitle": "The resolver is out of date. It’s recommended you update it before editing your profile."
+                },
+                "resolverOutOfSync": {
+                    "title": "Resolver out of sync",
+                    "subtitle": "You are not using the latest public resolver, but you have profile records stored there. It’s recommended that you switch to the latest public resolver before editing your profile."
+                },
+                "transferOrResetProfile": {
+                    "title": "Profile",
+                    "subtitle": "You can transfer your current profile to the new resolver before updating your resolver.",
+                    "toggle": {
+                        "title": "Transfer current profile",
+                        "subtitle": "Unselecting this will only update your resolver."
+                    }
+                },
+                "updateResolverOrResetProfile": {
+                    "title": "Profile",
+                    "subtitle": "You can keep your current profile on the new resolver, or reset it and remove all profile records.",
+                    "toggle": {
+                        "title": "Keep current profile",
+                        "subtitle": "Unselecting this will reset your profile."
+                    }
+                },
+                "links": {
+                    "learnMoreResolvers": "Learn more about resolvers"
+                }
+            },
+            "intro": {
+                "resetProfile": {
+                    "title": "Reset profile",
+                    "description": "This will remove all profile records from the latest resolver and then update the resolver."
+                },
+                "migrateProfile": {
+                    "title": "Migrate profile",
+                    "description": "This will migrate your current profile records to the latest resolver."
+                },
+                "migrateCurrentProfile": {
+                    "title": "Migrate profile",
+                    "description": "This will migrate your current profile records to the latest resolver."
+                }
+            }
+        },
+        "editResolver": {
+            "title": "Edit Resolver",
+            "latestLabel": "Use latest resolver",
+            "etherscan": "BlockExplorer",
+            "latestMessage": "You are on the latest resolver",
+            "customLabel": "Custom resolver",
+            "customPlaceholder": "Enter custom resolver address"
+        },
+        "extendNames": {
+            "title_one": "Extend Name",
+            "title_other": "Extend {{count}} Names",
+            "invoice": {
+                "extension": "{{count}} year extension",
+                "transaction": "Transaction fee",
+                "total": "Estimated total"
+            },
+            "bannerMsg": "Extending for multiple years will save money on network costs by avoiding yearly transactions.",
+            "gasLimitError": "Insufficient funds"
+        },
+        "transferProfile": {
+            "title": "Transfer Profile",
+            "message1": "Before upgrading, you can transfer your current profile if you'd like, otherwise it will be reset when you upgrade.",
+            "message2": "Would you like to transfer your current profile?"
+        },
+        "revokePermissions": {
+            "views": {
+                "revokeWarning": {
+                    "title": "This will make permanent changes",
+                    "subtitle": "Permissions are an advanced feature that make permanent changes to your name.  You will not be able to undo these changes, and they will only be reset if the name expires.",
+                    "subtitle2": "Make sure you are confident using this feature before proceeding. <infoLink>Learn more about permissions</infoLink>"
+                },
+                "revokePCC": {
+                    "title": "Give up ownership",
+                    "subtitle": "This will give ownership of this name to the manager ({{account}}). Unless you are also the manager, you will no longer be able to make changes to this name."
+                },
+                "grantExtendExpiry": {
+                    "title": "Change permissions",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "Grant permission to: Extend expiry"
+                    }
+                },
+                "setExpiry": {
+                    "title": "Set name expiry",
+                    "subtitle": "Set a date when permissions will expire. This date cannot be longer than the expiry of its parent ({{parent}}).",
+                    "subtitleWithCEE": "Set a date when this name will expire. This will replace it’s existing permission expiry ({{expiry}}), and cannot be later than the expiry of its parent ({{parent}}).",
+                    "options": {
+                        "max": "Max",
+                        "custom": "Choose an earlier date"
+                    },
+                    "error": {
+                        "required": "A date is required if a custom date is selected",
+                        "min": "Date must be greater than {{date}}",
+                        "max": "Date must be less than {{date}}"
+                    }
+                },
+                "revokeAdditional": {
+                    "title": "Revoke permissions",
+                    "subtitle": "Would you like to revoke permissions on this name before giving up ownership? This can only be done now.",
+                    "action": {
+                        "title": "Revoke additional permissions",
+                        "description": "Unless you are also the manager, you will not be able to revoke additional permissions after this."
+                    }
+                },
+                "revokeUnwrap": {
+                    "title": "Revoke permissions",
+                    "subtitle": "You are required to revoke this permission before others can be revoked. This prevents permissions from being removed.",
+                    "fuses": {
+                        "CANNOT_UNWRAP": "Revoke permission to: Unwrap this name"
+                    }
+                },
+                "revokePermissions": {
+                    "title": "Revoke permissions",
+                    "unwrapSubtitle": "Select this to enable the others",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "Grant permission to: Extend expiry.",
+                        "CANNOT_UNWRAP": "Revoke permission to: Unwrap this name",
+                        "CANNOT_CREATE_SUBDOMAIN": "Revoke permission to: Create subdomains",
+                        "CANNOT_TRANSFER": "Revoke permission to: Send this name",
+                        "CANNOT_SET_RESOLVER": "Revoke permission to: Set resolver",
+                        "CANNOT_SET_TTL": "Revoke permission to: Set TTL",
+                        "CANNOT_BURN_FUSES": "Revocă permisiunea pentru: Schimbă permisiunile",
+                        "CANNOT_APPROVE": "Revoke permission to: Change renewal manager"
+                    }
+                },
+                "revokeChangeFuses": {
+                    "title": "Revoke permissions",
+                    "subtitle": "By revoking this permission you are permanently losing the ability to change any remaining fuses. This will only be reset if the name expires.",
+                    "fuses": {
+                        "CANNOT_BURN_FUSES": "Revocă permisiunea pentru: Schimbă permisiunile"
+                    }
+                },
+                "revokeChangeFusesWarning": {
+                    "title": "Permisiunile rămase vor fi blocate",
+                    "subtitle": "Permisiunile și siguranțele personalizate vor fi blocate permanent în starea lor actuală după ce ‘schimbă permisiunile’ este revocată. Acest lucru va fi resetat doar dacă numele expiră."
+                }
+            },
+            "action": {
+                "revoke": "Revocă"
+            }
+        },
+        "unknownLabels": {
+            "title": "Confirmă-ți numele",
+            "subtitle": "Unele dintre etichetele din numele tău nu sunt cunoscute. Te rugăm să le introduci pentru a continua."
+        },
+        "deleteEmancipatedSubnameWarning": {
+            "title": "Acest subnume nu poate fi recreat",
+            "message": "Ștergerea acestui subnume îl va împiedica să fie folosit sau recreat până când va expira{{date}}. Acest lucru nu poate fi anulat deoarece permisiunile de control părinte au fost revocate."
+        },
+        "setToMEP1002Hexagon": {
+            "title": "Setează numele la MEP1002 Hexagon",
+            "subtitle": "Acest lucru va seta numele la harta publică MEP1002 Hexagon.",
+            "h3index": "Indexul H3 al Hexagonului"
+        },
+        "mintToMEP1002Hexagon": {
+            "title": "Minte MEP1002 Hexagon",
+            "subtitle": "Acest lucru va crea o hartă publică MEP1002 Hexagon.",
+            "h3index": "Indexul H3 al Hexagonului"
+        }
+    },
+    "transaction": {
+        "extendNames": {
+            "actionValue": "Extinde înregistrarea",
+            "costValue": "{{value}} + fees",
+            "warning": "Extending this name will not give you ownership of it"
+        },
+        "deleteSubname": {
+            "warning": "Salutare tuturor"
+        }
+    },
+    "intro": {
+        "migrateAndUpdateResolver": {
+            "title": "Acțiune necesară",
+            "heading": "Modificările pe care doriți să le salvați în profilul dvs. necesită actualizarea resolver-ului dvs.",
+            "link": "Află mai multe despre actualizările resolver-ului",
+            "warning": "Rețineți că dacă anulați acest lucru în orice moment, modificările dvs. nu vor fi salvate."
+        },
+        "syncManager": {
+            "description": "Sincronizarea managerului te va face noul manager al acestui nume. Managerul curent <b>({{manager}})</b> nu va mai putea face modificări.",
+            "wrappedWarning": "Sincronizarea managerului va dezambala, de asemenea, acest nume. Acest lucru va distruge NFT-ul și va reseta toate permisiunile."
+        }
+    },
+    "errors": {
+        "duplicateKey": "{{value}} este o cheie duplicată"
+    }
 }

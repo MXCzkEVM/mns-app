@@ -1,17 +1,385 @@
 {
-    "meta": "{'title': '{{name}} pe MNS', 'description': \"Profilul {{name}} pe Serviciul de Nume MXC\"}",
+    "meta": {
+        "title": "{{name}} on MNS",
+        "description": "{{name}}'s profile on the MXC Name Service"
+    },
     "title": "Profil",
-    "yourWallet": "Portofelul tău",
-    "yourProfile": "Profilul tău",
+    "yourWallet": "Your wallet",
+    "yourProfile": "Your profile",
     "accounts": "Conturi",
     "addresses": "Adrese",
-    "otherRecords": "Alte Înregistrări",
-    "editProfile": "Editează Profilul",
+    "otherRecords": "Other Records",
+    "editProfile": "Edit Profil",
     "ownership": "Proprietate",
-    "viewDetails": "Vizualizează Detalii",
-    "banner": "{'available': {'title': '{{name}} este disponibil', 'description': 'Acest nume a expirat la data de <strong>{{date}}</strong>. Click aici pentru a vizualiza pagina de înregistrare.'}}",
-    "tabs": "{'profile': {'name': 'Profil', 'actions': {'setAsPrimaryName': {'label': 'Setează ca nume principal', 'title': 'Setează-ți numele principal', 'description': 'Pentru a seta acest nume ca numele tău principal, adresa ETH trebuie să corespundă cu această adresă.'}, 'setToMEP1002Hexagon': {'label': 'Setează la MEP1002 Hexagon', 'title': 'Setează la MEP1002 Hexagon', 'description': 'Setează acest nume la MEP1002 Hexagon, trebuie să fii deținătorul Tokenului de Nume MEP1002 Hexagon'}, 'mintToMEP1002Hexagon': {'label': 'Emite MEP1002 Hexagon', 'title': 'Emite MEP1002 Hexagon', 'description': 'Emite acest MEP1002 Hexagon'}, 'deleteSubname': {'label': 'Șterge subnumele'}, 'extend': {'label': 'Extinde numele'}, 'editProfile': {'label': 'Editează profilul'}, 'reclaim': {'label': 'Recrează numele', 'warning': 'Acest subnume a expirat și nu este deținut. Poți recrea acest subnume.'}}, \n'warnings': {'wrappedDNS': 'Numele DNS pot fi revendicate de proprietarul DNS în orice moment. Nu cumpărați nume DNS.', \n'homoglyph': \"Acest nume conține caractere non-ASCII. Pot exista caractere care arată identic sau foarte similar cu alte caractere, care ar putea fi folosite pentru a înșela cititorii. <a>Aflați mai multe despre homoglifi</a>\"}}, \n'records': {'name':'Înregistrări'},\n'subnames':{'name':'Subnume'},\n'permissions':{'name':'Permisiuni',\n'parentUnlockedWarning':'<strong>Nu poți schimba permisiunile pe acest nume.</strong> Trebuie mai întâi să revoci ‘dezambalează acest nume’ pe părinte ({{parent}}). Click aici pentru a vizualiza permisiunile părintelui.',\n'revokedLabel':'Revocat {{date}}',\n'grantedLabel':'Acordat {{date}}',\n'role':{'manager':'manager','owner':'proprietar','parent':'părinte'},\n'ownership':{'title':'Permisiuni de Proprietate',\n'parentCanControl':{'label':'Acest nume poate fi controlat de părintele său (<parentLink>{{parent}}</parentLink>)',\n'list':{'title':'Proprietarul numelui părinte poate:',\n'item1':'Controla și modifica setările și înregistrările',\n'item2':'Recupera sau reatribui proprietatea acestui nume',\n'item3':'Elimina acest nume'}},\n'parentCannotControl':{'label':\"Acest nume nu poate fi controlat de părintele său (<parentLink>{{parent}}</parentLink>)\",\n'sublabel':\"Proprietarul numelui părinte nu poate controla, modifica, elimina sau recupera proprietatea acestui nume.\",\n'list':{'title':\"Proprietarul numelui va reține proprietatea decât dacă se întâmplă una dintre următoarele:\",\n'item1':\"Numele expiră pe {{date}} (poate fi extins)\",\n'item2':\"Numele părintelui expiră pe {{date}}\",\n'item3':\"Proprietatea numelui este trimisă la o altă adresă\"}},\n'parentCanChange':{'label':\"Părintele acestui nume (<parentLink>{{parent}}</parentLink>) poate schimba permisiunile\",\n'list':{'title':\"Părintele poate:\",\n'item1':\"Revoca permisiunile\",\n'item2':\"Schimbarea sau arderea siguranțelor personalizate\"}},\n'ownerCanChange':{'label':\"Proprietarul acestui nume poate schimba permisiunile\",\n'list':{'title':\"Proprietarul poate:\",\n'item1':\"Revoca permisiunile\",\n'item2':\"Schimbarea sau arderea siguranțelor personalizate\"}},\n'ownerCannotChange':{'label':\"Proprietarul acestui nume nu poate schimba permisiunile\",\n'list':{'title':\"Proprietarul nu poate:\",\n'item1':\"Revoca permisiunile\",\n'item2':\"Schimbarea sau",
-    "details": "{'title': 'Detalii Nume', 'notWrapped': 'Nu este învelit', 'sendName': {'title': 'Trimite Nume', 'description': 'Trimiterea unui nume va oferi noii adrese controlul asupra acestuia', 'learnMore': 'Aflați mai multe despre proprietatea numelui.', 'makeOwner': 'Fă proprietar', 'makeOwnerDescription': 'Proprietarul poate trimite unui nou proprietar și poate schimba managerul', 'makeManager': 'Fă manager', 'makeManagerDescription': 'Managerul poate schimba și seta înregistrările.', 'inputPlaceholder': 'Introduceți o adresă Ethereum sau un nume MNS', 'transferSubname': 'Transferă Nume', 'transferController': 'Transferă Controlor'}, 'wrap': {'startTitle': 'Actualizează-ți numele', 'resumeTitle': 'Continuă actualizarea', 'completeTitle': 'Actualizare completă', 'description': '\"Învelirea\" sau actualizarea numelui tău îi conferă noi funcționalități.', 'startLabel': 'Actualizează', 'resumeLabel': 'Continuă Actualizarea', 'boxTitle': 'Deblochează noi funcționalități', 'boxDescription': '\"Învelirea\" numelui tău deblochează ultimele funcționalități ale MNS'}, \t'descriptions': {'owner': \"Deține și controlează numele\", \t'controller':\"Controlează toate înregistrările numelui\", \t'registrant':\"Proprietarul NFT-ului\", \t'dnsOwner':\"Proprietarul numelui DNS\"}, \t'tabs':{'records':{'label':'Înregistrări','text':'Text','contentHash':'Hash Conținut','noContentHash':'Fără Hash Conținut','editRecords':'Editează Înregistrările','noAbi':'Fără ABI','abi':'ABI','editRecordsDisabled':'Rezolvatorul curent nu este compatibil cu numele învelite'},'subnames':{'label':'Subnume','loading':'Se încarcă subnumele','empty':'Nu au fost adaugate subnume','noResults':'Niciun rezultat','noMoreResults':'Nu mai sunt rezultate','addSubname':{'title':'Subnumele vă permit să creați nume suplimentare din numele dvs. existent.','learn':'Aflați despre subnume','action':'Subnume nou','dialog':{'title':'Creează Subnume','error':{'invalidCharacters':'Conține caractere invalide','mustUseLowercase':'Trebuie să folosiți litere mici','alreadyExists':'Numele există deja','nameTooLong':'Numele este prea lung','pccBurned':'Numele este blocat până la {{date}}'}}}}}}",
-    "advancedEditor": "{'title': \"Înregistrările lui {{name}}\", 'tabs': {'text': {'label': 'Text', 'addRecord': 'Adaugă înregistrare', 'createRecord': 'Scrie un nume de înregistrare...', 'placeholder': {'default': 'Adaugă o valoare aici...'}}, 'address': {'label': 'Adresă', 'addRecord': 'Adaugă adresă', 'noOptions': 'Nu există opțiuni de adresă disponibile', 'placeholder': {'default': 'Adaugă adresa aici...'}}, 'other': {'label': 'Altele', 'labelDisabled': 'Nu este suportat de resolverul curent', 'contentHash': {'label': 'Hash conținut', 'placeholder': 'de ex. ipfs://'}, 'publicKey': {'label': 'Cheie publică', 'placeholder': 'de ex. pub_1231231231231'}, 'abi': {'label': 'ABI', 'placeholder': 'Introduceți un ABI aici...'}}}}",
-    "errors": "{'invalidName': 'Acest nume este invalid.', 'invalidAddress': 'Nu este o adresă validă', 'expiringSoon': 'Perioada de grație pentru acest nume se încheie pe {{date}}. Dacă nu este prelungită înainte de această dată, va deveni disponibil pentru înregistrare.', 'hasExpired': '{{ name }} a expirat', 'ownerManagerChoice': 'Trebuie să trimiteți proprietarul sau managerul', 'unknown': 'Eroare necunoscută', 'notMigrated': 'Acest nume nu a fost migrat la noul registru.', 'featureNotAvailable': 'Unele funcții nu sunt încă disponibile, dar puteți totuși ', 'featureNotAvailableLink': 'vizualiza acest nume în aplicația veche.', 'migrationNotAvailable': 'Migrarea la noul registru nu este încă disponibilă, dar puteți totuși ', 'migrationNotAvailableLink': 'migrați acest nume în aplicația veche.', 'addressLength': 'Dacă este adresă, ar trebui să aibă 42 de caractere', 'unsupportedTLD': 'Acest TLD nu este suportat', 'keyInUse': '{{value}} este deja utilizat', 'hasSubnames': 'Acest nume are subnume', 'permissionRevoked': 'Acest nume a revocat permisiunile necesare pentru a efectua această acțiune.', 'invalidJSON': 'JSON invalid'}"
+    "viewDetails": "View Details",
+    "banner": {
+        "available": {
+            "title": "{{name}} is available",
+            "description": "This name expired on <strong>{{date}}</strong>. Click here to view the registration page."
+        }
+    },
+    "tabs": {
+        "profile": {
+            "name": "Profil",
+            "actions": {
+                "setAsPrimaryName": {
+                    "label": "Set as primary name",
+                    "title": "Set your primary name",
+                    "description": "To set your primary name to this name, the ETH address must match this address."
+                },
+                "setToMEP1002Hexagon": {
+                    "label": "Set to MEP1002 Hexagon",
+                    "title": "Set to MEP1002 Hexagon",
+                    "description": "Set this name to MEP1002 Hexagon, you must be the holder of MEP1002 Hexagon Naming Token"
+                },
+                "mintToMEP1002Hexagon": {
+                    "label": "Mint MEP1002 Hexagon",
+                    "title": "Mint MEP1002 Hexagon",
+                    "description": "Mint this MEP1002 Hexagon"
+                },
+                "deleteSubname": {
+                    "label": "Delete subname"
+                },
+                "extend": {
+                    "label": "Extend name"
+                },
+                "editProfile": {
+                    "label": "Edit profile"
+                },
+                "reclaim": {
+                    "label": "Recreate name",
+                    "warning": "This subname has expired and is not owned. You can recreate this subname."
+                }
+            },
+            "warnings": {
+                "wrappedDNS": "DNS names can be reclaimed by the DNS owner at any time. Do not purchase DNS names.",
+                "homoglyph": "This name contains non-ASCII characters. There may be characters that look identical or very similar to other characters, which could be used to deceive readers. <a>Learn more about homoglyphs</a>"
+            }
+        },
+        "records": {
+            "name": "Records"
+        },
+        "subnames": {
+            "name": "Subnames"
+        },
+        "permissions": {
+            "name": "Permissions",
+            "parentUnlockedWarning": "<strong>You cannot change permissions on this name.</strong> You must first revoke ‘unwrap this name’ on the parent ({{parent}}). Click here to view the parent’s permissions.",
+            "revokedLabel": "Revoked {{date}}",
+            "grantedLabel": "Granted {{date}}",
+            "role": {
+                "manager": "manager",
+                "owner": "owner",
+                "parent": "parent"
+            },
+            "ownership": {
+                "title": "Proprietate Permissions",
+                "parentCanControl": {
+                    "label": "This name can be controlled by its parent (<parentLink>{{parent}}</parentLink>)",
+                    "list": {
+                        "title": "The owner of the parent name can:",
+                        "item1": "Control and modify the settings and records",
+                        "item2": "Retake or reassign ownership of this name",
+                        "item3": "Remove this name"
+                    }
+                },
+                "parentCannotControl": {
+                    "label": "This name cannot be controlled by its parent (<parentLink>{{parent}}</parentLink>)",
+                    "sublabel": "The owner of the parent name cannot control, modify, remove or retake ownership of this name.",
+                    "list": {
+                        "title": "The name owner will retain ownership unless one of the following happens:",
+                        "item1": "The name expires on {{date}} (can be extended)",
+                        "item2": "The parent name expires on {{date}}",
+                        "item3": "Proprietate of the name is sent to another address"
+                    }
+                },
+                "parentCanChange": {
+                    "label": "The parent of this name (<parentLink>{{parent}}</parentLink>) can change permissions",
+                    "list": {
+                        "title": "The parent can:",
+                        "item1": "Revoke permissions",
+                        "item2": "Change or burn custom fuses"
+                    }
+                },
+                "ownerCanChange": {
+                    "label": "The owner of this name can change permissions",
+                    "list": {
+                        "title": "The owner can:",
+                        "item1": "Revoke permissions",
+                        "item2": "Change or burn custom fuses"
+                    }
+                },
+                "ownerCannotChange": {
+                    "label": "The owner of this name cannot change permissions",
+                    "list": {
+                        "title": "The owner cannot:",
+                        "item1": "Revoke permissions",
+                        "item2": "Change or burn custom fuses"
+                    }
+                },
+                "unwrapWarning": {
+                    "message": "Unwrap permissions must be revoked on the parent (<strong>{{parent}}</strong>) before giving up parent control.<br> <parentLink>Go to parent permissions</parentLink>"
+                },
+                "action": {
+                    "giveUpControl": "Give up parent control",
+                    "revokePermission": "Revoke permission"
+                }
+            },
+            "expiry": {
+                "permissions": {
+                    "canExtendExpiry": {
+                        "label": "Can extend expiry",
+                        "description": "This names permission expiry can be extended by the {{managerOrOwner}}.",
+                        "description_date": "This names permission expiry ({{date}}) can be extended by the {{managerOrOwner}}."
+                    },
+                    "cannotExtendExpiry": {
+                        "label": "Cannot extend expiry",
+                        "description": "This names permission expiry cannot be extended by the manager.",
+                        "description_date": "This names permission expiry ({{date}}) cannot be extended by the manager."
+                    }
+                },
+                "manager": "manager",
+                "owner": "owner",
+                "action": {
+                    "changePermissions": "Change permissions"
+                }
+            },
+            "nameChangePermissions": {
+                "title": "Name Change Permissions",
+                "subtitle": {
+                    "parent-can-change": "The parent of this name (<parentLink>{{parent}}</parentLink>) can change settings on this name.",
+                    "owner-can-change": "The owner of this name can change settings on this name."
+                },
+                "permissions": {
+                    "canUnwrap": {
+                        "label": "Can unwrap this name",
+                        "description": "The {{owner}} of this name can unwrap this name."
+                    },
+                    "cannotUnwrap": {
+                        "label": "Cannot unwrap this name",
+                        "description": "The {{owner}} of this name cannot unwrap this name."
+                    },
+                    "canCreateSubnames": {
+                        "label": "Can create subnames",
+                        "description": "The {{owner}} of this name can create new subnames."
+                    },
+                    "cannotCreateSubnames": {
+                        "label": "Cannot create subnames",
+                        "description": "The {{owner}} of this name cannot create new subnames."
+                    },
+                    "canSend": {
+                        "label": "Can send this name",
+                        "description": "The {{owner}} of this name can send it to a new owner."
+                    },
+                    "cannotSend": {
+                        "label": "Cannot send this name",
+                        "description": "The {{owner}} of this name cannot send it to a new owner."
+                    },
+                    "canSetResolver": {
+                        "label": "Can set the resolver",
+                        "description": "The {{owner}} of this name can set and change the resolver."
+                    },
+                    "cannotSetResolver": {
+                        "label": "Cannot set the resolver",
+                        "description": "The {{owner}} of this name cannot set and change the resolver."
+                    },
+                    "canSetTTL": {
+                        "label": "Can set TTL",
+                        "description": "The {{owner}} of this name can set and change the TTL."
+                    },
+                    "cannotSetTTL": {
+                        "label": "Cannot set TTL",
+                        "description": "The {{owner}} of this name cannot set and change the TTL."
+                    },
+                    "canApprove": {
+                        "label": "Can change renewal manager",
+                        "description": "The owner of this name can change the manager approved to renew subnames."
+                    },
+                    "cannotApprove": {
+                        "label": "Cannot change renewal manager",
+                        "description": "The owner of this name cannot change the manager approved to renew subnames."
+                    }
+                },
+                "action": {
+                    "changePermissions": "Change permissions"
+                }
+            }
+        },
+        "fuses": {
+            "name": "Fuses"
+        },
+        "more": {
+            "name": "More",
+            "resolver": {
+                "label": "Resolver",
+                "custom": "Custom",
+                "latest": "Latest",
+                "outdated": "Outdated",
+                "version": "Version",
+                "etherscan": "BlockExplorer"
+            },
+            "fuses": {
+                "label": "Fuses",
+                "info": "You must burn 'Can unwrap' in order to burn other fuses",
+                "callToAction": "Please wrap your name to unlock this feature",
+                "burnFormTitle": "Burn Permissions",
+                "burned": "Burned",
+                "permissions": {
+                    "label": "Permissions",
+                    "warning": "Fuses can be changed by the parent",
+                    "CAN_DO_EVERYTHING": "Can do everything",
+                    "CANNOT_BURN_FUSES": "Can burn fuses",
+                    "CANNOT_CREATE_SUBDOMAIN": "Can create subdomains",
+                    "CANNOT_SET_RESOLVER": "Can set resolver",
+                    "CANNOT_SET_TTL": "Can set TTL",
+                    "CANNOT_TRANSFER": "Can transfer",
+                    "CANNOT_UNWRAP": "Can unwrap",
+                    "PARENT_CANNOT_CONTROL": "Parent can control",
+                    "CAN_EXTEND_EXPIRY": "Cannot extend expiry",
+                    "IS_DOT_ETH": "Is not .eth"
+                }
+            },
+            "ownership": {
+                "label": "Proprietate",
+                "refreshDNS": "Refresh DNS",
+                "dnsOwnerWarning": {
+                    "isDnsOwner": "You cannot make changes to this name because you are the DNS Owner, but not the Manager. You can sync the manager to fix this.",
+                    "isManager": "You are the Manager but not DNS Owner of this name. DNS names can be reclaimed by the DNS Owner at any time. You can send this name to the Owner, or update the DNS record to match.",
+                    "refreshDNS": "Refresh DNS",
+                    "syncManager": "Sync manager"
+                }
+            },
+            "token": {
+                "label": "Token",
+                "hex": "hex",
+                "decimal": "decimal"
+            },
+            "misc": {
+                "registered": "Registered",
+                "expires": "Expires"
+            }
+        }
+    },
+    "details": {
+        "title": "Name Details",
+        "notWrapped": "Not wrapped",
+        "sendName": {
+            "title": "Send Name",
+            "description": "Sending a name will give the new address control over it",
+            "learnMore": "Learn more about name ownership.",
+            "makeOwner": "Make owner",
+            "makeOwnerDescription": "The owner can send to a new owner and change the manager",
+            "makeManager": "Make manager",
+            "makeManagerDescription": "The manager can change and set records.",
+            "inputPlaceholder": "Enter an Ethereum address or MNS name",
+            "transferSubname": "Transfer Name",
+            "transferController": "Transfer Controller"
+        },
+        "wrap": {
+            "startTitle": "Upgrade your name",
+            "resumeTitle": "Resume your upgrade",
+            "completeTitle": "Upgrade complete",
+            "description": "Upgrading or \"wrapping\" your name gives it new features.",
+            "startLabel": "Upgrade",
+            "resumeLabel": "Resume Upgrade",
+            "boxTitle": "Unlock new features",
+            "boxDescription": "Upgrading your name unlocks the latest functionality of MNS"
+        },
+        "descriptions": {
+            "owner": "Owns and controls the name",
+            "controller": "Controls all the records of the name",
+            "registrant": "The owner of the NFT",
+            "dnsOwner": "Owner of the DNS name"
+        },
+        "tabs": {
+            "records": {
+                "label": "Records",
+                "text": "Text",
+                "contentHash": "Content Hash",
+                "noContentHash": "No Content Hash",
+                "editRecords": "Edit Records",
+                "noAbi": "No ABI",
+                "abi": "ABI",
+                "editRecordsDisabled": "Current resolver is not compatible with wrapped names"
+            },
+            "subnames": {
+                "label": "Subnames",
+                "loading": "Loading subnames",
+                "empty": "No subnames have been added",
+                "noResults": "No results",
+                "noMoreResults": "No more results",
+                "addSubname": {
+                    "title": "Subnames let you create additional names from your existing name.",
+                    "learn": "Learn about subnames",
+                    "action": "New subname",
+                    "dialog": {
+                        "title": "Create Subname",
+                        "error": {
+                            "invalidCharacters": "Contains invalid characters",
+                            "mustUseLowercase": "Must use lowercase letters",
+                            "alreadyExists": "Name already exists",
+                            "nameTooLong": "Name is too long",
+                            "pccBurned": "Name is locked until {{date}}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "advancedEditor": {
+        "title": "{{name}}'s records",
+        "tabs": {
+            "text": {
+                "label": "Text",
+                "addRecord": "Add record",
+                "createRecord": "Type a record name...",
+                "placeholder": {
+                    "default": "Add a value here..."
+                }
+            },
+            "address": {
+                "label": "Address",
+                "addRecord": "Add address",
+                "noOptions": "No address options available",
+                "placeholder": {
+                    "default": "Add address here..."
+                }
+            },
+            "other": {
+                "label": "Other",
+                "labelDisabled": "Not supported by current resolver",
+                "contentHash": {
+                    "label": "Content Hash",
+                    "placeholder": "e.g. ipfs://"
+                },
+                "publicKey": {
+                    "label": "Public Key",
+                    "placeholder": "e.g. pub_1231231231231"
+                },
+                "abi": {
+                    "label": "ABI",
+                    "placeholder": "Enter an ABI here..."
+                }
+            }
+        }
+    },
+    "errors": {
+        "invalidName": "This name is invalid.",
+        "invalidAddress": "Not a valid address",
+        "expiringSoon": "The grace period for this name ends on {{date}}. If it isn’t extended before this date, it will become available for registration.",
+        "hasExpired": "{{ name }} has expired",
+        "ownerManagerChoice": "Must send owner or manager",
+        "unknown": "Unknown error",
+        "notMigrated": "This name is not migrated to the new registry.",
+        "featureNotAvailable": "Some features are not yet available, but you can still",
+        "featureNotAvailableLink": "view this name in the old app.",
+        "migrationNotAvailable": "Migration to the new registry is not available yet, but you can still",
+        "migrationNotAvailableLink": "migrate this name in the old app.",
+        "addressLength": "If address it should be 42 characters long",
+        "unsupportedTLD": "This TLD is not supported",
+        "keyInUse": "{{value}} is already in use",
+        "hasSubnames": "This name has subnames",
+        "permissionRevoked": "This name has revoked the permissions needed to perform this action.",
+        "invalidJSON": "Invalid JSON"
+    }
 }

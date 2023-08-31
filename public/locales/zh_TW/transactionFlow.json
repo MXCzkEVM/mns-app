@@ -1,6 +1,332 @@
 {
-    "input": "{'profileEditor': {'tabs': {'avatar': {'dropdown': {'selectNFT': '選擇 NFT', 'uploadImage': '上傳圖片'}, 'nft': {'title': '選擇一個 NFT', 'searchPlaceholder': '搜索 NFT', 'loading': '正在加載您的 NFT', 'unknown': '未知的 NFT', 'noNFTs': '此地址未找到任何 NFT。', 'selected': {'title': '已選擇的 NFT', 'subtitle': '您確定要使用此 NFT 嗎？'}, 'noResults': '未找到結果。'}, 'image': {'title': '編輯圖片', 'upload': {'title': '上傳頭像', 'subtitle': \"您需要簽署一條消息才能上傳頭像。這不會產生任何費用。\", 'action': '簽名並上傳'}}}, \n'general': {'label': '通用', \n'name': {'label': '暱稱', \n'placeholder': \n'John Smith'}, \n'url':\n{'label':\n'網站',\n'placeholder':\n'https://ens.domains'},\n'location':\n{'label':\n'位置',\n'placeholder':\n'Metaverse'},\n'description':\n{'label':\n'簡介',\n'placeholder':\n\"我是來自田納西鄉村的收益農民。\"}},\n'accounts':\n{'label':\n'賬戶',\n'addAccount':\n'添加賬戶',\n'noOptions':\n'沒有賬戶選項可用',\n'placeholder':\n{'default':\n'在此處添加用戶名',\n'com.twitter':\n'e.g. ensdomains',\n'com.github':\n'e.g. ensdomains',\n'com.discord':\n'e.g. alisha.eth#0001'}},\n'address':\n{'label':\n'地址',\n'addAddress':\n'添加地址',\n'noOptions':\n'沒有地址選項可用',\n'placeholder':\n{'default':\n'在此處添加地址',\n'ETH':'0xD9hbQK...',\n'BTC':'3FZbgi29...',\n'LTC':'3FZbgi29...',\n'SOL':'D4kA7VzHnmV...',\n'DOT':'1D4kA7VxH...',\n'DOGE':'DFabcd12...'}},\n'records':{'label':'記錄','addRecord':'添加記錄','createRecord':'輸入記錄名稱...','placeholder':{'default':'在此處添加值...'}},\n'intro':{'resetProfile':{'title':'重置個人資料','description':'這將從最新的解析器中刪除所有個人資料記錄，然後更新解析器。'},\n'migrateProfile':{'title':'遷移個人資料','description':'這將把您當前的個人資料記錄遷移到最新的解析器。'},\n'migrateCurrentProfile':{'title':'遷移個人資料','description':'這將把您當前的個人資料記錄遷移到最新的解析器。'}},\n'transferProfile':{'title':'轉移個人資料','message1':\"在升級之前，如果您願意，可以轉移您當前的個人資料，否則在您升級時它將被重置。\",'message2':'您想轉移您當前的個人資料嗎？'},\n'revokePermissions':{'views':{'revokeWarning':{'title':'這將做出永久性變更','subtitle':'權限是一種高級功能，可以對您的名稱做出永久性變更。 您將無法撤消這些變更，只有在名稱到期時才會重置。','subtitle2':'在繼續操作之前，請確保你有足夠的信心使用此功能。<infoLink>了解更多關於權限</infoLink>'},'revokePCC':{'title':'放棄所有權','subtitle':'這",
-    "transaction": "{'extendNames': {'actionValue': '延長註冊', 'costValue': '{{value}} + 費用', 'warning': '延長此名稱並不會讓你擁有它'}, 'deleteSubname': {'warning': '你好在那裡'}}",
-    "intro": "{'migrateAndUpdateResolver': {'title': '需要採取行動', 'heading': '您想要保存到個人資料的編輯需要您升級您的解析器。', 'link': '了解更多關於解析器升級', 'warning': '請注意，如果您在任何時候取消此操作，您的變更將不會被保存。'}, 'syncManager': {'description': '同步管理員將使您成為此名稱的新管理員。當前的管理員<b>({{manager}})</b>將無法進行更改。', 'wrappedWarning': '同步管理員也將解包此名稱。這將燒毀NFT並重置所有權限。'}}",
-    "errors": "{'duplicateKey': '{{value}} 是重複的鍵'}"
+    "input": {
+        "profileEditor": {
+            "tabs": {
+                "avatar": {
+                    "dropdown": {
+                        "selectNFT": "選擇 NFT",
+                        "uploadImage": "上傳圖片"
+                    },
+                    "nft": {
+                        "title": "選擇一個 NFT",
+                        "searchPlaceholder": "搜尋一個 NFT",
+                        "loading": "載入您的NFTs",
+                        "unknown": "未知的 NFT",
+                        "noNFTs": "此地址未找到NFTs。",
+                        "selected": {
+                            "title": "選定的 NFT",
+                            "subtitle": "您確定要使用這個NFT嗎？"
+                        },
+                        "noResults": "未找到結果。"
+                    },
+                    "image": {
+                        "title": "編輯圖片",
+                        "upload": {
+                            "title": "上傳頭像",
+                            "subtitle": "您需要簽署一條訊息以上傳頭像。這不會產生任何網路費用。",
+                            "action": "簽署並上傳"
+                        }
+                    }
+                },
+                "general": {
+                    "label": "一般",
+                    "name": {
+                        "label": "暱稱",
+                        "placeholder": "約翰·史密斯"
+                    },
+                    "url": {
+                        "label": "網站",
+                        "placeholder": "https://ens.domains"
+                    },
+                    "location": {
+                        "label": "位置",
+                        "placeholder": "元宇宙"
+                    },
+                    "description": {
+                        "label": "簡短介紹",
+                        "placeholder": "我是來自田納西鄉下的收益農民。"
+                    }
+                },
+                "accounts": {
+                    "label": "帳戶",
+                    "addAccount": "新增帳戶",
+                    "noOptions": "沒有帳戶選項可用",
+                    "placeholder": {
+                        "default": "在此處添加用戶名",
+                        "com.twitter": "例如，ensdomains",
+                        "com.github": "例如，ensdomains",
+                        "com.discord": "例如，alisha.eth#0001"
+                    }
+                },
+                "address": {
+                    "label": "地址",
+                    "addAddress": "新增地址",
+                    "noOptions": "沒有可用的地址選項",
+                    "placeholder": {
+                        "default": "在此處添加地址",
+                        "ETH": "0xD9hbQK...",
+                        "BNB": "0xD9hbQK...",
+                        "BTC": "3FZbgi29...",
+                        "LTC": "3FZbgi29...",
+                        "SOL": "D4kA7VzHnmV...",
+                        "DOT": "1D4kA7VxH...",
+                        "DOGE": "DFabcd12..."
+                    }
+                },
+                "contentHash": {
+                    "label": "網站",
+                    "addContentHash": "新增去中心化網站",
+                    "placeholder": {
+                        "default": "在此處添加網址",
+                        "ipfs": "ipfs://...",
+                        "skynet": "sia://...",
+                        "arweave": "ar://...",
+                        "swarm": "bzz://...",
+                        "onion": "onion3://..."
+                    }
+                },
+                "other": {
+                    "label": "其他",
+                    "addRecord": "新增記錄",
+                    "createRecord": "輸入記錄名稱...",
+                    "placeholder": {
+                        "default": "在此處添加一個值..."
+                    }
+                }
+            },
+            "warningOverlay": {
+                "action": {
+                    "learnMoreResolvers": "了解更多關於解析器",
+                    "updateResolver": "更新解析器",
+                    "setResolver": "設定解析器",
+                    "ignoreUpdate": "忽略此事並繼續使用您目前的解析器。下次會再次詢問您。"
+                },
+                "invalidResolver": {
+                    "title": "未經授權的解析器",
+                    "subtitle": "您無權為此解析器設定記錄。您需要更新至最新的解析器才能編輯您的個人資料。",
+                    "action": "更新解析器"
+                },
+                "migrateProfileSelector": {
+                    "title": "個人資料",
+                    "subtitle": "每個解析器上的個人資料記錄不符。您想使用哪一組記錄？",
+                    "option": {
+                        "latest": "新解析器上的個人資料記錄",
+                        "current": "當前資料記錄",
+                        "reset": "重設您的個人資料",
+                        "resetSubtitle": "刪除所有個人資料記錄"
+                    }
+                },
+                "migrateProfileWarning": {
+                    "title": "遷移個人資料",
+                    "subtitle": "您正在將您的個人資料記錄遷移到最新的解析器。這將永久清除最新解析器上的任何現有記錄，並用您當前的記錄替換它們。"
+                },
+                "migrateRegistry": {
+                    "title": "登記資訊過期",
+                    "subtitle": "您需要在對此名稱進行更改之前遷移註冊表。",
+                    "action": "遷移"
+                },
+                "noResolver": {
+                    "title": "未設定解析器",
+                    "subtitle": "在編輯您的個人資料之前，需要設定一個解析器。",
+                    "action": "更新"
+                },
+                "resetProfile": {
+                    "title": "重設個人資料",
+                    "subtitle": "您正在重設您的個人資料記錄。您將失去所有現有的個人資料信息，如ETH地址、頭像和社交記錄。這些可以通過編輯您的個人資料重新添加。"
+                },
+                "resolverNotNameWrapperAware": {
+                    "title": "解決不相容問題",
+                    "subtitle": "您當前的解析器與包裝名稱不相容。您需要在編輯個人資料之前更新解析器。",
+                    "toggle": {
+                        "title": "轉移當前資料檔",
+                        "subtitle": "取消選取此項將只更新您的解析器。"
+                    }
+                },
+                "resolverOutOfDate": {
+                    "title": "解析器過期",
+                    "subtitle": "解析器已過期。建議您在編輯個人資料前更新它。"
+                },
+                "resolverOutOfSync": {
+                    "title": "解析器異步",
+                    "subtitle": "您並未使用最新的公開解析器，但您在那裡儲存了個人資料記錄。建議您在編輯個人資料前切換至最新的公開解析器。"
+                },
+                "transferOrResetProfile": {
+                    "title": "個人資料",
+                    "subtitle": "您可以在更新解析器之前，將您當前的個人資料轉移到新的解析器。",
+                    "toggle": {
+                        "title": "轉移當前資料檔",
+                        "subtitle": "取消選取此項將只更新您的解析器。"
+                    }
+                },
+                "updateResolverOrResetProfile": {
+                    "title": "個人資料",
+                    "subtitle": "您可以在新的解析器上保留您目前的個人資料，或者重設並移除所有個人資料記錄。",
+                    "toggle": {
+                        "title": "保持當前資料",
+                        "subtitle": "取消選擇此選項將重設您的個人資料。"
+                    }
+                },
+                "links": {
+                    "learnMoreResolvers": "了解更多關於解析器"
+                }
+            },
+            "intro": {
+                "resetProfile": {
+                    "title": "重設個人資料",
+                    "description": "這將從最新的解析器中刪除所有個人資料記錄，然後更新解析器。"
+                },
+                "migrateProfile": {
+                    "title": "遷移個人資料",
+                    "description": "這將會將您目前的個人資料記錄遷移到最新的解析器。"
+                },
+                "migrateCurrentProfile": {
+                    "title": "遷移個人資料",
+                    "description": "這將會將您目前的個人資料記錄遷移到最新的解析器。"
+                }
+            }
+        },
+        "editResolver": {
+            "title": "編輯解析器",
+            "latestLabel": "使用最新的解析器",
+            "etherscan": "區塊瀏覽器",
+            "latestMessage": "您正在使用最新的解析器",
+            "customLabel": "自訂解析器",
+            "customPlaceholder": "輸入自訂解析器地址"
+        },
+        "extendNames": {
+            "title_one": "延長名稱",
+            "title_other": "延長 {{count}} 個名稱",
+            "invoice": {
+                "extension": "{{count}} 年延長",
+                "transaction": "交易費",
+                "total": "預計總計"
+            },
+            "bannerMsg": "延長多年將可節省網路費用，避免每年進行交易。",
+            "gasLimitError": "資金不足"
+        },
+        "transferProfile": {
+            "title": "轉移資料檔",
+            "message1": "在升級之前，如果您願意，可以轉移您當前的個人資料，否則在您升級時將會重設。",
+            "message2": "您是否想要轉移您當前的個人資料？"
+        },
+        "revokePermissions": {
+            "views": {
+                "revokeWarning": {
+                    "title": "這將會做出永久性的變更",
+                    "subtitle": "權限是一種進階功能，可以永久更改您的名稱。您將無法撤銷這些更改，只有在名稱過期時才會重設。",
+                    "subtitle2": "請在繼續之前確保您對使用此功能充滿信心。<infoLink>了解更多關於權限的資訊</infoLink>"
+                },
+                "revokePCC": {
+                    "title": "放棄所有權",
+                    "subtitle": "這將把此名稱的所有權交給經理({{account}})。除非您也是經理，否則您將無法再對此名稱進行更改。"
+                },
+                "grantExtendExpiry": {
+                    "title": "更改權限",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "授予權限給：延長到期時間"
+                    }
+                },
+                "setExpiry": {
+                    "title": "設定名稱到期",
+                    "subtitle": "設定權限到期的日期。此日期不能超過其父項目({{parent}})的到期日。",
+                    "subtitleWithCEE": "設定此名稱的到期日期。這將取代其現有的權限到期日 ({{expiry}})，並且不能晚於其父項目的到期日 ({{parent}})。",
+                    "options": {
+                        "max": "最大值",
+                        "custom": "選擇較早的日期"
+                    },
+                    "error": {
+                        "required": "如果選擇自訂日期，則需要日期",
+                        "min": "日期必須大於 {{date}}",
+                        "max": "日期必須小於{{date}}"
+                    }
+                },
+                "revokeAdditional": {
+                    "title": "撤銷權限",
+                    "subtitle": "您是否希望在放棄所有權之前撤銷對此名稱的權限？這只能現在做。",
+                    "action": {
+                        "title": "撤銷額外權限",
+                        "description": "除非您也是管理員，否則您將無法在此後撤銷額外的權限。"
+                    }
+                },
+                "revokeUnwrap": {
+                    "title": "撤銷權限",
+                    "subtitle": "您需要先撤銷此權限，然後才能撤銷其他權限。這可以防止權限被移除。",
+                    "fuses": {
+                        "CANNOT_UNWRAP": "撤銷權限至：解開此名稱"
+                    }
+                },
+                "revokePermissions": {
+                    "title": "撤銷權限",
+                    "unwrapSubtitle": "選擇此項以啟用其他人",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "授予權限：延長到期時間。",
+                        "CANNOT_UNWRAP": "撤銷權限：解開此名稱",
+                        "CANNOT_CREATE_SUBDOMAIN": "撤銷權限：創建子域名",
+                        "CANNOT_TRANSFER": "撤銷權限：發送此名稱",
+                        "CANNOT_SET_RESOLVER": "撤銷權限至：設定解析器",
+                        "CANNOT_SET_TTL": "撤銷權限至：設定 TTL",
+                        "CANNOT_BURN_FUSES": "撤銷權限：更改權限",
+                        "CANNOT_APPROVE": "撤銷權限以：更改續訂管理員"
+                    }
+                },
+                "revokeChangeFuses": {
+                    "title": "撤銷權限",
+                    "subtitle": "撤銷此權限，您將永久失去更改任何剩餘保險絲的能力。只有在名稱過期時才會重置。",
+                    "fuses": {
+                        "CANNOT_BURN_FUSES": "撤銷權限以：更改權限"
+                    }
+                },
+                "revokeChangeFusesWarning": {
+                    "title": "剩餘的權限將被鎖定",
+                    "subtitle": "權限和自訂保險絲將在'更改權限'被撤銷後永久鎖定在其當前狀態。只有在名稱過期後才會重置。"
+                }
+            },
+            "action": {
+                "revoke": "撤銷"
+            }
+        },
+        "unknownLabels": {
+            "title": "確認您的名字",
+            "subtitle": "您的名稱中有些標籤未知。請輸入它们以繼續。"
+        },
+        "deleteEmancipatedSubnameWarning": {
+            "title": "此子名稱無法重新創建",
+            "message": "刪除此子名稱將阻止其被使用或重新創建，直到其過期{{date}}。由於已撤銷父控制權限，因此無法撤消此操作。"
+        },
+        "setToMEP1002Hexagon": {
+            "title": "設定名稱為 MEP1002 Hexagon",
+            "subtitle": "這將把名稱設定為公開的 MEP1002 六角地圖。",
+            "h3index": "H3 六邊形指數"
+        },
+        "mintToMEP1002Hexagon": {
+            "title": "鑄造 MEP1002 六角形",
+            "subtitle": "這將鑄造一個公開的MEP1002六邊形地圖。",
+            "h3index": "H3 六邊形指數"
+        }
+    },
+    "transaction": {
+        "extendNames": {
+            "actionValue": "延長註冊",
+            "costValue": "{{value}} + 手續費",
+            "warning": "延長此名稱並不會讓你擁有它"
+        },
+        "deleteSubname": {
+            "warning": "你好在那裡"
+        }
+    },
+    "intro": {
+        "migrateAndUpdateResolver": {
+            "title": "需要採取行動",
+            "heading": "您想要保存到個人資料的編輯需要您升級您的解析器。",
+            "link": "了解更多關於解析器升級",
+            "warning": "請注意，如果您在任何時候取消此操作，您的更改將不會被保存。"
+        },
+        "syncManager": {
+            "description": "同步管理員將使您成為此名稱的新管理員。現任管理員<b>({{manager}})</b>將無法再進行更改。",
+            "wrappedWarning": "同步管理器也將解開此名稱。這將燃燒 NFT 並重置任何權限。"
+        }
+    },
+    "errors": {
+        "duplicateKey": "{{value}}是重複的鍵"
+    }
 }

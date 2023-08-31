@@ -2,7 +2,184 @@
     "title": "Registra {{name}} su MNS",
     "subtitle": "Registrati",
     "heading": "Registra {{name}}",
-    "invoice": "{'yearRegistration': 'Registrazione di {{years}} anno', 'registration': 'Registrazione', 'estimatedNetworkFee': 'Stima costo rete', 'networkFee': 'Costo rete', 'temporaryPremium': 'Premio temporaneo', 'total': 'Totale stimato', 'totalPaid': 'Totale pagato'}",
-    "error": "{'nameTooLong': 'Il nome che vuoi registrare è troppo lungo. Scegli un nome più corto.'}",
-    "steps": "{'pricing': {'insufficientBalance': 'Saldo insufficiente', 'multipleYearsMessage': 'Estendendo per più anni risparmierai sui costi di rete evitando transazioni annuali.', 'primaryName': 'Usa come nome principale', 'primaryNameMessage': 'Questo collega il tuo indirizzo a questo nome, permettendo alle dApps di visualizzarlo come il tuo profilo quando si connettono a loro. Puoi avere solo un nome principale per indirizzo.', 'premium': {'heading': 'Questo nome ha un premio temporaneo', 'subheading': 'Per dare una giusta opportunità ai nomi recentemente scaduti, il premio parte da $100,000,000 e si riduce a $0 in 21 giorni. Puoi calcolare il premio su una data qui sotto.', 'targetPrice': 'Prezzo target', 'targetDate': 'Data target', 'timezone': 'Data e ora mostrate nel fuso orario locale ({{timezone}})'}}, 'profile': {'title': 'Crea il tuo profilo', 'title2': 'Modifica il tuo profilo', 'default': 'Predefinito', 'advanced': 'Avanzato', 'permissions': 'Permessi', 'resolver': 'Resolver', 'visibilityMessage': \"Le informazioni del tuo profilo saranno memorizzate sulla blockchain. Tutto ciò che aggiungi sarà visibile pubblicamente.\",'addProfile':'Aggiungi campi al profilo','addMore':'Aggiungi altro al profilo','options':{'groups':{'general':{'label':'Generale','items':{'name':'Nickname','url':'Sito web','location':'Posizione','description':'Bio breve'},'placeholder':{'name':'John Smith','url':'https://ens.domains','location':'Metaverse','description':\"Sono un coltivatore di rendimento dal Tennessee rurale.\"}},'social':{'label':'Social','items':{'com.twitter':'Twitter','com.github':'GitHub','com.discord':'Discord'},'placeholder':{'com.twitter':'es. ensdomains','com.github':'es. ensdomains','com.discord':'es. alisha.eth#0001'}},'address':{'label':'Indirizzo','itemLabel':'{{coin}} indirizzo','placeholder':{'default':'Aggiungi indirizzo qui','ETH':'0xD9hbQK...','BNB':'bnb1grpf...','BTC':'3FZbgi29...','LTC':'ltc1qdp7p...','SOL':'D4kA7VzHnmV...','DOT':'1D4kA7VxH...','DOGE':\n'DFabcd12...'}},'website':{'label':\n'Sito web',\n'items':\n{'ipfs':\n'IPFS',\n'ipns':\n'IPNS',\n'swarm':\n'Swarm',\n'onion':\n'Onion',\n'skynet':\n'Skynet',\n'arweave':\n'Arweave'},\n'placeholder':\n{'default':\n'Aggiungi url qui',\n'ipfs':\n'ipfs://...',\n'skynet':\n'sia://...',\n'arweave':\n'ar://...',\n'swarm':\n'bzz://...',\n'onion':\n'onion3://...'}},\n'other':\n{'label':\n'Altro',\n'items':\n{'contentHash':\n'Content Hash',\n'publicKey':\n'Chiave pubblica',\n'abi':\n'ABI',\n'custom':\n'Personalizzato'}},\n'custom':\n{'key':\n'Tasto',\n'value':\n'Valore'},\n'default':\n{'placeholder':\n\"Aggiungi valore qui\"}},\n\"errors\":\n{\"labelRequired\":\"È richiesta una chiave di record\",\"duplicateRecord\":\"Chiave di record duplicata\",\"avatarReserved\":\"La chiave è utilizzata dal gestore avatar\"},\n\"confirmations\":{\"publicNotice\":{\"title\":\"I tuoi dettagli sono pubblici\",\"description\":\"Tutto ciò che aggiungi al tuo profilo sarà visibile pubblicamente sulla blockchain.\",\"confirm\":\"Capisco\",\"decline\":\"Indietro\"},\"clearEth\":{\"title\":\"Cancellare l’indirizzo ETH?\",\"description\":\"Senza un indirizzo ETH impostato le persone non saranno in grado di inviare denaro a questo nome. Questo può essere aggiornato successivamente.\",\"confirm\":\"Cancella\",\"decline\":\"Annulla\"}},\n\"actions\":{\"skipProfile\":\"Salta profilo\"}},\n\"complete\":{\"heading\":\"Congratulazioni!\",\"subheading\":\"Sei ora il proprietario di \",\"description\":\"Il tuo nome è stato registrato con successo. Ora puoi visualizzare e gestire il tuo nome.\",\"registerAnother\":\"Registra un altro\",\"viewName\":\"Visualizza nome\"},\n\"info\":{\"heading\":\"Prima di iniziare\",\"subheading\":\"Registrare il"
+    "invoice": {
+        "yearRegistration": "Registrazione di {{years}} anno",
+        "registration": "Registrazione",
+        "estimatedNetworkFee": "Stima. costo di rete",
+        "networkFee": "Commissione di rete",
+        "temporaryPremium": "Premium temporaneo",
+        "total": "Stima totale",
+        "totalPaid": "Totale pagato"
+    },
+    "error": {
+        "nameTooLong": "Il nome che vuoi registrare è troppo lungo. Scegli un nome più corto."
+    },
+    "steps": {
+        "pricing": {
+            "insufficientBalance": "Saldo Insufficiente",
+            "multipleYearsMessage": "Estendendo per più anni si risparmierà denaro sui costi di rete evitando transazioni annuali.",
+            "primaryName": "Usa come nome primario",
+            "primaryNameMessage": "Questo collega il tuo indirizzo a questo nome, permettendo alle dApps di visualizzarlo come il tuo profilo quando si connettono a loro. Puoi avere solo un nome primario per indirizzo.",
+            "premium": {
+                "heading": "Questo nome ha un premio temporaneo",
+                "subheading": "Per dare un'opportunità equa ai nomi recentemente scaduti, il premio inizia a $100.000.000 e si riduce a $0 in 21 giorni. Puoi calcolare il premio in una data sottostante.",
+                "targetPrice": "Prezzo obiettivo",
+                "targetDate": "Data prevista",
+                "timezone": "Data e ora mostrate nel fuso orario locale ({{timezone}})"
+            }
+        },
+        "profile": {
+            "title": "Crea il tuo profilo",
+            "title2": "Modifica il tuo profilo",
+            "default": "Predefinito",
+            "advanced": "Avanzato",
+            "permissions": "Autorizzazioni",
+            "resolver": "Risolutore",
+            "visibilityMessage": "Le informazioni del tuo profilo saranno memorizzate sulla blockchain. Tutto ciò che aggiungi sarà visibile pubblicamente.",
+            "addProfile": "Aggiungi campi profilo",
+            "addMore": "Aggiungi di più al profilo",
+            "options": {
+                "groups": {
+                    "general": {
+                        "label": "Generale",
+                        "items": {
+                            "name": "Soprannome",
+                            "url": "Sito web",
+                            "location": "Posizione",
+                            "description": "Breve Biografia"
+                        },
+                        "placeholder": {
+                            "name": "John Smith",
+                            "url": "https://ens.domains",
+                            "location": "Metaverso",
+                            "description": "Sono un coltivatore di rendimento dalla campagna del Tennessee."
+                        }
+                    },
+                    "social": {
+                        "label": "Sociale",
+                        "items": {
+                            "com.twitter": "Twitter",
+                            "com.github": "GitHub",
+                            "com.discord": "Discord"
+                        },
+                        "placeholder": {
+                            "com.twitter": "ensdomains",
+                            "com.github": "ad esempio, ensdomains",
+                            "com.discord": "ad esempio, alisha.eth#0001"
+                        }
+                    },
+                    "address": {
+                        "label": "Indirizzo",
+                        "itemLabel": "Indirizzo {{coin}}",
+                        "placeholder": {
+                            "default": "Aggiungi indirizzo qui",
+                            "ETH": "0xD9hbQK...",
+                            "BNB": "bnb1grpf...",
+                            "BTC": "3FZbgi29...",
+                            "LTC": "ltc1qdp7p...",
+                            "SOL": "D4kA7VzHnmV...",
+                            "DOT": "1D4kA7VxH...",
+                            "DOGE": "DFabcd12..."
+                        }
+                    },
+                    "website": {
+                        "label": "Sito web",
+                        "items": {
+                            "ipfs": "IPFS",
+                            "ipns": "IPNS",
+                            "swarm": "Sciame",
+                            "onion": "Cipolla",
+                            "skynet": "Skynet",
+                            "arweave": "Arweave"
+                        },
+                        "placeholder": {
+                            "default": "Aggiungi url qui",
+                            "ipfs": "ipfs://...",
+                            "skynet": "sia://...",
+                            "arweave": "ar://...",
+                            "swarm": "bzz://...",
+                            "onion": "onion3://..."
+                        }
+                    },
+                    "other": {
+                        "label": "Altro",
+                        "items": {
+                            "contentHash": "Hash del Contenuto",
+                            "publicKey": "Chiave Pubblica",
+                            "abi": "ABI",
+                            "custom": "Personalizzato"
+                        }
+                    },
+                    "custom": {
+                        "key": "Chiave",
+                        "value": "Valore"
+                    },
+                    "default": {
+                        "placeholder": "Aggiungi valore qui"
+                    }
+                }
+            },
+            "errors": {
+                "labelRequired": "È richiesta una chiave di registrazione",
+                "duplicateRecord": "Chiave del record duplicato",
+                "avatarReserved": "La chiave viene utilizzata dal gestore avatar"
+            },
+            "confirmations": {
+                "publicNotice": {
+                    "title": "I tuoi dettagli sono pubblici",
+                    "description": "Qualsiasi cosa aggiungi al tuo profilo sarà visibile pubblicamente sulla blockchain.",
+                    "confirm": "Capisco",
+                    "decline": "Indietro"
+                },
+                "clearEth": {
+                    "title": "Cancellare indirizzo ETH?",
+                    "description": "Senza un indirizzo ETH impostato, le persone non potranno inviare denaro a questo nome. Questo può essere aggiornato in seguito.",
+                    "confirm": "Chiaro",
+                    "decline": "Annulla"
+                }
+            },
+            "actions": {
+                "skipProfile": "Salta profilo"
+            }
+        },
+        "complete": {
+            "heading": "Congratulazioni!",
+            "subheading": "Sei ora il proprietario di",
+            "description": "Il tuo nome è stato registrato con successo. Ora puoi visualizzare e gestire il tuo nome.",
+            "registerAnother": "Registra un altro",
+            "viewName": "Nome visualizzazione"
+        },
+        "info": {
+            "heading": "Prima di iniziare",
+            "subheading": "La registrazione del tuo nome richiede tre passaggi",
+            "ethItems": "['Completa una transazione per avviare il timer', 'Attendi 60 secondi per il completamento del timer', 'Completa una seconda transazione per assicurare il tuo nome']",
+            "moonpayItems": "['Crea o accedi a un account MoonPay esistente', 'Utilizza la tua carta di credito o debito per completare una singola transazione']",
+            "setupProfile": "Vorrei impostare prima il mio profilo",
+            "paymentMethod": "Metodo di pagamento",
+            "notEnoughEth": "MXC insufficienti nel portafoglio",
+            "creditOrDebit": "Carta di credito o debito",
+            "additionalFee": "Commissione di elaborazione aggiuntiva",
+            "pendingMoonpayTransaction": "La tua transazione MoonPay è in elaborazione. Questo potrebbe richiedere fino a due minuti. Puoi controllare il tuo progresso dalla email di conferma che hai ricevuto.",
+            "failedMoonpayTransaction": "La tua transazione MoonPay non è riuscita. Riprova o scegli il metodo di pagamento 'Ethereum'.",
+            "ethereum": "MXC",
+            "processing": "Elaborazione",
+            "poweredBy": "Alimentato da",
+            "moonpayModalHeader": "Pagamento MoonPay",
+            "moonpayTestCard": "Dettagli della carta di prova"
+        },
+        "transactions": {
+            "heading": "Quasi pronto",
+            "subheading": "Questo timer aiuta a prevenire che altri registrino il nome prima di te. Il tuo nome non è registrato fino a quando non hai completato la seconda transazione.",
+            "startTimer": "Avvia timer",
+            "wait": "Attendi",
+            "transactionFailed": "Transazione Fallita",
+            "transactionProgress": "Transazione in corso"
+        },
+        "cancelRegistration": {
+            "heading": "Perderai la tua transazione",
+            "contentOne": "Tornare indietro resetterà la tua prima transazione. Se torni indietro dovrai completare nuovamente la transazione e pagare le relative commissioni.",
+            "contentTwo": "Sei sicuro di voler continuare?",
+            "footer": "Reimposta la transazione e torna indietro"
+        }
+    }
 }

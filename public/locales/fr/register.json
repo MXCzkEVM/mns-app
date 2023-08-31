@@ -1,9 +1,9 @@
 {
     "title": "Inscrivez {{name}} sur MNS",
-    "subtitle": "Inscription",
-    "heading": "Inscrivez {{name}}",
+    "subtitle": "Inscrivez-vous",
+    "heading": "Inscrivez-vous {{name}}",
     "invoice": {
-        "yearRegistration": "Inscription de {{years}} an",
+        "yearRegistration": "{{years}} enregistrement d'un an",
         "registration": "Inscription",
         "estimatedNetworkFee": "Frais de réseau estimés",
         "networkFee": "Frais de réseau",
@@ -22,7 +22,7 @@
             "primaryNameMessage": "Ce lien associe votre adresse à ce nom, permettant aux dApps de l'afficher comme votre profil lorsqu'ils sont connectés à eux. Vous ne pouvez avoir qu'un seul nom principal par adresse.",
             "premium": {
                 "heading": "Ce nom a une prime temporaire",
-                "subheading": "Pour offrir une opportunité équitable aux noms récemment expirés, la prime commence à 100 000 000 $ et se réduit à 0 $ sur 21 jours. Vous pouvez calculer la prime à une date ci-dessous.",
+                "subheading": "Pour donner une chance équitable aux noms récemment expirés, la prime commence à 100 000 000 $ et se réduit à 0 $ sur une période de 21 jours. Vous pouvez calculer la prime à une date ci-dessous.",
                 "targetPrice": "Prix cible",
                 "targetDate": "Date cible",
                 "timezone": "Date et heure affichées dans le fuseau horaire local ({{timezone}})"
@@ -169,7 +169,7 @@
         },
         "transactions": {
             "heading": "Presque là",
-            "subheading": "Ce minuteur aide à empêcher les autres de s'enregistrer au nom avant vous. Votre nom n'est pas enregistré tant que vous n'avez pas effectué la deuxième transaction.",
+            "subheading": "Ce minuteur aide à empêcher les autres de s'enregistrer le nom avant vous. Votre nom n'est pas enregistré jusqu'à ce que vous ayez effectué la deuxième transaction.",
             "startTimer": "Démarrer le minuteur",
             "wait": "Attendez",
             "transactionFailed": "Transaction Échouée",
@@ -177,8 +177,8 @@
         },
         "cancelRegistration": {
             "heading": "Vous perdrez votre transaction",
-            "contentOne": "Revenir en arrière réinitialisera votre première transaction. Si vous revenez en arrière, vous devrez effectuer à nouveau la transaction et payer les frais associés.",
-            "contentTwo": "Êtes-vous sûr de vouloir continuer ?",
+            "contentOne": "Revenir en arrière réinitialisera votre première transaction. Si vous revenez en arrière, vous devrez compléter la transaction à nouveau et payer les frais associés.",
+            "contentTwo": "Êtes-vous sûr de vouloir continuer?",
             "footer": "Réinitialiser la transaction et revenir en arrière"
         }
     }

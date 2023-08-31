@@ -1,4 +1,10 @@
 {
-    "not-found": "{'title': 'Bulunamadı', 'message': \"Aradığınız sayfa bulunamadı. <br /> Bir isim <HomeLink>aramak için</HomeLink> veya daha fazla yardım için <SupportLink>desteğimizi ziyaret edebilirsiniz</SupportLink>.\"}",
-    "application-error": "{'title': 'Uygulama hatası', 'message': 'Bir şeyler yanlış gitti. <br /> Eğer bu tekrarlayan bir sorunsa, lütfen daha fazla yardım için <SupportLink>desteğimizi ziyaret edin</SupportLink>.'}"
+    "not-found": {
+        "title": "Bulunamadı",
+        "message": "Aradığınız sayfa bulunamadı. <br /> Bir isim <HomeLink>aramak</HomeLink> için veya daha fazla yardım için <SupportLink>desteğimizi ziyaret</SupportLink> edebilirsiniz."
+    },
+    "application-error": {
+        "title": "Uygulama hatası",
+        "message": "Bir şeyler yanlış gitti. <br /> Eğer bu tekrarlayan bir sorunsa, lütfen daha fazla yardım için <SupportLink>desteğimizi ziyaret edin</SupportLink>."
+    }
 }

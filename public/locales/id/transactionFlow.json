@@ -1,6 +1,332 @@
 {
-    "input": "{'profileEditor': {'tabs': {'avatar': {'dropdown': {'selectNFT': 'Pilih NFT', 'uploadImage': 'Unggah Gambar'}, 'nft': {'title': 'Pilih NFT', 'searchPlaceholder': 'Cari NFT', 'loading': 'Memuat NFT Anda', 'unknown': 'NFT Tidak Dikenal', 'noNFTs': 'Tidak ada NFT yang ditemukan untuk alamat ini.', 'selected': {'title': 'NFT Terpilih', 'subtitle': 'Anda yakin ingin menggunakan NFT ini?'}, 'noResults': 'Tidak ada hasil yang ditemukan.'}, 'image': {'title': 'Edit Gambar', 'upload': {'title': 'Unggah Avatar', 'subtitle': \"Anda perlu menandatangani pesan untuk mengunggah avatar. Ini tidak akan memakan biaya apa pun.\", 'action': 'Tanda Tangani dan Unggah'}}}, 'general': {'label': 'Umum', 'name': {'label': 'Nama Panggilan', 'placeholder': 'John Smith'}, 'url': {'label': 'Website', 'placeholder': 'https://ens.domains'},'location':{'label':'Lokasi','placeholder':'Metaverse'},'description':{'label':'Bio Singkat','placeholder':\"Saya adalah petani yield dari Tennessee pedesaan.\"}},'accounts':{'label':'Akun','addAccount':'Tambah akun','noOptions':'Tidak ada opsi akun tersedia','placeholder':{'default':'Tambahkan username di sini','com.twitter':'mis. ensdomains','com.github':'mis. ensdomains','com.discord':'mis. alisha.eth#0001'}},'address':{'label':'Alamat','addAddress':'Tambah alamat','noOptions':'Tidak ada opsi alamat tersedia','placeholder':{'default':'Tambahkan alamat di sini','ETH':'0xD9hbQK...','BNB':'0xD9hbQK...','BTC':'3FZbgi29...','LTC':'3FZbgi29...','SOL':'D4kA7VzHnmV...','DOT':'1D4kA7VxH...','DOGE':'DFabcd12...'}},'contentHash':{'label':'Website','addContentHash':'Tambah website terdesentralisasi','placeholder':{'default':'Tambahkan url di sini','ipfs':'ipfs://...','skynet':'sia://...','arweave':'ar://...','swarm':'bzz://...','onion':'onion3://...'}},'other':{'label':'Lainnya','addRecord':'Tambah record','createRecord':\n'Tulis nama record...', \n'placeholder':\n{'default':\n'Tambahkan nilai di sini...'\n}\n}\n},\n'warningOverlay':\n{'action':\n{'learnMoreResolvers':\n'Pelajari lebih lanjut tentang resolver',\n'updateResolver':\n'Perbarui resolver',\n'setResolver':\n'Setel resolver',\n'ignoreUpdate':\n'Abaikan ini dan terus gunakan resolver saat ini. Anda akan ditanya lagi lain kali.'\n},\n'invalidResolver':\n{'title':\n'Resolver tidak sah',\n'subtitle':\n'Anda tidak memiliki izin untuk mengatur catatan untuk resolver ini. Anda perlu memperbarui ke resolver terbaru untuk mengedit profil Anda.',\n'action':\n'Perbarui resolver'\n},\n'migrateProfileSelector':\n{'title':\n'Profil',\n'subtitle':\n'Rekaman profil pada setiap resolver tidak cocok. Set rekaman mana yang ingin Anda gunakan?',\n'option':\n{'latest':\n'Rekaman profil pada resolver baru',\n'current':\n'Rekaman profil saat ini',\n'reset':\n'Reset profil Anda',\n'resetSubtitle':\n'Hapus semua rekaman profil'\n}\n},\n'migrateProfileWarning':\n{'title':\n'Migrasikan profil',\n'subtitle':\n'Anda sedang memindahkan rekaman profil Anda ke resolver terbaru. Ini akan secara permanen menghapus semua rekaman yang ada pada resolver terbaru dan menggantinya dengan rekaman saat ini.'\n},\n'migrateRegistry':\n{'title':\n'Registry kedaluwarsa',\n'subtitle':\n'Anda perlu memigrasikan registry sebelum melakukan perubahan pada nama ini.',\n'action':\n'Migrasi'\n},\n'noResolver':\n{'title:\n'Tidak ada resolver yang disetel',\n'subtitle:\n'Resolver perlu disetel sebelum mengedit profil Anda.',\n'action:\n'Perbarui'\n},\n'resetProfile'\n:{'title'\n:'Reset profil',\n'subtitle'\n:'Anda sedang mereset rekaman profil Anda. Anda akan kehilangan semua informasi profil yang ada, seperti alamat ETH, avatar, dan catatan sosial. Ini dapat ditambahkan kembali dengan",
-    "transaction": "{'extendNames': {'actionValue': 'Perpanjang pendaftaran', 'costValue': '{{value}} + biaya', 'warning': 'Memperpanjang nama ini tidak akan memberi Anda kepemilikan atasnya'}, 'deleteSubname': {'warning': 'Halo di luar sana'}}",
-    "intro": "{'migrateAndUpdateResolver': {'title': 'Diperlukan Tindakan', 'heading': 'Perubahan yang ingin Anda simpan ke profil Anda memerlukan peningkatan resolver Anda.', 'link': 'Pelajari lebih lanjut tentang peningkatan resolver', 'warning': 'Perhatikan bahwa jika Anda membatalkan ini di titik mana pun perubahan Anda tidak akan disimpan.'}, 'syncManager': {'description': 'Menyinkronkan manajer akan menjadikan Anda manajer baru dari nama ini. Manajer saat ini <b>({{manager}})</b> tidak akan lagi dapat membuat perubahan.', 'wrappedWarning': 'Menyinkronkan manajer juga akan membuka nama ini. Ini akan membakar NFT dan mereset semua izin.'}}",
-    "errors": "{'duplicateKey': '{{value}} adalah kunci duplikat'}"
+    "input": {
+        "profileEditor": {
+            "tabs": {
+                "avatar": {
+                    "dropdown": {
+                        "selectNFT": "Pilih NFT",
+                        "uploadImage": "Unggah Gambar"
+                    },
+                    "nft": {
+                        "title": "Pilih NFT",
+                        "searchPlaceholder": "Cari NFT",
+                        "loading": "Memuat NFT Anda",
+                        "unknown": "NFT Tidak Dikenal",
+                        "noNFTs": "Tidak ada NFT yang ditemukan untuk alamat ini.",
+                        "selected": {
+                            "title": "NFT Terpilih",
+                            "subtitle": "Apakah Anda yakin ingin menggunakan NFT ini?"
+                        },
+                        "noResults": "Tidak ada hasil yang ditemukan."
+                    },
+                    "image": {
+                        "title": "Ubah Gambar",
+                        "upload": {
+                            "title": "Unggah Avatar",
+                            "subtitle": "Anda perlu menandatangani pesan untuk mengunggah avatar. Ini tidak akan dikenakan biaya apa pun.",
+                            "action": "Tanda Tangan dan Unggah"
+                        }
+                    }
+                },
+                "general": {
+                    "label": "Umum",
+                    "name": {
+                        "label": "Nama panggilan",
+                        "placeholder": "John Smith"
+                    },
+                    "url": {
+                        "label": "Situs Web",
+                        "placeholder": "https://ens.domains"
+                    },
+                    "location": {
+                        "label": "Lokasi",
+                        "placeholder": "Metaverse"
+                    },
+                    "description": {
+                        "label": "Profil Singkat",
+                        "placeholder": "Saya adalah petani yield dari pedesaan Tennessee."
+                    }
+                },
+                "accounts": {
+                    "label": "Akun",
+                    "addAccount": "Tambah akun",
+                    "noOptions": "Tidak ada opsi akun tersedia",
+                    "placeholder": {
+                        "default": "Tambahkan nama pengguna di sini",
+                        "com.twitter": "misalnya, ensdomains",
+                        "com.github": "misalnya, ensdomains",
+                        "com.discord": "misalnya, alisha.eth#0001"
+                    }
+                },
+                "address": {
+                    "label": "Alamat",
+                    "addAddress": "Tambahkan alamat",
+                    "noOptions": "Tidak ada opsi alamat tersedia",
+                    "placeholder": {
+                        "default": "Tambahkan alamat di sini",
+                        "ETH": "0xD9hbQK...",
+                        "BNB": "0xD9hbQK...",
+                        "BTC": "3FZbgi29...",
+                        "LTC": "3FZbgi29...",
+                        "SOL": "D4kA7VzHnmV...",
+                        "DOT": "1D4kA7VxH...",
+                        "DOGE": "DFabcd12..."
+                    }
+                },
+                "contentHash": {
+                    "label": "Situs Web",
+                    "addContentHash": "Tambahkan situs web terdesentralisasi",
+                    "placeholder": {
+                        "default": "Tambahkan url di sini",
+                        "ipfs": "ipfs://...",
+                        "skynet": "sia://...",
+                        "arweave": "ar://...",
+                        "swarm": "bzz://...",
+                        "onion": "onion3://..."
+                    }
+                },
+                "other": {
+                    "label": "Lainnya",
+                    "addRecord": "Tambahkan catatan",
+                    "createRecord": "Ketik nama catatan...",
+                    "placeholder": {
+                        "default": "Tambahkan nilai di sini..."
+                    }
+                }
+            },
+            "warningOverlay": {
+                "action": {
+                    "learnMoreResolvers": "Pelajari lebih lanjut tentang resolver",
+                    "updateResolver": "Perbarui resolver",
+                    "setResolver": "Atur resolver",
+                    "ignoreUpdate": "Abaikan ini dan lanjutkan menggunakan resolver saat ini Anda. Anda akan ditanya lagi lain kali."
+                },
+                "invalidResolver": {
+                    "title": "Resolver yang tidak sah",
+                    "subtitle": "Anda tidak memiliki izin untuk mengatur catatan untuk resolver ini. Anda perlu memperbarui ke resolver terbaru untuk mengedit profil Anda.",
+                    "action": "Perbarui resolver"
+                },
+                "migrateProfileSelector": {
+                    "title": "Profil",
+                    "subtitle": "Catatan profil pada setiap resolver tidak cocok. Set catatan mana yang ingin Anda gunakan?",
+                    "option": {
+                        "latest": "Catatan profil pada resolver baru",
+                        "current": "Catatan profil saat ini",
+                        "reset": "Atur ulang profil Anda",
+                        "resetSubtitle": "Hapus semua catatan profil"
+                    }
+                },
+                "migrateProfileWarning": {
+                    "title": "Migrasi profil",
+                    "subtitle": "Anda sedang memindahkan catatan profil Anda ke resolver terbaru. Ini akan secara permanen menghapus semua catatan yang ada pada resolver terbaru dan menggantinya dengan catatan Anda saat ini."
+                },
+                "migrateRegistry": {
+                    "title": "Registrasi sudah kadaluarsa",
+                    "subtitle": "Anda perlu memigrasikan registri sebelum melakukan perubahan pada nama ini.",
+                    "action": "Migrasi"
+                },
+                "noResolver": {
+                    "title": "Tidak ada penyelesai yang diatur",
+                    "subtitle": "Sebuah resolver harus diatur sebelum mengedit profil Anda.",
+                    "action": "Perbarui"
+                },
+                "resetProfile": {
+                    "title": "Atur Ulang Profil",
+                    "subtitle": "Anda sedang mengatur ulang catatan profil Anda. Anda akan kehilangan semua informasi profil yang ada, seperti alamat ETH, avatar dan catatan sosial. Ini dapat ditambahkan kembali dengan mengedit profil Anda."
+                },
+                "resolverNotNameWrapperAware": {
+                    "title": "Resolver tidak kompatibel",
+                    "subtitle": "Resolver saat ini Anda tidak kompatibel dengan nama yang dibungkus. Anda perlu memperbarui resolver sebelum mengedit profil Anda.",
+                    "toggle": {
+                        "title": "Transfer profil saat ini",
+                        "subtitle": "Membatalkan pilihan ini hanya akan memperbarui resolver Anda."
+                    }
+                },
+                "resolverOutOfDate": {
+                    "title": "Resolver kedaluwarsa",
+                    "subtitle": "Resolver sudah usang. Disarankan Anda memperbaruinya sebelum mengedit profil Anda."
+                },
+                "resolverOutOfSync": {
+                    "title": "Resolver tidak sinkron",
+                    "subtitle": "Anda tidak menggunakan resolver publik terbaru, tetapi Anda memiliki catatan profil yang disimpan di sana. Disarankan untuk beralih ke resolver publik terbaru sebelum mengedit profil Anda."
+                },
+                "transferOrResetProfile": {
+                    "title": "Profil",
+                    "subtitle": "Anda dapat mentransfer profil saat ini ke resolver baru sebelum memperbarui resolver Anda.",
+                    "toggle": {
+                        "title": "Transfer profil saat ini",
+                        "subtitle": "Membatalkan pilihan ini hanya akan memperbarui resolver Anda."
+                    }
+                },
+                "updateResolverOrResetProfile": {
+                    "title": "Profil",
+                    "subtitle": "Anda dapat mempertahankan profil saat ini pada resolver baru, atau mereset dan menghapus semua catatan profil.",
+                    "toggle": {
+                        "title": "Pertahankan profil saat ini",
+                        "subtitle": "Membatalkan pilihan ini akan mengatur ulang profil Anda."
+                    }
+                },
+                "links": {
+                    "learnMoreResolvers": "Pelajari lebih lanjut tentang resolver"
+                }
+            },
+            "intro": {
+                "resetProfile": {
+                    "title": "Atur ulang profil",
+                    "description": "Ini akan menghapus semua catatan profil dari resolver terbaru dan kemudian memperbarui resolver."
+                },
+                "migrateProfile": {
+                    "title": "Migrasi profil",
+                    "description": "Ini akan memindahkan catatan profil Anda saat ini ke resolver terbaru."
+                },
+                "migrateCurrentProfile": {
+                    "title": "Migrasi profil",
+                    "description": "Ini akan memindahkan catatan profil Anda saat ini ke resolver terbaru."
+                }
+            }
+        },
+        "editResolver": {
+            "title": "Ubah Resolver",
+            "latestLabel": "Gunakan resolver terbaru",
+            "etherscan": "BlockExplorer",
+            "latestMessage": "Anda berada pada resolver terbaru",
+            "customLabel": "Resolver Kustom",
+            "customPlaceholder": "Masukkan alamat resolver kustom"
+        },
+        "extendNames": {
+            "title_one": "Perpanjang Nama",
+            "title_other": "Perpanjang {{count}} Nama",
+            "invoice": {
+                "extension": "Perpanjangan {{count}} tahun",
+                "transaction": "Biaya transaksi",
+                "total": "Perkiraan total"
+            },
+            "bannerMsg": "Memperpanjang untuk beberapa tahun akan menghemat uang pada biaya jaringan dengan menghindari transaksi tahunan.",
+            "gasLimitError": "Dana tidak cukup"
+        },
+        "transferProfile": {
+            "title": "Profil Transfer",
+            "message1": "Sebelum melakukan peningkatan, Anda dapat mentransfer profil saat ini jika Anda mau, jika tidak, profil akan direset saat Anda melakukan peningkatan.",
+            "message2": "Apakah Anda ingin mentransfer profil saat ini Anda?"
+        },
+        "revokePermissions": {
+            "views": {
+                "revokeWarning": {
+                    "title": "Ini akan membuat perubahan permanen",
+                    "subtitle": "Izin adalah fitur lanjutan yang membuat perubahan permanen pada nama Anda. Anda tidak akan dapat membatalkan perubahan ini, dan mereka hanya akan diatur ulang jika nama tersebut kadaluarsa.",
+                    "subtitle2": "Pastikan Anda yakin menggunakan fitur ini sebelum melanjutkan. <infoLink>Pelajari lebih lanjut tentang izin</infoLink>"
+                },
+                "revokePCC": {
+                    "title": "Menyerahkan kepemilikan",
+                    "subtitle": "Ini akan memberikan kepemilikan nama ini kepada manajer ({{account}}). Kecuali Anda juga adalah manajer, Anda tidak akan lagi dapat membuat perubahan pada nama ini."
+                },
+                "grantExtendExpiry": {
+                    "title": "Ubah izin",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "Berikan izin untuk: Perpanjang masa berlaku"
+                    }
+                },
+                "setExpiry": {
+                    "title": "Atur masa berlaku nama",
+                    "subtitle": "Tetapkan tanggal saat izin akan berakhir. Tanggal ini tidak boleh lebih lama dari masa berlaku induknya ({{parent}}).",
+                    "subtitleWithCEE": "Tetapkan tanggal saat nama ini akan kedaluwarsa. Ini akan menggantikan masa berlaku izin yang ada ({{expiry}}), dan tidak bisa lebih lambat dari masa berlaku induknya ({{parent}}).",
+                    "options": {
+                        "max": "Maks",
+                        "custom": "Pilih tanggal yang lebih awal"
+                    },
+                    "error": {
+                        "required": "Diperlukan tanggal jika tanggal kustom dipilih",
+                        "min": "Tanggal harus lebih besar dari {{date}}",
+                        "max": "Tanggal harus kurang dari {{date}}"
+                    }
+                },
+                "revokeAdditional": {
+                    "title": "Batalkan izin",
+                    "subtitle": "Apakah Anda ingin mencabut izin pada nama ini sebelum menyerahkan kepemilikan? Ini hanya bisa dilakukan sekarang.",
+                    "action": {
+                        "title": "Batalkan izin tambahan",
+                        "description": "Kecuali Anda juga manajer, Anda tidak akan dapat mencabut izin tambahan setelah ini."
+                    }
+                },
+                "revokeUnwrap": {
+                    "title": "Batalkan izin",
+                    "subtitle": "Anda harus mencabut izin ini sebelum yang lain dapat dicabut. Ini mencegah izin dihapus.",
+                    "fuses": {
+                        "CANNOT_UNWRAP": "Batalkan izin untuk: Buka nama ini"
+                    }
+                },
+                "revokePermissions": {
+                    "title": "Batalkan izin",
+                    "unwrapSubtitle": "Pilih ini untuk mengaktifkan yang lain",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "Berikan izin untuk: Memperpanjang masa berlaku.",
+                        "CANNOT_UNWRAP": "Batalkan izin untuk: Buka nama ini",
+                        "CANNOT_CREATE_SUBDOMAIN": "Batalkan izin untuk: Membuat subdomain",
+                        "CANNOT_TRANSFER": "Batalkan izin untuk: Kirim nama ini",
+                        "CANNOT_SET_RESOLVER": "Batalkan izin untuk: Atur resolver",
+                        "CANNOT_SET_TTL": "Batalkan izin untuk: Atur TTL",
+                        "CANNOT_BURN_FUSES": "Batalkan izin untuk: Ubah izin",
+                        "CANNOT_APPROVE": "Batalkan izin untuk: Ubah manajer perpanjangan"
+                    }
+                },
+                "revokeChangeFuses": {
+                    "title": "Batalkan izin",
+                    "subtitle": "Dengan mencabut izin ini, Anda secara permanen kehilangan kemampuan untuk mengubah sekering yang tersisa. Ini hanya akan diatur ulang jika nama kadaluarsa.",
+                    "fuses": {
+                        "CANNOT_BURN_FUSES": "Batalkan izin untuk: Ubah izin"
+                    }
+                },
+                "revokeChangeFusesWarning": {
+                    "title": "Izin yang tersisa akan dikunci",
+                    "subtitle": "Izin dan sekering khusus akan dikunci secara permanen dalam keadaan saat ini setelah 'ubah izin' dicabut. Ini hanya akan diatur ulang jika nama kadaluarsa."
+                }
+            },
+            "action": {
+                "revoke": "Batalkan"
+            }
+        },
+        "unknownLabels": {
+            "title": "Konfirmasi nama Anda",
+            "subtitle": "Beberapa label dalam nama Anda tidak dikenal. Silakan masukkan mereka untuk melanjutkan."
+        },
+        "deleteEmancipatedSubnameWarning": {
+            "title": "Subnama ini tidak dapat dibuat ulang",
+            "message": "Menghapus subnama ini akan mencegahnya digunakan atau dibuat ulang sampai masa berlakunya habis{{date}}. Ini tidak dapat dibatalkan karena izin kontrol induk telah dicabut."
+        },
+        "setToMEP1002Hexagon": {
+            "title": "Atur nama menjadi MEP1002 Hexagon",
+            "subtitle": "Ini akan mengatur nama menjadi MEP1002 Hexagon Map publik.",
+            "h3index": "H3 Indeks dari Heksagon"
+        },
+        "mintToMEP1002Hexagon": {
+            "title": "Mint MEP1002 Hexagon",
+            "subtitle": "Ini akan mencetak Peta Hexagon MEP1002 publik.",
+            "h3index": "H3 Indeks dari Heksagon"
+        }
+    },
+    "transaction": {
+        "extendNames": {
+            "actionValue": "Perpanjang pendaftaran",
+            "costValue": "{{value}} + biaya",
+            "warning": "Memperpanjang nama ini tidak akan memberikan Anda kepemilikan atasnya"
+        },
+        "deleteSubname": {
+            "warning": "Halo di luar sana"
+        }
+    },
+    "intro": {
+        "migrateAndUpdateResolver": {
+            "title": "Tindakan Diperlukan",
+            "heading": "Perubahan yang ingin Anda simpan ke profil Anda memerlukan Anda untuk meningkatkan resolver Anda.",
+            "link": "Pelajari lebih lanjut tentang peningkatan resolver",
+            "warning": "Perhatikan bahwa jika Anda membatalkan ini di titik mana pun, perubahan Anda tidak akan disimpan."
+        },
+        "syncManager": {
+            "description": "Menyinkronkan manajer akan menjadikan Anda manajer baru dari nama ini. Manajer saat ini <b>({{manager}})</b> tidak akan lagi dapat melakukan perubahan.",
+            "wrappedWarning": "Menyinkronkan manajer juga akan membuka nama ini. Ini akan membakar NFT dan mereset semua izin."
+        }
+    },
+    "errors": {
+        "duplicateKey": "{{value}} adalah kunci duplikat"
+    }
 }

@@ -1,21 +1,327 @@
 {
     "title": "您的web3用户名",
-    "description": "您在web3中的身份，一个名称代表所有的加密货币地址，以及您的去中心化网站。",
+    "description": "您在web3中的身份，一个名字代表所有的加密地址，以及您的去中心化网站。",
     "loading": "加载中",
     "unsupportedNetwork": "不支持的网络",
     "notFound": "404 未找到",
     "etherscan": "区块浏览器",
-    "action": "{'cancel': '取消', 'change': '更改', 'upload': '上传', 'close': '关闭', 'save': '保存', 'edit': '编辑', 'view': '查看', 'clear': '清除', 'update': '更新', 'learnMore': '了解更多', 'send': '发送', 'next': '下一步', 'add': '添加', 'set': '设置', 'search': '搜索',  'back': 退后,  continue: 继续, confirm: 确认, remove: 移除, sign: 签名, reset: 重置, transfer: 转账, tryAgain: 再试一次, done: 完成, burnSelected: 销毁选定的, extend: 扩展, delete: 删除, sort: 排序, check: 检查, claim: 领取, remindMe: 提醒我, begin: 开始, finish: 完成, skip: 跳过, changeNetwork: 切换网络, understand: 我明白了，feedback：反馈，migrate：迁移}",
-    "unit": "{'years_one': '{{count}} 年', 'years_other': '{{count}} 年', 'yrs_one': '{{count}} 年', 'yrs_other': '{{count}} 年', 'gas': '{{value}} 网络费', 'selected': '{{count}} 已选', 'perPage': '{{count}} 每页'}",
-    "navigation": "{'home': '首页', 'names': '我的名称', 'favourites': '收藏夹', 'settings': '设置', 'governance': '治理', 'community': '社区', 'developers': '开发者', 'support': '支持', 'bounty': 'Bug赏金', 'terms': '使用条款', 'privacy': '隐私政策', 'back': '返回', 'oldApp': '旧版MNS应用', 'language': '语言', 'currency': '货币',  'ipfsApp':  'IPFS MNS应用',  'feedback':  '反馈',  'syncMessage':  \"正在与网络同步。您的交易更改可能尚未可见。\"}",
-    "wallet": "{'myProfile': '个人资料', 'disconnect': '断开连接', 'connect': '连接', 'noPrimaryName': '无主要名称', 'viewProfile': '查看个人资料', 'viewDetails': '查看详情', 'register': '注册'}",
-    "name": "{'registered': '已注册', 'expires': '到期', 'noExpiry': '无到期', 'expiry': '到期', 'parent': '父级', 'noParent': '无父级', 'registrant': '注册人', 'controller': '控制器', 'dnsOwner': 'DNS所有者', 'owner': '所有者', 'notOwned': '未拥有', 'manager': '管理者', 'all': '全部名称', 'expiresInYears_one': '{{count}}年后到期', 'expiresInYears_other': '{{count}}年后到期', 'expiresInMonths_one': '{{count}}月后到期', 'expiresInMonths_other': '{{count}}月后到期',  'expiresInDays_one': '{{count}}天后到期',  'expiresInDays_other': '{{count}}天后到期',  'expiresInHours_one': '{{count}}小时后到期',  'expiresInHours_other': '{{count}}小时后到期',  'expiresInHours_zero': '<1小时后到期','expiredInHours_one':'{{count}}小时前过期','expiredInHours_other':'{{count}}小时前过期','expiredInHours_zero':'<1小时前过期','expiredInDays_one':'{{count}}天前过期','expiredInDays_other':'{{count}}天前过期','expiredInMonths_one':'{{count}}月前过期','expiredInMonths_other':'{{count}}月前过期','expiredInYears_one':'{{count}}年前过期','expiredInYears_other':'{{count}}年前过期','gracePeriod':{'expiresInYears_one':'宽限期在{{count}}年后结束','expiresInYears_other':'宽限期在{{count}}年后结束','expiresInMonths_one':'宽限期在{{count}}月后结束','expiresInMonths_other':'宽限期在{{count}}月后结束','expiresInDays_one':'宽限期在{{count}}天后结束','expiresInDays_other':'宽限期在{{count}}天后结束','expiresInHours_one':'宽限期在{{count}}小时后结束','expiresInHours_other':'宽限期在{{count}}小时后结束','expiresInHours_zero':'<1小时内宽限期结束'},'extend':'延长','send':'发送','transfer':'转移','sendManager':'发送管理者','sendOwner':'发送所有者'}",
-    "address": "{'label': '地址', 'viewAddress': '查看地址', 'copyAddress': '复制地址'}",
-    "records": "{'label': '记录'}",
-    "sortTypes": "{'expiryDate': '到期日期', 'labelName': '名称', 'creationDate': '创建日期'}",
-    "errors": "{'noResults': '未找到结果', 'invalidAddress': '地址无效', 'addressRequired': '需要地址'}",
-    "transaction": "{'description': {'setName': '设置名称', 'setRecords': '设置记录', 'test': '测试交易', 'addSuccess': '添加成功', 'sendName': '发送名称', 'migrateProfile': '迁移配置文件', 'migrateProfileWithReset': '迁移配置文件', 'migrateProfileWithSync': '迁移并更新配置文件', 'wrapName': '包装名称', 'updateResolver': '更新解析器', 'updateProfile': '更新配置文件', 'setPrimaryName': '设置主要名称', 'updateEthAddress': '更新ETH地址', 'testSendName': '发送名称测试', 'burnFuses': '烧毁权限', 'createSubname': '创建子名称', 'deleteSubname': '删除子名称', \t'extendNames': \t'扩展名称','importDNSSECName':'导入DNSSEC名称','commitName':'启动计时器','registerName':'注册名称','approveNameWrapper':'批准NameWrapper','clearRecords':'清除记录','updateRecords':'更新记录','transferName':'转移名称','changePermissions':'更改权限','syncManager':'同步管理器','updateProfileRecords':'更新配置文件','resetProfile':'重置配置文件','setHexagonName':'设置MEP1002 Hexagon 名称','mintHexagon':'铸造MEP1002 Hexagon'},'info':{'sendName':'设置名称的控制器和注册人','migrateProfile':'在新解析器上设置现有记录','migrateProfileWithReset':'在新解析器上设置现有记录','migrateProfileWithSync':'在新解析器上设置现有记录','wrapName':'包装名称并设置新解析器','updateResolver':'更改解析器为','updateProfile':'在现有解析器上更新记录','setPrimaryName':'为您的地址设置主要名称','updateEthAddress':'将ETH地址更新为此地址','testSendName':'设置名称的控制器和注册人','createSubname':'在该名下创建新的子名字,'burnFuses:'烧毁选定的权限直到名字过期,'commitName:'开始计时以注册名字,'approveNameWrapper:'批准 NameWrapper 管理你的名字,'fuses':{'revoke:'撤销,'grant:'授予,'setExpiry:'设定到期日,'PARENT_CANNOT_CONTROL:'放弃父级控制,'CAN_EXTEND_EXPIRY:'延长到期日,'CANNOT_UNWRAP:'展开这个名字,'CANNOT_CREATE_SUBDOMAIN:'创建子域名,'CANNOT_SET_RESOLVER:'设定解析器,'CANNOT_SET_TTL:'设定TTL,'CANNOT_TRANSFER:'发送这个名字,'CANNOT_BURN_FUSES:'更改权限,'CANNOT_APPROVE:'更改续约经理'}},'itemLabel':{'name:姓名, address:地址, action:行动, info:信息, to:至, subname:子名, duration:持续时间, cost:费用, update:更新, resolver:解析器, h3Index:H3索引}, itemValue:{records_one:\"{{count}}条记录\", records_other:\"{{count}}条记录\"}, status:{pending:{regular:\"待处理\"}, confirmed:{regular:\"已确认\", notifyTitle:\"交易成功\", notifyMessage:\"您的“{{action}}”交易已成功\"}, failed:{regular:\"失败\", notifyTitle:\"交易失败\", notifyMessage:\"您的“{{action}}”交易失败并被撤销\"}}, dialog:{intro:{trailingButton:\"开始\", trailingButtonResume:\"恢复\", step:\"步骤 {{step}}\"}, confirm:{title:\"确认详情\", message:\"在钱包中确认前请仔细检查这些详情。\", waitingForWallet:\"等待钱包\", openWallet:\"打开钱包\"}, sent:{title:\"交易已发送\", message:\"您的交易正在进行中，您可以关闭此页面并稍后返回。\", progress:{title:\"已发送\", message:\"比预期时间长\"}}, complete:{title:\"交易完成\", message:\"您的交易已完成！\", progress:{title:\"完成\"}}, failed:{title:\"交易失败\", progress:{title:\"失败\"}}, error:{gasLimit:\"您的交易燃气限额不足，请重试。\"}}, error:{request:{INSUFFICIENT_FUNDS:\"钱包资金不足\", UNPREDICTABLE_GAS_LIMIT:\"发生未知错误",
-    "search": "{'label': '名称搜索', 'placeholder': '搜索名称', 'emptyText': '输入名称或地址进行搜索...', 'address': '地址', 'errors': {'tooShort': '名称过短', 'invalid': '名称格式无效'}, 'status': {'registered': '已注册', 'gracePeriod': '宽限期', 'premium': '临时高级', 'available': '可用', 'notOwned': '未拥有', 'notImported': '未导入', 'short': '过短', 'default': '无效', 'unsupportedTLD': '不支持的顶级域名',  'imported': '已导入',  'owned':  '已拥有'}}",
-    "selectableInput": "{'add': '添加', 'placeholder': '选择一个选项', 'empty': '未找到选项'}",
-    "testnetFaucet": "{'explanation': '每个在goerli的地址都可以领取{{ amount }}ETH来测试MNS管理器应用程序，以及所有新的合约。', 'note': '可能需要几分钟才能显示在您的钱包中。'}"
+    "action": {
+        "cancel": "取消",
+        "change": "更改",
+        "upload": "上传",
+        "close": "关闭",
+        "save": "保存",
+        "edit": "编辑",
+        "view": "查看",
+        "clear": "清除",
+        "update": "更新",
+        "learnMore": "了解更多",
+        "send": "发送",
+        "next": "下一步",
+        "add": "添加",
+        "set": "设置",
+        "search": "搜索",
+        "back": "返回",
+        "continue": "继续",
+        "confirm": "确认",
+        "remove": "移除",
+        "sign": "注册",
+        "reset": "重置",
+        "transfer": "转账",
+        "tryAgain": "再试一次",
+        "done": "完成",
+        "burnSelected": "选择销毁",
+        "extend": "扩展",
+        "delete": "删除",
+        "sort": "排序",
+        "check": "检查",
+        "claim": "领取",
+        "remindMe": "提醒我",
+        "begin": "开始",
+        "finish": "完成",
+        "skip": "跳过",
+        "changeNetwork": "切换网络",
+        "understand": "我明白",
+        "feedback": "反馈",
+        "migrate": "迁移"
+    },
+    "unit": {
+        "years_one": "{{count}} 年",
+        "years_other": "{{count}} 年",
+        "yrs_one": "{{count}} 年",
+        "yrs_other": "{{count}} 年",
+        "gas": "{{value}} 燃气费",
+        "selected": "{{count}} 已选",
+        "perPage": "每页 {{count}}"
+    },
+    "navigation": {
+        "home": "首页",
+        "names": "我的名字",
+        "favourites": "收藏夹",
+        "settings": "设置",
+        "governance": "治理",
+        "community": "社区",
+        "developers": "开发者",
+        "support": "支持",
+        "bounty": "漏洞赏金",
+        "terms": "使用条款",
+        "privacy": "隐私政策",
+        "back": "返回",
+        "oldApp": "旧版 MNS 应用",
+        "language": "语言",
+        "currency": "货币",
+        "ipfsApp": "IPFS MNS 应用",
+        "feedback": "反馈",
+        "syncMessage": "正在与网络同步。您的交易更改可能尚未可见。"
+    },
+    "wallet": {
+        "myProfile": "个人资料",
+        "disconnect": "断开连接",
+        "connect": "连接",
+        "noPrimaryName": "无主要名称",
+        "viewProfile": "查看个人资料",
+        "viewDetails": "查看详情",
+        "register": "注册"
+    },
+    "name": {
+        "registered": "注册",
+        "expires": "过期",
+        "noExpiry": "无期限",
+        "expiry": "有效期",
+        "parent": "父母",
+        "noParent": "无父项",
+        "registrant": "注册人",
+        "controller": "控制器",
+        "dnsOwner": "DNS所有者",
+        "owner": "所有者",
+        "notOwned": "未拥有",
+        "manager": "经理",
+        "all": "所有名称",
+        "expiresInYears_one": "{{count}}年后过期",
+        "expiresInYears_other": "{{count}}年后过期",
+        "expiresInMonths_one": "{{count}}个月后过期",
+        "expiresInMonths_other": "{{count}}个月后过期",
+        "expiresInDays_one": "{{count}}天后过期",
+        "expiresInDays_other": "{{count}}天后过期",
+        "expiresInHours_one": "{{count}}小时后过期",
+        "expiresInHours_other": "{{count}}小时后过期",
+        "expiresInHours_zero": "不到一小时后过期",
+        "expiredInHours_one": "过期了{{count}}小时前",
+        "expiredInHours_other": "过期了{{count}}小时前",
+        "expiredInHours_zero": "不到一小时前过期",
+        "expiredInDays_one": "过期了{{count}}天",
+        "expiredInDays_other": "{{count}}天前过期",
+        "expiredInMonths_one": "过期了{{count}}个月前",
+        "expiredInMonths_other": "{{count}}个月前过期",
+        "expiredInYears_one": "过期了{{count}}年",
+        "expiredInYears_other": "{{count}}年前过期",
+        "gracePeriod": {
+            "expiresInYears_one": "宽限期将在{{count}}年后到期",
+            "expiresInYears_other": "宽限期将在{{count}}年后到期",
+            "expiresInMonths_one": "宽限期将在{{count}}个月后到期",
+            "expiresInMonths_other": "宽限期将在{{count}}个月后到期",
+            "expiresInDays_one": "宽限期将在{{count}}天后到期",
+            "expiresInDays_other": "宽限期将在{{count}}天后到期",
+            "expiresInHours_one": "宽限期将在{{count}}小时后到期",
+            "expiresInHours_other": "宽限期将在{{count}}小时后到期",
+            "expiresInHours_zero": "宽限期在不到一个小时内到期"
+        },
+        "extend": "扩展",
+        "send": "发送",
+        "transfer": "转账",
+        "sendManager": "发送经理",
+        "sendOwner": "发送所有者"
+    },
+    "address": {
+        "label": "地址",
+        "viewAddress": "查看地址",
+        "copyAddress": "复制地址"
+    },
+    "records": {
+        "label": "记录"
+    },
+    "sortTypes": {
+        "expiryDate": "到期日期",
+        "labelName": "名称",
+        "creationDate": "创建日期"
+    },
+    "errors": {
+        "noResults": "未找到结果",
+        "invalidAddress": "无效地址",
+        "addressRequired": "需要地址"
+    },
+    "transaction": {
+        "description": {
+            "setName": "设置名称",
+            "setRecords": "设置记录",
+            "test": "测试交易",
+            "addSuccess": "添加成功",
+            "sendName": "发送名称",
+            "migrateProfile": "迁移个人资料",
+            "migrateProfileWithReset": "迁移个人资料",
+            "migrateProfileWithSync": "迁移并更新个人资料",
+            "wrapName": "包装名称",
+            "updateResolver": "更新解析器",
+            "updateProfile": "更新个人资料",
+            "setPrimaryName": "设置主要名称",
+            "updateEthAddress": "更新ETH地址",
+            "testSendName": "发送名称",
+            "burnFuses": "燃烧权限",
+            "createSubname": "创建子名称",
+            "deleteSubname": "删除子名称",
+            "extendNames": "扩展名称",
+            "importDNSSECName": "导入DNSSEC名称",
+            "commitName": "开始计时器",
+            "registerName": "注册名称",
+            "approveNameWrapper": "批准NameWrapper",
+            "clearRecords": "清除记录",
+            "updateRecords": "更新记录",
+            "transferName": "转账名称",
+            "changePermissions": "更改权限",
+            "syncManager": "同步管理器",
+            "updateProfileRecords": "更新个人资料",
+            "resetProfile": "重置个人资料",
+            "setHexagonName": "设置MEP1002六边形名称",
+            "mintHexagon": "铸造 MEP1002 六边形"
+        },
+        "info": {
+            "sendName": "设置名称的控制器和注册人",
+            "migrateProfile": "在新解析器上设置现有记录",
+            "migrateProfileWithReset": "在新解析器上设置现有记录",
+            "migrateProfileWithSync": "在新的解析器上设置现有记录",
+            "wrapName": "封装名称并设置新的解析器",
+            "updateResolver": "更改解析器为",
+            "updateProfile": "在现有解析器上更新记录",
+            "setPrimaryName": "为您的地址设置主要名称",
+            "updateEthAddress": "将ETH地址更新为此地址",
+            "testSendName": "设置名称的控制器和注册人",
+            "createSubname": "在名称上创建一个新的子名称",
+            "burnFuses": "燃烧所选权限，直到名称过期",
+            "commitName": "开始计时器以注册名称",
+            "approveNameWrapper": "批准NameWrapper管理您的名称",
+            "fuses": {
+                "revoke": "撤销",
+                "grant": "授权",
+                "setExpiry": "设置过期时间",
+                "PARENT_CANNOT_CONTROL": "放弃父母控制",
+                "CAN_EXTEND_EXPIRY": "延长到期时间",
+                "CANNOT_UNWRAP": "解开这个名字",
+                "CANNOT_CREATE_SUBDOMAIN": "创建子域",
+                "CANNOT_SET_RESOLVER": "设置解析器",
+                "CANNOT_SET_TTL": "设置TTL",
+                "CANNOT_TRANSFER": "发送此名称",
+                "CANNOT_BURN_FUSES": "更改权限",
+                "CANNOT_APPROVE": "更改续约管理器"
+            }
+        },
+        "itemLabel": {
+            "name": "名称",
+            "address": "地址",
+            "action": "操作",
+            "info": "信息",
+            "to": "至",
+            "subname": "子名称",
+            "duration": "持续时间",
+            "cost": "费用",
+            "update": "更新",
+            "resolver": "解决器",
+            "h3Index": "H3 指数"
+        },
+        "itemValue": {
+            "records_one": "{{count}} 条记录",
+            "records_other": "{{count}} 条记录"
+        },
+        "status": {
+            "pending": {
+                "regular": "待处理"
+            },
+            "confirmed": {
+                "regular": "已确认",
+                "notifyTitle": "交易成功",
+                "notifyMessage": "您的 \"{{action}}\" 交易已成功"
+            },
+            "failed": {
+                "regular": "失败",
+                "notifyTitle": "交易失败",
+                "notifyMessage": "您的 \"{{action}}\" 交易失败并已撤销"
+            }
+        },
+        "dialog": {
+            "intro": {
+                "trailingButton": "开始",
+                "trailingButtonResume": "继续",
+                "step": "步骤 {{step}}"
+            },
+            "confirm": {
+                "title": "确认详情",
+                "message": "在确认钱包中的信息之前，请仔细核对这些详情。",
+                "waitingForWallet": "等待钱包",
+                "openWallet": "打开钱包"
+            },
+            "sent": {
+                "title": "交易已发送",
+                "message": "您的交易正在进行中，您可以关闭此页面并稍后返回。",
+                "progress": {
+                    "title": "已发送",
+                    "message": "预期所需时间更长"
+                }
+            },
+            "complete": {
+                "title": "交易完成",
+                "message": "您的交易现在已完成！",
+                "progress": {
+                    "title": "完成"
+                }
+            },
+            "failed": {
+                "title": "交易失败",
+                "progress": {
+                    "title": "失败"
+                }
+            },
+            "error": {
+                "gasLimit": "您的交易的gas限制不够高，请再试一次。"
+            }
+        },
+        "error": {
+            "request": {
+                "INSUFFICIENT_FUNDS": "钱包资金不足",
+                "UNPREDICTABLE_GAS_LIMIT": "发生未知错误"
+            }
+        },
+        "viewEtherscan": "在BlockExplorer上查看",
+        "viewMore": "查看更多"
+    },
+    "search": {
+        "label": "名称搜索",
+        "placeholder": "搜索名称",
+        "emptyText": "输入名称或地址进行搜索...",
+        "address": "地址",
+        "errors": {
+            "tooShort": "名称过短",
+            "invalid": "名称格式无效"
+        },
+        "status": {
+            "registered": "注册",
+            "gracePeriod": "宽限期",
+            "premium": "临时高级版",
+            "available": "可用",
+            "notOwned": "未拥有",
+            "notImported": "未导入",
+            "short": "太短",
+            "default": "无效",
+            "unsupportedTLD": "不支持",
+            "imported": "导入的",
+            "owned": "拥有"
+        }
+    },
+    "selectableInput": {
+        "add": "添加",
+        "placeholder": "选择一个选项",
+        "empty": "未找到选项"
+    },
+    "testnetFaucet": {
+        "explanation": "每个在goerli上的地址都可以领取{{ amount }}ETH来测试MNS管理应用，以及所有新的合约。",
+        "note": "可能需要几分钟才能在您的钱包中显示。"
+    }
 }

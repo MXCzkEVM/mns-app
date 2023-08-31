@@ -1,4 +1,23 @@
 {
     "title": "Impostazioni",
-    "section": "{'wallet': {'title': 'Portafoglio'}, 'transaction': {'title': 'Transazioni', 'noRecentTransactions': 'Nessuna transazione recente'}, 'primary': {'title': 'Nome Primario', 'loading': 'Caricamento nome primario...', 'noName': 'Nessun nome primario impostato.', 'input': {'title': 'Seleziona un nome primario', 'noNames': 'Nessun nome idoneo trovato per questo indirizzo', 'noOtherNames': 'Nessun altro nome idoneo trovato per questo indirizzo', 'loading': 'Caricamento nomi'}}}"
+    "section": {
+        "wallet": {
+            "title": "Portafoglio"
+        },
+        "transaction": {
+            "title": "Transazioni",
+            "noRecentTransactions": "Nessuna transazione recente"
+        },
+        "primary": {
+            "title": "Nome Primario",
+            "loading": "Caricamento nome primario...",
+            "noName": "Nessun nome primario impostato.",
+            "input": {
+                "title": "Seleziona un nome primario",
+                "noNames": "Nessun nome idoneo trovato per questo indirizzo",
+                "noOtherNames": "Non sono stati trovati altri nomi idonei per questo indirizzo",
+                "loading": "Caricamento nomi"
+            }
+        }
+    }
 }

@@ -1,6 +1,15 @@
 {
     "title": "名稱",
-    "subtitle": "{'start': '所有由', 'this': '此', 'your': '您的', 'wallet': '錢包'}所持有的名稱",
-    "empty": "此地址未找到任何名稱",
-    "sortTypes": "{'expiryDate': '到期日期', 'labelName': '名稱', 'creationDate': '創建日期'}"
+    "subtitle": {
+        "start": "所有由``\"``持有的名稱",
+        "this": "這",
+        "your": "你的",
+        "wallet": "錢包"
+    },
+    "empty": "此地址未找到名稱",
+    "sortTypes": {
+        "expiryDate": "到期日",
+        "labelName": "名稱",
+        "creationDate": "創建日期"
+    }
 }

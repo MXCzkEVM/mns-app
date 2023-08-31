@@ -1,5 +1,8 @@
 {
-    "meta": "{'title': '{{name}} op MNS', 'description': \"Profiel van {{name}} op de MXC Naam Service\"}",
+    "meta": {
+        "title": "{{name}} op MNS",
+        "description": "{{name}}'s profiel op de MXC Naam Service"
+    },
     "title": "Profiel",
     "yourWallet": "Jouw portemonnee",
     "yourProfile": "Jouw profiel",
@@ -9,9 +12,374 @@
     "editProfile": "Profiel Bewerken",
     "ownership": "Eigendom",
     "viewDetails": "Bekijk Details",
-    "banner": "{'available': {'title': '{{name}} is beschikbaar', 'description': 'Deze naam is verlopen op <strong>{{date}}</strong>. Klik hier om de registratiepagina te bekijken.'}}",
-    "tabs": "{'profile': {'name': 'Profiel', 'actions': {'setAsPrimaryName': {'label': 'Instellen als primaire naam', 'title': 'Stel uw primaire naam in', 'description': 'Om uw primaire naam op deze naam te zetten, moet het ETH-adres overeenkomen met dit adres.'}, 'setToMEP1002Hexagon': {'label': 'Instellen op MEP1002 Hexagon', 'title': 'Instellen op MEP1002 Hexagon', 'description': 'Stel deze naam in op MEP1002 Hexagon, u moet de houder zijn van de MEP1002 Hexagon Naming Token'}, 'mintToMEP1002Hexagon': {'label': 'Mint MEP1002 Hexagon', 'title': 'Mint MEP1002 Hexagon', 'description': 'Mint deze MEP1002 Hexagon'}, 'deleteSubname': {'label': 'Subnaam verwijderen'}, 'extend': {'label': 'Naam verlengen'}, 'editProfile': {'label': 'Profiel bewerken'}, 'reclaim': {'label': 'Naam opnieuw aanmaken', 'warning': 'Deze subnaam is verlopen en wordt niet bezeten. U kunt deze subnaam opnieuw aanmaken.'}}, \n'warnings': {'wrappedDNS': \"DNS-namen kunnen op elk moment worden teruggevorderd door de DNS-eigenaar. Koop geen DNS-namen.\", \n'homoglyph':'Deze naam bevat niet-ASCII-tekens. Er kunnen tekens zijn die identiek of zeer vergelijkbaar lijken met andere tekens, wat kan worden gebruikt om lezers te misleiden. <a>Lees meer over homoglyphs</a>'}}, \n'records':{'name':'Records'},\n'subnames':{'name':'Subnamen'},\n'permissions':{'name':'Permissies',\n'parentUnlockedWarning':'<strong>U kunt de permissies voor deze naam niet wijzigen.</strong> U moet eerst ‘unwrap this name’ intrekken bij de ouder ({{parent}}). Klik hier om de permissies van de ouder te bekijken.',\n'revokedLabel':'Ingetrokken {{date}}',\n'grantedLabel':'Verleend {{date}}',\n'role':{'manager':'manager','owner':'eigenaar','parent':'ouder'},\n'ownership':{'title':'Eigendomspermissies',\n'parentCanControl':{'label':'Deze naam kan worden gecontroleerd door zijn ouder (<parentLink>{{parent}}</parentLink>)',\n'list':{'title':'De eigenaar van de bovenliggende naam kan:',\n'item1':'De instellingen en records controleren en wijzigen',\n'item2':'Het eigendom van deze naam terugnemen of herverdelen',\n'item3':'Deze naam verwijderen'}},\n'parentCannotControl':{'label':\"Deze naam kan niet worden gecontroleerd door zijn ouder (<parentLink>{{parent}}</parentLink>)\",\n'sublabel':\"De eigenaar van de bovenliggende naam kan deze naam niet controleren, wijzigen, verwijderen of het eigendom ervan terugnemen.\",\n'list':{'title':\"De eigenaar van de naam behoudt het eigendom tenzij een van de volgende gebeurtenissen plaatsvindt:\",\n'item1':\"De naam verloopt op {{date}} (kan worden verlengd)\",\n'item2':\"De bovenliggende naam verloopt op {{date}}\",\n'item3':\"Het eigendom van de naam wordt naar een ander adres gestuurd\"}},\n'parentCanChange':{'label':\"De ouder van deze naam (<parentLink>{{parent}}</parentLink>) kan permissies wijzigen\",\n'list':{'title':\"De ouder kan:\",\n'item1':\"Permissies intrekken\",\n'item2':\"Aangepaste zekeringen wijzigen of branden\"}},\n'ownerCanChange':{'label':\"De eigenaar van deze naam kan permissies wijzigen\",\n'list':{'title':\"De eigenaar kan:\",\n'item1':\"Permissies intrekken\",\n'item2':\"Aangepaste zekeringen wijzigen of branden\"}},\n'ownerCannotChange':{'label':\"De eigenaar van deze naam kan geen permissies wijzigen\",\n'list':{'title':\"De eigenaar kan niet:\",\n'item1':\"Permissies intrekken\",\n'item2':\"Aangepaste zekeringen wijzigen of branden\"}},\n'unwrapWarning':{'message':\"Unwrap-permissies moeten worden ingetrokken bij de ouder (<strong>{{parent}}</strong>) voordat u de controle over de ou",
-    "details": "{'title': 'Naam Details', 'notWrapped': 'Niet ingepakt', 'sendName': {'title': 'Stuur Naam', 'description': 'Het sturen van een naam geeft het nieuwe adres controle erover', 'learnMore': 'Leer meer over naam eigendom.', 'makeOwner': 'Maak eigenaar', 'makeOwnerDescription': 'De eigenaar kan naar een nieuwe eigenaar sturen en de manager veranderen', 'makeManager': 'Maak manager', 'makeManagerDescription': 'De manager kan veranderen en records instellen.', 'inputPlaceholder': 'Voer een Ethereum-adres of MNS-naam in', 'transferSubname': 'Transfer Naam', 'transferController': 'Transfer Controller'}, 'wrap': {'startTitle': 'Upgrade uw naam', 'resumeTitle': 'Hervat uw upgrade', 'completeTitle': 'Upgrade voltooid', 'description': '\"Upgraden\" of \"inpakken\" van uw naam geeft het nieuwe functies.',  startLabel: Upgrade, resumeLabel: Hervat Upgrade, boxTitle: Ontgrendel nieuwe functies, boxDescription: Het upgraden van uw naam ontgrendelt de nieuwste functionaliteit van MNS}, descriptions: {owner: Bezit en controleert de naam, controller: Beheert alle records van de naam, registrant: De eigenaar van de NFT, dnsOwner: Eigenaar van de DNS-naam}, tabs: {records: {label: Records, text: Tekst, contentHash: Inhoud Hash, noContentHash: Geen inhoud Hash, editRecords: Bewerk Records, noAbi: Geen ABI, abi: ABI, editRecordsDisabled: Huidige resolver is niet compatibel met ingepakte namen}, subnames: {label: Subnamen, loading: Laden subnamen, empty: Er zijn geen subnamen toegevoegd, noResults: Geen resultaten, noMoreResults: Geen verdere resultaten, addSubname:{title:'Subnamen laten u extra namen maken vanuit uw bestaande naam.', learn:'Leer over subnamen', action:'Nieuwe subnaam', dialog:{title:'Creëer Subnaam', error:{invalidCharacters:'Bevat ongeldige tekens', mustUseLowercase:'Moet kleine letters gebruiken', alreadyExists:'Naam bestaat al', nameTooLong:'Naam is te lang', pccBurned:'Naam is vergrendeld tot {{date}}'}}}}}",
-    "advancedEditor": "{'title': \"Records van {{name}}\", 'tabs': {'text': {'label': 'Tekst', 'addRecord': 'Record toevoegen', 'createRecord': 'Typ een recordnaam...', 'placeholder': {'default': 'Voeg hier een waarde toe...'}}, 'address': {'label': 'Adres', 'addRecord': 'Adres toevoegen', 'noOptions': 'Geen adresopties beschikbaar', 'placeholder': {'default': 'Voeg hier een adres toe...'}}, 'other': {'label': 'Overig', 'labelDisabled': 'Niet ondersteund door huidige resolver', 'contentHash': {'label': 'Inhoud Hash', 'placeholder': 'bijv. ipfs://'}, 'publicKey': {'label': 'Publieke Sleutel', 'placeholder': 'bijv. pub_1231231231231'}, 'abi': {'label': 'ABI', 'placeholder': 'Voer hier een ABI in...'}}}}",
-    "errors": "{'invalidName': 'Deze naam is ongeldig.', 'invalidAddress': 'Geen geldig adres', 'expiringSoon': 'De respijtperiode voor deze naam eindigt op {{date}}. Als het niet wordt verlengd voor deze datum, zal het beschikbaar worden voor registratie.', 'hasExpired': '{{ name }} is verlopen', 'ownerManagerChoice': 'Moet eigenaar of manager sturen', 'unknown': 'Onbekende fout', 'notMigrated': 'Deze naam is niet gemigreerd naar het nieuwe register.', 'featureNotAvailable': 'Sommige functies zijn nog niet beschikbaar, maar je kunt nog steeds ', 'featureNotAvailableLink': 'bekijk deze naam in de oude app.', 'migrationNotAvailable': 'Migratie naar het nieuwe register is nog niet beschikbaar, maar je kunt nog steeds ', 'migrationNotAvailableLink': 'migreer deze naam in de oude app.', 'addressLength': 'Als het een adres is, moet het 42 tekens lang zijn', 'unsupportedTLD': 'Deze TLD wordt niet ondersteund', 'keyInUse': '{{value}} is al in gebruik', 'hasSubnames': 'Deze naam heeft subnamen', 'permissionRevoked': 'Deze naam heeft de benodigde toestemmingen ingetrokken om deze actie uit te voeren.', 'invalidJSON': 'Ongeldige JSON'}"
+    "banner": {
+        "available": {
+            "title": "{{name}} is beschikbaar",
+            "description": "Deze naam is verlopen op <strong>{{date}}</strong>. Klik hier om de registratiepagina te bekijken."
+        }
+    },
+    "tabs": {
+        "profile": {
+            "name": "Profiel",
+            "actions": {
+                "setAsPrimaryName": {
+                    "label": "Instellen als primaire naam",
+                    "title": "Stel je primaire naam in",
+                    "description": "Om uw primaire naam in te stellen op deze naam, moet het ETH-adres overeenkomen met dit adres."
+                },
+                "setToMEP1002Hexagon": {
+                    "label": "Instellen op MEP1002 Hexagon",
+                    "title": "Instellen op MEP1002 Hexagon",
+                    "description": "Stel deze naam in op MEP1002 Hexagon, je moet de houder zijn van de MEP1002 Hexagon Naamgeving Token"
+                },
+                "mintToMEP1002Hexagon": {
+                    "label": "Mint MEP1002 Hexagon",
+                    "title": "Mint MEP1002 Hexagon",
+                    "description": "Mint deze MEP1002 Hexagon"
+                },
+                "deleteSubname": {
+                    "label": "Verwijder subnaam"
+                },
+                "extend": {
+                    "label": "Naam uitbreiden"
+                },
+                "editProfile": {
+                    "label": "Profiel bewerken"
+                },
+                "reclaim": {
+                    "label": "Herschep naam",
+                    "warning": "Deze subnaam is verlopen en wordt niet bezit. U kunt deze subnaam opnieuw aanmaken."
+                }
+            },
+            "warnings": {
+                "wrappedDNS": "DNS-namen kunnen op elk moment worden teruggevorderd door de DNS-eigenaar. Koop geen DNS-namen.",
+                "homoglyph": "Deze naam bevat niet-ASCII tekens. Er kunnen tekens zijn die identiek of zeer vergelijkbaar lijken met andere tekens, wat kan worden gebruikt om lezers te misleiden. <a>Meer leren over homoglyphen</a>"
+            }
+        },
+        "records": {
+            "name": "Records"
+        },
+        "subnames": {
+            "name": "Subnamen"
+        },
+        "permissions": {
+            "name": "Machtigingen",
+            "parentUnlockedWarning": "U kunt de rechten op deze naam niet wijzigen. U moet eerst 'deze naam uitpakken' intrekken op de ouder ({{parent}}). Klik hier om de rechten van de ouder te bekijken.",
+            "revokedLabel": "Ingetrokken {{date}}",
+            "grantedLabel": "Verleend {{date}}",
+            "role": {
+                "manager": "manager",
+                "owner": "eigenaar",
+                "parent": "ouder"
+            },
+            "ownership": {
+                "title": "Eigendomsrechten",
+                "parentCanControl": {
+                    "label": "Deze naam kan worden gecontroleerd door zijn ouder (<parentLink>{{parent}}</parentLink>)",
+                    "list": {
+                        "title": "De eigenaar van de hoofdnaam kan:",
+                        "item1": "Beheer en wijzig de instellingen en records",
+                        "item2": "Herneem of wijs opnieuw eigendom van deze naam toe",
+                        "item3": "Verwijder deze naam"
+                    }
+                },
+                "parentCannotControl": {
+                    "label": "Deze naam kan niet worden gecontroleerd door zijn ouder (<parentLink>{{parent}}</parentLink>)",
+                    "sublabel": "De eigenaar van de hoofdnaam kan deze naam niet beheren, wijzigen, verwijderen of het eigendom ervan terugnemen.",
+                    "list": {
+                        "title": "De naamhouder behoudt het eigendom tenzij een van de volgende situaties zich voordoet:",
+                        "item1": "De naam verloopt op {{date}} (kan worden verlengd)",
+                        "item2": "De naam van de hoofdaccount verloopt op {{date}}",
+                        "item3": "Het eigendom van de naam wordt naar een ander adres gestuurd"
+                    }
+                },
+                "parentCanChange": {
+                    "label": "De ouder van deze naam (<parentLink>{{parent}}</parentLink>) kan machtigingen wijzigen",
+                    "list": {
+                        "title": "De ouder kan:",
+                        "item1": "Intrekken van machtigingen",
+                        "item2": "Verander of verbrand aangepaste zekeringen"
+                    }
+                },
+                "ownerCanChange": {
+                    "label": "De eigenaar van deze naam kan rechten wijzigen",
+                    "list": {
+                        "title": "De eigenaar kan:",
+                        "item1": "Intrekken van machtigingen",
+                        "item2": "Verander of verbrand aangepaste zekeringen"
+                    }
+                },
+                "ownerCannotChange": {
+                    "label": "De eigenaar van deze naam kan de rechten niet wijzigen",
+                    "list": {
+                        "title": "De eigenaar kan niet:",
+                        "item1": "Intrekken van machtigingen",
+                        "item2": "Verander of verbrand aangepaste zekeringen"
+                    }
+                },
+                "unwrapWarning": {
+                    "message": "De toestemmingen voor het uitpakken moeten worden ingetrokken op de ouder (<strong>{{parent}}</strong>) voordat de controle over de ouder wordt opgegeven.<br> <parentLink>Ga naar ouderlijke toestemmingen</parentLink>"
+                },
+                "action": {
+                    "giveUpControl": "Geef ouderlijk toezicht op",
+                    "revokePermission": "Toestemming intrekken"
+                }
+            },
+            "expiry": {
+                "permissions": {
+                    "canExtendExpiry": {
+                        "label": "Kan vervaldatum verlengen",
+                        "description": "De vervaldatum van deze naamstoestemming kan worden verlengd door de {{managerOrOwner}}.",
+                        "description_date": "Deze naamstoestemming vervalt op ({{date}}) en kan worden verlengd door de {{managerOrOwner}}."
+                    },
+                    "cannotExtendExpiry": {
+                        "label": "Kan vervaldatum niet verlengen",
+                        "description": "De vervaldatum van deze naamstoestemming kan niet door de manager worden verlengd.",
+                        "description_date": "Deze naamsmachtiging verloopt op ({{date}}) en kan niet door de manager worden verlengd."
+                    }
+                },
+                "manager": "manager",
+                "owner": "eigenaar",
+                "action": {
+                    "changePermissions": "Machtigingen wijzigen"
+                }
+            },
+            "nameChangePermissions": {
+                "title": "Naamwijziging Toestemmingen",
+                "subtitle": {
+                    "parent-can-change": "De ouder van deze naam (<parentLink>{{parent}}</parentLink>) kan instellingen wijzigen voor deze naam.",
+                    "owner-can-change": "De eigenaar van deze naam kan instellingen wijzigen voor deze naam."
+                },
+                "permissions": {
+                    "canUnwrap": {
+                        "label": "Kan deze naam uitpakken",
+                        "description": "De {{eigenaar}} van deze naam kan deze naam uitpakken."
+                    },
+                    "cannotUnwrap": {
+                        "label": "Kan deze naam niet uitpakken",
+                        "description": "De {{eigenaar}} van deze naam kan deze naam niet uitpakken."
+                    },
+                    "canCreateSubnames": {
+                        "label": "Kan subnamen creëren",
+                        "description": "De {{owner}} van deze naam kan nieuwe subnamen aanmaken."
+                    },
+                    "cannotCreateSubnames": {
+                        "label": "Kan geen subnamen aanmaken",
+                        "description": "De {{owner}} van deze naam kan geen nieuwe subnamen aanmaken."
+                    },
+                    "canSend": {
+                        "label": "Kan deze naam verzenden",
+                        "description": "De {{eigenaar}} van deze naam kan het naar een nieuwe eigenaar sturen."
+                    },
+                    "cannotSend": {
+                        "label": "Kan deze naam niet verzenden",
+                        "description": "De {{eigenaar}} van deze naam kan het niet naar een nieuwe eigenaar sturen."
+                    },
+                    "canSetResolver": {
+                        "label": "Kan de resolver instellen",
+                        "description": "De {{eigenaar}} van deze naam kan de resolver instellen en wijzigen."
+                    },
+                    "cannotSetResolver": {
+                        "label": "Kan de resolver niet instellen",
+                        "description": "De {{owner}} van deze naam kan de resolver niet instellen en wijzigen."
+                    },
+                    "canSetTTL": {
+                        "label": "Kan TTL instellen",
+                        "description": "De {{owner}} van deze naam kan de TTL instellen en wijzigen."
+                    },
+                    "cannotSetTTL": {
+                        "label": "Kan TTL niet instellen",
+                        "description": "De {{eigenaar}} van deze naam kan de TTL niet instellen en wijzigen."
+                    },
+                    "canApprove": {
+                        "label": "Kan vernieuwingsmanager veranderen",
+                        "description": "De eigenaar van deze naam kan de door de manager goedgekeurde wijziging voor het vernieuwen van subnamen aanbrengen."
+                    },
+                    "cannotApprove": {
+                        "label": "Kan vernieuwingsbeheerder niet wijzigen",
+                        "description": "De eigenaar van deze naam kan de door de manager goedgekeurde wijziging voor het vernieuwen van subnamen niet aanpassen."
+                    }
+                },
+                "action": {
+                    "changePermissions": "Machtigingen wijzigen"
+                }
+            }
+        },
+        "fuses": {
+            "name": "Zekeringen"
+        },
+        "more": {
+            "name": "Meer",
+            "resolver": {
+                "label": "Oplosser",
+                "custom": "Aangepast",
+                "latest": "Laatste",
+                "outdated": "Verouderd",
+                "version": "Versie",
+                "etherscan": "BlockExplorer"
+            },
+            "fuses": {
+                "label": "Zekeringen",
+                "info": "Je moet 'Can unwrap' verbranden om andere zekeringen te kunnen verbranden.",
+                "callToAction": "Wikkel uw naam alstublieft om deze functie te ontgrendelen",
+                "burnFormTitle": "Brandrechten",
+                "burned": "Verbrand",
+                "permissions": {
+                    "label": "Machtigingen",
+                    "warning": "Zekeringen kunnen door de ouder worden veranderd",
+                    "CAN_DO_EVERYTHING": "Kan alles doen",
+                    "CANNOT_BURN_FUSES": "Kan zekeringen verbranden",
+                    "CANNOT_CREATE_SUBDOMAIN": "Kan subdomeinen aanmaken",
+                    "CANNOT_SET_RESOLVER": "Kan resolver instellen",
+                    "CANNOT_SET_TTL": "Kan TTL instellen",
+                    "CANNOT_TRANSFER": "Kan overboeken",
+                    "CANNOT_UNWRAP": "Kan uitpakken",
+                    "PARENT_CANNOT_CONTROL": "Ouders kunnen controleren",
+                    "CAN_EXTEND_EXPIRY": "Kan vervaldatum niet verlengen",
+                    "IS_DOT_ETH": "Is niet .eth"
+                }
+            },
+            "ownership": {
+                "label": "Eigendom",
+                "refreshDNS": "Vernieuw DNS",
+                "dnsOwnerWarning": {
+                    "isDnsOwner": "U kunt geen wijzigingen aanbrengen in deze naam omdat u de DNS-eigenaar bent, maar niet de Manager. U kunt de manager synchroniseren om dit te verhelpen.",
+                    "isManager": "Je bent de Manager, maar niet de DNS Eigenaar van deze naam. DNS-namen kunnen op elk moment worden teruggevorderd door de DNS Eigenaar. Je kunt deze naam naar de Eigenaar sturen, of het DNS-record bijwerken om te matchen.",
+                    "refreshDNS": "Vernieuw DNS",
+                    "syncManager": "Synchronisatiebeheerder"
+                }
+            },
+            "token": {
+                "label": "Token",
+                "hex": "hex",
+                "decimal": "decimaal"
+            },
+            "misc": {
+                "registered": "Geregistreerd",
+                "expires": "Verloopt"
+            }
+        }
+    },
+    "details": {
+        "title": "Naam Details",
+        "notWrapped": "Niet ingepakt",
+        "sendName": {
+            "title": "Verzend Naam",
+            "description": "Het verzenden van een naam geeft het nieuwe adres controle erover",
+            "learnMore": "Kom meer te weten over naam eigendom.",
+            "makeOwner": "Maak eigenaar",
+            "makeOwnerDescription": "De eigenaar kan naar een nieuwe eigenaar sturen en de beheerder wijzigen",
+            "makeManager": "Maak beheerder",
+            "makeManagerDescription": "De manager kan wijzigingen aanbrengen en records instellen.",
+            "inputPlaceholder": "Voer een Ethereum-adres of MNS-naam in",
+            "transferSubname": "Overdrachtsnaam",
+            "transferController": "Overdracht Controller"
+        },
+        "wrap": {
+            "startTitle": "Upgrade je naam",
+            "resumeTitle": "Hervat je upgrade",
+            "completeTitle": "Upgrade voltooid",
+            "description": "Het upgraden of \"wrappen\" van uw naam geeft het nieuwe functies.",
+            "startLabel": "Upgrade",
+            "resumeLabel": "Hervat Upgrade",
+            "boxTitle": "Ontgrendel nieuwe functies",
+            "boxDescription": "Het upgraden van uw naam ontgrendelt de nieuwste functionaliteit van MNS"
+        },
+        "descriptions": {
+            "owner": "Bezit en controleert de naam",
+            "controller": "Beheert alle records van de naam",
+            "registrant": "De eigenaar van de NFT",
+            "dnsOwner": "Eigenaar van de DNS-naam"
+        },
+        "tabs": {
+            "records": {
+                "label": "Records",
+                "text": "\"Your transaction has been successfully sent. Please note that it may take some time for the transaction to be confirmed due to network congestion. The gas fee has been deducted from your account.\"",
+                "contentHash": "Inhoud Hash",
+                "noContentHash": "Geen inhoudshash",
+                "editRecords": "Bewerk Records",
+                "noAbi": "Geen ABI",
+                "abi": "ABI",
+                "editRecordsDisabled": "Huidige resolver is niet compatibel met verpakte namen"
+            },
+            "subnames": {
+                "label": "Subnamen",
+                "loading": "Subnamen laden",
+                "empty": "Er zijn geen subnamen toegevoegd",
+                "noResults": "Geen resultaten",
+                "noMoreResults": "Geen verdere resultaten",
+                "addSubname": {
+                    "title": "Subnamen laten u extra namen maken van uw bestaande naam.",
+                    "learn": "Leer over subnamen",
+                    "action": "Nieuwe subnaam",
+                    "dialog": {
+                        "title": "Subnaam Aanmaken",
+                        "error": {
+                            "invalidCharacters": "Bevat ongeldige tekens",
+                            "mustUseLowercase": "Moet kleine letters gebruiken",
+                            "alreadyExists": "Naam bestaat al",
+                            "nameTooLong": "Naam is te lang",
+                            "pccBurned": "Naam is vergrendeld tot {{date}}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "advancedEditor": {
+        "title": "{{name}}'s records",
+        "tabs": {
+            "text": {
+                "label": "\"Your transaction is pending. Please note that the network fee (gas) may vary due to congestion on the blockchain. You can increase your gas price in 'Settings' to speed up the transaction.\"",
+                "addRecord": "Voeg record toe",
+                "createRecord": "Typ een recordnaam...",
+                "placeholder": {
+                    "default": "Voeg hier een waarde toe..."
+                }
+            },
+            "address": {
+                "label": "Adres",
+                "addRecord": "Adres toevoegen",
+                "noOptions": "Geen adresopties beschikbaar",
+                "placeholder": {
+                    "default": "Voeg adres hier toe..."
+                }
+            },
+            "other": {
+                "label": "Andere",
+                "labelDisabled": "Niet ondersteund door huidige resolver",
+                "contentHash": {
+                    "label": "Inhoud Hash",
+                    "placeholder": "bijvoorbeeld ipfs://"
+                },
+                "publicKey": {
+                    "label": "Openbare Sleutel",
+                    "placeholder": "bijv. pub_1231231231231"
+                },
+                "abi": {
+                    "label": "ABI",
+                    "placeholder": "Voer hier een ABI in..."
+                }
+            }
+        }
+    },
+    "errors": {
+        "invalidName": "Deze naam is ongeldig.",
+        "invalidAddress": "Geen geldig adres",
+        "expiringSoon": "De respijtperiode voor deze naam eindigt op {{date}}. Als het niet wordt verlengd voor deze datum, zal het beschikbaar worden voor registratie.",
+        "hasExpired": "{{ name }} is verlopen",
+        "ownerManagerChoice": "Moet eigenaar of manager sturen",
+        "unknown": "Onbekende fout",
+        "notMigrated": "Deze naam is niet gemigreerd naar het nieuwe register.",
+        "featureNotAvailable": "Sommige functies zijn nog niet beschikbaar, maar je kunt nog steeds",
+        "featureNotAvailableLink": "Bekijk deze naam in de oude app.",
+        "migrationNotAvailable": "Migratie naar het nieuwe register is nog niet beschikbaar, maar je kunt nog steeds",
+        "migrationNotAvailableLink": "migreer deze naam in de oude app.",
+        "addressLength": "Als het adres 42 tekens lang moet zijn",
+        "unsupportedTLD": "Deze TLD wordt niet ondersteund",
+        "keyInUse": "{{value}} is al in gebruik",
+        "hasSubnames": "Deze naam heeft subnamen",
+        "permissionRevoked": "Deze naam heeft de benodigde toestemmingen om deze actie uit te voeren ingetrokken.",
+        "invalidJSON": "Ongeldige JSON"
+    }
 }

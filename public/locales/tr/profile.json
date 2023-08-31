@@ -1,5 +1,8 @@
 {
-    "meta": "{'title': '{{name}} MNS'de', 'description': \"MXC İsim Servisi'nde {{name}} profili\"}",
+    "meta": {
+        "title": "{{name}} MNS'de",
+        "description": "{{name}}'ın MXC İsim Servisi profilinde"
+    },
     "title": "Profil",
     "yourWallet": "Cüzdanınız",
     "yourProfile": "Profiliniz",
@@ -9,9 +12,374 @@
     "editProfile": "Profil Düzenle",
     "ownership": "Sahiplik",
     "viewDetails": "Detayları Görüntüle",
-    "banner": "{'available': {'title': '{{name}} kullanılabilir', 'description': 'Bu isim <strong>{{date}}</strong> tarihinde sona erdi. Kayıt sayfasını görüntülemek için buraya tıklayın.'}}",
-    "tabs": "{'profile': {'name': 'Profil', 'actions': {'setAsPrimaryName': {'label': 'Birincil isim olarak ayarla', 'title': 'Birincil isminizi ayarlayın', 'description': 'Birincil isminizi bu isme ayarlamak için, ETH adresinin bu adresle eşleşmesi gerekmektedir.'}, 'setToMEP1002Hexagon': {'label': 'MEP1002 Hexagon olarak ayarla', 'title': 'MEP1002 Hexagon olarak ayarla', 'description': 'Bu ismi MEP1002 Hexagon olarak ayarlamak için, MEP1002 Hexagon İsimlendirme Token'ının sahibi olmalısınız'}, 'mintToMEP1002Hexagon': {'label': 'MEP1002 Hexagon Bas', 'title': 'MEP1002 Hexagon Bas', 'description': 'Bu MEP1002 Hexagon'u bas'}, 'deleteSubname': {'label': 'Alt ismi sil'}, 'extend': {'label': 'İsmi uzat'}, 'editProfile': {'label': 'Profili düzenle'}, 'reclaim': {'label': 'İsmi yeniden oluştur', 'warning': 'Bu alt isim süresi dolmuş ve sahip değil. Bu alt ismi yeniden oluşturabilirsiniz.'}}, \n'warnings': {'wrappedDNS': \"DNS isimleri her zaman DNS sahibi tarafından geri alınabilir. DNS isimlerini satın almayın.\", \n'homoglyph':'Bu isim ASCII olmayan karakterler içeriyor. Diğer karakterlere çok benzer veya aynı görünen karakterler olabilir, bu da okuyucuları yanıltabilir. <a>Homoglyph hakkında daha fazla bilgi edinin</a>'}}, \n'records':{'name':'Kayıtlar'},\n'subnames':{'name':'Alt İsimler'},\n'permissions':{'name':'İzinler',\n'parentUnlockedWarning':'<strong>Bu isim üzerinde izinleri değiştiremezsiniz.</strong> Öncelikle ana üzerinde ‘bu ismi aç’ı iptal etmelisiniz ({{parent}}). Ana izinlerini görüntülemek için buraya tıklayın.',\n'revokedLabel':'{{date}} tarihinde iptal edildi',\n'grantedLabel':'{{date}} tarihinde verildi',\n'role':{'manager':'yönetici','owner':'sahip','parent':'ana'},\n'ownership':{'title':'Sahiplik İzinleri',\n'parentCanControl':{'label':'Bu isim ana tarafından kontrol edilebilir (<parentLink>{{parent}}</parentLink>)',\n'list':{'title':'Ana adın sahibi şunları yapabilir:','item1':'Ayarları ve kayıtları kontrol edebilir ve değiştirebilir','item2':'Bu adın sahipliğini geri alabilir veya yeniden atayabilir','item3':'Bu adı kaldırabilir'}},\n'parentCannotControl':{'label':'Bu ad ana tarafından kontrol edilemez (<parentLink>{{parent}}</parentLink>)',\n'sublabel':'Ana adın sahibi bu adı kontrol edemez, değiştiremez, kaldıramaz veya sahipliğini geri alamaz.',\n'list':{'title':'Ad sahibi, aşağıdakilerden birisi olmadıkça sahipliği koruyacaktır:','item1':'Ad {{date}} tarihinde sona erer (uzatılabilir)','item2':'Ana ad {{date}} tarihinde sona erer','item3':'Adın sahipliği başka bir adrese gönderilir'}},\n'parentCanChange':{'label':\"Bu adın ana (<parentLink>{{parent}}</parentLink>) izinleri değiştirebilir\",\n'list':{'title':\"Ana şunları yapabilir:\",'item1':\"İzinleri iptal edebilir\",'item2':\"Özel sigortaları değiştirebilir veya yakabilir\"}},\n'ownerCanChange':{'label':\"Bu adın sahibi izinleri değiştirebilir\",\n'list':{'title':\"Sahip şunları yapabilir:\",'item1':\"İzinleri iptal edebilir\",'item2':\"Özel sigortaları değiştirebilir veya yakabilir\"}},\n'ownerCannotChange':{'label':\"Bu adın sahibi izinleri değiştiremez\",\n'list",
-    "details": "{'title': 'İsim Detayları', 'notWrapped': 'Sarılı Değil', 'sendName': {'title': 'İsmi Gönder', 'description': 'Bir ismi göndermek yeni adresin kontrolünü sağlar', 'learnMore': 'İsim sahipliği hakkında daha fazla bilgi edinin.', 'makeOwner': 'Sahip Yap', 'makeOwnerDescription': 'Sahip, yeni bir sahibe gönderebilir ve yöneticiyi değiştirebilir', 'makeManager': 'Yönetici Yap', 'makeManagerDescription': 'Yönetici, kayıtları değiştirebilir ve ayarlayabilir.', 'inputPlaceholder': 'Bir Ethereum adresi veya MNS ismi girin', 'transferSubname': 'İsmi Transfer Et', 'transferController': 'Kontrolcüyü Transfer Et'}, 'wrap': {'startTitle': 'İsminizi yükseltin', 'resumeTitle': 'Yükseltmenize devam edin', 'completeTitle': 'Yükseltme tamamlandı', 'description': '\"Sararak\" ya da yükselterek isminize yeni özellikler ekleyebilirsiniz.', 'startLabel': 'Yükselt', 'resumeLabel': 'Yükseltmeye Devam Et', 'boxTitle': 'Yeni özelliklerin kilidini açın', 'boxDescription': \"İsminizi yükseltmek MNS'nin en son işlevlerinin kilidini açar\"},  \"descriptions\": {'owner':'İsmi sahip olur ve kontrol eder','controller':'İsmin tüm kayıtlarını kontrol eder','registrant':'NFT'nin sahibi','dnsOwner':'DNS isminin sahibi'},'tabs':{'records':{'label':'Kayıtlar','text':'Metin','contentHash':'İçerik Hash','noContentHash':'İçerik Hash Yok','editRecords':'Kayıtları Düzenle','noAbi':'ABI Yok','abi':'ABI','editRecordsDisabled':'Mevcut çözümleyici sarılı isimlerle uyumlu değil'},'subnames':{'label':'Alt İsimler','loading':'Alt isimler yükleniyor','empty':'Hiç alt isim eklenmemiş','noResults':'Sonuç yok','noMoreResults':'Daha fazla sonuç yok','addSubname':{'title':'Alt isimler, mevcut isminizden ek isimler oluşturmanızı sağlar.','learn':'Alt isimler hakkında bilgi edinin','action':'Yeni alt isim','dialog':{'title':'Alt İsim Oluştur','error':{'invalidCharacters':'Geçersiz karakterler içeriyor','mustUseLowercase':'Küçük harf kullanmalısınız','alreadyExists':'İsim zaten var','nameTooLong':'İsim çok uzun','pccBurned':\"{{date}} tarihine kadar ad kilitli\"}}}}}}",
-    "advancedEditor": "{'title': \"{{name}}'in kayıtları\", 'tabs': {'text': {'label': 'Metin', 'addRecord': 'Kayıt ekle', 'createRecord': 'Bir kayıt adı yazın...', 'placeholder': {'default': 'Buraya bir değer ekleyin...'}}, 'address': {'label': 'Adres', 'addRecord': 'Adres ekle', 'noOptions': 'Kullanılabilir adres seçeneği yok', 'placeholder': {'default': 'Buraya bir adres ekleyin...'}}, 'other': {'label': 'Diğer', 'labelDisabled': 'Mevcut çözücü tarafından desteklenmiyor', 'contentHash': {'label': 'İçerik Hashi', 'placeholder': 'örn. ipfs://'}, 'publicKey': {'label': 'Genel Anahtar', 'placeholder': 'örn. pub_1231231231231'}, 'abi': {'label': 'ABI', 'placeholder': 'Buraya bir ABI girin...'}}}}",
-    "errors": "{'invalidName': 'Bu isim geçersiz.', 'invalidAddress': 'Geçerli bir adres değil', 'expiringSoon': 'Bu ismin lütuf süresi {{date}} tarihinde sona eriyor. Bu tarihten önce uzatılmazsa, kayıt için kullanılabilir hale gelecektir.', 'hasExpired': '{{ name }} süresi doldu', 'ownerManagerChoice': 'Sahip veya yönetici gönderilmeli', 'unknown': 'Bilinmeyen hata', 'notMigrated': 'Bu isim yeni kayıta taşınmamış.', 'featureNotAvailable': 'Bazı özellikler henüz kullanılabilir değil, ancak yine de ', 'featureNotAvailableLink': 'bu ismi eski uygulamada görüntüleyebilirsiniz.', 'migrationNotAvailable': 'Yeni kayıta taşıma henüz kullanılabilir değil, ancak yine de ', 'migrationNotAvailableLink': 'bu ismi eski uygulamada taşıyabilirsiniz.', 'addressLength': 'Adres ise 42 karakter uzunluğunda olmalıdır', 'unsupportedTLD': 'Bu TLD desteklenmiyor', 'keyInUse': '{{value}} zaten kullanımda', 'hasSubnames': 'Bu ismin alt isimleri var', 'permissionRevoked': 'Bu isim, bu işlemi gerçekleştirmek için gerekli izinleri iptal etti.', 'invalidJSON': 'Geçersiz JSON'}"
+    "banner": {
+        "available": {
+            "title": "{{name}} kullanılabilir",
+            "description": "Bu isim <strong>{{date}}</strong> tarihinde sona erdi. Kayıt sayfasını görüntülemek için buraya tıklayın. Ağ ücreti olarak anlaşılan gas kelimesini dikkate alın."
+        }
+    },
+    "tabs": {
+        "profile": {
+            "name": "Profil",
+            "actions": {
+                "setAsPrimaryName": {
+                    "label": "Birincil ad olarak ayarla",
+                    "title": "Birincil adınızı ayarlayın",
+                    "description": "Bu adı birincil adınız olarak ayarlamak için, ETH adresinizin bu adresle eşleşmesi gerekmektedir."
+                },
+                "setToMEP1002Hexagon": {
+                    "label": "MEP1002 Hexagon'a Ayarla",
+                    "title": "MEP1002 Hexagon'a Ayarla",
+                    "description": "Bu ismi MEP1002 Hexagon olarak ayarlayın, MEP1002 Hexagon İsimlendirme Token'ının sahibi olmalısınız."
+                },
+                "mintToMEP1002Hexagon": {
+                    "label": "MEP1002 Hexagon Basma",
+                    "title": "MEP1002 Hexagon Basımı",
+                    "description": "Bu MEP1002 Hexagon'u basın"
+                },
+                "deleteSubname": {
+                    "label": "Alt ismi sil"
+                },
+                "extend": {
+                    "label": "İsim uzatın"
+                },
+                "editProfile": {
+                    "label": "Profil düzenle"
+                },
+                "reclaim": {
+                    "label": "İsim Yeniden Oluştur",
+                    "warning": "Bu alt isim süresi dolmuş ve sahip değil. Bu alt ismi yeniden oluşturabilirsiniz."
+                }
+            },
+            "warnings": {
+                "wrappedDNS": "DNS isimleri, DNS sahibi tarafından her zaman geri alınabilir. DNS isimleri satın almayın.",
+                "homoglyph": "Bu isim, ASCII olmayan karakterler içeriyor. Diğer karakterlere benzer veya aynı görünen karakterler olabilir, bu da okuyucuları aldatmak için kullanılabilir. <a>Homoglyph'ler hakkında daha fazla bilgi edinin</a>"
+            }
+        },
+        "records": {
+            "name": "Kayıtlar"
+        },
+        "subnames": {
+            "name": "Alt isimler"
+        },
+        "permissions": {
+            "name": "İzinler",
+            "parentUnlockedWarning": "Bu isim üzerinde izinleri değiştiremezsiniz. Öncelikle ebeveyn ({{parent}}) üzerinde 'bu ismi açma' yetkisini iptal etmelisiniz. Ebeveynin izinlerini görüntülemek için buraya tıklayın.",
+            "revokedLabel": "{{date}} tarihinde iptal edildi",
+            "grantedLabel": "Verildi {{date}}",
+            "role": {
+                "manager": "yönetici",
+                "owner": "sahibi",
+                "parent": "ebeveyn"
+            },
+            "ownership": {
+                "title": "Sahiplik İzinleri",
+                "parentCanControl": {
+                    "label": "Bu isim ebeveyni tarafından kontrol edilebilir (<parentLink>{{parent}}</parentLink>)",
+                    "list": {
+                        "title": "Ana ismin sahibi şunları yapabilir:",
+                        "item1": "Ayarları ve kayıtları kontrol edin ve değiştirin",
+                        "item2": "Bu ismin sahipliğini yeniden alın veya yeniden atayın",
+                        "item3": "Bu ismi kaldır"
+                    }
+                },
+                "parentCannotControl": {
+                    "label": "Bu isim ebeveyni tarafından kontrol edilemez (<parentLink>{{parent}}</parentLink>)",
+                    "sublabel": "Ana ismin sahibi, bu ismi kontrol edemez, değiştiremez, kaldıramaz veya sahipliğini geri alamaz.",
+                    "list": {
+                        "title": "İsim sahibi, aşağıdakilerden biri olmadıkça sahipliğini koruyacaktır:",
+                        "item1": "İsim {{date}} tarihinde sona eriyor (uzatılabilir)",
+                        "item2": "Üst isim {{date}} tarihinde sona eriyor",
+                        "item3": "Adın sahipliği başka bir adrese gönderilir."
+                    }
+                },
+                "parentCanChange": {
+                    "label": "Bu ismin ebeveyni (<parentLink>{{parent}}</parentLink>) izinleri değiştirebilir.",
+                    "list": {
+                        "title": "Ebeveyn şunları yapabilir:",
+                        "item1": "İzinleri iptal et",
+                        "item2": "Özel sigortaları değiştirin veya yakın"
+                    }
+                },
+                "ownerCanChange": {
+                    "label": "Bu ismin sahibi izinleri değiştirebilir.",
+                    "list": {
+                        "title": "Sahip şunları yapabilir:",
+                        "item1": "İzinleri iptal et",
+                        "item2": "Özel sigortaları değiştirin veya yakın"
+                    }
+                },
+                "ownerCannotChange": {
+                    "label": "Bu ismin sahibi izinleri değiştiremez.",
+                    "list": {
+                        "title": "Sahip şunları yapamaz:",
+                        "item1": "İzinleri iptal et",
+                        "item2": "Özel sigortaları değiştirin veya yakın"
+                    }
+                },
+                "unwrapWarning": {
+                    "message": "Ana ebeveyn (<strong>{{parent}}</strong>) üzerindeki açma izinleri, ebeveyn kontrolünü bırakmadan önce iptal edilmelidir.<br> <parentLink>Ebeveyn izinlerine git</parentLink>"
+                },
+                "action": {
+                    "giveUpControl": "Ebeveyn kontrolünü bırakın",
+                    "revokePermission": "İzin İptali"
+                }
+            },
+            "expiry": {
+                "permissions": {
+                    "canExtendExpiry": {
+                        "label": "Süreyi uzatabilir",
+                        "description": "Bu isim izni süresi, {{managerOrOwner}} tarafından uzatılabilir.",
+                        "description_date": "Bu isim izni süresi ({{date}}), {{managerOrOwner}} tarafından uzatılabilir."
+                    },
+                    "cannotExtendExpiry": {
+                        "label": "Süreyi uzatamazsınız",
+                        "description": "Bu isim izninin süresi yönetici tarafından uzatılamaz.",
+                        "description_date": "Bu isim izni süresi ({{date}}) yönetici tarafından uzatılamaz."
+                    }
+                },
+                "manager": "yönetici",
+                "owner": "sahibi",
+                "action": {
+                    "changePermissions": "İzinleri değiştir"
+                }
+            },
+            "nameChangePermissions": {
+                "title": "İsim Değiştirme İzinleri",
+                "subtitle": {
+                    "parent-can-change": "Bu ismin ebeveyni (<parentLink>{{parent}}</parentLink>) bu isim üzerinde ayarları değiştirebilir.",
+                    "owner-can-change": "Bu ismin sahibi, bu isim üzerindeki ayarları değiştirebilir."
+                },
+                "permissions": {
+                    "canUnwrap": {
+                        "label": "Bu ismi çözebilir miyim",
+                        "description": "Bu ismin {{owner}}'i bu ismi açabilir."
+                    },
+                    "cannotUnwrap": {
+                        "label": "Bu adı açamazsınız",
+                        "description": "Bu ismin {{owner}}'i bu ismi açamaz."
+                    },
+                    "canCreateSubnames": {
+                        "label": "Alt isimler oluşturabilir",
+                        "description": "Bu ismin {{owner}}'i yeni alt isimler oluşturabilir."
+                    },
+                    "cannotCreateSubnames": {
+                        "label": "Alt isimler oluşturulamıyor",
+                        "description": "Bu ismin {{owner}}'i yeni alt isimler oluşturamaz."
+                    },
+                    "canSend": {
+                        "label": "Bu ismi gönderebilir",
+                        "description": "Bu ismin {{sahibi}}, onu yeni bir sahibe gönderebilir."
+                    },
+                    "cannotSend": {
+                        "label": "Bu ismi gönderemezsiniz",
+                        "description": "Bu ismin {{owner}}'i onu yeni bir sahibe gönderemez."
+                    },
+                    "canSetResolver": {
+                        "label": "Çözümleyici ayarlanabilir",
+                        "description": "Bu ismin {{owner}}'i çözümleyiciyi ayarlayabilir ve değiştirebilir."
+                    },
+                    "cannotSetResolver": {
+                        "label": "Çözümleyici ayarlanamıyor",
+                        "description": "Bu ismin {{owner}}'i çözümleyiciyi ayarlayamaz ve değiştiremez."
+                    },
+                    "canSetTTL": {
+                        "label": "TTL Ayarlanabilir",
+                        "description": "Bu ismin {{owner}}'i TTL'yi ayarlayabilir ve değiştirebilir."
+                    },
+                    "cannotSetTTL": {
+                        "label": "TTL Ayarlanamıyor",
+                        "description": "Bu ismin {{owner}}'i TTL'yi ayarlayamaz ve değiştiremez."
+                    },
+                    "canApprove": {
+                        "label": "Yenileme yöneticisini değiştirebilir",
+                        "description": "Bu ismin sahibi, alt isimlerin yenilenmesini onaylayan yöneticiyi değiştirebilir."
+                    },
+                    "cannotApprove": {
+                        "label": "Yenileme yöneticisi değiştirilemez",
+                        "description": "Bu ismin sahibi, alt isimlerin yenilenmesini onaylayan yöneticiyi değiştiremez."
+                    }
+                },
+                "action": {
+                    "changePermissions": "İzinleri değiştir"
+                }
+            }
+        },
+        "fuses": {
+            "name": "Sigortalar"
+        },
+        "more": {
+            "name": "Daha fazla",
+            "resolver": {
+                "label": "Çözümleyici",
+                "custom": "Özel",
+                "latest": "En Son",
+                "outdated": "Eski sürüm",
+                "version": "Versiyon",
+                "etherscan": "BlokKeşifçisi"
+            },
+            "fuses": {
+                "label": "Sigortalar",
+                "info": "'Diğer sigortaları yakmak için 'Can unwrap' yakmalısınız.",
+                "callToAction": "Lütfen bu özelliği kilidini açmak için adınızı sarın",
+                "burnFormTitle": "Yakma İzinleri",
+                "burned": "Yanmış",
+                "permissions": {
+                    "label": "İzinler",
+                    "warning": "Anahtarlar ebeveyn tarafından değiştirilebilir.",
+                    "CAN_DO_EVERYTHING": "Her şeyi yapabilir",
+                    "CANNOT_BURN_FUSES": "Sigortaları yakabilir",
+                    "CANNOT_CREATE_SUBDOMAIN": "Alt alan adları oluşturabilir",
+                    "CANNOT_SET_RESOLVER": "Çözümleyici ayarlanabilir",
+                    "CANNOT_SET_TTL": "TTL Ayarlanabilir",
+                    "CANNOT_TRANSFER": "Transfer yapabilir",
+                    "CANNOT_UNWRAP": "Açabilir",
+                    "PARENT_CANNOT_CONTROL": "Ebeveyn kontrol edebilir",
+                    "CAN_EXTEND_EXPIRY": "Süreyi uzatamazsınız",
+                    "IS_DOT_ETH": ".eth değil"
+                }
+            },
+            "ownership": {
+                "label": "Sahiplik",
+                "refreshDNS": "DNS'yi Yenile",
+                "dnsOwnerWarning": {
+                    "isDnsOwner": "Bu isimde değişiklik yapamazsınız çünkü siz DNS Sahibisiniz, ancak Yönetici değilsiniz. Bunu düzeltmek için yöneticiyi senkronize edebilirsiniz.",
+                    "isManager": "Bu ismin Yöneticisi ancak DNS Sahibi değilsiniz. DNS isimleri, DNS Sahibi tarafından her zaman geri alınabilir. Bu ismi Sahibe gönderebilir veya DNS kaydını eşleştirmek için güncelleyebilirsiniz.",
+                    "refreshDNS": "DNS'yi Yenile",
+                    "syncManager": "Senkronizasyon Yöneticisi"
+                }
+            },
+            "token": {
+                "label": "Jeton",
+                "hex": "altıgen",
+                "decimal": "ondalık"
+            },
+            "misc": {
+                "registered": "Kayıtlı",
+                "expires": "Süresi Doluyor"
+            }
+        }
+    },
+    "details": {
+        "title": "Ad Detayları",
+        "notWrapped": "Sarılı Değil",
+        "sendName": {
+            "title": "Ad Gönder",
+            "description": "Bir isim göndermek, ona yeni adresin kontrolünü verecektir.",
+            "learnMore": "Ad sahipliği hakkında daha fazla bilgi edinin.",
+            "makeOwner": "Sahip yap",
+            "makeOwnerDescription": "Sahip, yeni bir sahibe gönderebilir ve yöneticiyi değiştirebilir.",
+            "makeManager": "Yönetici Yap",
+            "makeManagerDescription": "Yönetici kayıtları değiştirebilir ve ayarlayabilir.",
+            "inputPlaceholder": "Ethereum adresi veya MNS adı girin",
+            "transferSubname": "Transfer Adı",
+            "transferController": "Transfer Kontrolörü"
+        },
+        "wrap": {
+            "startTitle": "Adınızı yükseltin",
+            "resumeTitle": "Yükseltmenize devam edin",
+            "completeTitle": "Yükseltme tamamlandı",
+            "description": "Adınızı yükseltmek veya \"sarmak\" yeni özellikler kazandırır.",
+            "startLabel": "Yükseltme",
+            "resumeLabel": "Yükseltmeyi Sürdür",
+            "boxTitle": "Yeni özelliklerin kilidini aç",
+            "boxDescription": "Adınızı yükseltmek, MNS'nin en son işlevselliğini açar."
+        },
+        "descriptions": {
+            "owner": "Adının sahibi ve kontrol edeni",
+            "controller": "Adın tüm kayıtlarını kontrol eder",
+            "registrant": "NFT'nin sahibi",
+            "dnsOwner": "DNS adının sahibi"
+        },
+        "tabs": {
+            "records": {
+                "label": "Kayıtlar",
+                "text": "\"Your transaction is pending. Please note that due to high network congestion, the gas fee has increased. You can either wait for the congestion to decrease or increase the gas fee in your transaction settings to speed up the process.\"",
+                "contentHash": "İçerik Hash",
+                "noContentHash": "İçerik Hash'i Yok",
+                "editRecords": "Kayıtları Düzenle",
+                "noAbi": "ABI Yok",
+                "abi": "ABI",
+                "editRecordsDisabled": "Mevcut çözümleyici, sarılı isimlerle uyumlu değil"
+            },
+            "subnames": {
+                "label": "Alt isimler",
+                "loading": "Alt isimler yükleniyor",
+                "empty": "Alt isimler eklenmedi",
+                "noResults": "Sonuç bulunamadı",
+                "noMoreResults": "Daha fazla sonuç yok",
+                "addSubname": {
+                    "title": "Alt isimler, mevcut isminizden ek isimler oluşturmanıza olanak sağlar.",
+                    "learn": "Alt isimler hakkında bilgi edinin",
+                    "action": "Yeni alt isim",
+                    "dialog": {
+                        "title": "Alt İsim Oluştur",
+                        "error": {
+                            "invalidCharacters": "Geçersiz karakterler içerir",
+                            "mustUseLowercase": "Küçük harf kullanılmalıdır",
+                            "alreadyExists": "İsim zaten var",
+                            "nameTooLong": "İsim çok uzun",
+                            "pccBurned": "Ad {{date}} tarihine kadar kilitli"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "advancedEditor": {
+        "title": "{{name}}'in kayıtları",
+        "tabs": {
+            "text": {
+                "label": "\"Your transaction is pending. Please note that due to high network congestion, the gas fee has increased. You can either wait for the congestion to decrease or increase the gas fee in your transaction settings to speed up the process.\"",
+                "addRecord": "Kayıt Ekle",
+                "createRecord": "Bir kayıt adı yazın...",
+                "placeholder": {
+                    "default": "Buraya bir değer ekleyin..."
+                }
+            },
+            "address": {
+                "label": "Adres",
+                "addRecord": "Adres Ekle",
+                "noOptions": "Adres seçenekleri mevcut değil",
+                "placeholder": {
+                    "default": "Buraya adres ekleyin..."
+                }
+            },
+            "other": {
+                "label": "Diğer",
+                "labelDisabled": "Mevcut çözücü tarafından desteklenmiyor",
+                "contentHash": {
+                    "label": "İçerik Hash",
+                    "placeholder": "örneğin: ipfs://"
+                },
+                "publicKey": {
+                    "label": "Genel Anahtar",
+                    "placeholder": "örn. pub_1231231231231"
+                },
+                "abi": {
+                    "label": "ABI",
+                    "placeholder": "Buraya bir ABI girin..."
+                }
+            }
+        }
+    },
+    "errors": {
+        "invalidName": "Bu isim geçersiz.",
+        "invalidAddress": "Geçerli bir adres değil",
+        "expiringSoon": "Bu ismin lütuf süresi {{date}} tarihinde sona eriyor. Bu tarihten önce uzatılmazsa, kayıt için kullanılabilir hale gelecektir.",
+        "hasExpired": "{{ name }} süresi doldu",
+        "ownerManagerChoice": "Sahip veya yöneticiye gönderilmeli",
+        "unknown": "Bilinmeyen hata",
+        "notMigrated": "Bu isim yeni kayıta taşınmamış.",
+        "featureNotAvailable": "Bazı özellikler henüz kullanılabilir değil, ancak hala",
+        "featureNotAvailableLink": "Eski uygulamada bu ismi görüntüleyin.",
+        "migrationNotAvailable": "Yeni kayıta geçiş henüz mümkün değil, ancak hala yapabilirsiniz",
+        "migrationNotAvailableLink": "Eski uygulamada bu ismi taşı.",
+        "addressLength": "Adresin uzunluğu 42 karakter olmalıdır.",
+        "unsupportedTLD": "Bu TLD desteklenmiyor",
+        "keyInUse": "{{value}} zaten kullanımda",
+        "hasSubnames": "Bu ismin alt isimleri var",
+        "permissionRevoked": "Bu isim, bu işlemi gerçekleştirmek için gerekli izinleri iptal etti.",
+        "invalidJSON": "Geçersiz JSON"
+    }
 }

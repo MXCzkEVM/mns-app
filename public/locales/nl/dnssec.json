@@ -1,9 +1,66 @@
 {
     "title": "Importeer {{name}} in MNS",
-    "general": "{'connectWallet': 'Verbind uw portemonnee om door te gaan', 'importDNSSECName': 'Importeer DNSSEC Naam', 'domainRegistrar': 'Domein Registrar'}",
-    "registrars": "{'namecheap': 'Namecheap', 'domaindotcom': 'Domain.com', 'googledomains': 'Google Domeinen', 'dreamhost': 'Dreamhost', 'hover': 'Hover', 'godaddy': 'GoDaddy', 'bluehost': 'Bluehost', 'hostgator': 'HostGator', 'cloudflare': 'Cloudflare', 'findYourRegistrar': 'Vind je registrar'}",
-    "addTextRecord": "{'title': 'Tekstrecords toevoegen', 'explanation': 'U moet een nieuw DNS-record voor uw domein aanmaken met deze gegevens. Hiermee claimt u uw Ethereum-adres als de eigenaar van dit domein.', 'syncWarningOne': \"Het lijkt erop dat u niet de DNS-eigenaar van dit domein bent, maar u kunt deze naam nog steeds toevoegen aan het MNS-register.\", 'syncWarningTwo': \"Als u dit domein bezit, wijzig dan zijn _ens TXT-record om uw Ethereum-adres te bevatten en klik opnieuw op 'Controleren', anders klik op 'Claimen' om verder te gaan.\", 'type': 'Type', 'txt': 'TXT', 'errors': {'SUBDOMAIN_NOT_SET': {'title': 'Subdomein niet ingesteld', 'content': 'Stel uw _ens subdomein in met de hierboven getoonde waarde.'}, 'DNS_RECORD_DOES_NOT_EXIST': {'title': 'Record bestaat niet', 'content': 'DNS-record is niet ingesteld'}, 'DNS_RECORD_INVALID': {'title': 'Ongeldig record', 'content': 'Stel het record in met de waarde hierboven.'}}}",
-    "claimComplete": "{'title': 'Gefeliciteerd!', 'ownerOf': 'Je bent nu de eigenaar van:', 'successMessage': 'Je domeinnaam is met succes geïmporteerd in MNS. Je kunt nu je naam bekijken en beheren.', 'viewName': 'Naam Bekijken', 'claimAnother': 'Claim een ander'}",
-    "claimDomain": "{'title': 'Claim uw domein', 'syncWarning': 'U importeert een DNS-naam die u niet lijkt te bezitten.', 'verifiedOwnership': 'U heeft uw eigendom geverifieerd en kunt dit domein claimen.', 'pendingTransactionPre': 'U heeft al een', 'pendingTransactionLink': 'lopende transactie', 'pendingTransactionPost': 'voor deze naam', 'dnsOwner': 'DNS Eigenaar', 'networkEst': 'Geschatte netwerkkosten'}",
-    "enableDNSSEC": "{'title': 'DNSSEC inschakelen', 'instruction': \"U moet uw domeinregistrar bezoeken om DNSSEC in te schakelen. Zodra ingeschakeld, klik op 'Controleren' om naar de volgende stap te gaan.\", 'registrarHelp': 'Kies uw registrar uit de vervolgkeuzelijst hieronder voor instructies over hoe dit te doen.', 'findRegistrar': 'Vind uw registrar', 'DNSSECNotEnabled': 'DNSSEC is niet ingeschakeld op dit domein.'}"
+    "general": {
+        "connectWallet": "Verbind uw portemonnee om door te gaan",
+        "importDNSSECName": "DNSSEC-naam importeren",
+        "domainRegistrar": "Domein Registrar"
+    },
+    "registrars": {
+        "namecheap": "Namecheap",
+        "domaindotcom": "Domain.com",
+        "googledomains": "Google Domeinen",
+        "dreamhost": "Dreamhost",
+        "hover": "Zweven",
+        "godaddy": "GoDaddy",
+        "bluehost": "Bluehost",
+        "hostgator": "HostGator",
+        "cloudflare": "Cloudflare",
+        "findYourRegistrar": "Vind je registrar"
+    },
+    "addTextRecord": {
+        "title": "Voeg Tekstrecords Toe",
+        "explanation": "U moet een nieuw DNS-record voor uw domein aanmaken met deze gegevens. Hiermee claimt u uw Ethereum-adres als de eigenaar van dit domein.",
+        "syncWarningOne": "Het lijkt erop dat u niet de DNS-eigenaar van dit domein bent, maar u kunt deze naam nog steeds toevoegen aan het MNS-register.",
+        "syncWarningTwo": "Als u dit domein bezit, wijzig dan het _ens TXT-record om uw Ethereum-adres te bevatten en klik opnieuw op 'Controleren', anders klik op 'Claimen' om verder te gaan.",
+        "type": "Typ Soort",
+        "txt": "TXT",
+        "errors": {
+            "SUBDOMAIN_NOT_SET": {
+                "title": "Subdomein niet ingesteld",
+                "content": "Stel uw _ens-subdomein in met de waarde die hierboven wordt getoond."
+            },
+            "DNS_RECORD_DOES_NOT_EXIST": {
+                "title": "Record bestaat niet",
+                "content": "DNS-record is niet ingesteld"
+            },
+            "DNS_RECORD_INVALID": {
+                "title": "Ongeldig Record",
+                "content": "Stel alstublieft het record in met de bovenstaande waarde."
+            }
+        }
+    },
+    "claimComplete": {
+        "title": "Gefeliciteerd!",
+        "ownerOf": "Je bent nu de eigenaar van:",
+        "successMessage": "Uw domeinnaam is met succes geïmporteerd in MNS. U kunt nu uw naam bekijken en beheren.",
+        "viewName": "Naam Bekijken",
+        "claimAnother": "Claim nog een"
+    },
+    "claimDomain": {
+        "title": "Claim uw domein",
+        "syncWarning": "U importeert een DNS-naam die u blijkbaar niet bezit.",
+        "verifiedOwnership": "U heeft uw eigendom geverifieerd en kunt dit domein claimen.",
+        "pendingTransactionPre": "Je hebt al een",
+        "pendingTransactionLink": "hangende transactie",
+        "pendingTransactionPost": "voor deze naam",
+        "dnsOwner": "DNS Eigenaar",
+        "networkEst": "Geschatte netwerkkosten"
+    },
+    "enableDNSSEC": {
+        "title": "Schakel DNSSEC in",
+        "instruction": "U moet uw domeinregistrar bezoeken om DNSSEC in te schakelen. Zodra dit is ingeschakeld, klikt u op 'Controleren' om naar de volgende stap te gaan.",
+        "registrarHelp": "Kies uw registrar uit de vervolgkeuzelijst hieronder voor instructies over hoe dit te doen.",
+        "findRegistrar": "Vind je registrar",
+        "DNSSECNotEnabled": "DNSSEC is niet ingeschakeld op dit domein."
+    }
 }

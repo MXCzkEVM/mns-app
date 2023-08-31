@@ -5,17 +5,323 @@
     "unsupportedNetwork": "지원되지 않는 네트워크",
     "notFound": "404 찾을 수 없음",
     "etherscan": "블록탐색기",
-    "action": "{'cancel': '취소', 'change': '변경', 'upload': '업로드', 'close': '닫기', 'save': '저장', 'edit': '편집', 'view': '보기', 'clear': '지우기', 'update': '업데이트', 'learnMore': '더 알아보기', 'send': '보내기', 'next': '다음', 'add': '추가', 'set': '설정', 'search': '검색', 'back': '뒤로', 'continue': '계속하기',  'confirm': \t'확인하기','remove':'제거','sign':'서명','reset':'재설정','transfer':'전송','tryAgain':'다시 시도','done':'완료','burnSelected':'선택 항목 소각','extend':'확장','delete':'삭제','sort':'정렬','check':'확인','claim':'청구','remindMe':'나에게 알림','begin':'시작','finish':'완료','skip':'건너뛰기','changeNetwork':'네트워크 변경','understand':'이해함','feedback':'피드백','migrate':'마이그레이션'}",
-    "unit": "{'years_one': '{{count}} 년', 'years_other': '{{count}} 년', 'yrs_one': '{{count}} 년', 'yrs_other': '{{count}} 년', 'gas': '{{value}} 가스', 'selected': '{{count}} 선택됨', 'perPage': '페이지 당 {{count}}'}",
-    "navigation": "{'home': '홈', 'names': '내 이름들', 'favourites': '즐겨찾기', 'settings': '설정', 'governance': '거버넌스', 'community': '커뮤니티', 'developers': '개발자들', 'support': '지원', 'bounty': '버그 바운티', 'terms': '이용 약관', 'privacy': '개인정보 처리방침', 'back': '뒤로', 'oldApp': '이전 MNS 앱', 'language': '언어', 'currency': '화폐', 'ipfsApp': 'IPFS MNS 앱',  'feedback':  '피드백',  'syncMessage':  \"네트워크와 동기화 중입니다. 거래에서의 변경 사항이 아직 보이지 않을 수 있습니다.\"}",
-    "wallet": "{'myProfile': '프로필', 'disconnect': '연결 해제', 'connect': '연결', 'noPrimaryName': '기본 이름 없음', 'viewProfile': '프로필 보기', 'viewDetails': '세부 정보 보기', 'register': '등록'}",
-    "name": "{'registered': '등록됨', 'expires': '만료', 'noExpiry': '만료 없음', 'expiry': '만료', 'parent': '부모', 'noParent': '부모 없음', 'registrant': '등록자', 'controller': '컨트롤러', 'dnsOwner': 'DNS 소유자', 'owner': '소유자', 'notOwned': '소유하지 않음', 'manager': '매니저', 'all': '모든 이름들', 'expiresInYears_one': '{{count}} 년 후 만료', 'expiresInYears_other': '{{count}} 년 후 만료', 'expiresInMonths_one': '{{count}} 개월 후 만료',  'expiresInMonths_other': '{{count}} 개월 후 만료',  'expiresInDays_one': '{{count}} 일 후 만료',  'expiresInDays_other': '{{count}} 일 후 만료',  'expiresInHours_one': '{{count}} 시간 후 만료',  'expiresInHours_other': '{{count}} 시간 후 만료',  'expiresInHours_zero': 1시간 이내로 만료,  expiredInHours_one: {{count}} 시간 전에 만료, expiredInHours_other: {{count}} 시간 전에 만료, expiredInHours_zero: 1시간 이내에 만료, expiredInDays_one: {{count}} 일 전에 만료, expiredInDays_other: {{count}} 일 전에 만료, expiredInMonths_one: {{count}} 개월 전에 만료, expiredInMonths_other: {{count}} 개월 전에 만료, expiredInYears_one: {{count}} 년 전에 만료, expiredInYears_other: {{count}} 년 전에 만료, gracePeriod: {expiresInYears_one: 유예 기간은 {{count}} 년 후 만료, expiresInYears_other: 유예 기간은 {{count}} 년 후 만료, expiresInMonths_one: 유예 기간은 {{count}} 개월 후 만료, expiresInMonths_other: 유예 기간은 {{count}} 개월 후 만료, expiresInDays_one: 유예 기간은 {{count}} 일 후 만료, expiresInDays_other: 유예 기간은 {{count}} 일 후 만료, expiresInHours_one: 유예 기간은 {{count}} 시간 후 만료, expiresInHours_other: 유예 기간은 {{count}} 시간 후 만료, expiresInHours_zero: 유예 기간은 1시간 이내로 만료}, extend: 연장하다, send: 보내다, transfer: 이체하다, sendManager: 매니저 보내기, sendOwner: 소유자 보내기}",
-    "address": "{'label': '주소', 'viewAddress': '주소 보기', 'copyAddress': '주소 복사'}",
-    "records": "{'label': '기록'}",
-    "sortTypes": "{'expiryDate': '만료 날짜', 'labelName': '이름', 'creationDate': '생성 날짜'}",
-    "errors": "{'noResults': '결과 없음', 'invalidAddress': '잘못된 주소', 'addressRequired': '주소 필요'}",
-    "transaction": "{'description': {'setName': '이름 설정', 'setRecords': '기록 설정', 'test': '테스트 트랜잭션', 'addSuccess': '추가 성공', 'sendName': '이름 보내기', 'migrateProfile': '프로필 이전', 'migrateProfileWithReset': '프로필 이전', 'migrateProfileWithSync': '프로필 이전 및 업데이트', 'wrapName': '이름 래핑', 'updateResolver': '리졸버 업데이트', 'updateProfile': '프로필 업데이트', 'setPrimaryName': '기본 이름 설정', 'updateEthAddress': 'ETH 주소 업데이트', 'testSendName': '이름 보내기', 'burnFuses': '권한 소각', 'createSubname': '하위 이름 생성', 'deleteSubname': '하위 이름 삭제', 'extendNames': '이름 연장',  importDNSSECName: DNSSEC 이름 가져오기, commitName: 타이머 시작, registerName: 이름 등록, approveNameWrapper: NameWrapper 승인, clearRecords: 기록 지우기, updateRecords: 기록 업데이트, transferName: 이름 전송, changePermissions: 권한 변경, syncManager: 매니저 동기화, updateProfileRecords: 프로필 업데이트, resetProfile: 프로필 재설정, setHexagonName: MEP1002 헥사곤 이름 설정, mintHexagon: MEP1002 헥사곤 발행}, info: {sendName: 이름의 컨트롤러와 등록자 설정, migrateProfile: 새 리졸버에 기존 기록 설정, migrateProfileWithReset: 새 리졸버에 기존 기록 설정, migrateProfileWithSync: 새 리졸버에 기존 기록 설정, wrapName: 이름 래핑 및 새 리졸버 설정, updateResolver: 리졸버 변경하기 , updateProfile: 기존 리졸버에 기록 업데이트 , setPrimaryName : 주소의 주요 이름 설정 , updateEthAddress : ETH 주소를 이 주소로 업데이트 , testSendName : 이름의 컨트롤러와 등록자 설정 , createSubname : 이름에 새 하위 이름 생성 , burnFuses : 선택한 권한을 이름 만료까지 소각 , commitName : 이름 등록을 위한 타이머 시작 , approveNameWrapper : NameWrapper가 당신의 이름을 관리하도록 승인 , fuses : {revoke : 철회 , grant : 부여 , setExpiry : 만료일 설정 , PARENT_CANNOT_CONTROL : 상위 제어 포기 , CAN_EXTEND_EXPIRY : 만료일 연장 , CANNOT_UNWRAP : 이 이름 풀기 , CANNOT_CREATE_SUBDOMAIN : 하위 도메인 생성 , CANNOT_SET_RESOLVER : 리졸버 설정 , CANNOT_SET_TTL : TTL 설정 , CANNOT_TRANSFER : 이 이름 보내기 , CANNOT_BURN_FUSES : 권한 변경 , CANNOT_APPROVE : 갱신 매니저 변경 }}, itemLabel:{name:'이름' address:'주소' action:'동작' info:'정보' to:'받는 사람' subname:'하위 이름' duration:'기간' cost:'비용' update:'업데이트' resolver:'리졸버' h3Index:'H3 인덱스'}, itemValue:{records_one:'{{count}} 개의 기록' records_other:'{{count}} 개의 기록'}, status:{pending:{regular:'대기 중'}, confirmed:{regular:'확인됨' notifyTitle:'거래 성공' notifyMessage:'\"{{action}}\" 거래가 성공적으로 완료되었습니다.'}, failed:{regular:'실패함' notifyTitle:'거래 실패' notifyMessage:'\"{{action}}\" 거래가 실패하고 되돌려졌습니다.'}}, dialog:{intro:{trailingButton:'시작' trailingButtonResume:'다시 시작하기' step:'단계 {{step}}'}, confirm:{title:'세부 사",
-    "search": "{'label': '이름 검색', 'placeholder': '이름 검색', 'emptyText': '검색할 이름 또는 주소를 입력하세요...', 'address': '주소', 'errors': {'tooShort': '이름이 너무 짧습니다', 'invalid': '이름의 형식이 잘못되었습니다'}, 'status': {'registered': '등록됨', 'gracePeriod': '유예 기간', 'premium': '임시 프리미엄', 'available': '사용 가능', 'notOwned': '소유하지 않음', 'notImported': '가져오지 않음', 'short': '너무 짧음', 'default': '잘못됨', 'unsupportedTLD': '지원되지 않음', 'imported': '가져옴', 'owned': '소유중'}}",
-    "selectableInput": "{'add': '추가', 'placeholder': '옵션 선택', 'empty': '옵션 없음'}",
-    "testnetFaucet": "{'explanation': 'goerli의 각 주소는 MNS 매니저 앱을 테스트하고 모든 새로운 계약을 확인하기 위해 {{ amount }}ETH를 청구할 수 있습니다.', 'note': '지갑에 표시되는 데 몇 분이 걸릴 수 있습니다.'}"
+    "action": {
+        "cancel": "취소",
+        "change": "변경",
+        "upload": "업로드",
+        "close": "닫기",
+        "save": "저장",
+        "edit": "편집",
+        "view": "보기",
+        "clear": "명확합니다",
+        "update": "업데이트",
+        "learnMore": "더 알아보기",
+        "send": "보내기",
+        "next": "다음",
+        "add": "추가",
+        "set": "설정",
+        "search": "검색",
+        "back": "뒤로",
+        "continue": "계속",
+        "confirm": "확인",
+        "remove": "제거",
+        "sign": "등록",
+        "reset": "재설정",
+        "transfer": "전송",
+        "tryAgain": "다시 시도하세요",
+        "done": "완료",
+        "burnSelected": "선택된 소각",
+        "extend": "확장",
+        "delete": "삭제",
+        "sort": "정렬",
+        "check": "확인",
+        "claim": "청구",
+        "remindMe": "나에게 알려줘",
+        "begin": "시작",
+        "finish": "완료",
+        "skip": "건너뛰기",
+        "changeNetwork": "네트워크 변경",
+        "understand": "나는 이해한다",
+        "feedback": "피드백",
+        "migrate": "이주하기"
+    },
+    "unit": {
+        "years_one": "{{count}} 년",
+        "years_other": "{{count}} 년",
+        "yrs_one": "{{count}} 년",
+        "yrs_other": "{{count}} 년",
+        "gas": "{{value}} 가스",
+        "selected": "{{count}} 선택됨",
+        "perPage": "{{count}} 당 페이지"
+    },
+    "navigation": {
+        "home": "홈",
+        "names": "내 이름",
+        "favourites": "즐겨찾기",
+        "settings": "설정",
+        "governance": "거버넌스",
+        "community": "커뮤니티",
+        "developers": "개발자들",
+        "support": "지원",
+        "bounty": "버그 바운티",
+        "terms": "이용 약관",
+        "privacy": "개인정보 보호정책",
+        "back": "뒤로",
+        "oldApp": "올드 MNS 앱",
+        "language": "언어",
+        "currency": "통화",
+        "ipfsApp": "IPFS MNS 앱",
+        "feedback": "피드백",
+        "syncMessage": "네트워크와 동기화 중입니다. 귀하의 거래로 인한 변경 사항이 아직 보이지 않을 수 있습니다."
+    },
+    "wallet": {
+        "myProfile": "프로필",
+        "disconnect": "연결 해제",
+        "connect": "연결",
+        "noPrimaryName": "기본 이름 없음",
+        "viewProfile": "프로필 보기",
+        "viewDetails": "세부 정보 보기",
+        "register": "등록"
+    },
+    "name": {
+        "registered": "등록됨",
+        "expires": "만료됩니다",
+        "noExpiry": "만료 없음",
+        "expiry": "만료",
+        "parent": "부모님",
+        "noParent": "상위 없음",
+        "registrant": "등록자",
+        "controller": "컨트롤러",
+        "dnsOwner": "DNS 소유자",
+        "owner": "소유자",
+        "notOwned": "소유하지 않음",
+        "manager": "관리자",
+        "all": "모든 이름",
+        "expiresInYears_one": "{{count}} 년 후에 만료됩니다",
+        "expiresInYears_other": "{{count}}년 후에 만료됩니다",
+        "expiresInMonths_one": "{{count}} 개월 후에 만료됩니다",
+        "expiresInMonths_other": "{{count}} 개월 후에 만료됩니다",
+        "expiresInDays_one": "{{count}} 일 후에 만료됩니다",
+        "expiresInDays_other": "{{count}} 일 후에 만료됩니다",
+        "expiresInHours_one": "{{count}} 시간 후에 만료됩니다",
+        "expiresInHours_other": "{{count}} 시간 후에 만료됩니다",
+        "expiresInHours_zero": "1시간 미만으로 만료됩니다",
+        "expiredInHours_one": "{{count}} 시간 전에 만료됨",
+        "expiredInHours_other": "{{count}} 시간 전에 만료됨",
+        "expiredInHours_zero": "1시간 이내에 만료됨",
+        "expiredInDays_one": "{{count}} 일 전에 만료됨",
+        "expiredInDays_other": "{{count}} 일 전에 만료되었습니다",
+        "expiredInMonths_one": "{{count}} 개월 전에 만료됨",
+        "expiredInMonths_other": "{{count}} 개월 전에 만료됨",
+        "expiredInYears_one": "{{count}} 년 전에 만료됨",
+        "expiredInYears_other": "{{count}}년 전에 만료됨",
+        "gracePeriod": {
+            "expiresInYears_one": "{{count}}년 후에 유예 기간이 만료됩니다",
+            "expiresInYears_other": "{{count}}년 후에 유예 기간이 만료됩니다",
+            "expiresInMonths_one": "{{count}} 개월 후에 유예 기간이 만료됩니다.",
+            "expiresInMonths_other": "{{count}} 개월 후에 유예 기간이 만료됩니다",
+            "expiresInDays_one": "{{count}} 일 후에 유예 기간이 만료됩니다.",
+            "expiresInDays_other": "{{count}} 일 후에 유예 기간이 만료됩니다.",
+            "expiresInHours_one": "{{count}} 시간 후에 유예 기간이 만료됩니다",
+            "expiresInHours_other": "{{count}} 시간 후에 유예 기간이 만료됩니다",
+            "expiresInHours_zero": "은혜 기간이 1시간 미만으로 만료됩니다"
+        },
+        "extend": "확장",
+        "send": "보내기",
+        "transfer": "전송",
+        "sendManager": "매니저에게 보내기",
+        "sendOwner": "소유자에게 보내기"
+    },
+    "address": {
+        "label": "주소",
+        "viewAddress": "주소 보기",
+        "copyAddress": "주소 복사"
+    },
+    "records": {
+        "label": "기록"
+    },
+    "sortTypes": {
+        "expiryDate": "만료 날짜",
+        "labelName": "이름",
+        "creationDate": "생성 날짜"
+    },
+    "errors": {
+        "noResults": "결과를 찾을 수 없습니다",
+        "invalidAddress": "잘못된 주소",
+        "addressRequired": "주소 필요"
+    },
+    "transaction": {
+        "description": {
+            "setName": "이름 설정",
+            "setRecords": "기록 설정",
+            "test": "테스트 트랜잭션",
+            "addSuccess": "추가 성공",
+            "sendName": "이름 보내기",
+            "migrateProfile": "프로필 이전",
+            "migrateProfileWithReset": "프로필 이전",
+            "migrateProfileWithSync": "프로필 이동 및 업데이트",
+            "wrapName": "랩 이름",
+            "updateResolver": "리졸버 업데이트",
+            "updateProfile": "프로필 업데이트",
+            "setPrimaryName": "기본 이름 설정",
+            "updateEthAddress": "ETH 주소 업데이트",
+            "testSendName": "이름 보내기",
+            "burnFuses": "권한 소각",
+            "createSubname": "서브네임 생성",
+            "deleteSubname": "서브네임 삭제",
+            "extendNames": "이름 확장",
+            "importDNSSECName": "DNSSEC 이름 가져오기",
+            "commitName": "타이머 시작",
+            "registerName": "이름 등록",
+            "approveNameWrapper": "NameWrapper 승인",
+            "clearRecords": "기록 지우기",
+            "updateRecords": "기록 업데이트",
+            "transferName": "이름 전송",
+            "changePermissions": "권한 변경",
+            "syncManager": "동기화 관리자",
+            "updateProfileRecords": "프로필 업데이트",
+            "resetProfile": "프로필 재설정",
+            "setHexagonName": "MEP1002 헥사곤 이름 설정",
+            "mintHexagon": "MEP1002 헥사곤 생성"
+        },
+        "info": {
+            "sendName": "이름의 컨트롤러와 등록자를 설정하십시오",
+            "migrateProfile": "새로운 리졸버에 기존 레코드 설정",
+            "migrateProfileWithReset": "새로운 리졸버에 기존 레코드 설정",
+            "migrateProfileWithSync": "새 리졸버에 기존 레코드 설정",
+            "wrapName": "이름을 래핑하고 새 리졸버 설정",
+            "updateResolver": "리졸버를 변경하십시오",
+            "updateProfile": "기존 리졸버에 대한 기록 업데이트",
+            "setPrimaryName": "당신의 주소에 대한 주요 이름을 설정하십시오",
+            "updateEthAddress": "이 주소로 ETH 주소를 업데이트하세요",
+            "testSendName": "이름의 컨트롤러와 등록자를 설정하십시오",
+            "createSubname": "이름에 새로운 하위 이름을 생성하십시오",
+            "burnFuses": "선택한 권한을 이름 만료까지 소각하세요",
+            "commitName": "이름 등록을 위한 타이머 시작",
+            "approveNameWrapper": "NameWrapper가 이름을 관리하도록 승인하세요",
+            "fuses": {
+                "revoke": "취소",
+                "grant": "부여",
+                "setExpiry": "만료 설정",
+                "PARENT_CANNOT_CONTROL": "부모 제어 포기",
+                "CAN_EXTEND_EXPIRY": "만료 연장",
+                "CANNOT_UNWRAP": "이 이름을 풀어라",
+                "CANNOT_CREATE_SUBDOMAIN": "서브도메인 생성",
+                "CANNOT_SET_RESOLVER": "리졸버 설정",
+                "CANNOT_SET_TTL": "TTL 설정",
+                "CANNOT_TRANSFER": "이름 보내기",
+                "CANNOT_BURN_FUSES": "권한 변경",
+                "CANNOT_APPROVE": "갱신 관리자 변경"
+            }
+        },
+        "itemLabel": {
+            "name": "이름",
+            "address": "주소",
+            "action": "행동",
+            "info": "정보",
+            "to": "\"에\"",
+            "subname": "서브네임",
+            "duration": "기간",
+            "cost": "비용",
+            "update": "업데이트",
+            "resolver": "리졸버",
+            "h3Index": "H3 지수"
+        },
+        "itemValue": {
+            "records_one": "{{count}} 기록",
+            "records_other": "{{count}} 레코드"
+        },
+        "status": {
+            "pending": {
+                "regular": "보류 중"
+            },
+            "confirmed": {
+                "regular": "확인됨",
+                "notifyTitle": "거래 성공",
+                "notifyMessage": "\"{{action}}\" 거래가 성공적으로 완료되었습니다."
+            },
+            "failed": {
+                "regular": "실패했습니다",
+                "notifyTitle": "거래 실패",
+                "notifyMessage": "\"{{action}}\" 거래가 실패하여 되돌려졌습니다."
+            }
+        },
+        "dialog": {
+            "intro": {
+                "trailingButton": "시작",
+                "trailingButtonResume": "이력서",
+                "step": "단계 {{step}}"
+            },
+            "confirm": {
+                "title": "세부사항 확인",
+                "message": "지갑에서 확인하기 전에 이 세부 사항을 다시 확인하세요.",
+                "waitingForWallet": "지갑을 기다리는 중",
+                "openWallet": "지갑 열기"
+            },
+            "sent": {
+                "title": "거래 전송됨",
+                "message": "당신의 거래가 진행 중입니다, 나중에 돌아와서 이를 닫을 수 있습니다.",
+                "progress": {
+                    "title": "보냈습니다",
+                    "message": "예상보다 시간이 더 걸립니다"
+                }
+            },
+            "complete": {
+                "title": "거래 완료",
+                "message": "당신의 거래가 이제 완료되었습니다!",
+                "progress": {
+                    "title": "완료"
+                }
+            },
+            "failed": {
+                "title": "거래 실패",
+                "progress": {
+                    "title": "실패했습니다"
+                }
+            },
+            "error": {
+                "gasLimit": "당신의 거래에 대한 가스 한도가 충분히 높지 않았습니다, 다시 시도해 주세요."
+            }
+        },
+        "error": {
+            "request": {
+                "INSUFFICIENT_FUNDS": "지갑에 자금이 부족합니다",
+                "UNPREDICTABLE_GAS_LIMIT": "알 수 없는 오류가 발생했습니다"
+            }
+        },
+        "viewEtherscan": "BlockExplorer에서 보기",
+        "viewMore": "더 보기"
+    },
+    "search": {
+        "label": "이름 검색",
+        "placeholder": "이름 검색",
+        "emptyText": "이름 또는 주소를 입력하여 검색하십시오...",
+        "address": "주소",
+        "errors": {
+            "tooShort": "이름이 너무 짧습니다",
+            "invalid": "이름의 형식이 잘못되었습니다"
+        },
+        "status": {
+            "registered": "등록됨",
+            "gracePeriod": "유예 기간",
+            "premium": "임시 프리미엄",
+            "available": "사용 가능",
+            "notOwned": "소유하지 않음",
+            "notImported": "가져오지 않음",
+            "short": "너무 짧음",
+            "default": "유효하지 않음",
+            "unsupportedTLD": "지원되지 않음",
+            "imported": "가져온",
+            "owned": "소유하고 있는"
+        }
+    },
+    "selectableInput": {
+        "add": "추가",
+        "placeholder": "옵션을 선택하십시오",
+        "empty": "옵션을 찾을 수 없습니다"
+    },
+    "testnetFaucet": {
+        "explanation": "Goerli의 각 주소는 MNS 매니저 앱을 테스트하고 모든 새로운 계약을 확인하기 위해 {{ amount }}ETH를 청구할 수 있습니다.",
+        "note": "지갑에 표시되는 데 몇 분이 소요될 수 있습니다."
+    }
 }

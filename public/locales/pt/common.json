@@ -1,21 +1,327 @@
 {
     "title": "O seu nome de usuário web3",
-    "description": "Sua identidade em toda a web3, um nome para todos os seus endereços cripto e seu site descentralizado.",
+    "description": "Sua identidade na web3, um nome para todos os seus endereços de cripto e seu site descentralizado.",
     "loading": "Carregando",
     "unsupportedNetwork": "Rede não suportada",
     "notFound": "404 Não Encontrado",
     "etherscan": "ExploradorDeBlocos",
-    "action": "{'cancel': 'Cancelar', 'change': 'Alterar', 'upload': 'Carregar', 'close': 'Fechar', 'save': 'Salvar', 'edit': 'Editar', 'view': 'Ver', 'clear': 'Limpar', 'update': 'Atualizar', 'learnMore': 'Saiba mais', 'send': 'Enviar', 'next': 'Próximo', 'add': 'Adicionar', 'set': 'Definir', 'search': 'Pesquisar', 'back': 'Voltar',  'continue': 'Continuar', 'confirm':  'Confirmar',  'remove':  'Remover',  'sign':  \"Assinar\",  \"reset\": \"Redefinir\", \"transfer\": \"Transferir\", \"tryAgain\": \"Tente Novamente\", \"done\": \"Concluído\", \"burnSelected\": \"Queimar Selecionado\", \"extend\": \"Estender\", \"delete\": \"Excluir\", \"sort\": \"Ordenar\", \"check\": \"Verificar\", \"claim\": \"Reivindicar\", \"remindMe\": \"Lembrar-me\", \"begin\": \"Começar\", \"finish\": \"Terminar\",  \"skip\":  \"Pular\",  \"changeNetwork\":  \"Alterar Rede\",  \"understand\":  \"Eu entendo\",  \"feedback\":  \"Feedback\",  \"migrate\":  \"Migrar\"}",
-    "unit": "{'years_one': '{{count}} ano', 'years_other': '{{count}} anos', 'yrs_one': '{{count}} ano', 'yrs_other': '{{count}} anos', 'gas': '{{value}} gas', 'selected': '{{count}} selecionado', 'perPage': '{{count}} por página'}",
-    "navigation": "{'home': 'Início', 'names': 'Meus Nomes', 'favourites': 'Favoritos', 'settings': 'Configurações', 'governance': 'Governança', 'community': 'Comunidade', 'developers': 'Desenvolvedores', 'support': 'Suporte', 'bounty': 'Bug Bounty', 'terms': 'Termos de Uso', 'privacy': 'Política de Privacidade', 'back': 'Voltar', 'oldApp': 'Antigo App MNS', 'language': 'Idioma', 'currency': 'Moeda', 'ipfsApp': 'App MNS IPFS', 'feedback': 'Feedback',  'syncMessage': \"Sincronizando com a rede. As alterações da sua transação podem não estar visíveis ainda.\"}",
-    "wallet": "{'myProfile': 'Perfil', 'disconnect': 'Desconectar', 'connect': 'Conectar', 'noPrimaryName': 'Sem Nome Primário', 'viewProfile': 'Ver Perfil', 'viewDetails': 'Ver Detalhes', 'register': 'Registrar'}",
-    "name": "{'registered': 'Registrado', 'expires': 'Expira', 'noExpiry': 'Sem expiração', 'expiry': 'Expiração', 'parent': 'Parente', 'noParent': 'Sem parente', 'registrant': 'Registrante', 'controller': 'Controlador', 'dnsOwner': 'Proprietário DNS', 'owner': 'Proprietário', 'notOwned': 'Não possuído', 'manager': 'Gerente', 'all': 'Todos os Nomes', 'expiresInYears_one': '{{count}} ano para expirar', 'expiresInYears_other': '{{count}} anos para expirar', 'expiresInMonths_one': '{{count}} mês para expirar',  'expiresInMonths_other': '{{count}} meses para expirar',  'expiresInDays_one': '{{count}} dia para expirar',  'expiresInDays_other': '{{count}} dias para expirar',  'expiresInHours_one': '{{count}} hora para expirar',  'expiresInHours_other': '{{count}} horas para expirar','expiresInHours_zero':'Expira em menos de uma hora','expiredInHours_one':'Expirou há {{count}} hora','expiredInHours_other':'Expirou há {{count}} horas','expiredInHours_zero':'Expirou há menos de uma hora','expiredInDays_one':'Expirou há {{count}} dia','expiredInDays_other':'Expirou há {{count}} dias','expiredInMonths_one':'Expirou há {{count}} mês','expiredInMonths_other':'Expirou há {{count}} meses','expiredInYears_one':'Expirou há {{count}} ano','expiredInYears_other':'Expirou há {{count}} anos','gracePeriod':{'expiresInYears_one':'Período de carência termina em {{count}} ano','expiresInYears_other':'Período de carência termina em {{count}} anos','expiresInMonths_one':'Período de carência termina em {{count}} mês','expiresInMonths_other':'Período de carência termina em {{count}} meses','expiresInDays_one':'Período de carência termina em {{count}} dia','expiresInDays_other':'Período de carência termina em {{count}} dias','expiresInHours_one':'Período de carência termina em {{count}} hora','expiresInHours_other':'Período de carência termina em {{count}} horas','expiresInHours_zero':'Período de carência termina em menos de uma hora'},'extend':'Estender','send':'Enviar','transfer':'Transferir','sendManager':'Enviar Gerente','sendOwner':'Enviar Proprietário'}",
-    "address": "{'label': 'Endereço', 'viewAddress': 'Ver endereço', 'copyAddress': 'Copiar endereço'}",
-    "records": "{'label': 'Registros'}",
-    "sortTypes": "{'expiryDate': 'Data de validade', 'labelName': 'Nome', 'creationDate': 'Data de criação'}",
-    "errors": "{'noResults': 'Nenhum resultado encontrado', 'invalidAddress': 'Endereço inválido', 'addressRequired': 'Endereço necessário'}",
-    "transaction": "{'description': {'setName': 'Definir nome', 'setRecords': 'Definir registros', 'test': 'Testar transação', 'addSuccess': 'Adicionar sucesso', 'sendName': 'Enviar nome', 'migrateProfile': 'Migrar perfil', 'migrateProfileWithReset': 'Migrar perfil', 'migrateProfileWithSync': 'Migrar e atualizar perfil', 'wrapName': 'Empacotar nome', 'updateResolver': 'Atualizar resolver', 'updateProfile': 'Atualizar perfil', 'setPrimaryName': 'Definir nome principal', 'updateEthAddress': 'Atualizar endereço ETH', 'testSendName': 'Enviar nome de teste', 'burnFuses': 'Queimar permissões', 'createSubname': 'Criar subnome', 'deleteSubname': 'Excluir subnome', 'extendNames': 'Estender nomes',  importDNSSECName: Importar nome DNSSEC, commitName: Iniciar temporizador, registerName: Registrar nome, approveNameWrapper: Aprovar NameWrapper, clearRecords: Limpar registros, updateRecords: Atualizar registros, transferName: Transferir nome, changePermissions: Alterar permissões, syncManager: Sincronizar gerente, updateProfileRecords: Atualizar perfil, resetProfile: Redefinir perfil, setHexagonName: Definir Nome Hexágono MEP1002, mintHexagon: Cunhar Hexágono MEP1002}, info: {sendName: Defina o controlador e registrante do nome, migrateProfile: Defina os registros existentes no novo resolver, migrateProfileWithReset: Defina os registros existentes no novo resolver, migrateProfileWithSync: Defina os registros existentes no novo resolver, wrapName: Empacote o nome e defina um novo resolver, updateResolver: Altere o resolver para, updateProfile: Atualize os registros no resolver existente, setPrimaryName: Defina o nome principal para seu endereço, updateEthAddress: Atualize o endereço ETH para este endereço, testSendName: Defina o controlador e registrante do nome de teste, createSubname: Crie um novo subnome no nome, burnFuses: Queime as permissões escolhidas até a expiração do nome}, itemLabel:{name:'Nome', address:'Endereço', action:'Ação', info:'Info', to:'Para', subname:'Subnome'}, itemValue:{records_one:'{{count}} registro'}, status:{pending:{regular:'Pendente'}, confirmed:{regular:'Confirmado'}, failed:{regular:'Falhou'}}, dialog:{intro:{trailingButton:'Iniciar'}, confirm:{title:'Confirmar Detalhes'}, sent:{title:'Transação Enviada'}, complete:{title:'Transação Completa'}, failed:{title:'Transação Falhou'}}, error:{request:{INSUFFICIENT_FUNDS:'Fundos insuficientes na carteira'}}, viewEtherscan:'Ver no BlockExplorer'}",
-    "search": "{'label': 'Pesquisa de nome', 'placeholder': 'Procurar um nome', 'emptyText': 'Digite um nome ou endereço para pesquisar...', 'address': 'Endereço', 'errors': {'tooShort': 'Nome muito curto', 'invalid': 'Formato inválido para o nome'}, 'status': {'registered': 'Registrado', 'gracePeriod': 'Período de Carência', 'premium': 'Premium Temporário', 'available': 'Disponível', 'notOwned': 'Não Possuído', 'notImported': 'Não Importado', 'short': 'Muito Curto', 'default': 'Inválido', 'unsupportedTLD': 'Não Suportado', 'imported': 'Importado', 'owned': 'Possuído'}}",
-    "selectableInput": "{'add': 'Adicionar', 'placeholder': 'Selecione uma opção', 'empty': 'Nenhuma opção encontrada'}",
-    "testnetFaucet": "{'explanation': 'Cada endereço em goerli pode reivindicar {{ amount }}ETH para testar o aplicativo gerenciador MNS, bem como todos os novos contratos.', 'note': 'Pode levar alguns minutos para aparecer na sua carteira.'}"
+    "action": {
+        "cancel": "Cancelar",
+        "change": "Alterar",
+        "upload": "Carregar",
+        "close": "Fechar",
+        "save": "Salvar",
+        "edit": "Editar",
+        "view": "Visualizar",
+        "clear": "Claro",
+        "update": "Atualizar",
+        "learnMore": "Saiba mais",
+        "send": "Enviar",
+        "next": "Próximo",
+        "add": "Adicionar",
+        "set": "Definir",
+        "search": "Pesquisar",
+        "back": "Voltar",
+        "continue": "Continue",
+        "confirm": "Confirmar",
+        "remove": "Remover",
+        "sign": "Assinar",
+        "reset": "Redefinir",
+        "transfer": "Transferir",
+        "tryAgain": "Tente Novamente",
+        "done": "Concluído",
+        "burnSelected": "Queimar Selecionado",
+        "extend": "Estender",
+        "delete": "Excluir",
+        "sort": "Ordenar",
+        "check": "Verifique",
+        "claim": "Reivindique",
+        "remindMe": "Lembre-me",
+        "begin": "Começar",
+        "finish": "Concluir",
+        "skip": "Pular",
+        "changeNetwork": "Mudar Rede",
+        "understand": "Eu entendo",
+        "feedback": "Comentários",
+        "migrate": "Migrar"
+    },
+    "unit": {
+        "years_one": "{{count}} ano",
+        "years_other": "{{count}} anos",
+        "yrs_one": "{{count}} ano",
+        "yrs_other": "{{count}} anos",
+        "gas": "{{value}} gas",
+        "selected": "{{count}} selecionado",
+        "perPage": "{{count}} por página"
+    },
+    "navigation": {
+        "home": "Início",
+        "names": "Meus Nomes",
+        "favourites": "Favoritos",
+        "settings": "Configurações",
+        "governance": "Governança",
+        "community": "Comunidade",
+        "developers": "Desenvolvedores",
+        "support": "Suporte",
+        "bounty": "Programa de Recompensa por Bugs",
+        "terms": "Termos de Uso",
+        "privacy": "Política de Privacidade",
+        "back": "Voltar",
+        "oldApp": "Antigo App MNS",
+        "language": "Idioma",
+        "currency": "Moeda",
+        "ipfsApp": "Aplicativo IPFS MNS",
+        "feedback": "Comentários",
+        "syncMessage": "Sincronizando com a rede. As alterações da sua transação podem não estar visíveis ainda."
+    },
+    "wallet": {
+        "myProfile": "Perfil",
+        "disconnect": "Desconectar",
+        "connect": "Conectar",
+        "noPrimaryName": "Sem Nome Primário",
+        "viewProfile": "Ver Perfil",
+        "viewDetails": "Ver Detalhes",
+        "register": "Registrar"
+    },
+    "name": {
+        "registered": "Registrado",
+        "expires": "Expira",
+        "noExpiry": "Sem validade",
+        "expiry": "Validade",
+        "parent": "Pai",
+        "noParent": "Sem pai",
+        "registrant": "Registrante",
+        "controller": "Controlador",
+        "dnsOwner": "Proprietário do DNS",
+        "owner": "Proprietário",
+        "notOwned": "Não Possuído",
+        "manager": "Gerente",
+        "all": "Todos os Nomes",
+        "expiresInYears_one": "Expira em {{count}} ano",
+        "expiresInYears_other": "Expira em {{count}} anos",
+        "expiresInMonths_one": "Expira em {{count}} mês",
+        "expiresInMonths_other": "Expira em {{count}} meses",
+        "expiresInDays_one": "Expira em {{count}} dia",
+        "expiresInDays_other": "Expira em {{count}} dias",
+        "expiresInHours_one": "Expira em {{count}} hora",
+        "expiresInHours_other": "Expira em {{count}} horas",
+        "expiresInHours_zero": "Expira em menos de uma hora",
+        "expiredInHours_one": "Expirou {{count}} hora atrás",
+        "expiredInHours_other": "Expirou {{count}} horas atrás",
+        "expiredInHours_zero": "Expirou há menos de uma hora",
+        "expiredInDays_one": "Expirou {{count}} dia atrás",
+        "expiredInDays_other": "Expirou {{count}} dias atrás",
+        "expiredInMonths_one": "Expirou {{count}} mês atrás",
+        "expiredInMonths_other": "Expirou {{count}} meses atrás",
+        "expiredInYears_one": "Expirou {{count}} ano atrás",
+        "expiredInYears_other": "Expirou {{count}} anos atrás",
+        "gracePeriod": {
+            "expiresInYears_one": "O período de carência expira em {{count}} ano",
+            "expiresInYears_other": "O período de carência expira em {{count}} anos",
+            "expiresInMonths_one": "O período de carência expira em {{count}} mês",
+            "expiresInMonths_other": "O período de carência expira em {{count}} meses",
+            "expiresInDays_one": "O período de carência expira em {{count}} dia",
+            "expiresInDays_other": "O período de carência expira em {{count}} dias",
+            "expiresInHours_one": "O período de carência expira em {{count}} hora",
+            "expiresInHours_other": "O período de carência expira em {{count}} horas",
+            "expiresInHours_zero": "O período de carência expira em menos de uma hora"
+        },
+        "extend": "Estender",
+        "send": "Enviar",
+        "transfer": "Transferir",
+        "sendManager": "Gerente de Envio",
+        "sendOwner": "Enviar Proprietário"
+    },
+    "address": {
+        "label": "Endereço",
+        "viewAddress": "Ver endereço",
+        "copyAddress": "Copiar endereço"
+    },
+    "records": {
+        "label": "Registros"
+    },
+    "sortTypes": {
+        "expiryDate": "Data de validade",
+        "labelName": "Nome",
+        "creationDate": "Data de criação"
+    },
+    "errors": {
+        "noResults": "Nenhum resultado encontrado",
+        "invalidAddress": "Endereço inválido",
+        "addressRequired": "Endereço necessário"
+    },
+    "transaction": {
+        "description": {
+            "setName": "Definir nome",
+            "setRecords": "Defina registros",
+            "test": "Transação de teste",
+            "addSuccess": "Adicionar sucesso",
+            "sendName": "Enviar nome",
+            "migrateProfile": "Migrar perfil",
+            "migrateProfileWithReset": "Migrar perfil",
+            "migrateProfileWithSync": "Migrar e atualizar perfil",
+            "wrapName": "Nome do embrulho",
+            "updateResolver": "Atualizar resolutor",
+            "updateProfile": "Atualizar perfil",
+            "setPrimaryName": "Definir nome principal",
+            "updateEthAddress": "Atualizar endereço ETH",
+            "testSendName": "Enviar nome",
+            "burnFuses": "Permissões de queima",
+            "createSubname": "Criar subnome",
+            "deleteSubname": "Excluir subnome",
+            "extendNames": "Estender nomes",
+            "importDNSSECName": "importar nome DNSSEC",
+            "commitName": "Iniciar temporizador",
+            "registerName": "Registrar nome",
+            "approveNameWrapper": "Aprovar NameWrapper",
+            "clearRecords": "Registros claros",
+            "updateRecords": "Atualizar registros",
+            "transferName": "Transferência de nome",
+            "changePermissions": "Alterar permissões",
+            "syncManager": "Gerenciador de sincronização",
+            "updateProfileRecords": "Atualizar perfil",
+            "resetProfile": "Redefinir perfil",
+            "setHexagonName": "Defina o Nome do Hexágono MEP1002",
+            "mintHexagon": "Cunhar MEP1002 Hexágono"
+        },
+        "info": {
+            "sendName": "Defina o controlador e o registrante do nome",
+            "migrateProfile": "Defina registros existentes no novo resolvedor",
+            "migrateProfileWithReset": "Defina registros existentes no novo resolvedor",
+            "migrateProfileWithSync": "Defina registros existentes no novo resolvedor",
+            "wrapName": "Envolva o nome e defina um novo resolvedor",
+            "updateResolver": "Alterar resolver para",
+            "updateProfile": "Atualizar registros no resolvedor existente",
+            "setPrimaryName": "Defina o nome principal para o seu endereço",
+            "updateEthAddress": "Atualize o endereço ETH para este endereço",
+            "testSendName": "Defina o controlador e o registrante do nome",
+            "createSubname": "Crie um novo subnome no nome",
+            "burnFuses": "Queime as permissões escolhidas até a expiração do nome",
+            "commitName": "Iniciar temporizador para registrar nome",
+            "approveNameWrapper": "Aprove o NameWrapper para gerenciar seus nomes",
+            "fuses": {
+                "revoke": "Revogar",
+                "grant": "Conceder",
+                "setExpiry": "Definir validade",
+                "PARENT_CANNOT_CONTROL": "Desista do controle parental",
+                "CAN_EXTEND_EXPIRY": "Estender validade",
+                "CANNOT_UNWRAP": "Desembrulhe este nome",
+                "CANNOT_CREATE_SUBDOMAIN": "Crie subdomínios",
+                "CANNOT_SET_RESOLVER": "Definir resolvente",
+                "CANNOT_SET_TTL": "Definir TTL",
+                "CANNOT_TRANSFER": "Envie este nome",
+                "CANNOT_BURN_FUSES": "Alterar permissões",
+                "CANNOT_APPROVE": "Alterar gerente de renovação"
+            }
+        },
+        "itemLabel": {
+            "name": "Nome",
+            "address": "Endereço",
+            "action": "Ação",
+            "info": "Informações",
+            "to": "Para",
+            "subname": "Subnome",
+            "duration": "Duração",
+            "cost": "Custo",
+            "update": "Atualizar",
+            "resolver": "Resolver",
+            "h3Index": "Índice H3"
+        },
+        "itemValue": {
+            "records_one": "{{count}} registro",
+            "records_other": "{{count}} registros"
+        },
+        "status": {
+            "pending": {
+                "regular": "Pendente"
+            },
+            "confirmed": {
+                "regular": "Confirmado",
+                "notifyTitle": "Transação Bem-sucedida",
+                "notifyMessage": "Sua transação \"{{action}}\" foi bem-sucedida"
+            },
+            "failed": {
+                "regular": "Falhou",
+                "notifyTitle": "Falha na Transação",
+                "notifyMessage": "Sua transação \"{{action}}\" falhou e foi revertida"
+            }
+        },
+        "dialog": {
+            "intro": {
+                "trailingButton": "Iniciar",
+                "trailingButtonResume": "Retomar",
+                "step": "Passo {{step}}"
+            },
+            "confirm": {
+                "title": "Confirmar Detalhes",
+                "message": "Verifique duas vezes esses detalhes antes de confirmar na sua carteira.",
+                "waitingForWallet": "Aguardando a Carteira",
+                "openWallet": "Abrir Carteira"
+            },
+            "sent": {
+                "title": "Transação Enviada",
+                "message": "Sua transação está em andamento, você pode fechar isso e voltar mais tarde.",
+                "progress": {
+                    "title": "Enviado",
+                    "message": "Demorando mais do que o esperado"
+                }
+            },
+            "complete": {
+                "title": "Transação Concluída",
+                "message": "Sua transação está agora concluída!",
+                "progress": {
+                    "title": "Concluído"
+                }
+            },
+            "failed": {
+                "title": "Transação Falhou",
+                "progress": {
+                    "title": "Falhou"
+                }
+            },
+            "error": {
+                "gasLimit": "O limite de gas na sua transação não foi suficiente, por favor tente novamente."
+            }
+        },
+        "error": {
+            "request": {
+                "INSUFFICIENT_FUNDS": "Fundos insuficientes na carteira",
+                "UNPREDICTABLE_GAS_LIMIT": "Ocorreu um erro desconhecido"
+            }
+        },
+        "viewEtherscan": "Ver no BlockExplorer",
+        "viewMore": "Ver Mais"
+    },
+    "search": {
+        "label": "Pesquisa de nome",
+        "placeholder": "Pesquise um nome",
+        "emptyText": "Digite um nome ou endereço para pesquisar...",
+        "address": "Endereço",
+        "errors": {
+            "tooShort": "Nome muito curto",
+            "invalid": "Formato inválido para nome"
+        },
+        "status": {
+            "registered": "Registrado",
+            "gracePeriod": "Período de Carência",
+            "premium": "Premium Temporário",
+            "available": "Disponível",
+            "notOwned": "Não Possuído",
+            "notImported": "Não Importado",
+            "short": "Muito Curto",
+            "default": "Inválido",
+            "unsupportedTLD": "Não Suportado",
+            "imported": "Importado",
+            "owned": "Propriedade"
+        }
+    },
+    "selectableInput": {
+        "add": "Adicionar",
+        "placeholder": "Selecione uma opção",
+        "empty": "Nenhuma opção encontrada"
+    },
+    "testnetFaucet": {
+        "explanation": "Cada endereço em goerli pode reivindicar {{ amount }}ETH para testar o aplicativo gerenciador MNS, bem como todos os novos contratos.",
+        "note": "Pode levar alguns minutos para aparecer na sua carteira."
+    }
 }

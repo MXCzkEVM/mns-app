@@ -1,6 +1,332 @@
 {
-    "input": "{'profileEditor': {'tabs': {'avatar': {'dropdown': {'selectNFT': 'NFT Seç', 'uploadImage': 'Resim Yükle'}, 'nft': {'title': 'Bir NFT Seç', 'searchPlaceholder': 'Bir NFT Ara', 'loading': 'NFT'leriniz yükleniyor', 'unknown': 'Bilinmeyen NFT', 'noNFTs': 'Bu adres için hiç NFT bulunamadı.', 'selected': {'title': 'Seçilen NFT', 'subtitle': 'Bu NFT'yi kullanmak istediğinize emin misiniz?'}, 'noResults': 'Sonuç bulunamadı.'}, 'image': {'title': 'Resmi Düzenle', 'upload': {'title': 'Avatar Yükle', 'subtitle': \"Bir avatar yüklemek için bir mesaj imzalamanız gerekiyor. Bu hiçbir şey tutmaz.\", 'action': 'İmzala ve Yükle'}}}, 'general': {'label': 'Genel', 'name': {'label': 'Takma Ad', 'placeholder': 'John Smith'}, 'url': {'label': 'Web Sitesi', 'placeholder': 'https://ens.domains'}, location: {'label':'Konum','placeholder':'Metaverse'},'description':{'label':'Kısa Biyografi','placeholder':\"Ben kırsal Tennessee'den bir verim çiftçisiyim.\"}},'accounts':{'label':'Hesaplar','addAccount':'Hesap ekle','noOptions':'Kullanılabilir hesap seçeneği yok','placeholder':{'default':'Kullanıcı adını buraya ekleyin','com.twitter':'örn. ensdomains','com.github':'örn. ensdomains','com.discord':'örn. alisha.eth#0001'}},'address':{'label':'Adres','addAddress':'Adres ekle','noOptions':'Kullanılabilir adres seçeneği yok','placeholder':{'default':'Adresi buraya ekleyin','ETH':'0xD9hbQK...','BNB':'0xD9hbQK...','BTC':'3FZbgi29...','LTC':'3FZbgi29...','SOL':'D4kA7VzHnmV...','DOT':'1D4kA7VxH...','DOGE':'DFabcd12...'}},'contentHash':{'label':'Web Sitesi','addContentHash':'Merkezi olmayan web sitesi ekle','placeholder':{'default':'Url buraya ekleyin.','ipfs':'ipfs://...','skynet':'sia://...','arweave':'ar://...','swarm':'bzz://...','onion':'onion3://...'}},'other':{'label':'Diğerleri,'addRecord:'Kayıt ekle,'createRecord:'Bir kayıt adı yazın...,'placeholder':{'default:'Buraya bir değer ekleyin.'}}},'warningOverlay':{'action':{'learnMoreResolvers:'Çözümleyiciler hakkında daha fazla bilgi edinin,'updateResolver:'Çözümleyiciyi güncelle,'setResolver:'Çözümleyici ayarla,'ignoreUpdate:'Bunu görmezden gel ve mevcut çözümleyicini kullanmaya devam et. Bir sonraki seferde tekrar sorulacaksınız.'},'invalidResolver':{'title:'Yetkisiz çözümleyici,'subtitle:'Bu çözümleyici için kayıtları ayarlama izniniz yok. Profilinizi düzenlemek için en son çözümleyiciye güncellemeniz gerekecek.','action:'Çözümleyiciyi güncelle'},'migrateProfileSelector':{'title:'Profil,'subtitle:'Her çözümleyicide profil kayıtları uyuşmuyor. Hangi kayıt setini kullanmak istersiniz?,'option':{'latest:'Yeni çözümleyicideki profil kayıtları,'current:'Mevcut profil kayıtları,'reset:'Profilinizi sıfırlayın,'resetSubtitle:'Tüm profil kayıtlarını kaldırın'}},'migrateProfileWarning':{'title:'Profili taşı,'subtitle:'Profil kayıtlarınızı en son çözümleyiciye taşıyorsunuz. Bu, en son çözümleyicideki mevcut tüm kayıtları kalıcı olarak temizler ve bunları mevcut kayıtlarınızla değiştirir.'",
-    "transaction": "{'extendNames': {'actionValue': 'Kaydı Uzat', 'costValue': '{{value}} + ücretler', 'warning': 'Bu ismi uzatmak size sahipliğini vermez'}, 'deleteSubname': {'warning': 'Merhaba oradakiler'}}",
-    "intro": "{'migrateAndUpdateResolver': {'title': 'Eylem Gerekli', 'heading': 'Profilinize kaydetmek istediğiniz düzenlemelerin çözünürlüğünüzü yükseltmenizi gerektirir.', 'link': 'Çözünürlük yükseltmeleri hakkında daha fazla bilgi edinin', 'warning': 'Herhangi bir noktada bunu iptal ederseniz değişiklikleriniz kaydedilmeyecektir.'}, 'syncManager': {'description': 'Yöneticiyi senkronize etmek, sizi bu ismin yeni yöneticisi yapar. Mevcut yönetici <b>({{manager}})</b> artık değişiklik yapamayacak.', 'wrappedWarning': 'Yöneticiyi senkronize etmek ayrıca bu ismi açacaktır. Bu, NFT'yi yakacak ve tüm izinleri sıfırlayacaktır.'}}",
-    "errors": "{'duplicateKey': '{{value}} bir yinelenen anahtardır'}"
+    "input": {
+        "profileEditor": {
+            "tabs": {
+                "avatar": {
+                    "dropdown": {
+                        "selectNFT": "NFT Seçin",
+                        "uploadImage": "Resim Yükle"
+                    },
+                    "nft": {
+                        "title": "Bir NFT seçin",
+                        "searchPlaceholder": "NFT arayın",
+                        "loading": "NFT'leriniz yükleniyor",
+                        "unknown": "Bilinmeyen NFT",
+                        "noNFTs": "Bu adres için hiç NFT bulunamadı.",
+                        "selected": {
+                            "title": "Seçilmiş NFT",
+                            "subtitle": "Bu NFT'yi kullanmak istediğinizden emin misiniz?"
+                        },
+                        "noResults": "Sonuç bulunamadı."
+                    },
+                    "image": {
+                        "title": "Resim Düzenle",
+                        "upload": {
+                            "title": "Avatar Yükle",
+                            "subtitle": "Bir avatar yüklemek için bir mesaj imzalamanız gerekiyor. Bu hiçbir şey mal olmayacak.",
+                            "action": "İmzala ve Yükle"
+                        }
+                    }
+                },
+                "general": {
+                    "label": "Genel",
+                    "name": {
+                        "label": "Takma Ad",
+                        "placeholder": "John Smith"
+                    },
+                    "url": {
+                        "label": "Web Sitesi",
+                        "placeholder": "https://ens.domainler"
+                    },
+                    "location": {
+                        "label": "Konum",
+                        "placeholder": "Metaverse"
+                    },
+                    "description": {
+                        "label": "Kısa Biyografi",
+                        "placeholder": "Ben kırsal Tennessee'den bir getiri çiftçisiyim."
+                    }
+                },
+                "accounts": {
+                    "label": "Hesaplar",
+                    "addAccount": "Hesap Ekle",
+                    "noOptions": "Hesap seçenekleri mevcut değil",
+                    "placeholder": {
+                        "default": "Buraya kullanıcı adı ekleyin",
+                        "com.twitter": "örneğin ensdomains",
+                        "com.github": "örneğin ensdomains",
+                        "com.discord": "Örneğin, alisha.eth#0001"
+                    }
+                },
+                "address": {
+                    "label": "Adres",
+                    "addAddress": "Adres Ekle",
+                    "noOptions": "Adres seçenekleri mevcut değil",
+                    "placeholder": {
+                        "default": "Buraya adres ekleyin",
+                        "ETH": "0xD9hbQK...",
+                        "BNB": "0xD9hbQK...",
+                        "BTC": "3FZbgi29...",
+                        "LTC": "3FZbgi29...",
+                        "SOL": "D4kA7VzHnmV...",
+                        "DOT": "1D4kA7VxH...",
+                        "DOGE": "DFabcd12..."
+                    }
+                },
+                "contentHash": {
+                    "label": "Web Sitesi",
+                    "addContentHash": "Merkezi olmayan web sitesi ekle",
+                    "placeholder": {
+                        "default": "Buraya url ekleyin",
+                        "ipfs": "ipfs://...",
+                        "skynet": "sia://...",
+                        "arweave": "tr://...",
+                        "swarm": "bzz://...",
+                        "onion": "onion3://..."
+                    }
+                },
+                "other": {
+                    "label": "Diğer",
+                    "addRecord": "Kayıt Ekle",
+                    "createRecord": "Bir kayıt adı yazın...",
+                    "placeholder": {
+                        "default": "Bir değer ekleyin..."
+                    }
+                }
+            },
+            "warningOverlay": {
+                "action": {
+                    "learnMoreResolvers": "Resolverler hakkında daha fazla bilgi edinin",
+                    "updateResolver": "Çözümleyici Güncelle",
+                    "setResolver": "Çözümleyici Ayarla",
+                    "ignoreUpdate": "Bu durumu görmezden gelin ve mevcut çözümleyicinizi kullanmaya devam edin. Bir sonraki seferde tekrar sorulacaktır."
+                },
+                "invalidResolver": {
+                    "title": "Yetkisiz çözümleyici",
+                    "subtitle": "Bu çözümleyici için kayıt ayarlama izniniz yok. Profilinizi düzenlemek için en son çözümleyiciye güncelleme yapmanız gerekecek.",
+                    "action": "Çözümleyici Güncelle"
+                },
+                "migrateProfileSelector": {
+                    "title": "Profil",
+                    "subtitle": "Her çözümleyicideki profil kayıtları eşleşmiyor. Hangi kayıt setini kullanmak istersiniz?",
+                    "option": {
+                        "latest": "Yeni çözümleyicide profil kayıtları",
+                        "current": "Mevcut profil kayıtları",
+                        "reset": "Profilinizi sıfırlayın",
+                        "resetSubtitle": "Tüm profil kayıtlarını kaldır"
+                    }
+                },
+                "migrateProfileWarning": {
+                    "title": "Profil taşı",
+                    "subtitle": "Profil kayıtlarınızı en son çözümleyiciye taşıyorsunuz. Bu, mevcut kayıtlarınızla en son çözümleyicideki tüm mevcut kayıtları kalıcı olarak temizleyecek ve onları değiştirecektir."
+                },
+                "migrateRegistry": {
+                    "title": "Kayıt defteri güncel değil",
+                    "subtitle": "Bu isimde değişiklik yapmadan önce kaydı taşımanız gerekecek.",
+                    "action": "Taşı"
+                },
+                "noResolver": {
+                    "title": "Resolver ayarlanmadı",
+                    "subtitle": "Profilinizi düzenlemeden önce bir çözümleyici ayarlanmalıdır.",
+                    "action": "Güncelle"
+                },
+                "resetProfile": {
+                    "title": "Profil sıfırla",
+                    "subtitle": "Profil kayıtlarınızı sıfırlıyorsunuz. Mevcut tüm profil bilgilerini, ETH adresi, avatar ve sosyal kayıtlar gibi, kaybedeceksiniz. Bunlar profilinizi düzenleyerek tekrar eklenebilir."
+                },
+                "resolverNotNameWrapperAware": {
+                    "title": "Uyumsuz Çözücü",
+                    "subtitle": "Mevcut çözümleyiciniz, sarılı isimlerle uyumsuz. Profilinizi düzenlemeden önce çözümleyiciyi güncellemeniz gerekecek.",
+                    "toggle": {
+                        "title": "Mevcut profili aktar",
+                        "subtitle": "Bu seçimin kaldırılması sadece çözümleyicinizi günceller."
+                    }
+                },
+                "resolverOutOfDate": {
+                    "title": "Çözücü güncel değil",
+                    "subtitle": "Çözücü güncel değil. Profilinizi düzenlemeden önce güncellemeniz önerilir."
+                },
+                "resolverOutOfSync": {
+                    "title": "Eşleştirici senkronizasyon dışı",
+                    "subtitle": "En son halka açık çözümleyiciyi kullanmıyorsunuz, ancak profil kayıtlarınız orada saklanmış. Profilinizi düzenlemeden önce en son halka açık çözümleyiciye geçmeniz önerilir."
+                },
+                "transferOrResetProfile": {
+                    "title": "Profil",
+                    "subtitle": "Mevcut profilinizi yeni çözümleyiciye güncelleme yapmadan önce aktarabilirsiniz.",
+                    "toggle": {
+                        "title": "Mevcut profili aktar",
+                        "subtitle": "Bunu seçimi kaldırmak sadece çözümleyicinizi günceller."
+                    }
+                },
+                "updateResolverOrResetProfile": {
+                    "title": "Profil",
+                    "subtitle": "Mevcut profilinizi yeni çözümleyicide tutabilir veya sıfırlayabilir ve tüm profil kayıtlarını kaldırabilirsiniz.",
+                    "toggle": {
+                        "title": "Mevcut profili koru",
+                        "subtitle": "Bunu seçimi kaldırmak profilinizi sıfırlayacak."
+                    }
+                },
+                "links": {
+                    "learnMoreResolvers": "Resolverler hakkında daha fazla bilgi edinin"
+                }
+            },
+            "intro": {
+                "resetProfile": {
+                    "title": "Profil sıfırla",
+                    "description": "Bu, en son çözümleyiciden tüm profil kayıtlarını kaldıracak ve ardından çözümleyiciyi güncelleyecektir."
+                },
+                "migrateProfile": {
+                    "title": "Profil taşı",
+                    "description": "Bu, mevcut profil kayıtlarınızı en son çözümleyiciye taşıyacak."
+                },
+                "migrateCurrentProfile": {
+                    "title": "Profil taşı",
+                    "description": "Bu, mevcut profil kayıtlarınızı en son çözümleyiciye taşıyacak."
+                }
+            }
+        },
+        "editResolver": {
+            "title": "Çözümleyiciyi Düzenle",
+            "latestLabel": "En son çözümleyiciyi kullanın",
+            "etherscan": "BlokKeşifçisi",
+            "latestMessage": "En son çözücüdesiniz",
+            "customLabel": "Özel çözümleyici",
+            "customPlaceholder": "Özel çözümleyici adresi girin"
+        },
+        "extendNames": {
+            "title_one": "İsim Uzat",
+            "title_other": "{{count}} İsmi Genişlet",
+            "invoice": {
+                "extension": "{{count}} yıl uzatma",
+                "transaction": "İşlem ücreti",
+                "total": "Tahmini toplam"
+            },
+            "bannerMsg": "Çok yıllık uzatma, yıllık işlemlerden kaçınarak ağ maliyetlerinde tasarruf sağlar.",
+            "gasLimitError": "Yetersiz bakiye"
+        },
+        "transferProfile": {
+            "title": "Profil Aktar",
+            "message1": "Yükseltme yapmadan önce, isterseniz mevcut profilinizi aktarabilirsiniz, aksi takdirde yükseltme yaptığınızda sıfırlanacaktır.",
+            "message2": "Mevcut profilinizi transfer etmek ister misiniz?"
+        },
+        "revokePermissions": {
+            "views": {
+                "revokeWarning": {
+                    "title": "Bu kalıcı değişiklikler yapacak.",
+                    "subtitle": "İzinler, adınıza kalıcı değişiklikler yapabilen ileri düzey bir özelliktir. Bu değişiklikleri geri alamayacak ve adın süresi dolarsa sadece bu durumda sıfırlanacaktır.",
+                    "subtitle2": "Bu özelliği kullanmada kendinize güvendiğinizden emin olunuz. <infoLink>Daha fazla bilgi edinin</infoLink>"
+                },
+                "revokePCC": {
+                    "title": "Mülkiyetten vazgeç",
+                    "subtitle": "Bu, bu ismin sahipliğini yöneticiye ({{account}}) verecektir. Aynı zamanda yönetici değilseniz, bu isimde daha fazla değişiklik yapamayacaksınız."
+                },
+                "grantExtendExpiry": {
+                    "title": "İzinleri değiştir",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "İzin ver: Süreyi uzat"
+                    }
+                },
+                "setExpiry": {
+                    "title": "İsim süresi ayarla",
+                    "subtitle": "İzinlerin sona ereceği bir tarih belirleyin. Bu tarih, üst öğesinin ({{parent}}) süresinin dolmasından daha uzun olamaz.",
+                    "subtitleWithCEE": "Bu ismin ne zaman sona ereceğini belirleyin. Bu, mevcut izin süresinin sonunu ({{expiry}}) değiştirecek ve ebeveyninin sona erme tarihinden ({{parent}}) daha geç olamaz.",
+                    "options": {
+                        "max": "Maksimum",
+                        "custom": "Daha erken bir tarih seçin"
+                    },
+                    "error": {
+                        "required": "Özel bir tarih seçildiyse bir tarih gereklidir.",
+                        "min": "Tarih, {{date}}'den daha büyük olmalıdır.",
+                        "max": "Tarih {{date}}'den daha küçük olmalıdır."
+                    }
+                },
+                "revokeAdditional": {
+                    "title": "İzinleri iptal et",
+                    "subtitle": "Bu isim üzerindeki izinleri sahipliği bırakmadan önce iptal etmek ister misiniz? Bu sadece şimdi yapılabilir.",
+                    "action": {
+                        "title": "Ek yetkileri iptal et",
+                        "description": "Ayrıca yönetici değilseniz, bu işlemden sonra ek izinleri iptal edemezsiniz."
+                    }
+                },
+                "revokeUnwrap": {
+                    "title": "İzinleri iptal et",
+                    "subtitle": "Bu izni iptal etmek zorundasınız, diğerlerinin iptal edilebilmesi için. Bu, izinlerin kaldırılmasını engeller.",
+                    "fuses": {
+                        "CANNOT_UNWRAP": "Bu ismi açma iznini iptal et:"
+                    }
+                },
+                "revokePermissions": {
+                    "title": "İzinleri iptal et",
+                    "unwrapSubtitle": "Bunu seçerek diğerlerini etkinleştirin",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "İzin ver: Süreyi uzat.",
+                        "CANNOT_UNWRAP": "Bu ismi açma iznini iptal et:",
+                        "CANNOT_CREATE_SUBDOMAIN": "İzinleri iptal et: Alt alan adları oluştur",
+                        "CANNOT_TRANSFER": "Bu ismi gönderme iznini iptal et:",
+                        "CANNOT_SET_RESOLVER": "İzin iptal et: Çözümleyici ayarla",
+                        "CANNOT_SET_TTL": "İzin iptal et: TTL Ayarla",
+                        "CANNOT_BURN_FUSES": "İzinleri iptal et: İzinleri değiştirme",
+                        "CANNOT_APPROVE": "Yenileme yöneticisini değiştirme iznini iptal et:"
+                    }
+                },
+                "revokeChangeFuses": {
+                    "title": "İzinleri iptal et",
+                    "subtitle": "Bu izni iptal ederek, kalan sigortaları değiştirme yeteneğinizi kalıcı olarak kaybedersiniz. Bu, yalnızca isim süresi dolarsa sıfırlanır.",
+                    "fuses": {
+                        "CANNOT_BURN_FUSES": "İzinleri iptal et: İzinleri değiştirme"
+                    }
+                },
+                "revokeChangeFusesWarning": {
+                    "title": "Kalan izinler kilitlenecek",
+                    "subtitle": "İzinler ve özel sigortalar, 'izinleri değiştir' iptal edildikten sonra mevcut durumlarında kalıcı olarak kilitlenecektir. Bu, yalnızca adın süresi dolarsa sıfırlanır."
+                }
+            },
+            "action": {
+                "revoke": "İptal Et"
+            }
+        },
+        "unknownLabels": {
+            "title": "Adınızı onaylayın",
+            "subtitle": "Adınızdaki bazı etiketler bilinmiyor. Lütfen devam etmek için onları girin."
+        },
+        "deleteEmancipatedSubnameWarning": {
+            "title": "Bu alt isim yeniden oluşturulamaz.",
+            "message": "Bu alt ismi silmek, süresi dolana kadar kullanılmasını veya yeniden oluşturulmasını engeller{{date}}. Bu işlem geri alınamaz çünkü ana kontrol izinleri iptal edilmiştir."
+        },
+        "setToMEP1002Hexagon": {
+            "title": "Adı MEP1002 Hexagon olarak ayarla",
+            "subtitle": "Bu, adı halka açık MEP1002 Hexagon Haritası olarak ayarlayacak.",
+            "h3index": "H3 Hexagon İndeksi"
+        },
+        "mintToMEP1002Hexagon": {
+            "title": "MEP1002 Hexagon Bas",
+            "subtitle": "Bu, halka açık bir MEP1002 Hexagon Haritası basacak.",
+            "h3index": "H3 Hexagon İndeksi"
+        }
+    },
+    "transaction": {
+        "extendNames": {
+            "actionValue": "Kaydı Uzat",
+            "costValue": "{{value}} + ücretler",
+            "warning": "Bu ismi uzatmanız, size onun sahipliğini vermez."
+        },
+        "deleteSubname": {
+            "warning": "Merhaba oradakiler"
+        }
+    },
+    "intro": {
+        "migrateAndUpdateResolver": {
+            "title": "Eylem Gereklidir",
+            "heading": "Profilinize kaydetmek istediğiniz düzenlemelerin, çözünürlüğünüzü yükseltmenizi gerektirir.",
+            "link": "Resolver yükseltmeleri hakkında daha fazla bilgi edinin",
+            "warning": "Unutmayın, herhangi bir noktada bunu iptal ederseniz değişiklikleriniz kaydedilmeyecektir."
+        },
+        "syncManager": {
+            "description": "Yöneticiyi senkronize etmek sizi bu ismin yeni yöneticisi yapar. Mevcut yönetici <b>({{manager}})</b> artık değişiklik yapamayacak.",
+            "wrappedWarning": "Yöneticiyi senkronize etmek aynı zamanda bu ismi de açacak. Bu, NFT'yi yakacak ve tüm izinleri sıfırlayacaktır."
+        }
+    },
+    "errors": {
+        "duplicateKey": "{{value}} bir yinelenen anahtardır."
+    }
 }

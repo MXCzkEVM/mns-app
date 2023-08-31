@@ -2,7 +2,184 @@
     "title": "MNS에 {{name}} 등록하기",
     "subtitle": "등록",
     "heading": "{{name}} 등록",
-    "invoice": "{'yearRegistration': '{{years}} 년 등록', 'registration': '등록', 'estimatedNetworkFee': '예상 네트워크 수수료', 'networkFee': '네트워크 수수료', 'temporaryPremium': '임시 프리미엄', 'total': '예상 총액', 'totalPaid': '총 지불액'}",
-    "error": "{'nameTooLong': '등록하려는 이름이 너무 깁니다. 더 짧은 이름을 선택해 주세요.'}",
-    "steps": "{'pricing': {'insufficientBalance': '잔액 부족', 'multipleYearsMessage': '여러 년을 연장하면 매년 거래를 피함으로써 네트워크 비용을 절약할 수 있습니다.', 'primaryName': '기본 이름으로 사용', 'primaryNameMessage': '이것은 주소를 이 이름에 연결하여 dApps가 그것을 프로필로 표시할 수 있게 합니다. 주소당 하나의 기본 이름만 가질 수 있습니다.', 'premium': {'heading': '이 이름은 일시적인 프리미엄이 있습니다', 'subheading': '최근 만료된 이름에 공정한 기회를 제공하기 위해, 프리미엄은 $100,000,000에서 시작하여 21일 동안 $0으로 줄어듭니다. 아래 날짜에 대한 프리미엄을 계산할 수 있습니다.', 'targetPrice': '목표 가격', 'targetDate': '목표 날짜', 'timezone': '{{timezone}}에서 표시되는 날짜와 시간'}}, 'profile': {'title': '프로필 생성', 'title2': '프로필 수정', 'default': '기본값', 'advanced': '고급', 'permissions': '권한', 'resolver': 'Resolver', 'visibilityMessage': '프로필 정보는 블록체인에 저장됩니다. 추가하는 모든 것은 공개적으로 볼 수 있습니다.', 'addProfile': '프로필 필드 추가', 'addMore': '프로필에 더 추가하기', \n'options': {'groups': {'general': {'label': '일반', \n'items': {'name': '닉네임', \n'url': \n'웹사이트',\n'location':\n'위치',\n'description':\n'간단한 자기소개'},\n'placeholder':\n{'name':\n'John Smith',\n'url':\n'https://ens.domains',\n'location':\n'Metaverse',\n'description':\n\"나는 테네시의 농부입니다.\"}},\n'social':\n{'label':\n'소셜',\n'items':\n{'com.twitter':\n'Twitter',\n'com.github':\n'GitHub',\n'com.discord':\n'Discord'},\n'placeholder':\n{'com.twitter':\n'e.g. ensdomains',\n'com.github':\n'e.g. ensdomains',\n'com.discord':\n'e.g. alisha.eth#0001'}},\n'address':\n{'label':\n'주소',\n'itemLabel':\n'{{coin}} 주소',\n'placeholder':\n{'default':\n'여기에 주소 추가',\n'ETH':\n'0xD9hbQK...',\n'BNB':\n'bnb1grpf...',\n'BTC':\n'3FZbgi29...',\n'LTC':\n'ltc1qdp7p...',\n'SOL':\n'D4kA7VzHnmV...',\n'DOT':'1D4kA7VxH...',\n'DOGE':'DFabcd12...'}},\n'website':{'label':'웹사이트','items':{'ipfs':'IPFS','ipns':'IPNS','swarm':'Swarm','onion':'Onion','skynet':'Skynet','arweave':'Arweave'}, \n'options':{'groups':{'general':{'label':'일반','items':{'name':'닉네임','url':'웹사이트','location':'위치','description':'간단한 자기소개'}, \n'options':{'groups':{'general':{'label':'일반','items':{'name':'닉네임','url':'웹사이트','location':'위치','description':'간단한 자기소개'}, \n'options':{'groups':{'general':{'label':'일반','items':{'name':'닉네임','url':'웹사이트','location':'위치','description':'간단한 자기소개'}, \n'options':{'groups':{'general':{'label':'일반','items':{'name':'닉네임','url':'웹사이트','location':'위치','description':\"나는 테네시의 농부입니다.\"}}, \n'social':{'label':\"소셜\",'items':{'com.twitter':\"Twitter\",'com.github':\"GitHub\",'com.discord':\"Discord\"}, \n'social':{'label':\"소셜\",'items':{'com.twitter':\"Twitter\",'com.github':\"GitHub\",'com.discord':\"Discord\"}, \n'social':{'label"
+    "invoice": {
+        "yearRegistration": "{{years}}년 등록",
+        "registration": "등록",
+        "estimatedNetworkFee": "추정 네트워크 수수료",
+        "networkFee": "네트워크 수수료",
+        "temporaryPremium": "임시 프리미엄",
+        "total": "예상 총액",
+        "totalPaid": "총 지불된 금액"
+    },
+    "error": {
+        "nameTooLong": "등록하려는 이름이 너무 깁니다. 더 짧은 이름을 선택해 주세요."
+    },
+    "steps": {
+        "pricing": {
+            "insufficientBalance": "잔액 부족",
+            "multipleYearsMessage": "여러 년 동안 연장하면 매년 거래를 피함으로써 네트워크 비용을 절약할 수 있습니다.",
+            "primaryName": "기본 이름으로 사용",
+            "primaryNameMessage": "이 링크는 주소를 이 이름에 연결하며, dApps가 연결될 때 프로필로 표시할 수 있게 합니다. 주소당 하나의 기본 이름만 가질 수 있습니다.",
+            "premium": {
+                "heading": "이 이름은 임시 프리미엄을 가지고 있습니다.",
+                "subheading": "최근에 만료된 이름에 공정한 기회를 제공하기 위해, 프리미엄은 $100,000,000에서 시작하여 21일 동안 $0으로 줄어듭니다. 아래의 날짜에서 프리미엄을 계산할 수 있습니다.",
+                "targetPrice": "목표 가격",
+                "targetDate": "목표 날짜",
+                "timezone": "지역 시간대에 표시된 날짜와 시간 ({{timezone}})"
+            }
+        },
+        "profile": {
+            "title": "프로필을 생성하세요",
+            "title2": "프로필 수정",
+            "default": "기본값",
+            "advanced": "고급",
+            "permissions": "권한",
+            "resolver": "리졸버",
+            "visibilityMessage": "당신의 프로필 정보는 블록체인에 저장됩니다. 추가하는 모든 것은 공개적으로 보일 것입니다.",
+            "addProfile": "프로필 필드 추가",
+            "addMore": "프로필에 더 추가하세요",
+            "options": {
+                "groups": {
+                    "general": {
+                        "label": "일반",
+                        "items": {
+                            "name": "별명",
+                            "url": "웹사이트",
+                            "location": "위치",
+                            "description": "짧은 소개"
+                        },
+                        "placeholder": {
+                            "name": "존 스미스",
+                            "url": "https://ens.domains",
+                            "location": "메타버스",
+                            "description": "나는 테네시 시골의 수익 농부입니다."
+                        }
+                    },
+                    "social": {
+                        "label": "소셜",
+                        "items": {
+                            "com.twitter": "트위터",
+                            "com.github": "GitHub",
+                            "com.discord": "디스코드"
+                        },
+                        "placeholder": {
+                            "com.twitter": "예: ensdomains",
+                            "com.github": "예: ensdomains",
+                            "com.discord": "예: alisha.eth#0001"
+                        }
+                    },
+                    "address": {
+                        "label": "주소",
+                        "itemLabel": "{{coin}} 주소",
+                        "placeholder": {
+                            "default": "여기에 주소 추가",
+                            "ETH": "0xD9hbQK...",
+                            "BNB": "bnb1grpf...",
+                            "BTC": "3FZbgi29...",
+                            "LTC": "ltc1qdp7p...",
+                            "SOL": "D4kA7VzHnmV...",
+                            "DOT": "1D4kA7VxH...",
+                            "DOGE": "DFabcd12..."
+                        }
+                    },
+                    "website": {
+                        "label": "웹사이트",
+                        "items": {
+                            "ipfs": "IPFS",
+                            "ipns": "IPNS",
+                            "swarm": "스웜",
+                            "onion": "양파",
+                            "skynet": "스카이넷",
+                            "arweave": "아르위브"
+                        },
+                        "placeholder": {
+                            "default": "여기에 URL 추가",
+                            "ipfs": "ipfs://...",
+                            "skynet": "sia://...",
+                            "arweave": "ar://...",
+                            "swarm": "bzz://...",
+                            "onion": "onion3://..."
+                        }
+                    },
+                    "other": {
+                        "label": "다른",
+                        "items": {
+                            "contentHash": "콘텐츠 해시",
+                            "publicKey": "공개 키",
+                            "abi": "ABI",
+                            "custom": "사용자 정의"
+                        }
+                    },
+                    "custom": {
+                        "key": "키",
+                        "value": "가치"
+                    },
+                    "default": {
+                        "placeholder": "여기에 가치를 추가하세요"
+                    }
+                }
+            },
+            "errors": {
+                "labelRequired": "레코드 키가 필요합니다",
+                "duplicateRecord": "중복 레코드 키",
+                "avatarReserved": "키는 아바타 매니저에 의해 사용되고 있습니다"
+            },
+            "confirmations": {
+                "publicNotice": {
+                    "title": "당신의 정보는 공개되어 있습니다",
+                    "description": "프로필에 추가하는 모든 것은 블록체인에서 공개적으로 볼 수 있습니다.",
+                    "confirm": "나는 이해한다",
+                    "decline": "뒤로"
+                },
+                "clearEth": {
+                    "title": "ETH 주소를 지우시겠습니까?",
+                    "description": "ETH 주소가 설정되지 않으면 사람들이 이 이름으로 돈을 보낼 수 없습니다. 이는 나중에 업데이트할 수 있습니다.",
+                    "confirm": "명확합니다",
+                    "decline": "취소"
+                }
+            },
+            "actions": {
+                "skipProfile": "프로필 건너뛰기"
+            }
+        },
+        "complete": {
+            "heading": "축하합니다!",
+            "subheading": "당신은 이제 소유자입니다.",
+            "description": "당신의 이름이 성공적으로 등록되었습니다. 이제 이름을 보고 관리할 수 있습니다.",
+            "registerAnother": "다른 계정 등록",
+            "viewName": "이름 보기"
+        },
+        "info": {
+            "heading": "시작하기 전에",
+            "subheading": "당신의 이름을 등록하는데는 세 단계가 필요합니다",
+            "ethItems": "['트랜잭션을 완료하여 타이머를 시작하세요', '타이머가 완료되기까지 60초를 기다리세요', '이름을 확보하기 위해 두 번째 트랜잭션을 완료하세요']",
+            "moonpayItems": "['MoonPay 계정을 생성하거나 기존 계정에 로그인하세요', '신용 카드 또는 직불 카드를 사용하여 단일 거래를 완료하세요']",
+            "setupProfile": "먼저 제 프로필을 설정하고 싶습니다",
+            "paymentMethod": "결제 방법",
+            "notEnoughEth": "지갑에 MXC가 충분하지 않습니다",
+            "creditOrDebit": "신용 카드 또는 직불 카드",
+            "additionalFee": "추가 처리 수수료",
+            "pendingMoonpayTransaction": "당신의 MoonPay 거래가 처리 중입니다. 이 작업은 최대 2분까지 걸릴 수 있습니다. 확인 이메일을 통해 진행 상황을 확인할 수 있습니다.",
+            "failedMoonpayTransaction": "당신의 MoonPay 거래가 실패했습니다. 다시 시도하거나 'Ethereum' 결제 방법을 선택해 주세요.",
+            "ethereum": "MXC",
+            "processing": "처리 중",
+            "poweredBy": "제공:",
+            "moonpayModalHeader": "MoonPay 체크아웃",
+            "moonpayTestCard": "테스트 카드 세부 정보"
+        },
+        "transactions": {
+            "heading": "거의 다 왔습니다",
+            "subheading": "이 타이머는 다른 사람들이 당신보다 먼저 이름을 등록하는 것을 방지하는 데 도움이 됩니다. 두 번째 거래를 완료하기 전까지는 이름이 등록되지 않습니다.",
+            "startTimer": "타이머 시작",
+            "wait": "기다리세요",
+            "transactionFailed": "거래 실패",
+            "transactionProgress": "진행 중인 거래"
+        },
+        "cancelRegistration": {
+            "heading": "거래가 손실됩니다",
+            "contentOne": "뒤로 가면 첫 번째 거래가 초기화됩니다. 뒤로 가면 거래를 다시 완료하고 관련 수수료를 지불해야 합니다.",
+            "contentTwo": "계속하시겠습니까?",
+            "footer": "거래 재설정하고 돌아가기"
+        }
+    }
 }

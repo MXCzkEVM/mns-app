@@ -3,7 +3,12 @@
     "nameCount": "{{count}} namen",
     "filter": "Filter",
     "view": "Bekijken",
-    "noProfile": "{'title': 'Geen primaire naam ingesteld', 'message': 'Deze portemonnee moet een primaire naam instellen om een profiel te maken'}",
+    "noProfile": {
+        "title": "Geen primaire naam ingesteld",
+        "message": "Deze portemonnee moet een primaire naam instellen om een profiel te maken."
+    },
     "noResults": "Geen namen gevonden",
-    "errors": "{'names': 'Adres niet gevonden'}"
+    "errors": {
+        "names": "Adres niet gevonden"
+    }
 }

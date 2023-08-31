@@ -1,6 +1,15 @@
 {
     "title": "Namen",
-    "subtitle": "{'start': 'Alle namen gehouden door', 'this': 'dit', 'your': 'jouw', 'wallet': 'portemonnee'}",
+    "subtitle": {
+        "start": "Alle namen die worden vastgehouden door",
+        "this": "dit",
+        "your": "jouw",
+        "wallet": "portemonnee"
+    },
     "empty": "Geen namen gevonden voor dit adres",
-    "sortTypes": "{'expiryDate': 'Vervaldatum', 'labelName': 'Naam', 'creationDate': 'Aanmaakdatum'}"
+    "sortTypes": {
+        "expiryDate": "Vervaldatum",
+        "labelName": "Naam",
+        "creationDate": "Aanmaakdatum"
+    }
 }

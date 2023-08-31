@@ -1,5 +1,8 @@
 {
-    "meta": "{'title': '{{name}} MNS에서', 'description': \"MXC 이름 서비스에서의 {{name}} 프로필\"}",
+    "meta": {
+        "title": "{{name}} MNS에서",
+        "description": "{{name}}의 MXC 이름 서비스 프로필"
+    },
     "title": "프로필",
     "yourWallet": "당신의 지갑",
     "yourProfile": "당신의 프로필",
@@ -9,9 +12,374 @@
     "editProfile": "프로필 수정",
     "ownership": "소유권",
     "viewDetails": "세부 정보 보기",
-    "banner": "{'available': {'title': '{{name}} 사용 가능', 'description': '이 이름은 <strong>{{date}}</strong>에 만료되었습니다. 등록 페이지를 보려면 여기를 클릭하세요.'}}",
-    "tabs": "{'profile': {'name': '프로필', 'actions': {'setAsPrimaryName': {'label': '기본 이름으로 설정', 'title': '기본 이름 설정', 'description': '이 이름을 기본 이름으로 설정하려면, ETH 주소가 이 주소와 일치해야 합니다.'}, 'setToMEP1002Hexagon': {'label': 'MEP1002 Hexagon으로 설정', 'title': 'MEP1002 Hexagon으로 설정', 'description': '이 이름을 MEP1002 Hexagon으로 설정하려면, MEP1002 Hexagon Naming Token의 소유자여야 합니다.'}, 'mintToMEP1002Hexagon': {'label': 'MEP1002 Hexagon 채굴', 'title': 'MEP1002 Hexagon 채굴', 'description': '이 MEP1002 Hexagon을 채굴하세요'}, 'deleteSubname': {'label': '하위 이름 삭제'}, 'extend': {'label': '이름 연장'}, 'editProfile': {'label': '프로필 수정'}, 'reclaim': {'label': '이름 재생성', 'warning': '이 하위 이름은 만료되었고 소유권이 없습니다. 이 하위 이름을 재생성할 수 있습니다.'}}, \n'warnings': {'wrappedDNS': 'DNS 이름은 언제든지 DNS 소유자에 의해 되찾을 수 있습니다. DNS 이름을 구매하지 마세요.', \n'homoglyph': '<a>동형 문자에 대해 더 알아보기</a>'}}, \n'records': {'name': '레코드'}, \n'subnames': {'name': '하위 이름'}, \n'permissions': {'name':'권한', \n'parentUnlockedWarning':'<strong>이 이름에 대한 권한을 변경할 수 없습니다.</strong> 먼저 부모 ({{parent}})에서 ‘이름 풀기’를 철회해야 합니다. 여기를 클릭하여 부모의 권한을 확인하세요.', \n'revokedLabel':'{{date}}에 철회됨',\n'grantedLabel':'{{date}}에 부여됨',\n'role':{'manager':'관리자','owner':'소유자','parent':'부모'},\n'ownership':{'title':'소유권 권한',\n'parentCanControl':{'label':'이 이름은 부모 (<parentLink>{{parent}}</parentLink>)에 의해 제어될 수 있습니다.','list':{'title':'부모 이름의 소유자는 다음을 할 수 있습니다:','item1':'설정 및 레코드를 제어하고 수정할 수 있습니다.','item2':'이 이름의 소유권을 되찾거나 재할당할 수 있습니다.','item3':'이 이름을 제거할 수 있습니다.'}},\n'parentCannotControl':{'label':'이 이름은 부모 (<parentLink>{{parent}}</parentLink>)에 의해 제어될 수 없습니다.','sublabel':'부모 이름의 소유자는 이 이름을 제어, 수정, 제거 또는 소유권을 되찾을 수 없습니다.','list':{'title':'다음 사항 중 하나가 발생하지 않으면 이름 소유자는 소유권을 유지합니다:','item1':'{{date}}에 이름이 만료됩니다(연장 가능)','item2':'{{date}}에 부모 이름이 만료됩니다','item3':'이름의 소유권이 다른 주소로 전송됩니다'}},\n'parentCanChange':{'label':'이름의 부모 (<parentLink>{{parent}}</parentLink>)는 권한을 변경할 수 있습니다.','list':{'title':'부모는 다음과 같은 작업을 할 수 있습니다:','item1':'권한 철회','item2':'사용자 정의 퓨즈 변경 또는 태우기'}},\n'ownerCanChange':{'label':'이름의 소유자는 권한을 변경할 수 있습니다.','list':{'title':'소유자는 다음과 같은 작업을 할 수 있습니다:','item1':'권한 철회','",
-    "details": "{'title': '이름 세부사항', 'notWrapped': '포장되지 않음', 'sendName': {'title': '이름 보내기', 'description': '이름을 보내면 새 주소가 그것을 제어하게 됩니다.', 'learnMore': '이름 소유권에 대해 더 알아보세요.', 'makeOwner': '소유자 만들기', 'makeOwnerDescription': '소유자는 새로운 소유자에게 보낼 수 있고 관리자를 변경할 수 있습니다.', 'makeManager': '관리자 만들기', 'makeManagerDescription': '관리자는 기록을 변경하고 설정할 수 있습니다.', 'inputPlaceholder': 'Ethereum 주소 또는 MNS 이름 입력', 'transferSubname': '이름 전송', 'transferController': '컨트롤러 전송'}, 'wrap': {'startTitle': '이름 업그레이드', 'resumeTitle': '업그레이드 재개', 'completeTitle': '업그레이드 완료', 'description': '\"포장\" 또는 이름을 업그레이드하면 새로운 기능이 추가됩니다.', 'startLabel': '업그레이드',  'resumeLabel': '업그레이드 재개',  'boxTitle':'새로운 기능 해제',  'boxDescription':'이름을 업그레이드하면 MNS의 최신 기능을 해제합니다.'},  'descriptions':{'owner':'이름을 소유하고 제어합니다.','controller':'이름의 모든 기록을 제어합니다.','registrant':'NFT의 소유자','dnsOwner':'DNS 이름의 소유자'},'tabs':{'records':{'label':'기록','text':'텍스트','contentHash':'콘텐츠 해시','noContentHash':'콘텐츠 해시 없음','editRecords':'기록 수정','noAbi':'ABI 없음','abi':'ABI','editRecordsDisabled':'현재 리졸버는 포장된 이름과 호환되지 않습니다.'},'subnames':{'label':'서브네임','loading':'서브네임 로딩 중','empty':'추가된 서브네임 없음','noResults':'결과 없음','noMoreResults':'더 이상 결과 없음','addSubname':{'title':'서브네임은 기존 이름에서 추가 이름을 생성할 수 있게 합니다.','learn':'서브네임에 대해 알아보기','action':'새 서브네임','dialog':{'title':'서브네임 생성','error':{'invalidCharacters':'잘못된 문자 포함','mustUseLowercase':'소문자를 사용해야 합니다.','alreadyExists':'이미 존재하는 이름입니다.','nameTooLong':'이름이 너무 깁니다.','pccBurned':\"{{date}}까지 이름은 잠겨 있습니다.\"}}}}}",
-    "advancedEditor": "{'title': \"{{name}}의 기록들\", 'tabs': {'text': {'label': '텍스트', 'addRecord': '기록 추가', 'createRecord': '기록 이름을 입력하세요...', 'placeholder': {'default': '여기에 값을 추가하세요...'}}, 'address': {'label': '주소', 'addRecord': '주소 추가', 'noOptions': '사용 가능한 주소 옵션이 없습니다', 'placeholder': {'default': '여기에 주소를 추가하세요...'}}, 'other': {'label': '기타', 'labelDisabled': '현재 리졸버에서 지원되지 않음', 'contentHash': {'label': '콘텐츠 해시', 'placeholder': '예: ipfs://'}, 'publicKey': {'label': '공개 키', 'placeholder': '예: pub_1231231231231'}, 'abi': {'label': 'ABI', 'placeholder': '여기에 ABI를 입력하세요...'}}}}",
-    "errors": "{'invalidName': '이 이름은 유효하지 않습니다.', 'invalidAddress': '유효한 주소가 아닙니다', 'expiringSoon': '이 이름의 유예 기간은 {{date}}에 끝납니다. 이 날짜 전에 연장되지 않으면 등록 가능해집니다.', 'hasExpired': '{{ name }}이(가) 만료되었습니다', 'ownerManagerChoice': '소유자 또는 관리자를 보내야 합니다', 'unknown': '알 수 없는 오류', 'notMigrated': '이 이름은 새로운 레지스트리로 이전되지 않았습니다.', 'featureNotAvailable': '일부 기능은 아직 사용할 수 없지만, 여전히 ', 'featureNotAvailableLink': '이 이름을 이전 앱에서 볼 수 있습니다.', 'migrationNotAvailable': '새로운 레지스트리로의 이전은 아직 가능하지 않지만, 여전히 ', 'migrationNotAvailableLink': '이 이름을 이전 앱에서 이전할 수 있습니다.', 'addressLength': '주소라면 42자여야 합니다', 'unsupportedTLD': '이 TLD는 지원되지 않습니다', 'keyInUse': '{{value}}는 이미 사용 중입니다', 'hasSubnames': '이 이름에는 하위 이름이 있습니다', 'permissionRevoked': '이 이름은 이 작업을 수행하는 데 필요한 권한을 철회하였습니다.', 'invalidJSON': '잘못된 JSON'}"
+    "banner": {
+        "available": {
+            "title": "{{name}} 사용 가능합니다",
+            "description": "이 이름은 <strong>{{date}}</strong>에 만료되었습니다. 등록 페이지를 보려면 여기를 클릭하세요."
+        }
+    },
+    "tabs": {
+        "profile": {
+            "name": "프로필",
+            "actions": {
+                "setAsPrimaryName": {
+                    "label": "기본 이름으로 설정",
+                    "title": "기본 이름 설정",
+                    "description": "이 이름을 기본 이름으로 설정하려면, ETH 주소가 이 주소와 일치해야 합니다."
+                },
+                "setToMEP1002Hexagon": {
+                    "label": "MEP1002 헥사곤으로 설정",
+                    "title": "MEP1002 헥사곤으로 설정",
+                    "description": "이 이름을 MEP1002 Hexagon으로 설정하십시오, 당신은 반드시 MEP1002 Hexagon Naming Token의 소유자여야 합니다."
+                },
+                "mintToMEP1002Hexagon": {
+                    "label": "MEP1002 헥사곤 생성",
+                    "title": "MEP1002 헥사곤을 만드세요",
+                    "description": "이 MEP1002 헥사곤을 채굴하십시오"
+                },
+                "deleteSubname": {
+                    "label": "서브네임 삭제"
+                },
+                "extend": {
+                    "label": "이름 확장"
+                },
+                "editProfile": {
+                    "label": "프로필 수정"
+                },
+                "reclaim": {
+                    "label": "이름 재생성",
+                    "warning": "이 서브네임은 만료되어 소유되지 않았습니다. 이 서브네임을 다시 생성할 수 있습니다."
+                }
+            },
+            "warnings": {
+                "wrappedDNS": "DNS 이름은 언제든지 DNS 소유자에 의해 회수될 수 있습니다. DNS 이름을 구매하지 마세요.",
+                "homoglyph": "이 이름에는 비ASCII 문자가 포함되어 있습니다. 독자를 속일 수 있는 다른 문자와 동일하거나 매우 유사한 문자가 있을 수 있습니다. <a>동형문자에 대해 더 알아보기</a>"
+            }
+        },
+        "records": {
+            "name": "기록"
+        },
+        "subnames": {
+            "name": "하위 이름"
+        },
+        "permissions": {
+            "name": "권한",
+            "parentUnlockedWarning": "이 이름의 권한을 변경할 수 없습니다. 먼저 부모 ({{parent}})에서 '이 이름을 풀기'를 철회해야 합니다. 부모의 권한을 보려면 여기를 클릭하세요.",
+            "revokedLabel": "{{date}} 취소됨",
+            "grantedLabel": "{{date}} 부여됨",
+            "role": {
+                "manager": "관리자",
+                "owner": "소유자",
+                "parent": "부모"
+            },
+            "ownership": {
+                "title": "소유권 권한",
+                "parentCanControl": {
+                    "label": "이 이름은 부모 (<parentLink>{{parent}}</parentLink>)에 의해 제어될 수 있습니다.",
+                    "list": {
+                        "title": "부모 이름의 소유자는 다음을 할 수 있습니다:",
+                        "item1": "설정 및 기록을 제어하고 수정하세요",
+                        "item2": "이 이름의 소유권을 다시 가져오거나 재할당하세요",
+                        "item3": "이름 제거"
+                    }
+                },
+                "parentCannotControl": {
+                    "label": "이 이름은 부모 (<parentLink>{{parent}}</parentLink>)에 의해 제어될 수 없습니다.",
+                    "sublabel": "이 이름의 부모 이름 소유자는 이 이름을 제어, 수정, 삭제 또는 소유권을 다시 가져갈 수 없습니다.",
+                    "list": {
+                        "title": "이름 소유자는 다음 중 하나가 발생하지 않는 한 소유권을 유지합니다:",
+                        "item1": "이름은 {{date}}에 만료됩니다 (연장 가능)",
+                        "item2": "상위 이름이 {{date}}에 만료됩니다.",
+                        "item3": "이름의 소유권이 다른 주소로 전송됩니다"
+                    }
+                },
+                "parentCanChange": {
+                    "label": "이 이름의 부모 (<parentLink>{{parent}}</parentLink>)는 권한을 변경할 수 있습니다.",
+                    "list": {
+                        "title": "부모님은 다음을 할 수 있습니다:",
+                        "item1": "권한 취소",
+                        "item2": "사용자 정의 퓨즈를 변경하거나 태우십시오"
+                    }
+                },
+                "ownerCanChange": {
+                    "label": "이름의 소유자는 권한을 변경할 수 있습니다.",
+                    "list": {
+                        "title": "소유자는 다음을 수행할 수 있습니다:",
+                        "item1": "권한 취소",
+                        "item2": "사용자 정의 퓨즈를 변경하거나 태우십시오"
+                    }
+                },
+                "ownerCannotChange": {
+                    "label": "이 이름의 소유자는 권한을 변경할 수 없습니다.",
+                    "list": {
+                        "title": "소유자는 다음을 할 수 없습니다:",
+                        "item1": "권한 취소",
+                        "item2": "사용자 정의 퓨즈를 변경하거나 태우십시오"
+                    }
+                },
+                "unwrapWarning": {
+                    "message": "부모 (<strong>{{parent}}</strong>)에 대한 언랩 권한은 부모 제어권을 포기하기 전에 철회되어야 합니다.<br> <parentLink>부모 권한으로 이동</parentLink>"
+                },
+                "action": {
+                    "giveUpControl": "부모 제어 포기",
+                    "revokePermission": "권한 취소"
+                }
+            },
+            "expiry": {
+                "permissions": {
+                    "canExtendExpiry": {
+                        "label": "만료일을 연장할 수 있습니다",
+                        "description": "이 이름의 권한 만료는 {{managerOrOwner}}에 의해 연장될 수 있습니다.",
+                        "description_date": "이 이름의 권한 만료 ({{date}})는 {{managerOrOwner}}에 의해 연장될 수 있습니다."
+                    },
+                    "cannotExtendExpiry": {
+                        "label": "만료를 연장할 수 없습니다",
+                        "description": "이 이름의 권한 만료는 관리자에 의해 연장될 수 없습니다.",
+                        "description_date": "이 이름의 권한 만료 ({{date}})는 관리자에 의해 연장될 수 없습니다."
+                    }
+                },
+                "manager": "관리자",
+                "owner": "소유자",
+                "action": {
+                    "changePermissions": "권한 변경"
+                }
+            },
+            "nameChangePermissions": {
+                "title": "이름 변경 권한",
+                "subtitle": {
+                    "parent-can-change": "이 이름의 부모 (<parentLink>{{parent}}</parentLink>)는 이 이름의 설정을 변경할 수 있습니다.",
+                    "owner-can-change": "이 이름의 소유자는 이 이름의 설정을 변경할 수 있습니다."
+                },
+                "permissions": {
+                    "canUnwrap": {
+                        "label": "이 이름을 풀 수 있습니다",
+                        "description": "이름의 {{owner}}는 이 이름을 풀 수 있습니다."
+                    },
+                    "cannotUnwrap": {
+                        "label": "이 이름을 풀 수 없습니다",
+                        "description": "이름의 {{owner}}는 이 이름을 풀 수 없습니다."
+                    },
+                    "canCreateSubnames": {
+                        "label": "하위 이름을 생성할 수 있습니다",
+                        "description": "이 이름의 {{owner}}는 새로운 하위 이름을 생성할 수 있습니다."
+                    },
+                    "cannotCreateSubnames": {
+                        "label": "하위 이름을 생성할 수 없습니다",
+                        "description": "이 이름의 {{owner}}는 새로운 하위 이름을 생성할 수 없습니다."
+                    },
+                    "canSend": {
+                        "label": "이 이름을 보낼 수 있습니다",
+                        "description": "이름의 {{owner}}는 새 소유자에게 보낼 수 있습니다."
+                    },
+                    "cannotSend": {
+                        "label": "이 이름을 보낼 수 없습니다",
+                        "description": "이 이름의 {{owner}}는 새 소유자에게 보낼 수 없습니다."
+                    },
+                    "canSetResolver": {
+                        "label": "리졸버를 설정할 수 있습니다",
+                        "description": "이 이름의 {{owner}}는 리졸버를 설정하고 변경할 수 있습니다."
+                    },
+                    "cannotSetResolver": {
+                        "label": "리졸버를 설정할 수 없습니다",
+                        "description": "이 이름의 {{owner}}는 리졸버를 설정하고 변경할 수 없습니다."
+                    },
+                    "canSetTTL": {
+                        "label": "TTL 설정 가능",
+                        "description": "이 이름의 {{owner}}는 TTL을 설정하고 변경할 수 있습니다."
+                    },
+                    "cannotSetTTL": {
+                        "label": "TTL을 설정할 수 없습니다",
+                        "description": "이 이름의 {{owner}}는 TTL을 설정하고 변경할 수 없습니다."
+                    },
+                    "canApprove": {
+                        "label": "갱신 관리자를 변경할 수 있습니다",
+                        "description": "이 이름의 소유자는 서브네임을 갱신하기 위해 승인된 관리자를 변경할 수 있습니다."
+                    },
+                    "cannotApprove": {
+                        "label": "갱신 관리자를 변경할 수 없습니다",
+                        "description": "이 이름의 소유자는 하위 이름을 갱신하기 위해 승인된 관리자를 변경할 수 없습니다."
+                    }
+                },
+                "action": {
+                    "changePermissions": "권한 변경"
+                }
+            }
+        },
+        "fuses": {
+            "name": "퓨즈들"
+        },
+        "more": {
+            "name": "더 보기",
+            "resolver": {
+                "label": "리졸버",
+                "custom": "사용자 정의",
+                "latest": "최신",
+                "outdated": "지난",
+                "version": "버전",
+                "etherscan": "블록탐색기"
+            },
+            "fuses": {
+                "label": "퓨즈",
+                "info": "'Can unwrap'을 태우지 않으면 다른 퓨즈를 태울 수 없습니다.",
+                "callToAction": "이 기능을 사용하려면 이름을 입력해 주세요",
+                "burnFormTitle": "버너 권한",
+                "burned": "소각된",
+                "permissions": {
+                    "label": "권한",
+                    "warning": "부모에 의해 퓨즈를 변경할 수 있습니다.",
+                    "CAN_DO_EVERYTHING": "모든 것을 할 수 있습니다",
+                    "CANNOT_BURN_FUSES": "퓨즈를 태울 수 있습니다",
+                    "CANNOT_CREATE_SUBDOMAIN": "서브도메인을 생성할 수 있습니다",
+                    "CANNOT_SET_RESOLVER": "리졸버 설정 가능",
+                    "CANNOT_SET_TTL": "TTL 설정 가능",
+                    "CANNOT_TRANSFER": "전송 가능합니다",
+                    "CANNOT_UNWRAP": "언랩 할 수 있습니다",
+                    "PARENT_CANNOT_CONTROL": "부모님이 제어할 수 있습니다",
+                    "CAN_EXTEND_EXPIRY": "만료를 연장할 수 없습니다",
+                    "IS_DOT_ETH": ".eth가 아닙니다."
+                }
+            },
+            "ownership": {
+                "label": "소유권",
+                "refreshDNS": "DNS 새로 고침",
+                "dnsOwnerWarning": {
+                    "isDnsOwner": "DNS 소유자이지만 관리자가 아니므로 이 이름을 변경할 수 없습니다. 이 문제를 해결하려면 관리자를 동기화할 수 있습니다.",
+                    "isManager": "당신은 이 이름의 관리자이지만 DNS 소유자는 아닙니다. DNS 이름은 DNS 소유자가 언제든지 회수할 수 있습니다. 이 이름을 소유자에게 보내거나, DNS 레코드를 일치시키도록 업데이트할 수 있습니다.",
+                    "refreshDNS": "DNS 새로 고침",
+                    "syncManager": "동기화 관리자"
+                }
+            },
+            "token": {
+                "label": "토큰",
+                "hex": "헥스",
+                "decimal": "소수점"
+            },
+            "misc": {
+                "registered": "등록됨",
+                "expires": "만료됩니다"
+            }
+        }
+    },
+    "details": {
+        "title": "이름 세부사항",
+        "notWrapped": "포장되지 않음",
+        "sendName": {
+            "title": "이름 보내기",
+            "description": "이름을 보내면 새 주소가 그것을 제어하게 됩니다.",
+            "learnMore": "이름 소유권에 대해 더 알아보세요.",
+            "makeOwner": "소유자 만들기",
+            "makeOwnerDescription": "소유자는 새로운 소유자에게 보내고 관리자를 변경할 수 있습니다.",
+            "makeManager": "매니저 만들기",
+            "makeManagerDescription": "관리자는 기록을 변경하고 설정할 수 있습니다.",
+            "inputPlaceholder": "이더리움 주소 또는 MNS 이름을 입력하세요",
+            "transferSubname": "이름 전송",
+            "transferController": "전송 컨트롤러"
+        },
+        "wrap": {
+            "startTitle": "이름을 업그레이드하세요",
+            "resumeTitle": "업그레이드를 재개하세요",
+            "completeTitle": "업그레이드 완료",
+            "description": "이름을 업그레이드하거나 \"wrapping\"하면 새로운 기능이 추가됩니다.",
+            "startLabel": "업그레이드",
+            "resumeLabel": "업그레이드 재개",
+            "boxTitle": "새로운 기능을 잠금 해제하십시오",
+            "boxDescription": "당신의 이름을 업그레이드하면 MNS의 최신 기능이 활성화됩니다."
+        },
+        "descriptions": {
+            "owner": "이름을 소유하고 통제합니다",
+            "controller": "이름의 모든 기록을 제어합니다",
+            "registrant": "NFT의 소유자",
+            "dnsOwner": "DNS 이름의 소유자"
+        },
+        "tabs": {
+            "records": {
+                "label": "기록",
+                "text": "\"Your transaction has been submitted. Please wait for confirmation. The network fee (gas) will be deducted from your account balance.\"",
+                "contentHash": "콘텐츠 해시",
+                "noContentHash": "콘텐츠 해시 없음",
+                "editRecords": "기록 수정",
+                "noAbi": "ABI 없음",
+                "abi": "ABI",
+                "editRecordsDisabled": "현재 리졸버는 래핑된 이름과 호환되지 않습니다."
+            },
+            "subnames": {
+                "label": "하위 이름",
+                "loading": "서브네임 로딩 중",
+                "empty": "하위 이름이 추가되지 않았습니다.",
+                "noResults": "결과 없음",
+                "noMoreResults": "더 이상 결과 없음",
+                "addSubname": {
+                    "title": "서브네임은 기존 이름에서 추가 이름을 생성할 수 있게 해줍니다.",
+                    "learn": "서브네임에 대해 알아보기",
+                    "action": "새로운 서브네임",
+                    "dialog": {
+                        "title": "서브네임 생성",
+                        "error": {
+                            "invalidCharacters": "유효하지 않은 문자가 포함되어 있습니다.",
+                            "mustUseLowercase": "소문자를 사용해야 합니다",
+                            "alreadyExists": "이름이 이미 존재합니다",
+                            "nameTooLong": "이름이 너무 깁니다",
+                            "pccBurned": "이름은 {{date}}까지 잠겨 있습니다."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "advancedEditor": {
+        "title": "{{name}}의 기록",
+        "tabs": {
+            "text": {
+                "label": "\"Your transaction has been submitted. Please wait for confirmation. The gas fee will be deducted from your account balance.\"",
+                "addRecord": "기록 추가",
+                "createRecord": "레코드 이름을 입력하세요...",
+                "placeholder": {
+                    "default": "여기에 값을 추가하세요..."
+                }
+            },
+            "address": {
+                "label": "주소",
+                "addRecord": "주소 추가",
+                "noOptions": "사용 가능한 주소 옵션이 없습니다",
+                "placeholder": {
+                    "default": "주소를 여기에 추가하세요..."
+                }
+            },
+            "other": {
+                "label": "다른",
+                "labelDisabled": "현재 리졸버에서 지원되지 않음",
+                "contentHash": {
+                    "label": "콘텐츠 해시",
+                    "placeholder": "예: ipfs://"
+                },
+                "publicKey": {
+                    "label": "공개 키",
+                    "placeholder": "예: pub_1231231231231"
+                },
+                "abi": {
+                    "label": "ABI",
+                    "placeholder": "여기에 ABI를 입력하세요..."
+                }
+            }
+        }
+    },
+    "errors": {
+        "invalidName": "이 이름은 유효하지 않습니다.",
+        "invalidAddress": "유효하지 않은 주소입니다",
+        "expiringSoon": "이 이름에 대한 유예 기간은 {{date}}에 종료됩니다. 이 날짜 전에 연장되지 않으면 등록 가능 상태가 됩니다.",
+        "hasExpired": "{{ name }}이 만료되었습니다",
+        "ownerManagerChoice": "소유자 또는 관리자에게 보내야 합니다",
+        "unknown": "알 수 없는 오류",
+        "notMigrated": "이 이름은 새로운 레지스트리로 이전되지 않았습니다.",
+        "featureNotAvailable": "몇몇 기능들은 아직 사용할 수 없지만, 여전히 사용할 수 있습니다.",
+        "featureNotAvailableLink": "옛 앱에서 이 이름을 보십시오.",
+        "migrationNotAvailable": "새로운 레지스트리로의 이주는 아직 가능하지 않지만, 여전히 할 수 있습니다.",
+        "migrationNotAvailableLink": "이전 앱에서 이 이름을 이전하세요.",
+        "addressLength": "주소의 경우 42자여야 합니다.",
+        "unsupportedTLD": "이 TLD는 지원되지 않습니다.",
+        "keyInUse": "{{value}}는 이미 사용 중입니다",
+        "hasSubnames": "이 이름에는 하위 이름이 있습니다",
+        "permissionRevoked": "이 이름은 이 작업을 수행하는 데 필요한 권한을 철회했습니다.",
+        "invalidJSON": "잘못된 JSON"
+    }
 }

@@ -148,7 +148,7 @@
                 },
                 "resolverOutOfSync": {
                     "title": "Résolveur désynchronisé",
-                    "subtitle": "Vous n'utilisez pas le dernier résolveur public, mais vous avez des enregistrements de profil stockés là-bas. Il est recommandé que vous passiez au dernier résolveur public avant de modifier votre profil."
+                    "subtitle": "Vous n'utilisez pas le dernier résolveur public, mais vous avez des enregistrements de profil stockés là-bas. Il est recommandé de passer au dernier résolveur public avant de modifier votre profil."
                 },
                 "transferOrResetProfile": {
                     "title": "Profil",
@@ -207,7 +207,7 @@
         "transferProfile": {
             "title": "Profil de Transfert",
             "message1": "Avant la mise à niveau, vous pouvez transférer votre profil actuel si vous le souhaitez, sinon il sera réinitialisé lors de la mise à niveau.",
-            "message2": "Souhaitez-vous transférer votre profil actuel?"
+            "message2": "Souhaitez-vous transférer votre profil actuel ?"
         },
         "revokePermissions": {
             "views": {
@@ -221,7 +221,7 @@
                     "subtitle": "Cela donnera la propriété de ce nom au gestionnaire ({{account}}). À moins que vous ne soyez également le gestionnaire, vous ne pourrez plus apporter de modifications à ce nom."
                 },
                 "grantExtendExpiry": {
-                    "title": "Modifier les autorisations",
+                    "title": "Modifier les permissions",
                     "fuses": {
                         "CAN_EXTEND_EXPIRY": "Accorder la permission de : Prolonger l'expiration"
                     }
@@ -263,22 +263,22 @@
                         "CANNOT_UNWRAP": "Révoquer la permission de : Déballer ce nom",
                         "CANNOT_CREATE_SUBDOMAIN": "Révoquer la permission de : Créer des sous-domaines",
                         "CANNOT_TRANSFER": "Révoquer la permission de : Envoyer ce nom",
-                        "CANNOT_SET_RESOLVER": "Révoquer la permission de : Définir le résolveur",
+                        "CANNOT_SET_RESOLVER": "Révoquer la permission de: Définir le résolveur",
                         "CANNOT_SET_TTL": "Révoquer la permission de : Définir TTL",
                         "CANNOT_BURN_FUSES": "Révoquer la permission de : Modifier les permissions",
-                        "CANNOT_APPROVE": "Révoquer la permission de : Modifier le gestionnaire de renouvellement"
+                        "CANNOT_APPROVE": "Révoquer la permission de : Changer le gestionnaire de renouvellement"
                     }
                 },
                 "revokeChangeFuses": {
                     "title": "Révoquer les permissions",
                     "subtitle": "En révoquant cette autorisation, vous perdez définitivement la capacité de modifier les fusibles restants. Cela ne sera réinitialisé que si le nom expire.",
                     "fuses": {
-                        "CANNOT_BURN_FUSES": "Révoquer la permission de : Modifier les permissions"
+                        "CANNOT_BURN_FUSES": "Révoquer la permission de: Modifier les permissions"
                     }
                 },
                 "revokeChangeFusesWarning": {
                     "title": "Les permissions restantes seront verrouillées",
-                    "subtitle": "Les autorisations et les fusibles personnalisés seront verrouillés de manière permanente dans leur état actuel après la révocation de 'changer les autorisations'. Ceci ne sera réinitialisé que si le nom expire."
+                    "subtitle": "Les autorisations et les fusibles personnalisés seront définitivement verrouillés dans leur état actuel après la révocation de 'changer les autorisations'. Cela ne sera réinitialisé que si le nom expire."
                 }
             },
             "action": {
@@ -299,7 +299,7 @@
             "h3index": "H3 Index du Hexagone"
         },
         "mintToMEP1002Hexagon": {
-            "title": "Mint MEP1002 Hexagone",
+            "title": "Frappé MEP1002 Hexagone",
             "subtitle": "Cela émettra une carte hexagonale publique MEP1002.",
             "h3index": "H3 Index du Hexagone"
         }
@@ -308,7 +308,7 @@
         "extendNames": {
             "actionValue": "Prolonger l'inscription",
             "costValue": "{{value}} + frais",
-            "warning": "L'extension de ce nom ne vous donnera pas la propriété de celui-ci."
+            "warning": "Prolonger ce nom ne vous donnera pas la propriété de celui-ci."
         },
         "deleteSubname": {
             "warning": "Bonjour à tous"

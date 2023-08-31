@@ -72,21 +72,21 @@
         "currency": "Monnaie",
         "ipfsApp": "Application IPFS MNS",
         "feedback": "Commentaires",
-        "syncMessage": "Synchronisation avec le réseau. Les modifications de votre transaction peuvent ne pas être encore visibles."
+        "syncMessage": "Synchronisation avec le réseau. Les modifications de votre transaction peuvent ne pas être visibles pour l'instant."
     },
     "wallet": {
         "myProfile": "Profil",
         "disconnect": "Déconnecter",
-        "connect": "Connectez",
+        "connect": "Connecter",
         "noPrimaryName": "Aucun Nom Principal",
         "viewProfile": "Voir le Profil",
         "viewDetails": "Voir les détails",
-        "register": "Inscrivez-vous"
+        "register": "Inscription"
     },
     "name": {
         "registered": "Inscrit",
         "expires": "Expire",
-        "noExpiry": "Pas d'expiration",
+        "noExpiry": "Sans expiration",
         "expiry": "Expiration",
         "parent": "Parent",
         "noParent": "Aucun parent",
@@ -130,7 +130,7 @@
         "send": "Envoyer",
         "transfer": "Transfert",
         "sendManager": "Envoyer Manager",
-        "sendOwner": "Envoyer Propriétaire"
+        "sendOwner": "Envoyer au Propriétaire"
     },
     "address": {
         "label": "Adresse",
@@ -210,7 +210,7 @@
                 "CANNOT_SET_RESOLVER": "Définir le résolveur",
                 "CANNOT_SET_TTL": "Définir TTL",
                 "CANNOT_TRANSFER": "Envoyez ce nom",
-                "CANNOT_BURN_FUSES": "Modifier les permissions",
+                "CANNOT_BURN_FUSES": "Modifier les autorisations",
                 "CANNOT_APPROVE": "Changer le gestionnaire de renouvellement"
             }
         },
@@ -243,7 +243,7 @@
             "failed": {
                 "regular": "Échoué",
                 "notifyTitle": "Échec de la Transaction",
-                "notifyMessage": "Votre transaction \"{{action}}\" a échoué et a été annulée."
+                "notifyMessage": "Votre transaction \"{{action}}\" a échoué et a été annulée"
             }
         },
         "dialog": {
@@ -302,7 +302,7 @@
             "invalid": "Format invalide pour le nom"
         },
         "status": {
-            "registered": "Enregistré",
+            "registered": "Inscrit",
             "gracePeriod": "Période de Grâce",
             "premium": "Premium Temporaire",
             "available": "Disponible",
@@ -321,7 +321,7 @@
         "empty": "Aucune option trouvée"
     },
     "testnetFaucet": {
-        "explanation": "Chaque adresse sur goerli peut réclamer {{ amount }}ETH pour tester l'application de gestion MNS, ainsi que tous les nouveaux contrats.",
+        "explanation": "Chaque adresse sur goerli peut réclamer {{ amount }}ETH pour tester l'application MNS manager, ainsi que tous les nouveaux contrats.",
         "note": "Cela peut prendre quelques minutes pour apparaître dans votre portefeuille."
     }
 }

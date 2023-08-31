@@ -1,6 +1,15 @@
 {
     "title": "Nomes",
-    "subtitle": "{'start': 'Todos os nomes detidos por', 'this': 'este', 'your': 'seu', 'wallet': 'carteira'}",
+    "subtitle": {
+        "start": "Todos os nomes detidos por",
+        "this": "este",
+        "your": "seu",
+        "wallet": "carteira"
+    },
     "empty": "Nenhum nome encontrado para este endereço",
-    "sortTypes": "{'expiryDate': 'Data de validade', 'labelName': 'Nome', 'creationDate': 'Data de criação'}"
+    "sortTypes": {
+        "expiryDate": "Data de validade",
+        "labelName": "Nome",
+        "creationDate": "Data de criação"
+    }
 }
