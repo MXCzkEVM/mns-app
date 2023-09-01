@@ -1,6 +1,332 @@
 {
-    "input": "{'profileEditor': {'tabs': {'avatar': {'dropdown': {'selectNFT': 'NFTを選択', 'uploadImage': '画像をアップロード'}, 'nft': {'title': 'NFTを選択', 'searchPlaceholder': 'NFTを検索', 'loading': 'あなたのNFTを読み込んでいます', 'unknown': '不明なNFT', 'noNFTs': 'このアドレスにはNFTが見つかりません。', 'selected': {'title': '選択したNFT', 'subtitle': 'このNFTを使用してもよろしいですか？'}, 'noResults': '結果が見つかりません。'}, 'image': {'title': '画像を編集', 'upload': {'title': 'アバターをアップロード', 'subtitle': \"アバターをアップロードするためにメッセージに署名する必要があります。これには費用はかかりません。\", 'action': '署名してアップロード'}}}, 'general': {'label': '一般', 'name': {'label': 'ニックネーム', 'placeholder': 'ジョン・スミス'}, 'url': {'label': 'ウェブサイト', \n'placeholder':'https://ens.domains'},'location':{'label':'場所','placeholder':'メタバース'},'description':{'label':'短い自己紹介','placeholder':\"私はテネシー州の田舎から来たイールドファーマーです。\"}},'accounts':{'label':'アカウント','addAccount':'アカウントを追加','noOptions':'利用可能なアカウントオプションがありません','placeholder':{'default':'ここにユーザーネームを追加','com.twitter':'例：ensdomains','com.github':'例：ensdomains','com.discord':'例：alisha.eth#0001'}},'address':{'label':'住所','addAddress':'住所を追加','noOptions':'利用可能な住所オプションがありません','placeholder':{'default':'ここに住所を追加','ETH':'0xD9hbQK...','BNB':'0xD9hbQK...','BTC':'3FZbgi29...','LTC':'3FZbgi29...','SOL':'D4kA7VzHnmV...','DOT':'1D4kA7VxH...','DOGE':'DFabcd12...'}},'contentHash':{'label':'ウェブサイト',\n'addContentHash':'分散型ウェブサイトを追加',\n'placeholder':{'default':'ここにURLを追加',\n'ipfs':'ipfs://...',\n'skynet':'sia://...',\n'arweave':'ar://...',\n'swarm':'bzz://...',\n'onion':'onion3://...'\n}},'other':{'label':\n'その他',\n'addRecord':\n'レコードを追加',\n'createRecord':\n'レコード名を入力...',\n'placeholder':\n{'default':\n'ここに値を追加...'\n}}},'warningOverlay':\n{'action':\n{'learnMoreResolvers':\n'resolversについて詳しく学ぶ',\n'updateResolver':\n'resolverを更新',\n'setResolver':\n'resolverを設定',\n'ignoreUpdate':\n'これを無視して現在のresolverを引き続き使用します。次回も再度尋ねられます。'\n},'invalidResolver':\n{'title':\n'認証されていないresolver',\n'subtitle':\n'このresolverのレコード設定権限がありません。プロフィールの編集には最新のresolverへの更新が必要です。',\n'action':\n'resolver更新'\n},'migrateProfileSelector':\n{'title':\n'プロフィール',\n'subtitle':\n'resolverごとのプロフィールレコードが一致しません。どちらのレコードセットを使用しますか？',\n'options':\n{'latest':\n'新しいresolver上のプロフィールレコード',\n'current':\n'現在のプロフィールレコード',\n'resetSubtitle:\nすべてのプロ",
-    "transaction": "{'extendNames': {'actionValue': '登録を延長する', 'costValue': '{{value}} + 手数料', 'warning': 'この名前を延長しても所有権は得られません'}, 'deleteSubname': {'warning': 'こんにちは、そこにいる人たち'}}",
-    "intro": "{'migrateAndUpdateResolver': {'title': '行動が必要です', 'heading': 'プロフィールに保存したい編集は、リゾルバーのアップグレードが必要です。', 'link': 'リゾルバーアップグレードについて詳しく知る', 'warning': '途中でキャンセルすると、変更は保存されません。'}, 'syncManager': {'description': 'マネージャーを同期すると、あなたがこの名前の新しいマネージャーになります。現在のマネージャー<b>({{manager}})</b>はこれ以上変更を加えることはできません。', 'wrappedWarning': 'マネージャーを同期すると、この名前もアンラップされます。これによりNFTが焼かれ、すべての権限がリセットされます。'}}",
-    "errors": "{'duplicateKey': '{{value}}は重複キーです'}"
+    "input": {
+        "profileEditor": {
+            "tabs": {
+                "avatar": {
+                    "dropdown": {
+                        "selectNFT": "NFTを選択",
+                        "uploadImage": "画像をアップロードする"
+                    },
+                    "nft": {
+                        "title": "NFTを選択してください",
+                        "searchPlaceholder": "NFTを検索してください",
+                        "loading": "あなたのNFTをロード中",
+                        "unknown": "未知のNFT",
+                        "noNFTs": "このアドレスにはNFTが見つかりませんでした。",
+                        "selected": {
+                            "title": "選択されたNFT",
+                            "subtitle": "このNFTを使用してもよろしいですか？"
+                        },
+                        "noResults": "結果は見つかりませんでした。"
+                    },
+                    "image": {
+                        "title": "画像を編集",
+                        "upload": {
+                            "title": "アバターをアップロードする",
+                            "subtitle": "アバターをアップロードするためにはメッセージに署名する必要があります。これには費用はかかりません。",
+                            "action": "署名してアップロード"
+                        }
+                    }
+                },
+                "general": {
+                    "label": "一般",
+                    "name": {
+                        "label": "ニックネーム",
+                        "placeholder": "ジョン・スミス"
+                    },
+                    "url": {
+                        "label": "ウェブサイト",
+                        "placeholder": "https://ens.domains"
+                    },
+                    "location": {
+                        "label": "位置",
+                        "placeholder": "メタバース"
+                    },
+                    "description": {
+                        "label": "短い自己紹介",
+                        "placeholder": "私はテネシー州の田舎からのイールドファーマーです。"
+                    }
+                },
+                "accounts": {
+                    "label": "アカウント",
+                    "addAccount": "アカウントを追加",
+                    "noOptions": "利用可能なアカウントオプションはありません",
+                    "placeholder": {
+                        "default": "ここにユーザーネームを追加してください",
+                        "com.twitter": "例: ensdomains",
+                        "com.github": "例えば、ensdomains",
+                        "com.discord": "例：alisha.eth#0001"
+                    }
+                },
+                "address": {
+                    "label": "住所",
+                    "addAddress": "アドレスを追加",
+                    "noOptions": "利用可能なアドレスオプションはありません",
+                    "placeholder": {
+                        "default": "ここにアドレスを追加してください",
+                        "ETH": "0xD9hbQK...",
+                        "BNB": "0xD9hbQK...",
+                        "BTC": "3FZbgi29...",
+                        "LTC": "3FZbgi29...",
+                        "SOL": "D4kA7VzHnmV...",
+                        "DOT": "1D4kA7VxH...",
+                        "DOGE": "DFabcd12..."
+                    }
+                },
+                "contentHash": {
+                    "label": "ウェブサイト",
+                    "addContentHash": "分散型ウェブサイトを追加",
+                    "placeholder": {
+                        "default": "ここにURLを追加してください",
+                        "ipfs": "ipfs://...",
+                        "skynet": "sia://...",
+                        "arweave": "ar://...",
+                        "swarm": "bzz://...",
+                        "onion": "onion3://..."
+                    }
+                },
+                "other": {
+                    "label": "その他",
+                    "addRecord": "レコードを追加",
+                    "createRecord": "レコード名を入力してください...",
+                    "placeholder": {
+                        "default": "ここに値を追加してください..."
+                    }
+                }
+            },
+            "warningOverlay": {
+                "action": {
+                    "learnMoreResolvers": "リゾルバーについて詳しく学ぶ",
+                    "updateResolver": "リゾルバーを更新",
+                    "setResolver": "リゾルバーを設定する",
+                    "ignoreUpdate": "このまま現在のリゾルバーを使用し続けてください。次回も再度尋ねられます。"
+                },
+                "invalidResolver": {
+                    "title": "許可されていないリゾルバー",
+                    "subtitle": "このリゾルバーでレコードを設定する権限がありません。プロフィールを編集するには、最新のリゾルバーに更新する必要があります。",
+                    "action": "リゾルバーを更新"
+                },
+                "migrateProfileSelector": {
+                    "title": "プロフィール",
+                    "subtitle": "各リゾルバーのプロファイルレコードが一致しません。どのレコードセットを使用しますか？",
+                    "option": {
+                        "latest": "新しいリゾルバー上のプロフィール記録",
+                        "current": "現在のプロフィール記録",
+                        "reset": "プロフィールをリセットする",
+                        "resetSubtitle": "すべてのプロフィールレコードを削除します"
+                    }
+                },
+                "migrateProfileWarning": {
+                    "title": "プロファイルを移行する",
+                    "subtitle": "あなたはプロフィールの記録を最新のリゾルバに移行しています。これにより、最新のリゾルバ上の既存の記録は永久にクリアされ、現在の記録で置き換えられます。"
+                },
+                "migrateRegistry": {
+                    "title": "レジストリが古い",
+                    "subtitle": "この名前に変更を加える前に、レジストリを移行する必要があります。",
+                    "action": "移行"
+                },
+                "noResolver": {
+                    "title": "リゾルバーが設定されていません",
+                    "subtitle": "プロフィールを編集する前に、リゾルバを設定する必要があります。",
+                    "action": "更新"
+                },
+                "resetProfile": {
+                    "title": "プロフィールをリセット",
+                    "subtitle": "あなたはプロフィール記録をリセットしています。既存のプロフィール情報、例えばETHアドレス、アバター、ソーシャルレコードなど全て失われます。これらはプロフィールの編集により再度追加することができます。"
+                },
+                "resolverNotNameWrapperAware": {
+                    "title": "互換性のないリゾルバー",
+                    "subtitle": "あなたの現在のリゾルバは、ラップされた名前と互換性がありません。プロフィールを編集する前に、リゾルバを更新する必要があります。",
+                    "toggle": {
+                        "title": "現在のプロファイルを転送",
+                        "subtitle": "この選択を解除すると、リゾルバのみが更新されます。"
+                    }
+                },
+                "resolverOutOfDate": {
+                    "title": "Resolverが古い",
+                    "subtitle": "リゾルバが古いです。プロフィールを編集する前に更新することをお勧めします。"
+                },
+                "resolverOutOfSync": {
+                    "title": "同期が解除されたリゾルバー",
+                    "subtitle": "あなたは最新の公開リゾルバを使用していませんが、そこにプロフィールレコードが保存されています。プロフィールの編集前に最新の公開リゾルバに切り替えることをお勧めします。"
+                },
+                "transferOrResetProfile": {
+                    "title": "プロフィール",
+                    "subtitle": "現在のプロファイルを新しいリゾルバーに転送できます。リゾルバーを更新する前に行ってください。",
+                    "toggle": {
+                        "title": "現在のプロファイルを転送",
+                        "subtitle": "これを選択解除すると、リゾルバのみが更新されます。"
+                    }
+                },
+                "updateResolverOrResetProfile": {
+                    "title": "プロフィール",
+                    "subtitle": "新しいリゾルバーで現在のプロファイルを保持することも、リセットしてすべてのプロファイルレコードを削除することもできます。",
+                    "toggle": {
+                        "title": "現在のプロファイルを保持",
+                        "subtitle": "この選択を解除すると、プロフィールがリセットされます。"
+                    }
+                },
+                "links": {
+                    "learnMoreResolvers": "リゾルバーについて詳しく学ぶ"
+                }
+            },
+            "intro": {
+                "resetProfile": {
+                    "title": "プロフィールをリセット",
+                    "description": "これにより、最新のリゾルバからすべてのプロファイルレコードが削除され、その後リゾルバが更新されます。"
+                },
+                "migrateProfile": {
+                    "title": "プロフィールを移行する",
+                    "description": "これにより、現在のプロフィールレコードが最新のリゾルバーに移行します。"
+                },
+                "migrateCurrentProfile": {
+                    "title": "プロフィールを移行する",
+                    "description": "これにより、現在のプロファイルレコードが最新のリゾルバーに移行します。"
+                }
+            }
+        },
+        "editResolver": {
+            "title": "リゾルバーの編集",
+            "latestLabel": "最新のリゾルバーを使用してください",
+            "etherscan": "ブロックエクスプローラー",
+            "latestMessage": "あなたは最新のリゾルバーにいます",
+            "customLabel": "カスタムリゾルバー",
+            "customPlaceholder": "カスタムリゾルバーアドレスを入力してください"
+        },
+        "extendNames": {
+            "title_one": "名前を拡張する",
+            "title_other": "{{count}} 名を延長します",
+            "invoice": {
+                "extension": "{{count}} 年延長",
+                "transaction": "取引手数料",
+                "total": "推定合計"
+            },
+            "bannerMsg": "複数年間の延長は、毎年の取引を避けることでネットワーク費用を節約します。",
+            "gasLimitError": "資金不足"
+        },
+        "transferProfile": {
+            "title": "プロフィールを転送",
+            "message1": "アップグレード前に、希望する場合は現在のプロファイルを転送できます。それ以外の場合は、アップグレード時にリセットされます。",
+            "message2": "現在のプロフィールを転送しますか？"
+        },
+        "revokePermissions": {
+            "views": {
+                "revokeWarning": {
+                    "title": "これにより恒久的な変更が加えられます",
+                    "subtitle": "許可は、永続的にあなたの名前を変更する高度な機能です。これらの変更を元に戻すことはできませんし、名前が期限切れになった場合にのみリセットされます。",
+                    "subtitle2": "この機能を使用する自信があることを確認してから進めてください。<infoLink>パーミッションについて詳しく学ぶ</infoLink>"
+                },
+                "revokePCC": {
+                    "title": "所有権を放棄する",
+                    "subtitle": "この操作により、この名前の所有権がマネージャー({{account}})に移ります。あなたがマネージャーでない限り、この名前に対する変更はこれ以上行うことができません。"
+                },
+                "grantExtendExpiry": {
+                    "title": "権限を変更する",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "許可を与える: 有効期限を延長する"
+                    }
+                },
+                "setExpiry": {
+                    "title": "名前の有効期限を設定",
+                    "subtitle": "許可が期限切れになる日付を設定します。この日付は親({{parent}})の有効期限より長くすることはできません。",
+                    "subtitleWithCEE": "この名前が有効期限を迎える日付を設定します。これは既存の権限有効期限({{expiry}})を置き換え、親({{parent}})の有効期限よりも遅くすることはできません。",
+                    "options": {
+                        "max": "マックス",
+                        "custom": "早い日付を選択してください"
+                    },
+                    "error": {
+                        "required": "カスタム日付が選択された場合、日付は必須です",
+                        "min": "日付は{{date}}よりも大きくなければなりません",
+                        "max": "日付は{{date}}より前でなければなりません"
+                    }
+                },
+                "revokeAdditional": {
+                    "title": "許可を取り消す",
+                    "subtitle": "この名前の権限を所有権を放棄する前に取り消しますか？これは今しかできません。",
+                    "action": {
+                        "title": "追加の権限を取り消す",
+                        "description": "あなたもマネージャーでない限り、これ以降、追加の権限を取り消すことはできません。"
+                    }
+                },
+                "revokeUnwrap": {
+                    "title": "許可を取り消す",
+                    "subtitle": "他の許可を取り消す前に、この許可を取り消す必要があります。これにより、許可が削除されるのを防ぎます。",
+                    "fuses": {
+                        "CANNOT_UNWRAP": "この名前の展開を許可を取り消す"
+                    }
+                },
+                "revokePermissions": {
+                    "title": "許可を取り消す",
+                    "unwrapSubtitle": "これを選択して他の人を有効にします",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "許可を与える: 有効期限を延長する。",
+                        "CANNOT_UNWRAP": "この名前の展開を許可を取り消す",
+                        "CANNOT_CREATE_SUBDOMAIN": "サブドメインの作成に対する許可を取り消す",
+                        "CANNOT_TRANSFER": "この名前を送信するための許可を取り消す",
+                        "CANNOT_SET_RESOLVER": "許可を取り消す: リゾルバーを設定する",
+                        "CANNOT_SET_TTL": "許可を取り消す：TTLを設定する",
+                        "CANNOT_BURN_FUSES": "許可を取り消す: 権限の変更",
+                        "CANNOT_APPROVE": "更新マネージャーの変更への許可を取り消す"
+                    }
+                },
+                "revokeChangeFuses": {
+                    "title": "許可を取り消す",
+                    "subtitle": "この許可を取り消すことで、残っているヒューズを変更する能力を永久に失うことになります。これは名前が期限切れになった場合にのみリセットされます。",
+                    "fuses": {
+                        "CANNOT_BURN_FUSES": "許可を取り消す: 権限の変更"
+                    }
+                },
+                "revokeChangeFusesWarning": {
+                    "title": "残りの権限はロックされます",
+                    "subtitle": "「change permissions」が取り消された後、権限とカスタムフューズは現在の状態で永久にロックされます。これは名前が期限切れになった場合にのみリセットされます。"
+                }
+            },
+            "action": {
+                "revoke": "取り消す"
+            }
+        },
+        "unknownLabels": {
+            "title": "あなたの名前を確認してください",
+            "subtitle": "あなたの名前の一部のラベルは未知です。続行するには、それらを入力してください。"
+        },
+        "deleteEmancipatedSubnameWarning": {
+            "title": "このサブネームは再作成できません",
+            "message": "このサブネームを削除すると、有効期限{{date}}が来るまで使用または再作成できなくなります。親の制御権限が取り消されたため、これは元に戻すことができません。"
+        },
+        "setToMEP1002Hexagon": {
+            "title": "名前をMEP1002 Hexagonに設定します",
+            "subtitle": "これにより、名前が公開MEP1002ヘキサゴンマップに設定されます。",
+            "h3index": "H3 六角形のインデックス"
+        },
+        "mintToMEP1002Hexagon": {
+            "title": "MEP1002ヘキサゴンを鋳造する",
+            "subtitle": "これは公開MEP1002ヘキサゴンマップを鋳造します。",
+            "h3index": "H3 六角形のインデックス"
+        }
+    },
+    "transaction": {
+        "extendNames": {
+            "actionValue": "登録を延長",
+            "costValue": "{{value}} + 手数料",
+            "warning": "この名前を延長しても所有権は得られません"
+        },
+        "deleteSubname": {
+            "warning": "こんにちは"
+        }
+    },
+    "intro": {
+        "migrateAndUpdateResolver": {
+            "title": "対応が必要です",
+            "heading": "プロフィールに保存したい編集を行うには、リゾルバーをアップグレードする必要があります。",
+            "link": "リゾルバーアップグレードについて詳しく学ぶ",
+            "warning": "あなたがこのプロセスをいつでもキャンセルすると、変更は保存されませんのでご注意ください。"
+        },
+        "syncManager": {
+            "description": "マネージャーの同期により、この名前の新しいマネージャーになります。現在のマネージャー<b>({{manager}})</b>はこれ以上変更を加えることができなくなります。",
+            "wrappedWarning": "マネージャーの同期により、この名前も展開されます。これにより、NFTが焼かれ、すべての権限がリセットされます。"
+        }
+    },
+    "errors": {
+        "duplicateKey": "{{value}}は重複キーです"
+    }
 }

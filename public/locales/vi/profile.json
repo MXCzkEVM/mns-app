@@ -1,5 +1,8 @@
 {
-    "meta": "{'title': '{{name}} trên MNS', 'description': \"Hồ sơ của {{name}} trên Dịch vụ Tên MXC\"}",
+    "meta": {
+        "title": "{{name}} trên MNS",
+        "description": "Hồ sơ của {{name}} trên Dịch vụ Tên MXC"
+    },
     "title": "Hồ sơ",
     "yourWallet": "Ví của bạn",
     "yourProfile": "Hồ sơ của bạn",
@@ -7,11 +10,376 @@
     "addresses": "Địa chỉ",
     "otherRecords": "Bản ghi khác",
     "editProfile": "Chỉnh sửa Hồ sơ",
-    "ownership": "Quyền sở hữu",
+    "ownership": "Sở hữu",
     "viewDetails": "Xem Chi Tiết",
-    "banner": "{'available': {'title': '{{name}} đã sẵn sàng', 'description': 'Tên này đã hết hạn vào <strong>{{date}}</strong>. Nhấp vào đây để xem trang đăng ký.'}}",
-    "tabs": "{'profile': {'name': 'Hồ sơ', 'actions': {'setAsPrimaryName': {'label': 'Đặt làm tên chính', 'title': 'Đặt tên chính của bạn', 'description': 'Để đặt tên chính của bạn thành tên này, địa chỉ ETH phải khớp với địa chỉ này.'}, 'setToMEP1002Hexagon': {'label': 'Đặt thành MEP1002 Hexagon', 'title': 'Đặt thành MEP1002 Hexagon', 'description': 'Đặt tên này thành MEP1002 Hexagon, bạn phải là người sở hữu Token Đặt Tên MEP1002 Hexagon'}, 'mintToMEP1002Hexagon': {'label': 'Tạo MEP1002 Hexagon', 'title': 'Tạo MEP1002 Hexagon', 'description': 'Tạo MEP1002 Hexagon này'}, 'deleteSubname': {'label': 'Xóa tên phụ'}, 'extend': {'label': 'Mở rộng tên'}, 'editProfile': {'label': 'Chỉnh sửa hồ sơ'}, 'reclaim': {'label': 'Tái tạo tên', 'warning': 'Tên phụ này đã hết hạn và không được sở hữu. Bạn có thể tái tạo tên phụ này.'}}, \n'warnings': {'wrappedDNS': 'Tên DNS có thể được lấy lại bởi chủ sở hữu DNS bất cứ lúc nào. Không mua tên DNS.', \n'homoglyph': '<a>Tìm hiểu thêm về homoglyphs</a>'}}, \n'records': {'name': 'Hồ sơ'}, \n'subnames': {'name': 'Tên phụ'}, \n'permissions': {'name':'Quyền', \n'parentUnlockedWarning':'<strong>Bạn không thể thay đổi quyền truy cập vào tên này.</strong> Bạn phải từ chối ‘bỏ gói tên này’ trên cha ({{parent}}). Nhấn vào đây để xem quyền của cha.', \n'revokedLabel':'Bị thu hồi {{date}}',\n'grantedLabel':'Được cấp {{date}}',\n'role':{'manager':'quản lý','owner':'chủ sở hữu','parent':'cha'},\n'ownership':{'title':'Quyền Sở Hữu',\n'parentCanControl':{'label':'Tên này có thể được kiểm soát bởi cha (<parentLink>{{parent}}</parentLink>)',\n'list':{'title':'Chủ sở hữu của tên cha có thể:','item1':'Kiểm soát và chỉnh sửa các thiết lập và hồ sơ','item2':'Lấy lại hoặc gán quyền sở hữu của tên này','item3':'Xóa bỏ tên này'}},\n'parentCannotControl':{'label':'Tên này không thể được kiểm soát bởi cha (<parentLink>{{parent}}</parentLink>)',\n'sublabel':'Chủ sở hữu của tên cha không thể kiểm soát, chỉnh sửa, xóa bỏ hoặc lấy lại quyền sở hữu của tên này.',\n'list':{'title':'Chủ sở hữu của tên sẽ giữ quyền sở hữu trừ khi một trong những điều sau xảy ra:','item1':'Tên hết hạn vào {{date}} (có thể được mở rộng)','item2':'Tên cha hết hạn vào {{date}}','item3':'Quyền sở hữu của tên được gửi đến một địa chỉ khác'}},\n'parentCanChange':{'label':'Cha của tên này (<parentLink>{{parent}}</parentLink>) có thể thay đổi quyền',\n'list':{'title':'Cha có thể:','item1':'Thu hồi quyền','item2':'Thay đổi hoặc đốt cháy cầu chì tuỳ chỉnh'}},\n'ownerCanChange':{'label':'Chủ sở hữu của tên này có thể thay đổi quyền',\n'list':{'title':'Chủ sở hữu có thể:','item1':'Thu hồi quyền','item2':'Thay",
-    "details": "{'title': 'Chi Tiết Tên', 'notWrapped': 'Chưa được gói', 'sendName': {'title': 'Gửi Tên', 'description': 'Việc gửi tên sẽ cho phép địa chỉ mới kiểm soát nó', 'learnMore': 'Tìm hiểu thêm về quyền sở hữu tên.', 'makeOwner': 'Tạo chủ sở hữu', 'makeOwnerDescription': 'Chủ sở hữu có thể gửi đến chủ sở hữu mới và thay đổi người quản lý', 'makeManager': 'Tạo người quản lý', 'makeManagerDescription': 'Người quản lý có thể thay đổi và thiết lập hồ sơ.', 'inputPlaceholder': 'Nhập một địa chỉ Ethereum hoặc tên MNS', 'transferSubname': 'Chuyển Tên', 'transferController': 'Chuyển Người Điều Khiển'}, 'wrap': {'startTitle': 'Nâng cấp tên của bạn', 'resumeTitle': 'Tiếp tục nâng cấp của bạn', 'completeTitle': 'Nâng cấp hoàn tất', 'description': '\"Gói\" hoặc nâng cấp tên của bạn mang lại cho nó các tính năng mới.', 'startLabel': 'Nâng cấp', 'resumeLabel': 'Tiếp tục Nâng cấp', 'boxTitle': 'Mở khóa các tính năng mới', 'boxDescription': '\"Gói\" tên của bạn mở khóa các chức năng mới nhất của MNS'}, \n'descriptions': {'owner': \"Sở hữu và kiểm soát tên\", \n'controller':\"Kiểm soát tất cả các bản ghi của tên\", \n'registrant':\"Chủ sở hữu của NFT\", \n'dnsOwner':\"Chủ sở hữu của tên DNS\"}, \n'tabs':{'records':{'label':'Bản Ghi',\n'text':'Văn Bản',\n'contentHash':'Băm Nội Dung',\n'noContentHash':'Không Có Băm Nội Dung',\n'editRecords':'Chỉnh Sửa Bản Ghi',\n'noAbi':'Không Có ABI',\n'abi':'ABI',\n'editRecordsDisabled':'Trình giải quyết hiện tại không tương thích với các tên đã được gói'},\n'subnames':{'label':'Tên Phụ',\n'loading':'Đang Tải Tên Phụ',\n'empty':'Không có tên phụ nào được thêm vào',\n'noResults':'Không có kết quả',\n'noMoreResults':'Không còn kết quả nào',\n'addSubname':{'title':'Tên phụ cho phép bạn tạo thêm các tên từ tên hiện có của bạn.',\n'learn':'Tìm hiểu về tên phụ',\n'action':'Tên phụ mới',\n'dialog':{'title':'Tạo Tên Phụ',\n'error':{'invalidCharacters':'Có chứa ký tự không hợp lệ',\n'mustUseLowercase':'Phải dùng chữ cái viết thường',\n'alreadyExists':'Tên đã tồn tại',\n'nameTooLong':'Tên quá dài',\n'pccBurned':'Tên bị khóa cho đến {{date}}'}}}}}}",
-    "advancedEditor": "{'title': \"Hồ sơ của {{name}}\", 'tabs': {'text': {'label': 'Văn bản', 'addRecord': 'Thêm hồ sơ', 'createRecord': 'Nhập tên hồ sơ...', 'placeholder': {'default': 'Thêm giá trị ở đây...'}}, 'address': {'label': 'Địa chỉ', 'addRecord': 'Thêm địa chỉ', 'noOptions': 'Không có tùy chọn địa chỉ nào', 'placeholder': {'default': 'Thêm địa chỉ ở đây...'}}, 'other': {'label': 'Khác', 'labelDisabled': 'Không được hỗ trợ bởi trình giải quyết hiện tại', 'contentHash': {'label': 'Mã nội dung', 'placeholder': 'ví dụ: ipfs://'}, 'publicKey': {'label': 'Khóa công khai', 'placeholder': 'ví dụ: pub_1231231231231'}, 'abi': {'label': 'ABI', 'placeholder': 'Nhập ABI ở đây...'}}}}",
-    "errors": "{'invalidName': 'Tên này không hợp lệ.', 'invalidAddress': 'Địa chỉ không hợp lệ', 'expiringSoon': 'Thời gian ân hạn cho tên này kết thúc vào {{date}}. Nếu không được gia hạn trước ngày này, nó sẽ trở nên có thể đăng ký.', 'hasExpired': '{{ name }} đã hết hạn', 'ownerManagerChoice': 'Phải gửi chủ sở hữu hoặc quản lý', 'unknown': 'Lỗi không xác định', 'notMigrated': 'Tên này chưa được chuyển sang sổ đăng ký mới.', 'featureNotAvailable': 'Một số tính năng chưa sẵn sàng, nhưng bạn vẫn có thể ', 'featureNotAvailableLink': 'xem tên này trong ứng dụng cũ.', 'migrationNotAvailable': 'Chức năng chuyển đổi sang sổ đăng ký mới chưa sẵn sàng, nhưng bạn vẫn có thể ', 'migrationNotAvailableLink': 'chuyển đổi tên này trong ứng dụng cũ.', 'addressLength': 'Nếu là địa chỉ, nó phải dài 42 ký tự', 'unsupportedTLD': 'TLD này không được hỗ trợ', 'keyInUse': '{{value}} đã được sử dụng', 'hasSubnames': 'Tên này có các tên phụ', 'permissionRevoked': 'Tên này đã thu hồi các quyền cần thiết để thực hiện hành động này.', 'invalidJSON': 'JSON không hợp lệ'}"
+    "banner": {
+        "available": {
+            "title": "{{name}} có sẵn",
+            "description": "Tên này đã hết hạn vào ngày <strong>{{date}}</strong>. Nhấn vào đây để xem trang đăng ký."
+        }
+    },
+    "tabs": {
+        "profile": {
+            "name": "Hồ sơ",
+            "actions": {
+                "setAsPrimaryName": {
+                    "label": "Đặt làm tên chính",
+                    "title": "Đặt tên chính của bạn",
+                    "description": "Để đặt tên chính của bạn thành tên này, địa chỉ ETH phải khớp với địa chỉ này."
+                },
+                "setToMEP1002Hexagon": {
+                    "label": "Đặt thành MEP1002 Hexagon",
+                    "title": "Đặt thành MEP1002 Hexagon",
+                    "description": "Đặt tên này là MEP1002 Hexagon, bạn phải là người giữ Token Đặt Tên MEP1002 Hexagon"
+                },
+                "mintToMEP1002Hexagon": {
+                    "label": "Khắc MEP1002 Lục giác",
+                    "title": "Khắc MEP1002 Lục giác",
+                    "description": "Đúc Hexagon MEP1002 này"
+                },
+                "deleteSubname": {
+                    "label": "Xóa tên phụ"
+                },
+                "extend": {
+                    "label": "Mở rộng tên"
+                },
+                "editProfile": {
+                    "label": "Chỉnh sửa hồ sơ"
+                },
+                "reclaim": {
+                    "label": "Tái tạo tên",
+                    "warning": "Tên phụ này đã hết hạn và không được sở hữu. Bạn có thể tạo lại tên phụ này."
+                }
+            },
+            "warnings": {
+                "wrappedDNS": "Tên DNS có thể được lấy lại bởi chủ sở hữu DNS bất cứ lúc nào. Không mua tên DNS.",
+                "homoglyph": "Tên này chứa các ký tự không phải ASCII. Có thể có các ký tự trông giống hệt hoặc rất giống với các ký tự khác, có thể được sử dụng để lừa dối người đọc. <a>Tìm hiểu thêm về homoglyphs</a>"
+            }
+        },
+        "records": {
+            "name": "Hồ sơ"
+        },
+        "subnames": {
+            "name": "Tên phụ"
+        },
+        "permissions": {
+            "name": "Quyền hạn",
+            "parentUnlockedWarning": "Bạn không thể thay đổi quyền truy cập cho tên này. Bạn phải hủy 'bỏ bọc tên này' trên cha mẹ ({{parent}}). Nhấn vào đây để xem quyền truy cập của cha mẹ.",
+            "revokedLabel": "Đã thu hồi {{date}}",
+            "grantedLabel": "Được cấp vào ngày {{date}}",
+            "role": {
+                "manager": "quản lý",
+                "owner": "chủ sở hữu",
+                "parent": "cha mẹ"
+            },
+            "ownership": {
+                "title": "Quyền Sở Hữu",
+                "parentCanControl": {
+                    "label": "Tên này có thể được kiểm soát bởi cha mẹ của nó (<parentLink>{{parent}}</parentLink>)",
+                    "list": {
+                        "title": "Chủ sở hữu của tên mẹ có thể:",
+                        "item1": "Điều khiển và chỉnh sửa các cài đặt và hồ sơ",
+                        "item2": "Lấy lại hoặc gán lại quyền sở hữu cho tên này",
+                        "item3": "Xóa tên này"
+                    }
+                },
+                "parentCannotControl": {
+                    "label": "Tên này không thể được kiểm soát bởi cha mẹ của nó (<parentLink>{{parent}}</parentLink>)",
+                    "sublabel": "Chủ sở hữu của tên gốc không thể kiểm soát, chỉnh sửa, xóa bỏ hoặc lấy lại quyền sở hữu của tên này.",
+                    "list": {
+                        "title": "Chủ sở hữu tên sẽ giữ quyền sở hữu trừ khi một trong những điều sau xảy ra:",
+                        "item1": "Tên hết hạn vào {{date}} (có thể được gia hạn)",
+                        "item2": "Tên chủ thể hết hạn vào {{date}}",
+                        "item3": "Quyền sở hữu tên được gửi đến một địa chỉ khác"
+                    }
+                },
+                "parentCanChange": {
+                    "label": "Cha của tên này (<parentLink>{{parent}}</parentLink>) có thể thay đổi quyền hạn",
+                    "list": {
+                        "title": "Người phụ huynh có thể:",
+                        "item1": "Thu hồi quyền",
+                        "item2": "Thay đổi hoặc đốt cháy cầu chì tùy chỉnh"
+                    }
+                },
+                "ownerCanChange": {
+                    "label": "Chủ sở hữu tên này có thể thay đổi quyền hạn",
+                    "list": {
+                        "title": "Chủ sở hữu có thể:",
+                        "item1": "Thu hồi quyền",
+                        "item2": "Thay đổi hoặc đốt cháy cầu chì tùy chỉnh"
+                    }
+                },
+                "ownerCannotChange": {
+                    "label": "Chủ sở hữu tên này không thể thay đổi quyền",
+                    "list": {
+                        "title": "Chủ sở hữu không thể:",
+                        "item1": "Thu hồi quyền",
+                        "item2": "Thay đổi hoặc đốt cháy cầu chì tùy chỉnh"
+                    }
+                },
+                "unwrapWarning": {
+                    "message": "Quyền giải nén phải được thu hồi trên đối tượng cha (<strong>{{parent}}</strong>) trước khi từ bỏ quyền kiểm soát cha.<br> <parentLink>Đi đến quyền của đối tượng cha</parentLink>"
+                },
+                "action": {
+                    "giveUpControl": "Từ bỏ quyền kiểm soát của cha mẹ",
+                    "revokePermission": "Thu hồi quyền"
+                }
+            },
+            "expiry": {
+                "permissions": {
+                    "canExtendExpiry": {
+                        "label": "Có thể mở rộng thời hạn hết hạn",
+                        "description": "Quyền hạn của tên này có thể được mở rộng bởi {{managerOrOwner}}.",
+                        "description_date": "Quyền sử dụng tên này ({{date}}) có thể được mở rộng bởi {{managerOrOwner}}."
+                    },
+                    "cannotExtendExpiry": {
+                        "label": "Không thể kéo dài thời hạn hết hạn",
+                        "description": "Quyền hạn của tên này không thể được mở rộng bởi người quản lý.",
+                        "description_date": "Quyền này của tên không thể được gia hạn bởi người quản lý sau ngày hết hạn ({{date}})."
+                    }
+                },
+                "manager": "quản lý",
+                "owner": "chủ sở hữu",
+                "action": {
+                    "changePermissions": "Thay đổi quyền hạn"
+                }
+            },
+            "nameChangePermissions": {
+                "title": "Quyền Thay Đổi Tên",
+                "subtitle": {
+                    "parent-can-change": "Cha mẹ của tên này (<parentLink>{{parent}}</parentLink>) có thể thay đổi cài đặt trên tên này.",
+                    "owner-can-change": "Chủ sở hữu tên này có thể thay đổi cài đặt trên tên này."
+                },
+                "permissions": {
+                    "canUnwrap": {
+                        "label": "Có thể bóc tên này",
+                        "description": "{{owner}} của tên này có thể bóc gỡ tên này."
+                    },
+                    "cannotUnwrap": {
+                        "label": "Không thể bóc gói tên này",
+                        "description": "{{owner}} của tên này không thể bóc gỡ tên này."
+                    },
+                    "canCreateSubnames": {
+                        "label": "Có thể tạo tên phụ",
+                        "description": "{{owner}} của tên này có thể tạo ra các tên phụ mới."
+                    },
+                    "cannotCreateSubnames": {
+                        "label": "Không thể tạo tên phụ",
+                        "description": "{{owner}} của tên này không thể tạo ra các tên phụ mới."
+                    },
+                    "canSend": {
+                        "label": "Có thể gửi tên này",
+                        "description": "{{owner}} của tên này có thể gửi nó cho chủ sở hữu mới."
+                    },
+                    "cannotSend": {
+                        "label": "Không thể gửi tên này",
+                        "description": "{{owner}} của tên này không thể gửi nó cho chủ sở hữu mới."
+                    },
+                    "canSetResolver": {
+                        "label": "Có thể đặt trình giải quyết",
+                        "description": "{{owner}} của tên này có thể đặt và thay đổi trình giải quyết."
+                    },
+                    "cannotSetResolver": {
+                        "label": "Không thể thiết lập trình giải quyết",
+                        "description": "{{owner}} của tên này không thể đặt và thay đổi trình giải quyết."
+                    },
+                    "canSetTTL": {
+                        "label": "Có thể đặt TTL",
+                        "description": "{{owner}} của tên này có thể đặt và thay đổi TTL."
+                    },
+                    "cannotSetTTL": {
+                        "label": "Không thể đặt TTL",
+                        "description": "{{owner}} của tên này không thể đặt và thay đổi TTL."
+                    },
+                    "canApprove": {
+                        "label": "Có thể thay đổi người quản lý gia hạn",
+                        "description": "Chủ sở hữu tên này có thể thay đổi người quản lý được phê duyệt để gia hạn tên con."
+                    },
+                    "cannotApprove": {
+                        "label": "Không thể thay đổi người quản lý gia hạn",
+                        "description": "Chủ sở hữu tên này không thể thay đổi người quản lý được phê duyệt để gia hạn tên con."
+                    }
+                },
+                "action": {
+                    "changePermissions": "Thay đổi quyền hạn"
+                }
+            }
+        },
+        "fuses": {
+            "name": "Cầu chì"
+        },
+        "more": {
+            "name": "Nhiều hơn",
+            "resolver": {
+                "label": "Giải quyết",
+                "custom": "Tùy chỉnh",
+                "latest": "Mới nhất",
+                "outdated": "Lỗi thời",
+                "version": "Phiên bản",
+                "etherscan": "Khám phá Khối"
+            },
+            "fuses": {
+                "label": "Cầu chì",
+                "info": "Bạn phải đốt 'Có thể gỡ bỏ' để có thể đốt các cầu chì khác",
+                "callToAction": "Vui lòng gói tên của bạn để mở khóa tính năng này",
+                "burnFormTitle": "Quyền Đốt",
+                "burned": "Đã đốt",
+                "permissions": {
+                    "label": "Quyền hạn",
+                    "warning": "Cầu chì có thể được thay đổi bởi phụ huynh",
+                    "CAN_DO_EVERYTHING": "Có thể làm mọi thứ",
+                    "CANNOT_BURN_FUSES": "Có thể đốt cháy cầu chì",
+                    "CANNOT_CREATE_SUBDOMAIN": "Có thể tạo tên miền phụ",
+                    "CANNOT_SET_RESOLVER": "Có thể đặt trình giải quyết",
+                    "CANNOT_SET_TTL": "Có thể đặt TTL",
+                    "CANNOT_TRANSFER": "Có thể chuyển khoản",
+                    "CANNOT_UNWRAP": "Có thể giải nén",
+                    "PARENT_CANNOT_CONTROL": "Cha mẹ có thể kiểm soát",
+                    "CAN_EXTEND_EXPIRY": "Không thể kéo dài thời hạn hết hạn",
+                    "IS_DOT_ETH": "Không phải là .eth"
+                }
+            },
+            "ownership": {
+                "label": "Sở hữu",
+                "refreshDNS": "Làm mới DNS",
+                "dnsOwnerWarning": {
+                    "isDnsOwner": "Bạn không thể thay đổi tên này vì bạn là Chủ sở hữu DNS, nhưng không phải là Quản lý. Bạn có thể đồng bộ hóa quản lý để khắc phục điều này.",
+                    "isManager": "Bạn là Quản lý nhưng không phải là Chủ sở hữu DNS của tên này. Tên DNS có thể được Chủ sở hữu DNS thu hồi bất cứ lúc nào. Bạn có thể gửi tên này cho Chủ sở hữu, hoặc cập nhật bản ghi DNS để khớp.",
+                    "refreshDNS": "Làm mới DNS",
+                    "syncManager": "Quản lý đồng bộ"
+                }
+            },
+            "token": {
+                "label": "Token",
+                "hex": "lục phân",
+                "decimal": "thập phân"
+            },
+            "misc": {
+                "registered": "Đã đăng ký",
+                "expires": "Hết hạn"
+            }
+        }
+    },
+    "details": {
+        "title": "Chi Tiết Tên",
+        "notWrapped": "Không được gói",
+        "sendName": {
+            "title": "Gửi Tên",
+            "description": "Gửi tên sẽ đưa quyền kiểm soát nó cho địa chỉ mới",
+            "learnMore": "Tìm hiểu thêm về quyền sở hữu tên.",
+            "makeOwner": "Tạo chủ sở hữu",
+            "makeOwnerDescription": "Chủ sở hữu có thể gửi đến chủ sở hữu mới và thay đổi người quản lý",
+            "makeManager": "Tạo quản lý",
+            "makeManagerDescription": "Quản lý có thể thay đổi và thiết lập hồ sơ.",
+            "inputPlaceholder": "Nhập địa chỉ Ethereum hoặc tên MNS",
+            "transferSubname": "Chuyển Tên",
+            "transferController": "Bộ Điều Khiển Chuyển Khoản"
+        },
+        "wrap": {
+            "startTitle": "Nâng cấp tên của bạn",
+            "resumeTitle": "Tiếp tục nâng cấp của bạn",
+            "completeTitle": "Nâng cấp hoàn tất",
+            "description": "Nâng cấp hoặc \"đóng gói\" tên của bạn sẽ mang lại các tính năng mới.",
+            "startLabel": "Nâng cấp",
+            "resumeLabel": "Tiếp tục Nâng cấp",
+            "boxTitle": "Mở khóa tính năng mới",
+            "boxDescription": "Nâng cấp tên của bạn mở khóa chức năng mới nhất của MNS"
+        },
+        "descriptions": {
+            "owner": "Sở hữu và kiểm soát tên",
+            "controller": "Điều khiển tất cả các hồ sơ của tên",
+            "registrant": "Chủ sở hữu của NFT",
+            "dnsOwner": "Chủ sở hữu của tên DNS"
+        },
+        "tabs": {
+            "records": {
+                "label": "Hồ sơ",
+                "text": "\"Your transaction is pending. Please note that due to high network congestion, the gas fee has increased. You can choose to wait or increase the gas fee for faster processing.\"",
+                "contentHash": "Băm Nội Dung",
+                "noContentHash": "Không Có Mã Hash Nội Dung",
+                "editRecords": "Chỉnh Sửa Hồ Sơ",
+                "noAbi": "Không ABI",
+                "abi": "ABI",
+                "editRecordsDisabled": "Trình giải quyết hiện tại không tương thích với tên đã đóng gói"
+            },
+            "subnames": {
+                "label": "Tên phụ",
+                "loading": "Đang tải tên phụ",
+                "empty": "Không có tên phụ nào được thêm vào",
+                "noResults": "Không có kết quả",
+                "noMoreResults": "Không có kết quả nào khác",
+                "addSubname": {
+                    "title": "Tên phụ cho phép bạn tạo thêm tên từ tên hiện có của bạn.",
+                    "learn": "Tìm hiểu về tên phụ",
+                    "action": "Tên phụ mới",
+                    "dialog": {
+                        "title": "Tạo Tên Phụ",
+                        "error": {
+                            "invalidCharacters": "Chứa ký tự không hợp lệ",
+                            "mustUseLowercase": "Phải sử dụng chữ cái thường",
+                            "alreadyExists": "Tên đã tồn tại",
+                            "nameTooLong": "Tên quá dài",
+                            "pccBurned": "Tên sẽ bị khóa cho đến {{date}}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "advancedEditor": {
+        "title": "Ghi chú của {{name}}",
+        "tabs": {
+            "text": {
+                "label": "\"Your transaction has been submitted. Please wait for confirmation. The network fee (gas) will be deducted from your account balance.\"",
+                "addRecord": "Thêm hồ sơ",
+                "createRecord": "Nhập tên hồ sơ...",
+                "placeholder": {
+                    "default": "Thêm một giá trị vào đây..."
+                }
+            },
+            "address": {
+                "label": "Địa chỉ",
+                "addRecord": "Thêm địa chỉ",
+                "noOptions": "Không có tùy chọn địa chỉ nào sẵn có",
+                "placeholder": {
+                    "default": "Thêm địa chỉ ở đây..."
+                }
+            },
+            "other": {
+                "label": "Khác",
+                "labelDisabled": "Không được hỗ trợ bởi trình giải quyết hiện tại",
+                "contentHash": {
+                    "label": "Băm Nội Dung",
+                    "placeholder": "ví dụ: ipfs://"
+                },
+                "publicKey": {
+                    "label": "Khóa Công Khai",
+                    "placeholder": "ví dụ: pub_1231231231231"
+                },
+                "abi": {
+                    "label": "ABI",
+                    "placeholder": "Nhập ABI vào đây..."
+                }
+            }
+        }
+    },
+    "errors": {
+        "invalidName": "Tên này không hợp lệ.",
+        "invalidAddress": "Địa chỉ không hợp lệ",
+        "expiringSoon": "Thời gian ân hạn cho tên này kết thúc vào {{date}}. Nếu không được gia hạn trước ngày này, nó sẽ trở thành có sẵn để đăng ký.",
+        "hasExpired": "{{ name }} đã hết hạn",
+        "ownerManagerChoice": "Phải gửi cho chủ sở hữu hoặc người quản lý",
+        "unknown": "Lỗi không xác định",
+        "notMigrated": "Tên này chưa được chuyển sang hồ sơ mới.",
+        "featureNotAvailable": "Một số tính năng chưa sẵn sàng, nhưng bạn vẫn có thể",
+        "featureNotAvailableLink": "xem tên này trong ứng dụng cũ.",
+        "migrationNotAvailable": "Chuyển đổi sang sổ đăng ký mới chưa có sẵn, nhưng bạn vẫn có thể",
+        "migrationNotAvailableLink": "chuyển tên này trong ứng dụng cũ.",
+        "addressLength": "Nếu địa chỉ, nó nên dài 42 ký tự",
+        "unsupportedTLD": "TLD này không được hỗ trợ",
+        "keyInUse": "{{value}} đã được sử dụng rồi",
+        "hasSubnames": "Tên này có các tên phụ",
+        "permissionRevoked": "Tên này đã thu hồi các quyền cần thiết để thực hiện hành động này.",
+        "invalidJSON": "JSON không hợp lệ"
+    }
 }

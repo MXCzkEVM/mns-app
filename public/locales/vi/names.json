@@ -1,6 +1,15 @@
 {
     "title": "Tên",
-    "subtitle": "{'start': 'Tất cả tên được giữ bởi', 'this': 'này', 'your': 'ví của bạn', 'wallet': 'ví'}",
+    "subtitle": {
+        "start": "Tất cả tên được giữ bởi",
+        "this": "điều này",
+        "your": "bạn",
+        "wallet": "ví"
+    },
     "empty": "Không tìm thấy tên cho địa chỉ này",
-    "sortTypes": "{'expiryDate': 'Ngày hết hạn', 'labelName': 'Tên', 'creationDate': 'Ngày tạo'}"
+    "sortTypes": {
+        "expiryDate": "Ngày hết hạn",
+        "labelName": "Tên",
+        "creationDate": "Ngày tạo"
+    }
 }

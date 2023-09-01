@@ -4,7 +4,7 @@
     "filter": "Filtro",
     "view": "Visualizar",
     "noProfile": {
-        "title": "Sem nome primário definido",
+        "title": "Nenhum nome principal definido",
         "message": "Esta carteira precisa definir um nome principal para criar um perfil"
     },
     "noResults": "Nenhum nome encontrado",

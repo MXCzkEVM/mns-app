@@ -1,6 +1,332 @@
 {
-    "input": "{'profileEditor': {'tabs': {'avatar': {'dropdown': {'selectNFT': 'Chọn NFT', 'uploadImage': 'Tải ảnh lên'}, 'nft': {'title': 'Chọn một NFT', 'searchPlaceholder': 'Tìm kiếm NFT', 'loading': 'Đang tải NFT của bạn', 'unknown': 'NFT không xác định', 'noNFTs': 'Không tìm thấy NFT cho địa chỉ này.', 'selected': {'title': 'NFT đã chọn', 'subtitle': 'Bạn có chắc chắn muốn sử dụng NFT này không?'}, 'noResults': 'Không tìm thấy kết quả.'}, 'image': {'title': 'Chỉnh sửa hình ảnh', 'upload': {'title': 'Tải Avatar lên', 'subtitle': \"Bạn cần ký một tin nhắn để tải avatar lên. Điều này không mất phí.\", 'action': 'Ký và Tải lên'}}}, 'general': {'label': 'Chung', 'name': {'label': 'Biệt danh', 'placeholder': 'John Smith'}, 'url': {'label': 'Website', 'placeholder': 'https://ens.domains'}, location: {'label':'Vị trí','placeholder':'Metaverse'},'description':{'label':'Tiểu sử ngắn','placeholder':\"Tôi là một nông dân thu hoạch từ Tennessee nông thôn.\"}},'accounts':{'label':'Tài khoản','addAccount':'Thêm tài khoản','noOptions':'Không có tùy chọn tài khoản','placeholder':{'default':'Thêm tên người dùng ở đây','com.twitter':'ví dụ: ensdomains','com.github':'ví dụ: ensdomains','com.discord':'ví dụ: alisha.eth#0001'}},'address':{'label':'Địa chỉ','addAddress':'Thêm địa chỉ','noOptions':'Không có tùy chọn địa chỉ','placeholder':{'default':'Thêm địa chỉ ở đây','ETH':'0xD9hbQK...','BNB':'0xD9hbQK...','BTC':'3FZbgi29...','LTC':'3FZbgi29...','SOL':'D4kA7VzHnmV...','DOT':'1D4kA7VxH...','DOGE':'DFabcd12...'}},'contentHash':{'label':'Website','addContentHash':'Thêm website phi tập trung','placeholder':{'default':'Thêm url ở đây','ipfs':'ipfs://...','skynet':'sia://...','arweave':'ar://...','swarm':'bzz://...','onion:'onion3://...'}},'other':{'label:'Khác,'addRecord:'Thêm bản ghi,'createRecord:'Nhập tên bản ghi...,'placeholder':{'default:'Thêm giá trị ở đây...'}}},'warningOverlay':{'action':{'learnMoreResolvers:'Tìm hiểu thêm về resolvers,'updateResolver:'Cập nhật resolver,'setResolver:'Đặt resolver,'ignoreUpdate:'Bỏ qua và tiếp tục sử dụng resolver hiện tại của bạn. Bạn sẽ được hỏi lại lần sau.'},'invalidResolver':{'title:'Resolver không được phép,'subtitle:'Bạn không có quyền thiết lập bản ghi cho resolver này. Bạn sẽ cần cập nhật lên resolver mới nhất để chỉnh sửa hồ sơ của bạn.','action:'Cập nhật resolver'},'migrateProfileSelector':{'title:'Hồ sơ,'subtitle:'Các bản ghi hồ sơ trên mỗi resolver không khớp. Bộ bản ghi nào bạn muốn sử dụng?,'option':{'latest:'Bản ghi hồ sơ trên resolver mới,'current:'Bản ghi hồ sơ hiện tại,'reset:'Đặt lại hồ sơ của bạn,'resetSubtitle:'Xóa tất cả bản ghi hồ sơ'}},'migrateProfileWarning':{'title:'Di chuyển hồ sơ,'subtitle:'Bạn đang di chuyển các bản ghi hồ sơ của mình sang resolver mới nhất. Điều này sẽ xóa vĩnh viễn bất kỳ b",
-    "transaction": "{'extendNames': {'actionValue': 'Gia hạn đăng ký', 'costValue': '{{value}} + phí', 'warning': 'Việc gia hạn tên này không đồng nghĩa với việc bạn sở hữu nó'}, 'deleteSubname': {'warning': 'Xin chào mọi người'}}",
-    "intro": "{'migrateAndUpdateResolver': {'title': 'Yêu Cầu Hành Động', 'heading': 'Những chỉnh sửa bạn muốn lưu vào hồ sơ của mình yêu cầu bạn nâng cấp resolver.', 'link': 'Tìm hiểu thêm về việc nâng cấp resolver', 'warning': 'Lưu ý rằng nếu bạn hủy điều này ở bất kỳ điểm nào thì những thay đổi của bạn sẽ không được lưu.'}, 'syncManager': {'description': 'Đồng bộ hóa quản lý sẽ biến bạn thành quản lý mới của tên này. Quản lý hiện tại <b>({{manager}})</b> sẽ không còn có khả năng thực hiện thay đổi.', 'wrappedWarning': 'Đồng bộ hóa quản lý cũng sẽ bỏ gói tên này. Điều này sẽ đốt NFT và đặt lại bất kỳ quyền hạn nào.'}}",
-    "errors": "{'duplicateKey': '{{value}} là một khóa trùng lặp'}"
+    "input": {
+        "profileEditor": {
+            "tabs": {
+                "avatar": {
+                    "dropdown": {
+                        "selectNFT": "Chọn NFT",
+                        "uploadImage": "Tải lên hình ảnh"
+                    },
+                    "nft": {
+                        "title": "Chọn một NFT",
+                        "searchPlaceholder": "Tìm kiếm một NFT",
+                        "loading": "Đang tải NFTs của bạn",
+                        "unknown": "NFT không xác định",
+                        "noNFTs": "Không tìm thấy NFT cho địa chỉ này.",
+                        "selected": {
+                            "title": "NFT đã chọn",
+                            "subtitle": "Bạn có chắc chắn muốn sử dụng NFT này không?"
+                        },
+                        "noResults": "Không tìm thấy kết quả nào."
+                    },
+                    "image": {
+                        "title": "Chỉnh sửa hình ảnh",
+                        "upload": {
+                            "title": "Tải lên Avatar",
+                            "subtitle": "Bạn cần ký một tin nhắn để tải lên hình đại diện. Việc này không mất phí gì.",
+                            "action": "Ký và Tải lên"
+                        }
+                    }
+                },
+                "general": {
+                    "label": "Tổng quan",
+                    "name": {
+                        "label": "Biệt danh",
+                        "placeholder": "John Smith"
+                    },
+                    "url": {
+                        "label": "Trang web",
+                        "placeholder": "https://ens.domains"
+                    },
+                    "location": {
+                        "label": "Vị trí",
+                        "placeholder": "Vũ trụ ảo"
+                    },
+                    "description": {
+                        "label": "Tiểu sử ngắn",
+                        "placeholder": "Tôi là một nông dân thu hoạch từ Tennessee nông thôn."
+                    }
+                },
+                "accounts": {
+                    "label": "Tài khoản",
+                    "addAccount": "Thêm tài khoản",
+                    "noOptions": "Không có tùy chọn tài khoản nào sẵn có",
+                    "placeholder": {
+                        "default": "Thêm tên người dùng ở đây",
+                        "com.twitter": "ensdomains",
+                        "com.github": "ví dụ: ensdomains",
+                        "com.discord": "alisha.eth#0001"
+                    }
+                },
+                "address": {
+                    "label": "Địa chỉ",
+                    "addAddress": "Thêm địa chỉ",
+                    "noOptions": "Không có tùy chọn địa chỉ nào khả dụng",
+                    "placeholder": {
+                        "default": "Thêm địa chỉ ở đây",
+                        "ETH": "0xD9hbQK...",
+                        "BNB": "0xD9hbQK...",
+                        "BTC": "3FZbgi29...",
+                        "LTC": "3FZbgi29...",
+                        "SOL": "D4kA7VzHnmV...",
+                        "DOT": "1D4kA7VxH...",
+                        "DOGE": "DFabcd12..."
+                    }
+                },
+                "contentHash": {
+                    "label": "Trang web",
+                    "addContentHash": "Thêm trang web phi tập trung",
+                    "placeholder": {
+                        "default": "Thêm url vào đây",
+                        "ipfs": "ipfs://...",
+                        "skynet": "sia://...",
+                        "arweave": "ar://...",
+                        "swarm": "bzz://...",
+                        "onion": "onion3://..."
+                    }
+                },
+                "other": {
+                    "label": "Khác",
+                    "addRecord": "Thêm hồ sơ",
+                    "createRecord": "Nhập tên hồ sơ...",
+                    "placeholder": {
+                        "default": "Thêm một giá trị ở đây..."
+                    }
+                }
+            },
+            "warningOverlay": {
+                "action": {
+                    "learnMoreResolvers": "Tìm hiểu thêm về trình giải quyết",
+                    "updateResolver": "Cập nhật trình giải quyết",
+                    "setResolver": "Đặt trình giải quyết",
+                    "ignoreUpdate": "Bỏ qua điều này và tiếp tục sử dụng trình giải quyết hiện tại của bạn. Bạn sẽ được hỏi lại lần sau."
+                },
+                "invalidResolver": {
+                    "title": "Bộ giải quyết không được ủy quyền",
+                    "subtitle": "Bạn không có quyền thiết lập hồ sơ cho trình giải quyết này. Bạn cần cập nhật lên trình giải quyết mới nhất để chỉnh sửa hồ sơ của mình.",
+                    "action": "Cập nhật trình giải quyết"
+                },
+                "migrateProfileSelector": {
+                    "title": "Hồ sơ",
+                    "subtitle": "Hồ sơ ghi lại trên mỗi trình giải quyết không khớp nhau. Bạn muốn sử dụng bộ hồ sơ nào?",
+                    "option": {
+                        "latest": "Hồ sơ được lưu trên trình giải quyết mới",
+                        "current": "Hồ sơ hiện tại",
+                        "reset": "Đặt lại hồ sơ của bạn",
+                        "resetSubtitle": "Xóa tất cả hồ sơ đã lưu"
+                    }
+                },
+                "migrateProfileWarning": {
+                    "title": "Chuyển đổi hồ sơ",
+                    "subtitle": "Bạn đang chuyển hồ sơ cá nhân của mình sang trình giải quyết mới nhất. Điều này sẽ xóa vĩnh viễn bất kỳ hồ sơ hiện có nào trên trình giải quyết mới nhất và thay thế chúng bằng hồ sơ hiện tại của bạn."
+                },
+                "migrateRegistry": {
+                    "title": "Đăng ký đã hết hạn",
+                    "subtitle": "Bạn sẽ cần di chuyển sổ đăng ký trước khi thực hiện thay đổi cho tên này.",
+                    "action": "Chuyển đổi"
+                },
+                "noResolver": {
+                    "title": "Không có bộ giải quyết nào được thiết lập",
+                    "subtitle": "Cần phải đặt trình giải quyết trước khi chỉnh sửa hồ sơ của bạn.",
+                    "action": "Cập nhật"
+                },
+                "resetProfile": {
+                    "title": "Đặt lại hồ sơ",
+                    "subtitle": "Bạn đang đặt lại hồ sơ của mình. Bạn sẽ mất tất cả thông tin hồ sơ hiện có, như địa chỉ ETH, avatar và hồ sơ xã hội. Những thông tin này có thể được thêm lại bằng cách chỉnh sửa hồ sơ của bạn."
+                },
+                "resolverNotNameWrapperAware": {
+                    "title": "Giải quyết không tương thích",
+                    "subtitle": "Trình giải quyết hiện tại của bạn không tương thích với tên đã được gói. Bạn sẽ cần cập nhật trình giải quyết trước khi chỉnh sửa hồ sơ của mình.",
+                    "toggle": {
+                        "title": "Chuyển hồ sơ hiện tại",
+                        "subtitle": "Bỏ chọn này chỉ cập nhật trình giải quyết của bạn."
+                    }
+                },
+                "resolverOutOfDate": {
+                    "title": "Bộ giải quyết đã hết hạn",
+                    "subtitle": "Trình giải quyết đã lỗi thời. Đề nghị bạn cập nhật nó trước khi chỉnh sửa hồ sơ của mình."
+                },
+                "resolverOutOfSync": {
+                    "title": "Bộ giải quyết không đồng bộ",
+                    "subtitle": "Bạn không đang sử dụng trình giải quyết công khai mới nhất, nhưng bạn đã lưu trữ hồ sơ tại đó. Đề nghị bạn chuyển sang trình giải quyết công khai mới nhất trước khi chỉnh sửa hồ sơ của mình."
+                },
+                "transferOrResetProfile": {
+                    "title": "Hồ sơ",
+                    "subtitle": "Bạn có thể chuyển hồ sơ hiện tại của mình sang trình giải quyết mới trước khi cập nhật trình giải quyết của bạn.",
+                    "toggle": {
+                        "title": "Chuyển hồ sơ hiện tại",
+                        "subtitle": "Bỏ chọn này chỉ cập nhật trình giải quyết của bạn."
+                    }
+                },
+                "updateResolverOrResetProfile": {
+                    "title": "Hồ sơ",
+                    "subtitle": "Bạn có thể giữ hồ sơ hiện tại trên trình giải quyết mới, hoặc đặt lại và xóa tất cả các bản ghi hồ sơ.",
+                    "toggle": {
+                        "title": "Giữ hồ sơ hiện tại",
+                        "subtitle": "Bỏ chọn này sẽ đặt lại hồ sơ của bạn."
+                    }
+                },
+                "links": {
+                    "learnMoreResolvers": "Tìm hiểu thêm về trình giải quyết"
+                }
+            },
+            "intro": {
+                "resetProfile": {
+                    "title": "Đặt lại hồ sơ",
+                    "description": "Điều này sẽ xóa tất cả hồ sơ từ trình giải quyết mới nhất và sau đó cập nhật trình giải quyết."
+                },
+                "migrateProfile": {
+                    "title": "Chuyển đổi hồ sơ",
+                    "description": "Điều này sẽ chuyển đổi hồ sơ hiện tại của bạn sang trình giải quyết mới nhất."
+                },
+                "migrateCurrentProfile": {
+                    "title": "Chuyển đổi hồ sơ",
+                    "description": "Điều này sẽ chuyển đổi hồ sơ hiện tại của bạn sang trình giải quyết mới nhất."
+                }
+            }
+        },
+        "editResolver": {
+            "title": "Chỉnh sửa Resolver",
+            "latestLabel": "Sử dụng trình giải quyết mới nhất",
+            "etherscan": "Khám Phá Khối",
+            "latestMessage": "Bạn đang ở trên bộ giải quyết mới nhất",
+            "customLabel": "Trình giải quyết tùy chỉnh",
+            "customPlaceholder": "Nhập địa chỉ giải quyết tùy chỉnh"
+        },
+        "extendNames": {
+            "title_one": "Mở rộng Tên",
+            "title_other": "Mở rộng {{count}} Tên",
+            "invoice": {
+                "extension": "{{count}} năm gia hạn",
+                "transaction": "Phí giao dịch",
+                "total": "Tổng ước tính"
+            },
+            "bannerMsg": "Kéo dài thời gian nhiều năm sẽ tiết kiệm chi phí mạng bằng cách tránh giao dịch hàng năm.",
+            "gasLimitError": "Số dư không đủ"
+        },
+        "transferProfile": {
+            "title": "Chuyển Hồ sơ",
+            "message1": "Trước khi nâng cấp, bạn có thể chuyển hồ sơ hiện tại của mình nếu muốn, nếu không, nó sẽ được đặt lại khi bạn nâng cấp.",
+            "message2": "Bạn có muốn chuyển hồ sơ hiện tại của mình không?"
+        },
+        "revokePermissions": {
+            "views": {
+                "revokeWarning": {
+                    "title": "Điều này sẽ tạo ra những thay đổi vĩnh viễn",
+                    "subtitle": "Quyền hạn là tính năng nâng cao giúp thay đổi vĩnh viễn tên của bạn. Bạn sẽ không thể hoàn tác những thay đổi này, và chúng chỉ được đặt lại nếu tên hết hạn.",
+                    "subtitle2": "Hãy chắc chắn rằng bạn tự tin khi sử dụng tính năng này trước khi tiếp tục. <infoLink>Tìm hiểu thêm về quyền</infoLink>"
+                },
+                "revokePCC": {
+                    "title": "Từ bỏ quyền sở hữu",
+                    "subtitle": "Điều này sẽ chuyển quyền sở hữu của tên này cho người quản lý ({{account}}). Trừ khi bạn cũng là người quản lý, bạn sẽ không còn có khả năng thay đổi tên này."
+                },
+                "grantExtendExpiry": {
+                    "title": "Thay đổi quyền hạn",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "Cấp quyền cho: Mở rộng thời hạn hết hạn"
+                    }
+                },
+                "setExpiry": {
+                    "title": "Đặt hạn sử dụng tên",
+                    "subtitle": "Đặt ngày hết hạn cho quyền truy cập. Ngày này không được vượt quá thời hạn của đối tượng cha ({{parent}}).",
+                    "subtitleWithCEE": "Đặt ngày hết hạn cho tên này. Điều này sẽ thay thế quyền hạn hết hạn hiện tại ({{expiry}}) và không thể sau ngày hết hạn của phần tử cha ({{parent}}).",
+                    "options": {
+                        "max": "Tối đa",
+                        "custom": "Chọn một ngày sớm hơn"
+                    },
+                    "error": {
+                        "required": "Yêu cầu có ngày nếu ngày tùy chỉnh được chọn",
+                        "min": "Ngày phải lớn hơn {{date}}",
+                        "max": "Ngày phải nhỏ hơn {{date}}"
+                    }
+                },
+                "revokeAdditional": {
+                    "title": "Thu hồi quyền",
+                    "subtitle": "Bạn có muốn thu hồi quyền trên tên này trước khi từ bỏ quyền sở hữu? Việc này chỉ có thể được thực hiện ngay bây giờ.",
+                    "action": {
+                        "title": "Thu hồi quyền hạn bổ sung",
+                        "description": "Trừ khi bạn cũng là người quản lý, bạn sẽ không thể thu hồi các quyền hạn bổ sung sau điều này."
+                    }
+                },
+                "revokeUnwrap": {
+                    "title": "Thu hồi quyền",
+                    "subtitle": "Bạn cần thu hồi quyền này trước khi có thể thu hồi quyền khác. Điều này ngăn chặn việc loại bỏ quyền.",
+                    "fuses": {
+                        "CANNOT_UNWRAP": "Thu hồi quyền truy cập để: Gỡ bỏ tên này"
+                    }
+                },
+                "revokePermissions": {
+                    "title": "Thu hồi quyền",
+                    "unwrapSubtitle": "Chọn này để kích hoạt các mục khác",
+                    "fuses": {
+                        "CAN_EXTEND_EXPIRY": "Cấp quyền cho: Mở rộng thời hạn.",
+                        "CANNOT_UNWRAP": "Thu hồi quyền truy cập để: Gỡ bỏ tên này",
+                        "CANNOT_CREATE_SUBDOMAIN": "Thu hồi quyền: Tạo tên miền phụ",
+                        "CANNOT_TRANSFER": "Thu hồi quyền cho: Gửi tên này",
+                        "CANNOT_SET_RESOLVER": "Hủy bỏ quyền truy cập để: Đặt trình giải quyết",
+                        "CANNOT_SET_TTL": "Hủy quyền truy cập để: Đặt TTL",
+                        "CANNOT_BURN_FUSES": "Hủy quyền truy cập để: Thay đổi quyền",
+                        "CANNOT_APPROVE": "Hủy bỏ quyền truy cập để: Thay đổi người quản lý gia hạn"
+                    }
+                },
+                "revokeChangeFuses": {
+                    "title": "Thu hồi quyền",
+                    "subtitle": "Bằng cách thu hồi quyền này, bạn sẽ mất vĩnh viễn khả năng thay đổi bất kỳ chốt nào còn lại. Điều này chỉ được đặt lại nếu tên hết hạn.",
+                    "fuses": {
+                        "CANNOT_BURN_FUSES": "Thu hồi quyền truy cập để: Thay đổi quyền"
+                    }
+                },
+                "revokeChangeFusesWarning": {
+                    "title": "Quyền còn lại sẽ bị khóa",
+                    "subtitle": "Quyền và cầu chì tùy chỉnh sẽ được khóa vĩnh viễn trong trạng thái hiện tại sau khi 'thay đổi quyền' bị thu hồi. Điều này chỉ được đặt lại nếu tên hết hạn."
+                }
+            },
+            "action": {
+                "revoke": "Hủy bỏ"
+            }
+        },
+        "unknownLabels": {
+            "title": "Xác nhận tên của bạn",
+            "subtitle": "Một số nhãn trong tên của bạn không được biết đến. Vui lòng nhập chúng để tiếp tục."
+        },
+        "deleteEmancipatedSubnameWarning": {
+            "title": "Tên phụ này không thể được tạo lại",
+            "message": "Xóa tên phụ này sẽ ngăn nó không được sử dụng hoặc tạo lại cho đến khi nó hết hạn{{date}}. Điều này không thể được hoàn tác vì quyền kiểm soát cấp cao đã bị thu hồi."
+        },
+        "setToMEP1002Hexagon": {
+            "title": "Đặt tên thành MEP1002 Hexagon",
+            "subtitle": "Điều này sẽ đặt tên thành Bản đồ Lục giác MEP1002 công khai.",
+            "h3index": "Chỉ số H3 của Lục giác"
+        },
+        "mintToMEP1002Hexagon": {
+            "title": "Khắc MEP1002 Lục giác",
+            "subtitle": "Điều này sẽ tạo ra một Bản đồ Lục giác MEP1002 công khai.",
+            "h3index": "Chỉ số H3 của Lục giác"
+        }
+    },
+    "transaction": {
+        "extendNames": {
+            "actionValue": "Mở rộng đăng ký",
+            "costValue": "{{value}} + phí",
+            "warning": "Việc mở rộng tên này không đồng nghĩa với việc bạn sở hữu nó"
+        },
+        "deleteSubname": {
+            "warning": "Xin chào mọi người"
+        }
+    },
+    "intro": {
+        "migrateAndUpdateResolver": {
+            "title": "Yêu Cầu Hành Động",
+            "heading": "Các chỉnh sửa bạn muốn lưu vào hồ sơ của mình yêu cầu bạn nâng cấp trình giải quyết của mình.",
+            "link": "Tìm hiểu thêm về nâng cấp resolver",
+            "warning": "Lưu ý rằng nếu bạn hủy lúc nào thì các thay đổi của bạn sẽ không được lưu."
+        },
+        "syncManager": {
+            "description": "Đồng bộ hóa quản lý sẽ biến bạn thành quản lý mới của tên này. Quản lý hiện tại <b>({{manager}})</b> sẽ không còn có khả năng thực hiện thay đổi.",
+            "wrappedWarning": "Đồng bộ hóa quản lý cũng sẽ bỏ bọc tên này. Điều này sẽ đốt NFT và đặt lại bất kỳ quyền hạn nào."
+        }
+    },
+    "errors": {
+        "duplicateKey": "{{value}} là một khóa trùng lặp"
+    }
 }

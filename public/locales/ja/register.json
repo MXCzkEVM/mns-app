@@ -2,7 +2,184 @@
     "title": "MNSに{{name}}を登録する",
     "subtitle": "登録",
     "heading": "{{name}}を登録する",
-    "invoice": "{'yearRegistration': '{{years}} 年登録', 'registration': '登録', 'estimatedNetworkFee': '推定ネットワーク料金', 'networkFee': 'ネットワーク料金', 'temporaryPremium': '一時的なプレミアム', 'total': '推定合計', 'totalPaid': '支払い済み合計'}",
-    "error": "{'nameTooLong': '登録したい名前が長すぎます。もっと短い名前を選んでください。'}",
-    "steps": "{'pricing': {'insufficientBalance': '残高不足', 'multipleYearsMessage': '複数年間の延長は、毎年の取引を避けることでネットワーク費用を節約します。', 'primaryName': 'プライマリ名として使用', 'primaryNameMessage': 'これにより、あなたのアドレスがこの名前にリンクされ、dAppsがそれをあなたのプロフィールとして表示することができます。1つのアドレスにつき1つのプライマリ名しか持てません。', 'premium': {'heading': 'この名前は一時的にプレミアムです', 'subheading': '最近期限切れになった名前に公平な機会を提供するため、プレミアムは$100,000,000から始まり、21日間で$0に減少します。以下の日付でプレミアムを計算することができます。', 'targetPrice': '目標価格', 'targetDate': '目標日', 'timezone': '{{timezone}}で表示される日時'}}, 'profile': {'title': 'プロフィールを作成する', 'title2': 'プロフィールを編集する', 'default': 'デフォルト', 'advanced': '詳細設定', 'permissions': 'パーミッション', 'resolver': 'リゾルバー', 'visibilityMessage': 'あなたのプロフィール情報はブロックチェーン上に保存されます。追加したものはすべて公開されます。', 'addProfile': 'プロフィール項目を追加する', 'addMore': 'プロフィールにさらに追加する', \n\n'options': {'groups': {'general': {'label': '一般', \n'items': {'name': 'ニックネーム', \n'url': \n'ウェブサイト',\n'location':\n'場所',\n'description':\n'短い自己紹介'},\n'placeholder':\n{'name':\n'ジョン・スミス',\n'url':\n'https://ens.domains',\n'location':\n'メタバース',\n'description':\n\"私はテネシー州田舎出身のイールドファーマーです。\"}},\n'social':\n{'label':\n'ソーシャル',\n'items':\n{'com.twitter':\n'Twitter',\n'com.github':\n'GitHub',\n'com.discord':\n'Discord'},\n'placeholder':\n{'com.twitter':\n'e.g. ensdomains',\n'com.github':\n'e.g. ensdomains',\n'com.discord':\n'e.g. alisha.eth#0001'}},\n'address':\n{'label':\n'住所',\n'itemLabel':\n'{{coin}} アドレス',\n'placeholder':\n{'default':\n'ここに住所を追加',\n'ETH':\n'0xD9hbQK...',\n'BNB':\n'bnb1grpf...',\n'BTC':\n'3FZbgi29...',\n'LTC':\n'ltc1qdp7p...',\n'SOL':\n'D4kA7VzHnmV...',\n'DOT':'1D4kA7VxH...',\n'DOGE':'DFabcd12...'}},\n'website':{'label':'ウェブサイト','items':{'ipfs':'IPFS','ipns':'IPNS','swarm':'Swarm','onion':'Onion','skynet':'Skynet','arweave':'Arweave'}, \n\n'options':{'groups':{'general':{'label':'一般','items':{'name':'ニックネーム','url':'ウェブサイト','location':'場所','description':'短い自己紹介'}, \n\n'options':{'groups':{'general':{'label':'一般','items':{'name':'ニックネーム','url':'ウェブサイト','location':'場所','description':'短い自己紹介'}, \n\n'options':{'groups':{'general':{'label':'一般','items':{'name':'ニックネーム','url':'ウェブサイト','location':'場所','description':'短い自己紹介'}, \n\n'options':{'groups':{'general':{'label':'一般','items':{'name':'ニックネ"
+    "invoice": {
+        "yearRegistration": "{{years}} 年間登録",
+        "registration": "登録",
+        "estimatedNetworkFee": "推定ネットワーク手数料",
+        "networkFee": "ネットワーク手数料",
+        "temporaryPremium": "一時的なプレミアム",
+        "total": "推定合計",
+        "totalPaid": "合計支払い済み"
+    },
+    "error": {
+        "nameTooLong": "登録したい名前が長すぎます。もっと短い名前を選んでください。"
+    },
+    "steps": {
+        "pricing": {
+            "insufficientBalance": "残高不足",
+            "multipleYearsMessage": "複数年間の延長は、毎年の取引を避けることでネットワーク費用を節約します。",
+            "primaryName": "プライマリ名として使用する",
+            "primaryNameMessage": "このリンクはあなたのアドレスをこの名前に関連付け、dAppsがそれをあなたのプロフィールとして表示できるようにします。一つのアドレスにつき一つの主要な名前しか持てません。",
+            "premium": {
+                "heading": "この名前には一時的なプレミアムがあります",
+                "subheading": "最近期限切れになった名前に公平な機会を提供するため、プレミアムは$100,000,000から始まり、21日間で$0に減少します。以下の日付でプレミアムを計算することができます。",
+                "targetPrice": "目標価格",
+                "targetDate": "目標日",
+                "timezone": "表示される日付と時間はローカルタイムゾーン({{timezone}})です"
+            }
+        },
+        "profile": {
+            "title": "プロフィールを作成する",
+            "title2": "プロフィールを編集する",
+            "default": "デフォルト",
+            "advanced": "高度な",
+            "permissions": "権限",
+            "resolver": "リゾルバー",
+            "visibilityMessage": "あなたのプロフィール情報はブロックチェーンに保存されます。追加したものはすべて公開されます。",
+            "addProfile": "プロフィールフィールドを追加",
+            "addMore": "プロフィールに追加する",
+            "options": {
+                "groups": {
+                    "general": {
+                        "label": "一般",
+                        "items": {
+                            "name": "ニックネーム",
+                            "url": "ウェブサイト",
+                            "location": "位置",
+                            "description": "短い自己紹介"
+                        },
+                        "placeholder": {
+                            "name": "ジョン・スミス",
+                            "url": "https://ens.domains",
+                            "location": "メタバース",
+                            "description": "私はテネシー州の田舎からのイールドファーマーです。"
+                        }
+                    },
+                    "social": {
+                        "label": "ソーシャル",
+                        "items": {
+                            "com.twitter": "ツイッター",
+                            "com.github": "GitHub",
+                            "com.discord": "ディスコード"
+                        },
+                        "placeholder": {
+                            "com.twitter": "例えば、ensdomains",
+                            "com.github": "例: ensdomains",
+                            "com.discord": "例：alisha.eth#0001"
+                        }
+                    },
+                    "address": {
+                        "label": "住所",
+                        "itemLabel": "{{coin}} アドレス",
+                        "placeholder": {
+                            "default": "ここにアドレスを追加してください",
+                            "ETH": "0xD9hbQK...",
+                            "BNB": "bnb1grpf...",
+                            "BTC": "3FZbgi29...",
+                            "LTC": "ltc1qdp7p...",
+                            "SOL": "D4kA7VzHnmV...",
+                            "DOT": "1D4kA7VxH...",
+                            "DOGE": "DFabcd12..."
+                        }
+                    },
+                    "website": {
+                        "label": "ウェブサイト",
+                        "items": {
+                            "ipfs": "IPFS",
+                            "ipns": "IPNS",
+                            "swarm": "スウォーム",
+                            "onion": "オニオン",
+                            "skynet": "スカイネット",
+                            "arweave": "Arweave"
+                        },
+                        "placeholder": {
+                            "default": "ここにURLを追加してください",
+                            "ipfs": "ipfs://...",
+                            "skynet": "sia://...",
+                            "arweave": "ar://...",
+                            "swarm": "bzz://...",
+                            "onion": "onion3://..."
+                        }
+                    },
+                    "other": {
+                        "label": "その他",
+                        "items": {
+                            "contentHash": "コンテンツハッシュ",
+                            "publicKey": "公開鍵",
+                            "abi": "ABI",
+                            "custom": "カスタム"
+                        }
+                    },
+                    "custom": {
+                        "key": "キー",
+                        "value": "価値"
+                    },
+                    "default": {
+                        "placeholder": "ここに価値を追加します"
+                    }
+                }
+            },
+            "errors": {
+                "labelRequired": "レコードキーが必要です",
+                "duplicateRecord": "重複するレコードキー",
+                "avatarReserved": "キーはアバターマネージャーによって使用されています"
+            },
+            "confirmations": {
+                "publicNotice": {
+                    "title": "あなたの詳細は公開されています",
+                    "description": "あなたがプロフィールに追加するものは、ブロックチェーン上で公開表示されます。",
+                    "confirm": "私は理解しています",
+                    "decline": "バック"
+                },
+                "clearEth": {
+                    "title": "ETHアドレスをクリアしますか？",
+                    "description": "ETHアドレスが設定されていないと、この名前にお金を送ることはできません。これは後で更新することができます。",
+                    "confirm": "クリア",
+                    "decline": "キャンセル"
+                }
+            },
+            "actions": {
+                "skipProfile": "プロフィールをスキップ"
+            }
+        },
+        "complete": {
+            "heading": "おめでとうございます！",
+            "subheading": "あなたは今、所有者になりました",
+            "description": "あなたの名前は正常に登録されました。現在、名前の表示と管理が可能です。",
+            "registerAnother": "別の登録",
+            "viewName": "表示名"
+        },
+        "info": {
+            "heading": "開始する前に",
+            "subheading": "あなたの名前を登録するには三つのステップが必要です",
+            "ethItems": "['トランザクションを完了してタイマーを開始します', 'タイマーが完了するまで60秒待ちます', '名前を確保するために二回目のトランザクションを完了します']",
+            "moonpayItems": "['MoonPayアカウントを作成するか、既存のアカウントにログインします', 'クレジットカードまたはデビットカードを使用して単一の取引を完了します']",
+            "setupProfile": "まず、私のプロフィールを設定したいです",
+            "paymentMethod": "支払い方法",
+            "notEnoughEth": "ウォレットにMXCが不足しています",
+            "creditOrDebit": "クレジットカードまたはデビットカード",
+            "additionalFee": "追加の処理手数料",
+            "pendingMoonpayTransaction": "あなたのMoonPayトランザクションが処理中です。これには最大2分かかる場合があります。確認メールから進行状況を確認できます。",
+            "failedMoonpayTransaction": "あなたのMoonPay取引は失敗しました。もう一度試すか、「Ethereum」の支払い方法を選択してください。",
+            "ethereum": "MXC",
+            "processing": "処理中",
+            "poweredBy": "提供元",
+            "moonpayModalHeader": "MoonPay チェックアウト",
+            "moonpayTestCard": "テストカード詳細"
+        },
+        "transactions": {
+            "heading": "もうすぐです",
+            "subheading": "このタイマーは、他の人があなたより先に名前を登録するのを防ぎます。名前は二回目のトランザクションが完了するまで登録されません。",
+            "startTimer": "タイマーを開始",
+            "wait": "お待ちください",
+            "transactionFailed": "取引失敗",
+            "transactionProgress": "進行中のトランザクション"
+        },
+        "cancelRegistration": {
+            "heading": "あなたのトランザクションは失われます",
+            "contentOne": "戻ると最初の取引がリセットされます。戻る場合は、取引を再度完了し、関連する手数料を支払う必要があります。",
+            "contentTwo": "続行してもよろしいですか？",
+            "footer": "トランザクションをリセットして戻る"
+        }
+    }
 }

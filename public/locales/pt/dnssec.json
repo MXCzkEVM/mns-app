@@ -21,7 +21,7 @@
         "title": "Adicionar Registros de Texto",
         "explanation": "Você precisa criar um novo registro DNS para o seu domínio usando esses detalhes. Isso reivindicará seu endereço Ethereum como o proprietário deste domínio.",
         "syncWarningOne": "Você não parece ser o proprietário do DNS deste domínio, mas ainda pode adicionar este nome ao Registro MNS.",
-        "syncWarningTwo": "Se você é o proprietário deste domínio, altere seu registro _ens TXT para conter seu Endereço Ethereum e clique em 'Verificar' novamente, caso contrário, clique em 'Reivindicar' para prosseguir.",
+        "syncWarningTwo": "Se você é o proprietário deste domínio, altere seu registro TXT _ens para incluir seu Endereço Ethereum e clique em 'Verificar' novamente, caso contrário, clique em 'Reivindicar' para prosseguir.",
         "type": "Digite",
         "txt": "TXT",
         "errors": {
@@ -58,7 +58,7 @@
     },
     "enableDNSSEC": {
         "title": "Ative o DNSSEC",
-        "instruction": "Você precisará visitar seu registrador de domínio para ativar o DNSSEC. Uma vez ativado, clique em 'Verificar' para passar para a próxima etapa.",
+        "instruction": "Você precisará visitar seu registrador de domínio para habilitar o DNSSEC. Uma vez habilitado, clique em 'Verificar' para passar para a próxima etapa.",
         "registrarHelp": "Escolha seu registrador na lista suspensa abaixo para instruções sobre como fazer isso.",
         "findRegistrar": "Encontre o seu registrador",
         "DNSSECNotEnabled": "DNSSEC não foi ativado neste domínio."

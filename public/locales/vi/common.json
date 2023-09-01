@@ -5,17 +5,323 @@
     "unsupportedNetwork": "Mạng không được hỗ trợ",
     "notFound": "404 Không Tìm Thấy",
     "etherscan": "Khám Phá Khối",
-    "action": "{'cancel': 'Hủy', 'change': 'Thay đổi', 'upload': 'Tải lên', 'close': 'Đóng', 'save': 'Lưu', 'edit': 'Chỉnh sửa', 'view': 'Xem', 'clear': 'Xóa', 'update': 'Cập nhật', 'learnMore': 'Tìm hiểu thêm', 'send': 'Gửi', 'next': 'Tiếp theo', 'add': 'Thêm', 'set': 'Đặt', 'search': 'Tìm kiếm', 'back': 'Quay lại', 'continue': 'Tiếp tục', 'confirm': 'Xác nhận',  'remove':  \"Loại bỏ\",  \"sign\": \"Ký\", \"reset\": \"Đặt lại\", \"transfer\": \"Chuyển\", \"tryAgain\": \"Thử lại\", \"done\": \"Hoàn tất\", \"burnSelected\": \"Đốt cháy đã chọn\", \"extend\": \"Mở rộng\", \"delete\": \"Xóa\", \"sort\": \"Sắp xếp\",  \"check\":  \"Kiểm tra\",  \"claim\":  \"Yêu cầu\",  \"remindMe\":  \"Nhắc tôi\",  \"begin\":  \"Bắt đầu\",  \"finish\":  \"Kết thúc\",  \"skip\":  \"Bỏ qua\",  \"changeNetwork\":  \"Thay đổi mạng\",  \"understand\":  \"Tôi hiểu\",   \"feedback\":   \"Phản hồi\",   \"migrate\":   \"Di chuyển\"}",
-    "unit": "{'years_one': '{{count}} năm', 'years_other': '{{count}} năm', 'yrs_one': '{{count}} năm', 'yrs_other': '{{count}} năm', 'gas': '{{value}} gas', 'selected': '{{count}} đã chọn', 'perPage': '{{count}} trên trang'}",
-    "navigation": "{'home': 'Trang chủ', 'names': 'Tên của tôi', 'favourites': 'Yêu thích', 'settings': 'Cài đặt', 'governance': 'Quản trị', 'community': 'Cộng đồng', 'developers': 'Nhà phát triển', 'support': 'Hỗ trợ', 'bounty': 'Thưởng lỗi', 'terms': 'Điều khoản sử dụng', 'privacy': 'Chính sách riêng tư', 'back': 'Quay lại', 'oldApp': 'Ứng dụng MNS cũ', 'language': 'Ngôn ngữ', 'currency': 'Tiền tệ', 'ipfsApp': 'Ứng dụng IPFS MNS', 'feedback': 'Phản hồi', 'syncMessage': \"Đang đồng bộ với mạng. Thay đổi từ giao dịch của bạn có thể chưa hiển thị.\"}",
-    "wallet": "{'myProfile': 'Hồ sơ', 'disconnect': 'Ngắt kết nối', 'connect': 'Kết nối', 'noPrimaryName': 'Không có Tên chính', 'viewProfile': 'Xem Hồ sơ', 'viewDetails': 'Xem Chi tiết', 'register': 'Đăng ký'}",
-    "name": "{'registered': 'Đã đăng ký', 'expires': 'Hết hạn', 'noExpiry': 'Không có thời hạn', 'expiry': 'Hết hạn', 'parent': 'Cha mẹ', 'noParent': 'Không có cha mẹ', 'registrant': 'Người đăng ký', 'controller': 'Người điều khiển', 'dnsOwner': 'Chủ sở hữu DNS', 'owner': 'Chủ sở hữu', 'notOwned': 'Không sở hữu', 'manager': 'Quản lý', 'all': 'Tất cả tên', 'expiresInYears_one': '{{count}} năm sau hết hạn', 'expiresInYears_other': '{{count}} năm sau hết hạn', 'expiresInMonths_one': '{{count}} tháng sau hết hạn', 'expiresInMonths_other': '{{count}} tháng sau hết hạn', 'expiresInDays_one': '{{count}} ngày sau hết hạn', 'expiresInDays_other': '{{count}} ngày sau hết hạn', 'expiresInHours_one': '{{count}} giờ sau hết hạn',  'expiresInHours_other': '{{count}} giờ sau hết hạn','expiresInHours_zero':'Ít hơn một giờ nữa sẽ hết hạn','expiredInHours_one':'{{count}} giờ trước đã hết hạn','expiredInHours_other':'{{count}} giờ trước đã hết hạn','expiredInHours_zero':'Ít hơn một giờ trước đã hết hạn','expiredInDays_one':'{{count}} ngày trước đã hết hạn','expiredInDays_other':'{{count}} ngày trước đã\nhết\nhạn','expiredInMonths_one':'{{count}} tháng trước đã\nhết\nhạn','expiredInMonths_other':'{{count}} tháng trước đã\nhết\nhạn','expiredInYears_one':'{{count}} năm trước đã\nhết\nhạn','expiredInYears_other':'{{count}} năm trước đã\nhết\nhạn',\n'gracePeriod':{'expiresInYears_one':'Thời gian ân xá {{count}} năm sau sẽ kết thúc',\n'expiresInYears_other':'Thời gian ân xá {{count}} năm sau sẽ kết thúc',\n'expiresInMonths_one':'Thời gian ân xá {{count}} tháng sau sẽ kết thúc',\n'expiresInMonths_other':'Thời gian ân xá {{count}} tháng sau sẽ kết thúc',\n'expiresInDays_one':'Thời gian ân xá {{count}} ngày sau sẽ kết thúc',\n'expiresInDays_other':'Thời gian ân xá {{count}} ngày sau sẽ kết thúc',\n'expiresInHours_one':'Thời gian ân xá {{count}} giờ sau sẽ kết thúc',\n'expiresInHours_other':'Thời gian ân xá {{count}} giờ sau sẽ kết thúc',\n'expiresInHours_zero':'Thời gian ân xá ít nhất một giờ nữa sẽ kếthúc'},\n'extend':\n'Mở rộng',\n'send':\n'Gửi',\n'transfer':\n'Chuyển nhượng',\n'sendManager':\n'Gửi Quản lý',\n'sendOwner':\n'Gửi Chủ sở'}",
-    "address": "{'label': 'Địa chỉ', 'viewAddress': 'Xem địa chỉ', 'copyAddress': 'Sao chép địa chỉ'}",
-    "records": "{'label': 'Hồ sơ'}",
-    "sortTypes": "{'expiryDate': 'Ngày hết hạn', 'labelName': 'Tên', 'creationDate': 'Ngày tạo'}",
-    "errors": "{'noResults': 'Không tìm thấy kết quả', 'invalidAddress': 'Địa chỉ không hợp lệ', 'addressRequired': 'Yêu cầu địa chỉ'}",
-    "transaction": "{'description': {'setName': 'Đặt tên', 'setRecords': 'Đặt hồ sơ', 'test': 'Giao dịch thử nghiệm', 'addSuccess': 'Thêm thành công', 'sendName': 'Gửi tên', 'migrateProfile': 'Chuyển đổi hồ sơ', 'migrateProfileWithReset': 'Chuyển đổi hồ sơ', 'migrateProfileWithSync': 'Chuyển đổi và cập nhật hồ sơ', 'wrapName': 'Gói tên', 'updateResolver': 'Cập nhật trình giải quyết', 'updateProfile': 'Cập nhật hồ sơ', 'setPrimaryName': 'Đặt tên chính', 'updateEthAddress': 'Cập nhật địa chỉ ETH', 'testSendName': 'Gửi tên', 'burnFuses': 'Đốt quyền truy cập', 'createSubname': 'Tạo tên phụ', 'deleteSubname': 'Xóa tên phụ', 'extendNames': 'Mở rộng tên', \n'importDNSSECName': \n'Nhập tên DNSSEC',\n'commitName':\n'Bắt đầu bộ hẹn giờ',\n'registerName':\n'Đăng ký tên',\n'approveNameWrapper':\n'Chấp thuận NameWrapper',\n'clearRecords':\n'Xóa hồ sơ',\n'updateRecords':\n'Cập nhật hồ sơ',\n'transferName':\n'Chuyển giao tên',\n'changePermissions':\n'Thay đổi quyền truy cập',\n'syncManager':\n'Dồng bộ quản lý',\n'updateProfileRecords':\n'Cập nhật hồ sơ',\n'resetProfile':\n'Reset hồ sơ',\n'setHexagonName':\n'Đặt Tên Hexagon MEP1002',\n'mintHexagon':\n'Tạo Hexagon MEP1002'},\n'info':{'sendName':'Thiết lập người điều khiển và người đăng ký của tên','migrateProfile':'Thiết lập các bản ghi hiện có trên trình giải quyết mới','migrateProfileWithReset':'Thiết lập các bản ghi hiện có trên trình giải quyết mới','migrateProfileWithSync':'Thiết lập các bản ghi hiện có trên trình giải quyết mới','wrapName':'Gói tên và thiết lập trình giải quyết mới','updateResolver':'Thay đổi trình giải quyết thành','updateProfile':'Cập nhật bản ghi trên trình giải quyết hiện có','setPrimaryName':'Đặt tên chính cho địa chỉ của bạn','updateEthAddress':'Cập nhật địa chỉ ETH thành địa chỉ này','testSendName':'Thiết lập người điều khiển và người đăng ký của tên','createSubname':'Tạo một tên phụ mới trên tên','burnFuses':'Đốt các quyền đã chọn cho đến khi tên hết hạn','commitName':'Bắt đầu bộ hẹn giờ để đăng ký tên','approveNameWrapper':'Chấp thuận NameWrapper để quản lý các tên của bạn'},\n'itemLabel':{'name':'Tên','address':'Địa chỉ','action':'Hành động','info':'Thông tin','to':'Tới','subname':'Tên phụ','duration':'Thời gian','cost':'Chi phí','update':'Cập nhật','resolver':'Trình giải quyết'},\n'itemValue':{'records_one':'{{count}} bản ghi','records_other':'{{count}} bản ghi'},\n'status':{'pending':{'regular':'Đang chờ'},'confirmed':{'regular':'Đã xác nhận'},'failed':{'regular':'Thất bại'}},\n'dialog':{'intro':{'trailingButtonResume':''},'confirm':{'title':''},'sent':{'title':''},'complete':{'title':''},'failed':{'title':''}},\n'error':{'request':{'INSUFFICIENT_FUNDS':''}},\n'viewEtherscan':\"Xem trên BlockExplorer\",\n'viewMore':\"Xem thêm\"}",
-    "search": "{'label': 'Tìm kiếm tên', 'placeholder': 'Tìm kiếm một tên', 'emptyText': 'Nhập tên hoặc địa chỉ để tìm kiếm...', 'address': 'Địa chỉ', 'errors': {'tooShort': 'Tên quá ngắn', 'invalid': 'Định dạng tên không hợp lệ'}, 'status': {'registered': 'Đã đăng ký', 'gracePeriod': 'Thời gian ân hạn', 'premium': 'Tạm thời cao cấp', 'available': 'Có sẵn', 'notOwned': 'Không sở hữu', 'notImported': 'Không được nhập khẩu', 'short': 'Quá ngắn', 'default': 'Không hợp lệ', 'unsupportedTLD': 'Không được hỗ trợ', 'imported': 'Đã nhập khẩu', 'owned': 'Đã sở hữu'}}",
-    "selectableInput": "{'add': 'Thêm', 'placeholder': 'Chọn một tùy chọn', 'empty': 'Không tìm thấy tùy chọn'}",
-    "testnetFaucet": "{'explanation': 'Mỗi địa chỉ trên goerli có thể yêu cầu {{ amount }}ETH để thử nghiệm ứng dụng quản lý MNS, cũng như tất cả các hợp đồng mới.', 'note': 'Có thể mất vài phút để hiển thị trong ví của bạn.'}"
+    "action": {
+        "cancel": "Hủy",
+        "change": "Thay đổi",
+        "upload": "Tải lên",
+        "close": "Đóng",
+        "save": "Lưu",
+        "edit": "Chỉnh sửa",
+        "view": "Xem",
+        "clear": "Xóa",
+        "update": "Cập nhật",
+        "learnMore": "Tìm hiểu thêm",
+        "send": "Gửi",
+        "next": "Tiếp theo",
+        "add": "Thêm",
+        "set": "Đặt",
+        "search": "Tìm kiếm",
+        "back": "Quay lại",
+        "continue": "Tiếp tục",
+        "confirm": "Xác nhận",
+        "remove": "Xóa",
+        "sign": "Ký",
+        "reset": "Đặt lại",
+        "transfer": "Chuyển",
+        "tryAgain": "Thử Lại",
+        "done": "Hoàn thành",
+        "burnSelected": "Đốt Lựa Chọn",
+        "extend": "Mở rộng",
+        "delete": "Xóa",
+        "sort": "Sắp xếp",
+        "check": "Kiểm tra",
+        "claim": "Yêu cầu",
+        "remindMe": "Nhắc Tôi",
+        "begin": "Bắt đầu",
+        "finish": "Hoàn tất",
+        "skip": "Bỏ qua",
+        "changeNetwork": "Đổi Mạng",
+        "understand": "Tôi hiểu",
+        "feedback": "Phản hồi",
+        "migrate": "Chuyển đổi"
+    },
+    "unit": {
+        "years_one": "{{count}} năm",
+        "years_other": "{{count}} năm",
+        "yrs_one": "{{count}} năm",
+        "yrs_other": "{{count}} năm",
+        "gas": "{{value}} gas",
+        "selected": "{{count}} đã được chọn",
+        "perPage": "{{count}} mỗi trang"
+    },
+    "navigation": {
+        "home": "Trang chủ",
+        "names": "Tên tôi",
+        "favourites": "Yêu thích",
+        "settings": "Cài đặt",
+        "governance": "Quản trị",
+        "community": "Cộng đồng",
+        "developers": "Nhà phát triển",
+        "support": "Hỗ trợ",
+        "bounty": "Thưởng Lỗi",
+        "terms": "Điều Khoản Sử Dụng",
+        "privacy": "Chính sách Bảo mật",
+        "back": "Quay lại",
+        "oldApp": "Ứng dụng MNS cũ",
+        "language": "Ngôn ngữ",
+        "currency": "Tiền tệ",
+        "ipfsApp": "Ứng dụng IPFS MNS",
+        "feedback": "Phản hồi",
+        "syncMessage": "Đang đồng bộ với mạng. Các thay đổi từ giao dịch của bạn có thể chưa hiển thị."
+    },
+    "wallet": {
+        "myProfile": "Hồ sơ",
+        "disconnect": "Ngắt kết nối",
+        "connect": "Kết nối",
+        "noPrimaryName": "Không có Tên Chính",
+        "viewProfile": "Xem Hồ Sơ",
+        "viewDetails": "Xem Chi Tiết",
+        "register": "Đăng ký"
+    },
+    "name": {
+        "registered": "Đã đăng ký",
+        "expires": "Hết hạn",
+        "noExpiry": "Không hết hạn",
+        "expiry": "Hạn sử dụng",
+        "parent": "Cha Mẹ",
+        "noParent": "Không có bố mẹ",
+        "registrant": "Người đăng ký",
+        "controller": "Điều khiển",
+        "dnsOwner": "Chủ sở hữu DNS",
+        "owner": "Chủ sở hữu",
+        "notOwned": "Không Sở Hữu",
+        "manager": "Quản lý",
+        "all": "Tất cả Tên",
+        "expiresInYears_one": "Hết hạn trong {{count}} năm",
+        "expiresInYears_other": "Hết hạn trong {{count}} năm",
+        "expiresInMonths_one": "Hết hạn trong {{count}} tháng",
+        "expiresInMonths_other": "Hết hạn trong {{count}} tháng",
+        "expiresInDays_one": "Hết hạn trong {{count}} ngày",
+        "expiresInDays_other": "Hết hạn trong {{count}} ngày",
+        "expiresInHours_one": "Hết hạn trong {{count}} giờ",
+        "expiresInHours_other": "Hết hạn trong {{count}} giờ",
+        "expiresInHours_zero": "Hết hạn trong ít hơn một giờ",
+        "expiredInHours_one": "Hết hạn {{count}} giờ trước",
+        "expiredInHours_other": "Hết hạn {{count}} giờ trước",
+        "expiredInHours_zero": "Hết hạn ít hơn một giờ trước",
+        "expiredInDays_one": "Hết hạn {{count}} ngày trước",
+        "expiredInDays_other": "Hết hạn {{count}} ngày trước",
+        "expiredInMonths_one": "Hết hạn {{count}} tháng trước",
+        "expiredInMonths_other": "Hết hạn {{count}} tháng trước",
+        "expiredInYears_one": "Hết hạn {{count}} năm trước",
+        "expiredInYears_other": "Hết hạn {{count}} năm trước",
+        "gracePeriod": {
+            "expiresInYears_one": "Thời gian ân hạn hết hạn trong {{count}} năm",
+            "expiresInYears_other": "Thời gian ân hạn hết hạn trong {{count}} năm",
+            "expiresInMonths_one": "Thời gian ân hạn hết hạn trong {{count}} tháng",
+            "expiresInMonths_other": "Thời gian ân hạn hết hạn trong {{count}} tháng",
+            "expiresInDays_one": "Thời gian ân hạn kết thúc trong {{count}} ngày",
+            "expiresInDays_other": "Thời gian ân hạn sẽ hết trong {{count}} ngày",
+            "expiresInHours_one": "Thời gian ân hạn kết thúc trong {{count}} giờ",
+            "expiresInHours_other": "Thời gian ân hạn kết thúc trong {{count}} giờ",
+            "expiresInHours_zero": "Thời gian ân hạn sẽ hết trong ít hơn một giờ"
+        },
+        "extend": "Mở rộng",
+        "send": "Gửi",
+        "transfer": "Chuyển",
+        "sendManager": "Quản lý Gửi",
+        "sendOwner": "Gửi Chủ sở hữu"
+    },
+    "address": {
+        "label": "Địa chỉ",
+        "viewAddress": "Xem địa chỉ",
+        "copyAddress": "Sao chép địa chỉ"
+    },
+    "records": {
+        "label": "Hồ sơ"
+    },
+    "sortTypes": {
+        "expiryDate": "Ngày hết hạn",
+        "labelName": "Tên",
+        "creationDate": "Ngày tạo"
+    },
+    "errors": {
+        "noResults": "Không tìm thấy kết quả",
+        "invalidAddress": "Địa chỉ không hợp lệ",
+        "addressRequired": "Yêu cầu địa chỉ"
+    },
+    "transaction": {
+        "description": {
+            "setName": "Đặt tên",
+            "setRecords": "Đặt kỷ lục",
+            "test": "Giao dịch thử nghiệm",
+            "addSuccess": "Thêm thành công",
+            "sendName": "Gửi tên",
+            "migrateProfile": "Chuyển đổi hồ sơ",
+            "migrateProfileWithReset": "Chuyển đổi hồ sơ",
+            "migrateProfileWithSync": "Chuyển đổi và cập nhật hồ sơ",
+            "wrapName": "Tên gói",
+            "updateResolver": "Cập nhật trình giải quyết",
+            "updateProfile": "Cập nhật hồ sơ",
+            "setPrimaryName": "Đặt tên chính",
+            "updateEthAddress": "Cập nhật địa chỉ ETH",
+            "testSendName": "Gửi tên",
+            "burnFuses": "Quyền đốt",
+            "createSubname": "Tạo tên phụ",
+            "deleteSubname": "Xóa tên phụ",
+            "extendNames": "Mở rộng tên",
+            "importDNSSECName": "nhập tên DNSSEC",
+            "commitName": "Bắt đầu hẹn giờ",
+            "registerName": "Đăng ký tên",
+            "approveNameWrapper": "Chấp nhận NameWrapper",
+            "clearRecords": "Xóa hồ sơ",
+            "updateRecords": "Cập nhật hồ sơ",
+            "transferName": "Chuyển tên",
+            "changePermissions": "Thay đổi quyền hạn",
+            "syncManager": "Quản lý đồng bộ",
+            "updateProfileRecords": "Cập nhật hồ sơ",
+            "resetProfile": "Đặt lại hồ sơ",
+            "setHexagonName": "Đặt Tên Hình Lục Giác MEP1002",
+            "mintHexagon": "Khắc MEP1002 Lục giác"
+        },
+        "info": {
+            "sendName": "Đặt điều khiển và người đăng ký cho tên",
+            "migrateProfile": "Đặt hồ sơ hiện tại trên trình giải quyết mới",
+            "migrateProfileWithReset": "Đặt hồ sơ hiện tại trên trình giải quyết mới",
+            "migrateProfileWithSync": "Đặt hồ sơ hiện tại trên trình giải quyết mới",
+            "wrapName": "Đóng gói tên và đặt trình giải quyết mới",
+            "updateResolver": "Đổi resolver thành",
+            "updateProfile": "Cập nhật hồ sơ trên trình giải quyết hiện tại",
+            "setPrimaryName": "Đặt tên chính cho địa chỉ của bạn",
+            "updateEthAddress": "Cập nhật địa chỉ ETH thành địa chỉ này",
+            "testSendName": "Đặt điều khiển và người đăng ký cho tên",
+            "createSubname": "Tạo một tên phụ mới trên tên",
+            "burnFuses": "Đốt các quyền đã chọn cho đến khi hết hạn tên",
+            "commitName": "Bắt đầu hẹn giờ để đăng ký tên",
+            "approveNameWrapper": "Cho phép NameWrapper quản lý tên của bạn",
+            "fuses": {
+                "revoke": "Hủy bỏ",
+                "grant": "Cấp",
+                "setExpiry": "Đặt hạn sử dụng",
+                "PARENT_CANNOT_CONTROL": "Đầu hàng quyền kiểm soát của cha mẹ",
+                "CAN_EXTEND_EXPIRY": "Gia hạn hết hạn",
+                "CANNOT_UNWRAP": "Giải nén tên này",
+                "CANNOT_CREATE_SUBDOMAIN": "Tạo tên miền phụ",
+                "CANNOT_SET_RESOLVER": "Đặt trình giải quyết",
+                "CANNOT_SET_TTL": "Đặt TTL",
+                "CANNOT_TRANSFER": "Gửi tên này",
+                "CANNOT_BURN_FUSES": "Thay đổi quyền hạn",
+                "CANNOT_APPROVE": "Đổi người quản lý gia hạn"
+            }
+        },
+        "itemLabel": {
+            "name": "Tên",
+            "address": "Địa chỉ",
+            "action": "Hành động",
+            "info": "Thông tin",
+            "to": "Để",
+            "subname": "Tên phụ",
+            "duration": "Thời lượng",
+            "cost": "Chi phí",
+            "update": "Cập nhật",
+            "resolver": "Giải quyết",
+            "h3Index": "Chỉ số H3"
+        },
+        "itemValue": {
+            "records_one": "{{count}} hồ sơ",
+            "records_other": "{{count}} hồ sơ"
+        },
+        "status": {
+            "pending": {
+                "regular": "Đang chờ"
+            },
+            "confirmed": {
+                "regular": "Đã xác nhận",
+                "notifyTitle": "Giao dịch thành công",
+                "notifyMessage": "Giao dịch \"{{action}}\" của bạn đã thành công"
+            },
+            "failed": {
+                "regular": "Thất bại",
+                "notifyTitle": "Giao dịch thất bại",
+                "notifyMessage": "Giao dịch \"{{action}}\" của bạn đã thất bại và đã được hoàn lại"
+            }
+        },
+        "dialog": {
+            "intro": {
+                "trailingButton": "Bắt đầu",
+                "trailingButtonResume": "Tiếp tục",
+                "step": "Bước {{step}}"
+            },
+            "confirm": {
+                "title": "Xác Nhận Chi Tiết",
+                "message": "Kiểm tra lại những chi tiết này trước khi xác nhận trong ví của bạn.",
+                "waitingForWallet": "Đang chờ Ví",
+                "openWallet": "Mở Ví"
+            },
+            "sent": {
+                "title": "Giao dịch Đã Gửi",
+                "message": "Giao dịch của bạn đang được tiến hành, bạn có thể đóng lại và quay lại sau.",
+                "progress": {
+                    "title": "Gửi",
+                    "message": "Mất thời gian lâu hơn dự kiến"
+                }
+            },
+            "complete": {
+                "title": "Giao dịch Hoàn tất",
+                "message": "Giao dịch của bạn đã hoàn tất!",
+                "progress": {
+                    "title": "Hoàn thành"
+                }
+            },
+            "failed": {
+                "title": "Giao dịch thất bại",
+                "progress": {
+                    "title": "Thất bại"
+                }
+            },
+            "error": {
+                "gasLimit": "Giới hạn gas cho giao dịch của bạn không đủ cao, vui lòng thử lại."
+            }
+        },
+        "error": {
+            "request": {
+                "INSUFFICIENT_FUNDS": "Số dư trong ví không đủ",
+                "UNPREDICTABLE_GAS_LIMIT": "Đã xảy ra lỗi không xác định"
+            }
+        },
+        "viewEtherscan": "Xem trên BlockExplorer",
+        "viewMore": "Xem Thêm"
+    },
+    "search": {
+        "label": "Tìm kiếm tên",
+        "placeholder": "Tìm kiếm tên",
+        "emptyText": "Nhập tên hoặc địa chỉ để tìm kiếm...",
+        "address": "Địa chỉ",
+        "errors": {
+            "tooShort": "Tên quá ngắn",
+            "invalid": "Định dạng tên không hợp lệ"
+        },
+        "status": {
+            "registered": "Đã đăng ký",
+            "gracePeriod": "Thời gian ân hạn",
+            "premium": "Tạm thời Premium",
+            "available": "Có sẵn",
+            "notOwned": "Không Sở Hữu",
+            "notImported": "Không Được Nhập khẩu",
+            "short": "Quá Ngắn",
+            "default": "Không hợp lệ",
+            "unsupportedTLD": "Không Hỗ Trợ",
+            "imported": "Đã Nhập",
+            "owned": "Sở hữu"
+        }
+    },
+    "selectableInput": {
+        "add": "Thêm",
+        "placeholder": "Chọn một tùy chọn",
+        "empty": "Không tìm thấy lựa chọn"
+    },
+    "testnetFaucet": {
+        "explanation": "Mỗi địa chỉ trên goerli có thể yêu cầu {{ amount }}ETH để thử nghiệm ứng dụng quản lý MNS, cũng như tất cả các hợp đồng mới.",
+        "note": "Có thể mất vài phút để hiển thị trong ví của bạn."
+    }
 }

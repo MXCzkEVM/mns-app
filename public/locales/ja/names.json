@@ -1,6 +1,15 @@
 {
     "title": "名前",
-    "subtitle": "{'start': 'すべての名前が保持されています', 'this': 'これ', 'your': 'あなたの', 'wallet': 'ウォレット'}",
+    "subtitle": {
+        "start": "すべての名前が保持されています",
+        "this": "この",
+        "your": "あなたの",
+        "wallet": "ウォレット"
+    },
     "empty": "このアドレスに対応する名前が見つかりません",
-    "sortTypes": "{'expiryDate': '有効期限', 'labelName': '名前', 'creationDate': '作成日'}"
+    "sortTypes": {
+        "expiryDate": "有効期限",
+        "labelName": "名前",
+        "creationDate": "作成日"
+    }
 }

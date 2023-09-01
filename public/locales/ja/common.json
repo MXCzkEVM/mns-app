@@ -5,17 +5,323 @@
     "unsupportedNetwork": "サポートされていないネットワーク",
     "notFound": "404 ページが見つかりません",
     "etherscan": "ブロックエクスプローラー",
-    "action": "{'cancel': 'キャンセル', 'change': '変更', 'upload': 'アップロード', 'close': '閉じる', 'save': '保存', 'edit': '編集', 'view': '表示', 'clear': 'クリア', 'update': '更新', 'learnMore': '詳細を学ぶ', 'send': '送信', 'next': '次へ', 'add': '追加', 'set': '設定', 'search': '検索', 'back': '戻る',  'continue': 進む,  confirm: 確認, remove: 削除, sign: 署名, reset: リセット, transfer: 転送, tryAgain: 再試行, done: 完了, burnSelected: 選択したものを燃やす, extend: 拡張, delete: 削除, sort: ソート, check: チェック, claim: 請求する, remindMe: 私に思い出させて, begin: 開始する, finish: 完了する, skip: スキップする, changeNetwork: ネットワークを変更する, understand: 理解した, feedback: フィードバック, migrate: 移行する}",
-    "unit": "{'years_one': '{{count}} 年', 'years_other': '{{count}} 年', 'yrs_one': '{{count}} 年', 'yrs_other': '{{count}} 年', 'gas': '{{value}} ガス', 'selected': '{{count}} 選択済み', 'perPage': '{{count}} ページあたり'}",
-    "navigation": "{'home': 'ホーム', 'names': 'マイネーム', 'favourites': 'お気に入り', 'settings': '設定', 'governance': 'ガバナンス', 'community': 'コミュニティ', 'developers': '開発者', 'support': 'サポート', 'bounty': 'バグバウンティ', 'terms': '利用規約', 'privacy': 'プライバシーポリシー', 'back': '戻る', 'oldApp': '旧MNSアプリ', 'language': '言語', 'currency': '通貨',  'ipfsApp':  'IPFS MNSアプリ',  'feedback':  'フィードバック',  'syncMessage':  \"ネットワークと同期中。あなたのトランザクションからの変更はまだ表示されていないかもしれません。\"}",
-    "wallet": "{'myProfile': 'プロフィール', 'disconnect': '切断', 'connect': '接続', 'noPrimaryName': '主要な名前なし', 'viewProfile': 'プロフィールを見る', 'viewDetails': '詳細を見る', 'register': '登録'}",
-    "name": "{'registered': '登録済み', 'expires': '有効期限', 'noExpiry': '有効期限なし', 'expiry': '有効期限', 'parent': '親', 'noParent': '親なし', 'registrant': '登録者', 'controller': 'コントローラー', 'dnsOwner': 'DNSオーナー', 'owner': '所有者', 'notOwned': '未所有', 'manager': 'マネージャー', 'all': '全ての名前', 'expiresInYears_one': '{{count}}年後に有効期限が切れます', 'expiresInYears_other': '{{count}}年後に有効期限が切れます', 'expiresInMonths_one': '{{count}}ヶ月後に有効期限が切れます', 'expiresInMonths_other': '{{count}}ヶ月後に有効期限が切れます',  'expiresInDays_one': '{{count}}日後に有効期限が切れます',  'expiresInDays_other': '{{count}}日後に有効期限が切れます',  'expiresInHours_one': '{{count}}時間後に有効期限が切れます',  'expiresInHours_other': '{{count}}時間後に有効期限が切れます',  'expiresInHours_zero': 一時間以内に有効期限が切れます,  expiredInHours_one: '{{count}}時間前に有効期限が切れました' , expiredInHours_other: '{{count}}時間前に有効期限が切れました' , expiredInHours_zero: 一時間以内に有効期限が切れました, expiredInDays_one: '{{count}}日前に有効期限が切れました' , expiredInDays_other: '{{count}}日前に有効期限が切れました' , expiredInMonths_one: '{{count}}ヶ月前に有効期限が切れました' , expiredInMonths_other: '{{count}}ヶ月前に有効期限が切れました' , expiredInYears_one: '{{count}}年前に有効期限が切れました' , expiredInYears_other: '{{count}}年前に有効期限が切れました' , gracePeriod: {expiresInYears_one: 猶予期間は{{count}}年後に終了します, expiresInYears_other: 猶予期間は{{count}}年後に終了します, expiresInMonths_one: 猶予期間は{{count}}ヶ月後に終了します, expiresInMonths_other: 猶予期間は{{count}}ヶ月後に終了します, expiresInDays_one: 猶予期間は{{count}}日後に終了します, expiresInDays_other: 猶予期間は{{count}}日後に終了します, expiresInHours_one: 猶予期間は{{count}}時間後に終了します, expiresInHours_other: 猶予期間は{{count}}時間後に終了します, expiresInHours_zero: 猶予期間は一時間以内に終了します}, extend: 延長する, send: 送信する, transfer: 転送する, sendManager: マネージャーを送る, sendOwner: オーナーを送る}",
-    "address": "{'label': 'アドレス', 'viewAddress': 'アドレスを見る', 'copyAddress': 'アドレスをコピー'}",
-    "records": "{'label': '記録'}",
-    "sortTypes": "{'expiryDate': '有効期限', 'labelName': '名前', 'creationDate': '作成日'}",
-    "errors": "{'noResults': '結果が見つかりません', 'invalidAddress': '無効なアドレス', 'addressRequired': 'アドレスが必要です'}",
-    "transaction": "{'description': {'setName': '名前を設定', 'setRecords': 'レコードを設定', 'test': 'テストトランザクション', 'addSuccess': '追加成功', 'sendName': '名前を送る', 'migrateProfile': 'プロフィールを移行', 'migrateProfileWithReset': 'プロフィールを移行', 'migrateProfileWithSync': 'プロフィールの移行と更新', 'wrapName': '名前をラップ', 'updateResolver': 'リゾルバーを更新', 'updateProfile': 'プロフィールを更新', 'setPrimaryName': '主要な名前を設定', 'updateEthAddress': 'ETHアドレスを更新', 'testSendName': '名前を送る', 'burnFuses': '権限を破棄', 'createSubname': 'サブネームを作成', 'deleteSubname': 'サブネームを削除', 'extendNames': '名前を拡張', 'importDNSSECName': 'DNSSEC名前のインポート',  commitName: タイマー開始, registerName: 名前登録, approveNameWrapper: NameWrapper承認, clearRecords: レコードクリア, updateRecords: レコード更新, transferName: 名前転送, changePermissions: 権限変更, syncManager: 同期マネージャー, updateProfileRecords: プロフィール更新, resetProfile: プロフィールリセット, setHexagonName: MEP1002ヘキサゴン名設定, mintHexagon: MEP1002ヘキサゴン発行}, info: {sendName: 名前の管理者と登録者の設定, migrateProfile: 新しいリゾルバーに既存のレコード設定, migrateProfileWithReset: 新しいリゾルバーに既存のレコード設定, migrateProfileWithSync: 新しいリゾルバーに既存のレコード設定, wrapName: 名前ラッピングと新規リゾルバー設定, updateResolver: リゾルバー変更先へ, updateProfile: 既存のリゾルバーでレコード更新, setPrimaryName: アドレスの主要な名前設定, updateEthAddress: ETHアドレス更新先へこのアドレスへ, testSendName: 名前の管理者と登録者の設定}, itemLabel:{name:'名前' , address:'アドレス' , action:'アクション' , info:'情報' , to:'宛先' , subname:'サブネーム' , duration:'期間' , cost:'費用' , update:'更新' , resolver:'リゾルバー' , h3Index:'H3インデックス'}, itemValue:{records_one:'{{count}} レコード' , records_other:'{{count}} レコード'}, status:{pending:{regular:'保留中'}, confirmed:{regular:'確認済み' , notifyTitle:'トランザクション成功' , notifyMessage:'\"{{action}}\"トランザクションは成功しました'}, failed:{regular:'失敗' , notifyTitle:'トランザクション失敗' , notifyMessage:'\"{{action}}\"トランザクションは失敗し、元に戻されました'}}, dialog:{intro:{trailingButton:'開始' , trailingButtonResume:'再開' , step:'ステップ {{step}}'}, confirm:{title:'詳細確認' , message:'ウォレットで確認する前にこれらの詳細を再度確認してください。' , waitingForWallet:'ウォレット待ち' , openWallet:'ウォレット開く'}, sent:{title:'トランザクション送信済み' , message:''あなたのトランザクションは進行中です、後で戻ってきても大丈夫です。''},",
-    "search": "{'label': '名前検索', 'placeholder': '名前を検索', 'emptyText': '名前またはアドレスを入力して検索...', 'address': 'アドレス', 'errors': {'tooShort': '名前が短すぎます', 'invalid': '名前の形式が無効です'}, 'status': {'registered': '登録済み', 'gracePeriod': '猶予期間', 'premium': '一時プレミアム', 'available': '利用可能', 'notOwned': '所有されていません', 'notImported': 'インポートされていません', 'short': '短すぎます', 'default': '無効', 'unsupportedTLD': 'サポートされていないTLD', 'imported': 'インポート済み',  'owned': \t'所有'}}",
-    "selectableInput": "{'add': '追加', 'placeholder': 'オプションを選択', 'empty': 'オプションが見つかりません'}",
-    "testnetFaucet": "{'explanation': 'goerliの各アドレスは、MNSマネージャーアプリと全ての新規契約をテストするために{{ amount }}ETHを請求できます。', 'note': 'ウォレットに表示されるまでに数分かかる場合があります。'}"
+    "action": {
+        "cancel": "キャンセル",
+        "change": "変更",
+        "upload": "アップロード",
+        "close": "閉じる",
+        "save": "保存",
+        "edit": "編集",
+        "view": "表示",
+        "clear": "クリア",
+        "update": "アップデート",
+        "learnMore": "詳しく学ぶ",
+        "send": "送信",
+        "next": "次",
+        "add": "追加",
+        "set": "設定",
+        "search": "検索",
+        "back": "戻る",
+        "continue": "続ける",
+        "confirm": "確認",
+        "remove": "削除",
+        "sign": "サインイン",
+        "reset": "リセット",
+        "transfer": "送金",
+        "tryAgain": "再試行してください",
+        "done": "完了",
+        "burnSelected": "選択したものを燃やす",
+        "extend": "延長",
+        "delete": "削除",
+        "sort": "並べ替え",
+        "check": "確認してください",
+        "claim": "請求する",
+        "remindMe": "私にリマインドしてください",
+        "begin": "開始",
+        "finish": "完了",
+        "skip": "スキップ",
+        "changeNetwork": "ネットワークを変更",
+        "understand": "私は理解しています",
+        "feedback": "フィードバック",
+        "migrate": "移行"
+    },
+    "unit": {
+        "years_one": "{{count}} 年",
+        "years_other": "{{count}} 年",
+        "yrs_one": "{{count}} 年",
+        "yrs_other": "{{count}} 年",
+        "gas": "{{value}} ガス",
+        "selected": "{{count}} 選択済み",
+        "perPage": "{{count}} ページあたり"
+    },
+    "navigation": {
+        "home": "ホーム",
+        "names": "私の名前",
+        "favourites": "お気に入り",
+        "settings": "設定",
+        "governance": "ガバナンス",
+        "community": "コミュニティ",
+        "developers": "開発者",
+        "support": "サポート",
+        "bounty": "バグバウンティ",
+        "terms": "利用規約",
+        "privacy": "プライバシーポリシー",
+        "back": "バック",
+        "oldApp": "旧MNSアプリ",
+        "language": "言語",
+        "currency": "通貨",
+        "ipfsApp": "IPFS MNSアプリ",
+        "feedback": "フィードバック",
+        "syncMessage": "ネットワークと同期中。あなたのトランザクションからの変更はまだ表示されていないかもしれません。"
+    },
+    "wallet": {
+        "myProfile": "プロフィール",
+        "disconnect": "切断",
+        "connect": "接続",
+        "noPrimaryName": "プライマリ名なし",
+        "viewProfile": "プロフィールを見る",
+        "viewDetails": "詳細を見る",
+        "register": "登録"
+    },
+    "name": {
+        "registered": "登録済み",
+        "expires": "有効期限切れ",
+        "noExpiry": "有効期限なし",
+        "expiry": "有効期限",
+        "parent": "親",
+        "noParent": "親はいません",
+        "registrant": "登録者",
+        "controller": "コントローラー",
+        "dnsOwner": "DNSオーナー",
+        "owner": "所有者",
+        "notOwned": "所有されていない",
+        "manager": "マネージャー",
+        "all": "すべての名前",
+        "expiresInYears_one": "{{count}} 年後に有効期限が切れます",
+        "expiresInYears_other": "{{count}}年後に有効期限が切れます",
+        "expiresInMonths_one": "{{count}}ヶ月後に有効期限が切れます",
+        "expiresInMonths_other": "{{count}} ヶ月後に期限切れ",
+        "expiresInDays_one": "{{count}}日で有効期限が切れます",
+        "expiresInDays_other": "{{count}}日後に有効期限が切れます",
+        "expiresInHours_one": "{{count}} 時間で期限切れ",
+        "expiresInHours_other": "{{count}} 時間後に期限切れ",
+        "expiresInHours_zero": "1時間未満で有効期限が切れます",
+        "expiredInHours_one": "{{count}} 時間前に期限切れ",
+        "expiredInHours_other": "{{count}}時間前に期限切れ",
+        "expiredInHours_zero": "1時間未満で期限切れになりました",
+        "expiredInDays_one": "{{count}} 日前に期限切れ",
+        "expiredInDays_other": "{{count}}日前に期限切れ",
+        "expiredInMonths_one": "{{count}} ヶ月前に期限切れ",
+        "expiredInMonths_other": "{{count}}ヶ月前に期限切れ",
+        "expiredInYears_one": "{{count}} 年前に期限切れ",
+        "expiredInYears_other": "{{count}} 年前に期限切れ",
+        "gracePeriod": {
+            "expiresInYears_one": "{{count}} 年後に猶予期間が終了します",
+            "expiresInYears_other": "{{count}}年後に猶予期間が終了します",
+            "expiresInMonths_one": "{{count}} ヶ月後に猶予期間が終了します",
+            "expiresInMonths_other": "{{count}}ヶ月後に猶予期間が終了します",
+            "expiresInDays_one": "猶予期間は{{count}}日で終了します",
+            "expiresInDays_other": "猶予期間は{{count}}日後に終了します",
+            "expiresInHours_one": "猶予期間は{{count}}時間で終了します",
+            "expiresInHours_other": "{{count}}時間後に猶予期間が終了します",
+            "expiresInHours_zero": "猶予期間は1時間未満で終了します"
+        },
+        "extend": "延長",
+        "send": "送信",
+        "transfer": "送金",
+        "sendManager": "マネージャーに送信",
+        "sendOwner": "オーナーに送信"
+    },
+    "address": {
+        "label": "住所",
+        "viewAddress": "アドレスを表示",
+        "copyAddress": "アドレスをコピー"
+    },
+    "records": {
+        "label": "記録"
+    },
+    "sortTypes": {
+        "expiryDate": "有効期限",
+        "labelName": "名前",
+        "creationDate": "作成日"
+    },
+    "errors": {
+        "noResults": "結果が見つかりません",
+        "invalidAddress": "無効なアドレス",
+        "addressRequired": "アドレスが必要です"
+    },
+    "transaction": {
+        "description": {
+            "setName": "名前を設定する",
+            "setRecords": "記録を設定",
+            "test": "テストトランザクション",
+            "addSuccess": "追加成功",
+            "sendName": "名前を送る",
+            "migrateProfile": "プロフィールを移行する",
+            "migrateProfileWithReset": "プロファイルを移行する",
+            "migrateProfileWithSync": "移行してプロフィールを更新する",
+            "wrapName": "ラップ名",
+            "updateResolver": "リゾルバーを更新",
+            "updateProfile": "プロフィールを更新する",
+            "setPrimaryName": "プライマリ名を設定",
+            "updateEthAddress": "ETHアドレスを更新する",
+            "testSendName": "名前を送る",
+            "burnFuses": "焼却許可",
+            "createSubname": "サブネームを作成する",
+            "deleteSubname": "サブネームを削除",
+            "extendNames": "名前を拡張する",
+            "importDNSSECName": "DNSSEC名をインポート",
+            "commitName": "タイマーを開始",
+            "registerName": "名前を登録する",
+            "approveNameWrapper": "NameWrapperを承認する",
+            "clearRecords": "記録をクリアする",
+            "updateRecords": "レコードを更新する",
+            "transferName": "名前を転送",
+            "changePermissions": "権限を変更する",
+            "syncManager": "同期マネージャ",
+            "updateProfileRecords": "プロフィールを更新する",
+            "resetProfile": "プロフィールをリセット",
+            "setHexagonName": "MEP1002 ヘキサゴン名を設定します",
+            "mintHexagon": "MEP1002ヘキサゴンを鋳造する"
+        },
+        "info": {
+            "sendName": "名前のコントローラーと登録者を設定します",
+            "migrateProfile": "新しいリゾルバーに既存のレコードを設定する",
+            "migrateProfileWithReset": "新しいリゾルバーに既存のレコードを設定する",
+            "migrateProfileWithSync": "新しいリゾルバーに既存のレコードを設定する",
+            "wrapName": "名前をラップし、新しいリゾルバーを設定します",
+            "updateResolver": "リゾルバを変更する",
+            "updateProfile": "既存のリゾルバーのレコードを更新する",
+            "setPrimaryName": "あなたのアドレスのプライマリ名を設定してください",
+            "updateEthAddress": "このアドレスにETHアドレスを更新してください",
+            "testSendName": "名前のコントローラーと登録者を設定します",
+            "createSubname": "名前の新しいサブネームを作成します",
+            "burnFuses": "選択した権限を名前の有効期限まで燃やす",
+            "commitName": "名前の登録を開始するタイマー",
+            "approveNameWrapper": "NameWrapperにあなたの名前を管理させることを承認します",
+            "fuses": {
+                "revoke": "取り消す",
+                "grant": "許可",
+                "setExpiry": "有効期限を設定",
+                "PARENT_CANNOT_CONTROL": "親のコントロールを放棄する",
+                "CAN_EXTEND_EXPIRY": "有効期限を延長する",
+                "CANNOT_UNWRAP": "この名前を展開する",
+                "CANNOT_CREATE_SUBDOMAIN": "サブドメインを作成する",
+                "CANNOT_SET_RESOLVER": "リゾルバーを設定する",
+                "CANNOT_SET_TTL": "TTLを設定する",
+                "CANNOT_TRANSFER": "この名前を送信してください",
+                "CANNOT_BURN_FUSES": "権限を変更する",
+                "CANNOT_APPROVE": "更新マネージャーを変更"
+            }
+        },
+        "itemLabel": {
+            "name": "名前",
+            "address": "住所",
+            "action": "アクション",
+            "info": "情報",
+            "to": "\"に\"",
+            "subname": "サブネーム",
+            "duration": "期間",
+            "cost": "コスト",
+            "update": "アップデート",
+            "resolver": "リゾルバー",
+            "h3Index": "H3 インデックス"
+        },
+        "itemValue": {
+            "records_one": "{{count}} レコード",
+            "records_other": "{{count}} レコード"
+        },
+        "status": {
+            "pending": {
+                "regular": "保留中"
+            },
+            "confirmed": {
+                "regular": "確認済み",
+                "notifyTitle": "取引成功",
+                "notifyMessage": "あなたの\"{{action}}\"トランザクションは成功しました"
+            },
+            "failed": {
+                "regular": "失敗しました",
+                "notifyTitle": "取引失敗",
+                "notifyMessage": "あなたの \"{{action}}\" トランザクションは失敗し、元に戻されました。"
+            }
+        },
+        "dialog": {
+            "intro": {
+                "trailingButton": "開始",
+                "trailingButtonResume": "再開",
+                "step": "ステップ {{step}}"
+            },
+            "confirm": {
+                "title": "詳細を確認する",
+                "message": "ウォレットで確認する前に、これらの詳細を再度確認してください。",
+                "waitingForWallet": "ウォレットを待っています",
+                "openWallet": "ウォレットを開く"
+            },
+            "sent": {
+                "title": "送信済みトランザクション",
+                "message": "あなたの取引は現在進行中です、これを閉じて後で戻ってきても大丈夫です。",
+                "progress": {
+                    "title": "送信済み",
+                    "message": "予想より時間がかかっています"
+                }
+            },
+            "complete": {
+                "title": "取引完了",
+                "message": "あなたの取引は今完了しました！",
+                "progress": {
+                    "title": "完了"
+                }
+            },
+            "failed": {
+                "title": "取引失敗",
+                "progress": {
+                    "title": "失敗しました"
+                }
+            },
+            "error": {
+                "gasLimit": "あなたのトランザクションのガスリミットは十分高くありませんでした、もう一度お試しください。"
+            }
+        },
+        "error": {
+            "request": {
+                "INSUFFICIENT_FUNDS": "ウォレットの資金が不足しています",
+                "UNPREDICTABLE_GAS_LIMIT": "未知のエラーが発生しました"
+            }
+        },
+        "viewEtherscan": "BlockExplorerで表示",
+        "viewMore": "もっと見る"
+    },
+    "search": {
+        "label": "名前検索",
+        "placeholder": "名前を検索する",
+        "emptyText": "名前またはアドレスを入力して検索...",
+        "address": "住所",
+        "errors": {
+            "tooShort": "名前が短すぎます",
+            "invalid": "名前の形式が無効"
+        },
+        "status": {
+            "registered": "登録済み",
+            "gracePeriod": "猶予期間",
+            "premium": "一時的なプレミアム",
+            "available": "利用可能",
+            "notOwned": "所有されていない",
+            "notImported": "インポートされていません",
+            "short": "短すぎます",
+            "default": "無効",
+            "unsupportedTLD": "サポートされていません",
+            "imported": "インポートされました",
+            "owned": "所有済み"
+        }
+    },
+    "selectableInput": {
+        "add": "追加",
+        "placeholder": "オプションを選択してください",
+        "empty": "オプションが見つかりません"
+    },
+    "testnetFaucet": {
+        "explanation": "各goerliアドレスは、MNSマネージャーアプリをテストし、新しいすべての契約を試すために{{ amount }}ETHを請求することができます。",
+        "note": "あなたのウォレットに表示されるまで数分かかる場合があります。"
+    }
 }

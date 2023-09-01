@@ -1,6 +1,15 @@
 {
     "title": "Имена",
-    "subtitle": "{'start': 'Все имена, которые хранятся в', 'this': 'этом', 'your': 'вашем', 'wallet': 'кошельке'}",
+    "subtitle": {
+        "start": "Все имена, которые принадлежат",
+        "this": "это",
+        "your": "ваш",
+        "wallet": "кошелек"
+    },
     "empty": "Для этого адреса не найдено имен",
-    "sortTypes": "{'expiryDate': 'Дата истечения', 'labelName': 'Имя', 'creationDate': 'Дата создания'}"
+    "sortTypes": {
+        "expiryDate": "Срок действия",
+        "labelName": "Имя",
+        "creationDate": "Дата создания"
+    }
 }

@@ -5,17 +5,323 @@
     "unsupportedNetwork": "Неподдерживаемая сеть",
     "notFound": "404 Не Найдено",
     "etherscan": "Блок-Исследователь",
-    "action": "{'cancel': 'Отмена', 'change': 'Изменить', 'upload': 'Загрузить', 'close': 'Закрыть', 'save': 'Сохранить', 'edit': 'Редактировать', 'view': 'Просмотреть', 'clear': 'Очистить', 'update': 'Обновить', 'learnMore': 'Узнать больше', 'send': 'Отправить', 'next': 'Далее', 'add': 'Добавить', 'set': 'Установить', 'search': 'Поиск', 'back': 'Назад',  'continue':  'Продолжить',  'confirm':  'Подтвердить',  'remove':  'Удалить',  'sign':  \"Подписать\",  \"reset\": \"Сброс\", \"transfer\": \"Перевести\", \"tryAgain\": \"Попробовать снова\", \"done\": \"Готово\", \"burnSelected\": \"Сжечь выбранное\", \"extend\": \"Расширить\", \"delete\": \"Удалить\", \"sort\": \"Сортировать\", \"check\": \"Проверить\", \"claim\": \"Заявить\", \"remindMe\": \"Напомнить мне\", \"begin\": \"Начать\", \"finish\": \"Завершить\", \"skip\": \"Пропустить\",  \"changeNetwork\":  \"Сменить сеть\",  \"understand\":  \"Я понимаю\",  \"feedback\":  \"Обратная связь\",  \"migrate\":  \"Мигрировать\"}",
-    "unit": "{'years_one': '{{count}} год', 'years_other': '{{count}} лет', 'yrs_one': '{{count}} г.', 'yrs_other': '{{count}} гг.', 'gas': '{{value}} газа', 'selected': '{{count}} выбрано', 'perPage': '{{count}} на странице'}",
-    "navigation": "{'home': 'Главная', 'names': 'Мои Имена', 'favourites': 'Избранное', 'settings': 'Настройки', 'governance': 'Управление', 'community': 'Сообщество', 'developers': 'Разработчики', 'support': 'Поддержка', 'bounty': 'Баг-Баунти', 'terms': 'Условия использования', 'privacy': 'Политика конфиденциальности', 'back': 'Назад', 'oldApp': 'Старое приложение MNS', 'language': 'Язык', 'currency': 'Валюта', 'ipfsApp': 'IPFS MNS приложение',  'feedback':  \"Обратная связь\",  \"syncMessage\": \"Синхронизация с сетью. Изменения от вашей транзакции могут быть еще не видны.\"}",
-    "wallet": "{'myProfile': 'Профиль', 'disconnect': 'Отключить', 'connect': 'Подключить', 'noPrimaryName': 'Нет основного имени', 'viewProfile': 'Просмотреть профиль', 'viewDetails': 'Просмотреть детали', 'register': 'Регистрация'}",
-    "name": "{'registered': 'Зарегистрирован', 'expires': 'Истекает', 'noExpiry': 'Без срока истечения', 'expiry': 'Срок истечения', 'parent': 'Родитель', 'noParent': 'Нет родителя', 'registrant': 'Регистрант', 'controller': 'Контроллер', 'dnsOwner': 'Владелец DNS', 'owner': 'Владелец', 'notOwned': 'Не принадлежит', 'manager': 'Менеджер', 'all': 'Все имена', 'expiresInYears_one': '{{count}} год до истечения срока', 'expiresInYears_other': '{{count}} лет до истечения срока', 'expiresInMonths_one': '{{count}} месяц до истечения срока', 'expiresInMonths_other': '{{count}} месяцев до истечения срока',  'expiresInDays_one': '{{count}} день до истечения срока',  'expiresInDays_other': '{{count}} дней до истечения срока','expiresInHours_one':'{{count}} час до истечения срока','expiresInHours_other':'{{count}} часов до истечения срока','expiresInHours_zero':'Меньше часа до истечения срока','expiredInHours_one':'{{count}} час назад истек','expiredInHours_other':'{{count}} часов назад истек','expiredInHours_zero':'Меньше часа назад истек','expiredInDays_one':'{{count}} день назад истек','expiredInDays_other':'{{count}} дней назад истек','expiredInMonths_one':'{{count}} месяц назад истек','expiredInMonths_other':'{{count}} месяцев назад истек','expiredInYears_one':'{{count}} год назад истек','expiredInYears_other':'{{count}} лет назад истек',\n'gracePeriod':{'expiresInYears_one':'Период отсрочки заканчивается через {{count}} год',\n'expiresInYears_other':'Период отсрочки заканчивается через {{count}} лет',\n'expiresInMonths_one':'Период отсрочки заканчивается через {{count}} месяц',\n'expiresInMonths_other':'Период отсрочки заканчивается через {{count}} месяцев',\n'expiresInDays_one':'Период отсрочки заканчивается через {{count}} день',\n'expiresInDays_other':'Период отсрочки заканчивается через {{count}} дней',\n'expiresInHours_one':'Период отсрочки заканчивается через {{count}} час',\n'expiresInHours_other':'Период отсрочки заканчивается через {{count}} часов',\n'expiresInHours_zero':'Период отсрочки заканчивается менее, чем через час'},\n'extend':'Продлить',\n'send':'Отправить',\n'transfer':'Перевести',\n'sendManager':'Отправить менеджеру',\n'sendOwner':'Отправить владельцу'}",
-    "address": "{'label': 'Адрес', 'viewAddress': 'Просмотреть адрес', 'copyAddress': 'Скопировать адрес'}",
-    "records": "{'label': 'Записи'}",
-    "sortTypes": "{'expiryDate': 'Дата истечения', 'labelName': 'Имя', 'creationDate': 'Дата создания'}",
-    "errors": "{'noResults': 'Результаты не найдены', 'invalidAddress': 'Неверный адрес', 'addressRequired': 'Требуется адрес'}",
-    "transaction": "{'description': {'setName': 'Установить имя', 'setRecords': 'Установить записи', 'test': 'Тестовая транзакция', 'addSuccess': 'Успешно добавлено', 'sendName': 'Отправить имя', 'migrateProfile': 'Перенести профиль', 'migrateProfileWithReset': 'Перенести профиль', 'migrateProfileWithSync': 'Перенести и обновить профиль', 'wrapName': 'Обернуть имя', 'updateResolver': 'Обновить резолвер', 'updateProfile': 'Обновить профиль', 'setPrimaryName': 'Установить основное имя', 'updateEthAddress': 'Обновить ETH адрес', 'testSendName': 'Отправить имя', 'burnFuses': 'Сжечь разрешения', 'createSubname': 'Создать подимя', 'deleteSubname': 'Удалить подимя', 'extendNames': 'Продлить имена', \n'importDNSSECName': \n'Импортировать DNSSEC имя',\n'commitName':\n'Запустить таймер',\n'registerName':\n'Зарегистрировать имя',\n'approveNameWrapper':\n'Одобрить NameWrapper',\n'clearRecords':\n'Очистить записи',\n'updateRecords':\n'Обновить записи',\n'transferName':\n'Передать имя',\n'changePermissions':\n'Изменить разрешения',\n'syncManager':\n'Синхронизировать менеджер',\n'updateProfileRecords':\n'Обновить профиль',\n'resetProfile':\n'Сбросить профиль',\n'setHexagonName':\n'Установите MEP1002 Hexagon Имя',\n'mintHexagon':\n'Mint MEP1002 Hexagon'},\n'info':{'sendName':'Установите контроллер и регистрант имени','migrateProfile':'Установите существующие записи на новом резолвере','migrateProfileWithReset':'Установите существующие записи на новом резолвере','migrateProfileWithSync':'Установите существующие записи на новом резолвере','wrapName':'Обернуть имя и установите новый резолвер','updateResolver':'Измените резолвер на','updateProfile':'Обновите записи на существующем резолвере','setPrimaryName':'Установите основное имя для вашего адреса','updateEthAddress':'Обновите ETH адрес на этот адрес','testSendName':'Установите контроллер и регистрант имени','createSubname':'Создайте новое подимя на имени','burnFuses':'Сожгите выбранные разрешения до истечения срока действия имени','commitName':'Запустите таймер для регистрации имени','approveNameWrapper':'Одобрите NameWrapper для управления вашими именами'}, \n'status':{'pending':{'regular':'В ожидании'}, \n          'confirmed':{'regular':'Подтверждено'}, \n          },\n'dialog':{'intro':{'trailingButton':'Начать'},\n           },\n}",
-    "search": "{'label': 'Поиск по имени', 'placeholder': 'Поиск имени', 'emptyText': 'Введите имя или адрес для поиска...', 'address': 'Адрес', 'errors': {'tooShort': 'Имя слишком короткое', 'invalid': 'Недопустимый формат имени'}, 'status': {'registered': 'Зарегистрировано', 'gracePeriod': 'Период отсрочки', 'premium': 'Временный Премиум', 'available': 'Доступно', 'notOwned': 'Не принадлежит', 'notImported': 'Не импортировано', 'short': 'Слишком короткое', 'default': 'Недействительно', 'unsupportedTLD': 'Не поддерживается', 'imported': 'Импортировано', 'owned': 'Принадлежит'}}",
-    "selectableInput": "{'add': 'Добавить', 'placeholder': 'Выберите вариант', 'empty': 'Варианты не найдены'}",
-    "testnetFaucet": "{'explanation': 'Каждый адрес на goerli может заявить {{ amount }}ETH для тестирования приложения MNS manager, а также всех новых контрактов.', 'note': 'Это может занять несколько минут, чтобы появиться в вашем кошельке.'}"
+    "action": {
+        "cancel": "Отмена",
+        "change": "Изменить",
+        "upload": "Загрузить",
+        "close": "Закрыть",
+        "save": "Сохранить",
+        "edit": "Редактировать",
+        "view": "Просмотр",
+        "clear": "Очистить",
+        "update": "Обновить",
+        "learnMore": "Узнать больше",
+        "send": "Отправить",
+        "next": "Следующий",
+        "add": "Добавить",
+        "set": "Установить",
+        "search": "Поиск",
+        "back": "Назад",
+        "continue": "Продолжить",
+        "confirm": "Подтвердить",
+        "remove": "Удалить",
+        "sign": "Подписать",
+        "reset": "Сброс",
+        "transfer": "Перевод",
+        "tryAgain": "Попробуйте Еще Раз",
+        "done": "Выполнено",
+        "burnSelected": "Сжечь Выбранное",
+        "extend": "Расширить",
+        "delete": "Удалить",
+        "sort": "Сортировать",
+        "check": "Проверить",
+        "claim": "Заявить",
+        "remindMe": "Напомнить Мне",
+        "begin": "Начать",
+        "finish": "Завершить",
+        "skip": "Пропустить",
+        "changeNetwork": "Сменить Сеть",
+        "understand": "Я понимаю",
+        "feedback": "Отзыв",
+        "migrate": "Мигрировать"
+    },
+    "unit": {
+        "years_one": "{{count}} год",
+        "years_other": "{{count}} года",
+        "yrs_one": "{{count}} год",
+        "yrs_other": "{{count}} год.",
+        "gas": "{{value}} газ",
+        "selected": "{{count}} выбрано",
+        "perPage": "{{count}} на страницу"
+    },
+    "navigation": {
+        "home": "Домой",
+        "names": "Мои Имена",
+        "favourites": "Избранное",
+        "settings": "Настройки",
+        "governance": "Управление",
+        "community": "Сообщество",
+        "developers": "Разработчики",
+        "support": "Поддержка",
+        "bounty": "Охота за Багами",
+        "terms": "Условия использования",
+        "privacy": "Политика Конфиденциальности",
+        "back": "Назад",
+        "oldApp": "Старое приложение MNS",
+        "language": "Язык",
+        "currency": "Валюта",
+        "ipfsApp": "IPFS MNS Приложение",
+        "feedback": "Отзыв",
+        "syncMessage": "Синхронизация с сетью. Изменения от вашей транзакции могут быть еще не видны."
+    },
+    "wallet": {
+        "myProfile": "Профиль",
+        "disconnect": "Отключить",
+        "connect": "Подключить",
+        "noPrimaryName": "Нет Основного Имени",
+        "viewProfile": "Просмотр Профиля",
+        "viewDetails": "Просмотреть Детали",
+        "register": "Регистрация"
+    },
+    "name": {
+        "registered": "Зарегистрирован",
+        "expires": "Истекает",
+        "noExpiry": "Без срока истечения",
+        "expiry": "Срок действия",
+        "parent": "Родитель",
+        "noParent": "Нет родителя",
+        "registrant": "Регистрант",
+        "controller": "Контроллер",
+        "dnsOwner": "Владелец DNS",
+        "owner": "Владелец",
+        "notOwned": "Не владеет",
+        "manager": "Менеджер",
+        "all": "Все Имена",
+        "expiresInYears_one": "Истекает через {{count}} год",
+        "expiresInYears_other": "Истекает через {{count}} года",
+        "expiresInMonths_one": "Истекает через {{count}} месяц",
+        "expiresInMonths_other": "Истекает через {{count}} месяца",
+        "expiresInDays_one": "Истекает через {{count}} день",
+        "expiresInDays_other": "Истекает через {{count}} дней",
+        "expiresInHours_one": "Истекает через {{count}} час",
+        "expiresInHours_other": "Истекает через {{count}} часа",
+        "expiresInHours_zero": "Истекает менее чем через час",
+        "expiredInHours_one": "Истек {{count}} час назад",
+        "expiredInHours_other": "Истекло {{count}} часов назад",
+        "expiredInHours_zero": "Истек менее часа назад",
+        "expiredInDays_one": "Истек {{count}} день назад",
+        "expiredInDays_other": "Истек {{count}} дней назад",
+        "expiredInMonths_one": "Истек {{count}} месяц назад",
+        "expiredInMonths_other": "Истек {{count}} месяцев назад",
+        "expiredInYears_one": "Истек {{count}} год назад",
+        "expiredInYears_other": "Истек {{count}} года назад",
+        "gracePeriod": {
+            "expiresInYears_one": "Период льготы истекает через {{count}} год",
+            "expiresInYears_other": "Период льгот истекает через {{count}} года",
+            "expiresInMonths_one": "Период льгот истекает через {{count}} месяц",
+            "expiresInMonths_other": "Период льготы истекает через {{count}} месяцев",
+            "expiresInDays_one": "Период льготы истекает через {{count}} день",
+            "expiresInDays_other": "Период льготы истекает через {{count}} дней",
+            "expiresInHours_one": "Период льготы истекает через {{count}} час",
+            "expiresInHours_other": "Период льготы истекает через {{count}} часов",
+            "expiresInHours_zero": "Период льготы истекает менее чем через час"
+        },
+        "extend": "Расширить",
+        "send": "Отправить",
+        "transfer": "Перевод",
+        "sendManager": "Отправить Менеджеру",
+        "sendOwner": "Отправить владельцу"
+    },
+    "address": {
+        "label": "Адрес",
+        "viewAddress": "Просмотреть адрес",
+        "copyAddress": "Копировать адрес"
+    },
+    "records": {
+        "label": "Записи"
+    },
+    "sortTypes": {
+        "expiryDate": "Срок действия",
+        "labelName": "Имя",
+        "creationDate": "Дата создания"
+    },
+    "errors": {
+        "noResults": "Не найдено результатов",
+        "invalidAddress": "Недействительный адрес",
+        "addressRequired": "Требуется адрес"
+    },
+    "transaction": {
+        "description": {
+            "setName": "Установить имя",
+            "setRecords": "Установите рекорды",
+            "test": "Тестовая транзакция",
+            "addSuccess": "Добавление успешно",
+            "sendName": "Отправить имя",
+            "migrateProfile": "Перенести профиль",
+            "migrateProfileWithReset": "Перенести профиль",
+            "migrateProfileWithSync": "Перенести и обновить профиль",
+            "wrapName": "Обернуть имя",
+            "updateResolver": "Обновить резолвер",
+            "updateProfile": "Обновить профиль",
+            "setPrimaryName": "Установить основное имя",
+            "updateEthAddress": "Обновить адрес ETH",
+            "testSendName": "Отправить имя",
+            "burnFuses": "Права на сжигание",
+            "createSubname": "Создать подимя",
+            "deleteSubname": "Удалить подимя",
+            "extendNames": "Расширьте имена",
+            "importDNSSECName": "импорт имени DNSSEC",
+            "commitName": "Запустить таймер",
+            "registerName": "Регистрация имени",
+            "approveNameWrapper": "Одобрить NameWrapper",
+            "clearRecords": "Очистить записи",
+            "updateRecords": "Обновить записи",
+            "transferName": "Перевод имени",
+            "changePermissions": "Изменить разрешения",
+            "syncManager": "Менеджер синхронизации",
+            "updateProfileRecords": "Обновить профиль",
+            "resetProfile": "Сбросить профиль",
+            "setHexagonName": "Установите имя Hexagon MEP1002",
+            "mintHexagon": "Чеканка MEP1002 Шестиугольник"
+        },
+        "info": {
+            "sendName": "Установите контроллер и регистратор имени",
+            "migrateProfile": "Установите существующие записи на новом резолвере",
+            "migrateProfileWithReset": "Установите существующие записи на новом резолвере",
+            "migrateProfileWithSync": "Установите существующие записи на новом резолвере",
+            "wrapName": "Обернуть имя и установить новый резолвер",
+            "updateResolver": "Изменить резолвер на",
+            "updateProfile": "Обновите записи в существующем резолвере",
+            "setPrimaryName": "Установите основное имя для вашего адреса",
+            "updateEthAddress": "Обновите адрес ETH на этот адрес",
+            "testSendName": "Установите контроллер и регистратор имени",
+            "createSubname": "Создайте новое подимя на имени",
+            "burnFuses": "Сжигайте выбранные разрешения до истечения срока действия имени",
+            "commitName": "Запустите таймер для регистрации имени",
+            "approveNameWrapper": "Одобрите NameWrapper для управления вашими именами",
+            "fuses": {
+                "revoke": "Отозвать",
+                "grant": "Предоставить",
+                "setExpiry": "Установить срок действия",
+                "PARENT_CANNOT_CONTROL": "Отказаться от родительского контроля",
+                "CAN_EXTEND_EXPIRY": "Продлить срок действия",
+                "CANNOT_UNWRAP": "Распакуйте это имя",
+                "CANNOT_CREATE_SUBDOMAIN": "Создать субдомены",
+                "CANNOT_SET_RESOLVER": "Установить резолвер",
+                "CANNOT_SET_TTL": "Установить TTL",
+                "CANNOT_TRANSFER": "Отправь это имя",
+                "CANNOT_BURN_FUSES": "Изменить разрешения",
+                "CANNOT_APPROVE": "Сменить менеджера обновления"
+            }
+        },
+        "itemLabel": {
+            "name": "Имя",
+            "address": "Адрес",
+            "action": "Действие",
+            "info": "Информация",
+            "to": "Для",
+            "subname": "Подимя",
+            "duration": "Длительность",
+            "cost": "Стоимость",
+            "update": "Обновить",
+            "resolver": "Решатель",
+            "h3Index": "H3 Индекс"
+        },
+        "itemValue": {
+            "records_one": "{{count}} запись",
+            "records_other": "{{count}} записей"
+        },
+        "status": {
+            "pending": {
+                "regular": "В ожидании"
+            },
+            "confirmed": {
+                "regular": "Подтверждено",
+                "notifyTitle": "Транзакция Успешна",
+                "notifyMessage": "Ваша транзакция \"{{action}}\" была успешной"
+            },
+            "failed": {
+                "regular": "Не удалось",
+                "notifyTitle": "Ошибка транзакции",
+                "notifyMessage": "Ваша транзакция \"{{action}}\" не удалась и была отменена."
+            }
+        },
+        "dialog": {
+            "intro": {
+                "trailingButton": "Начать",
+                "trailingButtonResume": "Продолжить",
+                "step": "Шаг {{step}}"
+            },
+            "confirm": {
+                "title": "Подтвердить Детали",
+                "message": "Дважды проверьте эти данные перед подтверждением в вашем кошельке.",
+                "waitingForWallet": "Ожидание кошелька",
+                "openWallet": "Открыть кошелек"
+            },
+            "sent": {
+                "title": "Транзакция Отправлена",
+                "message": "Ваша транзакция сейчас в процессе, вы можете закрыть это и вернуться позже.",
+                "progress": {
+                    "title": "Отправлено",
+                    "message": "Занимает больше времени, чем ожидалось"
+                }
+            },
+            "complete": {
+                "title": "Транзакция Завершена",
+                "message": "Ваша транзакция теперь завершена!",
+                "progress": {
+                    "title": "Выполнено"
+                }
+            },
+            "failed": {
+                "title": "Транзакция не удалась",
+                "progress": {
+                    "title": "Не удалось"
+                }
+            },
+            "error": {
+                "gasLimit": "Лимит газа в вашей транзакции был недостаточно высок, пожалуйста, попробуйте еще раз."
+            }
+        },
+        "error": {
+            "request": {
+                "INSUFFICIENT_FUNDS": "Недостаточно средств в кошельке",
+                "UNPREDICTABLE_GAS_LIMIT": "Произошла неизвестная ошибка"
+            }
+        },
+        "viewEtherscan": "Просмотреть в BlockExplorer",
+        "viewMore": "Посмотреть еще"
+    },
+    "search": {
+        "label": "Поиск имени",
+        "placeholder": "Поиск по имени",
+        "emptyText": "Введите имя или адрес для поиска...",
+        "address": "Адрес",
+        "errors": {
+            "tooShort": "Имя слишком короткое",
+            "invalid": "Неверный формат для имени"
+        },
+        "status": {
+            "registered": "Зарегистрирован",
+            "gracePeriod": "Период Отсрочки",
+            "premium": "Временный Премиум",
+            "available": "Доступно",
+            "notOwned": "Не владеет",
+            "notImported": "Не Импортировано",
+            "short": "Слишком короткий",
+            "default": "Недействительный",
+            "unsupportedTLD": "Не поддерживается",
+            "imported": "Импортировано",
+            "owned": "Владелец"
+        }
+    },
+    "selectableInput": {
+        "add": "Добавить",
+        "placeholder": "Выберите вариант",
+        "empty": "Не найдено вариантов"
+    },
+    "testnetFaucet": {
+        "explanation": "Каждый адрес на goerli может заявить {{ amount }}ETH для тестирования приложения MNS manager, а также всех новых контрактов.",
+        "note": "Это может занять несколько минут, чтобы отобразиться в вашем кошельке."
+    }
 }
