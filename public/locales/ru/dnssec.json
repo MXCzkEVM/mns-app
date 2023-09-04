@@ -1,9 +1,66 @@
 {
     "title": "Импорт {{name}} в MNS",
-    "general": "{'connectWallet': 'Пожалуйста, подключите ваш кошелек для продолжения', 'importDNSSECName': 'Импортировать DNSSEC Имя', 'domainRegistrar': 'Регистратор домена'}",
-    "registrars": "{'namecheap': 'Namecheap', 'domaindotcom': 'Domain.com', 'googledomains': 'Google Domains', 'dreamhost': 'Dreamhost', 'hover': 'Hover', 'godaddy': 'GoDaddy', 'bluehost': 'Bluehost', 'hostgator': 'HostGator', 'cloudflare': 'Cloudflare', 'findYourRegistrar': 'Найдите своего регистратора'}",
-    "addTextRecord": "{'title': 'Добавить текстовые записи', 'explanation': 'Вам нужно создать новую DNS-запись для вашего домена с использованием этих данных. Это утвердит ваш Ethereum адрес в качестве владельца этого домена.', 'syncWarningOne': \"Похоже, вы не являетесь владельцем DNS этого домена, но вы все равно можете добавить это имя в реестр MNS.\", 'syncWarningTwo': \"Если вы являетесь владельцем этого домена, измените его _ens TXT запись, чтобы она содержала ваш Ethereum адрес и нажмите 'Проверить' еще раз, иначе нажмите 'Заявить' для продолжения.\", 'type': 'Тип', 'txt': 'TXT', 'errors': {'SUBDOMAIN_NOT_SET': {'title': 'Поддомен не установлен', 'content': 'Пожалуйста, установите ваш _ens поддомен со значением, показанным выше.'}, 'DNS_RECORD_DOES_NOT_EXIST': {'title': 'Запись не существует', 'content': 'DNS запись не установлена'}, 'DNS_RECORD_INVALID': {'title': 'Недействительная запись', 'content': 'Пожалуйста, установите запись со значением выше.'}}}",
-    "claimComplete": "{'title': 'Поздравляем!', 'ownerOf': 'Теперь вы владелец:', 'successMessage': 'Ваше доменное имя было успешно импортировано в MNS. Теперь вы можете просмотреть и управлять своим именем.', 'viewName': 'Просмотр Имени', 'claimAnother': 'Зарегистрировать еще одно'}",
-    "claimDomain": "{'title': 'Зарегистрируйте свой домен', 'syncWarning': 'Вы импортируете DNS-имя, которое, похоже, не принадлежит вам.', 'verifiedOwnership': 'Вы подтвердили свою собственность и можете зарегистрировать этот домен.', 'pendingTransactionPre': 'У вас уже есть', 'pendingTransactionLink': 'незавершенная транзакция', 'pendingTransactionPost': 'для этого имени', 'dnsOwner': 'Владелец DNS', 'networkEst': 'Предполагаемая стоимость сети'}",
-    "enableDNSSEC": "{'title': 'Включить DNSSEC', 'instruction': \"Вам нужно посетить свой регистратор доменов, чтобы включить DNSSEC. После включения нажмите 'Проверить', чтобы перейти к следующему шагу.\", 'registrarHelp': 'Выберите своего регистратора из выпадающего списка ниже, чтобы получить инструкции о том, как это сделать.', 'findRegistrar': 'Найти своего регистратора', 'DNSSECNotEnabled': 'На этом домене не включен DNSSEC.'}"
+    "general": {
+        "connectWallet": "Пожалуйста, подключите ваш кошелек для продолжения",
+        "importDNSSECName": "Импорт имени DNSSEC",
+        "domainRegistrar": "Регистратор домена"
+    },
+    "registrars": {
+        "namecheap": "Namecheap",
+        "domaindotcom": "Domain.com",
+        "googledomains": "Google Домены",
+        "dreamhost": "Dreamhost",
+        "hover": "Наведите",
+        "godaddy": "GoDaddy",
+        "bluehost": "Bluehost",
+        "hostgator": "HostGator",
+        "cloudflare": "Cloudflare",
+        "findYourRegistrar": "Найдите свой регистратор"
+    },
+    "addTextRecord": {
+        "title": "Добавить текстовые записи",
+        "explanation": "Вам нужно создать новую запись DNS для вашего домена, используя эти данные. Это установит ваш адрес Ethereum в качестве владельца этого домена.",
+        "syncWarningOne": "Вам не кажется, что вы являетесь владельцем DNS этого домена, но вы все равно можете добавить это имя в реестр MNS.",
+        "syncWarningTwo": "Если вы владеете этим доменом, измените его _ens TXT запись, чтобы она содержала ваш Ethereum адрес и нажмите 'Проверить' снова, в противном случае нажмите 'Заявить' для продолжения.",
+        "type": "Введите",
+        "txt": "Текст приложения на русском языке: TXT",
+        "errors": {
+            "SUBDOMAIN_NOT_SET": {
+                "title": "Поддомен не установлен",
+                "content": "Пожалуйста, установите ваш _ens поддомен со значением, показанным выше."
+            },
+            "DNS_RECORD_DOES_NOT_EXIST": {
+                "title": "Запись не существует",
+                "content": "DNS-запись не установлена"
+            },
+            "DNS_RECORD_INVALID": {
+                "title": "Запись Недействительна",
+                "content": "Пожалуйста, установите запись со значением выше."
+            }
+        }
+    },
+    "claimComplete": {
+        "title": "Поздравляем!",
+        "ownerOf": "Вы теперь владелец:",
+        "successMessage": "Ваше доменное имя было успешно импортировано в MNS. Теперь вы можете просматривать и управлять своим именем.",
+        "viewName": "Просмотр Имени",
+        "claimAnother": "Заявить еще один"
+    },
+    "claimDomain": {
+        "title": "Заявите свой домен",
+        "syncWarning": "Вы импортируете DNS-имя, которое, похоже, не принадлежит вам.",
+        "verifiedOwnership": "Вы подтвердили свое владение и можете заявить права на этот домен.",
+        "pendingTransactionPre": "У вас уже есть",
+        "pendingTransactionLink": "ожидающая транзакция",
+        "pendingTransactionPost": "для этого имени",
+        "dnsOwner": "Владелец DNS",
+        "networkEst": "Предполагаемая стоимость сети"
+    },
+    "enableDNSSEC": {
+        "title": "Включить DNSSEC",
+        "instruction": "Вам нужно посетить свой регистратор домена, чтобы включить DNSSEC. После включения нажмите 'Проверить', чтобы перейти к следующему шагу.",
+        "registrarHelp": "Выберите свой регистратор из выпадающего списка ниже для получения инструкций о том, как это сделать.",
+        "findRegistrar": "Найдите свой регистратор",
+        "DNSSECNotEnabled": "DNSSEC не был активирован на этом домене."
+    }
 }
