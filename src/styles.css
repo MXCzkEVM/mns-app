@@ -1,1 +1,7 @@
 @import url('/fonts/fonts.css');
+
+
+.helpbox {
+    border: 1px solid #f43178 !important;
+    background-color: rgba(244,49,120,.08) !important;
+}
