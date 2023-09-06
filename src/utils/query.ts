@@ -1,11 +1,11 @@
-import { getDefaultWallets } from '@rainbow-me/rainbowkit'
+import { connectorsForWallets, } from '@rainbow-me/rainbowkit'
+import { rainbowWallet, metaMaskWallet, walletConnectWallet, coinbaseWallet, injectedWallet } from '@rainbow-me/rainbowkit/wallets'
 import '@rainbow-me/rainbowkit/styles.css'
 import { DefaultOptions, QueryClient } from '@tanstack/react-query'
-import { ChainProviderFn } from '@wagmi/core'
+import { ChainProviderFn, InjectedConnector } from '@wagmi/core'
 import { configureChains, createClient } from 'wagmi'
 import { infuraProvider } from 'wagmi/providers/infura'
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
-
 import { makePersistent } from '@app/utils/persist'
 
 import network from '../constants/Network'
@@ -39,16 +39,44 @@ if (process.env.NEXT_PUBLIC_PROVIDER) {
   )
 }
 
+
+const AXSWallet = ({ chains }) => ({
+  id: 'axs',
+  name: 'AXS Wallet',
+  iconUrl: '/AxsWallet.png',
+  iconBackground: '#FFFFFF',
+  description: 'AXS wallet web3 provider.',
+  createConnector: () => {
+    const connector = new InjectedConnector({
+      chains
+    })
+    return {
+      connector,
+    }
+  },
+})
+
 const { provider, chains } = configureChains(
   [
     network
   ],
   providerArray,
 )
-const { connectors } = getDefaultWallets({
-  appName: 'MNS',
-  chains,
-})
+
+
+const connectors = connectorsForWallets([
+  {
+    groupName: 'Popular',
+    wallets: [
+      AXSWallet({ chains }),
+      metaMaskWallet({chains}),
+      rainbowWallet({ chains }),
+      walletConnectWallet({ chains }),
+      coinbaseWallet({appName: 'MNS', chains,  }),
+    ],
+  },
+])
+
 
 const queryClient = new QueryClient({
   defaultOptions: {
