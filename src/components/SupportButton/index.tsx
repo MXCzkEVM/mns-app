@@ -51,7 +51,7 @@ export function SupportButton() {
 
   const handleClick = () => {
     if (state) {
-      const newWindow = window.open('https://t.me/mxcchatgpt_bot')
+      const newWindow = window.open('https://mxcfoundation.zendesk.com/hc/en-gb')
       if (newWindow) newWindow.opener = null
       setState(false)
     } else {
