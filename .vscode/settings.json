@@ -8,8 +8,8 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": false
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "never"
   },
   "stylelint.configFile": ".stylelintrc.json",
   "stylelint.validate": ["css", "typescriptreact"],
@@ -18,5 +18,9 @@
   "[svg]": {
     "editor.defaultFormatter": "jock.svg"
   },
-  "jest.jestCommandLine": "pnpm run test"
+  "jest.jestCommandLine": "pnpm run test",
+  "i18n-ally.localesPaths": [
+    "public/locales"
+  ],
+  "i18n-ally.keystyle": "nested"
 }

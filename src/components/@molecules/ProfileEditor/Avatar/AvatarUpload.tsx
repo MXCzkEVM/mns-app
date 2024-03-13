@@ -11,6 +11,7 @@ import { useChainName } from '@app/hooks/useChainName'
 
 import { useQueryKeys } from '../../../../utils/cacheKeyFactory'
 import { AvCancelButton, CropComponent } from './AvatarCrop'
+import { helperPostPinFileToIPFS } from './helperPostPinFileToIPFS'
 
 const Container = styled.div(({ theme }) => [
   css`
@@ -78,31 +79,12 @@ const UploadComponent = ({
   })
 
   const { mutate: signAndUpload, isLoading } = useMutation(async () => {
-    let baseURL = process.env.NEXT_PUBLIC_AVUP_ENDPOINT || `https://ens.xyz`
-    if (network !== 'mainnet') {
-      baseURL = `${baseURL}/${network}`
-    }
-    const endpoint = `${baseURL}/${name}`
-
-    const sig = await signTypedDataAsync()
-    const fetched = (await fetch(endpoint, {
-      method: 'PUT',
-      headers: {
-        // eslint-disable-next-line @typescript-eslint/naming-convention
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        expiry,
-        dataURL,
-        sig,
-      }),
-    }).then((res) => res.json())) as any
-
-    if (fetched.message === 'uploaded') {
-      queryClient.invalidateQueries(queryKeys)
-      return handleSubmit('upload', endpoint, dataURL)
-    }
-    throw new Error(fetched.message)
+    
+    await signTypedDataAsync()
+    
+    const endpoint = await helperPostPinFileToIPFS({ file: base64ToFile(dataURL, name) })
+    
+    handleSubmit('upload', endpoint, dataURL)
   })
 
   return (
@@ -124,6 +106,18 @@ const UploadComponent = ({
       />
     </>
   )
+}
+
+function base64ToFile(base64: string, fileName: string) {
+  let arr = base64.split(",");
+  let mime = arr[0].match(/:(.\*?);/)?.[1];
+  let bstr = window.atob(arr[1]);
+  let n = bstr.length;
+  let u8arr = new Uint8Array(n);
+  while (n--) {
+    u8arr[n] = bstr.charCodeAt(n);
+  }
+  return new File([u8arr], fileName, { type: mime });
 }
 
 export const AvatarUpload = ({

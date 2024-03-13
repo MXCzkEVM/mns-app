@@ -5,6 +5,7 @@ import { useQueryKeys } from '@app/utils/cacheKeyFactory'
 import { ensNftImageUrl, imageUrlUnknownRecord } from '@app/utils/utils'
 
 import { useContractAddress } from './useContractAddress'
+import { useProfile } from './useProfile'
 
 const fetchImg = async (url: string) =>
   new Promise<string | null>((resolve) => {
@@ -34,18 +35,9 @@ const fetchImg = async (url: string) =>
   })
 
 export const useAvatar = (name: string | null | undefined, network: number, noCache?: boolean) => {
-  const { data, isLoading, status } = useQuery(
-    useQueryKeys().avatar.avatar(name),
-    () => fetchImg(imageUrlUnknownRecord(name!, network)),
-    {
-      enabled: !!name,
-      cacheTime: noCache ? 0 : 60000,
-      staleTime: 60000,
-      refetchOnMount: false,
-    },
-  )
-
-  return { avatar: data, isLoading, status }
+  const {profile, loading, status} = useProfile(name!)
+  const avatar = profile?.records?.texts?.find(t => t.key === 'avatar')?.value
+  return { avatar: avatar, isLoading: loading, status }
 }
 
 export const useNFTImage = (name: string | undefined, network: number) => {
