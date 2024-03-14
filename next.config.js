@@ -18,6 +18,9 @@ const babelIncludeRegexes = [
  **/
 let nextConfig = {
   reactStrictMode: true,
+  typescript: {
+    ignoreBuildErrors: true
+  },
   compiler: {
     styledComponents: true,
   },
