@@ -3,7 +3,7 @@ const { i18n } = require('./next-i18next.config')
 const { withPlugins } = require('next-compose-plugins')
 const path = require('path')
 const StylelintPlugin = require('stylelint-webpack-plugin')
-const { withSentryConfig } = require('@sentry/nextjs')
+// const { withSentryConfig } = require('@sentry/nextjs')
 const { execSync } = require('child_process')
 
 const babelIncludeRegexes = [
@@ -194,9 +194,9 @@ const withSentry = (config) => {
     // For all available options, see:
     // https://github.com/getsentry/sentry-webpack-plugin#options.
   }
-  if (process.env.NODE_ENV === 'production' && !process.env.NEXT_PUBLIC_IPFS)
-    return withSentryConfig(config, sentryWebpackPluginOptions)
+  // if (process.env.NODE_ENV === 'production' && !process.env.NEXT_PUBLIC_IPFS)
+  //   return withSentryConfig(config, sentryWebpackPluginOptions)
   return config
 }
 
-module.exports = withSentry(withPlugins(plugins, nextConfig))
+module.exports = withPlugins(plugins, nextConfig)
