@@ -349,7 +349,7 @@ export const CropComponent = ({
 
   useEffect(() => {
     const image = imageRef.current
-    if (canvasRef && !image.src) {
+    if (canvasRef && !image.src && avatar) {
       image.src = URL.createObjectURL(avatar)
       image.onload = handleImageLoad
     }

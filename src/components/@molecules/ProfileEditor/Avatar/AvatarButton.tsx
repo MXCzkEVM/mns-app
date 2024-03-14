@@ -3,11 +3,13 @@ import { ComponentProps, useRef } from 'react'
 // import { useTranslation } from 'react-i18next'
 // import { DropdownItem } from '@ensdomains/thorin/dist/types/components/molecules/Dropdown/Dropdown'
 // import { LegacyDropdown } from '@app/omponents/@molecules/LegacyDropdown/LegacyDropdown'
+import { showOpenImagePicker } from '@hairy/browser-utils'
 import styled, { css } from 'styled-components'
 
 import { Avatar, Dropdown } from '@ensdomains/thorin'
 
 import CameraIcon from '@app/assets/Camera.svg'
+import func from 'deploy/00_deploy_bulk_renewal'
 
 const Container = styled.button<{ $error?: boolean; $validated?: boolean; $dirty?: boolean }>(
   ({ theme, $validated, $dirty, $error }) => css`
@@ -128,16 +130,23 @@ Props) => {
   // const dropdownProps = setIsOpen
   //   ? ({ isOpen, setIsOpen } as { isOpen: boolean; setIsOpen: Dispatch<SetStateAction<boolean>> })
   //   : ({} as { isOpen: never; setIsOpen: never })
-
+  async function onChange() {
+    const [file] = await showOpenImagePicker({multiple: false})
+    onSelectOption?.('upload')
+    onAvatarFileChange?.(file)
+  }
   return (
     <Container $validated={validated} $error={error} $dirty={dirty} type="button">
-      <Avatar label="profile-button-avatar" src={src} noBorder />
-      {!validated && !error && (
-        <IconMask>
-          <CameraIcon />
-        </IconMask>
-      )}
-      <input
+      <div onClick={onChange}>
+        <Avatar label="profile-button-avatar" src={src} noBorder />
+        {!validated && !error && (
+          <IconMask>
+            <CameraIcon />
+          </IconMask>
+        )}
+      </div>
+      
+      {/* <input
         disabled
         type="file"
         style={{ display: 'none' }}
@@ -149,7 +158,7 @@ Props) => {
             onAvatarFileChange?.(e.target.files[0])
           }
         }}
-      />
+      /> */}
     </Container>
     // <LegacyDropdown
     //   items={
