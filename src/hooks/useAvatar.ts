@@ -6,6 +6,7 @@ import { ensNftImageUrl, imageUrlUnknownRecord } from '@app/utils/utils'
 
 import { useContractAddress } from './useContractAddress'
 import { useProfile } from './useProfile'
+import { useEventBus } from './useEventBus'
 
 const fetchImg = async (url: string) =>
   new Promise<string | null>((resolve) => {
@@ -35,8 +36,11 @@ const fetchImg = async (url: string) =>
   })
 
 export const useAvatar = (name: string | null | undefined, network: number, noCache?: boolean) => {
-  const {profile, loading, status} = useProfile(name!)
+  const { profile, loading, status, refetch } = useProfile(name!)
   const avatar = profile?.records?.texts?.find(t => t.key === 'avatar')?.value
+  
+  useEventBus('dispatch-stopFlow').on(() => refetch())
+
   return { avatar: avatar, isLoading: loading, status }
 }
 

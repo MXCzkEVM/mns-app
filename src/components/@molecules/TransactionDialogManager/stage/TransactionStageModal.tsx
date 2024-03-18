@@ -28,6 +28,7 @@ import { useQueryKeys } from '@app/utils/cacheKeyFactory'
 import { makeEtherscanLink } from '@app/utils/utils'
 
 import { DisplayItems } from '../DisplayItems'
+import { useEventBus } from '@app/hooks/useEventBus'
 
 const COMMIT_GAS_COST = 45000
 
@@ -352,7 +353,6 @@ export const TransactionStageModal = ({
     enabled: canEnableTransactionRequest,
     queryKey: queryKeys.transactionStageModal.prepareTransaction(uniqueTxIdentifiers),
   })
-
   const {
     isLoading: transactionLoading,
     error: transactionError,
@@ -361,6 +361,7 @@ export const TransactionStageModal = ({
     mode: 'prepared',
     request,
     onSuccess: (tx) => {
+
       addRecentTransaction({
         hash: tx.hash,
         action: actionName,

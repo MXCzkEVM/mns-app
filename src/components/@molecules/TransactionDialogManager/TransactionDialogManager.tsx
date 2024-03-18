@@ -16,6 +16,7 @@ import { InternalTransactionFlow, TransactionFlowAction } from '../../../transac
 // import InputComponentWrapper from './InputComponentWrapper'
 import { IntroStageModal } from './stage/Intro'
 import { TransactionStageModal } from './stage/TransactionStageModal'
+import { useEventBus } from '@app/hooks/useEventBus'
 
 export const useResetSelectedKey = (dispatch: any) => {
   const { address } = useAccount()
@@ -45,10 +46,13 @@ export const TransactionDialogManager = ({
     [selectedKey, state.items],
   )
 
+  const { emit } = useEventBus('dispatch-stopFlow')
+
   useResetSelectedKey(dispatch)
 
   const onDismiss = useCallback(() => {
     dispatch({ name: 'stopFlow' })
+    emit()
   }, [dispatch])
 
   const InnerComponent = useMemo(() => {
