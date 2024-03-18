@@ -267,7 +267,7 @@ const ProfileEditor = ({ data = {}, transactions = [], dispatch, onDismiss }: Pr
   }
 
   const canEditRecordsWhenWrapped = canEditRecordsWhenWrappedCalc(
-    isWrapped,
+    false,
     profile?.resolverAddress,
     chainId,
   )
