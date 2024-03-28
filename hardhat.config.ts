@@ -23,16 +23,16 @@ const config: HardhatUserConfig = {
       },
     ],
   },
-  defaultNetwork: 'mxc_testnet',
+  defaultNetwork: 'mxc_geneva',
   networks: {
     // eslint-disable-next-line @typescript-eslint/naming-convention
-    mxc_wannsee: {
-      chainId: 5167003,
+    mxc_geneva: {
+      chainId: 5167004,
       tags: ['use_root'],
       accounts: {
         mnemonic: process.env.SECRET_WORDS!,
       },
-      url: 'https://wannsee-rpc.mxc.com',
+      url: 'https://geneva-rpc.moonchain.com',
     },
     hardhat: {
       saveDeployments: false,

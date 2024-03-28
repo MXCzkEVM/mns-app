@@ -62,7 +62,7 @@ export const formatFullExpiry = (expiryDate?: Date) =>
   expiryDate ? `${formatExpiry(expiryDate)}, ${formatDateTime(expiryDate)}` : ''
 
 export const makeEtherscanLink = (data: string, network?: string, route: string = 'tx') =>
-  `https://explorer.mxc.com/${route}/${data}`
+  `https://geneva-explorer.moonchain.com/${route}/${data}`
 
 export const isBrowser = !!(
   typeof window !== 'undefined' &&

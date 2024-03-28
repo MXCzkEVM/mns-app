@@ -6,27 +6,27 @@ const chain_id: string = process.env.NEXT_PUBLIC_NETWORK_CHAINID || "18686"
 
 const networks: any = {
     5167003: {
-        id: 5167003,
-        name: 'MXC Wannsee',
+        id: 5167004,
+        name: 'MXC zkEVM Moonchain Geneva Testnet',
         nativeCurrency: { decimals: 18, name: 'MXC', symbol: 'MXC' },
-        network: 'MXC Wannsee',
+        network: 'MXC zkEVM Moonchain Geneva Testnet',
         rpcUrls: {
             default: {
-                http: ['https://wannsee-rpc.mxc.com'],
-                webSocket: ['wss://wannsee-rpc.mxc.com'],
+                http: ['https://geneva-rpc.moonchain.com'],
+                webSocket: ['wss://geneva-rpc.moonchain.com/ws'],
             },
-            public: { http: ['https://wannsee-rpc.mxc.com'] },
+            public: { http: ['https://geneva-rpc.moonchain.com'] },
         },
         blockExplorers: {
             default: {
-                name: 'Wannsee Block Explorer',
-                url: 'https://wannsee-explorer.mxc.com/',
+                name: 'MoonChain Geneva Block Explorer',
+                url: 'https://geneva-explorer.moonchain.com/',
             },
         },
         contracts: {
             multicall3: {
-                address: '0x87A3645647cabb016705eddfD0f7787fEe9324BF',
-                blockCreated: 383161,
+                address: '0x3f2AB51385EF323cb1B411579D7DDf221fFe9EaA',
+                blockCreated: 5860,
             },
         },
     },
