@@ -21,6 +21,7 @@ import { chains, wagmiClient } from '@app/utils/query'
 
 import i18n from '../i18n'
 import '../styles.css'
+import "@moonchain/metadata/style.css"
 
 const rainbowKitTheme: Theme = {
   ...lightTheme({
@@ -73,7 +74,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     // background: radial-gradient(50% 50% at 50% 50%, rgba(82, 152, 255, 0.062) 0%, rgba(255, 255, 255, 0) 100%), #F7F7F7;
-    background: #2a0f69;
+    background: #101010;
   }
 
   body, .min-safe {

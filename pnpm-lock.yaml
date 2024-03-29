@@ -112,6 +112,9 @@ importers:
       '@hairy/browser-utils':
         specifier: ^0.2.5
         version: 0.2.5
+      '@moonchain/metadata':
+        specifier: ^0.0.5
+        version: 0.0.5
       '@rainbow-me/rainbowkit':
         specifier: 0.12.7
         version: 0.12.7(patch_hash=f2ny37ockjryajfu6zcn2nezee)(@types/react@17.0.30)(ethers@5.7.2)(react-dom@17.0.2)(react@17.0.2)(wagmi@0.12.1)
@@ -3527,6 +3530,10 @@ packages:
       - bufferutil
       - utf-8-validate
     dev: true
+
+  /@moonchain/metadata@0.0.5:
+    resolution: {integrity: sha512-EilE0o+pb0iv/cCMpngDDYedsf7KnQmts/B9CsYYCUMx1AVhpiOUxeJVhTb10jD0xIdLvDkDjh28lPumGNUfPQ==}
+    dev: false
 
   /@multiformats/base-x@4.0.1:
     resolution: {integrity: sha512-eMk0b9ReBbV23xXU693TAIrLyeO5iTgBZGSJfpqriG8UkYvr/hC9u9pyMlAakDNHWmbhMZCDs6KQO0jzKD8OTw==}
