@@ -102,10 +102,10 @@ export default function Page() {
         {/* This script will check all MXC operations and if the system experiences any downtime It will notify with a small notification */}
         <script src="https://mxc.instatus.com/en/13076080/widget/script.js" async />
       </Head>
-      <SupportButton />
+      {/* <SupportButton /> */}
       <StyledLeadingHeading>
         <LogoAndLanguage>
-          <StyledENS as={ENSFull} />
+          <span className='spacex' style={{color: '#fff', fontSize: '14px'}}>MOONCHAIN</span>
         </LogoAndLanguage>
         <Hamburger />
       </StyledLeadingHeading>

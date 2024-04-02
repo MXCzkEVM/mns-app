@@ -87,19 +87,19 @@ const GlobalStyle = createGlobalStyle`
   }
 
   button.connect-button {
-    background-color: #f43178;
+    background-color: #2196F3;
     &:hover {
-      background: #f43178;
+      background: #2196F3;
     }
   }
   button.action-button {
-    background: #6300ff;
+    background: #2196F3;
     &:hover {
-      background: #6300ff;
+      background: #2196F3;
     }
   }
   .theme-text {
-    color: #6300ff;
+    color: #2196F3;
   }
 
   a {

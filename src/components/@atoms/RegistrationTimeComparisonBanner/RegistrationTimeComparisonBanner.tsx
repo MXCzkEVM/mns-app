@@ -32,7 +32,7 @@ const calcPercent = (percent: number, order: number) => {
 const Bar = styled.div<{ $highlightPercent: number }>(
   ({ theme, $highlightPercent }) => css`
     --bar-width: calc(${$highlightPercent}% - ${theme.space['1']});
-    background: linear-gradient(90deg, #6300ff var(--bar-width), #b63d29 var(--bar-width));
+    background: linear-gradient(90deg, #2196F3 var(--bar-width), #b63d29 var(--bar-width));
     width: 100%;
     height: ${theme.space['4']};
     border-radius: ${theme.radii.medium};
@@ -62,7 +62,7 @@ const Marker = styled.div<{ $percent: number }>(
     border-radius: ${theme.radii.medium};
     background-color: ${theme.colors.background};
     &:last-of-type {
-      background-color: #6300ff;
+      background-color: #2196F3;
       color: ${theme.colors.background};
     }
 
