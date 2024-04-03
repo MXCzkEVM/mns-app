@@ -95,7 +95,7 @@ const Label = styled.label<{ $highlighted?: boolean }>(
     font-size: ${$highlighted ? theme.fontSizes.headingTwo : theme.fontSizes.large};
     line-height: ${theme.space['11']};
     text-align: center;
-    color: #6300ff;
+    color: #2196F3;
     pointer-events: none;
     opacity: 1;
     transition: opacity 150ms ease-in-out;
