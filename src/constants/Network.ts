@@ -5,7 +5,7 @@
 const chain_id: string = process.env.NEXT_PUBLIC_NETWORK_CHAINID || "18686"
 
 const networks: any = {
-    5167003: {
+    5167004: {
         id: 5167004,
         name: 'MXC zkEVM Moonchain Geneva Testnet',
         nativeCurrency: { decimals: 18, name: 'MXC', symbol: 'MXC' },

@@ -13,6 +13,8 @@ export const networkName = {
   '3': 'ropsten',
   // eslint-disable-next-line @typescript-eslint/naming-convention
   '1337': 'local',
+  '18686': 'moonchain',
+  '516004': 'geneva'
 }
 
 interface ResolverAddresses {
@@ -48,7 +50,7 @@ export const RESOLVER_ADDRESSES: ResolverAddresses = {
     '0x84eA74d481Ee0A5332c457a4d796187F6Ba67fEB',
   ],
   // eslint-disable-next-line @typescript-eslint/naming-convention
-  '5167003': ['0x316a9C61e09D5b87bcaB18d08948D2B2A8d6b4A8'],
+  '5167004': ['0xd241E9681B22Ae47e94c523d25CDdC1a4960cDC3'],
   // eslint-disable-next-line @typescript-eslint/naming-convention
   '18686': ['0x5325640Cc17A06a409d4f4b6af02A0120528c67E'],
 }
@@ -65,7 +67,7 @@ export const NAMEWRAPPER_AWARE_RESOLVERS: ResolverAddresses = {
   // eslint-disable-next-line @typescript-eslint/naming-convention
   '1337': ['0x0E801D84Fa97b50751Dbf25036d067dCf18858bF'],
   // eslint-disable-next-line @typescript-eslint/naming-convention
-  '5167003': ['0x61C48101ccE16653573e80c64b4bD4a4C3111Ce8'],
+  '5167004': ['0xCE5e3c318BFC7c2dee486cF7c62Ba95feFd6d2bD'],
   // eslint-disable-next-line @typescript-eslint/naming-convention
   '18686': ['0xD1B70f92b310c3Fa95b83dB436E00a53e1f1f5d5'],
 }
