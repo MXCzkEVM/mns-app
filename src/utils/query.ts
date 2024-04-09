@@ -40,10 +40,25 @@ if (process.env.NEXT_PUBLIC_PROVIDER) {
 }
 
 
-const AXSWallet = ({ chains }) => ({
+const axsWallet = ({ chains }: any) => ({
   id: 'axs',
   name: 'AXS Wallet',
   iconUrl: '/AxsWallet.png',
+  iconBackground: '#FFFFFF',
+  description: 'AXS wallet web3 provider.',
+  createConnector: () => {
+    const connector = new InjectedConnector({
+      chains
+    })
+    return {
+      connector,
+    }
+  },
+})
+const okxWallet = ({ chains }: any) => ({
+  id: 'okx',
+  name: 'OKX Wallet',
+  iconUrl: '/okx.webp',
   iconBackground: '#FFFFFF',
   description: 'AXS wallet web3 provider.',
   createConnector: () => {
@@ -68,11 +83,11 @@ const connectors = connectorsForWallets([
   {
     groupName: 'Popular',
     wallets: [
-      AXSWallet({ chains }),
-      metaMaskWallet({chains}),
-      rainbowWallet({ chains }),
+      axsWallet({ chains }),
+      metaMaskWallet({ chains }),
+      okxWallet({ chains }),
       walletConnectWallet({ chains }),
-      coinbaseWallet({appName: 'MNS', chains,  }),
+      coinbaseWallet({ appName: 'MNS', chains }),
     ],
   },
 ])
