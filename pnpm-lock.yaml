@@ -233,7 +233,7 @@ importers:
       '@next/bundle-analyzer':
         specifier: ^12.2.5
         version: 12.2.5
-      '@next/swc-linux-x64-gnu':
+      '@next/swc-darwin-arm64':
         specifier: 12.1.4
         version: 12.1.4
       '@openzeppelin/contracts':
@@ -3573,6 +3573,13 @@ packages:
     requiresBuild: true
     optional: true
 
+  /@next/swc-darwin-arm64@12.1.4:
+    resolution: {integrity: sha512-SSST/dBymecllZxcqTCcSTCu5o1NKk9I+xcvhn/O9nH6GWjgvGgGkNqLbCarCa0jJ1ukvlBA138FagyrmZ/4rQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+    dev: true
+
   /@next/swc-darwin-arm64@12.1.6:
     resolution: {integrity: sha512-P0EXU12BMSdNj1F7vdkP/VrYDuCNwBExtRPDYawgSUakzi6qP0iKJpya2BuLvNzXx+XPU49GFuDC5X+SvY0mOw==}
     engines: {node: '>= 10'}
@@ -3621,6 +3628,8 @@ packages:
     cpu: [x64]
     os: [linux]
     libc: [glibc]
+    requiresBuild: true
+    optional: true
 
   /@next/swc-linux-x64-musl@12.1.6:
     resolution: {integrity: sha512-c9Vjmi0EVk0Kou2qbrynskVarnFwfYIi+wKufR9Ad7/IKKuP6aEhOdZiIIdKsYWRtK2IWRF3h3YmdnEa2WLUag==}
