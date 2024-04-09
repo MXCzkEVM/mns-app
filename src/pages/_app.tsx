@@ -96,6 +96,7 @@ const GlobalStyle = createGlobalStyle`
     background: #2196F3;
     &:hover {
       background: #2196F3;
+      color: #fff;
     }
   }
   .theme-text {
