@@ -195,7 +195,7 @@ export const Header = () => {
             </BaseLink>
           )}
         >
-          <MXCLOGO height={space['12']} width="100" />
+          <span className='spacex' style={{color: '#fff'}}>MOONCHAIN</span>
         </ConditionalWrapper>
         {router.asPath !== '/' && breakpoints.sm && (
           <>

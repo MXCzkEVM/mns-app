@@ -59,18 +59,7 @@ export default class MyDocument extends Document {
             </>
           )}
           <link rel="apple-touch-icon" sizes="256x256" href={makeIPFSURL('/icon/AppIcon.png')} />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href={makeIPFSURL('/favicon-32x32.png')}
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href={makeIPFSURL('/favicon-16x16.png')}
-          />
+          <link rel="icon" href="https://raw.githubusercontent.com/MXCzkEVM/metadata/main/logo-circle.svg" />
           <link rel="manifest" href={makeIPFSURL('/manifest.webmanifest')} />
           <link rel="manifest" href={makeIPFSURL('/manifest.json')} />
           <link rel="mask-icon" href={makeIPFSURL('/safari-pinned-tab.svg')} color="#5bbad5" />
