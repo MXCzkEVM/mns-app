@@ -1,4 +1,4 @@
-import { RainbowKitProvider, Theme, lightTheme } from '@rainbow-me/rainbowkit'
+import { RainbowKitProvider, Theme, darkTheme } from '@rainbow-me/rainbowkit'
 import '@rainbow-me/rainbowkit/styles.css'
 import { NextPage } from 'next'
 import type { AppProps } from 'next/app'
@@ -24,7 +24,7 @@ import '../styles.css'
 import "@moonchain/metadata/style.css"
 
 const rainbowKitTheme: Theme = {
-  ...lightTheme({
+  ...darkTheme({
     accentColor: thorinLightTheme.colors.accent,
     borderRadius: 'medium',
   }),
