@@ -32,9 +32,9 @@ const networks: any = {
     },
     18686: {
         id: 18686,
-        name: 'MXC Mainnet',
+        name: 'MXC zkEVM Moonchain Mainnet',
         nativeCurrency: { decimals: 18, name: 'MXC', symbol: 'MXC' },
-        network: 'MXC Mainnet',
+        network: 'MXC zkEVM Moonchain Mainnet',
         rpcUrls: {
             default: {
                 http: ['https://rpc.mxc.com'],
@@ -45,7 +45,7 @@ const networks: any = {
         blockExplorers: {
             default: {
                 name: 'Mxc Block Explorer',
-                url: 'https://explorer.mxc.com/',
+                url: 'https://explorer.moonchain.com/',
             },
         },
         contracts: {
