@@ -7,9 +7,9 @@ const chain_id: string = process.env.NEXT_PUBLIC_NETWORK_CHAINID || "18686"
 const networks: any = {
     5167004: {
         id: 5167004,
-        name: 'MXC zkEVM Moonchain Geneva Testnet',
+        name: 'Moonchain Geneva Testnet',
         nativeCurrency: { decimals: 18, name: 'MXC', symbol: 'MXC' },
-        network: 'MXC zkEVM Moonchain Geneva Testnet',
+        network: 'Moonchain Geneva Testnet',
         rpcUrls: {
             default: {
                 http: ['https://geneva-rpc.moonchain.com'],
@@ -32,9 +32,9 @@ const networks: any = {
     },
     18686: {
         id: 18686,
-        name: 'MXC zkEVM Moonchain Mainnet',
+        name: 'Moonchain Mainnet',
         nativeCurrency: { decimals: 18, name: 'MXC', symbol: 'MXC' },
-        network: 'MXC zkEVM Moonchain Mainnet',
+        network: 'Moonchain Mainnet',
         rpcUrls: {
             default: {
                 http: ['https://rpc.mxc.com'],
