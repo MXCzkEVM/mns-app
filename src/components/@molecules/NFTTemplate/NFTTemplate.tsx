@@ -147,7 +147,17 @@ const NFTTemplate = ({ name, backgroundImage, isNormalised }: Props) => {
           />
         </filter>
       </defs>
-      <MXCLOGO width="50" height="50" x="15" y="25" />
+      <image width="35" x="25" y="25" 
+        href={"https://raw.githubusercontent.com/MXCzkEVM/metadata/main/logo-circle.svg"}
+      />
+       <Text
+        x="80"
+        y="48"
+        fill="white"
+        style={{ fontFamily: 'spacex', fontWeight: 400 }}
+      >
+        MOONCHAIN
+      </Text>
       {!isNormalised && (
         <>
           <rect x="200" y="34" width="40" height="40" rx="20" fill="white" fillOpacity="0.2" />
@@ -184,9 +194,8 @@ const NFTTemplate = ({ name, backgroundImage, isNormalised }: Props) => {
           y2="-172.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#44BCF0" />
-          <stop offset="0.428185" stopColor="#628BF3" />
-          <stop offset="1" stopColor="#A099FF" />
+          <stop stopColor="#010101" />
+          <stop offset="0.428185" stopColor="#676767" />
         </linearGradient>
         <linearGradient
           id="paint1_linear"
