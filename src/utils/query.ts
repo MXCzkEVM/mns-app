@@ -43,7 +43,7 @@ if (process.env.NEXT_PUBLIC_PROVIDER) {
 const axsWallet = ({ chains }: any) => ({
   id: 'moon_base',
   name: 'MoonBase',
-  iconUrl: '/MoonBase.png',
+  iconUrl: '/MoonBase.svg',
   iconBackground: '#FFFFFF',
   description: 'MoonBase wallet web3 provider.',
   createConnector: () => {
