@@ -41,18 +41,14 @@ if (process.env.NEXT_PUBLIC_PROVIDER) {
 
 
 const axsWallet = ({ chains }: any) => ({
-  id: 'axs',
-  name: 'AXS Wallet',
-  iconUrl: '/AxsWallet.png',
+  id: 'moon_base',
+  name: 'MoonBase',
+  iconUrl: '/MoonBase.png',
   iconBackground: '#FFFFFF',
-  description: 'AXS wallet web3 provider.',
+  description: 'MoonBase wallet web3 provider.',
   createConnector: () => {
-    const connector = new InjectedConnector({
-      chains
-    })
-    return {
-      connector,
-    }
+    const connector = new InjectedConnector({ chains })
+    return { connector }
   },
 })
 const okxWallet = ({ chains }: any) => ({
